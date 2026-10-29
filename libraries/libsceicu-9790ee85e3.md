@@ -7,7 +7,7 @@
 | Export identities | 855 |
 | Named | 661 |
 | Unresolved or withheld | 194 |
-| Qualified stub candidate records | 0 |
+| Qualified stub candidate records | 72 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
 
@@ -22,8 +22,8 @@ Qualified candidates still require current overlap, declaration, build, test and
 
 | Classification | Records |
 |---|---:|
+| existing_upstream_placeholder_library | 298 |
 | historical_only | 557 |
-| middleware_scope_review | 298 |
 
 ## Named export preview
 

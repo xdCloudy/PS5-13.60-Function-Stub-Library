@@ -8,7 +8,7 @@ Named export identities are stub candidates, not implemented functions. Shared N
 |---|---:|
 | Unique named stub identities | 36,353 |
 | Named library/export records | 46,517 |
-| Qualified unique throwing-stub candidates | 10,612 |
+| Qualified unique throwing-stub candidates | 10,718 |
 | Alternate library aliases among qualified records | 2,647 |
 | Throwing stubs generated locally | 745 |
 | Fully validated stubs | 0 |
@@ -32,10 +32,12 @@ Named export identities are stub candidates, not implemented functions. Shared N
 | [libSceMediaFrameworkInterface](libraries/libscemediaframeworkinterface-971396c6b2.md) | 135 | 135 | 135 |
 | [libSceVideoOut](libraries/libscevideoout-54fc22c577.md) | 199 | 133 | 133 |
 | [libSceVnaInternal](libraries/libscevnainternal-b1ef6786a5.md) | 84 | 84 | 0 |
+| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 661 | 72 | 0 |
 | [libSceVideoStreamingEngine](libraries/libscevideostreamingengine-5abc5612ed.md) | 70 | 58 | 0 |
 | [libSceCustomMusicSysCallWrapper](libraries/libscecustommusicsyscallwrapper-8ee0747c02.md) | 54 | 53 | 0 |
 | [libSceEsvm](libraries/libsceesvm-84c73245ba.md) | 45 | 45 | 0 |
 | [libSceFont](libraries/libscefont-63ba420c2e.md) | 240 | 44 | 0 |
+| [libSceXml](libraries/libscexml-eab4e823a4.md) | 183 | 33 | 0 |
 | [libSceAvcap2](libraries/libsceavcap2-9035a2a4ef.md) | 39 | 32 | 0 |
 | [libSceDataTransfer](libraries/libscedatatransfer-ca1b6655ff.md) | 88 | 28 | 0 |
 | [libSceNpWebApi](libraries/libscenpwebapi-30b6435a6f.md) | 56 | 27 | 27 |
@@ -93,6 +95,7 @@ Named export identities are stub candidates, not implemented functions. Shared N
 | [libSceSharePlay](libraries/libsceshareplay-b821361f17.md) | 21 | 1 | 0 |
 | [libSceShellUIUtil](libraries/libsceshelluiutil-8fc7bce6b8.md) | 7 | 1 | 0 |
 | [libSceSystemGesture](libraries/libscesystemgesture-47eb2be983.md) | 24 | 1 | 0 |
+| [libSceTEEClient](libraries/libsceteeclient-bfc96cbf59.md) | 11 | 1 | 0 |
 | [libSceUpdateService](libraries/libsceupdateservice-b7f2a7b06c.md) | 49 | 1 | 0 |
 | [libSceVdecCore](libraries/libscevdeccore-219f557635.md) | 25 | 1 | 0 |
 

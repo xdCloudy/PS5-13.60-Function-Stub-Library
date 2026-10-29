@@ -2526,7 +2526,7 @@
       "generated": 0,
       "library": "libSceIcu",
       "named": 661,
-      "qualified": 0,
+      "qualified": 72,
       "total": 855
     },
     {
@@ -4360,7 +4360,7 @@
       "generated": 0,
       "library": "libSceTEEClient",
       "named": 11,
-      "qualified": 0,
+      "qualified": 1,
       "total": 15
     },
     {
@@ -5074,7 +5074,7 @@
       "generated": 0,
       "library": "libSceXml",
       "named": 183,
-      "qualified": 0,
+      "qualified": 33,
       "total": 183
     },
     {
@@ -5545,18 +5545,18 @@
     "fully_validated_stubs": 0,
     "generated_throwing_stubs": 745,
     "published_anyps5_stubs": 0,
-    "qualified_stub_records": 13259,
-    "qualified_unique_stub_candidates": 10612,
+    "qualified_stub_records": 13365,
+    "qualified_unique_stub_candidates": 10718,
     "shared_library_alias_records": 2647
   },
   "named_library_stub_records": 46517,
   "named_stub_identities": 36353,
   "scope_records": {
-    "existing_firmware_system_library": 15901,
-    "existing_upstream_placeholder_library": 21303,
+    "existing_firmware_system_library": 15703,
+    "existing_upstream_placeholder_library": 21799,
     "historical_only": 11700,
     "managed_or_application_native_image": 252818,
-    "middleware_scope_review": 743,
+    "middleware_scope_review": 445,
     "new_system_library_review": 2592,
     "ownership_pending": 7322,
     "shell_specific_review": 1659

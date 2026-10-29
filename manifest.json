@@ -2880,10 +2880,10 @@
       "sha256": "b677b0afec9bf7a9549df1689b7df03680c3c2fcf28e3a095e6f218575037c90"
     },
     {
-      "bytes": 111795,
+      "bytes": 116687,
       "path": "data/firmware-13.60/libsceicu-9790ee85e3.jsonl",
       "records": 298,
-      "sha256": "bbcd687cf8a599283633f67923e889386674d4180c27f6d486b49c76376bf530"
+      "sha256": "ba75f13c92b7ae6ea11a485b12eb500a3debc26329ac74a41ec2f11ea8a3da31"
     },
     {
       "bytes": 8785,
@@ -4404,10 +4404,10 @@
       "sha256": "f1530fa26c975b257b7567bafa89f152cc511298b52f820c3e9d90cf538fe9f2"
     },
     {
-      "bytes": 6592,
+      "bytes": 6677,
       "path": "data/firmware-13.60/libsceteeclient-bfc96cbf59.jsonl",
       "records": 15,
-      "sha256": "2fe5b1d0785ff099ff60a31c4e54dcf1b3301dd874d696f3776bb72183f8d11a"
+      "sha256": "206775629c557cfceaed14b35d571c694bee8c79caa05c0bed30c66813c87b8c"
     },
     {
       "bytes": 357,
@@ -4986,10 +4986,10 @@
       "sha256": "ede61eddb94504f7ab8e547c405b568010dc02d831ce431c56bef482c8b6cf99"
     },
     {
-      "bytes": 88287,
+      "bytes": 89532,
       "path": "data/firmware-13.60/libscexml-eab4e823a4.jsonl",
       "records": 183,
-      "sha256": "5ad5ae670f0ceed7e439ca30950e52424b1ea25e5e7ed93a8f80a90a3a770c86"
+      "sha256": "4f0e254db6423ebd63c4a4bf421bfcc35132186766567b2a8cb2c5aaf9b7538d"
     },
     {
       "bytes": 2320,
@@ -5974,12 +5974,12 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "23388e7c063b6b65844ab9aa118a8a0940dd3823f413a5b5bd3c4eb7537ee964"
+    "sha256": "7e67447b6b192d8d0e90f251d1f6026575659ff71f822265d840241fe9bbf1c1"
   },
   "report_image": {
-    "bytes": 266355,
+    "bytes": 264310,
     "path": "reports/stub-readiness.png",
-    "sha256": "a2c8b1d4b092c1dfa106a030f160d8fd8e8e28251eb33b6917880e8789269839"
+    "sha256": "cd489df97e71c88e08444b3cca78c719b234a0bee9a96e2871de6d43754559af"
   },
   "schema_version": 1,
   "source_code_included": false,

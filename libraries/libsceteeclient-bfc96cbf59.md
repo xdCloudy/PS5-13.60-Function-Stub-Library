@@ -7,7 +7,7 @@
 | Export identities | 15 |
 | Named | 11 |
 | Unresolved or withheld | 4 |
-| Qualified stub candidate records | 0 |
+| Qualified stub candidate records | 1 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
 
@@ -21,7 +21,7 @@ Qualified candidates still require current overlap, declaration, build, test and
 
 | Classification | Records |
 |---|---:|
-| existing_firmware_system_library | 15 |
+| existing_upstream_placeholder_library | 15 |
 
 ## Named export preview
 

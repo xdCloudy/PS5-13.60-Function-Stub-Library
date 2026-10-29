@@ -245,7 +245,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [I18NRare](libraries/i18nrare-bfddaf1cb8.md) | 46 | 0 | 0 |
 | [I18NWest](libraries/i18nwest-99db625e4b.md) | 22 | 0 | 0 |
 | [libicu](libraries/libicu-daf9a1c9f7.md) | 1,698 | 1,698 | 0 |
-| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 855 | 661 | 0 |
+| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 855 | 661 | 72 |
 | [libSceIdu](libraries/libsceidu-8418625c2b.md) | 21 | 17 | 0 |
 | [libSceImageUtil](libraries/libsceimageutil-196f49c23b.md) | 13 | 0 | 0 |
 | [libSceIme](libraries/libsceime-7d565475dc.md) | 61 | 59 | 0 |
@@ -782,7 +782,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
-| [libSceTEEClient](libraries/libsceteeclient-bfc96cbf59.md) | 15 | 11 | 0 |
+| [libSceTEEClient](libraries/libsceteeclient-bfc96cbf59.md) | 15 | 11 | 1 |
 | [libSceTelemetryRedisModule](libraries/libscetelemetryredismodule-10680b7998.md) | 1 | 0 | 0 |
 | [libSceTextToSpeech](libraries/libscetexttospeech-fdb21522c5.md) | 12 | 10 | 0 |
 | [libSceTextToSpeech2](libraries/libscetexttospeech2-b43e9ee18c.md) | 14 | 14 | 6 |
@@ -910,7 +910,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
-| [libSceXml](libraries/libscexml-eab4e823a4.md) | 183 | 183 | 0 |
+| [libSceXml](libraries/libscexml-eab4e823a4.md) | 183 | 183 | 33 |
 
 ## Z
 
