@@ -109,3 +109,21 @@ Named export identities are stub candidates, not implemented functions. Shared N
 The qualified-record column retains logical library identities, so shared exports can appear in multiple rows. The global unique-candidate total removes those aliases.
 
 AnyPS5 comparison snapshot: `bb04a4f1ea0175e9e4f149f0359a764d62ff3296`. These are saved comparisons, not live GitHub state.
+
+## Read-only candidate-count audit (2026-10-29)
+
+The totals above and in `readiness.json` are **saved published-snapshot counts**,
+not fresh checks against live AnyPS5. In a separate full-inventory read-only
+audit, applying the requirement that every qualified record have a published,
+hash-verified name yielded **13,395 candidate library/NID records / 10,749
+unique NIDs**, rather than the saved **13,397 / 10,750**. The difference is
+two deliberately withheld-name records, in `libSceNKWebKit` and `libSceJsc`,
+sharing NID `eUw-w9kwIhg`. Their names must remain withheld and these records
+must not be considered currently qualified.
+
+This is a documented validation finding, **not a regeneration** of the canonical
+dataset or readiness files. A later coordinated update must fix the underlying
+assessments and regenerate every affected library page, manifest, summary and
+readiness artifact together. No runtime ABI tests, current-main coverage
+reconciliation or exhaustive open-PR reservation audit was performed as part
+of this read-only candidate-count check.
