@@ -1,0 +1,5178 @@
+{
+  "anyps5_comparison_snapshot": "bb04a4f1ea0175e9e4f149f0359a764d62ff3296",
+  "counts": {
+    "firmware-13.60": 302338,
+    "historical-3.20-only": 11700,
+    "resolved_names": 46517,
+    "total_records": 314038,
+    "unresolved_or_withheld_names": 267521,
+    "withheld_names": 2
+  },
+  "files": [
+    {
+      "bytes": 25416,
+      "path": "data/firmware-13.60/i18n-359b3a1384.jsonl",
+      "records": 72,
+      "sha256": "02a5ff3ee5d4dfddffbe94739f7999cd99033533ff4e10a6be7c8e7e3aeb8b64"
+    },
+    {
+      "bytes": 21004,
+      "path": "data/firmware-13.60/i18ncjk-f89715f386.jsonl",
+      "records": 59,
+      "sha256": "f906c0ef30305ac6fb0ebae3237b6347f1f9936dd501f1750e670932c5ec9a27"
+    },
+    {
+      "bytes": 5040,
+      "path": "data/firmware-13.60/i18nmideast-fd303ac2c2.jsonl",
+      "records": 14,
+      "sha256": "421e924aba2e6e843b9a8d780edd43135542dbe769df9cf87e04ddf9b42e7c83"
+    },
+    {
+      "bytes": 10740,
+      "path": "data/firmware-13.60/i18nother-9ccfc62643.jsonl",
+      "records": 30,
+      "sha256": "c62a3997cf4d3f7f5dc3aead1415e2e48479f4e3937a1d481ead98fdd39f6708"
+    },
+    {
+      "bytes": 16422,
+      "path": "data/firmware-13.60/i18nrare-bfddaf1cb8.jsonl",
+      "records": 46,
+      "sha256": "2ba11ffe6895c27c4b7c427b888c51e29e0fb1fea0f1f88e37665efd95e8418b"
+    },
+    {
+      "bytes": 7854,
+      "path": "data/firmware-13.60/i18nwest-99db625e4b.jsonl",
+      "records": 22,
+      "sha256": "a26fd6479c4d84ac1f37f30350cc253966705e7019cb87ff3be57922d2e882fb"
+    },
+    {
+      "bytes": 632996,
+      "path": "data/firmware-13.60/microsoftcsharp-96ad66c5a8.jsonl",
+      "records": 1739,
+      "sha256": "6889eea5eef635fb8a5954c4861ea3b6556cab44eb3f0e7ec4c48e4d8bfd9a28"
+    },
+    {
+      "bytes": 325974,
+      "path": "data/firmware-13.60/monodatasqlite-d6141fb9c5.jsonl",
+      "records": 898,
+      "sha256": "c2175c080f037b16348c430c302fd2c3b0bf98c32599cdb89b843763caf89dff"
+    },
+    {
+      "bytes": 125280,
+      "path": "data/firmware-13.60/monodatatds-fcedda2f49.jsonl",
+      "records": 348,
+      "sha256": "9de10d219d9bda81fb21a422f27ab22789e3d8ae4bdcd96e97a1a260371d93a5"
+    },
+    {
+      "bytes": 252700,
+      "path": "data/firmware-13.60/monosecurity-704915e37f.jsonl",
+      "records": 700,
+      "sha256": "cf2611bd7eb3b3b50f69dedb4f376c759a434f0dd76e1413e33b8ff25f332697"
+    },
+    {
+      "bytes": 1501984,
+      "path": "data/firmware-13.60/newtonsoftjsonplaystation-e492f8c52d.jsonl",
+      "records": 4016,
+      "sha256": "468528994b213a3adf2920fe7baeeca1711cccfaa11468b7894144288aa0e1d1"
+    },
+    {
+      "bytes": 305860,
+      "path": "data/firmware-13.60/reactnativecomponentsvsh-8eaf7aa7d4.jsonl",
+      "records": 820,
+      "sha256": "c5ccf88906f957b4bb5284a28a58b5536208d083d3eddfe17668eb094503591d"
+    },
+    {
+      "bytes": 104064,
+      "path": "data/firmware-13.60/reactnativecomponentsvshpsnowplayer-422b66efc2.jsonl",
+      "records": 271,
+      "sha256": "ab71ad2a6d87480f2ff155584e53aec83feb61a82707ca34ae92d783fda482b1"
+    },
+    {
+      "bytes": 2483810,
+      "path": "data/firmware-13.60/reactnativemodulesvsh-8398f7dd90.jsonl",
+      "records": 6713,
+      "sha256": "2aa142465016debdb337d08dc5db84b783db43181cbcfe47605dbcb3e9dbf1a8"
+    },
+    {
+      "bytes": 396750,
+      "path": "data/firmware-13.60/reactnativemodulesvshmedia-05a1595d19.jsonl",
+      "records": 1058,
+      "sha256": "806e50d9f5ea199f7b5ad47721513616b4802ca3b897445752d81fb3ae20b228"
+    },
+    {
+      "bytes": 73521,
+      "path": "data/firmware-13.60/reactnativemodulesvshmediaplayercontents-b07f88f97d.jsonl",
+      "records": 189,
+      "sha256": "56da1d1b12d8852c5e6f588095985816b7451c29fba6270b44c87c8369d26249"
+    },
+    {
+      "bytes": 160401,
+      "path": "data/firmware-13.60/reactnativemodulesvshpsnowplayer-46d76f6baf.jsonl",
+      "records": 421,
+      "sha256": "30b5cf0d34bb2005a612e76d7016be9d87d3896a95d8d533748df21cbc4130d4"
+    },
+    {
+      "bytes": 11049,
+      "path": "data/firmware-13.60/reactnativemodulesvshtelemetrynq-3d5ed77827.jsonl",
+      "records": 29,
+      "sha256": "1eec932d39bf7d1906048c5ca25355d6aaafcac32c4712d76cc09c28dc6d75da"
+    },
+    {
+      "bytes": 818552,
+      "path": "data/firmware-13.60/reactnativemodulesvshtrophy-5d20d24034.jsonl",
+      "records": 2177,
+      "sha256": "abd125cd680e5f9d1a99a3513fb848cc071c06874483805d9f4c1a6b707873e4"
+    },
+    {
+      "bytes": 215808,
+      "path": "data/firmware-13.60/reactnativemodulesvshwebapplauncher-223df25e0b.jsonl",
+      "records": 562,
+      "sha256": "15eb68ccc20b4a39997adcbb26afc585a9bfb5f59517de2507c0f36004a4ccd8"
+    },
+    {
+      "bytes": 3965412,
+      "path": "data/firmware-13.60/reactnativepui-b7120c5a4a.jsonl",
+      "records": 10924,
+      "sha256": "5bdfaa61a56663a7d3d2b4c7c242eb0bb52265b3967aca175f401446167737ed"
+    },
+    {
+      "bytes": 365310,
+      "path": "data/firmware-13.60/reactnativevshcommon-c2e77e07a7.jsonl",
+      "records": 990,
+      "sha256": "d5df80361a6efe8c7639bc40ba545847cb81248eadd84b4ffb91384144cb4efe"
+    },
+    {
+      "bytes": 1675832,
+      "path": "data/firmware-13.60/reactivepropertyplaystation-e05dd214fa.jsonl",
+      "records": 4457,
+      "sha256": "5f7523d707c983862b3fafa9cb7e0df31513f046f97949b53f7c8b28f101c0fe"
+    },
+    {
+      "bytes": 97047,
+      "path": "data/firmware-13.60/scefacebookcsslayout-ea5d40d536.jsonl",
+      "records": 263,
+      "sha256": "0ffaaf29af5d3e36e1912dd3635fef0de1793fb48f9521f1b890f967d4a958f8"
+    },
+    {
+      "bytes": 11280,
+      "path": "data/firmware-13.60/sceplaystationbclextensions-4546fd5f6b.jsonl",
+      "records": 30,
+      "sha256": "2b33787fd896da6781c9d15270b5679feeb2c00d2072813ada7a387ff8d0fc42"
+    },
+    {
+      "bytes": 671610,
+      "path": "data/firmware-13.60/sceplaystationcore-15982745ca.jsonl",
+      "records": 1830,
+      "sha256": "56db1f5bf7b13348ca45fe60ba97873b5a7be3a9930330636cc13e01ac81a955"
+    },
+    {
+      "bytes": 4392,
+      "path": "data/firmware-13.60/sceplaystationicu-efddcefc3f.jsonl",
+      "records": 12,
+      "sha256": "7a679c69b237a78bffb80b708f8354e040bb25861710c0772c0070e11c70a126"
+    },
+    {
+      "bytes": 168726,
+      "path": "data/firmware-13.60/sceplaystationime-720e6ab11a.jsonl",
+      "records": 461,
+      "sha256": "0e0cd963e09b6e9a5a93e72032ecc352d4625704aaf30f71c716d03d69c03e35"
+    },
+    {
+      "bytes": 180931,
+      "path": "data/firmware-13.60/sceplaystationjson-61eecfbeb0.jsonl",
+      "records": 493,
+      "sha256": "de34446e0e0e2aa9b7e710d0e81bc3668ffecf96c91a74f6d4a1f47368919933"
+    },
+    {
+      "bytes": 124016,
+      "path": "data/firmware-13.60/sceplaystationorbis-0fe56e8022.jsonl",
+      "records": 337,
+      "sha256": "0dbc97ee0ea119126f791a69d8d10673befe131ba367dd414b14c68c4696ab1e"
+    },
+    {
+      "bytes": 42262,
+      "path": "data/firmware-13.60/sceplaystationorbisspeech-f0c716a62b.jsonl",
+      "records": 113,
+      "sha256": "fbdf3336d0f51c89560ec2d36494f07e3407c2483dd62fb4fae6315e444adb9f"
+    },
+    {
+      "bytes": 6541152,
+      "path": "data/firmware-13.60/sceplaystationpui-d3112adca9.jsonl",
+      "records": 17872,
+      "sha256": "5aa95b2623efbabc62789e04789e691d056fbe61d478eb707e6ad01c287e54b8"
+    },
+    {
+      "bytes": 1122,
+      "path": "data/firmware-13.60/sceplaystationpuiplatform-73bafd9284.jsonl",
+      "records": 3,
+      "sha256": "4665c3906b778225cc5aaa51a7dc9ca06e741f42b478eb160093ac5597331eec"
+    },
+    {
+      "bytes": 19656,
+      "path": "data/firmware-13.60/sceplaystationspeechsystemtts-23b32fab53.jsonl",
+      "records": 52,
+      "sha256": "937a4f2926e1896638b97887d937baa448326e1bab70cf0f3b35eafa25015100"
+    },
+    {
+      "bytes": 12342,
+      "path": "data/firmware-13.60/scevshaccessor-02933228e2.jsonl",
+      "records": 34,
+      "sha256": "bdd364cfe320931de329be55419f98c1234b04487101ad829c3479bc46b28e24"
+    },
+    {
+      "bytes": 809935,
+      "path": "data/firmware-13.60/scevshaccessordb-ea0d397a96.jsonl",
+      "records": 2219,
+      "sha256": "e9bf986734bbdc5ece73ec19fbbd8224c9506124320699c53d31ee1448e9dd85"
+    },
+    {
+      "bytes": 25278,
+      "path": "data/firmware-13.60/scevshaccessordbmediaeventlistener-0e43b66176.jsonl",
+      "records": 66,
+      "sha256": "b008f96810ccc8a95cdd8013116e2d1ef6adef184f1ac531ea120e20c91704fa"
+    },
+    {
+      "bytes": 16695,
+      "path": "data/firmware-13.60/scevshaccessordbnotify-bff9b94cf7.jsonl",
+      "records": 45,
+      "sha256": "f499134ae1df41eb59b6fdcb4ce81ba5614db95ef0a9036da73ca46858241687"
+    },
+    {
+      "bytes": 6768,
+      "path": "data/firmware-13.60/scevshappcontentutilwrapper-0a6a066cb5.jsonl",
+      "records": 18,
+      "sha256": "55c86131360bfe5cd40992a1878967d12aea01e3e862eee40b20d3f8293d8778"
+    },
+    {
+      "bytes": 63491,
+      "path": "data/firmware-13.60/scevshappdbwrapper-0a6ed1005d.jsonl",
+      "records": 173,
+      "sha256": "4b5b0f68a225d23cf8ff941a8a1e96da45d65effcdb91ff8b3f07964d0876284"
+    },
+    {
+      "bytes": 161509,
+      "path": "data/firmware-13.60/scevshappinstutilwrapper-43c93dc112.jsonl",
+      "records": 433,
+      "sha256": "271d40bbf2e1357820b9de6645ef51545f336c635942e1bfe6a1afe89f91a70b"
+    },
+    {
+      "bytes": 73481,
+      "path": "data/firmware-13.60/scevshautomounterwrapper-72735b4b3e.jsonl",
+      "records": 197,
+      "sha256": "39f117dd11608623c737b3f91a8194e4a41f783a9def07a16aa598964aa05b99"
+    },
+    {
+      "bytes": 18600,
+      "path": "data/firmware-13.60/scevshbackuprestoreutil-4ec5dc0aa9.jsonl",
+      "records": 50,
+      "sha256": "e0e2aa257ff483550048a8ab103d8dbb0e07fd5a811b71146f53176f5d723f1b"
+    },
+    {
+      "bytes": 2928,
+      "path": "data/firmware-13.60/scevshcloudclient-3d3aa02f19.jsonl",
+      "records": 8,
+      "sha256": "080cc42167abbee23ef321db60f86db25d053ca2d010f934228e1ac2abcff0b3"
+    },
+    {
+      "bytes": 6992,
+      "path": "data/firmware-13.60/scevshcsbmgrwrapper-e999fe822b.jsonl",
+      "records": 19,
+      "sha256": "8fabad5d14616bcfe7a6f9df1216289d5d1e654be2f48baf29e3e7135d163381"
+    },
+    {
+      "bytes": 39636,
+      "path": "data/firmware-13.60/scevshdatatransfer-d4c0f9c432.jsonl",
+      "records": 108,
+      "sha256": "fce52103764d053c14fc309dcee4ff1a40de6a816e07467f2ff877f7292f38e6"
+    },
+    {
+      "bytes": 93375,
+      "path": "data/firmware-13.60/scevshdbpreparationwrapper-da49c4ba64.jsonl",
+      "records": 249,
+      "sha256": "fdce0f59394ea9bb345bfb96d5bc9b50a660e4e8d2517a5798181494e002069a"
+    },
+    {
+      "bytes": 4548,
+      "path": "data/firmware-13.60/scevshdbrecoveryutilitywrapper-b79393adf3.jsonl",
+      "records": 12,
+      "sha256": "0df8c729bfe736e1ed8cc1123e4789fd5452cc4e4de0b92ec4ef480f2c13a483"
+    },
+    {
+      "bytes": 54087,
+      "path": "data/firmware-13.60/scevshdbshared-14c177d61f.jsonl",
+      "records": 149,
+      "sha256": "03b1b92ec765d83f7d47343332515f091812c3358e21610e51004749b1c1ffd8"
+    },
+    {
+      "bytes": 71905,
+      "path": "data/firmware-13.60/scevshdiscplayer-48b319c4f4.jsonl",
+      "records": 197,
+      "sha256": "eb3e2e2f5e3841f79f49c9af153432bd3dc33420f30fa9e62d263fad261edc6e"
+    },
+    {
+      "bytes": 638620,
+      "path": "data/firmware-13.60/scevshdiscordaccessor-3ee9b2fc9e.jsonl",
+      "records": 1726,
+      "sha256": "b380e2cf492955701bc7869eab982ea8ba4d480acbe0a915c9d1992afaedca50"
+    },
+    {
+      "bytes": 7917,
+      "path": "data/firmware-13.60/scevsherrordialogutilwrapper-b1e8751b99.jsonl",
+      "records": 21,
+      "sha256": "ad5d00da77af4c1fa50d7c9bc9b927db80b93c22e130d748e1e46f0a7f578124"
+    },
+    {
+      "bytes": 195776,
+      "path": "data/firmware-13.60/scevshglsnativecall-e7e1367624.jsonl",
+      "records": 532,
+      "sha256": "606e84f833ada7a88e477b825da49080b6ba0b8136687be44a530cfe44170653"
+    },
+    {
+      "bytes": 75538,
+      "path": "data/firmware-13.60/scevshime-21edf3f214.jsonl",
+      "records": 211,
+      "sha256": "25f435902dff14cde1b8fd53918a272f884457e0ee424bf9ec8930216ace84af"
+    },
+    {
+      "bytes": 54908,
+      "path": "data/firmware-13.60/scevshkernelsyswrapper-45f46c2e72.jsonl",
+      "records": 148,
+      "sha256": "8167d8c08bcda2b496e463d416fb62ccfdb8e1d95bc2d647644ca8bcfbcde3e6"
+    },
+    {
+      "bytes": 39483,
+      "path": "data/firmware-13.60/scevshlncutilwrapper-5451689ed3.jsonl",
+      "records": 107,
+      "sha256": "a612bfdccb91c245c53cbab51467ca0d76e0d7ed710f4d1766966679c572d68a"
+    },
+    {
+      "bytes": 364854,
+      "path": "data/firmware-13.60/scevshlx-c6a5e62409.jsonl",
+      "records": 1022,
+      "sha256": "fab5b38057e4b06955de2f5188e9bdf70dcc49d76cd3efa3a27179164dc5c430"
+    },
+    {
+      "bytes": 3780,
+      "path": "data/firmware-13.60/scevshmarlindownloaderwrapper-e08558867e.jsonl",
+      "records": 10,
+      "sha256": "dc79ee08f02f3853d9d1b18efcb3275f5a19bc008d2d89a9f75f23e988fcd786"
+    },
+    {
+      "bytes": 858865,
+      "path": "data/firmware-13.60/scevshmessagesaccessor-ba1ed492fa.jsonl",
+      "records": 2315,
+      "sha256": "3a50da8047b85f3d57543ecaba860ef32ade06992b4fe2321832c136af2bdda8"
+    },
+    {
+      "bytes": 71511,
+      "path": "data/firmware-13.60/scevshmimetype-7a4233e5b1.jsonl",
+      "records": 197,
+      "sha256": "1ff6b828e6b1009fe600e3c98e17ebce8e37d2e7617d463917245b158b67c0e9"
+    },
+    {
+      "bytes": 17158,
+      "path": "data/firmware-13.60/scevshmorpheusupdwrapper-7372472c2b.jsonl",
+      "records": 46,
+      "sha256": "dba8f1507481a65a416f0493d9e798eeba6ef2575646bb6b08a18b7a9529b07d"
+    },
+    {
+      "bytes": 15330,
+      "path": "data/firmware-13.60/scevshmygamelist-d14f7b1c55.jsonl",
+      "records": 42,
+      "sha256": "66e8363d90c18b2da9e558acff24372835875d919e040128a08caa1de35f219b"
+    },
+    {
+      "bytes": 4476,
+      "path": "data/firmware-13.60/scevshnotificationclient-13cc2c3765.jsonl",
+      "records": 12,
+      "sha256": "dd9d9b9d0672abeaa9e386c445ffed43f944f8c3dc74527bc83d4deba4d668dd"
+    },
+    {
+      "bytes": 12376,
+      "path": "data/firmware-13.60/scevshnpappinfo-d57f19349c.jsonl",
+      "records": 34,
+      "sha256": "1b3983930f9798267eb945fe014f3c42f8584f52f2c65c1350b5e289b2bad1ab"
+    },
+    {
+      "bytes": 6290,
+      "path": "data/firmware-13.60/scevshnpapplaunchlink-7026487998.jsonl",
+      "records": 17,
+      "sha256": "0c7e8889debe026ae4d4c955d2e3d297af0cb1f4366eb2cd7639840874385050"
+    },
+    {
+      "bytes": 6307,
+      "path": "data/firmware-13.60/scevshnpapplaunchlink2-0ea9a4882d.jsonl",
+      "records": 17,
+      "sha256": "ec31709176f99d7365f673462f58454ccd1a7fc5e753e3c7a607726981179a23"
+    },
+    {
+      "bytes": 65160,
+      "path": "data/firmware-13.60/scevshnpasm-ee288cb1fa.jsonl",
+      "records": 181,
+      "sha256": "9bb056f4f50202f7a89078c91e2019e7e64d2db3626d784f24d5aec75bf5148f"
+    },
+    {
+      "bytes": 6534,
+      "path": "data/firmware-13.60/scevshnpcommon-6a830df778.jsonl",
+      "records": 18,
+      "sha256": "1851d550c657af8e0fa078f2da64f2f22f42ce1f23646956c475f7718c6ba347"
+    },
+    {
+      "bytes": 23855,
+      "path": "data/firmware-13.60/scevshnpgameintent-dda24ae9a6.jsonl",
+      "records": 65,
+      "sha256": "023c582c0c029d3a3b45e22e71ca45e27cc769af3eadf0a5fa170d437a35509d"
+    },
+    {
+      "bytes": 8395,
+      "path": "data/firmware-13.60/scevshnpidmapper-478cad2324.jsonl",
+      "records": 23,
+      "sha256": "5a43ef347e728464352405d4bc9dc2cd7c9b82ddc2b84f6233aecc77617fe082"
+    },
+    {
+      "bytes": 5040,
+      "path": "data/firmware-13.60/scevshnpiga-f67cad9f56.jsonl",
+      "records": 14,
+      "sha256": "2f7e90a0bc28821808abf512467d10cc194b76b35ff6c2dd794737d8f820753f"
+    },
+    {
+      "bytes": 109200,
+      "path": "data/firmware-13.60/scevshnpmanager-8330db868f.jsonl",
+      "records": 300,
+      "sha256": "71e9ef06da9f366d081dd99f481c3af7e815569204a663cc09481b16d81621fc"
+    },
+    {
+      "bytes": 10830,
+      "path": "data/firmware-13.60/scevshnppapc-a4a9b2cc7b.jsonl",
+      "records": 30,
+      "sha256": "0a272a86cc99265ba68e252a581ca350a2c651f6dd0e3a799b4f11062506992c"
+    },
+    {
+      "bytes": 7581,
+      "path": "data/firmware-13.60/scevshnppbtc-3796463106.jsonl",
+      "records": 21,
+      "sha256": "f106ff6a6d1df2fd940cce223017b14753504a4264a7d0a56c718273a38c4977"
+    },
+    {
+      "bytes": 5888,
+      "path": "data/firmware-13.60/scevshnppreordermgr-f27e7a72bd.jsonl",
+      "records": 16,
+      "sha256": "46e63d71126744f8d6c3693fd1ba113bce3f04c46487f90528432dde508ba236"
+    },
+    {
+      "bytes": 60922,
+      "path": "data/firmware-13.60/scevshnprifmanager-11c20e4c1a.jsonl",
+      "records": 166,
+      "sha256": "0f28da4c04bfa5c504c6ad9af05e92ae55865fde926bea0daf2d3ac252c78155"
+    },
+    {
+      "bytes": 8904,
+      "path": "data/firmware-13.60/scevshnpservicechecker-6d4d77f327.jsonl",
+      "records": 24,
+      "sha256": "fb2ff7e3a42cadc8e1d39be342924b65eb376f599d5f464f8c43444e3861d21d"
+    },
+    {
+      "bytes": 6696,
+      "path": "data/firmware-13.60/scevshnpservicechecker2-0a2363f17f.jsonl",
+      "records": 18,
+      "sha256": "b87a008550f3a2dfeea7560d52ae92cd2ecc39806b08723c86265ef49ac2bd76"
+    },
+    {
+      "bytes": 10388,
+      "path": "data/firmware-13.60/scevshnpsessionservice-90ff4d0c20.jsonl",
+      "records": 28,
+      "sha256": "3aba57a67c3a25d70a5538c0a9969da96826d48b27de51d344c15e05cfdbb3cf"
+    },
+    {
+      "bytes": 10800,
+      "path": "data/firmware-13.60/scevshnpsns-add3cbdf1a.jsonl",
+      "records": 30,
+      "sha256": "64077b7eba31d7b0cfd59dc906faedb875bbf1592f66cc5644015c77cf79d877"
+    },
+    {
+      "bytes": 37905,
+      "path": "data/firmware-13.60/scevshnptmdb-cd3b89bb2f.jsonl",
+      "records": 105,
+      "sha256": "6e09089499e7ae1494be1b4e58b3df32051aca77fbc69448262a77088a5280df"
+    },
+    {
+      "bytes": 36300,
+      "path": "data/firmware-13.60/scevshnptrophy-7668e4a59d.jsonl",
+      "records": 100,
+      "sha256": "9717a895be856624073a680334961998c08e0de8550fb7d2464a75c121f8dc0d"
+    },
+    {
+      "bytes": 39676,
+      "path": "data/firmware-13.60/scevshnptrophy2-2cc158779f.jsonl",
+      "records": 109,
+      "sha256": "798f5f327cbfc9bc372f8fdfdab210b055ead3f41c372b1738ff71c13c3db29b"
+    },
+    {
+      "bytes": 664461,
+      "path": "data/firmware-13.60/scevshnptrophyaccessor-dc917c782a.jsonl",
+      "records": 1791,
+      "sha256": "b1737de1a013c08723900ca3a80581cce6ca04d220c943352cb5927d4694b83d"
+    },
+    {
+      "bytes": 43920,
+      "path": "data/firmware-13.60/scevshnpuds-ed81b0d435.jsonl",
+      "records": 122,
+      "sha256": "c48a0f1f0bf53c8626f94409570f306b0f8972b8e38541852612fd94e6a48155"
+    },
+    {
+      "bytes": 89298,
+      "path": "data/firmware-13.60/scevshnpwebapi-88392d540a.jsonl",
+      "records": 246,
+      "sha256": "d1b9313bc6fbc764175ca50d6bb7ebc3e65debcd3c6aef12bf0fb9d6d9cd5b12"
+    },
+    {
+      "bytes": 75712,
+      "path": "data/firmware-13.60/scevshnpwebapi2-e01f8aa0ec.jsonl",
+      "records": 208,
+      "sha256": "f374382ba1a56b7198321db3cb51aef51a526b22d1f618e0f9d4934f3f6914fa"
+    },
+    {
+      "bytes": 34125,
+      "path": "data/firmware-13.60/scevshorbisabstractstorage-639148a623.jsonl",
+      "records": 91,
+      "sha256": "c84e492d3cbbab064a4976abfd9cb0e00e43b61da0b0c7f9d83fa450defc4d50"
+    },
+    {
+      "bytes": 46228,
+      "path": "data/firmware-13.60/scevshorbisbgft-fa2ea4f934.jsonl",
+      "records": 127,
+      "sha256": "e5271843165055c2fb57090a80250dbc3ce287e91235b90185f0804fe68b198d"
+    },
+    {
+      "bytes": 222156,
+      "path": "data/firmware-13.60/scevshorbiscontentmanager-e9079799f4.jsonl",
+      "records": 594,
+      "sha256": "62f4e8e339de00f9979f3d43d42265ad83059d46f6292736701a11a015527d46"
+    },
+    {
+      "bytes": 18900,
+      "path": "data/firmware-13.60/scevshpadcontrollerupdwrapper-11e56ba7a7.jsonl",
+      "records": 50,
+      "sha256": "549b9537d145e02a4bd52305e7b0c0708798df04bc21ebdb1df27fa517e610d8"
+    },
+    {
+      "bytes": 4392,
+      "path": "data/firmware-13.60/scevshpartycommon-ed98ef27e3.jsonl",
+      "records": 12,
+      "sha256": "302cccbbe30c0472b41070e243694f719ad81985546bd8bb69889d0dd3d55634"
+    },
+    {
+      "bytes": 12540,
+      "path": "data/firmware-13.60/scevshpatchcheckerclientwrapper-ce932b8690.jsonl",
+      "records": 33,
+      "sha256": "0e9e6dd4458055cd4f083b253953dfc1b69aec2c7765b740aa8de9f5c2560cc7"
+    },
+    {
+      "bytes": 160746,
+      "path": "data/firmware-13.60/scevshprofilecache-4b6a27cc8b.jsonl",
+      "records": 438,
+      "sha256": "e9808154623da82856882af39e69ed935b0d6df7422da4044c57fe4d45030f55"
+    },
+    {
+      "bytes": 34028,
+      "path": "data/firmware-13.60/scevshpsnutil-88e08b9759.jsonl",
+      "records": 94,
+      "sha256": "61df2732a1532321ea4b4b8692467ad5e3f2ec552db7c9e630f26ac53cf2bce5"
+    },
+    {
+      "bytes": 19602,
+      "path": "data/firmware-13.60/scevshregistry-28d2039dfb.jsonl",
+      "records": 54,
+      "sha256": "1e1902e11fe535405a2c751e1c97c289905d34a3eb6cefcc8a5ede0ffbfd4a2b"
+    },
+    {
+      "bytes": 25915,
+      "path": "data/firmware-13.60/scevshremoteplay-d03e5e9e84.jsonl",
+      "records": 71,
+      "sha256": "760f523c6e9951bf934217746cab680afec31fcedcb4bd8c641d52b72a53c4dd"
+    },
+    {
+      "bytes": 1524,
+      "path": "data/firmware-13.60/scevshremoteplayclientipcwrapper-872176d98d.jsonl",
+      "records": 4,
+      "sha256": "cecaaece4e109aa8388b00182ef6665c655cc6f9b80c55f0226dba0205f8e271"
+    },
+    {
+      "bytes": 107051,
+      "path": "data/firmware-13.60/scevshresourcearbitrator-e31b3e3cf7.jsonl",
+      "records": 287,
+      "sha256": "d765d6c1db043812ac2f619fe0281a0be224e222ac3eb0269d487fb179f5364f"
+    },
+    {
+      "bytes": 23064,
+      "path": "data/firmware-13.60/scevshrnpsappmgrwrapper-c6c718f6c0.jsonl",
+      "records": 62,
+      "sha256": "25652ba59ddafd8fca4285ed5c5afdfb0eef04fc52ccfd71af8aab74a326a6a5"
+    },
+    {
+      "bytes": 281219,
+      "path": "data/firmware-13.60/scevshsqlite-34784b305f.jsonl",
+      "records": 779,
+      "sha256": "2af4fa86fddabce773f69db4cbda59d15cb0e016661c8ddc37187e6d104d2d13"
+    },
+    {
+      "bytes": 6552,
+      "path": "data/firmware-13.60/scevshsqliteaux-c7c6c22bcb.jsonl",
+      "records": 18,
+      "sha256": "0a2471f65d653c42cecb6b30e9585cd3c18f1436270baf7b08e922aadfcda338"
+    },
+    {
+      "bytes": 72150,
+      "path": "data/firmware-13.60/scevshsavedatawrapper-75e518b575.jsonl",
+      "records": 195,
+      "sha256": "08ef3fe1a9a1edc8bb032b2288231613d922e6ed7214b68541b1777a8adc93a5"
+    },
+    {
+      "bytes": 18870,
+      "path": "data/firmware-13.60/scevshsharelibwrapper-f597eaf9a6.jsonl",
+      "records": 51,
+      "sha256": "88163b2b7add8343159f6a72e0f00bb5078c6659a1d45fbd6d306876c3045b86"
+    },
+    {
+      "bytes": 2214,
+      "path": "data/firmware-13.60/scevshsharenpwrapper-9bddc22188.jsonl",
+      "records": 6,
+      "sha256": "334ac552302a01995e79cfb7f7e67fe45f1f44ea27405e27169ce27f90ff8398"
+    },
+    {
+      "bytes": 9802,
+      "path": "data/firmware-13.60/scevshshareserverpostwrapper-82af9f23e8.jsonl",
+      "records": 26,
+      "sha256": "ad30a8c655cbdd4140af238ec5c3e8679b71f2f8cc67d1bc54c01b7b18495e85"
+    },
+    {
+      "bytes": 8786,
+      "path": "data/firmware-13.60/scevshsharevideotranscoderwrapper-4f99ead377.jsonl",
+      "records": 23,
+      "sha256": "12f414980890c52ce0fed6d273ed27b27feb99f2c8e02c77118b7a75e78c5195"
+    },
+    {
+      "bytes": 193500,
+      "path": "data/firmware-13.60/scevshshellcoreutilwrapper-9dcab18729.jsonl",
+      "records": 516,
+      "sha256": "ad739a073417ef7e92810ef1f30f85b2da5e143704cc34a6d450e3cbe56216ad"
+    },
+    {
+      "bytes": 833266,
+      "path": "data/firmware-13.60/scevshshelluiappsystem-fea94664ab.jsonl",
+      "records": 2246,
+      "sha256": "3363a913d5b99dde4c927ce71b9a1ba46c4a81af703af44b7d9649068f069cbb"
+    },
+    {
+      "bytes": 483759,
+      "path": "data/firmware-13.60/scevshshelluibglayer-cb3e57f28a.jsonl",
+      "records": 1311,
+      "sha256": "7c6760bb411a035fd4a8bd2b55bab4dbf3372df0b48cf79b93a11e57681732e4"
+    },
+    {
+      "bytes": 145824,
+      "path": "data/firmware-13.60/scevshshelluibasesystem-ea26243f02.jsonl",
+      "records": 392,
+      "sha256": "e5ae59744bc11e007792c8df8b28b38e4b62c31aa9a110f2fdfa8ceb7243e115"
+    },
+    {
+      "bytes": 1107806,
+      "path": "data/firmware-13.60/scevshshelluibroadcast-7bdbba2f09.jsonl",
+      "records": 2986,
+      "sha256": "0577bbe52dc592903b5d2573b93f59a7ffd9331d017e1f2b8386c0831ff751e5"
+    },
+    {
+      "bytes": 218120,
+      "path": "data/firmware-13.60/scevshshelluicapturecontentutil-c082cd73bf.jsonl",
+      "records": 574,
+      "sha256": "fa609a3f6e0c6f4343163fd8401d23fc08610904c0ff6fb81248c0d648d99af0"
+    },
+    {
+      "bytes": 1266335,
+      "path": "data/firmware-13.60/scevshshelluicapturemenu-536dfdad10.jsonl",
+      "records": 3395,
+      "sha256": "5d410d24afac499172ff33c7d73879d3d4848aeed024102efb9a2d8554e69af1"
+    },
+    {
+      "bytes": 1435180,
+      "path": "data/firmware-13.60/scevshshelluiime-13de44ef7c.jsonl",
+      "records": 3932,
+      "sha256": "0c295ca8b492f35327b96d874214bd249c1e74bb6a38b0fe326c6c2396b071fd"
+    },
+    {
+      "bytes": 2937008,
+      "path": "data/firmware-13.60/scevshshelluilegacy-31cc21e0c9.jsonl",
+      "records": 7981,
+      "sha256": "6f60b623dcd2ac9d3c51d2104994d577d82f96580aa5232da7100bc29d994c85"
+    },
+    {
+      "bytes": 1683500,
+      "path": "data/firmware-13.60/scevshshelluiloginmgr-b891469f8d.jsonl",
+      "records": 4550,
+      "sha256": "d3bdc52dd36713503a49b62ff3eff4957a11111bc18545cfea17b00558c135be"
+    },
+    {
+      "bytes": 167388,
+      "path": "data/firmware-13.60/scevshshelluiloginmgrwrapper-e4b4ddd429.jsonl",
+      "records": 444,
+      "sha256": "c200604995f94f8a1ce27449380de9f5e79edf570f5fd2eb4cacca6c826f4108"
+    },
+    {
+      "bytes": 184008,
+      "path": "data/firmware-13.60/scevshshelluiprofilecache-e5080850f0.jsonl",
+      "records": 492,
+      "sha256": "bf02fe7fff0de1ee07080426ea982dc8e7f42d84fd3cac092a175c76ab6ae797"
+    },
+    {
+      "bytes": 368856,
+      "path": "data/firmware-13.60/scevshshelluiquickimageedit-dda837bbed.jsonl",
+      "records": 981,
+      "sha256": "6fd18ded45e951fe8ce046687dfba6c81928a2e6269b8a5c28ace6b141f6886f"
+    },
+    {
+      "bytes": 103776,
+      "path": "data/firmware-13.60/scevshshelluiquickvideoedit-3ff2c1fd1f.jsonl",
+      "records": 276,
+      "sha256": "18400ddd52f1827e8cfee05a5b94a7b18ac48faa9a7c417ecf6f3e62343a0fe9"
+    },
+    {
+      "bytes": 883311,
+      "path": "data/firmware-13.60/scevshshelluireactnativeapps-cd0f7173da.jsonl",
+      "records": 2343,
+      "sha256": "7530be47fb52c22e458528448a49e68f5d5dd691a93a882b28e5d1500870e181"
+    },
+    {
+      "bytes": 2434971,
+      "path": "data/firmware-13.60/scevshshelluireactnativeshellapp-79c7bce19d.jsonl",
+      "records": 6391,
+      "sha256": "b0ccf5477857d192f911ea2578e678c78de8beaecbef4b0ec3c84d8e5e267e85"
+    },
+    {
+      "bytes": 4081,
+      "path": "data/firmware-13.60/scevshshelluiretriever-e06c9a39f4.jsonl",
+      "records": 11,
+      "sha256": "1bc686e64febe294bd3d4e87e3637e20e2b8e53b055b9afa0d74d1fab1e70978"
+    },
+    {
+      "bytes": 207808,
+      "path": "data/firmware-13.60/scevshshelluisharevideotranscoder-12c71ebfd3.jsonl",
+      "records": 544,
+      "sha256": "7818ac9da4f0d46839f624b605ccaaf542011c1a1b6dde36d5cf35cd9b151803"
+    },
+    {
+      "bytes": 131364,
+      "path": "data/firmware-13.60/scevshshelluisticker-ae1cca2522.jsonl",
+      "records": 356,
+      "sha256": "facd99a1eb3059ec55b00ca4b683b04e7024cbaaa46c5ec03b32c699fd42dc5d"
+    },
+    {
+      "bytes": 109707,
+      "path": "data/firmware-13.60/scevshshelluistickeraccessor-f36ca5d9da.jsonl",
+      "records": 291,
+      "sha256": "ced37d7559b79af0a290a62c1d16bb930f93947359987f431d0e291c77659952"
+    },
+    {
+      "bytes": 847065,
+      "path": "data/firmware-13.60/scevshshelluisystemmodaldialog-32beb8a63d.jsonl",
+      "records": 2235,
+      "sha256": "7932cf4a08bd6424cda0d0d8db4b1bc1fcf8bd274e8ef35e597d60c45cb71325"
+    },
+    {
+      "bytes": 145332,
+      "path": "data/firmware-13.60/scevshshelluitheme-8ca8558fd8.jsonl",
+      "records": 396,
+      "sha256": "6eaa8a5311f8a2e55a382aad88a435c376417f05d3d7251e7c0a25acd9013a3a"
+    },
+    {
+      "bytes": 215715,
+      "path": "data/firmware-13.60/scevshshelluiugc-dae10d8688.jsonl",
+      "records": 591,
+      "sha256": "9ec0c2ff4b66d47e2b1857c8e438b2a8d3a06903f24ea4f290345c89afebff26"
+    },
+    {
+      "bytes": 9325,
+      "path": "data/firmware-13.60/scevshshelluiutilwrapper-0752320d43.jsonl",
+      "records": 25,
+      "sha256": "96d23432568d83290aa1a0cc0cfe960624ddd6cee6a21930b46ac51511fe2f50"
+    },
+    {
+      "bytes": 311538,
+      "path": "data/firmware-13.60/scevshshelluivisionrecognition-7c4e1aab68.jsonl",
+      "records": 822,
+      "sha256": "6f7e3c0d8e6bcb69a55f434cdefee91d40cbf44c322526b142b010f83d017ab2"
+    },
+    {
+      "bytes": 445875,
+      "path": "data/firmware-13.60/scevshshelluivoiceandagent-63c9f4882d.jsonl",
+      "records": 1189,
+      "sha256": "fdf12623a865eb810216992a2565edfac46df3caafdc084c6e35d4542aeec23e"
+    },
+    {
+      "bytes": 77168,
+      "path": "data/firmware-13.60/scevshshelluivoicechat-2311d7775e.jsonl",
+      "records": 208,
+      "sha256": "0eb4a857bf213e695d0b72987dd30d0d463938cff9e9a83629d9689e908662e0"
+    },
+    {
+      "bytes": 74868,
+      "path": "data/firmware-13.60/scevshsl2sl2client-09630c4c27.jsonl",
+      "records": 204,
+      "sha256": "c469837dd34320993954f53d45ba4ac878e8d559eacebcebdb15d91a2dd7056c"
+    },
+    {
+      "bytes": 18717,
+      "path": "data/firmware-13.60/scevshsl2sl2common-4fde3c5f39.jsonl",
+      "records": 51,
+      "sha256": "34981a4c2064764d57ac8902f2e6f0a719fdffa726f905422b60182ac0af6ead"
+    },
+    {
+      "bytes": 11010,
+      "path": "data/firmware-13.60/scevshsl2sl2manage-257a0e8341.jsonl",
+      "records": 30,
+      "sha256": "4e7852d0e9013bc32c325676126b343fdc403011064853729a66a71983235713"
+    },
+    {
+      "bytes": 193648,
+      "path": "data/firmware-13.60/scevshsysbridge-783c6fc587.jsonl",
+      "records": 532,
+      "sha256": "c332f06cad408a171d9f4f45bf1c5cb9a4cae136f103b9123b98a811f632fb11"
+    },
+    {
+      "bytes": 33948,
+      "path": "data/firmware-13.60/scevshsysutilwrapper-e2985ebbfc.jsonl",
+      "records": 92,
+      "sha256": "f76e9b876368c0f1abda486cf4752d661b4b88ad5bb71607d90449be8683da6e"
+    },
+    {
+      "bytes": 6714,
+      "path": "data/firmware-13.60/scevshsysfileutilwrapper-c84ec07fe5.jsonl",
+      "records": 18,
+      "sha256": "09eb013ca69f47eaadaf846cbe4cc8784fa286bd8850872a4f9e613a37b2088b"
+    },
+    {
+      "bytes": 3402,
+      "path": "data/firmware-13.60/scevshsystemloggerutilwrapper-fba9877ede.jsonl",
+      "records": 9,
+      "sha256": "6365f4a835e0c2cd1dc1e1907c88aa4806c9d54800955d43e7e3dfce0996850e"
+    },
+    {
+      "bytes": 68068,
+      "path": "data/firmware-13.60/scevshsystemloggerwrapper-6e6d004b9a.jsonl",
+      "records": 182,
+      "sha256": "496d506757097167b8c5816f4d22d0db1e55d0e3d4d673c594240cbb82861878"
+    },
+    {
+      "bytes": 120240,
+      "path": "data/firmware-13.60/scevshtheme-0c06ba7aa2.jsonl",
+      "records": 334,
+      "sha256": "6ff44591fdb24db23351421cb6f5756417ac20d43f2e26a6fb03378629c7e7df"
+    },
+    {
+      "bytes": 512640,
+      "path": "data/firmware-13.60/scevshuilib-679cbe60f0.jsonl",
+      "records": 1424,
+      "sha256": "b1891cbfaefc000bd931c19651212ef43d61f9e0fe887365ba065f85a49d1e9a"
+    },
+    {
+      "bytes": 66750,
+      "path": "data/firmware-13.60/scevshupdateservicewrapper-41d3df3203.jsonl",
+      "records": 178,
+      "sha256": "24b0382ac22469014f85650df7ce4ba7e333f4a85b001429aaa6184cdca17ad9"
+    },
+    {
+      "bytes": 13392,
+      "path": "data/firmware-13.60/scevshurlconfigresolver-6647aa2720.jsonl",
+      "records": 36,
+      "sha256": "0fa097f53514e85662c421ddcab0b73f930a56c495168863417e4d70995eb006"
+    },
+    {
+      "bytes": 98050,
+      "path": "data/firmware-13.60/scevshusbstoragescene-51f0ec5cf7.jsonl",
+      "records": 265,
+      "sha256": "ce2f0e23eea4dc7def3a0a267abf0cf5b915ef397663025dbb4dfce4bf22eefa"
+    },
+    {
+      "bytes": 474456,
+      "path": "data/firmware-13.60/scevshuserservicewrapper-a55031c650.jsonl",
+      "records": 1272,
+      "sha256": "a72e0f8c69d10b2d4dc95caf33242b76250cb02cf2a7fe1823ee5acd6e2f382f"
+    },
+    {
+      "bytes": 95892,
+      "path": "data/firmware-13.60/scevshvideoplayer-4711c16fc7.jsonl",
+      "records": 262,
+      "sha256": "561a3dfcd07d2bd087ba256efc35495ea3b13829ed5b67481ce8b98a5ab6da17"
+    },
+    {
+      "bytes": 25568,
+      "path": "data/firmware-13.60/scevshvideorecordingwrapper-aff9151712.jsonl",
+      "records": 68,
+      "sha256": "f509d48c770a72b4d8df0a74721a5399e555f60bef551ac68bde8f233603ec32"
+    },
+    {
+      "bytes": 11968,
+      "path": "data/firmware-13.60/scevshvideoservicewrapper-8424aa613b.jsonl",
+      "records": 32,
+      "sha256": "b6d645c69ad13b65d88f415259c6fe49ce0713bf1156e7eaef9692841eae62f3"
+    },
+    {
+      "bytes": 386400,
+      "path": "data/firmware-13.60/scevshvoiceandagent-9840fb4af7.jsonl",
+      "records": 1050,
+      "sha256": "3b304bb0452538ed0a945ff8d5ba537c9c51603e7ac20bdb942548b74ba0dcb7"
+    },
+    {
+      "bytes": 9450,
+      "path": "data/firmware-13.60/scevshvoicemsgvoicemsgwrapper-7bdf0d0f70.jsonl",
+      "records": 25,
+      "sha256": "229aef640e09aaafed61bbb27bd9b8f083bfa9a9b16d72151cbe60e2103ed4f6"
+    },
+    {
+      "bytes": 18980,
+      "path": "data/firmware-13.60/scevshwebbrowser-18e3b58b7b.jsonl",
+      "records": 52,
+      "sha256": "4061284ed96653a4e8566df5e373fca0b97b13a9bd24b02592ae1d775a0048e7"
+    },
+    {
+      "bytes": 3770455,
+      "path": "data/firmware-13.60/system-6725e7bbcd.jsonl",
+      "records": 10621,
+      "sha256": "02cde015e0ebbc55a89979970594ac9465301585e86b845979f9db1f3ee23c4d"
+    },
+    {
+      "bytes": 984960,
+      "path": "data/firmware-13.60/systemcomponentmodelcomposition-a48983422b.jsonl",
+      "records": 2592,
+      "sha256": "c370ca302ab2fc4932d48db202340d16e3ea7a324b727cd8b9b439d69be1484d"
+    },
+    {
+      "bytes": 165888,
+      "path": "data/firmware-13.60/systemcomponentmodeldataannotations-367b5e1ce6.jsonl",
+      "records": 432,
+      "sha256": "bfb33f443fcea6594ca0c4e183b8335c6834f220e1bfb7b5ec22d461579b9d9a"
+    },
+    {
+      "bytes": 7083429,
+      "path": "data/firmware-13.60/systemcore-61e2792e51.jsonl",
+      "records": 19731,
+      "sha256": "682cdacbc55b675856bdb4232d87fbe396eb3c6158aa80cc5be5a47a5ee5ed29"
+    },
+    {
+      "bytes": 3011292,
+      "path": "data/firmware-13.60/systemdata-f2233b8ef3.jsonl",
+      "records": 8388,
+      "sha256": "513f4cf03690bc1202d32c0ffcca964e684af14c5e1d32db6ba9c9f7f4782fe8"
+    },
+    {
+      "bytes": 983228,
+      "path": "data/firmware-13.60/systemdataservicesclient-76cc3e9167.jsonl",
+      "records": 2636,
+      "sha256": "301559e055ea2c97aa261faff48ec5c90b0a686b7444fb1fb74594155a6e4e85"
+    },
+    {
+      "bytes": 271952,
+      "path": "data/firmware-13.60/systemiocompression-e43abdeadc.jsonl",
+      "records": 739,
+      "sha256": "a2fc419e6e292d99d499b5d52fd6313487710b0c50464706b7c25126d87d0520"
+    },
+    {
+      "bytes": 32508,
+      "path": "data/firmware-13.60/systemiocompressionfilesystem-ce6af95122.jsonl",
+      "records": 86,
+      "sha256": "10d13db492c76a9cf84e4022e423b890e3180eb441cd259551a059114b08e2ee"
+    },
+    {
+      "bytes": 2506,
+      "path": "data/firmware-13.60/systemnet-47a677ce5f.jsonl",
+      "records": 7,
+      "sha256": "316584d88bb372ba8c264f97db7855cf2a39a4478d11c1178ab34b9298bfb117"
+    },
+    {
+      "bytes": 464446,
+      "path": "data/firmware-13.60/systemnethttp-b87920352f.jsonl",
+      "records": 1283,
+      "sha256": "157cc7a3a613c3ec4d1dd0707532a310b6821993ab22f0182bddc87ad3190e36"
+    },
+    {
+      "bytes": 45384,
+      "path": "data/firmware-13.60/systemnethttpwebrequest-287408c3e8.jsonl",
+      "records": 122,
+      "sha256": "387e13816f2f65378c2519c6db1ada83015e7c9e0b5f2608d41205c18ed0760c"
+    },
+    {
+      "bytes": 149193,
+      "path": "data/firmware-13.60/systemnumerics-26e0881658.jsonl",
+      "records": 411,
+      "sha256": "36ffca9acdd1b7f12a43214f55f55a7e1661369f764a2bd56a6108b489fb4c3b"
+    },
+    {
+      "bytes": 856945,
+      "path": "data/firmware-13.60/systemreactivecore-857dfa946b.jsonl",
+      "records": 2335,
+      "sha256": "b4e36c2d2e8b7697a6348e0304917b40e1272bce321d1f16bb216f19844338ca"
+    },
+    {
+      "bytes": 9670817,
+      "path": "data/firmware-13.60/systemreactivelinq-c2b32e232c.jsonl",
+      "records": 26351,
+      "sha256": "50d38d190d0b998c9abcbda0140e02e7e081221c3f683f18ef526c0d824c4242"
+    },
+    {
+      "bytes": 1269000,
+      "path": "data/firmware-13.60/systemruntimeserialization-82ba60be39.jsonl",
+      "records": 3384,
+      "sha256": "8ee9de486be2b3dd48d4269c47519e491dad35d7aa2cfad7d3bab8c979598542"
+    },
+    {
+      "bytes": 981358,
+      "path": "data/firmware-13.60/systemservicemodel-cfda9ace44.jsonl",
+      "records": 2674,
+      "sha256": "8fa5ed5e60a4f3e61e8217fe95bb5fde9db14e39f43bfd79c7c7a02d2bcace6c"
+    },
+    {
+      "bytes": 768544,
+      "path": "data/firmware-13.60/systemservicemodelinternals-44b4d3e613.jsonl",
+      "records": 2044,
+      "sha256": "bfd212bb92cf3c2ad1178d70e6d00d5646ce7e0feb4f4ae9d59f0fe5ef79bdac"
+    },
+    {
+      "bytes": 123580,
+      "path": "data/firmware-13.60/systemservicemodelweb-3570505db7.jsonl",
+      "records": 334,
+      "sha256": "337e619ae23cb879018092a374850e2e40b3adbe5c00bd57c6f5690263ddc5b3"
+    },
+    {
+      "bytes": 28993,
+      "path": "data/firmware-13.60/systemtransactions-131a7ced63.jsonl",
+      "records": 79,
+      "sha256": "4c6d2e260a674e79305d4a5a0116afcafbab2777ea85e45f75faf929163cd0e4"
+    },
+    {
+      "bytes": 402600,
+      "path": "data/firmware-13.60/systemwebservices-a4afc55127.jsonl",
+      "records": 1100,
+      "sha256": "ab29b76ff4da2ad9f7c1be92bb6ab654174a01f02307530c9af9c2372af3862a"
+    },
+    {
+      "bytes": 3072714,
+      "path": "data/firmware-13.60/systemxml-ddb3c76a55.jsonl",
+      "records": 8583,
+      "sha256": "168c0f5fa5e30e931601f8b7c31391077b801ff4b64106abfe6280d472f91b88"
+    },
+    {
+      "bytes": 480374,
+      "path": "data/firmware-13.60/systemxmllinq-295c33c69a.jsonl",
+      "records": 1327,
+      "sha256": "aec554225e5abb1cd03c509a3137002a7cb5a7df6476c5446df813529252ee4e"
+    },
+    {
+      "bytes": 1975424,
+      "path": "data/firmware-13.60/app-a172cedcae.jsonl",
+      "records": 5612,
+      "sha256": "ff5eca4079a36d57c136d72201d8a1c2abfa45d701fe71e8e7b005a8ac86bc4e"
+    },
+    {
+      "bytes": 46894,
+      "path": "data/firmware-13.60/gaikai_player_lib-39005b5b6a.jsonl",
+      "records": 132,
+      "sha256": "725f16746ebc9e18413ac4b3094ab919fb98bbdf6255cf6f45759bedb930a206"
+    },
+    {
+      "bytes": 89862,
+      "path": "data/firmware-13.60/libaacs-124844e876.jsonl",
+      "records": 264,
+      "sha256": "9d17245362c9c7f208a41b8cb1b6dc32fb7e81b454beaa6f485884dc13a21d38"
+    },
+    {
+      "bytes": 340,
+      "path": "data/firmware-13.60/libbdplus-3ffc37d639.jsonl",
+      "records": 1,
+      "sha256": "805b7c6bc46f3771f96d665e15ec5dcee43e0ee932a91d759596f707f2862de9"
+    },
+    {
+      "bytes": 18391,
+      "path": "data/firmware-13.60/libcfwml-4cda6e4104.jsonl",
+      "records": 53,
+      "sha256": "db60927938edb25a78379468e09a2cd31699b06640c08a2222aba81b5bfe4db9"
+    },
+    {
+      "bytes": 11830,
+      "path": "data/firmware-13.60/libcprm-ab695d5a56.jsonl",
+      "records": 35,
+      "sha256": "d28fe6a621cb03e3bcc9388efa7327b9f9506b5087e25b68219d96343ef0f0e5"
+    },
+    {
+      "bytes": 22081,
+      "path": "data/firmware-13.60/libcss-6260a27151.jsonl",
+      "records": 65,
+      "sha256": "00d6723f37f3ea8aea8eea8bb8f584d4a3225cc82d503910d3703fb84fa87644"
+    },
+    {
+      "bytes": 141280,
+      "path": "data/firmware-13.60/libnativeextensions-e257b50c6f.jsonl",
+      "records": 386,
+      "sha256": "3378f5521930ed7d20e8b72a1cb04bda74c40718242fcac1bb9230dfa598bdd4"
+    },
+    {
+      "bytes": 51381,
+      "path": "data/firmware-13.60/libreactnative-modules-vsh-ea5def566a.jsonl",
+      "records": 122,
+      "sha256": "bcafd2cc22857139fbac703ab5e534356c1f001125785291c21ec7bd2f8aa9a2"
+    },
+    {
+      "bytes": 27960,
+      "path": "data/firmware-13.60/libreactnative-modules-vsh-media-3aef274cce.jsonl",
+      "records": 66,
+      "sha256": "977ded388cb6b5c0839e4f1e6a211ac34be3df4a81fb3e4d782b748f5b506103"
+    },
+    {
+      "bytes": 3960,
+      "path": "data/firmware-13.60/libreactnative-modules-vsh-mediaplayer-contents-7128bd93e2.jsonl",
+      "records": 9,
+      "sha256": "275c125204232904310f59b3b13df32f3434809b32c1e6e593d683ad25cae06b"
+    },
+    {
+      "bytes": 56638,
+      "path": "data/firmware-13.60/libreactnative-modules-vsh-webapplauncher-46dbce980c.jsonl",
+      "records": 138,
+      "sha256": "01f0e9d5b8e52026f4052b337c8db3f7ada46489e574cdaeb6f531b6721b7a5f"
+    },
+    {
+      "bytes": 354,
+      "path": "data/firmware-13.60/librnpsdevsupport-dummy-beb1826b80.jsonl",
+      "records": 1,
+      "sha256": "69a8102de2012350f31aa369e191b8a6e4b0de3f9b0d6d2e82c971797f9c477c"
+    },
+    {
+      "bytes": 30088,
+      "path": "data/firmware-13.60/libsceabstractlocal-0f876ab744.jsonl",
+      "records": 70,
+      "sha256": "83dd40f6b96ad31cff6115c7af979c113e51d81ae933371154ad98a5db252581"
+    },
+    {
+      "bytes": 52029,
+      "path": "data/firmware-13.60/libsceabstractstorage-fb08534467.jsonl",
+      "records": 119,
+      "sha256": "31a3f32c914eb9d177ab9816d413f1eb813d048dfe4c2d45e7c62d65a5718ac9"
+    },
+    {
+      "bytes": 30055,
+      "path": "data/firmware-13.60/libsceabstracttwitter-9cd9b3c8b1.jsonl",
+      "records": 68,
+      "sha256": "a15225873e19ab98c12343715bde03f5de1c8f0440e1b0a9e2d946c23211acf7"
+    },
+    {
+      "bytes": 33492,
+      "path": "data/firmware-13.60/libsceabstractyoutube-8f1b0162be.jsonl",
+      "records": 76,
+      "sha256": "78af2cd48b84094984180722dddfaa272f9dcdf93c4500f996cc262429267a31"
+    },
+    {
+      "bytes": 3281,
+      "path": "data/firmware-13.60/libsceac3enc-93a59a1280.jsonl",
+      "records": 7,
+      "sha256": "c369654f1bb6d189a1980cfafedcff7a6cad21738e76a854ef4f8367a1ea31d2"
+    },
+    {
+      "bytes": 27649,
+      "path": "data/firmware-13.60/libsceacm-a3566cc281.jsonl",
+      "records": 72,
+      "sha256": "d7c59d7335e0e736fe4ac00cffe10bcee16afc05ce42fcf00fd2a850a6e79cbf"
+    },
+    {
+      "bytes": 366,
+      "path": "data/firmware-13.60/libsceacm_irgeneration_nosubmission-b9fb00cc1d.jsonl",
+      "records": 1,
+      "sha256": "f874376ece3462b37eda79b4881b3c7b63e89fe8de809806a5ac290c2d81f461"
+    },
+    {
+      "bytes": 1460,
+      "path": "data/firmware-13.60/libsceacm_propagation_nosubmission-4c65c4621e.jsonl",
+      "records": 4,
+      "sha256": "38bc5fc8c4f153f6b9e72ae70838ae19888e4664ddaf30d7c922a33dfca1cb51"
+    },
+    {
+      "bytes": 1785,
+      "path": "data/firmware-13.60/libsceacm_ref_nosubmission-0a52a56291.jsonl",
+      "records": 5,
+      "sha256": "da9f27da0f24a06ee27c7cf151be578d95351d2dff0a26de9097c82cbb71aad9"
+    },
+    {
+      "bytes": 120636,
+      "path": "data/firmware-13.60/libsceagc-3be1b8ac02.jsonl",
+      "records": 248,
+      "sha256": "f3a8946e7aab2c571a5c809b4afb603bf77d630fb324d97c04b7b2c8a593c234"
+    },
+    {
+      "bytes": 58575,
+      "path": "data/firmware-13.60/libsceagcdriver-f86d440204.jsonl",
+      "records": 119,
+      "sha256": "25aa59883da8b71f634f4d8830c73631f95f101d714a1dc1a8f9994b073c1770"
+    },
+    {
+      "bytes": 496,
+      "path": "data/firmware-13.60/libsceagcdriverasyncgraphicsringeval_nosubmission-41525b1f7d.jsonl",
+      "records": 1,
+      "sha256": "856a39a227d3f87cd8034ef83c1a71858032806c7896787e4a8b1d00660f6d01"
+    },
+    {
+      "bytes": 1722,
+      "path": "data/firmware-13.60/libsceagcdriverdebugreset_nosubmission-e7e6d9c26f.jsonl",
+      "records": 4,
+      "sha256": "ded8ce42631bf6ea7f0b5cf54dae3ea9c92843153709598bcf5bb7c254b01ca7"
+    },
+    {
+      "bytes": 2618,
+      "path": "data/firmware-13.60/libsceagcdriverdebugwavefronts_nosubmission-332fdc1802.jsonl",
+      "records": 7,
+      "sha256": "a20210a66e09ec11149768e06cf99905ab5ca9fadd05f660497a8c628101b446"
+    },
+    {
+      "bytes": 18419,
+      "path": "data/firmware-13.60/libsceagcdriverpadebug-4b242b1b6f.jsonl",
+      "records": 45,
+      "sha256": "6c38ac7700defd775825cee9de64af101b7074150670e1573ea5ffb8843cc1e3"
+    },
+    {
+      "bytes": 117281,
+      "path": "data/firmware-13.60/libsceagcvsh-d56b62d397.jsonl",
+      "records": 245,
+      "sha256": "c78e94c2ef1a928c48a9b8635f08fc1b1470c6fcce5f8231e197487029d5322e"
+    },
+    {
+      "bytes": 23560,
+      "path": "data/firmware-13.60/libsceajm-5217837f40.jsonl",
+      "records": 54,
+      "sha256": "aca25012a86a3d088d50d93054dc6eb38ac5c8af769fa46582387795af9f3291"
+    },
+    {
+      "bytes": 827,
+      "path": "data/firmware-13.60/libsceajmwvorbis-4171488d67.jsonl",
+      "records": 2,
+      "sha256": "850349a1fdf87c9ec6b09f7ae3d7865a4cbc4e87bfd42f5a250c5a872b8f9033"
+    },
+    {
+      "bytes": 9199,
+      "path": "data/firmware-13.60/libsceajm_legacy_nosubmission-2ef673b3aa.jsonl",
+      "records": 21,
+      "sha256": "ec6c7b4ac56b0b946e4267b38bb824ae76adf4d7f5aaca9206c4468905d15d79"
+    },
+    {
+      "bytes": 7890,
+      "path": "data/firmware-13.60/libsceajmi-70f2344c59.jsonl",
+      "records": 22,
+      "sha256": "24612e357ce258a3f4de23cda5b20f1e4e9aa2d3039d0aafc3abee3df4462748"
+    },
+    {
+      "bytes": 56569,
+      "path": "data/firmware-13.60/libsceampr-7641a4a823.jsonl",
+      "records": 118,
+      "sha256": "fbd2bf3de4ea6a891fdb063f8d1ae77add86a617f4dcfef8a0dffc22c9582f26"
+    },
+    {
+      "bytes": 15269,
+      "path": "data/firmware-13.60/libsceappcontent-2b0c1dfe50.jsonl",
+      "records": 32,
+      "sha256": "35547191ed33463ba798dcbee478b93764e4077d7698f41b153dbbc73626912a"
+    },
+    {
+      "bytes": 447,
+      "path": "data/firmware-13.60/libsceappcontentbundle-e2f01a1b1a.jsonl",
+      "records": 1,
+      "sha256": "62f4998882ef7d25335f582fc44eaed7a9ce54d4838cef16cc85454cf4d5d5d6"
+    },
+    {
+      "bytes": 444,
+      "path": "data/firmware-13.60/libsceappcontentgametrials-aba257a805.jsonl",
+      "records": 1,
+      "sha256": "87776648659bd834aa5a3da01896a9888c8f27131d3ac26b9f03629ec8d4d91a"
+    },
+    {
+      "bytes": 1797,
+      "path": "data/firmware-13.60/libsceappcontentiro-a85323c5de.jsonl",
+      "records": 4,
+      "sha256": "96b4487273d2502a1468b679abd28afea382e14c297f92eee76313fbed2cc998"
+    },
+    {
+      "bytes": 352,
+      "path": "data/firmware-13.60/libsceappcontentmdid-38254d2fd8.jsonl",
+      "records": 1,
+      "sha256": "fadac05c4ca1a8e7dc1bb68d605ab2acca6804158148a92a33552cfd93174d7c"
+    },
+    {
+      "bytes": 430,
+      "path": "data/firmware-13.60/libsceappcontentpft-fb90925226.jsonl",
+      "records": 1,
+      "sha256": "0ca729dad5d7bbe3322d40bc0fe6101ea23aeb8c88d7e6016134af04a97dda68"
+    },
+    {
+      "bytes": 444,
+      "path": "data/firmware-13.60/libsceappcontentsc-ad5b05f53f.jsonl",
+      "records": 1,
+      "sha256": "2144634268e5eb97b6f8909334296ceb226cd1cf276d6fae40ea82d399605342"
+    },
+    {
+      "bytes": 15252,
+      "path": "data/firmware-13.60/libsceappdbshellcoreclient-606a110a7e.jsonl",
+      "records": 41,
+      "sha256": "fd70b61464c11358b6f77da0d8a745ed258a8455ba86f9a64e617945f83e925f"
+    },
+    {
+      "bytes": 776,
+      "path": "data/firmware-13.60/libsceappdbshellcoreclientforsystemservice-9f05444cc3.jsonl",
+      "records": 2,
+      "sha256": "5fbd34d74c3c55793b399dc35e1e3a5ecc77ba3307a2e8cd1443ccaed96ee407"
+    },
+    {
+      "bytes": 79020,
+      "path": "data/firmware-13.60/libsceappinstutil-783ade3c34.jsonl",
+      "records": 173,
+      "sha256": "0fbd6b8c22b57fad20b284874ae4e5266003241b1a620842797d7204dace4a98"
+    },
+    {
+      "bytes": 4403,
+      "path": "data/firmware-13.60/libsceappmessaging-1927e55f4a.jsonl",
+      "records": 10,
+      "sha256": "82f24373494812a3ff3657441dd69c8c0e0c9014d6228267c115d7c3a3bacdef"
+    },
+    {
+      "bytes": 7440,
+      "path": "data/firmware-13.60/libsceasyncstorageinternal-5545b1476a.jsonl",
+      "records": 20,
+      "sha256": "c88e8b674b54e9a0ac6ff59357339cb564afde0fbc3892db39eec2a506900fba"
+    },
+    {
+      "bytes": 1800,
+      "path": "data/firmware-13.60/libsceasyncstorageinternalaux-78b29bc7f7.jsonl",
+      "records": 5,
+      "sha256": "0a7a8010795227af974d67e120a1121396884e8dd16cedcebc3b2fd7a49fadce"
+    },
+    {
+      "bytes": 2343,
+      "path": "data/firmware-13.60/libsceat9enc-ee3cb09a49.jsonl",
+      "records": 5,
+      "sha256": "57872564784429874c017b23a4f7d438768965a357e7a4d17a37411e85d7536f"
+    },
+    {
+      "bytes": 15200,
+      "path": "data/firmware-13.60/libsceaudio3d-d9cfca341a.jsonl",
+      "records": 32,
+      "sha256": "f3e9f1a64761e1f258e0764b8c747f358d93b4dbc3499fe1b00e4cdca80361f7"
+    },
+    {
+      "bytes": 20052,
+      "path": "data/firmware-13.60/libsceaudioin-1ba22b10c3.jsonl",
+      "records": 43,
+      "sha256": "1e868e3057026aac39da910ee49414a1724b31974fe39e112b96d2004e6d9572"
+    },
+    {
+      "bytes": 37559,
+      "path": "data/firmware-13.60/libsceaudioout-b0d02b41cc.jsonl",
+      "records": 77,
+      "sha256": "df52d9f03b302891e089855cd3005329819cd3f48803e1e83de67e0ec991c733"
+    },
+    {
+      "bytes": 56671,
+      "path": "data/firmware-13.60/libsceaudioout2-c61764b3ef.jsonl",
+      "records": 138,
+      "sha256": "c9b1082de9cb7d21559da599a8f118e2121de83aeb6afa0b5ff6929cbd7ab350"
+    },
+    {
+      "bytes": 467,
+      "path": "data/firmware-13.60/libsceaudiooutdeviceservice-91ca0c74a6.jsonl",
+      "records": 1,
+      "sha256": "cf0f7db31342e14444ae5aa4d4fab4cd115b0e08e683ad55eaebdb2de80b9e17"
+    },
+    {
+      "bytes": 8895,
+      "path": "data/firmware-13.60/libsceaudiooutserver-b2c0ad21d6.jsonl",
+      "records": 25,
+      "sha256": "4ed57ec86015970a9ff4a917c907b236f8538bdffcaed0474302fdda75df1dca"
+    },
+    {
+      "bytes": 19099,
+      "path": "data/firmware-13.60/libsceaudiopropagation-426fc90ffc.jsonl",
+      "records": 41,
+      "sha256": "3266b8a4cad35d86f3995c93fcd502b71ff6c5eaeb240b2a9e663519898cf636"
+    },
+    {
+      "bytes": 5718,
+      "path": "data/firmware-13.60/libsceaudiosystem-bfe74a18cc.jsonl",
+      "records": 14,
+      "sha256": "1d8033407a5b785a08f681c4bb0c598dfd4994cd5d568463c8e37d25d49f0725"
+    },
+    {
+      "bytes": 9983,
+      "path": "data/firmware-13.60/libsceaudiodec-2dbab67864.jsonl",
+      "records": 22,
+      "sha256": "5ec262a1c75619c18ecbe9fe5bcf522a9821740aedda7fc07e588613b3abe849"
+    },
+    {
+      "bytes": 3866,
+      "path": "data/firmware-13.60/libsceaudiodeccpu-7942208f75.jsonl",
+      "records": 8,
+      "sha256": "d6b3fc15ccd9897ff01e7c805ff3911b4c0981c9c917193e7e3491ab85b66aee"
+    },
+    {
+      "bytes": 2960,
+      "path": "data/firmware-13.60/libsceautomounterclient-5bf14ae42b.jsonl",
+      "records": 6,
+      "sha256": "beabe4339b8809125d4b6ff8c61bcc808f78d7addee4046296076a9749ca913d"
+    },
+    {
+      "bytes": 14082,
+      "path": "data/firmware-13.60/libsceavplayer-f7ee297282.jsonl",
+      "records": 30,
+      "sha256": "3a1c5a1445e32f0d9dc9d2909473e49a27e0ac8dff64e76e38997919481062ee"
+    },
+    {
+      "bytes": 16257,
+      "path": "data/firmware-13.60/libsceavplayerstreaming-27cc7363f9.jsonl",
+      "records": 34,
+      "sha256": "e167c5329c65a14ccc897d712dd826774966931124970ecacf50965730b74654"
+    },
+    {
+      "bytes": 77488,
+      "path": "data/firmware-13.60/libsceavsetting-620714af3c.jsonl",
+      "records": 175,
+      "sha256": "504e803e1c0e534a5adf6dece3ca939ecf235c396a88c95906a9c622c55d33b7"
+    },
+    {
+      "bytes": 5267,
+      "path": "data/firmware-13.60/libsceavsettingdebug-c0aa1cc04e.jsonl",
+      "records": 13,
+      "sha256": "8784677e142baa3aabfa649fb73c28c2de8abd592061fdecf7b42e4abe4f3f1c"
+    },
+    {
+      "bytes": 23798,
+      "path": "data/firmware-13.60/libsceavcap2-9035a2a4ef.jsonl",
+      "records": 59,
+      "sha256": "69b18b408db0fec8bbced0c8785c52ad6726e2d2155a3ed55db7358931ebd471"
+    },
+    {
+      "bytes": 4693,
+      "path": "data/firmware-13.60/libsceavcap2mvr-57037e82c9.jsonl",
+      "records": 13,
+      "sha256": "9393cd02f5782ec6c453de6c5e51dd4d0932c3bdc8c2a11bc818640474fbdae1"
+    },
+    {
+      "bytes": 10184,
+      "path": "data/firmware-13.60/libscebackuprestoreutil-78effa9f1f.jsonl",
+      "records": 21,
+      "sha256": "83d3ab06e100663d15023db38ac9ae9d9ac2e915db9e7417cd41fd502d04ea01"
+    },
+    {
+      "bytes": 8552,
+      "path": "data/firmware-13.60/libscebeisobmf-3646c99450.jsonl",
+      "records": 18,
+      "sha256": "0ac75421136a7882fe016e408d0ad64e8d03c8e455bcff5912da397976a0d5eb"
+    },
+    {
+      "bytes": 15536,
+      "path": "data/firmware-13.60/libscebemp2sys-72503b050f.jsonl",
+      "records": 33,
+      "sha256": "4f3f0dee1a3b186ef1de249d3d62e21170bb4ab4e222e43fd557a6116a89f869"
+    },
+    {
+      "bytes": 38777,
+      "path": "data/firmware-13.60/libscebgft-56a91f9286.jsonl",
+      "records": 82,
+      "sha256": "c3cde4470718967398742bb3025bd525beeb844d83b37727d9bdf895c3ad0592"
+    },
+    {
+      "bytes": 6878,
+      "path": "data/firmware-13.60/libscebgsstorage-0efa82f155.jsonl",
+      "records": 19,
+      "sha256": "d5796df9761a04fbf8eaaa62a50f393f918a0cf9a25dbd7274472ab216f368c1"
+    },
+    {
+      "bytes": 8263,
+      "path": "data/firmware-13.60/libscebluetoothhid-796c96d3a6.jsonl",
+      "records": 17,
+      "sha256": "7bbf4d499499cc6c9dd318a87df931c76c249207d52b1edc13dd0674129995d0"
+    },
+    {
+      "bytes": 43362,
+      "path": "data/firmware-13.60/libscecamera-4529c174dc.jsonl",
+      "records": 93,
+      "sha256": "8683910cc0949a98f815ec0598896f1818b03e58a5da46e998c1ca841fe9d88c"
+    },
+    {
+      "bytes": 14370,
+      "path": "data/firmware-13.60/libscecamera2-3d8e805680.jsonl",
+      "records": 34,
+      "sha256": "75d4a1273e1e1f607490eac3590ce23ce87098286b642d98221e2beb4134c379"
+    },
+    {
+      "bytes": 14812,
+      "path": "data/firmware-13.60/libscecamera2_nosubmission-97099a9210.jsonl",
+      "records": 34,
+      "sha256": "16c1debaf30c58f2987bfdb9578fd72dc03952010cefa4917de9f85da0965b8b"
+    },
+    {
+      "bytes": 2513,
+      "path": "data/firmware-13.60/libscecdlgadidclient-e5c48fcb37.jsonl",
+      "records": 7,
+      "sha256": "63907880be0747986a8285e9807a15c1626df6d096c96918c9b428f78622ddef"
+    },
+    {
+      "bytes": 3299,
+      "path": "data/firmware-13.60/libscecdlgg2p-1be349f309.jsonl",
+      "records": 7,
+      "sha256": "f936ef60d82b580e0a58c937c539d808a6675a1d6817fd88f4591190faad88d3"
+    },
+    {
+      "bytes": 3425,
+      "path": "data/firmware-13.60/libscecdlgplayerreview-f00f2a4136.jsonl",
+      "records": 7,
+      "sha256": "160155ca5a64909893fdf4080ed5485b5210f9d04d80764cd26b951d59a5e75a"
+    },
+    {
+      "bytes": 17594,
+      "path": "data/firmware-13.60/libscecdlgutilserver-f5af7b5ed6.jsonl",
+      "records": 44,
+      "sha256": "d1e4a0e4291a0a5fd357738c576226adcc155783cb5c5e90f0fdb0a0df696ac1"
+    },
+    {
+      "bytes": 114939,
+      "path": "data/firmware-13.60/libsceces-547a52e276.jsonl",
+      "records": 274,
+      "sha256": "d829726c5482c1c5ab39aeb94a3c23ae096563430593ec7ba083dddc7c0298cd"
+    },
+    {
+      "bytes": 5396,
+      "path": "data/firmware-13.60/libscecffmgr-cdffaf2f9a.jsonl",
+      "records": 14,
+      "sha256": "cf57f559acf1d54ff6763047ac5616548a965b8d93024b3520350be28deba405"
+    },
+    {
+      "bytes": 2681,
+      "path": "data/firmware-13.60/libscecloudmessaging-1d0153bc23.jsonl",
+      "records": 6,
+      "sha256": "e3536315b41c090cab83ceed3c037591a3015d2b49dc857028c697f7ff513875"
+    },
+    {
+      "bytes": 12007,
+      "path": "data/firmware-13.60/libscecommondialog-bb8fcaf86e.jsonl",
+      "records": 28,
+      "sha256": "2f0c37534e42f630247193dc6b0c542e4ca2942617b57b3c83500049a3c5f617"
+    },
+    {
+      "bytes": 8338,
+      "path": "data/firmware-13.60/libscecompanionhttpd-af2fdc9ff3.jsonl",
+      "records": 17,
+      "sha256": "87a3250aae2f5029c319ff35c590a0b189cc26e7dda1986b7d9f07f36e2cf808"
+    },
+    {
+      "bytes": 2427,
+      "path": "data/firmware-13.60/libscecompanionutil-00b8e71529.jsonl",
+      "records": 5,
+      "sha256": "5f50846b7847c5da594b2294d022a758182656ce9e147f7aa040d0744df73812"
+    },
+    {
+      "bytes": 53923,
+      "path": "data/firmware-13.60/libscecomposite-23841193cf.jsonl",
+      "records": 123,
+      "sha256": "5f6d184e98d2da437605dd0d1ef87631b0bc74b4b6f9a2e74bf07148fab0b178"
+    },
+    {
+      "bytes": 3117,
+      "path": "data/firmware-13.60/libsceconnectaccountdialog-85ece10b67.jsonl",
+      "records": 7,
+      "sha256": "816153ba8974f983190668410e383547cf1fbe13919054061efa64c9fdaedbf5"
+    },
+    {
+      "bytes": 3459,
+      "path": "data/firmware-13.60/libscecontentbinder-586c859f0f.jsonl",
+      "records": 8,
+      "sha256": "95184d129f697c6119f39363e8f17899c1b9925edc87e0872ac9bb130322643a"
+    },
+    {
+      "bytes": 1921,
+      "path": "data/firmware-13.60/libscecontentdelete-9338d049e6.jsonl",
+      "records": 4,
+      "sha256": "62d4223475edc7a84197538b125ccda2738cfa894c2854fa5be9274e1da71dcb"
+    },
+    {
+      "bytes": 441,
+      "path": "data/firmware-13.60/libscecontentdeleteforsf-0841d93436.jsonl",
+      "records": 1,
+      "sha256": "f627508fc22eaeda4e3125da2244371db91b5351faf35d0e1c4eb0e5e2603118"
+    },
+    {
+      "bytes": 6296,
+      "path": "data/firmware-13.60/libscecontentexport-40600820c5.jsonl",
+      "records": 13,
+      "sha256": "53ec5fc41a170ec0d586f324383a8ab57c2e3b9d7d644952529f9005d41a74e3"
+    },
+    {
+      "bytes": 2215,
+      "path": "data/firmware-13.60/libscecontentexportforsf-049745d0b7.jsonl",
+      "records": 5,
+      "sha256": "cbbcc554fc8feefd2ae7ed60485a293340ea41cb16754fc4c89d9d6df12bd7e3"
+    },
+    {
+      "bytes": 8045,
+      "path": "data/firmware-13.60/libscecontentlistcontroller-9206143214.jsonl",
+      "records": 19,
+      "sha256": "f676237e4aa6f0e8a763539e830f244ab1e99f6605f444623a2fb48b8975ce26"
+    },
+    {
+      "bytes": 9214,
+      "path": "data/firmware-13.60/libscecontentsearch-4da1f4d151.jsonl",
+      "records": 19,
+      "sha256": "bb489641730b16022b81980fda1dff4ff381f27c4f5adf5103644278ac72268b"
+    },
+    {
+      "bytes": 2505,
+      "path": "data/firmware-13.60/libscecontentsearchforsf-716101ebc0.jsonl",
+      "records": 6,
+      "sha256": "485006351465ed8032e20e2dc27fe1cc219ffb1399797eefe95aeb2f95c76329"
+    },
+    {
+      "bytes": 1975,
+      "path": "data/firmware-13.60/libsceconvertkeycode-f4a84973a3.jsonl",
+      "records": 4,
+      "sha256": "29fd2bede092f97a8eda239d171714e7afeb698aaea0ad947ea4afd24a5f5ce7"
+    },
+    {
+      "bytes": 7627,
+      "path": "data/firmware-13.60/libscecoredump-5c9cdb25b4.jsonl",
+      "records": 17,
+      "sha256": "06d66768663886ce93f445e1c6f750e09d92db7b81bfaf8a63be3e787e63e6d1"
+    },
+    {
+      "bytes": 3103,
+      "path": "data/firmware-13.60/libscecoredumpseqhandlerif-2bfcd09926.jsonl",
+      "records": 7,
+      "sha256": "d24d9dbb21bc5b2dc6f39deb8d604730eeb788ce070a9c9e2778ca15ca34254a"
+    },
+    {
+      "bytes": 944,
+      "path": "data/firmware-13.60/libscecoredump_debug-329a2b1dd4.jsonl",
+      "records": 2,
+      "sha256": "72cfad48bc513a7251499423729ade83760434771b4001572672608a516ed667"
+    },
+    {
+      "bytes": 958,
+      "path": "data/firmware-13.60/libscecoredump_nosubmission-c6ca4b9519.jsonl",
+      "records": 2,
+      "sha256": "584388b8fa11435db836908b5f9fbc0fd81e8689d2d7f8d185cc1fbaccf9f824"
+    },
+    {
+      "bytes": 4615,
+      "path": "data/firmware-13.60/libscecsbmgr-5bbd3aa515.jsonl",
+      "records": 11,
+      "sha256": "b0dafa555911025132da2a955e702055fb6066025188c28d250be4eca950d2c6"
+    },
+    {
+      "bytes": 4709,
+      "path": "data/firmware-13.60/libscecustommusicaudioout-b0940f5719.jsonl",
+      "records": 10,
+      "sha256": "0ed909f199d0b765d31eb94d4bc20ce3ba49c569f6cb4eb214f76a4c0a58b551"
+    },
+    {
+      "bytes": 3441,
+      "path": "data/firmware-13.60/libscecustommusicdummy-5f38156afb.jsonl",
+      "records": 9,
+      "sha256": "48f16042411b53c4fcc3e2b6db26672fb0ba8e6a2ecb266b9b54f31fa79aafbc"
+    },
+    {
+      "bytes": 53926,
+      "path": "data/firmware-13.60/libscecustommusicsyscallwrapper-8ee0747c02.jsonl",
+      "records": 133,
+      "sha256": "8f26998c9150e10704636005c8389546056f5ffb8ac826379ea130440dd54622"
+    },
+    {
+      "bytes": 20659,
+      "path": "data/firmware-13.60/libscedatatransfer-ca1b6655ff.jsonl",
+      "records": 45,
+      "sha256": "a7c0b94b6d1428f1a608f7b76425d58818824ef2096ec2ffc06dc759c44931a4"
+    },
+    {
+      "bytes": 464,
+      "path": "data/firmware-13.60/libscedbgaudioout-4fcaeb91fb.jsonl",
+      "records": 1,
+      "sha256": "259ce6c00de08e3e78953c62ace9afa78a39a661af737c84dd1cfdcc67566bfc"
+    },
+    {
+      "bytes": 466,
+      "path": "data/firmware-13.60/libscedbgaudioout2-531d57b47c.jsonl",
+      "records": 1,
+      "sha256": "456de74949addf95ad9dee5f0069192ff7e2d069ef003de0d8fd28b14df824db"
+    },
+    {
+      "bytes": 3128,
+      "path": "data/firmware-13.60/libscedbgkeyboard-a009193dfc.jsonl",
+      "records": 7,
+      "sha256": "d25a08663088e2cc540e0a1fdaf64b77c0de1639ee2ed4faf47ce3ec6cfdcf4e"
+    },
+    {
+      "bytes": 1170,
+      "path": "data/firmware-13.60/libscedbgvideoout-68f71a8130.jsonl",
+      "records": 3,
+      "sha256": "c15fec45e1a2afee58d70ab115e31e63e82a69c4943ee362650da2be3ac5476b"
+    },
+    {
+      "bytes": 351,
+      "path": "data/firmware-13.60/libscedbgvideooutsqa-a2d0d19aa2.jsonl",
+      "records": 1,
+      "sha256": "0323e10d66f7228d27a884c5345f03712d36d9a7343876416c38edf5d16c5fce"
+    },
+    {
+      "bytes": 18502,
+      "path": "data/firmware-13.60/libscedepth-82c40e930e.jsonl",
+      "records": 39,
+      "sha256": "5204958a8e87d76992fbdc9bc990094e83409254d9b45ef60c6f4b85113fef73"
+    },
+    {
+      "bytes": 5083,
+      "path": "data/firmware-13.60/libscedepth2-b92b9fb6e4.jsonl",
+      "records": 11,
+      "sha256": "08174dca2271617cad19480a6a45b9aaa199234757a6b8974fbead2d91de79f2"
+    },
+    {
+      "bytes": 2176,
+      "path": "data/firmware-13.60/libscedeviceservice-533be78089.jsonl",
+      "records": 5,
+      "sha256": "ccbec735bbc1f8f6b111941d00865e667ca719862324aef9f6fe4a8afa9b32e1"
+    },
+    {
+      "bytes": 4675,
+      "path": "data/firmware-13.60/libscedipsw-f4b41af254.jsonl",
+      "records": 10,
+      "sha256": "baf4e938a226452fdc16482f3964763e35c6f87c8f313147f0d0ccd4e65ecab7"
+    },
+    {
+      "bytes": 925,
+      "path": "data/firmware-13.60/libscediscid-e0bab06233.jsonl",
+      "records": 2,
+      "sha256": "99420658d314096b6322150999ba022fe6a1628ab029bb31fc452cbbe324f494"
+    },
+    {
+      "bytes": 2028,
+      "path": "data/firmware-13.60/libscediscmap-db9de515b7.jsonl",
+      "records": 5,
+      "sha256": "ee6e94a9d88fbdcdb123aff91b228b72db5aa6562aae3017291c54ce24b858c7"
+    },
+    {
+      "bytes": 3281,
+      "path": "data/firmware-13.60/libscedtsenc-c6c17fe63c.jsonl",
+      "records": 7,
+      "sha256": "b242bbf166e0fb0968e1ebd2e3a7e5cbbd76bdacb5984664156e13e7a50c4b01"
+    },
+    {
+      "bytes": 4235,
+      "path": "data/firmware-13.60/libsceeditmp4-0cca3f19b1.jsonl",
+      "records": 9,
+      "sha256": "14c1fa8b9b894d5c81ad58fc00b1a390f0b36b9c00ed168101b2d1168d388f8c"
+    },
+    {
+      "bytes": 3825,
+      "path": "data/firmware-13.60/libsceerrordialog-fb90f94c86.jsonl",
+      "records": 8,
+      "sha256": "c2bab2f9444c73e7fbfe168ff586c23dd8bee2f33f75afb76ab68b4741ade699"
+    },
+    {
+      "bytes": 19091,
+      "path": "data/firmware-13.60/libsceesvm-84c73245ba.jsonl",
+      "records": 45,
+      "sha256": "0654e66ba3c8cb9abe0f70a22888da64d7e90aea823b3a38c05f73798a3429ed"
+    },
+    {
+      "bytes": 1302,
+      "path": "data/firmware-13.60/libsceesvmappaudiosync-e04369d909.jsonl",
+      "records": 3,
+      "sha256": "faf4ae513994208dc8efdf19029262c6b920937f9a611c8bdbebba323f7b7df2"
+    },
+    {
+      "bytes": 425,
+      "path": "data/firmware-13.60/libsceesvmdecodermodeex-a785deee5d.jsonl",
+      "records": 1,
+      "sha256": "154bee42621a2bba2a297a0fc9f2156a0fa8a6dbd63918ef58309cd2c85968b6"
+    },
+    {
+      "bytes": 26918,
+      "path": "data/firmware-13.60/libsceesvmengine-c1d3867cc5.jsonl",
+      "records": 61,
+      "sha256": "18471073f9b2a8f65009689157e8a45ff82207d3dcc65900df7b6d9f8ad865df"
+    },
+    {
+      "bytes": 1240,
+      "path": "data/firmware-13.60/libsceesvmplayready-5091672932.jsonl",
+      "records": 3,
+      "sha256": "dfd5748ad157fa66747a2ca14e8061d9d66893babbe587033ebc5ea347318047"
+    },
+    {
+      "bytes": 4920,
+      "path": "data/firmware-13.60/libsceesvmwidevine-5deeddc699.jsonl",
+      "records": 12,
+      "sha256": "af6553e353dc2ba50ca5ba184a46ca666ebafd1a920b8fab581b09bf1f6a15f8"
+    },
+    {
+      "bytes": 57299,
+      "path": "data/firmware-13.60/libscefacebook-yoga-c39a0027ac.jsonl",
+      "records": 133,
+      "sha256": "d2c7c13cf2b9e153f7f05409954424b513b7506e39787181194529a04d738a98"
+    },
+    {
+      "bytes": 7085,
+      "path": "data/firmware-13.60/libscefiber-03c584ff93.jsonl",
+      "records": 15,
+      "sha256": "5c79f28f2f2c5ace781dcbc03752b5700fd9f381fa02bdcbf80df65326242263"
+    },
+    {
+      "bytes": 4678,
+      "path": "data/firmware-13.60/libsceflexcontent-4bcb74e7f3.jsonl",
+      "records": 12,
+      "sha256": "8c2a04128825da26c81196dca5c6e800f876adb2a81bd5a9a13d36f66abd15a1"
+    },
+    {
+      "bytes": 197706,
+      "path": "data/firmware-13.60/libscefollyshared-53f41da239.jsonl",
+      "records": 555,
+      "sha256": "23451db95c5d6d4c20f7d85174796c286a4cea2d4abcf27116e89aab143647a2"
+    },
+    {
+      "bytes": 110263,
+      "path": "data/firmware-13.60/libscefont-63ba420c2e.jsonl",
+      "records": 240,
+      "sha256": "7bcf7c8d0ad6b89f1b635a988e6975741fbb7ae8538ded90f97f26e3e110b3ae"
+    },
+    {
+      "bytes": 9888,
+      "path": "data/firmware-13.60/libscefontft-4a57c746ed.jsonl",
+      "records": 21,
+      "sha256": "524094978095e17a04e02924c2b04a64cc2d3d66c13b7fbb4c993cbf7418c927"
+    },
+    {
+      "bytes": 4910,
+      "path": "data/firmware-13.60/libscefontgs-b42f55c1c1.jsonl",
+      "records": 12,
+      "sha256": "0c972ca6b8e9e1f105f46d84e52f6109b05215554597b191f2533b4afae47ac9"
+    },
+    {
+      "bytes": 144901,
+      "path": "data/firmware-13.60/libscefreetype-191d06aeae.jsonl",
+      "records": 344,
+      "sha256": "01f5b8006753a418dc0c6a69f9a5cdd81ec9ca181cd25161499e5b5bc3bd3f9c"
+    },
+    {
+      "bytes": 186570,
+      "path": "data/firmware-13.60/libscefsinternalforvsh-05a5e357c4.jsonl",
+      "records": 431,
+      "sha256": "bc05e4dc9d53860589ec9ff767883ef1298fa2347b56847c4d0088ff400eceab"
+    },
+    {
+      "bytes": 82969,
+      "path": "data/firmware-13.60/libsceglslimservervsh-aebf54bed3.jsonl",
+      "records": 192,
+      "sha256": "4d695ce99fc0f52ac43ff61f58c7fac7ea112702c6cd022b3707a6d96c41e05b"
+    },
+    {
+      "bytes": 99576,
+      "path": "data/firmware-13.60/libsceglslimvsh-d20bcf7d7a.jsonl",
+      "records": 217,
+      "sha256": "6f5a0d225e3e61abbc83d56e8b6999eff5b877b53fc22ff2c0b28e1d96aad5c8"
+    },
+    {
+      "bytes": 4456,
+      "path": "data/firmware-13.60/libscegamecustomdatadialog-78f63f077e.jsonl",
+      "records": 9,
+      "sha256": "b4654031e66b31fc8054756c7b8ddf1857a90c2a45beb5bab14b3575dcb400c8"
+    },
+    {
+      "bytes": 899,
+      "path": "data/firmware-13.60/libscegamecustomdatadialogcompat-7f74845fd2.jsonl",
+      "records": 2,
+      "sha256": "0d44159621ee6864cf5954a5eb9a192ece718ef669abb4210cbf3091d264e9d6"
+    },
+    {
+      "bytes": 22646,
+      "path": "data/firmware-13.60/libscegamelivestreaming-af25e92286.jsonl",
+      "records": 45,
+      "sha256": "6cd49345f38ffaf9beabb3360689d06a8b616ecef0d0f2a70fcead51baa269e9"
+    },
+    {
+      "bytes": 11471,
+      "path": "data/firmware-13.60/libscegamelivestreamingcompat-d984cdd27f.jsonl",
+      "records": 25,
+      "sha256": "0eae4004647447d9a2826e2f7b8e8cdcb4b5ed0f39f5104656a08d05240c1d28"
+    },
+    {
+      "bytes": 911,
+      "path": "data/firmware-13.60/libscegamelivestreaming_debug-bbc4f0e9fa.jsonl",
+      "records": 2,
+      "sha256": "a83879baf5365afb1f1a32d99efb34f07fceca448802022ced87a740a46785a4"
+    },
+    {
+      "bytes": 933,
+      "path": "data/firmware-13.60/libscegamelivestreaming_direct_streaming-5d26996665.jsonl",
+      "records": 2,
+      "sha256": "4ab2416c62a5c8587c876c68efa54632251be84c06093deb803dc43329e11b23"
+    },
+    {
+      "bytes": 3781,
+      "path": "data/firmware-13.60/libscegameupdate-16da6af946.jsonl",
+      "records": 8,
+      "sha256": "e915c5afc2004762a339d783a4712ca33ab8f31713ada2974d9e3b1cdbcb2e9c"
+    },
+    {
+      "bytes": 461,
+      "path": "data/firmware-13.60/libscegic-03dd0620d2.jsonl",
+      "records": 1,
+      "sha256": "47e89a3e323f9361606d956bc2b90553e1231f68d757aa925da0d900584c37b9"
+    },
+    {
+      "bytes": 2527,
+      "path": "data/firmware-13.60/libscegifparser-4844b1be5a.jsonl",
+      "records": 7,
+      "sha256": "24f4c8b034b8097240531542e74184b245027b8cc2ff77f9356a0388d462e470"
+    },
+    {
+      "bytes": 464,
+      "path": "data/firmware-13.60/libscegnmdebugmodulereset-ecf1da693c.jsonl",
+      "records": 1,
+      "sha256": "5e0950ab5591210682892f33ab5f21920529460fdb73c29d1b0205d3d8949045"
+    },
+    {
+      "bytes": 861,
+      "path": "data/firmware-13.60/libscegnmdebugreset-41f843d0f0.jsonl",
+      "records": 2,
+      "sha256": "fc1370e296a7c4de0f37b8675a4c56dca76064d95cd48997451de9b7464effd1"
+    },
+    {
+      "bytes": 81499,
+      "path": "data/firmware-13.60/libscegnmdriver-ba6100e159.jsonl",
+      "records": 168,
+      "sha256": "db2ba808ddc0901b337a7f2976ecba56074297290274931a0bf66c5711b5ad0f"
+    },
+    {
+      "bytes": 973,
+      "path": "data/firmware-13.60/libscegnmdrivercompat-f44641bab7.jsonl",
+      "records": 2,
+      "sha256": "cbccdf62194dfc72f0dc476bb6aead1168520d2abbe2b5eff6c733cd1c7c6074"
+    },
+    {
+      "bytes": 5981,
+      "path": "data/firmware-13.60/libscegnmdriverpadebug-8901a561b1.jsonl",
+      "records": 14,
+      "sha256": "9d10314a4f305d448fbca5396ef4d3619305b6ac1c90dd9a3c4555a5bf48e65c"
+    },
+    {
+      "bytes": 3269,
+      "path": "data/firmware-13.60/libscegnmdriverresourceregistration-7a25ea4161.jsonl",
+      "records": 8,
+      "sha256": "b5e58eb92e03e4fe058516a464b5b00503b6efaf92c70def96dfa4df19ac6efb"
+    },
+    {
+      "bytes": 480,
+      "path": "data/firmware-13.60/libscegnmgetgpucoreclockfrequency-18285592ff.jsonl",
+      "records": 1,
+      "sha256": "2f7b258b19f37720122fa0c58c25c8c8c9198bcec0f732555507cb2f5b922b38"
+    },
+    {
+      "bytes": 708,
+      "path": "data/firmware-13.60/libscegnmwaitfreesubmit-3fa0e9b98b.jsonl",
+      "records": 2,
+      "sha256": "c1d7e62b56f20d5b340729b0ff5a00f9c6424ae8efeb419b3666103c6a175e98"
+    },
+    {
+      "bytes": 2697,
+      "path": "data/firmware-13.60/libscegvmp4parser-11803a4cb6.jsonl",
+      "records": 7,
+      "sha256": "ce2fcc38e5cc2f067421336002f7a8ccb4659de7baac81e776989760c8ab256d"
+    },
+    {
+      "bytes": 35960,
+      "path": "data/firmware-13.60/libscehidcontrol-3b1f591a82.jsonl",
+      "records": 81,
+      "sha256": "882af4fce6fe88e486e89476af16e80c72bdfc18a7e2d2839915ade26d8ac48e"
+    },
+    {
+      "bytes": 82820,
+      "path": "data/firmware-13.60/libscehmd-be39c4e9c8.jsonl",
+      "records": 178,
+      "sha256": "6d75c82b6214e6826d1640c6ed424c5b363c07e9e795d6089f9a072e2c212d01"
+    },
+    {
+      "bytes": 110745,
+      "path": "data/firmware-13.60/libscehmd2-a02794ae28.jsonl",
+      "records": 276,
+      "sha256": "62e779c52e0d05cdb5477f995e3c2327995af6823652e4e63ab340665cbf8774"
+    },
+    {
+      "bytes": 2112,
+      "path": "data/firmware-13.60/libscehmd2distortion-275ff9225c.jsonl",
+      "records": 6,
+      "sha256": "1b5ab3a43faf872447f8f7135789613cdb9d98d4d42544f2a83f03f33602d2d2"
+    },
+    {
+      "bytes": 371,
+      "path": "data/firmware-13.60/libscehmd2reprojectionblankinbackground-f1defb120e.jsonl",
+      "records": 1,
+      "sha256": "3d66cce71e6d4723cf7e6c42014cd38c9bc003255ae54c134e48e58406176e1b"
+    },
+    {
+      "bytes": 365,
+      "path": "data/firmware-13.60/libscehmd2reprojectionmotionvector-a3712ce199.jsonl",
+      "records": 1,
+      "sha256": "fff304e8615fbc329c3d3adcc157e4d63ad6f8184e493586f968213fc5082a2c"
+    },
+    {
+      "bytes": 378,
+      "path": "data/firmware-13.60/libscehmd2reprojectionmotionvector_nosubmission-67bfec044d.jsonl",
+      "records": 1,
+      "sha256": "faa92f77ecd0c33b08aa89d9736cd42ebb69e302076bd873f8ab012170595976"
+    },
+    {
+      "bytes": 469,
+      "path": "data/firmware-13.60/libscehmd2reprojectionpositional-60d51a176d.jsonl",
+      "records": 1,
+      "sha256": "52555f34f4adb91836348349106b05984f219c9adff47541d6d994f64666473c"
+    },
+    {
+      "bytes": 458,
+      "path": "data/firmware-13.60/libscehmd2reprojection_nosubmission-6b0287ebd2.jsonl",
+      "records": 1,
+      "sha256": "3fb0241d7175f730be5a9e66e82e3becc8b8ed8fc77eaf4866f31782d09d25cf"
+    },
+    {
+      "bytes": 376,
+      "path": "data/firmware-13.60/libscehmd2reprojection_vrremote_nosubmission-ed9cfb1a89.jsonl",
+      "records": 1,
+      "sha256": "d803f5c0c1e1166d4d7c88f6bea078d3b7970e1aa5fe709055a9a652b4348734"
+    },
+    {
+      "bytes": 3889,
+      "path": "data/firmware-13.60/libscehmddistortion-1f35b4a833.jsonl",
+      "records": 9,
+      "sha256": "25b7d47341030231a8b1f57842e75009113931fcc339db93bc2d6dd0396a9c31"
+    },
+    {
+      "bytes": 3383,
+      "path": "data/firmware-13.60/libscehmdsetupdialog-8e539112c2.jsonl",
+      "records": 7,
+      "sha256": "4419e110f2a46404a665f73d82ecfa87fa261a9e4ad6afd4131251921e423f41"
+    },
+    {
+      "bytes": 57448,
+      "path": "data/firmware-13.60/libscehttp-bf24e60b44.jsonl",
+      "records": 115,
+      "sha256": "ea4853aaab0fb87d1552b85bd4a35b296d74c7093c07c239f964f341350728b9"
+    },
+    {
+      "bytes": 35048,
+      "path": "data/firmware-13.60/libscehttp2-1bb9426af8.jsonl",
+      "records": 72,
+      "sha256": "879421ac2b5481ce08e689c883f6e056fff328309a8a322bc382188b51508c87"
+    },
+    {
+      "bytes": 15248,
+      "path": "data/firmware-13.60/libscehttpcache-2641272dc1.jsonl",
+      "records": 34,
+      "sha256": "d8eaae2295403334f0ee84732216069fd68545954820574833de610474e10f27"
+    },
+    {
+      "bytes": 1471,
+      "path": "data/firmware-13.60/libscehubapputil-af38912160.jsonl",
+      "records": 3,
+      "sha256": "b677b0afec9bf7a9549df1689b7df03680c3c2fcf28e3a095e6f218575037c90"
+    },
+    {
+      "bytes": 111795,
+      "path": "data/firmware-13.60/libsceicu-9790ee85e3.jsonl",
+      "records": 298,
+      "sha256": "bbcd687cf8a599283633f67923e889386674d4180c27f6d486b49c76376bf530"
+    },
+    {
+      "bytes": 8785,
+      "path": "data/firmware-13.60/libsceidu-8418625c2b.jsonl",
+      "records": 21,
+      "sha256": "475b69a817b5616f2993daef206f8d34e1624d5fd08ee05f2122715f4bc72392"
+    },
+    {
+      "bytes": 4693,
+      "path": "data/firmware-13.60/libsceimageutil-196f49c23b.jsonl",
+      "records": 13,
+      "sha256": "adb13e235cdb001e7c6382605e17d2b223bfb8493f3dad882a9835b83c04c3b8"
+    },
+    {
+      "bytes": 28139,
+      "path": "data/firmware-13.60/libsceime-7d565475dc.jsonl",
+      "records": 61,
+      "sha256": "5877d921c1767f762ec08c9ae4fb48a117ff9bce1e26f2f364857ad097a89d49"
+    },
+    {
+      "bytes": 11949,
+      "path": "data/firmware-13.60/libsceimebackend-877b15bc21.jsonl",
+      "records": 27,
+      "sha256": "67c3896c75b640d5473b6a186db76f33530e8a0fb4c609086c49db02718a0d8c"
+    },
+    {
+      "bytes": 477,
+      "path": "data/firmware-13.60/libsceimeconsecutiveclauseconversionextensions-d23f56a9ff.jsonl",
+      "records": 1,
+      "sha256": "c7dad8f0867b2635f4ff89e382fc27812ebad65e6736563e18ae0220341927f3"
+    },
+    {
+      "bytes": 7062,
+      "path": "data/firmware-13.60/libsceimedialog-a377d026f9.jsonl",
+      "records": 14,
+      "sha256": "be1884a1af52b784c90c8e62883884f51734ae75552f0415da43f904e16bea52"
+    },
+    {
+      "bytes": 428,
+      "path": "data/firmware-13.60/libsceimedialogvoicedictation-250c3b1b80.jsonl",
+      "records": 1,
+      "sha256": "60d68a83d811ef4169dfcc937f4b18cf52ca2892fba11f817719c52095547871"
+    },
+    {
+      "bytes": 456,
+      "path": "data/firmware-13.60/libsceimeremoteplayextensions-a8fcd23254.jsonl",
+      "records": 1,
+      "sha256": "8978e77da153ad771ee2e5688fabc06debe9aff38ae000318eeb2bcf895aaa3f"
+    },
+    {
+      "bytes": 441,
+      "path": "data/firmware-13.60/libsceimevoicedictation-1bfbf4278e.jsonl",
+      "records": 1,
+      "sha256": "2c6ec05f0ad943e7ff257c0bffe38ed4099946613e5e6fd90e250b0ab474e1dd"
+    },
+    {
+      "bytes": 3105,
+      "path": "data/firmware-13.60/libsceinetstat-7c103918cd.jsonl",
+      "records": 9,
+      "sha256": "bafa79a45e1ce2d63943f931c67876793a33e313d0f426babef61d96b581c985"
+    },
+    {
+      "bytes": 4384,
+      "path": "data/firmware-13.60/libsceinvitationdialog-ef55575cc7.jsonl",
+      "records": 9,
+      "sha256": "8b11cfc0ee1213ceefc38e845eddf3f3ceb20f3b9cf1a3faf4fdc41afb6ebe3a"
+    },
+    {
+      "bytes": 883,
+      "path": "data/firmware-13.60/libsceinvitationdialogcompat-5702b9f8f7.jsonl",
+      "records": 2,
+      "sha256": "db50cdfc1201c7ae18e12eb4e7733d1133eb45083236d8e8cf0b69357b353fe2"
+    },
+    {
+      "bytes": 46346,
+      "path": "data/firmware-13.60/libsceipmi-0973fa2a61.jsonl",
+      "records": 92,
+      "sha256": "99e1cc9a71fb7a3fcee18c9df284442abb90895f392ed732c9723c5961d0a56f"
+    },
+    {
+      "bytes": 2276,
+      "path": "data/firmware-13.60/libsceipmidbg-89483cb41f.jsonl",
+      "records": 5,
+      "sha256": "82d19350fe8408f5e9b37e444e6acba4d8b26fcf8478ae55352aa29e271999b5"
+    },
+    {
+      "bytes": 5504,
+      "path": "data/firmware-13.60/libscejemspace-8746e1be9b.jsonl",
+      "records": 13,
+      "sha256": "0ea17ce85f68372ba29f05c4bf8c1b69a573dbd412d24e892931a4f31890da21"
+    },
+    {
+      "bytes": 2832,
+      "path": "data/firmware-13.60/libscejpegdec-f773794b79.jsonl",
+      "records": 6,
+      "sha256": "7f2f07256a21bd2e3fea20586fc99b80d1916cd45f13374069791fb720cbd274"
+    },
+    {
+      "bytes": 437,
+      "path": "data/firmware-13.60/libscejpegdec_jvm-2d4c9de833.jsonl",
+      "records": 1,
+      "sha256": "69d7e86fbcbb6061f1672c46407a2335ed9f14a368f3e44b184d5e460b70ea58"
+    },
+    {
+      "bytes": 1877,
+      "path": "data/firmware-13.60/libscejpegenc-46f7798020.jsonl",
+      "records": 4,
+      "sha256": "ec9b1c1fac1bd5e3c9fec26c8276cb9f8758fbb1b2fa2557f1191d7dbdbb5f85"
+    },
+    {
+      "bytes": 2688,
+      "path": "data/firmware-13.60/libscejpegparser-3fc99ffc0b.jsonl",
+      "records": 7,
+      "sha256": "f3967dad03ed67ada5995655dcc57732ef756f8424b40a24ac8ab99bfcd7bc3b"
+    },
+    {
+      "bytes": 1996178,
+      "path": "data/firmware-13.60/libscejsc-80e21a2f59.jsonl",
+      "records": 4439,
+      "sha256": "25ad00d7c8ac2663ef8067947cfcb63314bcda236e145c470b020704e04546f0"
+    },
+    {
+      "bytes": 93545,
+      "path": "data/firmware-13.60/libscejsi-0-70-e7d0945620.jsonl",
+      "records": 265,
+      "sha256": "71530860a25072410ac2cbd64bc76a22dbbc580f50069ba24938e3cbf7d9e01a"
+    },
+    {
+      "bytes": 41958,
+      "path": "data/firmware-13.60/libscejson-4373222ebf.jsonl",
+      "records": 88,
+      "sha256": "03432012cc2161bb20f1f235f7ffe6f4c2be400976ef826ef735392c0a182581"
+    },
+    {
+      "bytes": 102602,
+      "path": "data/firmware-13.60/libscejson2-8c5e612736.jsonl",
+      "records": 215,
+      "sha256": "4c8b1031e77fdfbb52ea24ce6889da6b30ccf02517c7b4f251d2baaebea20ae6"
+    },
+    {
+      "bytes": 55283,
+      "path": "data/firmware-13.60/libscejxr-59a05f1891.jsonl",
+      "records": 136,
+      "sha256": "9fe217b9269ebbfd50ad9c4fd22220556e01310e6e448b5771a3241699cde72d"
+    },
+    {
+      "bytes": 2527,
+      "path": "data/firmware-13.60/libscejxrparser-5228dfb0bc.jsonl",
+      "records": 7,
+      "sha256": "cf68084f90561a24285b9047c527ebc03a82e76e0c694ef086159ea19e51bdde"
+    },
+    {
+      "bytes": 957,
+      "path": "data/firmware-13.60/libscekbemulate-fda3ae4412.jsonl",
+      "records": 2,
+      "sha256": "a92ec9256d95ea2ebe4ebafc554a9cee879da822656df3d5c726aa5d24b8c372"
+    },
+    {
+      "bytes": 10362,
+      "path": "data/firmware-13.60/libscekeyboard-c753859ff1.jsonl",
+      "records": 22,
+      "sha256": "4569f45d121d2f366f06bc0f81a8176a8c4fe0d16b1cc7357f47d2dba4b8e861"
+    },
+    {
+      "bytes": 1230694,
+      "path": "data/firmware-13.60/libscelibcinternal-f9a6d6abff.jsonl",
+      "records": 2688,
+      "sha256": "60c4774f4d6bd4f6cfb1969a92e84d3c51ea3282bd211af729d165f7599c4666"
+    },
+    {
+      "bytes": 3076,
+      "path": "data/firmware-13.60/libscelibcinternalext-4f3e2b94d0.jsonl",
+      "records": 7,
+      "sha256": "b55f614b081202945d0ecaecc1e132975ed24a4ae598492a8650c327e7f081d3"
+    },
+    {
+      "bytes": 172970,
+      "path": "data/firmware-13.60/libscelibressl-5289bab5fc.jsonl",
+      "records": 414,
+      "sha256": "c4a9f9b2b442c20e05d54e86269f7aaecdbea41f8b6c1dcb46a217cb37c477df"
+    },
+    {
+      "bytes": 273330,
+      "path": "data/firmware-13.60/libscelibressl3-9440a73a0b.jsonl",
+      "records": 665,
+      "sha256": "79d528e46c52ae7547420a024afe51b43617e579559a07ec29ca715b8d686c5e"
+    },
+    {
+      "bytes": 42043,
+      "path": "data/firmware-13.60/libscelncutil-aaa1c3a23c.jsonl",
+      "records": 93,
+      "sha256": "01dc3a145a2a5d855011d6a7bfcb98eb8dbb03095e82afa2d7590bb2502a4e44"
+    },
+    {
+      "bytes": 3341,
+      "path": "data/firmware-13.60/libscelogindialog-7baecdc538.jsonl",
+      "records": 7,
+      "sha256": "6b8818e7277433d37a0457e6c82dc2c888a7634ca5c2e2d8b9da55dab531c120"
+    },
+    {
+      "bytes": 20539,
+      "path": "data/firmware-13.60/libsceloginmgrserver-9d8badaba5.jsonl",
+      "records": 45,
+      "sha256": "5b79654199500f77e8311219613946ef7f8fb823d6b8c2d8ee7779af589dc0a6"
+    },
+    {
+      "bytes": 1446,
+      "path": "data/firmware-13.60/libsceloginservice-ec7f967858.jsonl",
+      "records": 3,
+      "sha256": "726d75a3ab5d5e677a34eae186539781564553d35aace61dcff971d83e1d3feb"
+    },
+    {
+      "bytes": 8442,
+      "path": "data/firmware-13.60/libscem4aacenc-b193408c34.jsonl",
+      "records": 18,
+      "sha256": "c09248570caed8ac53b6492c5042c4fef89c4cae600e0420c7a9b0f28af9e73f"
+    },
+    {
+      "bytes": 1408,
+      "path": "data/firmware-13.60/libscemat2enc-7f034e9009.jsonl",
+      "records": 4,
+      "sha256": "de12946f825dad98b312c8d090310878641be151243b07fef4d7f4df95934598"
+    },
+    {
+      "bytes": 50450,
+      "path": "data/firmware-13.60/libscembus-c03d5277f5.jsonl",
+      "records": 111,
+      "sha256": "817139f48b4457634c56af1311282c90203e339363de52a6cd823c998ec85359"
+    },
+    {
+      "bytes": 12129,
+      "path": "data/firmware-13.60/libscembusdebug-82d8e50b8e.jsonl",
+      "records": 28,
+      "sha256": "50225b890e41562c1034247712cdb45a3fc00f7f402144cf682157d142981027"
+    },
+    {
+      "bytes": 1800,
+      "path": "data/firmware-13.60/libscemediaappsharedstoragema-868191c19d.jsonl",
+      "records": 5,
+      "sha256": "449d55e70e172a68132afc6fbc963ad2453b6ead0cb8bce7bd2a6f89970c6972"
+    },
+    {
+      "bytes": 2178,
+      "path": "data/firmware-13.60/libscemediaappsharedstoragemadbg-a01493b389.jsonl",
+      "records": 6,
+      "sha256": "c35c73568846bca3b7e2a494ec3a9ba93f72508655f59adbe06316eba1a5bccb"
+    },
+    {
+      "bytes": 2880,
+      "path": "data/firmware-13.60/libscemediaappsharedstoragemc-3ca5617d10.jsonl",
+      "records": 8,
+      "sha256": "da34f852530349070885385a89f01355da342a764c930d3c659d926d730bb65e"
+    },
+    {
+      "bytes": 93693,
+      "path": "data/firmware-13.60/libscemediaframeworkinterface-971396c6b2.jsonl",
+      "records": 225,
+      "sha256": "e73b863573421d2612d4b8012305933e444e032b3ea87160c2b54ca1a6323cdf"
+    },
+    {
+      "bytes": 4475,
+      "path": "data/firmware-13.60/libscemediaframeworkutil-c0af9aa86b.jsonl",
+      "records": 11,
+      "sha256": "739a38d161073938072d8252124ce3e50d2a85efd5e91d2195bba51059eb3875"
+    },
+    {
+      "bytes": 26958,
+      "path": "data/firmware-13.60/libscemetadatareaderwriter-a2bb1eaf2f.jsonl",
+      "records": 64,
+      "sha256": "057e921a8526485f99e92539642bd8f56fb173843000d674680ec69853b45dbb"
+    },
+    {
+      "bytes": 11188,
+      "path": "data/firmware-13.60/libscemouse-acdd5b5e23.jsonl",
+      "records": 25,
+      "sha256": "b847b545bddafef7008e6d31c4f4762c4707bf9d9e262ce3e4585876cf9b80ae"
+    },
+    {
+      "bytes": 2681,
+      "path": "data/firmware-13.60/libscemouseextension_nosubmission-bc58a8731d.jsonl",
+      "records": 6,
+      "sha256": "41c60786711e0682db980abda0fee2b42a654c8fc184076a3e709595db83f5d0"
+    },
+    {
+      "bytes": 9866,
+      "path": "data/firmware-13.60/libscemove-1c870ad5ab.jsonl",
+      "records": 21,
+      "sha256": "6cf36d6bf49e0b2e7ae5ab9ae226de967dec4f9f02edb2ca50cdf686b8703352"
+    },
+    {
+      "bytes": 8639,
+      "path": "data/firmware-13.60/libscemovetracker-ff050fd52b.jsonl",
+      "records": 18,
+      "sha256": "86ec1da03df8c0fddb47eb1b300bca99844231cdda4e3f0ae8f29e8cbc44fb01"
+    },
+    {
+      "bytes": 4758,
+      "path": "data/firmware-13.60/libscemsgdialog-6713ff1442.jsonl",
+      "records": 10,
+      "sha256": "2b311158df86e1a43418b193f1ba581dfefe6b44092ddf3ae3df923bcc27e87a"
+    },
+    {
+      "bytes": 4478,
+      "path": "data/firmware-13.60/libscemsgdialog-native-bee5236462.jsonl",
+      "records": 10,
+      "sha256": "80d80610be3ba4725a9555151c85d87282d63beff0d303861d855f2fa904dd84"
+    },
+    {
+      "bytes": 3121,
+      "path": "data/firmware-13.60/libscemusiccoreinterface-0263dcc276.jsonl",
+      "records": 7,
+      "sha256": "c5d3638fe9b7f8523ff1de102a47f69155ba0bc948d65de0e9ef09a5e24921da"
+    },
+    {
+      "bytes": 17194,
+      "path": "data/firmware-13.60/libscemusicframeworkinterface-2861c664b4.jsonl",
+      "records": 37,
+      "sha256": "70ca3d50f3180abe0ec5379e350e4cf30f2bbd4f7b5bbaaccf8c6ad261f5c78d"
+    },
+    {
+      "bytes": 2004,
+      "path": "data/firmware-13.60/libscenkweb-c90c06666b.jsonl",
+      "records": 5,
+      "sha256": "0205f38ff5f51b41bb6a0b1c017ce430c0706f1188d066eb73a6286faab60449"
+    },
+    {
+      "bytes": 461,
+      "path": "data/firmware-13.60/libscenkwebcdlginjectedbundle-3fdecd9aba.jsonl",
+      "records": 1,
+      "sha256": "047f310c4e4ae1d8366ad121029c183eeb5df7d7e54723961c826ab1c08bb337"
+    },
+    {
+      "bytes": 6833347,
+      "path": "data/firmware-13.60/libscenkwebkit-30d4baac63.jsonl",
+      "records": 15665,
+      "sha256": "795bfc9f6075dc93e501b00fd28be4560ea029adb3ab61341db095f6d0c70262"
+    },
+    {
+      "bytes": 74562,
+      "path": "data/firmware-13.60/libscenkwebkitrequirements-e1791fbd7a.jsonl",
+      "records": 177,
+      "sha256": "f678bb250524798a849629a188de2d8dede207dffe33e6b246ebb5b9e1d36b0f"
+    },
+    {
+      "bytes": 113473,
+      "path": "data/firmware-13.60/libscenet-99b5a08cd0.jsonl",
+      "records": 233,
+      "sha256": "4d9dcfa594f455dd163afb3f6d7ee7f85785fa0cbe5f8d155d38ba013095e217"
+    },
+    {
+      "bytes": 4186,
+      "path": "data/firmware-13.60/libscenetbwe-71486fcd7f.jsonl",
+      "records": 9,
+      "sha256": "8574f896edb4714ee3b8ef541f43958313ab08f962440e940d9902721f1b6fff"
+    },
+    {
+      "bytes": 704,
+      "path": "data/firmware-13.60/libscenetconnswitcher-e0febe57f8.jsonl",
+      "records": 2,
+      "sha256": "69bc7f92e2a82f5900445c3a1f4751f2b9c3b56aef2d90de0fa51b7b2e589f1f"
+    },
+    {
+      "bytes": 28395,
+      "path": "data/firmware-13.60/libscenetctl-c91eb92654.jsonl",
+      "records": 57,
+      "sha256": "b1a3636fd8a235ee808dc0e01abbaf1e686273bd980ae4a9cb07b92dca14c8fc"
+    },
+    {
+      "bytes": 4969,
+      "path": "data/firmware-13.60/libscenetctlap-522e5de9fc.jsonl",
+      "records": 11,
+      "sha256": "53952d7b3a750d9097225593bf6e4f536ce0ab1e3423ec348badf24c759b801a"
+    },
+    {
+      "bytes": 3383,
+      "path": "data/firmware-13.60/libscenetctlapdialog-0e58f113f8.jsonl",
+      "records": 7,
+      "sha256": "ee08457d275dde2b4ae16591003d21a248b061f0882c05ab2d70aca38fb6d935"
+    },
+    {
+      "bytes": 11446,
+      "path": "data/firmware-13.60/libscenetctlapipcint-a586abec29.jsonl",
+      "records": 27,
+      "sha256": "4802dda79194aac9066207c5b709c8512eec1c428089a4867d323151df27bc64"
+    },
+    {
+      "bytes": 1905,
+      "path": "data/firmware-13.60/libscenetctlfornptoolkit-f0d7c6f5f5.jsonl",
+      "records": 4,
+      "sha256": "41474f1472bdb0141aa238365d4811bf8a0ad1ab81c18d05fb0d589f3b6ee094"
+    },
+    {
+      "bytes": 2268,
+      "path": "data/firmware-13.60/libscenetctlv6-d13d2c9687.jsonl",
+      "records": 5,
+      "sha256": "9f8874d7a55527f8ca44b7dded1788a91600d901b80924eda3957f0befee6f65"
+    },
+    {
+      "bytes": 1243,
+      "path": "data/firmware-13.60/libscenetdebug-282716f925.jsonl",
+      "records": 3,
+      "sha256": "d8065beae52a9434758136f342558c7d8ee3139a48cf980753176d40ba419b5a"
+    },
+    {
+      "bytes": 360,
+      "path": "data/firmware-13.60/libscenetworkprofiler-e9af7e7957.jsonl",
+      "records": 1,
+      "sha256": "f556d34a84806dfcd404e0d5839a0dc560fea77409623f6b8b9ed86466385f23"
+    },
+    {
+      "bytes": 30415,
+      "path": "data/firmware-13.60/libscengs2-6275a7016a.jsonl",
+      "records": 66,
+      "sha256": "20f13b1759d16271e5d8b4219ca42f86733cd7af48c9e29c0f61e77e023487c1"
+    },
+    {
+      "bytes": 1905,
+      "path": "data/firmware-13.60/libscenotification-9012c70655.jsonl",
+      "records": 4,
+      "sha256": "543a7594d7aec8a867c290739e954d906f5c8efca133b54b0a325a7b9fe5fa20"
+    },
+    {
+      "bytes": 1297,
+      "path": "data/firmware-13.60/libscenpapplauncher-5798e16539.jsonl",
+      "records": 3,
+      "sha256": "cce348a6e1ee01e61a11b275fdac1fed76c4319e80339d30eb220f9335ef2ffe"
+    },
+    {
+      "bytes": 6591,
+      "path": "data/firmware-13.60/libscenpauth-fb801cb9fe.jsonl",
+      "records": 14,
+      "sha256": "f2a8181ccf17b8050900eb1d8527452f9173ec691c6ec4f90aa3ca7b5380d747"
+    },
+    {
+      "bytes": 442,
+      "path": "data/firmware-13.60/libscenpauthauthorizedapp-3ac6af9210.jsonl",
+      "records": 1,
+      "sha256": "56a9d7499b2bbd03845880c3aea6231640b877be6545e6efdfa8f3b9c20cc17b"
+    },
+    {
+      "bytes": 3292,
+      "path": "data/firmware-13.60/libscenpauthauthorizedappdialog-55af226f29.jsonl",
+      "records": 7,
+      "sha256": "38f702827ca384004fb45ba0d70fe8351d78f2db08139cfa06f7bc3f39d7b9a3"
+    },
+    {
+      "bytes": 860,
+      "path": "data/firmware-13.60/libscenpauthcompat-541337401e.jsonl",
+      "records": 2,
+      "sha256": "5f8ee255f0d5ce37541d70059920a1dae6df94bc8bf2bbaa09de5a0814a7bf5f"
+    },
+    {
+      "bytes": 5754,
+      "path": "data/firmware-13.60/libscenpcommerce-3070922ca0.jsonl",
+      "records": 12,
+      "sha256": "f26bc9454735a70820dfa921ca21ffdd46b03c9f4518983f5c0d89a38257a177"
+    },
+    {
+      "bytes": 562979,
+      "path": "data/firmware-13.60/libscenpcommon-fc2fdcf151.jsonl",
+      "records": 1199,
+      "sha256": "1f2cd188a89b6974724739ebd445a2b7b8d458289f2d5db8e0ed54ee5f4ac74e"
+    },
+    {
+      "bytes": 1271,
+      "path": "data/firmware-13.60/libscenpcommoncompat-555f8fe957.jsonl",
+      "records": 3,
+      "sha256": "e2682f0d04172b35bd76ea8e8be75e4783e9a424309c0d3342861238083e1890"
+    },
+    {
+      "bytes": 12676,
+      "path": "data/firmware-13.60/libscenpentitlementaccess-ccae344f14.jsonl",
+      "records": 25,
+      "sha256": "88b59420e5e50bc3f6c37ba0a8d6a759bcf3115b179e7305cf32d14b303fb38d"
+    },
+    {
+      "bytes": 462,
+      "path": "data/firmware-13.60/libscenpentitlementaccessgametrials-92faca6bab.jsonl",
+      "records": 1,
+      "sha256": "162ed28ddee768525f9a20cc1650875111f11be3d210bec78ca7dc1d17d439dd"
+    },
+    {
+      "bytes": 448,
+      "path": "data/firmware-13.60/libscenpentitlementaccesspft-8c3b895e86.jsonl",
+      "records": 1,
+      "sha256": "6a55831a0dc2f7a98a46d3c34481b34d83e6a71605877ee5b37e5687a721be51"
+    },
+    {
+      "bytes": 4420,
+      "path": "data/firmware-13.60/libscenpfriendlistdialog-942df65042.jsonl",
+      "records": 9,
+      "sha256": "16eaa7f2858370e7f9f87992e99096820ba2443947751847fac37e5f5808b84a"
+    },
+    {
+      "bytes": 891,
+      "path": "data/firmware-13.60/libscenpfriendlistdialogcompat-e1f311c5e9.jsonl",
+      "records": 2,
+      "sha256": "4ed773428278e319dc1c87c1d037012493397320adc16918260fb2ec639550c5"
+    },
+    {
+      "bytes": 5056,
+      "path": "data/firmware-13.60/libscenpgameintent-f7445aaf4f.jsonl",
+      "records": 11,
+      "sha256": "e2b3e42c0237e982b6cb5c6085d50e08810e4867588dccaf41144c814e328183"
+    },
+    {
+      "bytes": 237540,
+      "path": "data/firmware-13.60/libscenpmanager-50685f94ae.jsonl",
+      "records": 535,
+      "sha256": "12c73239c569e5cfef88ee52bf561e118caa52a6ffe2f17b4a18660c3dc5b724"
+    },
+    {
+      "bytes": 6079,
+      "path": "data/firmware-13.60/libscenpmanagercompat-48196e11ec.jsonl",
+      "records": 14,
+      "sha256": "129effc54401b83b12344177f5d658a99c7eeaf739f5e2ada4ceca9c3b20f087"
+    },
+    {
+      "bytes": 1289,
+      "path": "data/firmware-13.60/libscenpmanagerfortoolkit-97c8d5ebb3.jsonl",
+      "records": 3,
+      "sha256": "68580359a7e207944eb7c7ef3bafa3d57dd053f53e00af53edce306b6c1dde38"
+    },
+    {
+      "bytes": 432,
+      "path": "data/firmware-13.60/libscenpmanagerisplusmember-e3a5212104.jsonl",
+      "records": 1,
+      "sha256": "b2b06cfcd5297dd873e12ff85bd8380380d1b1b45179a5b42cb854bd5f6753e7"
+    },
+    {
+      "bytes": 33716,
+      "path": "data/firmware-13.60/libscenpmatching2-fadd731f1f.jsonl",
+      "records": 69,
+      "sha256": "3431d6c59aaea3980bdf0bd163530905cdb1b7ce5e2ff7b0c937d593dfeecf4d"
+    },
+    {
+      "bytes": 2201,
+      "path": "data/firmware-13.60/libscenpmatching2compat-958f4ed3ad.jsonl",
+      "records": 5,
+      "sha256": "f9f64c4f81ca375ac664b77e12de64310ca5ed5265ef77a7fbc93585abc0b39e"
+    },
+    {
+      "bytes": 1628,
+      "path": "data/firmware-13.60/libscenppartner001-b5ae22d388.jsonl",
+      "records": 4,
+      "sha256": "32e9d5090502cd76af176350d32d2cc90c852beb124725ff0ddfb069377a0418"
+    },
+    {
+      "bytes": 1595,
+      "path": "data/firmware-13.60/libscenppartnersubscription-5a04610102.jsonl",
+      "records": 4,
+      "sha256": "693252a4983984e317e2a8863293fe76ba60f1611f39dcf1e5c8751c5a62cfa4"
+    },
+    {
+      "bytes": 12339,
+      "path": "data/firmware-13.60/libscenpparty-9dd80b6070.jsonl",
+      "records": 26,
+      "sha256": "7ee200269a8f88174eb34a6ef750d8fb18e6ee2c043305ff9c43cc410e20c281"
+    },
+    {
+      "bytes": 2578,
+      "path": "data/firmware-13.60/libscenppartycompat-a6b60f01c6.jsonl",
+      "records": 6,
+      "sha256": "773a144d5ca656bb44823069b22654fdbb1ebbe403789b0ac10bdf104be865c4"
+    },
+    {
+      "bytes": 708,
+      "path": "data/firmware-13.60/libscenppremiumaddcont-837baa1dd3.jsonl",
+      "records": 2,
+      "sha256": "4f33eb7d1a54ae3553c108cc40afb4c01e42c8efaf7ab9f523928e448da665ed"
+    },
+    {
+      "bytes": 3879,
+      "path": "data/firmware-13.60/libscenpprofiledialog-c7577d0688.jsonl",
+      "records": 8,
+      "sha256": "a60c7102d98d9ae52ee058788a28a6863d52e864c7d4a9e2ec6defd4681094eb"
+    },
+    {
+      "bytes": 437,
+      "path": "data/firmware-13.60/libscenpprofiledialogcompat-583ff35692.jsonl",
+      "records": 1,
+      "sha256": "4cca46bb55927c4770a954d47d7284c610b3ce1fb20e5d655e8da64e9c038d80"
+    },
+    {
+      "bytes": 7062,
+      "path": "data/firmware-13.60/libscenpremoteplaysessionsignaling-4680662e05.jsonl",
+      "records": 14,
+      "sha256": "4cea75f93873fece81f67702379f56729e6394f8d266c5c44edeffb9f6bfb129"
+    },
+    {
+      "bytes": 22007,
+      "path": "data/firmware-13.60/libscenpscore-2ece59866d.jsonl",
+      "records": 51,
+      "sha256": "4e257823c827c0a2d7eb31cfba2ae622b30b6b63a07cb26029528001202e7ed1"
+    },
+    {
+      "bytes": 4790,
+      "path": "data/firmware-13.60/libscenpscorecompat-a812ccc823.jsonl",
+      "records": 11,
+      "sha256": "aff026e767cdc560a6591e2497fbe1067a18c15f390af793ae4a4f35e570774a"
+    },
+    {
+      "bytes": 2624,
+      "path": "data/firmware-13.60/libscenpsessionservice-096f5fc887.jsonl",
+      "records": 6,
+      "sha256": "b127170258ef5b0ee4d81c1a7c83697f70d1a57dd0709646ad0cbf097c17ee98"
+    },
+    {
+      "bytes": 15279,
+      "path": "data/firmware-13.60/libscenpsessionsignaling-58c8806476.jsonl",
+      "records": 31,
+      "sha256": "b1885bd3787202f03d33519de2f8e61c66688e6eb38e001e0dc2d5192c671250"
+    },
+    {
+      "bytes": 4461,
+      "path": "data/firmware-13.60/libscenpsessionsignalingcrossplay-2f967756f1.jsonl",
+      "records": 11,
+      "sha256": "1b3378d1a439f4f9322349504e85ead4c55a392c84caff80e031cb531aae74c4"
+    },
+    {
+      "bytes": 11672,
+      "path": "data/firmware-13.60/libscenpsignaling-58291f9b6a.jsonl",
+      "records": 24,
+      "sha256": "703007a1816b83e31eb830caa35fc5902eafe27a822774ee7efc97d5443cf451"
+    },
+    {
+      "bytes": 2208,
+      "path": "data/firmware-13.60/libscenpsignalingcompat-cb95984aaf.jsonl",
+      "records": 5,
+      "sha256": "9ef30f7e439c82f3d9184be0a2c5887f50f731d6fbb47f0eeab3e95bae25b880"
+    },
+    {
+      "bytes": 7629,
+      "path": "data/firmware-13.60/libscenpsns-a26261a4bf.jsonl",
+      "records": 16,
+      "sha256": "4f245135871f6f7ec74ad16693b5831b54d174f4f24750595de3daae0330e131"
+    },
+    {
+      "bytes": 3453,
+      "path": "data/firmware-13.60/libscenpsnsfacebookdialog-909497a6df.jsonl",
+      "records": 7,
+      "sha256": "ac60f9b849929ee1f54bb8aa73f8255374baa4a6f6b445d8444c48be1f0b7f7a"
+    },
+    {
+      "bytes": 1728,
+      "path": "data/firmware-13.60/libscenpsnstwitch-879ef14bba.jsonl",
+      "records": 4,
+      "sha256": "f049f7d4c14c92fb2bbf2d6abf421203ca9069a46f90781b54eb305ef8552073"
+    },
+    {
+      "bytes": 1736,
+      "path": "data/firmware-13.60/libscenpsnsyoutube-7aba96f21d.jsonl",
+      "records": 4,
+      "sha256": "e82a6cff937735454292c7953eac059976440bf6bdde7b20ea76878c0b52cce5"
+    },
+    {
+      "bytes": 3439,
+      "path": "data/firmware-13.60/libscenpsnsyoutubedialog-0845c072ca.jsonl",
+      "records": 7,
+      "sha256": "6d65d9337f5be42a5bd8fe00e550ff841bd40cf1e612d86fe631b5b95cdd9930"
+    },
+    {
+      "bytes": 3038,
+      "path": "data/firmware-13.60/libscenpspeechtotext-0a2725dea6.jsonl",
+      "records": 7,
+      "sha256": "543f69fa275de455e6428048fc76d71b1edb045e5ff7c80571dd3dd052b90e81"
+    },
+    {
+      "bytes": 4336,
+      "path": "data/firmware-13.60/libscenptexttospeech-f976f412bd.jsonl",
+      "records": 11,
+      "sha256": "f0ff7a9583c7dfe049d572f59ed4c9f48c1fcf6be4dd8cd46c35d4f387aca003"
+    },
+    {
+      "bytes": 52145,
+      "path": "data/firmware-13.60/libscenptrophy-838da4c283.jsonl",
+      "records": 110,
+      "sha256": "f92345a3e401d95558c805c233f56be8e93c913d1d2b1fb02bac002d55c81de3"
+    },
+    {
+      "bytes": 26662,
+      "path": "data/firmware-13.60/libscenptrophy2-1930007824.jsonl",
+      "records": 56,
+      "sha256": "5309e02f92ec69a75682bb247f0b5cd1463ea02d0e8c774dc53737f01febfd11"
+    },
+    {
+      "bytes": 68328,
+      "path": "data/firmware-13.60/libscenptus-46c37e7c72.jsonl",
+      "records": 142,
+      "sha256": "68776e9ff111f41c1bb95d98b73fecba6a2fd274d2a4f6f227191963b1337fa9"
+    },
+    {
+      "bytes": 19117,
+      "path": "data/firmware-13.60/libscenptuscompat-6223d5eb05.jsonl",
+      "records": 44,
+      "sha256": "b0a27680552c2e509971c65c9762b4efe0e13a647727c9c8fe65c30571790cb4"
+    },
+    {
+      "bytes": 1400,
+      "path": "data/firmware-13.60/libscenpubisoftplus-6af4f14135.jsonl",
+      "records": 4,
+      "sha256": "5e5327fd500818d9fff58c2ae17682714052cc198ec043d2b2824d26aed504b0"
+    },
+    {
+      "bytes": 30797,
+      "path": "data/firmware-13.60/libscenpuniversaldatasystem-0592089c41.jsonl",
+      "records": 61,
+      "sha256": "a88c08854736626688c200f4093b4caa210a913a5d8e4aed91e75999ef37cbad"
+    },
+    {
+      "bytes": 48715,
+      "path": "data/firmware-13.60/libscenputility-2abea67b6d.jsonl",
+      "records": 102,
+      "sha256": "8d182116aba2c8aab3c1db11ac90e81d89a3da3dd65d8eac09bb8c93794522b4"
+    },
+    {
+      "bytes": 1296,
+      "path": "data/firmware-13.60/libscenputilitycompat-2dc4843393.jsonl",
+      "records": 3,
+      "sha256": "960e8c1d959dd58ac38e41c575fc7109d710ce8484bf19d1c0466bb193196bdb"
+    },
+    {
+      "bytes": 40202,
+      "path": "data/firmware-13.60/libscenpwebapi-30b6435a6f.jsonl",
+      "records": 94,
+      "sha256": "a70c4ac5d5780fb4360a90f1b46410a58c5147e971bbcdce338e0bbfb1128759"
+    },
+    {
+      "bytes": 20517,
+      "path": "data/firmware-13.60/libscenpwebapi2-7969c31daf.jsonl",
+      "records": 43,
+      "sha256": "6cb71ce8e58c3227e6bcde04b2e0c6a76d73165b85f5f738b6b7770778833292"
+    },
+    {
+      "bytes": 1083,
+      "path": "data/firmware-13.60/libscenpwebapi2asyncrestricted-02f4732016.jsonl",
+      "records": 3,
+      "sha256": "fb8f701796476707e6978ed01163e607d878ed1f80c66f2a89b78f5ba9c0bf68"
+    },
+    {
+      "bytes": 5269,
+      "path": "data/firmware-13.60/libscenpwebapicompat-f0705dedfa.jsonl",
+      "records": 12,
+      "sha256": "ed8a8e24905ceef33d52c0a97992a6b8f3b70832d476eb3f15885ebb14d8d841"
+    },
+    {
+      "bytes": 451,
+      "path": "data/firmware-13.60/libsceopenpsid-3222d173f7.jsonl",
+      "records": 1,
+      "sha256": "1c42c8acd5fcaaf9353f89f3d0e622ccb146a8cee90156b060e93cc4e2ed8cef"
+    },
+    {
+      "bytes": 5699,
+      "path": "data/firmware-13.60/libsceopusceltdec-c6e554d356.jsonl",
+      "records": 12,
+      "sha256": "793f1cdd09cd13f0fb0e3db8ae365d1c4de5c0e2c58cb501f81cea4df56a449c"
+    },
+    {
+      "bytes": 10198,
+      "path": "data/firmware-13.60/libsceopusceltenc-b31be2adfa.jsonl",
+      "records": 24,
+      "sha256": "800443b5dd00c43fd358b057dfdb20dc75b4a844dd68ef4583295b846518c8bf"
+    },
+    {
+      "bytes": 12438,
+      "path": "data/firmware-13.60/libsceopusdec-69c895457e.jsonl",
+      "records": 30,
+      "sha256": "1c515e0ee3186293de0882c3d18a71a4cdfd567c74672b89839376c13cd935ef"
+    },
+    {
+      "bytes": 7173,
+      "path": "data/firmware-13.60/libsceopussilkenc-5db8f0bbee.jsonl",
+      "records": 15,
+      "sha256": "74836affcec1e88675176d42d8cfb619a81a8bde13f9b5c5fb0bd322ea32d0eb"
+    },
+    {
+      "bytes": 3861,
+      "path": "data/firmware-13.60/libscepsnowgkp-aff6c2627b.jsonl",
+      "records": 9,
+      "sha256": "f40a985f6749506a420a1240c07e53faf86e36cb1a843511f4e13977acf10703"
+    },
+    {
+      "bytes": 98313,
+      "path": "data/firmware-13.60/libscepad-190bd602e9.jsonl",
+      "records": 212,
+      "sha256": "9d6fd139fb8decec412d30a43ed58a93972a653144e1d91e6c77961d228a7740"
+    },
+    {
+      "bytes": 2854,
+      "path": "data/firmware-13.60/libscepadtracker-cfc57a4ed9.jsonl",
+      "records": 6,
+      "sha256": "579207861c9db592ae6d17f280e8f9ead4dc95eb365be9dab16b200c7ff929c0"
+    },
+    {
+      "bytes": 5273,
+      "path": "data/firmware-13.60/libscepatchcheckerclient-fd67d78b62.jsonl",
+      "records": 11,
+      "sha256": "a2261a3dee47e803a58fe657930068e93b6f7ed0d95dc06b8e87f99e9fa101d8"
+    },
+    {
+      "bytes": 11488,
+      "path": "data/firmware-13.60/libsceplayareaeditor-997cd835e8.jsonl",
+      "records": 32,
+      "sha256": "9d1b352bf4d938775ca525ace55eeb381903ffc507933ff58b1b1d15d36a9b49"
+    },
+    {
+      "bytes": 10231,
+      "path": "data/firmware-13.60/libsceplaygo-8d02b7ecad.jsonl",
+      "records": 22,
+      "sha256": "59a906c800261c9b246c473ad18cbf842e6240421dc304de4ef17db02941ab7f"
+    },
+    {
+      "bytes": 3355,
+      "path": "data/firmware-13.60/libsceplaygodialog-84cebf9711.jsonl",
+      "records": 7,
+      "sha256": "10a359ac5587d9552c1453b77ec4b0116ec3d66b5b9d2e99df4c48110db9c66c"
+    },
+    {
+      "bytes": 868,
+      "path": "data/firmware-13.60/libsceplaygo_nosubmission-70cc32fa0f.jsonl",
+      "records": 2,
+      "sha256": "9f0db84aeb6f131cbd72e8607d3912ff9d6058605e1b187e78abde9c840510a4"
+    },
+    {
+      "bytes": 23972,
+      "path": "data/firmware-13.60/libsceplayready-9dd29d6848.jsonl",
+      "records": 50,
+      "sha256": "bff3f4a49fb65f52fd95e5e38acc08be4fa4a5aababf971dbb36df497a4a38d3"
+    },
+    {
+      "bytes": 25063,
+      "path": "data/firmware-13.60/libsceplayready2-cf140a4c7d.jsonl",
+      "records": 52,
+      "sha256": "831158f1a45587246e22480c5271738db04fea62565e280901b6cc0c420845d5"
+    },
+    {
+      "bytes": 47173,
+      "path": "data/firmware-13.60/libsceplayready4-e431478f47.jsonl",
+      "records": 102,
+      "sha256": "fe87ac17b2d682923c915711b4fce722ca0189738ecdff8dc89a828e8028f84f"
+    },
+    {
+      "bytes": 41587,
+      "path": "data/firmware-13.60/libsceplayready4l-a2164c78a2.jsonl",
+      "records": 96,
+      "sha256": "6efb1bf3af5b85a10c9756898524d44dcbdbbdaa649174c8c66475af1a337c21"
+    },
+    {
+      "bytes": 3495,
+      "path": "data/firmware-13.60/libsceplayerinvitationdialog-4e3677777a.jsonl",
+      "records": 7,
+      "sha256": "74ac2044562ebe675b02c72ed8f23801a3b28a9c9324e7e592b9206555aac9d3"
+    },
+    {
+      "bytes": 3481,
+      "path": "data/firmware-13.60/libsceplayerselectiondialog-5d806a9032.jsonl",
+      "records": 7,
+      "sha256": "2b732d58230735a30bef210e4f5fea70a1a8bb11bcd4bb1c7606c56261dfe241"
+    },
+    {
+      "bytes": 2820,
+      "path": "data/firmware-13.60/libscepngdec-3a11cd9f7b.jsonl",
+      "records": 6,
+      "sha256": "ed09ba045582abf2cb0de11c2875e659f7a82d7fb966f80101dcf1e3a4682b01"
+    },
+    {
+      "bytes": 435,
+      "path": "data/firmware-13.60/libscepngdec_jvm-99d2485d07.jsonl",
+      "records": 1,
+      "sha256": "6a2743c03484b62aa56d7bbeb33e051f4631165ca91a4b94a1591c7cdb19c2c5"
+    },
+    {
+      "bytes": 1869,
+      "path": "data/firmware-13.60/libscepngenc-5d31ee506d.jsonl",
+      "records": 4,
+      "sha256": "41b8021dfde7f02233960c51fa4f2e989b4b09afd3148eb58b4feaec6a074d2e"
+    },
+    {
+      "bytes": 2527,
+      "path": "data/firmware-13.60/libscepngparser-ed25ffba3d.jsonl",
+      "records": 7,
+      "sha256": "390509084e5ba499e466c1a889a42be193ee3a68372a1e0bfc896b5a68767f46"
+    },
+    {
+      "bytes": 87384,
+      "path": "data/firmware-13.60/libsceposix-f74c28bcf0.jsonl",
+      "records": 197,
+      "sha256": "91de14f113222b60fd8c84190a3eb1fcfbbce599adf548077523f63050369c4e"
+    },
+    {
+      "bytes": 18710,
+      "path": "data/firmware-13.60/libsceposixforwebkit-62f5eac58e.jsonl",
+      "records": 38,
+      "sha256": "4edc73f79d9ca8f2c08a6881c71b3ba6f940bab01b5786dad6ba69dcd8d9b88f"
+    },
+    {
+      "bytes": 1854,
+      "path": "data/firmware-13.60/libsceproprietaryvoicechathelper-367c047340.jsonl",
+      "records": 4,
+      "sha256": "0604c94e79eabcb33e2232cd45fad8bb5e6e96a02d48c1135728320a0fa3eb9f"
+    },
+    {
+      "bytes": 3411,
+      "path": "data/firmware-13.60/libsceps2emumenudialog-6c333897da.jsonl",
+      "records": 7,
+      "sha256": "42e7b6a98001140a9f7dfcfb7601710b85415c4ad23153c061a5af8818478e05"
+    },
+    {
+      "bytes": 51131,
+      "path": "data/firmware-13.60/libscepsm-645ab9cc0c.jsonl",
+      "records": 118,
+      "sha256": "0d4fd7c00a000ed3877b85791358050ff636046fa8ba50025d252f666672a662"
+    },
+    {
+      "bytes": 1892,
+      "path": "data/firmware-13.60/libscepsmutil-d0f6c9bc8c.jsonl",
+      "records": 4,
+      "sha256": "d516636467bb7c1a4cc7415a3097ab029abc55358a95e164ebe88a34dc683aed"
+    },
+    {
+      "bytes": 11259,
+      "path": "data/firmware-13.60/libscepsml-42ee1f1451.jsonl",
+      "records": 27,
+      "sha256": "dcb37ef03ba44c82346ddd6bc15a7c3060e280189559814af0932040f2bee677"
+    },
+    {
+      "bytes": 2318,
+      "path": "data/firmware-13.60/libscepsmlbcsisr-88d7de59b5.jsonl",
+      "records": 6,
+      "sha256": "51e03ad5c70494d6c2f70869415721c90f8b3883125122eb9f4fb8bafa049149"
+    },
+    {
+      "bytes": 438,
+      "path": "data/firmware-13.60/libscepsml_lightweight-f1ec3f2795.jsonl",
+      "records": 1,
+      "sha256": "2a502a9cf2434becf13996ce24c05311826ae5180126a0f29bd71c58ecf88878"
+    },
+    {
+      "bytes": 3708,
+      "path": "data/firmware-13.60/libscepsml_mfsr2-4f0b091e18.jsonl",
+      "records": 9,
+      "sha256": "8143f93e6943b807be5ae516a8dda8cc2b2c4c52c94e7c8db88b720a39b78842"
+    },
+    {
+      "bytes": 1062,
+      "path": "data/firmware-13.60/libscepsml_nosubmission-1be6a2f57f.jsonl",
+      "records": 3,
+      "sha256": "a812095d040bc11e127aa5495b821c9572d3ed2d12f1e9d6351223457955763f"
+    },
+    {
+      "bytes": 410,
+      "path": "data/firmware-13.60/libscepsml_quality8k-6829a3fff8.jsonl",
+      "records": 1,
+      "sha256": "deed6825be9236237aae40479827178b1b7c6d9547875f80a954f81f8d26239f"
+    },
+    {
+      "bytes": 357,
+      "path": "data/firmware-13.60/libscepsml_set_mfsrversion-76d4e1bf6b.jsonl",
+      "records": 1,
+      "sha256": "b7c29da73313fd5d0e6e29a1e3a8df758dc89892632ce7692a61d52b7a7e40c9"
+    },
+    {
+      "bytes": 412,
+      "path": "data/firmware-13.60/libscepsml_specularaa-f2288e4db1.jsonl",
+      "records": 1,
+      "sha256": "a6c8fc7b1c1644346e10febecdcef8a970c246ee042351bd6d7a916f6e5c49fe"
+    },
+    {
+      "bytes": 2178,
+      "path": "data/firmware-13.60/libscepubsubclientshared-bfceb02376.jsonl",
+      "records": 6,
+      "sha256": "c131426ac3b797cc07aedc87c42a95118c71afafa59a17c588e9bc79aaf03caa"
+    },
+    {
+      "bytes": 503,
+      "path": "data/firmware-13.60/libscerandom-1c0fa8a87a.jsonl",
+      "records": 1,
+      "sha256": "d209521341d93933fc407684365247777169441aeee8b7f0f5468d0c334c09c7"
+    },
+    {
+      "bytes": 19757,
+      "path": "data/firmware-13.60/libscerazorcpu-98b3fdc87b.jsonl",
+      "records": 42,
+      "sha256": "dc1ea7d4b296cba22cbad6ba3b198257ff0e22a5d329d950a196242200672887"
+    },
+    {
+      "bytes": 39881,
+      "path": "data/firmware-13.60/libsceregmgr-8fde52949a.jsonl",
+      "records": 86,
+      "sha256": "ff3aae4084c740030c0accacc63629f549b64918f02c4e5e12e5d5d52f04038d"
+    },
+    {
+      "bytes": 7106,
+      "path": "data/firmware-13.60/libsceremoteplayclientipc-a19da1c287.jsonl",
+      "records": 18,
+      "sha256": "9b6b2d763ec32a0cc7c2ae38ed178ae74c33c5df5b5f4570ea54876921295971"
+    },
+    {
+      "bytes": 24458,
+      "path": "data/firmware-13.60/libsceremoteplay-0c70684750.jsonl",
+      "records": 49,
+      "sha256": "08f3f5aa10737bbe23d676073ad314202c551ff83045c9e81408a1ce450e7e4e"
+    },
+    {
+      "bytes": 447,
+      "path": "data/firmware-13.60/libsceremoteplay_nosubmission-951815cbba.jsonl",
+      "records": 1,
+      "sha256": "7f1ab50f7a84f4b9add54aa803af1c0946ba99ee9cf42a3e725ad4f0aab192aa"
+    },
+    {
+      "bytes": 2955,
+      "path": "data/firmware-13.60/libscereportseqhandlerif-c77cfd344f.jsonl",
+      "records": 7,
+      "sha256": "a7463f7880bdfe24a986c3b6d723d91235a6a2d8722a6af77a8d1f1833f368a8"
+    },
+    {
+      "bytes": 5589,
+      "path": "data/firmware-13.60/libsceresourcearbitrator-f8c0d1239b.jsonl",
+      "records": 14,
+      "sha256": "feffcc0dfb4816333543d72a5da3bdae1bc5516a51fc14b58935a40da2721789"
+    },
+    {
+      "bytes": 14067,
+      "path": "data/firmware-13.60/libscernpsappmgr-cd4e6339be.jsonl",
+      "records": 30,
+      "sha256": "bb3efb39dfb2901031cd61264f06f138da275bf2be5990a3a77256b332c8096b"
+    },
+    {
+      "bytes": 3816,
+      "path": "data/firmware-13.60/libscernpsbundle-6bc8892b2a.jsonl",
+      "records": 10,
+      "sha256": "944267ff59ccddbd1b1d952d157ef69cf652a9cb918fa13992d90721b7bcb325"
+    },
+    {
+      "bytes": 458,
+      "path": "data/firmware-13.60/libscernpsnkinjectedbundle-9ffd00fb9e.jsonl",
+      "records": 1,
+      "sha256": "fc2730f5d876faed66b9519a219b99b15c293e312179653cad13de59e380a020"
+    },
+    {
+      "bytes": 21999,
+      "path": "data/firmware-13.60/libscertc-0a662b0adf.jsonl",
+      "records": 47,
+      "sha256": "950bf1ae6a8e1d8a8342b4da3368c6c94c3bac618a14a42d9e573a951a430698"
+    },
+    {
+      "bytes": 16270,
+      "path": "data/firmware-13.60/libscerudp-733f5190bf.jsonl",
+      "records": 35,
+      "sha256": "bcb60c257099b5e95687588e14d5b3c50ceb0b00e56fddd7e77edec28af1a69f"
+    },
+    {
+      "bytes": 1844,
+      "path": "data/firmware-13.60/libsces3da-71e96627ab.jsonl",
+      "records": 4,
+      "sha256": "fd8336d69f0467a15afe86ba1c9d7ac82fab06b38dafae2239933346501cb186"
+    },
+    {
+      "bytes": 56215,
+      "path": "data/firmware-13.60/libscesavedata-f92dab8a68.jsonl",
+      "records": 123,
+      "sha256": "f629e45a4d2734157d79b2068c5122e6471d8e6f8de8ee0e76eaf701bcc9382b"
+    },
+    {
+      "bytes": 4857,
+      "path": "data/firmware-13.60/libscesavedatadialog-ad72ae25be.jsonl",
+      "records": 10,
+      "sha256": "69d3d68a4bd2b30d1bb94e50ec2791446cd10360cb4e87846c56f60df285176f"
+    },
+    {
+      "bytes": 4927,
+      "path": "data/firmware-13.60/libscesavedatadialog-native-5f296ff7a7.jsonl",
+      "records": 10,
+      "sha256": "7d6f33dcf07e9cefc575afa6a775284b5327a82ea46975b64444951446520ddb"
+    },
+    {
+      "bytes": 17243,
+      "path": "data/firmware-13.60/libscesavedata_native-26cd5bc66d.jsonl",
+      "records": 40,
+      "sha256": "69baeba075afcc864bf180698e00ed0bcc8a70ebf15dcda6f9b320a741cda624"
+    },
+    {
+      "bytes": 437,
+      "path": "data/firmware-13.60/libscesavedata_native_old_format-7a088dcbed.jsonl",
+      "records": 1,
+      "sha256": "faa5e1f63589972659055d4fddd6cdb7f999707af9b7722ac7cd268df98e9461"
+    },
+    {
+      "bytes": 5766,
+      "path": "data/firmware-13.60/libscescreenshot-b5f6078e4b.jsonl",
+      "records": 12,
+      "sha256": "152363ef685b6e4230198e64c6150f873313bc180cad4c85dd7303b66e77fa1d"
+    },
+    {
+      "bytes": 431,
+      "path": "data/firmware-13.60/libscescreenshotdrc-f5b3032697.jsonl",
+      "records": 1,
+      "sha256": "bfcd41b6d00f7e55fe223b29b61f6525dddbb0adce013a2445ea48997bbed5a3"
+    },
+    {
+      "bytes": 12631,
+      "path": "data/firmware-13.60/libscesdma-ba13c0c1ff.jsonl",
+      "records": 27,
+      "sha256": "971a2d513acfe5d2ac9b529bb1cabd22a043917ab40ab8fe78cb2e1f3d826757"
+    },
+    {
+      "bytes": 7501,
+      "path": "data/firmware-13.60/libsceshare-fb3fd9e36c.jsonl",
+      "records": 17,
+      "sha256": "3571e1666c482d462ed8d03cde94d81bb8a6376c3826bad1895ef58b52884f7c"
+    },
+    {
+      "bytes": 2981,
+      "path": "data/firmware-13.60/libscesharefactoryutil-1ec82ac0d2.jsonl",
+      "records": 6,
+      "sha256": "97df2aa7fc75beef1197dc009dc638c296544a4ba113fb21378a3a185b454702"
+    },
+    {
+      "bytes": 808,
+      "path": "data/firmware-13.60/libsceshareforacf-f7da89440b.jsonl",
+      "records": 2,
+      "sha256": "c25bb4352d8df6409a0f666611607da34079e14ef9aad530ef2ac1b94171668a"
+    },
+    {
+      "bytes": 1514,
+      "path": "data/firmware-13.60/libsceshareforsf-def55667f1.jsonl",
+      "records": 4,
+      "sha256": "02ed1433d507c064b3220ec0128ee35b68b19e12f0fcfa9683b48a21cdb6e410"
+    },
+    {
+      "bytes": 7368,
+      "path": "data/firmware-13.60/libsceshareinternal-ce7bea75f2.jsonl",
+      "records": 19,
+      "sha256": "0817e2fff330de17fa722c8d1894d32bf6cb8af9e5930aee6531cace5f176f3f"
+    },
+    {
+      "bytes": 1571,
+      "path": "data/firmware-13.60/libsceshareinternalforshellcore-4594b6f0e3.jsonl",
+      "records": 4,
+      "sha256": "e1b6d7a15939c35feab46ba2c4386d2b0813738d35848e62ebe537398814d6e4"
+    },
+    {
+      "bytes": 11441,
+      "path": "data/firmware-13.60/libsceshareplay-b821361f17.jsonl",
+      "records": 25,
+      "sha256": "7d8f14789ef7d4de69af2f600337645cf90949c8730ca5ab3f05db71080f3978"
+    },
+    {
+      "bytes": 445,
+      "path": "data/firmware-13.60/libsceshareplaycompat-39c36521d2.jsonl",
+      "records": 1,
+      "sha256": "7a8d221854e41d57edde86ad40c7024444e8a09571efeab7d2bf7915dc3f56f1"
+    },
+    {
+      "bytes": 10859,
+      "path": "data/firmware-13.60/libsceshareutility-f08dddd989.jsonl",
+      "records": 22,
+      "sha256": "bf477e051b9c110e44df5926e84add69ebf7c5eb6ad927bee4b7fe120a8c5caa"
+    },
+    {
+      "bytes": 357,
+      "path": "data/firmware-13.60/libsceshellcoreredismodule-32fdf0c5ab.jsonl",
+      "records": 1,
+      "sha256": "67a48f62b8b732efb62f91f4aa230fa6cfab6ea3369bb3afcee161878d54af94"
+    },
+    {
+      "bytes": 119399,
+      "path": "data/firmware-13.60/libsceshellcoreutil-f30816634e.jsonl",
+      "records": 260,
+      "sha256": "ff7b26e96ff3905edf875b0de8b7d3d44f1c2e976d1adc0670090631232f4830"
+    },
+    {
+      "bytes": 3306,
+      "path": "data/firmware-13.60/libsceshelluiutil-8fc7bce6b8.jsonl",
+      "records": 7,
+      "sha256": "cba3ec75bf645fc39249f235a05fc151bd4c6f25e8f20bf296fdfd5f047b8a3f"
+    },
+    {
+      "bytes": 3355,
+      "path": "data/firmware-13.60/libscesignindialog-a349a707dd.jsonl",
+      "records": 7,
+      "sha256": "ae2fde2f0a9ded1adc40e46bf704520d7a851268cc0cd4f072a6a109dd4dcfe1"
+    },
+    {
+      "bytes": 808,
+      "path": "data/firmware-13.60/libscesisrsys-d8069f882d.jsonl",
+      "records": 2,
+      "sha256": "40e86c846cbd832515d0c6d232b87bb84c712bfbb7219bb7bab31cb17ad188ac"
+    },
+    {
+      "bytes": 5384,
+      "path": "data/firmware-13.60/libscesocialscreen-20d4a05b29.jsonl",
+      "records": 11,
+      "sha256": "e0d4018a22047d422f53342de6d85b029cc6cd9333bb3b31e76a88c4d8f80693"
+    },
+    {
+      "bytes": 3439,
+      "path": "data/firmware-13.60/libscesocialscreendialog-8320486c70.jsonl",
+      "records": 7,
+      "sha256": "638b1e7b646c5f3fed358dd962b54fc5437a922ba4b175e783a89dc83e4948eb"
+    },
+    {
+      "bytes": 23088,
+      "path": "data/firmware-13.60/libscespsyscallwrapper-5cca1a435d.jsonl",
+      "records": 48,
+      "sha256": "0f8232b225c8d67a0e44e37de7c008248287be57de18d05ff6923ce3960c1e07"
+    },
+    {
+      "bytes": 5952,
+      "path": "data/firmware-13.60/libscesrcutl-970010b531.jsonl",
+      "records": 13,
+      "sha256": "55bd41f4171a88e19a7e2a937901f13773ba2763b677a24060dc54e1ebc5eaac"
+    },
+    {
+      "bytes": 27888,
+      "path": "data/firmware-13.60/libscessl-e37212e4bb.jsonl",
+      "records": 57,
+      "sha256": "98ed1d0f478645d2ec0a370bd87f08122cf6196cb9c74f5ea4a459f694fbe3aa"
+    },
+    {
+      "bytes": 3793,
+      "path": "data/firmware-13.60/libscesulphadrv-54ca864e28.jsonl",
+      "records": 8,
+      "sha256": "388712ffc8827faf6cb51d7eba2ebaee8645838b86995c14f40ff452fd2154fa"
+    },
+    {
+      "bytes": 42802,
+      "path": "data/firmware-13.60/libscesyscore-d26d4fb57b.jsonl",
+      "records": 87,
+      "sha256": "2ff356469bfd93b6d6e5f8f7c834e8707c2acd986a2ad3df2471c73186c2e860"
+    },
+    {
+      "bytes": 11885,
+      "path": "data/firmware-13.60/libscesysutil-bdbd91b2f2.jsonl",
+      "records": 24,
+      "sha256": "17deb5a9f6d88de8b71c68ca22bbe191bd7a97d8097d1e58ee8ee99dc6920709"
+    },
+    {
+      "bytes": 9300,
+      "path": "data/firmware-13.60/libscesysmodule-4add5c9854.jsonl",
+      "records": 19,
+      "sha256": "be8994a18c0a87c7b077bff77665da925ddcc75faef8e63aca9464aaf449131c"
+    },
+    {
+      "bytes": 1050,
+      "path": "data/firmware-13.60/libscesysmodule_jvm-abbfa412b4.jsonl",
+      "records": 3,
+      "sha256": "105688609870ba44462e8b91677108c4cdf366a5fb13e2694bce4540069c9050"
+    },
+    {
+      "bytes": 11851,
+      "path": "data/firmware-13.60/libscesystemgesture-47eb2be983.jsonl",
+      "records": 24,
+      "sha256": "e142ed3ce3716fcd1abe7fd9bbde411f04f6d18dcc95a8fb96aa0a8e39dc914a"
+    },
+    {
+      "bytes": 1442,
+      "path": "data/firmware-13.60/libscesystemlogger-b27ccd93d3.jsonl",
+      "records": 3,
+      "sha256": "8edc9c061e24a770897be183285303505da0d6e9971ea4c20f1c7c11d6e07037"
+    },
+    {
+      "bytes": 6901,
+      "path": "data/firmware-13.60/libscesystemlogger2-2d5a872a6c.jsonl",
+      "records": 16,
+      "sha256": "b868f81dec91ff26c01ea2ceb94ac0a6e3d03d9a3c1415e85309f69626c8ce60"
+    },
+    {
+      "bytes": 2851,
+      "path": "data/firmware-13.60/libscesystemlogger2delivery-84263dcdd4.jsonl",
+      "records": 6,
+      "sha256": "22d92e39f8e9ec2e3a388ce703fcfc7234bc9cb3d32f6932493fad39237a029b"
+    },
+    {
+      "bytes": 912,
+      "path": "data/firmware-13.60/libscesystemlogger2game-a5d0ff0a8e.jsonl",
+      "records": 2,
+      "sha256": "281ef12e0df2a570a758a66a3223f121bc79db6dc99a2a194c7b6aa7dce18bf0"
+    },
+    {
+      "bytes": 5286,
+      "path": "data/firmware-13.60/libscesystemlogger2nativequeueclient-20515566b1.jsonl",
+      "records": 11,
+      "sha256": "1612760d9c3604df2b49677a7383c0de86e3841d237fb6f9ed58d579b9a685f3"
+    },
+    {
+      "bytes": 929,
+      "path": "data/firmware-13.60/libscesystemmodaldialog-7b9c14b321.jsonl",
+      "records": 2,
+      "sha256": "6f247555d1e4b01a9b253c09f9d329dd7684fda3e59db88770b7b50b7affc260"
+    },
+    {
+      "bytes": 59092,
+      "path": "data/firmware-13.60/libscesystemservice-2f43b8f01c.jsonl",
+      "records": 116,
+      "sha256": "3ec53b1ce54d002c4de8ff8f3d62cf1586b7e734606e5305c2aec581e7b495b0"
+    },
+    {
+      "bytes": 3370,
+      "path": "data/firmware-13.60/libscesystemserviceactivatehevc-77225561d1.jsonl",
+      "records": 7,
+      "sha256": "8412cc770b3417399e14d64d845090235adbd219dd558f91c625fb2c7bc5c0a6"
+    },
+    {
+      "bytes": 3426,
+      "path": "data/firmware-13.60/libscesystemserviceactivatehevcsoft-32282085a9.jsonl",
+      "records": 7,
+      "sha256": "b34bce92d26c0dbfc23e20a3c58c73a588bd174a3a422343127311bb0718464a"
+    },
+    {
+      "bytes": 2906,
+      "path": "data/firmware-13.60/libscesystemserviceactivatempeg2-da62ea5cbf.jsonl",
+      "records": 6,
+      "sha256": "551be34699eaff8e055d1a616e795cbdc7b8e045dcd756750c1e7910a742c3e3"
+    },
+    {
+      "bytes": 1071,
+      "path": "data/firmware-13.60/libscesystemserviceappinfo-64b8fa946e.jsonl",
+      "records": 3,
+      "sha256": "9107c93e0a2c68f0f046866a3dc0c8c63ee7e6c548a14264386e5d8273c7f245"
+    },
+    {
+      "bytes": 484,
+      "path": "data/firmware-13.60/libscesystemserviceapplaunchlink-48bffbc0db.jsonl",
+      "records": 1,
+      "sha256": "522efcb9596ba7846900667a2c2413bb9f15c8d9af5c3a972486aaf47ca1805c"
+    },
+    {
+      "bytes": 988,
+      "path": "data/firmware-13.60/libscesystemserviceclosedcaption-3f477675c8.jsonl",
+      "records": 2,
+      "sha256": "9cf8f91b0de46b740eea7718263802923dceaaababe0039afaa67f310f59e4eb"
+    },
+    {
+      "bytes": 475,
+      "path": "data/firmware-13.60/libscesystemservicedbg-2361340069.jsonl",
+      "records": 1,
+      "sha256": "a32f60b9c3da57dcdeb22fa79bdd603e0a335ce64b4ec8e6c2e7742714be6838"
+    },
+    {
+      "bytes": 1011,
+      "path": "data/firmware-13.60/libscesystemserviceeyetoeyedistance-e738882ad7.jsonl",
+      "records": 2,
+      "sha256": "86bfaff07461d1c6dc0f833cef1c22a1a97af9151ef6b6f0015b8a0f2bc7a6c1"
+    },
+    {
+      "bytes": 490,
+      "path": "data/firmware-13.60/libscesystemserviceforshellcoreonly-55ce548937.jsonl",
+      "records": 1,
+      "sha256": "fa31baa3b3176c8d8c7f58bd4ee7da610d9a45acf55a8f8847372baee71641e0"
+    },
+    {
+      "bytes": 1226,
+      "path": "data/firmware-13.60/libscesystemservicemicexclusivemode-47b4ff3b93.jsonl",
+      "records": 3,
+      "sha256": "893f7407e9f6cc530395e099589c5c9d386e0ae0b43f8f1318b85d164efeed0e"
+    },
+    {
+      "bytes": 363,
+      "path": "data/firmware-13.60/libscesystemservicepadspkrouting-a36db3a296.jsonl",
+      "records": 1,
+      "sha256": "b786242bbce9380be5d5ecdf26c3e0e82f164ae6f766100b312105d10cec0949"
+    },
+    {
+      "bytes": 959,
+      "path": "data/firmware-13.60/libscesystemservicepartyvoice-de65ad901b.jsonl",
+      "records": 2,
+      "sha256": "adbf24e5526f66676a52b2545e9c71fd66cbeb6b04142dadd7049160dfdd3978"
+    },
+    {
+      "bytes": 1493,
+      "path": "data/firmware-13.60/libscesystemserviceplatformprivacy-f04d07fb8b.jsonl",
+      "records": 3,
+      "sha256": "8a00a9a6719eb06e5c2372df760e50ccbbe65d3d9d84634d3491affe60f1a9dd"
+    },
+    {
+      "bytes": 956,
+      "path": "data/firmware-13.60/libscesystemservicepowercontrol-c171ef98f0.jsonl",
+      "records": 2,
+      "sha256": "72dc6f3152b4eab705826a2bcd8b2a3779fcaca06e8c746aab8d797fa4aa95c7"
+    },
+    {
+      "bytes": 483,
+      "path": "data/firmware-13.60/libscesystemservicepowersavelevel-4e673b688b.jsonl",
+      "records": 1,
+      "sha256": "fa0de3704e579dca0fd85821edadbeed70dc67a7ecf64179bfbc7d38ed27da18"
+    },
+    {
+      "bytes": 1928,
+      "path": "data/firmware-13.60/libscesystemserviceps2emu-c3f5d706ff.jsonl",
+      "records": 4,
+      "sha256": "9f6275ffb14af2b534013cc30b6eba3a6fa1a9e69731991ca32c18c13b7c4c38"
+    },
+    {
+      "bytes": 1447,
+      "path": "data/firmware-13.60/libscesystemservicepsmkit-b284398418.jsonl",
+      "records": 3,
+      "sha256": "4914be312b4801736bba3cab72bcd50d0c23a36e3ed3ef1b356e350ef566fc95"
+    },
+    {
+      "bytes": 368,
+      "path": "data/firmware-13.60/libscesystemservicestoragemanagement-aa0ccb2e55.jsonl",
+      "records": 1,
+      "sha256": "aff30edf21c7d2da4272b3de316f09068335fe3ba57d5218850fda9d054a7032"
+    },
+    {
+      "bytes": 468,
+      "path": "data/firmware-13.60/libscesystemservicestore-2b4cc1c0eb.jsonl",
+      "records": 1,
+      "sha256": "40ae2f2883035e454d1d822d33b4b3ff498007f3ad55ab5c31a28bd2e6c98bc0"
+    },
+    {
+      "bytes": 1450,
+      "path": "data/firmware-13.60/libscesystemservicesuspend-04bfa4dde5.jsonl",
+      "records": 3,
+      "sha256": "7e60364ad3ff910fea09ff764a06444ab968813209b5aa5daf6cbbd0de312365"
+    },
+    {
+      "bytes": 477,
+      "path": "data/firmware-13.60/libscesystemservicetelemetry-4cb671e0d2.jsonl",
+      "records": 1,
+      "sha256": "0a87e9800a0ecc976be55442e00e4acf54159bc133dbba5b94db15d1ac9cb68a"
+    },
+    {
+      "bytes": 939,
+      "path": "data/firmware-13.60/libscesystemservicetelemetry2-ca228ef617.jsonl",
+      "records": 2,
+      "sha256": "053606d9290a7a47e573218f71b14e8965c4ba4b2a429a793a5ee5f9139f07bf"
+    },
+    {
+      "bytes": 457,
+      "path": "data/firmware-13.60/libscesystemservicetournament-6554934138.jsonl",
+      "records": 1,
+      "sha256": "4478795d4980a0cea9bb2951200d258266a2a7c95f482e18634d12bfd877d854"
+    },
+    {
+      "bytes": 848,
+      "path": "data/firmware-13.60/libscesystemservicetournamentmlg-3f5def15c4.jsonl",
+      "records": 2,
+      "sha256": "d381d94f703e0a3cb341d63fb5f251b0f9d398ea239e3e78f6685340590b3e54"
+    },
+    {
+      "bytes": 470,
+      "path": "data/firmware-13.60/libscesystemserviceudsapp-0be33fe786.jsonl",
+      "records": 1,
+      "sha256": "ed3101fb58a1ed0cb5c0cb3a02361e721f6bda300356b37022c73604544b7107"
+    },
+    {
+      "bytes": 8303,
+      "path": "data/firmware-13.60/libscesystemserviceusbstorage-65a671bc57.jsonl",
+      "records": 17,
+      "sha256": "ff205fc5f44c9f1ab961a656409c1c44db8631419c9184d951bca4f47dd15309"
+    },
+    {
+      "bytes": 496,
+      "path": "data/firmware-13.60/libscesystemservicevideoservicewebapp-8c7bf26535.jsonl",
+      "records": 1,
+      "sha256": "d36c9b53ae73251e8b20b3b8c89084b61528d79598577aebcf44ffbd54ff8156"
+    },
+    {
+      "bytes": 476,
+      "path": "data/firmware-13.60/libscesystemservicevideotoken-56614a51e8.jsonl",
+      "records": 1,
+      "sha256": "7b827b3723489ce2fcda13ea7501c92b16d22723eaa354d942b56f03e6da035a"
+    },
+    {
+      "bytes": 983,
+      "path": "data/firmware-13.60/libscesystemservicevoicerecognition-e72896b122.jsonl",
+      "records": 2,
+      "sha256": "9d074d0989e0c10a015b3e37b1a88fc1ea3f5ac4b725ff1da7ce4b8f0dd3323b"
+    },
+    {
+      "bytes": 885,
+      "path": "data/firmware-13.60/libscesystemservicevrapp-0300c51890.jsonl",
+      "records": 2,
+      "sha256": "6de2d1163c2cd4a133fac40f6fe643c3621035cf041692df16f1b967c459891a"
+    },
+    {
+      "bytes": 826,
+      "path": "data/firmware-13.60/libscesystemservicewebapp-fe16de69f9.jsonl",
+      "records": 2,
+      "sha256": "b80b9a43b52ca295a3f12036872c226d794c9b3e1099ec089d0190ddd7ba9d7f"
+    },
+    {
+      "bytes": 478,
+      "path": "data/firmware-13.60/libscesystemservicewebbrowser-fb2133b5d2.jsonl",
+      "records": 1,
+      "sha256": "14a8d92965b0c39088b60f463980fa2f8892e8c94d26ec71180343da0ae13f1a"
+    },
+    {
+      "bytes": 748,
+      "path": "data/firmware-13.60/libscesystemserviceyoutubeaccountlinkstatus-2859d239db.jsonl",
+      "records": 2,
+      "sha256": "b955e2079497fa83d81af00368879cc683d1cba954cfbf1d624098cf5d41936e"
+    },
+    {
+      "bytes": 734,
+      "path": "data/firmware-13.60/libscesystemserviceyoutubedeviceauth-56e0dd33df.jsonl",
+      "records": 2,
+      "sha256": "664d6a1c51567b9a3047f313561b9eab03f74a16199d1ea0e291d65858153db6"
+    },
+    {
+      "bytes": 1432,
+      "path": "data/firmware-13.60/libscesystemservice_jvm-59d9c14fed.jsonl",
+      "records": 3,
+      "sha256": "e6b7f4b824af551d3eb1d16e50824e2228cf14f730e27170f2cec9cdf2686adc"
+    },
+    {
+      "bytes": 14965,
+      "path": "data/firmware-13.60/libscesystemstatemgr-a89bee8690.jsonl",
+      "records": 33,
+      "sha256": "11c3660c941b0e50cdfc1c8d49a48d0444fbcb130b16ec5047c6b65ae66b9a56"
+    },
+    {
+      "bytes": 4454,
+      "path": "data/firmware-13.60/libscesystemtts-8f4923bcd1.jsonl",
+      "records": 10,
+      "sha256": "f1530fa26c975b257b7567bafa89f152cc511298b52f820c3e9d90cf538fe9f2"
+    },
+    {
+      "bytes": 6592,
+      "path": "data/firmware-13.60/libsceteeclient-bfc96cbf59.jsonl",
+      "records": 15,
+      "sha256": "2fe5b1d0785ff099ff60a31c4e54dcf1b3301dd874d696f3776bb72183f8d11a"
+    },
+    {
+      "bytes": 357,
+      "path": "data/firmware-13.60/libscetelemetryredismodule-10680b7998.jsonl",
+      "records": 1,
+      "sha256": "c1bb9276ac62337f83f4caf5d8a59d5e110777f722530ebc7d4991df58856d5c"
+    },
+    {
+      "bytes": 5541,
+      "path": "data/firmware-13.60/libscetexttospeech-fdb21522c5.jsonl",
+      "records": 12,
+      "sha256": "e2a957a28f85c9e0c0f2b760114576766c5a4a8efa5455c7cb5288954816ecc8"
+    },
+    {
+      "bytes": 6195,
+      "path": "data/firmware-13.60/libscetexttospeech2-b43e9ee18c.jsonl",
+      "records": 14,
+      "sha256": "4fe9e9ccbcbbc232d259006e0892e739977d0bc63bd0428318d7663209f4e4f2"
+    },
+    {
+      "bytes": 6534,
+      "path": "data/firmware-13.60/libscettscoreg3bc-4ba6ec3ffb.jsonl",
+      "records": 18,
+      "sha256": "e24b6a19d983f20d57765ab94112cd08e2a71dd5a471248de96563eee4724695"
+    },
+    {
+      "bytes": 4362,
+      "path": "data/firmware-13.60/libscettsengine-d9c1f58ce6.jsonl",
+      "records": 11,
+      "sha256": "2283950a187b27e77f9d51812b422065827280e47dbc1497945726314348a9bd"
+    },
+    {
+      "bytes": 5096,
+      "path": "data/firmware-13.60/libsceugcbguploaderclient-66da27d0e7.jsonl",
+      "records": 14,
+      "sha256": "e335fcdf63b6116e25699abe90b3683a56ec4e67bba97c182bd0896b17d5ff99"
+    },
+    {
+      "bytes": 5264,
+      "path": "data/firmware-13.60/libsceugcservices3-64cb922702.jsonl",
+      "records": 14,
+      "sha256": "9f541daf460106b2f71da47393ebb8296cc77dd3ea5355918297720b76024d6a"
+    },
+    {
+      "bytes": 30189,
+      "path": "data/firmware-13.60/libsceult-3947d26438.jsonl",
+      "records": 64,
+      "sha256": "effc16eca03e69bfc42c64ea1dc020a6f90819dfa59f16f56e605d0140421cc8"
+    },
+    {
+      "bytes": 30684,
+      "path": "data/firmware-13.60/libsceupdateservice-b7f2a7b06c.jsonl",
+      "records": 70,
+      "sha256": "cfad0d8a2b544941ef1c617309b17da8c609976991a424cc232829bad12ec423"
+    },
+    {
+      "bytes": 3314,
+      "path": "data/firmware-13.60/libsceurlconfigresolver-c8fbf0f2f2.jsonl",
+      "records": 7,
+      "sha256": "ba6f58c516927feb086aad6aedc6fd73a30e263e667d2fc693c45066b8453ae2"
+    },
+    {
+      "bytes": 5298,
+      "path": "data/firmware-13.60/libsceusbstorage-cf416fa615.jsonl",
+      "records": 11,
+      "sha256": "a2f6ac18ecba0444119ab1c942a2758f72bd152788a40b41851924110d66f9dd"
+    },
+    {
+      "bytes": 3082,
+      "path": "data/firmware-13.60/libsceusbstorageaux-9d4e5d2ebe.jsonl",
+      "records": 7,
+      "sha256": "b46db012b6d52fed7f7b3c4405601d8aca69fea6352d3f9c29c2b9485fbfaf58"
+    },
+    {
+      "bytes": 3411,
+      "path": "data/firmware-13.60/libsceusbstoragedialog-82fc91e3b4.jsonl",
+      "records": 7,
+      "sha256": "1cc2e3d88ea200f359089434f727ca3c30bc41d49608c6c7e6dc4f03611d4ebd"
+    },
+    {
+      "bytes": 26412,
+      "path": "data/firmware-13.60/libsceusbstorageforshellui-826a4d467f.jsonl",
+      "records": 69,
+      "sha256": "b0f9d8cbec3ad674b62201b72b1dd17e520e448cb53635fdbf3c8b9f382dc2d9"
+    },
+    {
+      "bytes": 29403,
+      "path": "data/firmware-13.60/libsceusbd-e616aa44a4.jsonl",
+      "records": 63,
+      "sha256": "efd26d7a19f30cfff2d437804cb731e53cce6c11f6bb6a2731541bd31c064842"
+    },
+    {
+      "bytes": 300403,
+      "path": "data/firmware-13.60/libsceuserservice-ec97f04de9.jsonl",
+      "records": 651,
+      "sha256": "5b32bca80f01c1f1073348c99598723323c6109828206f6e3b822557dfdf8e35"
+    },
+    {
+      "bytes": 418,
+      "path": "data/firmware-13.60/libsceuserserviceaudiofocus-925eb40585.jsonl",
+      "records": 1,
+      "sha256": "574589230b429e2919743a19c0c4af0e32983d0d55bace2742401fccfc1a62cb"
+    },
+    {
+      "bytes": 916,
+      "path": "data/firmware-13.60/libsceuserservicefornptoolkit-a1a43c2246.jsonl",
+      "records": 2,
+      "sha256": "42356b10fde9dfaac2a738ad0e3b80f8bf413cefdefd4189386830c4fb5e7feb"
+    },
+    {
+      "bytes": 915,
+      "path": "data/firmware-13.60/libsceuserserviceforshellcore-0c9f6dca18.jsonl",
+      "records": 2,
+      "sha256": "42ff5a72ba900dc103fc8bbe76783972257f95dbfd467fbb7f3f8a875bd21d5d"
+    },
+    {
+      "bytes": 434,
+      "path": "data/firmware-13.60/libsceuserserviceplatformprivacyws1-0245a60d01.jsonl",
+      "records": 1,
+      "sha256": "e4ff174e1848c3acd2a354a657eff734bb23a3ba0d62d6df5155e4ddf31324a1"
+    },
+    {
+      "bytes": 491,
+      "path": "data/firmware-13.60/libsceuserserviceregistereduseridlist-4f763a1232.jsonl",
+      "records": 1,
+      "sha256": "e161bd931b2d7adc884e1b63a3f6cca87b1f871eb7df764b271952a01f70b937"
+    },
+    {
+      "bytes": 3193,
+      "path": "data/firmware-13.60/libscevcodec-942ad05a91.jsonl",
+      "records": 8,
+      "sha256": "da0d4b2d26ea00224ca7b2699ac351b62054e7d5f83b1db8cde19ed2b69cc0d3"
+    },
+    {
+      "bytes": 12511,
+      "path": "data/firmware-13.60/libscevdeccore-219f557635.jsonl",
+      "records": 27,
+      "sha256": "5e9b8c15614acb2d3bb7aa6fd6686a06202e8511c693e2b9c30d7cf1abe699fb"
+    },
+    {
+      "bytes": 1878,
+      "path": "data/firmware-13.60/libscevdecsavc-55f691b5fe.jsonl",
+      "records": 4,
+      "sha256": "554619a275bf46749bcb6f00f3f0093bde9fba65b8fd1749ae9085c54dbb2179"
+    },
+    {
+      "bytes": 1886,
+      "path": "data/firmware-13.60/libscevdecsavc2-845709f724.jsonl",
+      "records": 4,
+      "sha256": "c7b9707dca4c6e2cb523d5577144aee3c61ab4185229e9158f77e1ab84808fc4"
+    },
+    {
+      "bytes": 5482,
+      "path": "data/firmware-13.60/libscevdecshevc-79ee4c5e11.jsonl",
+      "records": 13,
+      "sha256": "2585f31e6ae9e273faafddef591368296681b43ef83be7c84b51ded2d935a63e"
+    },
+    {
+      "bytes": 3795,
+      "path": "data/firmware-13.60/libscevdecsvp9-9de7b722b9.jsonl",
+      "records": 11,
+      "sha256": "a465eef50e3f7140992a0846c14ad660af9ce10415448db5ab067e51b50b5655"
+    },
+    {
+      "bytes": 8568,
+      "path": "data/firmware-13.60/libscevdecsw-0b596b8aaa.jsonl",
+      "records": 18,
+      "sha256": "b4e803c18807393b92f18bd529bc47f200eca9a52fb6dba9e0cf452241214775"
+    },
+    {
+      "bytes": 5253,
+      "path": "data/firmware-13.60/libscevdecwrap-7837030bfa.jsonl",
+      "records": 11,
+      "sha256": "5669da6ce651e3ad2c734b0c9a42661f761e42ff089105b68388b147abf3603c"
+    },
+    {
+      "bytes": 11526,
+      "path": "data/firmware-13.60/libscevenc-34ac5b7cbe.jsonl",
+      "records": 27,
+      "sha256": "931d165a59afdf1569f589f5e85a9a9b1bac65bc6b151d6797ef15ab906dc7cb"
+    },
+    {
+      "bytes": 1464,
+      "path": "data/firmware-13.60/libscevideoarbitration-0a483851b4.jsonl",
+      "records": 3,
+      "sha256": "db2b805067171191476caffaf5b802ba59f419bfa6d14e0047e2c95f0a8aa79a"
+    },
+    {
+      "bytes": 1867,
+      "path": "data/firmware-13.60/libscevideocoreinterface-e8183671eb.jsonl",
+      "records": 4,
+      "sha256": "6bfc202c9aeff0686edf8641529c16867fb4bc7059dae73a092fab12f4584cc8"
+    },
+    {
+      "bytes": 23446,
+      "path": "data/firmware-13.60/libscevideocoreserverinterface-00d37862c5.jsonl",
+      "records": 47,
+      "sha256": "23d32e0fb900fa01886646c27c9865a36182c65504455f616e4a68d3edf37733"
+    },
+    {
+      "bytes": 2016,
+      "path": "data/firmware-13.60/libscevideodecoderarbitration-acfb080098.jsonl",
+      "records": 4,
+      "sha256": "b752dcf440e2dcd8896e99a31331ae2403d1aff344de3fcca3094f63f00d667b"
+    },
+    {
+      "bytes": 2904,
+      "path": "data/firmware-13.60/libscevideonativeextessential-2d176e1ad5.jsonl",
+      "records": 6,
+      "sha256": "3e4089c6c59ecc6f642ea9d1a07749aa31385cf95631477183b0dea17fc6b950"
+    },
+    {
+      "bytes": 105607,
+      "path": "data/firmware-13.60/libscevideoout-54fc22c577.jsonl",
+      "records": 226,
+      "sha256": "df4fe3ab1111eb5c0773c4213ec3a744579d59a9d4182a9f3ba0d3fd1b9fb7c8"
+    },
+    {
+      "bytes": 365,
+      "path": "data/firmware-13.60/libscevideoout8ktrial_nosubmission-bf9f578523.jsonl",
+      "records": 1,
+      "sha256": "9262687068aa4603433e1c168a187654ed51010147734753b3fdeffa1baa4ea2"
+    },
+    {
+      "bytes": 445,
+      "path": "data/firmware-13.60/libscevideooutaniso-0798c25f50.jsonl",
+      "records": 1,
+      "sha256": "b789f3b51e4deed845d2bd184ac510f505d0cfc72eaa95b2658a5d5b1b1136c5"
+    },
+    {
+      "bytes": 378,
+      "path": "data/firmware-13.60/libscevideooutaspectratio21_9trial_nosubmission-75e466342a.jsonl",
+      "records": 1,
+      "sha256": "25e0c49df3231e7eb3958ac28837e2079388c9345ee79d078ae2f0cad63e256e"
+    },
+    {
+      "bytes": 378,
+      "path": "data/firmware-13.60/libscevideooutaspectratio32_9trial_nosubmission-0898f42295.jsonl",
+      "records": 1,
+      "sha256": "2df1caf863bc3e116d8720df8260fae62941c3ba2fd4b06efa99e8a2c696c100"
+    },
+    {
+      "bytes": 449,
+      "path": "data/firmware-13.60/libscevideooutbasemode4k-3cad7af3a4.jsonl",
+      "records": 1,
+      "sha256": "14a5f2c10fa0c6f254560e9675a1c07d0bdb143869e41f76f86b3aaecf204e97"
+    },
+    {
+      "bytes": 435,
+      "path": "data/firmware-13.60/libscevideooutextra-3b882d6f65.jsonl",
+      "records": 1,
+      "sha256": "940258b691b52fd23cde38a3d680ee81d69fef7c2a853ab4b29a5e74697045e8"
+    },
+    {
+      "bytes": 441,
+      "path": "data/firmware-13.60/libscevideoouthdr-9cfc15bbce.jsonl",
+      "records": 1,
+      "sha256": "33b7961b8e06aee28fd174e87cf949bc83836a3dc36bd123dc4b623d899497e7"
+    },
+    {
+      "bytes": 2569,
+      "path": "data/firmware-13.60/libscevideoouthdrscopes_nosubmission-c40351523c.jsonl",
+      "records": 7,
+      "sha256": "9371ad80cb762bdd8e2414f71487ec8a059e22f79473616fe278ce6f4f46a7e4"
+    },
+    {
+      "bytes": 896,
+      "path": "data/firmware-13.60/libscevideooutlatency-70cd331283.jsonl",
+      "records": 2,
+      "sha256": "b484179fbbeabfe010b0f40ffac3967ae800a6ca91cf37c514bb395682172080"
+    },
+    {
+      "bytes": 443,
+      "path": "data/firmware-13.60/libscevideooutlatency_nosubmission-8f0cf1bff3.jsonl",
+      "records": 1,
+      "sha256": "51489393cd7c88f27919604caa8474f031cf92e5f134bf58f56fea7e22756697"
+    },
+    {
+      "bytes": 357,
+      "path": "data/firmware-13.60/libscevideooutoverlay64bpp-db5f0e19ad.jsonl",
+      "records": 1,
+      "sha256": "44bfb751db1b64d212b8124738175a489274248793ba1df1f558fba59acc41a7"
+    },
+    {
+      "bytes": 439,
+      "path": "data/firmware-13.60/libscevideooutrawedid-a903f877f2.jsonl",
+      "records": 1,
+      "sha256": "a2666713446c63fee062cc97ae6e485894be26f51f46ad506efbc42a53e3b731"
+    },
+    {
+      "bytes": 738,
+      "path": "data/firmware-13.60/libscevideooutsecondary-c8c71c2a0b.jsonl",
+      "records": 2,
+      "sha256": "dffb36279c7d648dd235b913e6b48753ca0333a80321373c0d96dfe62091d62c"
+    },
+    {
+      "bytes": 755,
+      "path": "data/firmware-13.60/libscevideooutserver-a0084e5b60.jsonl",
+      "records": 2,
+      "sha256": "23f6cdbc204298190de5266cba2aa4a943ec22956e61c33fc75fc0ae739bc514"
+    },
+    {
+      "bytes": 416,
+      "path": "data/firmware-13.60/libscevideooutsqa_nosubmission-74472e325a.jsonl",
+      "records": 1,
+      "sha256": "0dbeb1a6c4e80662ebc8f9bf8c318bba5cef21010a13d134e4fd83599de610fd"
+    },
+    {
+      "bytes": 410,
+      "path": "data/firmware-13.60/libscevideooutsubex-95d5bde910.jsonl",
+      "records": 1,
+      "sha256": "2946e70f45460877b060a6ffdd1511974180094c84c5b96d8763becda42fee1a"
+    },
+    {
+      "bytes": 362,
+      "path": "data/firmware-13.60/libscevideooutswitchbusfor64bpp-01116bf3c0.jsonl",
+      "records": 1,
+      "sha256": "87aede2ec69d044a4f879ab80b9dc1668724a23dcbb6eb10169e96097819ba1b"
+    },
+    {
+      "bytes": 876,
+      "path": "data/firmware-13.60/libscevideooutvrrpeg-1523b9376d.jsonl",
+      "records": 2,
+      "sha256": "bbfdc051209c1bb442a991b73dbcd2d88bd71f6d45235d66db21688e815fa9cb"
+    },
+    {
+      "bytes": 1689,
+      "path": "data/firmware-13.60/libscevideooutvrrstatus-957e8327d8.jsonl",
+      "records": 4,
+      "sha256": "4140140302568216317ef1ad55fcaa7227a28f760ccd13e6be6699acd395a738"
+    },
+    {
+      "bytes": 358,
+      "path": "data/firmware-13.60/libscevideooutwindow2pre400-7a48ffc1fe.jsonl",
+      "records": 1,
+      "sha256": "fd6f907758e2ef611a4ae3df59940d385278c442a0050c02fb9e18ba6980a78c"
+    },
+    {
+      "bytes": 451,
+      "path": "data/firmware-13.60/libscevideooutwqhd-6b31e53978.jsonl",
+      "records": 1,
+      "sha256": "9844368ec929537cfeab2127e7baed0c117daca66440999ab706319cdce4d58a"
+    },
+    {
+      "bytes": 20714,
+      "path": "data/firmware-13.60/libscevideoout_nosubmission-4a48e1e9b7.jsonl",
+      "records": 51,
+      "sha256": "93b6368e6e0335b4573513fc7f2780efe1887dece590df56fad14574b7305950"
+    },
+    {
+      "bytes": 6756,
+      "path": "data/firmware-13.60/libscevideorecording-6b92e0a91a.jsonl",
+      "records": 14,
+      "sha256": "e9820748ccf48134fcf74853c1c6b54130ee05899261339b595831cae81a7ed1"
+    },
+    {
+      "bytes": 20150,
+      "path": "data/firmware-13.60/libscevideorecordingp-2f2509cb1b.jsonl",
+      "records": 48,
+      "sha256": "e997700dafd4f451b6669a4ec7fcfea7ab61f469332d60d09b03ebc483fefdb3"
+    },
+    {
+      "bytes": 33953,
+      "path": "data/firmware-13.60/libscevideostreamingengine-5abc5612ed.jsonl",
+      "records": 74,
+      "sha256": "5fb9b90491a708dd69c2e25121148a25168d0ec2893c45c8d0f490dabf064131"
+    },
+    {
+      "bytes": 3309,
+      "path": "data/firmware-13.60/libscevideodec-b445ac79b4.jsonl",
+      "records": 7,
+      "sha256": "313d642374945b6eb10cdc4751e02f5510ec8517e2f1a2c36ffef790e9a00e37"
+    },
+    {
+      "bytes": 9905,
+      "path": "data/firmware-13.60/libscevideodec2-ee6a07536d.jsonl",
+      "records": 21,
+      "sha256": "d1dca6776c41b9b9cadcffbb4ec281c83905ed7dde75a9c53b98244e2f11ebfd"
+    },
+    {
+      "bytes": 30365,
+      "path": "data/firmware-13.60/libscevisionmanager-388783f7a8.jsonl",
+      "records": 63,
+      "sha256": "bfb03b995b5e9a4b83227511f9d398dd79e4378d87c86b35007dd39c742ab5a6"
+    },
+    {
+      "bytes": 37521,
+      "path": "data/firmware-13.60/libscevnainternal-b1ef6786a5.jsonl",
+      "records": 88,
+      "sha256": "e4d2ff90581e6fe4b00fda752ab60dc6b88748d525d61e8cb268e00840905351"
+    },
+    {
+      "bytes": 8008,
+      "path": "data/firmware-13.60/libscevnawebsocket-a0fd2054ef.jsonl",
+      "records": 22,
+      "sha256": "01233d0a5346eeb6205379de7eb3db211dfd3959c3cbc681176562e2431a5b27"
+    },
+    {
+      "bytes": 16356,
+      "path": "data/firmware-13.60/libscevoice-8a799fddbc.jsonl",
+      "records": 35,
+      "sha256": "53a4eafbdac80a933a38541ab9811d3ba4bc8e9afa6b8106239d12ed7b76296d"
+    },
+    {
+      "bytes": 17494,
+      "path": "data/firmware-13.60/libscevoicechat-f123f18391.jsonl",
+      "records": 37,
+      "sha256": "d541962bb7e0f13355a990462776bb86e458511d43d5e5ef6b48d31421f76d34"
+    },
+    {
+      "bytes": 12252,
+      "path": "data/firmware-13.60/libscevoicecommand-e18b06a297.jsonl",
+      "records": 29,
+      "sha256": "ccc257f8dff5d983a0584554b87a75739b90479b2b3c4fe5d17ec6c55a3fb926"
+    },
+    {
+      "bytes": 11361,
+      "path": "data/firmware-13.60/libscevoiceqos-dfe0e4f92d.jsonl",
+      "records": 24,
+      "sha256": "b85c94b5364f55e59e17de6b9e538fc64f9bc52a41e464e66509d97e9e272ec5"
+    },
+    {
+      "bytes": 437,
+      "path": "data/firmware-13.60/libscevoice_nosubmission-a74c83c7c2.jsonl",
+      "records": 1,
+      "sha256": "69899ff64b0b2f4c40c51120e3c2586f681d624476fe49478fb8576c36d222f7"
+    },
+    {
+      "bytes": 3457,
+      "path": "data/firmware-13.60/libscevrhand-4dce5851b7.jsonl",
+      "records": 8,
+      "sha256": "105fd42b6d6e6c046e9af2471d9bfe50e8e5e1d58e387a00b4588f62d8969c6c"
+    },
+    {
+      "bytes": 1655,
+      "path": "data/firmware-13.60/libscevrhand_nosubmission-3be412dff2.jsonl",
+      "records": 4,
+      "sha256": "fc41e1295f2afbf1fc7ffe797436ac5d06a55e7b8baa4a245bbd9163dc9a163f"
+    },
+    {
+      "bytes": 3397,
+      "path": "data/firmware-13.60/libscevrservicedialog-2f374c3aa6.jsonl",
+      "records": 7,
+      "sha256": "046d3cff0e8b76f69bc6ae4aeba806c53483be9ccbf10dc93d1f42383e649299"
+    },
+    {
+      "bytes": 3124,
+      "path": "data/firmware-13.60/libscevrsetupdialog-59b8e15aa8.jsonl",
+      "records": 7,
+      "sha256": "6a958af9a01a945997ef44c446b84417be509c8e541122207da18e302fbf2610"
+    },
+    {
+      "bytes": 12477,
+      "path": "data/firmware-13.60/libscevrtracker-378a3d5dba.jsonl",
+      "records": 27,
+      "sha256": "b72e475910301353148e90a161b63686e65d8213ed70701f39b51f2f9e239f05"
+    },
+    {
+      "bytes": 36866,
+      "path": "data/firmware-13.60/libscevrtracker2-5535fce94b.jsonl",
+      "records": 92,
+      "sha256": "594b88bb37b24ccfc812b1a5ea766b2665afbfe762f8e94bb200c31753a214b7"
+    },
+    {
+      "bytes": 10453,
+      "path": "data/firmware-13.60/libscevrtracker2_nosubmission-61a396e31a.jsonl",
+      "records": 28,
+      "sha256": "e4d56f6f1e961e06bda5e07edf379f463c2c25eaddfa6523f5dcdcafc398c226"
+    },
+    {
+      "bytes": 448,
+      "path": "data/firmware-13.60/libscevrtrackerdevicerejection-f569dad58d.jsonl",
+      "records": 1,
+      "sha256": "74082c8762183fbc9e61447694a311a354329253046107f12fd53d00b5c31767"
+    },
+    {
+      "bytes": 447,
+      "path": "data/firmware-13.60/libscevrtrackerfourdeviceallowed-d7d6054b5c.jsonl",
+      "records": 1,
+      "sha256": "5681d768b9b30ebbc2ab2c5acadbb05055555b954e70d135312ad0fe01f6779d"
+    },
+    {
+      "bytes": 1765,
+      "path": "data/firmware-13.60/libscevrtrackergputest-09a999a35a.jsonl",
+      "records": 5,
+      "sha256": "f8f60de4a00a61993d21d7c58d1cbb8915a05de32abf042c67ca8d3a99914638"
+    },
+    {
+      "bytes": 2202,
+      "path": "data/firmware-13.60/libscevrtrackerlivecapture-95ce3424ff.jsonl",
+      "records": 5,
+      "sha256": "f021ca05261307f7690ae6f9f5dd4a44d696472cb9beb57a2bde0e25e4565f3c"
+    },
+    {
+      "bytes": 12036,
+      "path": "data/firmware-13.60/libscevseplugin-4a50bd9941.jsonl",
+      "records": 34,
+      "sha256": "ab16b6240ff64daf0b23c9b007d8f5cd6dd682a2e8553cf7692edf2b819706cf"
+    },
+    {
+      "bytes": 2100,
+      "path": "data/firmware-13.60/libscevshbrotli-c395bb6628.jsonl",
+      "records": 6,
+      "sha256": "c53c999479b2fb1a41af08c5725e18ee0c9bd54470ddd588e645a59211a8ce08"
+    },
+    {
+      "bytes": 29166,
+      "path": "data/firmware-13.60/libscevshfreetype-0bedd8123f.jsonl",
+      "records": 71,
+      "sha256": "6505e64b7d87f52e9668fe48a6acd6e8f5e9724e48692292479b1f17f13de207"
+    },
+    {
+      "bytes": 19908,
+      "path": "data/firmware-13.60/libscevshharfbuzz-bfae1bdef9.jsonl",
+      "records": 51,
+      "sha256": "05b18281c11efc9071801bff92f60685303048af191662683faa01b5cdc4aa18"
+    },
+    {
+      "bytes": 9983,
+      "path": "data/firmware-13.60/libscevshjpeg-f4d3f6e0b9.jsonl",
+      "records": 25,
+      "sha256": "27422d6d68ef063376ee2ea92b10b7827c5ef396c704b452eec113d8c5c6960f"
+    },
+    {
+      "bytes": 27632,
+      "path": "data/firmware-13.60/libscevshpng-c841413b6b.jsonl",
+      "records": 70,
+      "sha256": "84afa7214719177474b6d480fdc4af956574cedc710674422eb1ddbb42636bee"
+    },
+    {
+      "bytes": 5568,
+      "path": "data/firmware-13.60/libscevshwebp-f15cd766b8.jsonl",
+      "records": 16,
+      "sha256": "3620ac4392608ccc184d9ef591fe34f779602b9f6e493248e650acca7c1ebdc8"
+    },
+    {
+      "bytes": 6355,
+      "path": "data/firmware-13.60/libscewebbrowserdialog-57a7a091c7.jsonl",
+      "records": 13,
+      "sha256": "ae0844697a386fb9154febe8295f0eb3c2edbf4b07687942b6a15a509682c3c7"
+    },
+    {
+      "bytes": 360,
+      "path": "data/firmware-13.60/libscewebbrowserdialoglimited-da9b4f9dfe.jsonl",
+      "records": 1,
+      "sha256": "d7cc498b87f984a17ecbe49bd7ab6b4fbb4c2073813f92f21b5955b3cf87403b"
+    },
+    {
+      "bytes": 3831,
+      "path": "data/firmware-13.60/libscewebrtc-7af2fe84b1.jsonl",
+      "records": 11,
+      "sha256": "4897d659de218c9b87659097a766fac66a423859e32c5cedf9e9ff60ec221792"
+    },
+    {
+      "bytes": 18921,
+      "path": "data/firmware-13.60/libscewebtransport-6c689323dd.jsonl",
+      "records": 53,
+      "sha256": "900a95e2bab98ce972be8975507420b5bd7cc24f06c597b7af2e9162535a2b7d"
+    },
+    {
+      "bytes": 2562,
+      "path": "data/firmware-13.60/libscewebmparsermdrw-a776e133e1.jsonl",
+      "records": 7,
+      "sha256": "930a77c038de2c5357fd2f11da92088fc584c7089863e1f23ed170530179bb78"
+    },
+    {
+      "bytes": 2410,
+      "path": "data/firmware-13.60/libscewkfontconfig-62979fa2ff.jsonl",
+      "records": 5,
+      "sha256": "407f70c90584a367d4b5aa8bb487b141ebd8b8fb4e646454339a434ce6129dd1"
+    },
+    {
+      "bytes": 3916,
+      "path": "data/firmware-13.60/libscewtipcclient-f01dadddbc.jsonl",
+      "records": 11,
+      "sha256": "ede61eddb94504f7ab8e547c405b568010dc02d831ce431c56bef482c8b6cf99"
+    },
+    {
+      "bytes": 88287,
+      "path": "data/firmware-13.60/libscexml-eab4e823a4.jsonl",
+      "records": 183,
+      "sha256": "5ad5ae670f0ceed7e439ca30950e52424b1ea25e5e7ed93a8f80a90a3a770c86"
+    },
+    {
+      "bytes": 2320,
+      "path": "data/firmware-13.60/libscezlib-d7fb26da39.jsonl",
+      "records": 5,
+      "sha256": "764563fc404b66843492de4c3bea9f7277e64190e65007974030be507757a1ee"
+    },
+    {
+      "bytes": 127219,
+      "path": "data/firmware-13.60/libbdj-6bae030a57.jsonl",
+      "records": 301,
+      "sha256": "dee20ab307f45d1233fca2bf3f05c50214f5d7589727d148eac2b115dc47a7b0"
+    },
+    {
+      "bytes": 71698,
+      "path": "data/firmware-13.60/libcairo-97ca9f9d65.jsonl",
+      "records": 166,
+      "sha256": "088deb58609c8dea29f818c465d0bbeeae2083ce306cb572a71f1785b9704d74"
+    },
+    {
+      "bytes": 39049,
+      "path": "data/firmware-13.60/libcurl-3c72bec464.jsonl",
+      "records": 93,
+      "sha256": "3b02aed8c9df7632d0c06b19d06a26db8d621a7352e2462469ddbbc67b687af4"
+    },
+    {
+      "bytes": 273482,
+      "path": "data/firmware-13.60/libdiscord-f02e143ee2.jsonl",
+      "records": 802,
+      "sha256": "626b9d3d32d0b2a3c383853e0a96e60e7abcbd939683794a8d1c91bf1c708634"
+    },
+    {
+      "bytes": 22949,
+      "path": "data/firmware-13.60/libfontconfig-64ca5f57a1.jsonl",
+      "records": 53,
+      "sha256": "6098ebf56558658dedd39441c3563a2d334519e29d5a01c73994a646130e0eb5"
+    },
+    {
+      "bytes": 62830,
+      "path": "data/firmware-13.60/libgnmawt-10e49c6583.jsonl",
+      "records": 153,
+      "sha256": "0d3057fc17b2c3c1e31bca3144fd7797127ca6d47830e37a937ea64d027ee50e"
+    },
+    {
+      "bytes": 37771,
+      "path": "data/firmware-13.60/libhermes-0-11-c931216034.jsonl",
+      "records": 107,
+      "sha256": "073bd000997e5062634b46daa89e3a5bb5ec95461be5e1898bde6425c0e9d449"
+    },
+    {
+      "bytes": 100211,
+      "path": "data/firmware-13.60/libjava-480b127a88.jsonl",
+      "records": 262,
+      "sha256": "9c6ca59852246c44cea23514dd66c9348005db042e6e64ac333c813b0331d519"
+    },
+    {
+      "bytes": 2720,
+      "path": "data/firmware-13.60/libjimage-ba6cd5a736.jsonl",
+      "records": 8,
+      "sha256": "bb4d61f01cfc521213a2dc301b402b56c04548a1ef7b5cba1b9cc471807a3c70"
+    },
+    {
+      "bytes": 6066,
+      "path": "data/firmware-13.60/libjli-898be53013.jsonl",
+      "records": 18,
+      "sha256": "4aef2f5c8f732ef5ebda2c750e5498de2d09dbb2d3a1b595dcbae32ed225c61d"
+    },
+    {
+      "bytes": 107513,
+      "path": "data/firmware-13.60/libjvm-81d0bbfc3d.jsonl",
+      "records": 295,
+      "sha256": "06b1fd682915da62f402287cbdef32cf65706dd4e540ee8461eeca5c99d3ea5f"
+    },
+    {
+      "bytes": 674836,
+      "path": "data/firmware-13.60/libkernel-ef142ca503.jsonl",
+      "records": 1511,
+      "sha256": "47f396bb62f237e83d645fbbb8f413417332fc5590d118ce83f557c93488f684"
+    },
+    {
+      "bytes": 1605,
+      "path": "data/firmware-13.60/libkernel_cfi-c214a9ee68.jsonl",
+      "records": 4,
+      "sha256": "ee329421939aa3a9a3be670e7ebad53219fcd0cb15ce6a0473f1afb2a7751d4f"
+    },
+    {
+      "bytes": 1725,
+      "path": "data/firmware-13.60/libkernel_aod-15d16f040c.jsonl",
+      "records": 5,
+      "sha256": "5aa942fab0a2d9e56e40f3063c5d221ed0a6b1455975bc7d618ea7ab9a3ce271"
+    },
+    {
+      "bytes": 879,
+      "path": "data/firmware-13.60/libkernel_avcf-1c25a0c101.jsonl",
+      "records": 2,
+      "sha256": "c70f1f6a00484a1b50a1851c5a5297996a26ff91b68e5b2b562ee4dee24edbe7"
+    },
+    {
+      "bytes": 470,
+      "path": "data/firmware-13.60/libkernel_avlfmem-acf90a47c8.jsonl",
+      "records": 1,
+      "sha256": "c86686e8be670534dc5817e31942f560ce799fc9358bd4c628b7804db0286cc7"
+    },
+    {
+      "bytes": 908,
+      "path": "data/firmware-13.60/libkernel_cpumode-2d39c304b6.jsonl",
+      "records": 2,
+      "sha256": "8cebf31399044f1a44cd70e8838c726f1602a554e65a7f28266c59156a3e5028"
+    },
+    {
+      "bytes": 462,
+      "path": "data/firmware-13.60/libkernel_cpumode_platform-0e6fa68a77.jsonl",
+      "records": 1,
+      "sha256": "cfbb3375674da5570e5987b9b70fdc2170b4b9eab126a719ae4267379c17a1bd"
+    },
+    {
+      "bytes": 1056,
+      "path": "data/firmware-13.60/libkernel_devtoollog-07ffb7dd72.jsonl",
+      "records": 3,
+      "sha256": "6903e17dfbcdee0307645aed4c1b6d6b29b4e3f1db0e08b298515731485dd833"
+    },
+    {
+      "bytes": 467,
+      "path": "data/firmware-13.60/libkernel_dmem_aliasing-7729b6c1a3.jsonl",
+      "records": 1,
+      "sha256": "90de5de74f5f19727ffb7ee3e94d06c3bd32936ae5807d3d7c58afba9548c278"
+    },
+    {
+      "bytes": 468,
+      "path": "data/firmware-13.60/libkernel_dmem_aliasing2-40c26c4177.jsonl",
+      "records": 1,
+      "sha256": "cac6987c31b7784fba848de07f3772d98639b221612c834b84fbccd6082c4350"
+    },
+    {
+      "bytes": 476,
+      "path": "data/firmware-13.60/libkernel_dmem_aliasing2_for_dev-6dc5f13735.jsonl",
+      "records": 1,
+      "sha256": "f003b07b6f3c50603bef385876e5ba1c53f77f45306f15d0bb0370ec1c839fcb"
+    },
+    {
+      "bytes": 468,
+      "path": "data/firmware-13.60/libkernel_dmem_aliasing3-f1d7557864.jsonl",
+      "records": 1,
+      "sha256": "820a91c045212ed68519eec65b6f751eb326dc187554690c354d4bff9b5ffe1f"
+    },
+    {
+      "bytes": 2326,
+      "path": "data/firmware-13.60/libkernel_exception-ad0b8a5ebd.jsonl",
+      "records": 5,
+      "sha256": "c525c33985a3a2824195fc5094d7db9cb53980c54bd201de3f367bc71d0d5be3"
+    },
+    {
+      "bytes": 10199,
+      "path": "data/firmware-13.60/libkernel_jvm-405eba9aab.jsonl",
+      "records": 23,
+      "sha256": "2e60cb2f652088ead9215b05d638988636bf81b2a934e8e7b773aa755eda61e4"
+    },
+    {
+      "bytes": 855,
+      "path": "data/firmware-13.60/libkernel_low_energy_mode-8eb1927e71.jsonl",
+      "records": 2,
+      "sha256": "a00bc8b5bfb53fb1ba7f484106b194afc01777a72d96f9a1b47a2e92e2a381ee"
+    },
+    {
+      "bytes": 879,
+      "path": "data/firmware-13.60/libkernel_mmap-c316d7f999.jsonl",
+      "records": 2,
+      "sha256": "d95debb0e449820ec984756910487e24b8607973502119dc1cb9eb71fd40e170"
+    },
+    {
+      "bytes": 424,
+      "path": "data/firmware-13.60/libkernel_module_extension-738fac9bf7.jsonl",
+      "records": 1,
+      "sha256": "8c4a2f2c4ac216d60768012bfc28609ac451095bf51df080f85bb2e4f7bf08c8"
+    },
+    {
+      "bytes": 437,
+      "path": "data/firmware-13.60/libkernel_module_extension_nosubmission-d164d5232f.jsonl",
+      "records": 1,
+      "sha256": "d9c4df383b594c672a76bd5d2fba30337ad4f65044e38243fcbe093cbd467def"
+    },
+    {
+      "bytes": 922,
+      "path": "data/firmware-13.60/libkernel_module_info-d69c44183b.jsonl",
+      "records": 2,
+      "sha256": "85e8302a2d1a37770cf12a27823feac087bc5b2c23478e554532c0a5b2a203af"
+    },
+    {
+      "bytes": 467,
+      "path": "data/firmware-13.60/libkernel_module_load_check-b9180cdc2b.jsonl",
+      "records": 1,
+      "sha256": "f950ef01da65316045b32b9ca5d33b38e68fa1d60eaea4db99f02b8824749555"
+    },
+    {
+      "bytes": 1836,
+      "path": "data/firmware-13.60/libkernel_mtxgen-9bc08c8ec3.jsonl",
+      "records": 4,
+      "sha256": "8d9e8c55b150e61c9b42d31a5edd6f3bddbf9213af18828b4491e4c798430d2c"
+    },
+    {
+      "bytes": 1381,
+      "path": "data/firmware-13.60/libkernel_pre250mmap-1183bd4ea3.jsonl",
+      "records": 3,
+      "sha256": "5a8f32471db76d6291dd6b8b12e28664b039ce7f8da18e2a42eb3d584a4e2d01"
+    },
+    {
+      "bytes": 2300,
+      "path": "data/firmware-13.60/libkernel_ps2emu-0eda74adce.jsonl",
+      "records": 5,
+      "sha256": "3d53f5e46e20b7382b9a765247fcb185fdd6e6a6b105cccaf519408d745ce628"
+    },
+    {
+      "bytes": 16624,
+      "path": "data/firmware-13.60/libkernel_psmkit-bd9d1a7cf1.jsonl",
+      "records": 37,
+      "sha256": "fa3c30564ea4ea88d07ac2f9a13562ce423c47e4b05d79b09bdfa260280e0eac"
+    },
+    {
+      "bytes": 3422,
+      "path": "data/firmware-13.60/libkernel_qadisc-b670e0c1e4.jsonl",
+      "records": 8,
+      "sha256": "b42867fe51ad19482a86ee21217587f1fba2742484403defc54aa25c8014e674"
+    },
+    {
+      "bytes": 864,
+      "path": "data/firmware-13.60/libkernel_seh-83ba07a196.jsonl",
+      "records": 2,
+      "sha256": "74111079f4eae5d2329200523efc2268b261dead0b94e77cc3cbc99dcb443146"
+    },
+    {
+      "bytes": 878,
+      "path": "data/firmware-13.60/libkernel_sync_on_address-c0acc7f988.jsonl",
+      "records": 2,
+      "sha256": "3c3c5a09a4fe36b75943a5eceba5d2c82be0436b19740e6663513f5fad8665a4"
+    },
+    {
+      "bytes": 2599,
+      "path": "data/firmware-13.60/libkernel_sync_on_address2-2fa5e66ef2.jsonl",
+      "records": 6,
+      "sha256": "aeaf042646023523898857b6bc5b28f10727e82a8019c1d0a2407abca21f0535"
+    },
+    {
+      "bytes": 1744,
+      "path": "data/firmware-13.60/libkernel_sysc_se-492ac9700a.jsonl",
+      "records": 4,
+      "sha256": "5f8f7525d3caecc29974227f30bbb45bbb178075228b44b2ebe41ccf613e88f2"
+    },
+    {
+      "bytes": 1382,
+      "path": "data/firmware-13.60/libkernel_unity-a925240172.jsonl",
+      "records": 3,
+      "sha256": "52399a6a0c1830d61e263a151b5638d21f9408f24cb29c0ea98d5c22510ed07f"
+    },
+    {
+      "bytes": 444,
+      "path": "data/firmware-13.60/libkernel_write_throttling-10bdc0fbc3.jsonl",
+      "records": 1,
+      "sha256": "7314f9153acb05fada43107b329cb6eb0e95c1495d1ebd97557ea2b5124c372b"
+    },
+    {
+      "bytes": 702,
+      "path": "data/firmware-13.60/libkernel_wt_config-2b93cf2b10.jsonl",
+      "records": 2,
+      "sha256": "eef632a3f04b895808496018f104a8474b7c95a86c297fa4a7cdb8bac92e5e0a"
+    },
+    {
+      "bytes": 84626,
+      "path": "data/firmware-13.60/libmdbg_syscore-53c596f5b7.jsonl",
+      "records": 187,
+      "sha256": "c191d4954500c83b329deb798c01c1959dc0ca3b5c84561b9cca35a25bbfbdcc"
+    },
+    {
+      "bytes": 88509,
+      "path": "data/firmware-13.60/libmono-btls-shared-384a3700a1.jsonl",
+      "records": 212,
+      "sha256": "758e1cb7a74108c0df49ed1e7b9418dedd02d722cb73c8b1dc0e07a42b40c566"
+    },
+    {
+      "bytes": 451676,
+      "path": "data/firmware-13.60/libmonosgen-89a314ce00.jsonl",
+      "records": 1087,
+      "sha256": "1228c39af7e385e63f072196dd5cb77aceae13ab68ab64740b61fc2413632516"
+    },
+    {
+      "bytes": 32632,
+      "path": "data/firmware-13.60/libnet-d57b8f8fc1.jsonl",
+      "records": 84,
+      "sha256": "1f1c9f084d3a420f411ea8a3a7af454f484fe8854ac173bbbd8ee2b86697319f"
+    },
+    {
+      "bytes": 53000,
+      "path": "data/firmware-13.60/libnio-8ce3c89141.jsonl",
+      "records": 157,
+      "sha256": "57f24fb264f623262331b36ce1260af0881ecf40388c00bbb64e37e7356495cb"
+    },
+    {
+      "bytes": 64200,
+      "path": "data/firmware-13.60/libprospero_wrapper-8bcfca4ff6.jsonl",
+      "records": 169,
+      "sha256": "3d803c9912dfeb2d974c37d1e1c5926e4b16a0423ed6d40efdf8a9ce08442407"
+    },
+    {
+      "bytes": 452,
+      "path": "data/firmware-13.60/libscehmdreprojectionmultilayer-bd91b3a135.jsonl",
+      "records": 1,
+      "sha256": "6cec6dccfda8a74f6d8f1a9cb38116a5fccf354fd8c150834e011d640ea03fbb"
+    },
+    {
+      "bytes": 3876,
+      "path": "data/firmware-13.60/libscenpeuladialog-3ed16b2399.jsonl",
+      "records": 9,
+      "sha256": "be11a4a5b7add52c9c115959081d58bb410e813b5ada1dec04f487f2bee9553e"
+    },
+    {
+      "bytes": 1558,
+      "path": "data/firmware-13.60/libverify-01b1134fa6.jsonl",
+      "records": 4,
+      "sha256": "2702c93113c349b77cf2cc7e86e497337e0aa37c56b22b90983ce5b8aa67b01f"
+    },
+    {
+      "bytes": 169447,
+      "path": "data/firmware-13.60/libwebrtc-b0615fbda5.jsonl",
+      "records": 412,
+      "sha256": "711498d0e60cd694f19e0fe20080ab667578a247c34456c7302075db77d9512e"
+    },
+    {
+      "bytes": 26719,
+      "path": "data/firmware-13.60/libwvoec-75861dc1a3.jsonl",
+      "records": 77,
+      "sha256": "7670a5c01d160c9f1c809b2c6b03f462e96bf305e59c59a2885c6f3877943c33"
+    },
+    {
+      "bytes": 12580,
+      "path": "data/firmware-13.60/libzip-7a217c7878.jsonl",
+      "records": 34,
+      "sha256": "5f9f732bebe94ac72a95ad5ac3bbe9b4f93c81647bf0191b9d000879b64ffdcf"
+    },
+    {
+      "bytes": 346,
+      "path": "data/firmware-13.60/monoprofilerlog-dd482786fb.jsonl",
+      "records": 1,
+      "sha256": "970f523e6fad38639bc5620252348fdb54bece1246c9d2da311bd61a8eb7e5f0"
+    },
+    {
+      "bytes": 8500118,
+      "path": "data/firmware-13.60/mscorlib-51872c7902.jsonl",
+      "records": 23708,
+      "sha256": "180fc555ba655e459f6ff519dba4d46720f8d02d21e8e31c5da78916bd025e1c"
+    },
+    {
+      "bytes": 1536,
+      "path": "data/firmware-13.60/ulobjmgr-7c6be1d5eb.jsonl",
+      "records": 4,
+      "sha256": "d63b0e71fece385aa979e17f621870a22417b8a1b7b69b7390ada8c34390ec25"
+    },
+    {
+      "bytes": 566280,
+      "path": "data/firmware-13.60/websocketsharp-bcc7ad25e5.jsonl",
+      "records": 1560,
+      "sha256": "28a85f901db00c81d8758d5b6e98dc77eb3918df230d17576c4b9f19f3ebae23"
+    },
+    {
+      "bytes": 400,
+      "path": "data/historical-3.20-only/webappbundle-64672f5097.jsonl",
+      "records": 1,
+      "sha256": "c2903790269604ed92512065778cae78c8fda89351eaaf54fc10ff7e21866bfc"
+    },
+    {
+      "bytes": 6561,
+      "path": "data/historical-3.20-only/gaikai-player-32e71d5e95.jsonl",
+      "records": 16,
+      "sha256": "020680519000d67e4c1377401bb84cb8c00b5b17327fb8e89e4f140c8dc252dc"
+    },
+    {
+      "bytes": 2440,
+      "path": "data/historical-3.20-only/libnativeextensions-e257b50c6f.jsonl",
+      "records": 6,
+      "sha256": "b55f1263ceb32bb45219a631a4c0166680317b420615ace037385ca56d9faeb0"
+    },
+    {
+      "bytes": 2915,
+      "path": "data/historical-3.20-only/libreactnative-modules-vsh-media-3aef274cce.jsonl",
+      "records": 7,
+      "sha256": "a6eac7200f1c90da760ad1992beeb370a59be26ca3cdc918b2bcd3a58de9488d"
+    },
+    {
+      "bytes": 14271,
+      "path": "data/historical-3.20-only/libsceabstractlocal-0f876ab744.jsonl",
+      "records": 30,
+      "sha256": "b37232983ccd7b3b4e14122a831e0ba90ac0bb950f2d660f43f96cd3db9e60c0"
+    },
+    {
+      "bytes": 17245,
+      "path": "data/historical-3.20-only/libsceabstractstorage-fb08534467.jsonl",
+      "records": 36,
+      "sha256": "08b931159422beabdc189545e1f8d95f8d8a94110738351a8a5b9f64086e98d8"
+    },
+    {
+      "bytes": 11625,
+      "path": "data/historical-3.20-only/libsceabstracttwitter-9cd9b3c8b1.jsonl",
+      "records": 24,
+      "sha256": "9084a0f11ae33f8fce6fd1939c461d4b98e6ff2f666ccaeaa6355d890a61b2c8"
+    },
+    {
+      "bytes": 13061,
+      "path": "data/historical-3.20-only/libsceabstractyoutube-8f1b0162be.jsonl",
+      "records": 27,
+      "sha256": "38bafb5506808d38b42efb3fee530ea2129c1f69f5ed8f7e4cb801412b11a115"
+    },
+    {
+      "bytes": 6872,
+      "path": "data/historical-3.20-only/libsceagcdriver-f86d440204.jsonl",
+      "records": 16,
+      "sha256": "010aa1a470eb02db2f0de33b9dd9173c02684b1d54aa5cd9abf74b5cf8498913"
+    },
+    {
+      "bytes": 16426,
+      "path": "data/historical-3.20-only/libsceajm-native-2e669c3ed7.jsonl",
+      "records": 38,
+      "sha256": "f96e95d91014a94a61eb72f319f35360fa0f7883784c83a5d1512c1c8a418593"
+    },
+    {
+      "bytes": 8926,
+      "path": "data/historical-3.20-only/libsceajmi-70f2344c59.jsonl",
+      "records": 21,
+      "sha256": "ee65b2e59a7e5e428c7c28862a2f674cad0163033b649e6a33a1ce6e088731f3"
+    },
+    {
+      "bytes": 2690,
+      "path": "data/historical-3.20-only/libsceappcontent-2b0c1dfe50.jsonl",
+      "records": 6,
+      "sha256": "35ae6311e48cfddbe8588520d422b1d56bbe19c522e3d3bd638726e2bd4479a3"
+    },
+    {
+      "bytes": 5076,
+      "path": "data/historical-3.20-only/libsceappinstutil-783ade3c34.jsonl",
+      "records": 11,
+      "sha256": "ee168abb03c2542cafa54e69a257f3cd94c49c721cb84c66df1dead0f1721550"
+    },
+    {
+      "bytes": 2430,
+      "path": "data/historical-3.20-only/libsceaudioin-1ba22b10c3.jsonl",
+      "records": 6,
+      "sha256": "c17a70b8391f21bc6a9b7b6699a48fc35270fc329a13604c5f065761eb251333"
+    },
+    {
+      "bytes": 28746,
+      "path": "data/historical-3.20-only/libsceaudioout-b0d02b41cc.jsonl",
+      "records": 62,
+      "sha256": "e68e5dedd895c6eeecdee0246f00790593e99153796f24abefd5c7002eba690b"
+    },
+    {
+      "bytes": 8774,
+      "path": "data/historical-3.20-only/libsceaudiodec-native-fc2a6c02a7.jsonl",
+      "records": 20,
+      "sha256": "b8a9df80fe7861ccfd26ee7575ff9db4b9874aa57f31dd16cc221b1f0a49b648"
+    },
+    {
+      "bytes": 12639,
+      "path": "data/historical-3.20-only/libsceavplayer-native-214e4430ad.jsonl",
+      "records": 29,
+      "sha256": "799d4f3a886af30a8d16e8370ae6829551f9548ab366692ad8157dfe5c39d5b0"
+    },
+    {
+      "bytes": 2207,
+      "path": "data/historical-3.20-only/libsceavsetting-620714af3c.jsonl",
+      "records": 5,
+      "sha256": "f441a61da92458d15af0989e93300a7167e06bdd2e4f3ea6914adcbbee8bf469"
+    },
+    {
+      "bytes": 8423,
+      "path": "data/historical-3.20-only/libscebgft-56a91f9286.jsonl",
+      "records": 19,
+      "sha256": "309d1b2552c327a39e6f643b5945ed3fe900b8adfdde605c4891152cf32eec4d"
+    },
+    {
+      "bytes": 14540,
+      "path": "data/historical-3.20-only/libscecamera-4529c174dc.jsonl",
+      "records": 34,
+      "sha256": "5e69cf309b86ed07cf58e0eaab68c31176c1e203112bbb51394eef1b195c63de"
+    },
+    {
+      "bytes": 116719,
+      "path": "data/historical-3.20-only/libscecescs-84a5f677d3.jsonl",
+      "records": 273,
+      "sha256": "961344be021059e544c296b38b6c898e1a37bf3038ecc7c39ed954883bac8e9c"
+    },
+    {
+      "bytes": 6613,
+      "path": "data/historical-3.20-only/libscecomposite-23841193cf.jsonl",
+      "records": 15,
+      "sha256": "32951c1c99e0e62375313df772f27f3187189b17219ace442b1e924311266810"
+    },
+    {
+      "bytes": 34610,
+      "path": "data/historical-3.20-only/libscecompositeext-947da0dbb0.jsonl",
+      "records": 78,
+      "sha256": "d00aeb34a8fea1d005dbf28d5340effac7cfcc58c3b6096304dab78cb9670a06"
+    },
+    {
+      "bytes": 445,
+      "path": "data/historical-3.20-only/libscecontentexport-40600820c5.jsonl",
+      "records": 1,
+      "sha256": "a90cf571884f8b5075e283348b648c69fe97769117b74fc78b03698114028a35"
+    },
+    {
+      "bytes": 3507,
+      "path": "data/historical-3.20-only/libscecontentsearch-4da1f4d151.jsonl",
+      "records": 8,
+      "sha256": "6fdeb7742c3c70e4799b4df24abc1a1011f7a672ff256c2479635a31a24b643f"
+    },
+    {
+      "bytes": 8023,
+      "path": "data/historical-3.20-only/libscecustommusiccore-14dfeeb394.jsonl",
+      "records": 18,
+      "sha256": "86632ab29414d3d1cd856e3179015e9aba8a9d930e3d85c7e6ac9df3eb2a2049"
+    },
+    {
+      "bytes": 19356,
+      "path": "data/historical-3.20-only/libscedatatransfer-ca1b6655ff.jsonl",
+      "records": 43,
+      "sha256": "6fdea5d12ed98e8eb0fe16ff95fc74e9d936bf57c2a2856d7cb2e27fee30fb2b"
+    },
+    {
+      "bytes": 1683,
+      "path": "data/historical-3.20-only/libscedseehx-21b1c5dae2.jsonl",
+      "records": 4,
+      "sha256": "2fc460d5bb72b900755e2a3ae9747783c67bace3b864d96417046c36ae628e28"
+    },
+    {
+      "bytes": 462,
+      "path": "data/historical-3.20-only/libsceesvmengine-c1d3867cc5.jsonl",
+      "records": 1,
+      "sha256": "45222f2296da8a7414bbe3a41f696e580aa05df6cfef7fc451bab22f74db0e9b"
+    },
+    {
+      "bytes": 10134,
+      "path": "data/historical-3.20-only/libscefacebook-yoga-c39a0027ac.jsonl",
+      "records": 25,
+      "sha256": "ad46480bc2a270c8e28db50c3191444c7fb0378e72b0ddd28f7ea690427a4953"
+    },
+    {
+      "bytes": 71446,
+      "path": "data/historical-3.20-only/libscefios2-f7b574bf34.jsonl",
+      "records": 168,
+      "sha256": "1d2a7847bba73d594dadfb3f51f0aee1ab89d30a1c418eab609d8213043fce68"
+    },
+    {
+      "bytes": 59530,
+      "path": "data/historical-3.20-only/libscefont-native-fca9c246fb.jsonl",
+      "records": 136,
+      "sha256": "22ac6e17c58ab4d3bd4c9fb4805d10bd30aa715eda4e7db7848c5884cc461edc"
+    },
+    {
+      "bytes": 142493,
+      "path": "data/historical-3.20-only/libscefreetypeol-4946750f90.jsonl",
+      "records": 344,
+      "sha256": "ff59d6be0e3f1f1a4afb203c5876b9a1f1292c769b334d0f0489a988086fae6e"
+    },
+    {
+      "bytes": 1293,
+      "path": "data/historical-3.20-only/libscefreetypeoptol-099e622a02.jsonl",
+      "records": 3,
+      "sha256": "2527cf2bcb6c28090b8148e203b3ec40ce44bb2c22b3d60ecb16a9a7b4abf4ec"
+    },
+    {
+      "bytes": 141209,
+      "path": "data/historical-3.20-only/libscefreetypeot-02cf60edfe.jsonl",
+      "records": 341,
+      "sha256": "79059909af03f7e5348b999d994832341f18fa8878151b6cd0098a1c6ad60edc"
+    },
+    {
+      "bytes": 7108,
+      "path": "data/historical-3.20-only/libscefsinternalforvsh-05a5e357c4.jsonl",
+      "records": 15,
+      "sha256": "665a14bfee6f3660cb3de0d15f6147eab8971063cc21dc8675649365b59a7c8f"
+    },
+    {
+      "bytes": 911,
+      "path": "data/historical-3.20-only/libscegamelivestreaming-af25e92286.jsonl",
+      "records": 2,
+      "sha256": "a1cfab6b293e35a6621b933d4d8192a449f04a7a973a21ef2a205354538b6290"
+    },
+    {
+      "bytes": 3284,
+      "path": "data/historical-3.20-only/libscegnmdriver-ba6100e159.jsonl",
+      "records": 7,
+      "sha256": "bf6c5cdbb1071acf9a56e4d061d54c27533566cea5d976fbef2dfa5a53fac44e"
+    },
+    {
+      "bytes": 76393,
+      "path": "data/historical-3.20-only/libscegnmdriverforneomode-1287e9db92.jsonl",
+      "records": 163,
+      "sha256": "1b4ffc42a72d50b9266de7d0ec4ef6d7b1d2028bf35c59b5ebed241c5eed1588"
+    },
+    {
+      "bytes": 1977,
+      "path": "data/historical-3.20-only/libscegvmp4parser-11803a4cb6.jsonl",
+      "records": 4,
+      "sha256": "ba4d6fcd0346023112708b8bde3e83c5eb8e1e7d71f98d8eedb522cb7a25cc38"
+    },
+    {
+      "bytes": 436,
+      "path": "data/historical-3.20-only/libscehidcontrol-3b1f591a82.jsonl",
+      "records": 1,
+      "sha256": "bcfba8e22924130302ebc54598860a4fd8e1e082476690509d3b31908b7d214f"
+    },
+    {
+      "bytes": 3507,
+      "path": "data/historical-3.20-only/libscehmd-be39c4e9c8.jsonl",
+      "records": 8,
+      "sha256": "abde210c53ad9c482cf38b12f7b3fbabfaf78e96c4e4209bd4584608ba6d15c4"
+    },
+    {
+      "bytes": 423,
+      "path": "data/historical-3.20-only/libscehttpcache-2641272dc1.jsonl",
+      "records": 1,
+      "sha256": "ae4122437a24fe29656938ec5d885e7567de9f1a898cfea227981ae54e346bd8"
+    },
+    {
+      "bytes": 220756,
+      "path": "data/historical-3.20-only/libsceicu-9790ee85e3.jsonl",
+      "records": 557,
+      "sha256": "5cada1ad4672c40154b3b36ec62eb380b6cf8f77d93d33a5722ddd091a32a4b6"
+    },
+    {
+      "bytes": 2291,
+      "path": "data/historical-3.20-only/libsceipmi-0973fa2a61.jsonl",
+      "records": 5,
+      "sha256": "43be9e158af0a960b737773361abeb395f8d27b5b1d57d7ddf3edd5c3ee99730"
+    },
+    {
+      "bytes": 1965,
+      "path": "data/historical-3.20-only/libscejpegparser-3fc99ffc0b.jsonl",
+      "records": 4,
+      "sha256": "43b34dfd24783c7035037e90d35a3b1ea1f6aa77e8b91038833d02c01ef3581e"
+    },
+    {
+      "bytes": 474684,
+      "path": "data/historical-3.20-only/libscejsc-80e21a2f59.jsonl",
+      "records": 1007,
+      "sha256": "0b2b4938218d570f65b1dbbd4eee2b62b9bc752e5a23a2da4615d9d1943a27e0"
+    },
+    {
+      "bytes": 2743,
+      "path": "data/historical-3.20-only/libscekeyboard-c753859ff1.jsonl",
+      "records": 6,
+      "sha256": "d2b4d9a88e7cd77c21def674285d3a77c4a5f830502f3c79b12efbe7db5eb3cc"
+    },
+    {
+      "bytes": 169410,
+      "path": "data/historical-3.20-only/libscelibressl-d2f008391c.jsonl",
+      "records": 399,
+      "sha256": "e5a6cc3092e96dec34fc7c9f92523c40528615f732d4bb3153beff5cee0cf19d"
+    },
+    {
+      "bytes": 207611,
+      "path": "data/historical-3.20-only/libscelibressl3-fecb797f22.jsonl",
+      "records": 488,
+      "sha256": "9740f587f2206ba08feccea343631ddc1ffb261d74a40d39e624bd440919244b"
+    },
+    {
+      "bytes": 13912,
+      "path": "data/historical-3.20-only/libscembus-c03d5277f5.jsonl",
+      "records": 32,
+      "sha256": "dc0df7de360d6a6a4cc9699abc385e6d8bdb0a2c1a743793eb83a4985047e594"
+    },
+    {
+      "bytes": 8218,
+      "path": "data/historical-3.20-only/libscemetadatareaderwriter-a2bb1eaf2f.jsonl",
+      "records": 17,
+      "sha256": "e12dc14466608d26dd2fb15cdd81a1dc51173a36c55638813080f5f22432e28b"
+    },
+    {
+      "bytes": 419,
+      "path": "data/historical-3.20-only/libscenkweb-c90c06666b.jsonl",
+      "records": 1,
+      "sha256": "19bf6b7792db5caae3e98b343cb4eab51bb34dcb31bfed6e3db7c57e114a33c7"
+    },
+    {
+      "bytes": 1495172,
+      "path": "data/historical-3.20-only/libscenkwebkit-30d4baac63.jsonl",
+      "records": 3274,
+      "sha256": "5b209ad9534949d832cf1f878fbedf1d810a7ce7ad402f2d432aa51005cfe6ef"
+    },
+    {
+      "bytes": 15391,
+      "path": "data/historical-3.20-only/libscenkwebkitrequirements-e1791fbd7a.jsonl",
+      "records": 37,
+      "sha256": "410d2581b5a4f4a440c1352dcc23048e9349940c9ea3861ef3890eaef968d136"
+    },
+    {
+      "bytes": 900,
+      "path": "data/historical-3.20-only/libscenet-99b5a08cd0.jsonl",
+      "records": 2,
+      "sha256": "c4b3c07b33c098b63afdc969545b5e1655e2c4ead2a1e94be2faea0b5ac03eee"
+    },
+    {
+      "bytes": 19385,
+      "path": "data/historical-3.20-only/libscenetctl-c91eb92654.jsonl",
+      "records": 42,
+      "sha256": "a03c496f9608b2310098854909ac899837ece354aea12288c556a2d4e2496ae4"
+    },
+    {
+      "bytes": 28213,
+      "path": "data/historical-3.20-only/libscengs2-native-d8f74d474b.jsonl",
+      "records": 65,
+      "sha256": "7fb27cf8a56c8fe83e02da550f5dbb64ad1118441bf6b40fe6310f555ee11e25"
+    },
+    {
+      "bytes": 433,
+      "path": "data/historical-3.20-only/libscenpentitlementaccess-ccae344f14.jsonl",
+      "records": 1,
+      "sha256": "5803d827f39c47f28d21d2ac72ed27b17a9db994b74baac7e38ebd735859ed7a"
+    },
+    {
+      "bytes": 3930,
+      "path": "data/historical-3.20-only/libscenpeuladialog-e1a178c784.jsonl",
+      "records": 9,
+      "sha256": "6536e52dc81957f091e887ef6970ce458dbde06e5f55f935ec35e3fc2bebf5d0"
+    },
+    {
+      "bytes": 3558,
+      "path": "data/historical-3.20-only/libscenpgameintent-f7445aaf4f.jsonl",
+      "records": 8,
+      "sha256": "cad3df7721b529bdd8b66d720856883724fea51b649931235f2205c2b71367ea"
+    },
+    {
+      "bytes": 1680,
+      "path": "data/historical-3.20-only/libscenpmanager-50685f94ae.jsonl",
+      "records": 4,
+      "sha256": "64674ea35f71fe377c1a6e2dcfd73eca67c1088d8a7ded35cb46917c3d32929d"
+    },
+    {
+      "bytes": 426,
+      "path": "data/historical-3.20-only/libscenppartner001-b5ae22d388.jsonl",
+      "records": 1,
+      "sha256": "83373654dec11b86b7e8626f44286b1bbc28a275194e6dce446e8d32b740be33"
+    },
+    {
+      "bytes": 22670,
+      "path": "data/historical-3.20-only/libscenpscoreranking-b4839376fb.jsonl",
+      "records": 51,
+      "sha256": "b081675d7af8232ff53bf2c199ad65cda8095ce22508041b05ef93936ce42a41"
+    },
+    {
+      "bytes": 3460,
+      "path": "data/historical-3.20-only/libscenpsns-a26261a4bf.jsonl",
+      "records": 8,
+      "sha256": "ac0492f8ae0032029d7328b83ca9ea1fc8b147b38ce3c64932b3a83944bdd38d"
+    },
+    {
+      "bytes": 1308,
+      "path": "data/historical-3.20-only/libscenptcs-798639d17f.jsonl",
+      "records": 3,
+      "sha256": "cbd266fd669877f299d42e474124c947624480a2230ae09dc34eb4b3fafcee5e"
+    },
+    {
+      "bytes": 14950,
+      "path": "data/historical-3.20-only/libscenpuniversaldatasystem-0592089c41.jsonl",
+      "records": 32,
+      "sha256": "354e86762a1c37bdd03a8dad8c00c067299be605e704a2f8175d3212742d36f2"
+    },
+    {
+      "bytes": 903,
+      "path": "data/historical-3.20-only/libscepatchcheckerclient-fd67d78b62.jsonl",
+      "records": 2,
+      "sha256": "9bdcf6cb61b8452f866676a0bf635a92f9dac4b12ec8db8f7a6c8905afb0774b"
+    },
+    {
+      "bytes": 854,
+      "path": "data/historical-3.20-only/libsceplaygo-8d02b7ecad.jsonl",
+      "records": 2,
+      "sha256": "4b33315681a99f4dc2c10c81b5beabff29ede56dba6689d7c9a76b1819e92f03"
+    },
+    {
+      "bytes": 1752,
+      "path": "data/historical-3.20-only/libsceplayready2-cf140a4c7d.jsonl",
+      "records": 4,
+      "sha256": "0a5976eb08f9c9afd1932cd2f4967b2eb2778a3bffd88b7a4cd432b215fecdc5"
+    },
+    {
+      "bytes": 442,
+      "path": "data/historical-3.20-only/libsceplayready4-e431478f47.jsonl",
+      "records": 1,
+      "sha256": "6cfb58775524dd00648cc62cc1744d49305f35a57fb2a6558c99ba3e301cb397"
+    },
+    {
+      "bytes": 428,
+      "path": "data/historical-3.20-only/libsceregmgr-8fde52949a.jsonl",
+      "records": 1,
+      "sha256": "7a48549351f67b34c0f65c3eec91682f12b704deb8f2277c010c48abd8ee8d35"
+    },
+    {
+      "bytes": 2202,
+      "path": "data/historical-3.20-only/libscernpsappmgr-cd4e6339be.jsonl",
+      "records": 5,
+      "sha256": "72ebee8661294c8fcde63fa4711bef351c9f2a939355f47252a2caf7d9097069"
+    },
+    {
+      "bytes": 14952,
+      "path": "data/historical-3.20-only/libscesavedata-native-cec2a234f2.jsonl",
+      "records": 34,
+      "sha256": "e0b50551e8bf9dac2a8de95dbe102f34f8bd2a50d0318917ee78c8ca9a3f9c62"
+    },
+    {
+      "bytes": 858,
+      "path": "data/historical-3.20-only/libscescreenshot-b5f6078e4b.jsonl",
+      "records": 2,
+      "sha256": "bddf3308e86acb1a6012133dde72be59fc16590a200956a13c1f9dda774a28e9"
+    },
+    {
+      "bytes": 5688,
+      "path": "data/historical-3.20-only/libsceshare-native-7ffc252365.jsonl",
+      "records": 13,
+      "sha256": "b0bf213530df96afda2b64d8102ce499235d24cec112604afd9e141eed3a7b6d"
+    },
+    {
+      "bytes": 454,
+      "path": "data/historical-3.20-only/libscesystemlogger2delivery-84263dcdd4.jsonl",
+      "records": 1,
+      "sha256": "9748c334ea34f3336319b123ad0742b39c2750150744d4de36e8228640e70907"
+    },
+    {
+      "bytes": 480,
+      "path": "data/historical-3.20-only/libscesystemlogger2nativequeueclient-20515566b1.jsonl",
+      "records": 1,
+      "sha256": "7c450fd00c082be141cde8d1f9ddf6f3fd1cac613f0d721fc410fb66311f752f"
+    },
+    {
+      "bytes": 191034,
+      "path": "data/historical-3.20-only/libscesystemservice-2f43b8f01c.jsonl",
+      "records": 400,
+      "sha256": "ef0ca3736b0a09959be3db9af56fbc2bbe2213b3047f331444de9f5b7fb5693a"
+    },
+    {
+      "bytes": 1330,
+      "path": "data/historical-3.20-only/libsceupdateservice-b7f2a7b06c.jsonl",
+      "records": 3,
+      "sha256": "3ef0bd672046f04694b9d3118375dcec70c10ffe783d80b64a218a323e54deb4"
+    },
+    {
+      "bytes": 461,
+      "path": "data/historical-3.20-only/libsceurlconfigresolver-c8fbf0f2f2.jsonl",
+      "records": 1,
+      "sha256": "2f8b62dec96831ebdfb7808f2ff62ad9c8bced2f8af3f5030c65f31f105dedc7"
+    },
+    {
+      "bytes": 4440,
+      "path": "data/historical-3.20-only/libsceusbstorage-cf416fa615.jsonl",
+      "records": 10,
+      "sha256": "0f2dcb14cfe9a80d003ff552ce1944fa6d96b896291021bc2c477a33d262b72e"
+    },
+    {
+      "bytes": 18945,
+      "path": "data/historical-3.20-only/libsceuserservice-ec97f04de9.jsonl",
+      "records": 42,
+      "sha256": "71bcc2599257a4f3dbfc80b9faee5e65c27e3e0b566f85015f10239525b11d3a"
+    },
+    {
+      "bytes": 10612,
+      "path": "data/historical-3.20-only/libscevdeccore-native-2cac678df0.jsonl",
+      "records": 24,
+      "sha256": "962cb98dff2a4f00862d3f6789423f63348b87deade9a5a815c09fe028d4b77a"
+    },
+    {
+      "bytes": 1738,
+      "path": "data/historical-3.20-only/libscevdecsavc2-native-d2ef2b0ce2.jsonl",
+      "records": 4,
+      "sha256": "f1c22df12904f4050b7c45ae6411d947404d3d77074977d935dcec8eac74511f"
+    },
+    {
+      "bytes": 3057,
+      "path": "data/historical-3.20-only/libscevdecshevc-native-fa8bffbe14.jsonl",
+      "records": 7,
+      "sha256": "e9dfba1b6e9cff4d3f1fa1e20a68ad3856b8cd985e02fa90c74ff309faf884b1"
+    },
+    {
+      "bytes": 4885,
+      "path": "data/historical-3.20-only/libscevideoout-54fc22c577.jsonl",
+      "records": 11,
+      "sha256": "ea9aa930959924b00777c61a12a9b495908d35b397d89f1d08e8e2bda6a594c2"
+    },
+    {
+      "bytes": 8084,
+      "path": "data/historical-3.20-only/libscevideorecording-native-aad3be0626.jsonl",
+      "records": 18,
+      "sha256": "9b8a9c356083c3b9af128f1bab3ebfcbfbe5c5fd3d0628ab6234cff75b41872a"
+    },
+    {
+      "bytes": 5718,
+      "path": "data/historical-3.20-only/libscevideostreamingengine_sys-e589b07772.jsonl",
+      "records": 12,
+      "sha256": "53cddce7f56199e6e595ef52cfca0824b6f4664402b4134560a497f4161f5be4"
+    },
+    {
+      "bytes": 3052,
+      "path": "data/historical-3.20-only/libscevrtracker-378a3d5dba.jsonl",
+      "records": 7,
+      "sha256": "e46670144d5c9e697bf44196e0d3d78a94ad351225e9caee4ac9fcc5312e6fc0"
+    },
+    {
+      "bytes": 426,
+      "path": "data/historical-3.20-only/libscewkfontconfig-62979fa2ff.jsonl",
+      "records": 1,
+      "sha256": "62decd0555837ec863848967f81224fc323820d80c391904b893d45ccd5511a2"
+    },
+    {
+      "bytes": 69470,
+      "path": "data/historical-3.20-only/libfreetype-66cd0198b8.jsonl",
+      "records": 169,
+      "sha256": "3d8879ac6378a89121bb8e3573cf6d083d56c26e3bf71c26130297f5498844fd"
+    },
+    {
+      "bytes": 14947,
+      "path": "data/historical-3.20-only/libharfbuzz-c114fc3d32.jsonl",
+      "records": 37,
+      "sha256": "fd3f05c8b96cf48c4b8de54ad8efa3a50575451d8f885cb04f8d9f0929aecd35"
+    },
+    {
+      "bytes": 672437,
+      "path": "data/historical-3.20-only/libicu-daf9a1c9f7.jsonl",
+      "records": 1698,
+      "sha256": "6a64b794245941e939c6984dd27b266d556f4152ba6d3e5b32c30ca860e130b6"
+    },
+    {
+      "bytes": 1782,
+      "path": "data/historical-3.20-only/libmdbg_syscore-53c596f5b7.jsonl",
+      "records": 4,
+      "sha256": "d6fc0c26eeabf5d92eae00d1d3d0463028d2863d06662130ec143353175ed4af"
+    },
+    {
+      "bytes": 824,
+      "path": "data/historical-3.20-only/libmono-profiler-log-7860053204.jsonl",
+      "records": 2,
+      "sha256": "4ea2d57bbdf0f8c3605bee1c95c52610ea7693de311c48ead773123177ce0bc3"
+    },
+    {
+      "bytes": 420828,
+      "path": "data/historical-3.20-only/libmonosgen-2-0-397d0b15ce.jsonl",
+      "records": 963,
+      "sha256": "339f2d289449cc7669be5c542258ce29413186a7c8534a50278bb5fb4f23185f"
+    },
+    {
+      "bytes": 36621,
+      "path": "data/historical-3.20-only/libpng16-56f288bf80.jsonl",
+      "records": 93,
+      "sha256": "090843a39b0120aed60b8ca6cc6d704c7cfc062173b73626c5668213b48bfaa5"
+    },
+    {
+      "bytes": 821,
+      "path": "data/historical-3.20-only/mscorlib-51872c7902.jsonl",
+      "records": 2,
+      "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
+    },
+    {
+      "bytes": 85559,
+      "path": "data/library-index.csv",
+      "sha256": "1e96effcda9d69068c73067363a27ee7608a5757611a2c367968d435daf3c123"
+    },
+    {
+      "bytes": 2545902,
+      "path": "data/verified-name-map.jsonl",
+      "sha256": "724a14e8a41ce9f0c67fa5bcffc7ac0a3df2fda632c6ee89bdced6a33781d1a2"
+    }
+  ],
+  "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
+  "logical_libraries": 791,
+  "private_research_data_included": false,
+  "public_fields": [
+    "firmware_13_60_export_confirmed",
+    "firmware_versions",
+    "kind",
+    "library",
+    "name",
+    "name_status",
+    "nid",
+    "scope",
+    "signature_status",
+    "source_evidence",
+    "stub_assessment"
+  ],
+  "schema_version": 1,
+  "source_code_included": false,
+  "unique_verified_name_bindings": 36353
+}
