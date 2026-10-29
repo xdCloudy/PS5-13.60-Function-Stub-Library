@@ -1,0 +1,5567 @@
+{
+  "comparison_snapshot": "bb04a4f1ea0175e9e4f149f0359a764d62ff3296",
+  "implementation_behaviors_added": 0,
+  "libraries": [
+    {
+      "generated": 0,
+      "library": "I18N",
+      "named": 0,
+      "qualified": 0,
+      "total": 72
+    },
+    {
+      "generated": 0,
+      "library": "I18NCJK",
+      "named": 0,
+      "qualified": 0,
+      "total": 59
+    },
+    {
+      "generated": 0,
+      "library": "I18NMidEast",
+      "named": 0,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "I18NOther",
+      "named": 0,
+      "qualified": 0,
+      "total": 30
+    },
+    {
+      "generated": 0,
+      "library": "I18NRare",
+      "named": 0,
+      "qualified": 0,
+      "total": 46
+    },
+    {
+      "generated": 0,
+      "library": "I18NWest",
+      "named": 0,
+      "qualified": 0,
+      "total": 22
+    },
+    {
+      "generated": 0,
+      "library": "MicrosoftCSharp",
+      "named": 0,
+      "qualified": 0,
+      "total": 1739
+    },
+    {
+      "generated": 0,
+      "library": "MonoDataSqlite",
+      "named": 0,
+      "qualified": 0,
+      "total": 898
+    },
+    {
+      "generated": 0,
+      "library": "MonoDataTds",
+      "named": 0,
+      "qualified": 0,
+      "total": 348
+    },
+    {
+      "generated": 0,
+      "library": "MonoSecurity",
+      "named": 0,
+      "qualified": 0,
+      "total": 700
+    },
+    {
+      "generated": 0,
+      "library": "NewtonsoftJsonPlayStation",
+      "named": 0,
+      "qualified": 0,
+      "total": 4016
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeComponentsVsh",
+      "named": 0,
+      "qualified": 0,
+      "total": 820
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeComponentsVshPSNowPlayer",
+      "named": 0,
+      "qualified": 0,
+      "total": 271
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeModulesVsh",
+      "named": 0,
+      "qualified": 0,
+      "total": 6713
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeModulesVshMedia",
+      "named": 0,
+      "qualified": 0,
+      "total": 1058
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeModulesVshMediaPlayerContents",
+      "named": 0,
+      "qualified": 0,
+      "total": 189
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeModulesVshPSNowPlayer",
+      "named": 0,
+      "qualified": 0,
+      "total": 421
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeModulesVshTelemetryNq",
+      "named": 0,
+      "qualified": 0,
+      "total": 29
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeModulesVshTrophy",
+      "named": 0,
+      "qualified": 0,
+      "total": 2177
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeModulesVshWebAppLauncher",
+      "named": 0,
+      "qualified": 0,
+      "total": 562
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativePUI",
+      "named": 0,
+      "qualified": 0,
+      "total": 10924
+    },
+    {
+      "generated": 0,
+      "library": "ReactNativeVshCommon",
+      "named": 0,
+      "qualified": 0,
+      "total": 990
+    },
+    {
+      "generated": 0,
+      "library": "ReactivePropertyPlayStation",
+      "named": 0,
+      "qualified": 0,
+      "total": 4457
+    },
+    {
+      "generated": 0,
+      "library": "SceFacebookCSSLayout",
+      "named": 0,
+      "qualified": 0,
+      "total": 263
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationBclExtensions",
+      "named": 0,
+      "qualified": 0,
+      "total": 30
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationCore",
+      "named": 0,
+      "qualified": 0,
+      "total": 1830
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationIcu",
+      "named": 0,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationIme",
+      "named": 0,
+      "qualified": 0,
+      "total": 461
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationJson",
+      "named": 0,
+      "qualified": 0,
+      "total": 493
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationOrbis",
+      "named": 0,
+      "qualified": 0,
+      "total": 337
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationOrbisSpeech",
+      "named": 0,
+      "qualified": 0,
+      "total": 113
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationPUI",
+      "named": 0,
+      "qualified": 0,
+      "total": 17872
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationPUIPlatform",
+      "named": 0,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "ScePlayStationSpeechSystemTts",
+      "named": 0,
+      "qualified": 0,
+      "total": 52
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAccessor",
+      "named": 0,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAccessorDb",
+      "named": 0,
+      "qualified": 0,
+      "total": 2219
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAccessorDbMediaEventListener",
+      "named": 0,
+      "qualified": 0,
+      "total": 66
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAccessorDbNotify",
+      "named": 0,
+      "qualified": 0,
+      "total": 45
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAppContentUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAppDbWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 173
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAppInstUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 433
+    },
+    {
+      "generated": 0,
+      "library": "SceVshAutoMounterWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 197
+    },
+    {
+      "generated": 0,
+      "library": "SceVshBackupRestoreUtil",
+      "named": 0,
+      "qualified": 0,
+      "total": 50
+    },
+    {
+      "generated": 0,
+      "library": "SceVshCloudClient",
+      "named": 0,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "SceVshCsbMgrWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 19
+    },
+    {
+      "generated": 0,
+      "library": "SceVshDataTransfer",
+      "named": 0,
+      "qualified": 0,
+      "total": 108
+    },
+    {
+      "generated": 0,
+      "library": "SceVshDbPreparationWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 249
+    },
+    {
+      "generated": 0,
+      "library": "SceVshDbRecoveryUtilityWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "SceVshDbShared",
+      "named": 0,
+      "qualified": 0,
+      "total": 149
+    },
+    {
+      "generated": 0,
+      "library": "SceVshDiscPlayer",
+      "named": 0,
+      "qualified": 0,
+      "total": 197
+    },
+    {
+      "generated": 0,
+      "library": "SceVshDiscordAccessor",
+      "named": 0,
+      "qualified": 0,
+      "total": 1726
+    },
+    {
+      "generated": 0,
+      "library": "SceVshErrorDialogUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "SceVshGlsNativeCall",
+      "named": 0,
+      "qualified": 0,
+      "total": 532
+    },
+    {
+      "generated": 0,
+      "library": "SceVshIme",
+      "named": 0,
+      "qualified": 0,
+      "total": 211
+    },
+    {
+      "generated": 0,
+      "library": "SceVshKernelSysWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 148
+    },
+    {
+      "generated": 0,
+      "library": "SceVshLncUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 107
+    },
+    {
+      "generated": 0,
+      "library": "SceVshLx",
+      "named": 0,
+      "qualified": 0,
+      "total": 1022
+    },
+    {
+      "generated": 0,
+      "library": "SceVshMarlinDownloaderWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "SceVshMessagesAccessor",
+      "named": 0,
+      "qualified": 0,
+      "total": 2315
+    },
+    {
+      "generated": 0,
+      "library": "SceVshMimeType",
+      "named": 0,
+      "qualified": 0,
+      "total": 197
+    },
+    {
+      "generated": 0,
+      "library": "SceVshMorpheusUpdWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 46
+    },
+    {
+      "generated": 0,
+      "library": "SceVshMyGameList",
+      "named": 0,
+      "qualified": 0,
+      "total": 42
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNotificationClient",
+      "named": 0,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpAppInfo",
+      "named": 0,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpAppLaunchLink",
+      "named": 0,
+      "qualified": 0,
+      "total": 17
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpAppLaunchLink2",
+      "named": 0,
+      "qualified": 0,
+      "total": 17
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpAsm",
+      "named": 0,
+      "qualified": 0,
+      "total": 181
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpCommon",
+      "named": 0,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpGameIntent",
+      "named": 0,
+      "qualified": 0,
+      "total": 65
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpIdMapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 23
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpIga",
+      "named": 0,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpManager",
+      "named": 0,
+      "qualified": 0,
+      "total": 300
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpPapc",
+      "named": 0,
+      "qualified": 0,
+      "total": 30
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpPbtc",
+      "named": 0,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpPreorderMgr",
+      "named": 0,
+      "qualified": 0,
+      "total": 16
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpRifManager",
+      "named": 0,
+      "qualified": 0,
+      "total": 166
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpServiceChecker",
+      "named": 0,
+      "qualified": 0,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpServiceChecker2",
+      "named": 0,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpSessionService",
+      "named": 0,
+      "qualified": 0,
+      "total": 28
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpSns",
+      "named": 0,
+      "qualified": 0,
+      "total": 30
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpTmdb",
+      "named": 0,
+      "qualified": 0,
+      "total": 105
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpTrophy",
+      "named": 0,
+      "qualified": 0,
+      "total": 100
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpTrophy2",
+      "named": 0,
+      "qualified": 0,
+      "total": 109
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpTrophyAccessor",
+      "named": 0,
+      "qualified": 0,
+      "total": 1791
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpUds",
+      "named": 0,
+      "qualified": 0,
+      "total": 122
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpWebapi",
+      "named": 0,
+      "qualified": 0,
+      "total": 246
+    },
+    {
+      "generated": 0,
+      "library": "SceVshNpWebapi2",
+      "named": 0,
+      "qualified": 0,
+      "total": 208
+    },
+    {
+      "generated": 0,
+      "library": "SceVshOrbisAbstractStorage",
+      "named": 0,
+      "qualified": 0,
+      "total": 91
+    },
+    {
+      "generated": 0,
+      "library": "SceVshOrbisBgft",
+      "named": 0,
+      "qualified": 0,
+      "total": 127
+    },
+    {
+      "generated": 0,
+      "library": "SceVshOrbisContentManager",
+      "named": 0,
+      "qualified": 0,
+      "total": 594
+    },
+    {
+      "generated": 0,
+      "library": "SceVshPadControllerUpdWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 50
+    },
+    {
+      "generated": 0,
+      "library": "SceVshPartyCommon",
+      "named": 0,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "SceVshPatchCheckerClientWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 33
+    },
+    {
+      "generated": 0,
+      "library": "SceVshProfileCache",
+      "named": 0,
+      "qualified": 0,
+      "total": 438
+    },
+    {
+      "generated": 0,
+      "library": "SceVshPsnUtil",
+      "named": 0,
+      "qualified": 0,
+      "total": 94
+    },
+    {
+      "generated": 0,
+      "library": "SceVshRegistry",
+      "named": 0,
+      "qualified": 0,
+      "total": 54
+    },
+    {
+      "generated": 0,
+      "library": "SceVshRemotePlay",
+      "named": 0,
+      "qualified": 0,
+      "total": 71
+    },
+    {
+      "generated": 0,
+      "library": "SceVshRemotePlayClientIpcWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "SceVshResourceArbitrator",
+      "named": 0,
+      "qualified": 0,
+      "total": 287
+    },
+    {
+      "generated": 0,
+      "library": "SceVshRnpsAppMgrWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 62
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSQLite",
+      "named": 0,
+      "qualified": 0,
+      "total": 779
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSQLiteAux",
+      "named": 0,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSaveDataWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 195
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShareLibWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 51
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShareNpWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShareServerPostWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 26
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShareVideoTranscoderWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 23
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellCoreUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 516
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIAppSystem",
+      "named": 0,
+      "qualified": 0,
+      "total": 2246
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIBGLayer",
+      "named": 0,
+      "qualified": 0,
+      "total": 1311
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIBaseSystem",
+      "named": 0,
+      "qualified": 0,
+      "total": 392
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIBroadcast",
+      "named": 0,
+      "qualified": 0,
+      "total": 2986
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUICaptureContentUtil",
+      "named": 0,
+      "qualified": 0,
+      "total": 574
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUICaptureMenu",
+      "named": 0,
+      "qualified": 0,
+      "total": 3395
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIIme",
+      "named": 0,
+      "qualified": 0,
+      "total": 3932
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUILegacy",
+      "named": 0,
+      "qualified": 0,
+      "total": 7981
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUILoginMgr",
+      "named": 0,
+      "qualified": 0,
+      "total": 4550
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUILoginMgrWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 444
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIProfileCache",
+      "named": 0,
+      "qualified": 0,
+      "total": 492
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIQuickImageEdit",
+      "named": 0,
+      "qualified": 0,
+      "total": 981
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIQuickVideoEdit",
+      "named": 0,
+      "qualified": 0,
+      "total": 276
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIReactNativeApps",
+      "named": 0,
+      "qualified": 0,
+      "total": 2343
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIReactNativeShellApp",
+      "named": 0,
+      "qualified": 0,
+      "total": 6391
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIRetriever",
+      "named": 0,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIShareVideoTranscoder",
+      "named": 0,
+      "qualified": 0,
+      "total": 544
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUISticker",
+      "named": 0,
+      "qualified": 0,
+      "total": 356
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIStickerAccessor",
+      "named": 0,
+      "qualified": 0,
+      "total": 291
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUISystemModalDialog",
+      "named": 0,
+      "qualified": 0,
+      "total": 2235
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUITheme",
+      "named": 0,
+      "qualified": 0,
+      "total": 396
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIUgc",
+      "named": 0,
+      "qualified": 0,
+      "total": 591
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 25
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIVisionRecognition",
+      "named": 0,
+      "qualified": 0,
+      "total": 822
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIVoiceAndAgent",
+      "named": 0,
+      "qualified": 0,
+      "total": 1189
+    },
+    {
+      "generated": 0,
+      "library": "SceVshShellUIVoiceChat",
+      "named": 0,
+      "qualified": 0,
+      "total": 208
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSl2Sl2Client",
+      "named": 0,
+      "qualified": 0,
+      "total": 204
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSl2Sl2Common",
+      "named": 0,
+      "qualified": 0,
+      "total": 51
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSl2Sl2Manage",
+      "named": 0,
+      "qualified": 0,
+      "total": 30
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSysBridge",
+      "named": 0,
+      "qualified": 0,
+      "total": 532
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSysUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 92
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSysfileUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSystemLoggerUtilWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "SceVshSystemLoggerWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 182
+    },
+    {
+      "generated": 0,
+      "library": "SceVshTheme",
+      "named": 0,
+      "qualified": 0,
+      "total": 334
+    },
+    {
+      "generated": 0,
+      "library": "SceVshUILib",
+      "named": 0,
+      "qualified": 0,
+      "total": 1424
+    },
+    {
+      "generated": 0,
+      "library": "SceVshUpdateServiceWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 178
+    },
+    {
+      "generated": 0,
+      "library": "SceVshUrlConfigResolver",
+      "named": 0,
+      "qualified": 0,
+      "total": 36
+    },
+    {
+      "generated": 0,
+      "library": "SceVshUsbStorageScene",
+      "named": 0,
+      "qualified": 0,
+      "total": 265
+    },
+    {
+      "generated": 0,
+      "library": "SceVshUserServiceWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 1272
+    },
+    {
+      "generated": 0,
+      "library": "SceVshVideoPlayer",
+      "named": 0,
+      "qualified": 0,
+      "total": 262
+    },
+    {
+      "generated": 0,
+      "library": "SceVshVideoRecordingWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 68
+    },
+    {
+      "generated": 0,
+      "library": "SceVshVideoServiceWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 32
+    },
+    {
+      "generated": 0,
+      "library": "SceVshVoiceAndAgent",
+      "named": 0,
+      "qualified": 0,
+      "total": 1050
+    },
+    {
+      "generated": 0,
+      "library": "SceVshVoiceMsgVoiceMsgWrapper",
+      "named": 0,
+      "qualified": 0,
+      "total": 25
+    },
+    {
+      "generated": 0,
+      "library": "SceVshWebBrowser",
+      "named": 0,
+      "qualified": 0,
+      "total": 52
+    },
+    {
+      "generated": 0,
+      "library": "System",
+      "named": 0,
+      "qualified": 0,
+      "total": 10621
+    },
+    {
+      "generated": 0,
+      "library": "SystemComponentModelComposition",
+      "named": 0,
+      "qualified": 0,
+      "total": 2592
+    },
+    {
+      "generated": 0,
+      "library": "SystemComponentModelDataAnnotations",
+      "named": 0,
+      "qualified": 0,
+      "total": 432
+    },
+    {
+      "generated": 0,
+      "library": "SystemCore",
+      "named": 0,
+      "qualified": 0,
+      "total": 19731
+    },
+    {
+      "generated": 0,
+      "library": "SystemData",
+      "named": 0,
+      "qualified": 0,
+      "total": 8388
+    },
+    {
+      "generated": 0,
+      "library": "SystemDataServicesClient",
+      "named": 0,
+      "qualified": 0,
+      "total": 2636
+    },
+    {
+      "generated": 0,
+      "library": "SystemIOCompression",
+      "named": 0,
+      "qualified": 0,
+      "total": 739
+    },
+    {
+      "generated": 0,
+      "library": "SystemIOCompressionFileSystem",
+      "named": 0,
+      "qualified": 0,
+      "total": 86
+    },
+    {
+      "generated": 0,
+      "library": "SystemNet",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "SystemNetHttp",
+      "named": 0,
+      "qualified": 0,
+      "total": 1283
+    },
+    {
+      "generated": 0,
+      "library": "SystemNetHttpWebRequest",
+      "named": 0,
+      "qualified": 0,
+      "total": 122
+    },
+    {
+      "generated": 0,
+      "library": "SystemNumerics",
+      "named": 0,
+      "qualified": 0,
+      "total": 411
+    },
+    {
+      "generated": 0,
+      "library": "SystemReactiveCore",
+      "named": 0,
+      "qualified": 0,
+      "total": 2335
+    },
+    {
+      "generated": 0,
+      "library": "SystemReactiveLinq",
+      "named": 0,
+      "qualified": 0,
+      "total": 26351
+    },
+    {
+      "generated": 0,
+      "library": "SystemRuntimeSerialization",
+      "named": 0,
+      "qualified": 0,
+      "total": 3384
+    },
+    {
+      "generated": 0,
+      "library": "SystemServiceModel",
+      "named": 0,
+      "qualified": 0,
+      "total": 2674
+    },
+    {
+      "generated": 0,
+      "library": "SystemServiceModelInternals",
+      "named": 0,
+      "qualified": 0,
+      "total": 2044
+    },
+    {
+      "generated": 0,
+      "library": "SystemServiceModelWeb",
+      "named": 0,
+      "qualified": 0,
+      "total": 334
+    },
+    {
+      "generated": 0,
+      "library": "SystemTransactions",
+      "named": 0,
+      "qualified": 0,
+      "total": 79
+    },
+    {
+      "generated": 0,
+      "library": "SystemWebServices",
+      "named": 0,
+      "qualified": 0,
+      "total": 1100
+    },
+    {
+      "generated": 0,
+      "library": "SystemXml",
+      "named": 0,
+      "qualified": 0,
+      "total": 8583
+    },
+    {
+      "generated": 0,
+      "library": "SystemXmlLinq",
+      "named": 0,
+      "qualified": 0,
+      "total": 1327
+    },
+    {
+      "generated": 0,
+      "library": "WebAppBundle",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "app",
+      "named": 0,
+      "qualified": 0,
+      "total": 5612
+    },
+    {
+      "generated": 0,
+      "library": "gaikai-player",
+      "named": 16,
+      "qualified": 0,
+      "total": 16
+    },
+    {
+      "generated": 0,
+      "library": "gaikai_player_lib",
+      "named": 16,
+      "qualified": 0,
+      "total": 132
+    },
+    {
+      "generated": 0,
+      "library": "libAacs",
+      "named": 13,
+      "qualified": 0,
+      "total": 264
+    },
+    {
+      "generated": 0,
+      "library": "libBdplus",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libCFWML",
+      "named": 0,
+      "qualified": 0,
+      "total": 53
+    },
+    {
+      "generated": 0,
+      "library": "libCprm",
+      "named": 0,
+      "qualified": 0,
+      "total": 35
+    },
+    {
+      "generated": 0,
+      "library": "libCss",
+      "named": 4,
+      "qualified": 0,
+      "total": 65
+    },
+    {
+      "generated": 0,
+      "library": "libNativeExtensions",
+      "named": 43,
+      "qualified": 0,
+      "total": 392
+    },
+    {
+      "generated": 0,
+      "library": "libReactNative.Modules.Vsh",
+      "named": 87,
+      "qualified": 0,
+      "total": 122
+    },
+    {
+      "generated": 0,
+      "library": "libReactNative.Modules.Vsh.Media",
+      "named": 55,
+      "qualified": 0,
+      "total": 73
+    },
+    {
+      "generated": 0,
+      "library": "libReactNative.Modules.Vsh.MediaPlayer.Contents",
+      "named": 7,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libReactNative.Modules.Vsh.WebAppLauncher",
+      "named": 61,
+      "qualified": 0,
+      "total": 138
+    },
+    {
+      "generated": 0,
+      "library": "libRnpsDevSupport.Dummy",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAbstractLocal",
+      "named": 70,
+      "qualified": 0,
+      "total": 100
+    },
+    {
+      "generated": 0,
+      "library": "libSceAbstractStorage",
+      "named": 110,
+      "qualified": 0,
+      "total": 155
+    },
+    {
+      "generated": 0,
+      "library": "libSceAbstractTwitter",
+      "named": 68,
+      "qualified": 0,
+      "total": 92
+    },
+    {
+      "generated": 0,
+      "library": "libSceAbstractYoutube",
+      "named": 76,
+      "qualified": 0,
+      "total": 103
+    },
+    {
+      "generated": 0,
+      "library": "libSceAc3Enc",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceAcm",
+      "named": 23,
+      "qualified": 11,
+      "total": 72
+    },
+    {
+      "generated": 0,
+      "library": "libSceAcm_IrGeneration_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAcm_Propagation_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceAcm_Ref_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceAgc",
+      "named": 241,
+      "qualified": 0,
+      "total": 248
+    },
+    {
+      "generated": 0,
+      "library": "libSceAgcDriver",
+      "named": 130,
+      "qualified": 0,
+      "total": 135
+    },
+    {
+      "generated": 0,
+      "library": "libSceAgcDriverAsyncGraphicsRingEval_nosubmission",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAgcDriverDebugReset_nosubmission",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceAgcDriverDebugWavefronts_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceAgcDriverPaDebug",
+      "named": 23,
+      "qualified": 0,
+      "total": 45
+    },
+    {
+      "generated": 0,
+      "library": "libSceAgcVsh",
+      "named": 237,
+      "qualified": 0,
+      "total": 245
+    },
+    {
+      "generated": 0,
+      "library": "libSceAjm",
+      "named": 46,
+      "qualified": 3,
+      "total": 54
+    },
+    {
+      "generated": 0,
+      "library": "libSceAjm.native",
+      "named": 38,
+      "qualified": 0,
+      "total": 38
+    },
+    {
+      "generated": 0,
+      "library": "libSceAjmWVorbis",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceAjm_legacy_nosubmission",
+      "named": 21,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "libSceAjmi",
+      "named": 22,
+      "qualified": 1,
+      "total": 43
+    },
+    {
+      "generated": 0,
+      "library": "libSceAmpr",
+      "named": 118,
+      "qualified": 0,
+      "total": 118
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppContent",
+      "named": 38,
+      "qualified": 0,
+      "total": 38
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppContentBundle",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppContentGameTrials",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppContentIro",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppContentMdid",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppContentPft",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppContentSc",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppDbShellCoreClient",
+      "named": 0,
+      "qualified": 0,
+      "total": 41
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppDbShellCoreClientForSystemService",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppInstUtil",
+      "named": 124,
+      "qualified": 0,
+      "total": 184
+    },
+    {
+      "generated": 0,
+      "library": "libSceAppMessaging",
+      "named": 8,
+      "qualified": 0,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceAsyncStorageInternal",
+      "named": 0,
+      "qualified": 0,
+      "total": 20
+    },
+    {
+      "generated": 0,
+      "library": "libSceAsyncStorageInternalAux",
+      "named": 0,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceAt9Enc",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudio3d",
+      "named": 32,
+      "qualified": 0,
+      "total": 32
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudioIn",
+      "named": 48,
+      "qualified": 0,
+      "total": 49
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudioOut",
+      "named": 132,
+      "qualified": 0,
+      "total": 139
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudioOut2",
+      "named": 84,
+      "qualified": 0,
+      "total": 138
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudioOutDeviceService",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudioOutServer",
+      "named": 2,
+      "qualified": 0,
+      "total": 25
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudioPropagation",
+      "named": 33,
+      "qualified": 0,
+      "total": 41
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudioSystem",
+      "named": 8,
+      "qualified": 6,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudiodec",
+      "named": 22,
+      "qualified": 2,
+      "total": 22
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudiodec.native",
+      "named": 20,
+      "qualified": 0,
+      "total": 20
+    },
+    {
+      "generated": 0,
+      "library": "libSceAudiodecCpu",
+      "named": 8,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceAutoMounterClient",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceAvPlayer",
+      "named": 30,
+      "qualified": 0,
+      "total": 30
+    },
+    {
+      "generated": 0,
+      "library": "libSceAvPlayer.native",
+      "named": 29,
+      "qualified": 0,
+      "total": 29
+    },
+    {
+      "generated": 0,
+      "library": "libSceAvPlayerStreaming",
+      "named": 34,
+      "qualified": 1,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "libSceAvSetting",
+      "named": 127,
+      "qualified": 0,
+      "total": 180
+    },
+    {
+      "generated": 0,
+      "library": "libSceAvSettingDebug",
+      "named": 8,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceAvcap2",
+      "named": 39,
+      "qualified": 32,
+      "total": 59
+    },
+    {
+      "generated": 0,
+      "library": "libSceAvcap2mvr",
+      "named": 0,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceBackupRestoreUtil",
+      "named": 21,
+      "qualified": 5,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "libSceBeisobmf",
+      "named": 18,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceBemp2sys",
+      "named": 31,
+      "qualified": 0,
+      "total": 33
+    },
+    {
+      "generated": 0,
+      "library": "libSceBgft",
+      "named": 96,
+      "qualified": 0,
+      "total": 101
+    },
+    {
+      "generated": 0,
+      "library": "libSceBgsStorage",
+      "named": 0,
+      "qualified": 0,
+      "total": 19
+    },
+    {
+      "generated": 0,
+      "library": "libSceBluetoothHid",
+      "named": 17,
+      "qualified": 0,
+      "total": 17
+    },
+    {
+      "generated": 0,
+      "library": "libSceCamera",
+      "named": 122,
+      "qualified": 1,
+      "total": 127
+    },
+    {
+      "generated": 0,
+      "library": "libSceCamera2",
+      "named": 34,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "libSceCamera2_nosubmission",
+      "named": 34,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "libSceCdlgAdIdClient",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceCdlgG2P",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceCdlgPlayerReview",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceCdlgUtilServer",
+      "named": 11,
+      "qualified": 0,
+      "total": 44
+    },
+    {
+      "generated": 0,
+      "library": "libSceCes",
+      "named": 274,
+      "qualified": 0,
+      "total": 274
+    },
+    {
+      "generated": 0,
+      "library": "libSceCesCs",
+      "named": 273,
+      "qualified": 0,
+      "total": 273
+    },
+    {
+      "generated": 0,
+      "library": "libSceCffMgr",
+      "named": 7,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceCloudMessaging",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceCommonDialog",
+      "named": 16,
+      "qualified": 0,
+      "total": 28
+    },
+    {
+      "generated": 0,
+      "library": "libSceCompanionHttpd",
+      "named": 17,
+      "qualified": 0,
+      "total": 17
+    },
+    {
+      "generated": 0,
+      "library": "libSceCompanionUtil",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceComposite",
+      "named": 101,
+      "qualified": 23,
+      "total": 138
+    },
+    {
+      "generated": 0,
+      "library": "libSceCompositeExt",
+      "named": 78,
+      "qualified": 0,
+      "total": 78
+    },
+    {
+      "generated": 0,
+      "library": "libSceConnectAccountDialog",
+      "named": 7,
+      "qualified": 7,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentBinder",
+      "named": 8,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentDelete",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentDeleteForSf",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentExport",
+      "named": 14,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentExportForSf",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentListController",
+      "named": 18,
+      "qualified": 0,
+      "total": 19
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentSearch",
+      "named": 27,
+      "qualified": 0,
+      "total": 27
+    },
+    {
+      "generated": 0,
+      "library": "libSceContentSearchForSf",
+      "named": 4,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceConvertKeycode",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceCoredump",
+      "named": 16,
+      "qualified": 0,
+      "total": 17
+    },
+    {
+      "generated": 0,
+      "library": "libSceCoredumpSeqHandlerIf",
+      "named": 6,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceCoredump_debug",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceCoredump_nosubmission",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceCsbMgr",
+      "named": 10,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceCustomMusicAudioOut",
+      "named": 10,
+      "qualified": 5,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceCustomMusicCore",
+      "named": 18,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceCustomMusicDummy",
+      "named": 3,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceCustomMusicSysCallWrapper",
+      "named": 54,
+      "qualified": 53,
+      "total": 133
+    },
+    {
+      "generated": 0,
+      "library": "libSceDataTransfer",
+      "named": 88,
+      "qualified": 28,
+      "total": 88
+    },
+    {
+      "generated": 0,
+      "library": "libSceDbgAudioOut",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceDbgAudioOut2",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceDbgKeyboard",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceDbgVideoOut",
+      "named": 1,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceDbgVideoOutSqa",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceDepth",
+      "named": 38,
+      "qualified": 0,
+      "total": 39
+    },
+    {
+      "generated": 0,
+      "library": "libSceDepth2",
+      "named": 10,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceDeviceService",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceDipsw",
+      "named": 10,
+      "qualified": 1,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceDiscId",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceDiscMap",
+      "named": 2,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceDseehx",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceDtsEnc",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceEditMp4",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceErrorDialog",
+      "named": 8,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceEsvm",
+      "named": 45,
+      "qualified": 45,
+      "total": 45
+    },
+    {
+      "generated": 0,
+      "library": "libSceEsvmAppAudioSync",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceEsvmDecoderModeEx",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceEsvmEngine",
+      "named": 56,
+      "qualified": 13,
+      "total": 62
+    },
+    {
+      "generated": 0,
+      "library": "libSceEsvmPlayReady",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceEsvmWidevine",
+      "named": 12,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceFacebook.Yoga",
+      "named": 138,
+      "qualified": 0,
+      "total": 158
+    },
+    {
+      "generated": 0,
+      "library": "libSceFiber",
+      "named": 15,
+      "qualified": 0,
+      "total": 15
+    },
+    {
+      "generated": 0,
+      "library": "libSceFios2",
+      "named": 168,
+      "qualified": 0,
+      "total": 168
+    },
+    {
+      "generated": 0,
+      "library": "libSceFlexContent",
+      "named": 7,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceFollyShared",
+      "named": 2,
+      "qualified": 0,
+      "total": 555
+    },
+    {
+      "generated": 0,
+      "library": "libSceFont",
+      "named": 240,
+      "qualified": 44,
+      "total": 240
+    },
+    {
+      "generated": 0,
+      "library": "libSceFont.native",
+      "named": 136,
+      "qualified": 0,
+      "total": 136
+    },
+    {
+      "generated": 0,
+      "library": "libSceFontFt",
+      "named": 21,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "libSceFontGs",
+      "named": 8,
+      "qualified": 8,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceFreeType",
+      "named": 344,
+      "qualified": 0,
+      "total": 344
+    },
+    {
+      "generated": 0,
+      "library": "libSceFreeTypeOl",
+      "named": 344,
+      "qualified": 0,
+      "total": 344
+    },
+    {
+      "generated": 0,
+      "library": "libSceFreeTypeOptOl",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceFreeTypeOt",
+      "named": 341,
+      "qualified": 0,
+      "total": 341
+    },
+    {
+      "generated": 0,
+      "library": "libSceFsInternalForVsh",
+      "named": 309,
+      "qualified": 0,
+      "total": 446
+    },
+    {
+      "generated": 0,
+      "library": "libSceGLSlimServerVSH",
+      "named": 190,
+      "qualified": 0,
+      "total": 192
+    },
+    {
+      "generated": 0,
+      "library": "libSceGLSlimVSH",
+      "named": 208,
+      "qualified": 0,
+      "total": 217
+    },
+    {
+      "generated": 0,
+      "library": "libSceGameCustomDataDialog",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceGameCustomDataDialogCompat",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceGameLiveStreaming",
+      "named": 47,
+      "qualified": 0,
+      "total": 47
+    },
+    {
+      "generated": 0,
+      "library": "libSceGameLiveStreamingCompat",
+      "named": 25,
+      "qualified": 0,
+      "total": 25
+    },
+    {
+      "generated": 0,
+      "library": "libSceGameLiveStreaming_debug",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceGameLiveStreaming_direct_streaming",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceGameUpdate",
+      "named": 8,
+      "qualified": 1,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceGic",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceGifParser",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmDebugModuleReset",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmDebugReset",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmDriver",
+      "named": 163,
+      "qualified": 0,
+      "total": 175
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmDriverCompat",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmDriverForNeoMode",
+      "named": 163,
+      "qualified": 0,
+      "total": 163
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmDriverPaDebug",
+      "named": 11,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmDriverResourceRegistration",
+      "named": 3,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmGetGpuCoreClockFrequency",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceGnmWaitFreeSubmit",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceGvMp4Parser",
+      "named": 5,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceHidControl",
+      "named": 68,
+      "qualified": 0,
+      "total": 82
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd",
+      "named": 168,
+      "qualified": 0,
+      "total": 186
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2",
+      "named": 161,
+      "qualified": 0,
+      "total": 276
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2Distortion",
+      "named": 0,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2ReprojectionBlankInBackground",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2ReprojectionMotionVector",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2ReprojectionMotionVector_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2ReprojectionPositional",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2Reprojection_nosubmission",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmd2Reprojection_vrremote_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmdDistortion",
+      "named": 8,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceHmdSetupDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceHttp",
+      "named": 115,
+      "qualified": 0,
+      "total": 115
+    },
+    {
+      "generated": 0,
+      "library": "libSceHttp2",
+      "named": 71,
+      "qualified": 0,
+      "total": 72
+    },
+    {
+      "generated": 0,
+      "library": "libSceHttpCache",
+      "named": 28,
+      "qualified": 0,
+      "total": 35
+    },
+    {
+      "generated": 0,
+      "library": "libSceHubAppUtil",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceIcu",
+      "named": 661,
+      "qualified": 0,
+      "total": 855
+    },
+    {
+      "generated": 0,
+      "library": "libSceIdu",
+      "named": 17,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "libSceImageUtil",
+      "named": 0,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceIme",
+      "named": 59,
+      "qualified": 0,
+      "total": 61
+    },
+    {
+      "generated": 0,
+      "library": "libSceImeBackend",
+      "named": 27,
+      "qualified": 5,
+      "total": 27
+    },
+    {
+      "generated": 0,
+      "library": "libSceImeConsecutiveClauseConversionExtensions",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceImeDialog",
+      "named": 14,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceImeDialogVoiceDictation",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceImeRemotePlayExtensions",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceImeVoiceDictation",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceInetStat",
+      "named": 0,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceInvitationDialog",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceInvitationDialogCompat",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceIpmi",
+      "named": 94,
+      "qualified": 0,
+      "total": 97
+    },
+    {
+      "generated": 0,
+      "library": "libSceIpmiDbg",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceJemspace",
+      "named": 13,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceJpegDec",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceJpegDec_jvm",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceJpegEnc",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceJpegParser",
+      "named": 5,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 150,
+      "library": "libSceJsc",
+      "named": 4115,
+      "qualified": 2952,
+      "total": 5446
+    },
+    {
+      "generated": 0,
+      "library": "libSceJsi-0.70",
+      "named": 0,
+      "qualified": 0,
+      "total": 265
+    },
+    {
+      "generated": 0,
+      "library": "libSceJson",
+      "named": 88,
+      "qualified": 0,
+      "total": 88
+    },
+    {
+      "generated": 0,
+      "library": "libSceJson2",
+      "named": 215,
+      "qualified": 0,
+      "total": 215
+    },
+    {
+      "generated": 0,
+      "library": "libSceJxr",
+      "named": 136,
+      "qualified": 0,
+      "total": 136
+    },
+    {
+      "generated": 0,
+      "library": "libSceJxrParser",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceKbEmulate",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceKeyboard",
+      "named": 24,
+      "qualified": 0,
+      "total": 28
+    },
+    {
+      "generated": 0,
+      "library": "libSceLibcInternal",
+      "named": 2593,
+      "qualified": 11,
+      "total": 2688
+    },
+    {
+      "generated": 0,
+      "library": "libSceLibcInternalExt",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceLibreSSL",
+      "named": 414,
+      "qualified": 0,
+      "total": 414
+    },
+    {
+      "generated": 0,
+      "library": "libSceLibreSSl3",
+      "named": 638,
+      "qualified": 0,
+      "total": 665
+    },
+    {
+      "generated": 0,
+      "library": "libSceLibreSsl",
+      "named": 399,
+      "qualified": 0,
+      "total": 399
+    },
+    {
+      "generated": 0,
+      "library": "libSceLibreSsl3",
+      "named": 488,
+      "qualified": 0,
+      "total": 488
+    },
+    {
+      "generated": 0,
+      "library": "libSceLncUtil",
+      "named": 89,
+      "qualified": 0,
+      "total": 93
+    },
+    {
+      "generated": 0,
+      "library": "libSceLoginDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceLoginMgrServer",
+      "named": 32,
+      "qualified": 2,
+      "total": 45
+    },
+    {
+      "generated": 0,
+      "library": "libSceLoginService",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceM4aacEnc",
+      "named": 17,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceMat2Enc",
+      "named": 0,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceMbus",
+      "named": 128,
+      "qualified": 8,
+      "total": 143
+    },
+    {
+      "generated": 0,
+      "library": "libSceMbusDebug",
+      "named": 28,
+      "qualified": 0,
+      "total": 28
+    },
+    {
+      "generated": 0,
+      "library": "libSceMediaAppSharedStorageMa",
+      "named": 0,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceMediaAppSharedStorageMaDbg",
+      "named": 0,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceMediaAppSharedStorageMc",
+      "named": 0,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 135,
+      "library": "libSceMediaFrameworkInterface",
+      "named": 135,
+      "qualified": 135,
+      "total": 225
+    },
+    {
+      "generated": 0,
+      "library": "libSceMediaFrameworkUtil",
+      "named": 5,
+      "qualified": 5,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceMetadataReaderWriter",
+      "named": 39,
+      "qualified": 0,
+      "total": 81
+    },
+    {
+      "generated": 0,
+      "library": "libSceMouse",
+      "named": 23,
+      "qualified": 4,
+      "total": 25
+    },
+    {
+      "generated": 0,
+      "library": "libSceMouseExtension_nosubmission",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceMove",
+      "named": 21,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "libSceMoveTracker",
+      "named": 18,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceMsgDialog",
+      "named": 10,
+      "qualified": 0,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceMsgDialog.native",
+      "named": 10,
+      "qualified": 0,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceMusicCoreInterface",
+      "named": 7,
+      "qualified": 7,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceMusicFrameworkInterface",
+      "named": 36,
+      "qualified": 0,
+      "total": 37
+    },
+    {
+      "generated": 0,
+      "library": "libSceNKWeb",
+      "named": 3,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceNKWebCdlgInjectedBundle",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 150,
+      "library": "libSceNKWebKit",
+      "named": 12110,
+      "qualified": 8615,
+      "total": 18939
+    },
+    {
+      "generated": 0,
+      "library": "libSceNKWebKitRequirements",
+      "named": 141,
+      "qualified": 0,
+      "total": 214
+    },
+    {
+      "generated": 0,
+      "library": "libSceNet",
+      "named": 223,
+      "qualified": 0,
+      "total": 235
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetBwe",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetConnSwitcher",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetCtl",
+      "named": 96,
+      "qualified": 0,
+      "total": 99
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetCtlAp",
+      "named": 11,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetCtlApDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetCtlApIpcInt",
+      "named": 18,
+      "qualified": 0,
+      "total": 27
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetCtlForNpToolkit",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetCtlV6",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetDebug",
+      "named": 2,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceNetworkProfiler",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceNgs2",
+      "named": 66,
+      "qualified": 1,
+      "total": 66
+    },
+    {
+      "generated": 0,
+      "library": "libSceNgs2.native",
+      "named": 65,
+      "qualified": 0,
+      "total": 65
+    },
+    {
+      "generated": 0,
+      "library": "libSceNotification",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpAppLauncher",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpAuth",
+      "named": 14,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpAuthAuthorizedApp",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpAuthAuthorizedAppDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpAuthCompat",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpCommerce",
+      "named": 12,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 150,
+      "library": "libSceNpCommon",
+      "named": 1187,
+      "qualified": 782,
+      "total": 1199
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpCommonCompat",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpEntitlementAccess",
+      "named": 26,
+      "qualified": 1,
+      "total": 26
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpEntitlementAccessGameTrials",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpEntitlementAccessPft",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpEulaDialog",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpFriendListDialog",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpFriendListDialogCompat",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpGameIntent",
+      "named": 19,
+      "qualified": 0,
+      "total": 19
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpManager",
+      "named": 413,
+      "qualified": 0,
+      "total": 539
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpManagerCompat",
+      "named": 14,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpManagerForToolkit",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpManagerIsPlusMember",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpMatching2",
+      "named": 69,
+      "qualified": 0,
+      "total": 69
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpMatching2Compat",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpPartner001",
+      "named": 4,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpPartnerSubscription",
+      "named": 2,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpParty",
+      "named": 26,
+      "qualified": 0,
+      "total": 26
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpPartyCompat",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpPremiumAddcont",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpProfileDialog",
+      "named": 8,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpProfileDialogCompat",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpRemotePlaySessionSignaling",
+      "named": 14,
+      "qualified": 4,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpScore",
+      "named": 51,
+      "qualified": 0,
+      "total": 51
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpScoreCompat",
+      "named": 11,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpScoreRanking",
+      "named": 51,
+      "qualified": 0,
+      "total": 51
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSessionService",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSessionSignaling",
+      "named": 31,
+      "qualified": 5,
+      "total": 31
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSessionSignalingCrossplay",
+      "named": 5,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSignaling",
+      "named": 24,
+      "qualified": 0,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSignalingCompat",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSns",
+      "named": 24,
+      "qualified": 0,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSnsFacebookDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSnsTwitch",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSnsYouTube",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSnsYouTubeDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpSpeechToText",
+      "named": 7,
+      "qualified": 7,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpTcs",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpTextToSpeech",
+      "named": 5,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpTrophy",
+      "named": 104,
+      "qualified": 7,
+      "total": 110
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpTrophy2",
+      "named": 56,
+      "qualified": 0,
+      "total": 56
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpTus",
+      "named": 142,
+      "qualified": 0,
+      "total": 142
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpTusCompat",
+      "named": 44,
+      "qualified": 0,
+      "total": 44
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpUbisoftPlus",
+      "named": 0,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpUniversalDataSystem",
+      "named": 93,
+      "qualified": 0,
+      "total": 93
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpUtility",
+      "named": 98,
+      "qualified": 0,
+      "total": 102
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpUtilityCompat",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 27,
+      "library": "libSceNpWebApi",
+      "named": 56,
+      "qualified": 27,
+      "total": 94
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpWebApi2",
+      "named": 41,
+      "qualified": 0,
+      "total": 43
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpWebApi2AsyncRestricted",
+      "named": 0,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceNpWebApiCompat",
+      "named": 12,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceOpenPsId",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceOpusCeltDec",
+      "named": 12,
+      "qualified": 1,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceOpusCeltEnc",
+      "named": 14,
+      "qualified": 3,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libSceOpusDec",
+      "named": 15,
+      "qualified": 1,
+      "total": 30
+    },
+    {
+      "generated": 0,
+      "library": "libSceOpusSilkEnc",
+      "named": 15,
+      "qualified": 1,
+      "total": 15
+    },
+    {
+      "generated": 0,
+      "library": "libScePSNowGkp",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libScePad",
+      "named": 190,
+      "qualified": 0,
+      "total": 212
+    },
+    {
+      "generated": 0,
+      "library": "libScePadTracker",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libScePatchCheckerClient",
+      "named": 12,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayAreaEditor",
+      "named": 0,
+      "qualified": 0,
+      "total": 32
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayGo",
+      "named": 24,
+      "qualified": 3,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayGoDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayGo_nosubmission",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayReady",
+      "named": 50,
+      "qualified": 0,
+      "total": 50
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayReady2",
+      "named": 56,
+      "qualified": 1,
+      "total": 56
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayReady4",
+      "named": 86,
+      "qualified": 2,
+      "total": 103
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayReady4L",
+      "named": 86,
+      "qualified": 0,
+      "total": 96
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayerInvitationDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libScePlayerSelectionDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libScePngDec",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libScePngDec_jvm",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libScePngEnc",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libScePngParser",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libScePosix",
+      "named": 197,
+      "qualified": 0,
+      "total": 197
+    },
+    {
+      "generated": 0,
+      "library": "libScePosixForWebKit",
+      "named": 37,
+      "qualified": 0,
+      "total": 38
+    },
+    {
+      "generated": 0,
+      "library": "libSceProprietaryVoiceChatHelper",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libScePs2EmuMenuDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libScePsm",
+      "named": 65,
+      "qualified": 0,
+      "total": 118
+    },
+    {
+      "generated": 0,
+      "library": "libScePsmUtil",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libScePsml",
+      "named": 19,
+      "qualified": 0,
+      "total": 27
+    },
+    {
+      "generated": 0,
+      "library": "libScePsmlBcSisr",
+      "named": 3,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libScePsml_lightweight",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libScePsml_mfsr2",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libScePsml_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libScePsml_quality8K",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libScePsml_set_mfsrversion",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libScePsml_specularAA",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libScePubSubClientShared",
+      "named": 0,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceRandom",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceRazorCpu",
+      "named": 42,
+      "qualified": 7,
+      "total": 42
+    },
+    {
+      "generated": 0,
+      "library": "libSceRegMgr",
+      "named": 66,
+      "qualified": 0,
+      "total": 87
+    },
+    {
+      "generated": 0,
+      "library": "libSceRemotePlayClientIpc",
+      "named": 6,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceRemoteplay",
+      "named": 48,
+      "qualified": 3,
+      "total": 49
+    },
+    {
+      "generated": 0,
+      "library": "libSceRemoteplay_nosubmission",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceReportSeqHandlerIf",
+      "named": 5,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceResourceArbitrator",
+      "named": 6,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceRnpsAppMgr",
+      "named": 35,
+      "qualified": 8,
+      "total": 35
+    },
+    {
+      "generated": 0,
+      "library": "libSceRnpsBundle",
+      "named": 5,
+      "qualified": 0,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceRnpsNKInjectedBundle",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceRtc",
+      "named": 47,
+      "qualified": 0,
+      "total": 47
+    },
+    {
+      "generated": 0,
+      "library": "libSceRudp",
+      "named": 35,
+      "qualified": 1,
+      "total": 35
+    },
+    {
+      "generated": 0,
+      "library": "libSceS3da",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceSaveData",
+      "named": 104,
+      "qualified": 7,
+      "total": 123
+    },
+    {
+      "generated": 0,
+      "library": "libSceSaveData.native",
+      "named": 34,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "libSceSaveDataDialog",
+      "named": 10,
+      "qualified": 0,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceSaveDataDialog.native",
+      "named": 10,
+      "qualified": 0,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceSaveData_native",
+      "named": 39,
+      "qualified": 0,
+      "total": 40
+    },
+    {
+      "generated": 0,
+      "library": "libSceSaveData_native_old_format",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceScreenShot",
+      "named": 14,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceScreenShotDrc",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSdma",
+      "named": 27,
+      "qualified": 0,
+      "total": 27
+    },
+    {
+      "generated": 0,
+      "library": "libSceShare",
+      "named": 17,
+      "qualified": 0,
+      "total": 17
+    },
+    {
+      "generated": 0,
+      "library": "libSceShare.native",
+      "named": 13,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceShareFactoryUtil",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceShareForAcf",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceShareForSf",
+      "named": 2,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceShareInternal",
+      "named": 12,
+      "qualified": 0,
+      "total": 19
+    },
+    {
+      "generated": 0,
+      "library": "libSceShareInternalForShellCore",
+      "named": 2,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceSharePlay",
+      "named": 21,
+      "qualified": 1,
+      "total": 25
+    },
+    {
+      "generated": 0,
+      "library": "libSceSharePlayCompat",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceShareUtility",
+      "named": 22,
+      "qualified": 0,
+      "total": 22
+    },
+    {
+      "generated": 0,
+      "library": "libSceShellCoreRedisModule",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceShellCoreUtil",
+      "named": 237,
+      "qualified": 0,
+      "total": 260
+    },
+    {
+      "generated": 0,
+      "library": "libSceShellUIUtil",
+      "named": 7,
+      "qualified": 1,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceSigninDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceSisrSys",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSocialScreen",
+      "named": 11,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceSocialScreenDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceSpSysCallWrapper",
+      "named": 48,
+      "qualified": 0,
+      "total": 48
+    },
+    {
+      "generated": 0,
+      "library": "libSceSrcUtl",
+      "named": 13,
+      "qualified": 4,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceSsl",
+      "named": 55,
+      "qualified": 0,
+      "total": 57
+    },
+    {
+      "generated": 0,
+      "library": "libSceSulphaDrv",
+      "named": 8,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceSysCore",
+      "named": 78,
+      "qualified": 6,
+      "total": 87
+    },
+    {
+      "generated": 0,
+      "library": "libSceSysUtil",
+      "named": 24,
+      "qualified": 0,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libSceSysmodule",
+      "named": 16,
+      "qualified": 0,
+      "total": 19
+    },
+    {
+      "generated": 0,
+      "library": "libSceSysmodule_jvm",
+      "named": 0,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemGesture",
+      "named": 24,
+      "qualified": 1,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemLogger",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemLogger2",
+      "named": 11,
+      "qualified": 6,
+      "total": 16
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemLogger2Delivery",
+      "named": 7,
+      "qualified": 3,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemLogger2Game",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemLogger2NativeQueueClient",
+      "named": 11,
+      "qualified": 6,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemModalDialog",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemService",
+      "named": 509,
+      "qualified": 0,
+      "total": 516
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceActivateHevc",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceActivateHevcSoft",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceActivateMpeg2",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceAppInfo",
+      "named": 0,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceAppLaunchLink",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceClosedCaption",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceDbg",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceEyeToEyeDistance",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceForShellCoreOnly",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceMicExclusiveMode",
+      "named": 1,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServicePadspkRouting",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServicePartyVoice",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServicePlatformPrivacy",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServicePowerControl",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServicePowerSaveLevel",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServicePs2Emu",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServicePsmKit",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceStorageManagement",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceStore",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceSuspend",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceTelemetry",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceTelemetry2",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceTournament",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceTournamentMlg",
+      "named": 1,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceUdsApp",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceUsbStorage",
+      "named": 17,
+      "qualified": 0,
+      "total": 17
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceVideoServiceWebApp",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceVideoToken",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceVoiceRecognition",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceVrApp",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceWebApp",
+      "named": 1,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceWebBrowser",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceYouTubeAccountLinkStatus",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemServiceYouTubeDeviceAuth",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemService_jvm",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemStateMgr",
+      "named": 28,
+      "qualified": 0,
+      "total": 33
+    },
+    {
+      "generated": 0,
+      "library": "libSceSystemTts",
+      "named": 9,
+      "qualified": 4,
+      "total": 10
+    },
+    {
+      "generated": 0,
+      "library": "libSceTEEClient",
+      "named": 11,
+      "qualified": 0,
+      "total": 15
+    },
+    {
+      "generated": 0,
+      "library": "libSceTelemetryRedisModule",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceTextToSpeech",
+      "named": 10,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceTextToSpeech2",
+      "named": 14,
+      "qualified": 6,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceTtsCoreG3Bc",
+      "named": 0,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceTtsEngine",
+      "named": 9,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceUgcBgUploaderClient",
+      "named": 0,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceUgcServiceS3",
+      "named": 4,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceUlt",
+      "named": 64,
+      "qualified": 0,
+      "total": 64
+    },
+    {
+      "generated": 0,
+      "library": "libSceUpdateService",
+      "named": 49,
+      "qualified": 1,
+      "total": 73
+    },
+    {
+      "generated": 0,
+      "library": "libSceUrlConfigResolver",
+      "named": 8,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceUsbStorage",
+      "named": 21,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "libSceUsbStorageAux",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceUsbStorageDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceUsbStorageForShellUI",
+      "named": 21,
+      "qualified": 0,
+      "total": 69
+    },
+    {
+      "generated": 0,
+      "library": "libSceUsbd",
+      "named": 61,
+      "qualified": 0,
+      "total": 63
+    },
+    {
+      "generated": 0,
+      "library": "libSceUserService",
+      "named": 577,
+      "qualified": 0,
+      "total": 693
+    },
+    {
+      "generated": 0,
+      "library": "libSceUserServiceAudioFocus",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceUserServiceForNpToolkit",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceUserServiceForShellCore",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceUserServicePlatformPrivacyWs1",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceUserServiceRegisteredUserIdList",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVcodec",
+      "named": 5,
+      "qualified": 5,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecCore",
+      "named": 25,
+      "qualified": 1,
+      "total": 27
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecCore.native",
+      "named": 24,
+      "qualified": 0,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecSavc",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecSavc2",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecSavc2.native",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecShevc",
+      "named": 7,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecShevc.native",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecSvp9",
+      "named": 0,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecsw",
+      "named": 18,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceVdecwrap",
+      "named": 11,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceVenc",
+      "named": 19,
+      "qualified": 5,
+      "total": 27
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoArbitration",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoCoreInterface",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoCoreServerInterface",
+      "named": 47,
+      "qualified": 0,
+      "total": 47
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoDecoderArbitration",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoNativeExtEssential",
+      "named": 5,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 133,
+      "library": "libSceVideoOut",
+      "named": 199,
+      "qualified": 133,
+      "total": 237
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOut8kTrial_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutAniso",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutAspectRatio21_9Trial_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutAspectRatio32_9Trial_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutBaseMode4k",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutExtra",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutHdr",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutHdrScopes_nosubmission",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutLatency",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutLatency_nosubmission",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutOverlay64bpp",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutRawEdid",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutSecondary",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutServer",
+      "named": 1,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutSqa_nosubmission",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutSubEx",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutSwitchBusFor64bpp",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutVrrPeg",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutVrrStatus",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutWindow2Pre400",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOutWqhd",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoOut_nosubmission",
+      "named": 30,
+      "qualified": 0,
+      "total": 51
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoRecording",
+      "named": 14,
+      "qualified": 0,
+      "total": 14
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoRecording.native",
+      "named": 18,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoRecordingP",
+      "named": 43,
+      "qualified": 0,
+      "total": 48
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoStreamingEngine",
+      "named": 70,
+      "qualified": 58,
+      "total": 74
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideoStreamingEngine_sys",
+      "named": 12,
+      "qualified": 0,
+      "total": 12
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideodec",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceVideodec2",
+      "named": 21,
+      "qualified": 0,
+      "total": 21
+    },
+    {
+      "generated": 0,
+      "library": "libSceVisionManager",
+      "named": 56,
+      "qualified": 0,
+      "total": 63
+    },
+    {
+      "generated": 0,
+      "library": "libSceVnaInternal",
+      "named": 84,
+      "qualified": 84,
+      "total": 88
+    },
+    {
+      "generated": 0,
+      "library": "libSceVnaWebsocket",
+      "named": 0,
+      "qualified": 0,
+      "total": 22
+    },
+    {
+      "generated": 0,
+      "library": "libSceVoice",
+      "named": 35,
+      "qualified": 0,
+      "total": 35
+    },
+    {
+      "generated": 0,
+      "library": "libSceVoiceChat",
+      "named": 32,
+      "qualified": 0,
+      "total": 37
+    },
+    {
+      "generated": 0,
+      "library": "libSceVoiceCommand",
+      "named": 23,
+      "qualified": 23,
+      "total": 29
+    },
+    {
+      "generated": 0,
+      "library": "libSceVoiceQoS",
+      "named": 23,
+      "qualified": 0,
+      "total": 24
+    },
+    {
+      "generated": 0,
+      "library": "libSceVoice_nosubmission",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrHand",
+      "named": 8,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrHand_nosubmission",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrServiceDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrSetupDialog",
+      "named": 7,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrTracker",
+      "named": 30,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrTracker2",
+      "named": 48,
+      "qualified": 0,
+      "total": 92
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrTracker2_nosubmission",
+      "named": 5,
+      "qualified": 0,
+      "total": 28
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrTrackerDeviceRejection",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrTrackerFourDeviceAllowed",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrTrackerGpuTest",
+      "named": 0,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceVrTrackerLiveCapture",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libSceVsePlugin",
+      "named": 0,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "libSceVshBrotli",
+      "named": 0,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceVshFreeType",
+      "named": 65,
+      "qualified": 0,
+      "total": 71
+    },
+    {
+      "generated": 0,
+      "library": "libSceVshHarfBuzz",
+      "named": 35,
+      "qualified": 0,
+      "total": 51
+    },
+    {
+      "generated": 0,
+      "library": "libSceVshJpeg",
+      "named": 25,
+      "qualified": 0,
+      "total": 25
+    },
+    {
+      "generated": 0,
+      "library": "libSceVshPng",
+      "named": 67,
+      "qualified": 0,
+      "total": 70
+    },
+    {
+      "generated": 0,
+      "library": "libSceVshWebP",
+      "named": 0,
+      "qualified": 0,
+      "total": 16
+    },
+    {
+      "generated": 0,
+      "library": "libSceWebBrowserDialog",
+      "named": 13,
+      "qualified": 0,
+      "total": 13
+    },
+    {
+      "generated": 0,
+      "library": "libSceWebBrowserDialogLimited",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libSceWebRtc",
+      "named": 1,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceWebTransport",
+      "named": 0,
+      "qualified": 0,
+      "total": 53
+    },
+    {
+      "generated": 0,
+      "library": "libSceWebmParserMdrw",
+      "named": 0,
+      "qualified": 0,
+      "total": 7
+    },
+    {
+      "generated": 0,
+      "library": "libSceWkFontConfig",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libSceWtIpcClient",
+      "named": 0,
+      "qualified": 0,
+      "total": 11
+    },
+    {
+      "generated": 0,
+      "library": "libSceXml",
+      "named": 183,
+      "qualified": 0,
+      "total": 183
+    },
+    {
+      "generated": 0,
+      "library": "libSceZlib",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libbdj",
+      "named": 255,
+      "qualified": 0,
+      "total": 301
+    },
+    {
+      "generated": 0,
+      "library": "libcairo",
+      "named": 161,
+      "qualified": 0,
+      "total": 166
+    },
+    {
+      "generated": 0,
+      "library": "libcurl",
+      "named": 85,
+      "qualified": 0,
+      "total": 93
+    },
+    {
+      "generated": 0,
+      "library": "libdiscord",
+      "named": 0,
+      "qualified": 0,
+      "total": 802
+    },
+    {
+      "generated": 0,
+      "library": "libfontconfig",
+      "named": 53,
+      "qualified": 0,
+      "total": 53
+    },
+    {
+      "generated": 0,
+      "library": "libfreetype",
+      "named": 169,
+      "qualified": 0,
+      "total": 169
+    },
+    {
+      "generated": 0,
+      "library": "libgnmawt",
+      "named": 146,
+      "qualified": 0,
+      "total": 153
+    },
+    {
+      "generated": 0,
+      "library": "libharfbuzz",
+      "named": 37,
+      "qualified": 0,
+      "total": 37
+    },
+    {
+      "generated": 0,
+      "library": "libhermes-0.11",
+      "named": 0,
+      "qualified": 0,
+      "total": 107
+    },
+    {
+      "generated": 0,
+      "library": "libicu",
+      "named": 1698,
+      "qualified": 0,
+      "total": 1698
+    },
+    {
+      "generated": 0,
+      "library": "libjava",
+      "named": 177,
+      "qualified": 0,
+      "total": 262
+    },
+    {
+      "generated": 0,
+      "library": "libjimage",
+      "named": 0,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libjli",
+      "named": 0,
+      "qualified": 0,
+      "total": 18
+    },
+    {
+      "generated": 0,
+      "library": "libjvm",
+      "named": 153,
+      "qualified": 0,
+      "total": 295
+    },
+    {
+      "generated": 0,
+      "library": "libkernel",
+      "named": 1352,
+      "qualified": 0,
+      "total": 1511
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_CFI",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_aod",
+      "named": 0,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_avcf",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_avlfmem",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_cpumode",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_cpumode_platform",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_devtoollog",
+      "named": 0,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_dmem_aliasing",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_dmem_aliasing2",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_dmem_aliasing2_for_dev",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_dmem_aliasing3",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_exception",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_jvm",
+      "named": 23,
+      "qualified": 0,
+      "total": 23
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_low_energy_mode",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_mmap",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_module_extension",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_module_extension_nosubmission",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_module_info",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_module_load_check",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_mtxgen",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_pre250mmap",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_ps2emu",
+      "named": 5,
+      "qualified": 0,
+      "total": 5
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_psmkit",
+      "named": 37,
+      "qualified": 0,
+      "total": 37
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_qadisc",
+      "named": 6,
+      "qualified": 0,
+      "total": 8
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_seh",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_sync_on_address",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_sync_on_address2",
+      "named": 6,
+      "qualified": 0,
+      "total": 6
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_sysc_se",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_unity",
+      "named": 3,
+      "qualified": 0,
+      "total": 3
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_write_throttling",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libkernel_wt_config",
+      "named": 0,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libmdbg_syscore",
+      "named": 148,
+      "qualified": 5,
+      "total": 191
+    },
+    {
+      "generated": 0,
+      "library": "libmono-btls-shared",
+      "named": 205,
+      "qualified": 0,
+      "total": 212
+    },
+    {
+      "generated": 0,
+      "library": "libmono-profiler-log",
+      "named": 2,
+      "qualified": 0,
+      "total": 2
+    },
+    {
+      "generated": 0,
+      "library": "libmonosgen",
+      "named": 933,
+      "qualified": 0,
+      "total": 1087
+    },
+    {
+      "generated": 0,
+      "library": "libmonosgen-2.0",
+      "named": 963,
+      "qualified": 0,
+      "total": 963
+    },
+    {
+      "generated": 0,
+      "library": "libnet",
+      "named": 61,
+      "qualified": 0,
+      "total": 84
+    },
+    {
+      "generated": 0,
+      "library": "libnio",
+      "named": 2,
+      "qualified": 0,
+      "total": 157
+    },
+    {
+      "generated": 0,
+      "library": "libpng16",
+      "named": 93,
+      "qualified": 0,
+      "total": 93
+    },
+    {
+      "generated": 0,
+      "library": "libprospero_wrapper",
+      "named": 64,
+      "qualified": 0,
+      "total": 169
+    },
+    {
+      "generated": 0,
+      "library": "libsceHmdReprojectionMultilayer",
+      "named": 1,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "libsceNpEulaDialog",
+      "named": 9,
+      "qualified": 0,
+      "total": 9
+    },
+    {
+      "generated": 0,
+      "library": "libverify",
+      "named": 4,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "libwebrtc",
+      "named": 352,
+      "qualified": 0,
+      "total": 412
+    },
+    {
+      "generated": 0,
+      "library": "libwvoec",
+      "named": 0,
+      "qualified": 0,
+      "total": 77
+    },
+    {
+      "generated": 0,
+      "library": "libzip",
+      "named": 18,
+      "qualified": 0,
+      "total": 34
+    },
+    {
+      "generated": 0,
+      "library": "monoprofilerlog",
+      "named": 0,
+      "qualified": 0,
+      "total": 1
+    },
+    {
+      "generated": 0,
+      "library": "mscorlib",
+      "named": 375,
+      "qualified": 0,
+      "total": 23710
+    },
+    {
+      "generated": 0,
+      "library": "ulobjmgr",
+      "named": 2,
+      "qualified": 0,
+      "total": 4
+    },
+    {
+      "generated": 0,
+      "library": "websocketsharp",
+      "named": 0,
+      "qualified": 0,
+      "total": 1560
+    }
+  ],
+  "logical_libraries": 791,
+  "metrics": {
+    "fully_validated_stubs": 0,
+    "generated_throwing_stubs": 745,
+    "published_anyps5_stubs": 0,
+    "qualified_stub_records": 13259,
+    "qualified_unique_stub_candidates": 10612,
+    "shared_library_alias_records": 2647
+  },
+  "named_library_stub_records": 46517,
+  "named_stub_identities": 36353,
+  "scope_records": {
+    "existing_firmware_system_library": 15901,
+    "existing_upstream_placeholder_library": 21303,
+    "historical_only": 11700,
+    "managed_or_application_native_image": 252818,
+    "middleware_scope_review": 743,
+    "new_system_library_review": 2592,
+    "ownership_pending": 7322,
+    "shell_specific_review": 1659
+  },
+  "total_export_records": 314038,
+  "unresolved_or_withheld_records": 267521,
+  "validation_status": "incomplete"
+}

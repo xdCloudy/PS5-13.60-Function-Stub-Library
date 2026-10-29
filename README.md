@@ -11,6 +11,10 @@ disassembly, decompiled code, console data, or local research paths.
 | Total distinct library/NID identities | 314,038 |
 | Records with a recovered name | 46,517 |
 
+## Start here
+
+[Browse libraries](LIBRARIES.md) · [Stub readiness](READINESS.md) · [Readiness data](readiness.json)
+
 ## Files
 
 - [Library index](data/library-index.csv): every logical library and its data file.
@@ -30,3 +34,7 @@ establish parameter counts, return types, C++ object layouts, behavior, or compa
 Unknown names remain null. Managed/AOT, middleware, shell, and uncertain ownership
 are explicitly classified and must not all be turned into AnyPS5 system-library stubs.
 The firmware label is research provenance, not an independent hardware measurement.
+
+## Stub readiness report
+
+![PS5 stub readiness report](reports/stub-readiness.png)
