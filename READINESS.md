@@ -6,8 +6,8 @@ Named export identities are stub candidates, not implemented functions. Shared N
 
 | Measure | Count |
 |---|---:|
-| Unique named stub identities | 36,413 |
-| Named library/export records | 46,581 |
+| Unique named stub identities | 36,565 |
+| Named library/export records | 46,733 |
 | Qualified unique throwing-stub candidates | 10,750 |
 | Alternate library aliases among qualified records | 2,647 |
 | Additional system export records needing name/ABI review | 9,989 |
@@ -34,7 +34,7 @@ Named export identities are stub candidates, not implemented functions. Shared N
 | [libSceMediaFrameworkInterface](libraries/libscemediaframeworkinterface-971396c6b2.md) | 139 | 139 | 139 |
 | [libSceVideoOut](libraries/libscevideoout-54fc22c577.md) | 199 | 133 | 133 |
 | [libSceVnaInternal](libraries/libscevnainternal-b1ef6786a5.md) | 84 | 84 | 84 |
-| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 661 | 72 | 72 |
+| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 813 | 72 | 72 |
 | [libSceVideoStreamingEngine](libraries/libscevideostreamingengine-5abc5612ed.md) | 70 | 58 | 58 |
 | [libSceCustomMusicSysCallWrapper](libraries/libscecustommusicsyscallwrapper-8ee0747c02.md) | 54 | 53 | 0 |
 | [libSceEsvm](libraries/libsceesvm-84c73245ba.md) | 45 | 45 | 0 |
@@ -127,3 +127,7 @@ assessments and regenerate every affected library page, manifest, summary and
 readiness artifact together. No runtime ABI tests, current-main coverage
 reconciliation or exhaustive open-PR reservation audit was performed as part
 of this read-only candidate-count check.
+
+## ICU name-only recovery (2026-10-29)
+
+152 previously unresolved observed `libSceIcu` 13.60 exports now have verified name/NID bindings, independently checked against the fixed PS5 hashing algorithm, pinned catalogue entries and public ICU C API headers. This brings named export records to 46,733 and distinct named NIDs to 36,565. No ABI, implementation, throwing-stub qualification or live AnyPS5 coverage claim is inferred. The retained readiness PNG represents an earlier saved snapshot.
