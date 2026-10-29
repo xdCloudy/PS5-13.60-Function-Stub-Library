@@ -43,3 +43,7 @@ found **zero unnamed identities sharing a NID with an already verified name**.
 Future recovery therefore requires new source evidence or new researched names,
 not unverified alias propagation. A matching NID alone does not establish
 prototype, export origin, owner or AnyPS5 readiness.
+
+## Accepted ICU name recovery (2026-10-29)
+
+152 independently hash-verified names for observed 13.60 exports in `libSceIcu` were recovered from the pinned [ps5rs NID catalogue](https://github.com/claimore22/ps5rs/blob/5f252a658ff470bcb2b6cd15205fd8ca64ae4477/data/nids.csv) (blob `3a4e0ebf1852472ba738716184b4d7a730e349b4`; source tag `pasteBin-yntxH8Km`). Every name was independently corroborated against public ICU C headers (ICU4C 76.1; [Unicode ICU](https://github.com/unicode-org/icu/tree/b34cf4d07e71acf06f01b3a1902759609c111e2d)), and the NID was recomputed. This evidence supports the name/NID binding only, not the ABI, semantics or AnyPS5 readiness. No raw source code, whole catalogue or withheld names were published. Other candidate proposals remain unapproved.
