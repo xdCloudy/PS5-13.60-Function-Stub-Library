@@ -23,13 +23,13 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceAcm_IrGeneration_nosubmission](libraries/libsceacm_irgeneration_nosubmission-b9fb00cc1d.md) | 1 | 0 | 0 |
 | [libSceAcm_Propagation_nosubmission](libraries/libsceacm_propagation_nosubmission-4c65c4621e.md) | 4 | 0 | 0 |
 | [libSceAcm_Ref_nosubmission](libraries/libsceacm_ref_nosubmission-0a52a56291.md) | 5 | 0 | 0 |
-| [libSceAgc](libraries/libsceagc-3be1b8ac02.md) | 248 | 241 | 0 |
+| [libSceAgc](libraries/libsceagc-3be1b8ac02.md) | 248 | 243 | 2 |
 | [libSceAgcDriver](libraries/libsceagcdriver-f86d440204.md) | 135 | 130 | 0 |
 | [libSceAgcDriverAsyncGraphicsRingEval_nosubmission](libraries/libsceagcdriverasyncgraphicsringeval_nosubmission-41525b1f7d.md) | 1 | 1 | 0 |
 | [libSceAgcDriverDebugReset_nosubmission](libraries/libsceagcdriverdebugreset_nosubmission-e7e6d9c26f.md) | 4 | 4 | 0 |
 | [libSceAgcDriverDebugWavefronts_nosubmission](libraries/libsceagcdriverdebugwavefronts_nosubmission-332fdc1802.md) | 7 | 0 | 0 |
 | [libSceAgcDriverPaDebug](libraries/libsceagcdriverpadebug-4b242b1b6f.md) | 45 | 23 | 0 |
-| [libSceAgcVsh](libraries/libsceagcvsh-d56b62d397.md) | 245 | 237 | 0 |
+| [libSceAgcVsh](libraries/libsceagcvsh-d56b62d397.md) | 245 | 239 | 0 |
 | [libSceAjm](libraries/libsceajm-5217837f40.md) | 54 | 46 | 3 |
 | [libSceAjm.native](libraries/libsceajm-native-2e669c3ed7.md) | 38 | 38 | 0 |
 | [libSceAjm_legacy_nosubmission](libraries/libsceajm_legacy_nosubmission-2ef673b3aa.md) | 21 | 21 | 0 |
@@ -45,7 +45,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceAppContentSc](libraries/libsceappcontentsc-ad5b05f53f.md) | 1 | 1 | 0 |
 | [libSceAppDbShellCoreClient](libraries/libsceappdbshellcoreclient-606a110a7e.md) | 41 | 0 | 0 |
 | [libSceAppDbShellCoreClientForSystemService](libraries/libsceappdbshellcoreclientforsystemservice-9f05444cc3.md) | 2 | 0 | 0 |
-| [libSceAppInstUtil](libraries/libsceappinstutil-783ade3c34.md) | 184 | 124 | 0 |
+| [libSceAppInstUtil](libraries/libsceappinstutil-783ade3c34.md) | 184 | 132 | 8 |
 | [libSceAppMessaging](libraries/libsceappmessaging-1927e55f4a.md) | 10 | 8 | 0 |
 | [libSceAsyncStorageInternal](libraries/libsceasyncstorageinternal-5545b1476a.md) | 20 | 0 | 0 |
 | [libSceAsyncStorageInternalAux](libraries/libsceasyncstorageinternalaux-78b29bc7f7.md) | 5 | 0 | 0 |
@@ -62,12 +62,12 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceAudioPropagation](libraries/libsceaudiopropagation-426fc90ffc.md) | 41 | 33 | 0 |
 | [libSceAudioSystem](libraries/libsceaudiosystem-bfe74a18cc.md) | 14 | 8 | 6 |
 | [libSceAutoMounterClient](libraries/libsceautomounterclient-5bf14ae42b.md) | 6 | 6 | 0 |
-| [libSceAvcap2](libraries/libsceavcap2-9035a2a4ef.md) | 59 | 39 | 32 |
+| [libSceAvcap2](libraries/libsceavcap2-9035a2a4ef.md) | 59 | 42 | 35 |
 | [libSceAvcap2mvr](libraries/libsceavcap2mvr-57037e82c9.md) | 13 | 0 | 0 |
 | [libSceAvPlayer](libraries/libsceavplayer-f7ee297282.md) | 30 | 30 | 0 |
 | [libSceAvPlayer.native](libraries/libsceavplayer-native-214e4430ad.md) | 29 | 29 | 0 |
 | [libSceAvPlayerStreaming](libraries/libsceavplayerstreaming-27cc7363f9.md) | 34 | 34 | 1 |
-| [libSceAvSetting](libraries/libsceavsetting-620714af3c.md) | 180 | 127 | 0 |
+| [libSceAvSetting](libraries/libsceavsetting-620714af3c.md) | 180 | 128 | 1 |
 | [libSceAvSettingDebug](libraries/libsceavsettingdebug-c0aa1cc04e.md) | 13 | 8 | 0 |
 
 ## B
@@ -285,7 +285,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
-| [libkernel](libraries/libkernel-ef142ca503.md) | 1,511 | 1,352 | 0 |
+| [libkernel](libraries/libkernel-ef142ca503.md) | 1,511 | 1,357 | 0 |
 | [libkernel_aod](libraries/libkernel_aod-15d16f040c.md) | 5 | 0 | 0 |
 | [libkernel_avcf](libraries/libkernel_avcf-1c25a0c101.md) | 2 | 2 | 0 |
 | [libkernel_avlfmem](libraries/libkernel_avlfmem-acf90a47c8.md) | 1 | 1 | 0 |
@@ -328,7 +328,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceLibcInternalExt](libraries/libscelibcinternalext-4f3e2b94d0.md) | 7 | 7 | 0 |
 | [libSceLibreSSL](libraries/libscelibressl-5289bab5fc.md) | 414 | 414 | 0 |
 | [libSceLibreSsl](libraries/libscelibressl-d2f008391c.md) | 399 | 399 | 0 |
-| [libSceLibreSSl3](libraries/libscelibressl3-9440a73a0b.md) | 665 | 638 | 0 |
+| [libSceLibreSSl3](libraries/libscelibressl3-9440a73a0b.md) | 665 | 641 | 0 |
 | [libSceLibreSsl3](libraries/libscelibressl3-fecb797f22.md) | 488 | 488 | 0 |
 | [libSceLncUtil](libraries/libscelncutil-aaa1c3a23c.md) | 93 | 89 | 0 |
 | [libSceLoginDialog](libraries/libscelogindialog-7baecdc538.md) | 7 | 7 | 0 |
@@ -342,16 +342,16 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libmdbg_syscore](libraries/libmdbg_syscore-53c596f5b7.md) | 191 | 148 | 5 |
 | [libmono-btls-shared](libraries/libmono-btls-shared-384a3700a1.md) | 212 | 205 | 0 |
 | [libmono-profiler-log](libraries/libmono-profiler-log-7860053204.md) | 2 | 2 | 0 |
-| [libmonosgen](libraries/libmonosgen-89a314ce00.md) | 1,087 | 933 | 0 |
+| [libmonosgen](libraries/libmonosgen-89a314ce00.md) | 1,087 | 937 | 0 |
 | [libmonosgen-2.0](libraries/libmonosgen-2-0-397d0b15ce.md) | 963 | 963 | 0 |
 | [libSceM4aacEnc](libraries/libscem4aacenc-b193408c34.md) | 18 | 17 | 0 |
 | [libSceMat2Enc](libraries/libscemat2enc-7f034e9009.md) | 4 | 0 | 0 |
-| [libSceMbus](libraries/libscembus-c03d5277f5.md) | 143 | 128 | 8 |
+| [libSceMbus](libraries/libscembus-c03d5277f5.md) | 143 | 131 | 11 |
 | [libSceMbusDebug](libraries/libscembusdebug-82d8e50b8e.md) | 28 | 28 | 0 |
 | [libSceMediaAppSharedStorageMa](libraries/libscemediaappsharedstoragema-868191c19d.md) | 5 | 0 | 0 |
 | [libSceMediaAppSharedStorageMaDbg](libraries/libscemediaappsharedstoragemadbg-a01493b389.md) | 6 | 0 | 0 |
 | [libSceMediaAppSharedStorageMc](libraries/libscemediaappsharedstoragemc-3ca5617d10.md) | 8 | 0 | 0 |
-| [libSceMediaFrameworkInterface](libraries/libscemediaframeworkinterface-971396c6b2.md) | 225 | 135 | 135 |
+| [libSceMediaFrameworkInterface](libraries/libscemediaframeworkinterface-971396c6b2.md) | 225 | 139 | 139 |
 | [libSceMediaFrameworkUtil](libraries/libscemediaframeworkutil-c0af9aa86b.md) | 11 | 5 | 5 |
 | [libSceMetadataReaderWriter](libraries/libscemetadatareaderwriter-a2bb1eaf2f.md) | 81 | 39 | 0 |
 | [libSceMouse](libraries/libscemouse-acdd5b5e23.md) | 25 | 23 | 4 |
@@ -392,7 +392,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceNKWeb](libraries/libscenkweb-c90c06666b.md) | 6 | 3 | 0 |
 | [libSceNKWebCdlgInjectedBundle](libraries/libscenkwebcdlginjectedbundle-3fdecd9aba.md) | 1 | 1 | 0 |
 | [libSceNKWebKit](libraries/libscenkwebkit-30d4baac63.md) | 18,939 | 12,110 | 8,615 |
-| [libSceNKWebKitRequirements](libraries/libscenkwebkitrequirements-e1791fbd7a.md) | 214 | 141 | 0 |
+| [libSceNKWebKitRequirements](libraries/libscenkwebkitrequirements-e1791fbd7a.md) | 214 | 142 | 0 |
 | [libSceNotification](libraries/libscenotification-9012c70655.md) | 4 | 4 | 0 |
 | [libSceNpAppLauncher](libraries/libscenpapplauncher-5798e16539.md) | 3 | 3 | 0 |
 | [libSceNpAuth](libraries/libscenpauth-fb801cb9fe.md) | 14 | 14 | 0 |
@@ -415,7 +415,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceNpManagerIsPlusMember](libraries/libscenpmanagerisplusmember-e3a5212104.md) | 1 | 1 | 0 |
 | [libSceNpMatching2](libraries/libscenpmatching2-fadd731f1f.md) | 69 | 69 | 0 |
 | [libSceNpMatching2Compat](libraries/libscenpmatching2compat-958f4ed3ad.md) | 5 | 5 | 0 |
-| [libSceNpPartner001](libraries/libscenppartner001-b5ae22d388.md) | 5 | 4 | 0 |
+| [libSceNpPartner001](libraries/libscenppartner001-b5ae22d388.md) | 5 | 5 | 1 |
 | [libSceNpPartnerSubscription](libraries/libscenppartnersubscription-5a04610102.md) | 4 | 2 | 0 |
 | [libSceNpParty](libraries/libscenpparty-9dd80b6070.md) | 26 | 26 | 0 |
 | [libSceNpPartyCompat](libraries/libscenppartycompat-a6b60f01c6.md) | 6 | 6 | 0 |
@@ -445,7 +445,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceNpTusCompat](libraries/libscenptuscompat-6223d5eb05.md) | 44 | 44 | 0 |
 | [libSceNpUbisoftPlus](libraries/libscenpubisoftplus-6af4f14135.md) | 4 | 0 | 0 |
 | [libSceNpUniversalDataSystem](libraries/libscenpuniversaldatasystem-0592089c41.md) | 93 | 93 | 0 |
-| [libSceNpUtility](libraries/libscenputility-2abea67b6d.md) | 102 | 98 | 0 |
+| [libSceNpUtility](libraries/libscenputility-2abea67b6d.md) | 102 | 100 | 0 |
 | [libSceNpUtilityCompat](libraries/libscenputilitycompat-2dc4843393.md) | 3 | 3 | 0 |
 | [libSceNpWebApi](libraries/libscenpwebapi-30b6435a6f.md) | 94 | 56 | 27 |
 | [libSceNpWebApi2](libraries/libscenpwebapi2-7969c31daf.md) | 43 | 41 | 0 |
@@ -459,7 +459,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 |---|---:|---:|---:|
 | [libSceOpenPsId](libraries/libsceopenpsid-3222d173f7.md) | 1 | 1 | 0 |
 | [libSceOpusCeltDec](libraries/libsceopusceltdec-c6e554d356.md) | 12 | 12 | 1 |
-| [libSceOpusCeltEnc](libraries/libsceopusceltenc-b31be2adfa.md) | 24 | 14 | 3 |
+| [libSceOpusCeltEnc](libraries/libsceopusceltenc-b31be2adfa.md) | 24 | 15 | 4 |
 | [libSceOpusDec](libraries/libsceopusdec-69c895457e.md) | 30 | 15 | 1 |
 | [libSceOpusSilkEnc](libraries/libsceopussilkenc-5db8f0bbee.md) | 15 | 15 | 1 |
 
@@ -469,7 +469,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 |---|---:|---:|---:|
 | [libpng16](libraries/libpng16-56f288bf80.md) | 93 | 93 | 0 |
 | [libprospero_wrapper](libraries/libprospero_wrapper-8bcfca4ff6.md) | 169 | 64 | 0 |
-| [libScePad](libraries/libscepad-190bd602e9.md) | 212 | 190 | 0 |
+| [libScePad](libraries/libscepad-190bd602e9.md) | 212 | 194 | 4 |
 | [libScePadTracker](libraries/libscepadtracker-cfc57a4ed9.md) | 6 | 6 | 0 |
 | [libScePatchCheckerClient](libraries/libscepatchcheckerclient-fd67d78b62.md) | 13 | 12 | 0 |
 | [libScePlayAreaEditor](libraries/libsceplayareaeditor-997cd835e8.md) | 32 | 0 | 0 |
@@ -480,14 +480,14 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libScePlayGoDialog](libraries/libsceplaygodialog-84cebf9711.md) | 7 | 7 | 0 |
 | [libScePlayReady](libraries/libsceplayready-9dd29d6848.md) | 50 | 50 | 0 |
 | [libScePlayReady2](libraries/libsceplayready2-cf140a4c7d.md) | 56 | 56 | 1 |
-| [libScePlayReady4](libraries/libsceplayready4-e431478f47.md) | 103 | 86 | 2 |
-| [libScePlayReady4L](libraries/libsceplayready4l-a2164c78a2.md) | 96 | 86 | 0 |
+| [libScePlayReady4](libraries/libsceplayready4-e431478f47.md) | 103 | 89 | 5 |
+| [libScePlayReady4L](libraries/libsceplayready4l-a2164c78a2.md) | 96 | 88 | 0 |
 | [libScePngDec](libraries/libscepngdec-3a11cd9f7b.md) | 6 | 6 | 0 |
 | [libScePngDec_jvm](libraries/libscepngdec_jvm-99d2485d07.md) | 1 | 1 | 0 |
 | [libScePngEnc](libraries/libscepngenc-5d31ee506d.md) | 4 | 4 | 0 |
 | [libScePngParser](libraries/libscepngparser-ed25ffba3d.md) | 7 | 0 | 0 |
 | [libScePosix](libraries/libsceposix-f74c28bcf0.md) | 197 | 197 | 0 |
-| [libScePosixForWebKit](libraries/libsceposixforwebkit-62f5eac58e.md) | 38 | 37 | 0 |
+| [libScePosixForWebKit](libraries/libsceposixforwebkit-62f5eac58e.md) | 38 | 38 | 0 |
 | [libSceProprietaryVoiceChatHelper](libraries/libsceproprietaryvoicechathelper-367c047340.md) | 4 | 4 | 0 |
 | [libScePs2EmuMenuDialog](libraries/libsceps2emumenudialog-6c333897da.md) | 7 | 7 | 0 |
 | [libScePsm](libraries/libscepsm-645ab9cc0c.md) | 118 | 65 | 0 |
@@ -510,7 +510,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libReactNative.Modules.Vsh](libraries/libreactnative-modules-vsh-ea5def566a.md) | 122 | 87 | 0 |
 | [libReactNative.Modules.Vsh.Media](libraries/libreactnative-modules-vsh-media-3aef274cce.md) | 73 | 55 | 0 |
 | [libReactNative.Modules.Vsh.MediaPlayer.Contents](libraries/libreactnative-modules-vsh-mediaplayer-contents-7128bd93e2.md) | 9 | 7 | 0 |
-| [libReactNative.Modules.Vsh.WebAppLauncher](libraries/libreactnative-modules-vsh-webapplauncher-46dbce980c.md) | 138 | 61 | 0 |
+| [libReactNative.Modules.Vsh.WebAppLauncher](libraries/libreactnative-modules-vsh-webapplauncher-46dbce980c.md) | 138 | 63 | 0 |
 | [libRnpsDevSupport.Dummy](libraries/librnpsdevsupport-dummy-beb1826b80.md) | 1 | 0 | 0 |
 | [libSceRandom](libraries/libscerandom-1c0fa8a87a.md) | 1 | 1 | 0 |
 | [libSceRazorCpu](libraries/libscerazorcpu-98b3fdc87b.md) | 42 | 42 | 7 |
@@ -545,7 +545,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libsceHmdReprojectionMultilayer](libraries/libscehmdreprojectionmultilayer-bd91b3a135.md) | 1 | 1 | 0 |
 | [libsceNpEulaDialog](libraries/libscenpeuladialog-3ed16b2399.md) | 9 | 9 | 0 |
 | [libSceS3da](libraries/libsces3da-71e96627ab.md) | 4 | 4 | 0 |
-| [libSceSaveData](libraries/libscesavedata-f92dab8a68.md) | 123 | 104 | 7 |
+| [libSceSaveData](libraries/libscesavedata-f92dab8a68.md) | 123 | 105 | 8 |
 | [libSceSaveData.native](libraries/libscesavedata-native-cec2a234f2.md) | 34 | 34 | 0 |
 | [libSceSaveData_native](libraries/libscesavedata_native-26cd5bc66d.md) | 40 | 39 | 0 |
 | [libSceSaveData_native_old_format](libraries/libscesavedata_native_old_format-7a088dcbed.md) | 1 | 1 | 0 |
@@ -575,7 +575,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceSrcUtl](libraries/libscesrcutl-970010b531.md) | 13 | 13 | 4 |
 | [libSceSsl](libraries/libscessl-e37212e4bb.md) | 57 | 55 | 0 |
 | [libSceSulphaDrv](libraries/libscesulphadrv-54ca864e28.md) | 8 | 8 | 0 |
-| [libSceSysCore](libraries/libscesyscore-d26d4fb57b.md) | 87 | 78 | 6 |
+| [libSceSysCore](libraries/libscesyscore-d26d4fb57b.md) | 87 | 79 | 7 |
 | [libSceSysmodule](libraries/libscesysmodule-4add5c9854.md) | 19 | 16 | 0 |
 | [libSceSysmodule_jvm](libraries/libscesysmodule_jvm-abbfa412b4.md) | 3 | 0 | 0 |
 | [libSceSystemGesture](libraries/libscesystemgesture-47eb2be983.md) | 24 | 24 | 1 |
@@ -796,14 +796,14 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceUgcBgUploaderClient](libraries/libsceugcbguploaderclient-66da27d0e7.md) | 14 | 0 | 0 |
 | [libSceUgcServiceS3](libraries/libsceugcservices3-64cb922702.md) | 14 | 4 | 0 |
 | [libSceUlt](libraries/libsceult-3947d26438.md) | 64 | 64 | 0 |
-| [libSceUpdateService](libraries/libsceupdateservice-b7f2a7b06c.md) | 73 | 49 | 1 |
+| [libSceUpdateService](libraries/libsceupdateservice-b7f2a7b06c.md) | 73 | 50 | 1 |
 | [libSceUrlConfigResolver](libraries/libsceurlconfigresolver-c8fbf0f2f2.md) | 8 | 8 | 0 |
 | [libSceUsbd](libraries/libsceusbd-e616aa44a4.md) | 63 | 61 | 0 |
 | [libSceUsbStorage](libraries/libsceusbstorage-cf416fa615.md) | 21 | 21 | 0 |
 | [libSceUsbStorageAux](libraries/libsceusbstorageaux-9d4e5d2ebe.md) | 7 | 7 | 0 |
 | [libSceUsbStorageDialog](libraries/libsceusbstoragedialog-82fc91e3b4.md) | 7 | 7 | 0 |
 | [libSceUsbStorageForShellUI](libraries/libsceusbstorageforshellui-826a4d467f.md) | 69 | 21 | 0 |
-| [libSceUserService](libraries/libsceuserservice-ec97f04de9.md) | 693 | 577 | 0 |
+| [libSceUserService](libraries/libsceuserservice-ec97f04de9.md) | 693 | 579 | 0 |
 | [libSceUserServiceAudioFocus](libraries/libsceuserserviceaudiofocus-925eb40585.md) | 1 | 1 | 0 |
 | [libSceUserServiceForNpToolkit](libraries/libsceuserservicefornptoolkit-a1a43c2246.md) | 2 | 2 | 0 |
 | [libSceUserServiceForShellCore](libraries/libsceuserserviceforshellcore-0c9f6dca18.md) | 2 | 2 | 0 |
@@ -836,7 +836,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceVideoNativeExtEssential](libraries/libscevideonativeextessential-2d176e1ad5.md) | 6 | 5 | 0 |
 | [libSceVideoOut](libraries/libscevideoout-54fc22c577.md) | 237 | 199 | 133 |
 | [libSceVideoOut8kTrial_nosubmission](libraries/libscevideoout8ktrial_nosubmission-bf9f578523.md) | 1 | 0 | 0 |
-| [libSceVideoOut_nosubmission](libraries/libscevideoout_nosubmission-4a48e1e9b7.md) | 51 | 30 | 0 |
+| [libSceVideoOut_nosubmission](libraries/libscevideoout_nosubmission-4a48e1e9b7.md) | 51 | 31 | 0 |
 | [libSceVideoOutAniso](libraries/libscevideooutaniso-0798c25f50.md) | 1 | 1 | 0 |
 | [libSceVideoOutAspectRatio21_9Trial_nosubmission](libraries/libscevideooutaspectratio21_9trial_nosubmission-75e466342a.md) | 1 | 0 | 0 |
 | [libSceVideoOutAspectRatio32_9Trial_nosubmission](libraries/libscevideooutaspectratio32_9trial_nosubmission-0898f42295.md) | 1 | 0 | 0 |
@@ -867,7 +867,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceVnaWebsocket](libraries/libscevnawebsocket-a0fd2054ef.md) | 22 | 0 | 0 |
 | [libSceVoice](libraries/libscevoice-8a799fddbc.md) | 35 | 35 | 0 |
 | [libSceVoice_nosubmission](libraries/libscevoice_nosubmission-a74c83c7c2.md) | 1 | 1 | 0 |
-| [libSceVoiceChat](libraries/libscevoicechat-f123f18391.md) | 37 | 32 | 0 |
+| [libSceVoiceChat](libraries/libscevoicechat-f123f18391.md) | 37 | 34 | 0 |
 | [libSceVoiceCommand](libraries/libscevoicecommand-e18b06a297.md) | 29 | 23 | 23 |
 | [libSceVoiceQoS](libraries/libscevoiceqos-dfe0e4f92d.md) | 24 | 23 | 0 |
 | [libSceVrHand](libraries/libscevrhand-4dce5851b7.md) | 8 | 8 | 0 |
@@ -875,8 +875,8 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceVrServiceDialog](libraries/libscevrservicedialog-2f374c3aa6.md) | 7 | 7 | 0 |
 | [libSceVrSetupDialog](libraries/libscevrsetupdialog-59b8e15aa8.md) | 7 | 7 | 0 |
 | [libSceVrTracker](libraries/libscevrtracker-378a3d5dba.md) | 34 | 30 | 0 |
-| [libSceVrTracker2](libraries/libscevrtracker2-5535fce94b.md) | 92 | 48 | 0 |
-| [libSceVrTracker2_nosubmission](libraries/libscevrtracker2_nosubmission-61a396e31a.md) | 28 | 5 | 0 |
+| [libSceVrTracker2](libraries/libscevrtracker2-5535fce94b.md) | 92 | 51 | 0 |
+| [libSceVrTracker2_nosubmission](libraries/libscevrtracker2_nosubmission-61a396e31a.md) | 28 | 6 | 0 |
 | [libSceVrTrackerDeviceRejection](libraries/libscevrtrackerdevicerejection-f569dad58d.md) | 1 | 1 | 0 |
 | [libSceVrTrackerFourDeviceAllowed](libraries/libscevrtrackerfourdeviceallowed-d7d6054b5c.md) | 1 | 1 | 0 |
 | [libSceVrTrackerGpuTest](libraries/libscevrtrackergputest-09a999a35a.md) | 5 | 0 | 0 |

@@ -5,9 +5,9 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 184 |
-| Named | 124 |
-| Unresolved or withheld | 60 |
-| Qualified stub candidate records | 0 |
+| Named | 132 |
+| Unresolved or withheld | 52 |
+| Qualified stub candidate records | 8 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
 
@@ -31,6 +31,7 @@ A bounded preview; the inventory file contains the complete library.
 
 | NID | Symbol |
 |---|---|
+| `+78trVvdQVs` | `sceAppInstUtilCheckLatestPatch2` |
 | `+XPO-y2Kmt8` | `sceAppInstUtilRequestInstallDiscGame` |
 | `+e96RoSI62w` | `sceAppInstUtilRequestDataDiscCopy` |
 | `+s7Q-UbHJWI` | `sceAppInstUtilGetInsertedDiscRoleType` |
@@ -42,4 +43,3 @@ A bounded preview; the inventory file contains the complete library.
 | `0qXTBufV+3k` | `sceAppInstUtilCancelGetInformation` |
 | `12PV4AVsJCM` | `sceAppInstUtilGetParentalControlLevel` |
 | `1npa3LfEfq0` | `sceAppInstUtilPauseInstall` |
-| `1wsyLPfjnmg` | `sceAppInstUtilGetInstallStatus` |

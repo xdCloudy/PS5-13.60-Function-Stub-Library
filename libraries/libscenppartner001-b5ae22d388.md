@@ -5,9 +5,9 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 5 |
-| Named | 4 |
-| Unresolved or withheld | 1 |
-| Qualified stub candidate records | 0 |
+| Named | 5 |
+| Unresolved or withheld | 0 |
+| Qualified stub candidate records | 1 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
 
@@ -35,3 +35,4 @@ A bounded preview; the inventory file contains the complete library.
 | `7CxI50-xlCk` | `sceNpEAAccessInitialize` |
 | `AS45QoYHjc4` | `_Z5dummyv` |
 | `pMxXhNozUX8` | `sceNpEAAccessTerminate` |
+| `pQfYTZHznMc` | `sceNpHasEAAccessSubscriptionAbortRequest` |

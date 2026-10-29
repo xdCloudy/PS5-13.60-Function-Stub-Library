@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 51 |
-| Named | 30 |
-| Unresolved or withheld | 21 |
+| Named | 31 |
+| Unresolved or withheld | 20 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -38,6 +38,6 @@ A bounded preview; the inventory file contains the complete library.
 | `BTawastvk7s` | `sceVideoOutDebugLatencyMeasureGetLatestLatency` |
 | `CxUz3nU06NE` | `sceVideoOutSetToneMap_` |
 | `D3s8DoEnuR4` | `sceVideoOutAddBufferYccPrivilege` |
+| `F3cj7Bea07w` | `sceVideoOutDebugReadCrc2` |
 | `M-JkRj7X+No` | `sceVideoOutControlHdcpEncryption` |
 | `N1bEoJ4SRw4` | `sceVideoOutConfigureOutputMode_` |
-| `NMhOpB9KTqA` | `sceVideoOutSysAddFlipEvent` |

@@ -5,9 +5,9 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 225 |
-| Named | 135 |
-| Unresolved or withheld | 90 |
-| Qualified stub candidate records | 135 |
+| Named | 139 |
+| Unresolved or withheld | 86 |
+| Qualified stub candidate records | 139 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
 

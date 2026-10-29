@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 37 |
-| Named | 32 |
-| Unresolved or withheld | 5 |
+| Named | 34 |
+| Unresolved or withheld | 3 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -36,8 +36,8 @@ A bounded preview; the inventory file contains the complete library.
 | `8jiB8eq+BkM` | `sceVoiceChatRequestCreateVoiceChatGroup` |
 | `CscDZAFA5+c` | `sceVoiceChatProcessEvent` |
 | `FNzy4vvhlPY` | `sceVoiceChatGetChatChannelMemberInfoList` |
+| `Jra48Mpq8+Q` | `sceVoiceChatUnregisterMicEventHandler2` |
 | `NP9VowZ2OEA` | `sceVoiceChatRequestSetMemberVolume` |
 | `Ptmkf9UnWBg` | `sceVoiceChatRegisterHandlers` |
 | `S+mOdmysfhw` | `sceVoiceChatRequestLeaveGameSessionVoiceChatChannel` |
 | `X3BWlTuErbk` | `sceVoiceChatRequestJoinPlayerSessionVoiceChatChannel` |
-| `X8PFsyb2UTk` | `sceVoiceChatUnregisterMicEventHandler` |

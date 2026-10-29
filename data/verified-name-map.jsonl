@@ -77,6 +77,7 @@
 {"name":"mono_array_clone","nid":"+6h47p15FxM"}
 {"name":"Java_java_io_UnixFileSystem_delete0","nid":"+6lwWlBncM8"}
 {"name":"sceSaveDataCheckBackupDataLight","nid":"+6wXHxR7laM"}
+{"name":"sceAppInstUtilCheckLatestPatch2","nid":"+78trVvdQVs"}
 {"name":"_ZNK7WebCore24MatrixTransformOperation6matrixEv","nid":"+79w68212vg"}
 {"name":"scePthreadAttrGetscope","nid":"+7B2AEKKns8"}
 {"name":"_ZN7WebCore13HTTPHeaderMap3addERKN3WTF6StringES4_","nid":"+7HpqmfJz48"}
@@ -705,6 +706,7 @@
 {"name":"sceUsbStorageGetDeviceInfo","nid":"-GvBqz54ssU"}
 {"name":"sceCameraGetDeviceIDWithoutOpen","nid":"-H3UwGQvNZI"}
 {"name":"glCheckFramebufferStatus","nid":"-HAzeV7vL-Q"}
+{"name":"sceVrTracker2GetResultForPlayAreaEx","nid":"-HFx+dnDSOI"}
 {"name":"sceHttp2SetConnectTimeOut","nid":"-HIO4VT87v8"}
 {"name":"Java_java_lang_StrictMath_asin","nid":"-HJUy5ec9GQ"}
 {"name":"Java_com_sony_bdjstack_system_BDJModule_prepareTitle__I","nid":"-HNrydWB0EE"}
@@ -1017,6 +1019,7 @@
 {"name":"WKPreferencesSetIntersectionObserverEnabled","nid":"-pAtC74McJ8"}
 {"name":"blockpool_batch","nid":"-pOg5A6Yr6g"}
 {"name":"png_get_rows","nid":"-pVA-QEcWok"}
+{"name":"sqlite3_config","nid":"-paPKZnNT0Q"}
 {"name":"sceAgcSetStaticBuffer","nid":"-pjHhph0ZUc"}
 {"name":"_ZN7WebCore9DOMWindow29setCanShowModalDialogOverrideEb","nid":"-pnxCYYTHdA"}
 {"name":"sceVideoOutDeleteVrrActiveStatusEvent","nid":"-q-vbO859Tw"}
@@ -2134,6 +2137,7 @@
 {"name":"_ZN7WebCore21convertToIntegerClampIiEET_RN3JSC14JSGlobalObjectENS2_7JSValueE","nid":"1lw12IB1HrA"}
 {"name":"_ZNK3sce3Xml3Dom4Node13hasAttributesEv","nid":"1m2y+e811xA"}
 {"name":"scePlayerInvitationDialogGetStatus","nid":"1m4CKJxzsW0"}
+{"name":"sceVrTracker2LocateCoordinateSystemEx","nid":"1m6DD9BBmSE"}
 {"name":"_ZN7WebCore13JSHTMLElement11analyzeHeapEPN3JSC6JSCellERNS1_12HeapAnalyzerE","nid":"1mDW3CrKA34"}
 {"name":"_ZN7WebCore21JSTextTrackCueGenericD1Ev","nid":"1mFJ6hh-6yk"}
 {"name":"_ZN3JSC14SourceProvider5getIDEv","nid":"1maKcwFOk3E"}
@@ -3022,6 +3026,7 @@
 {"name":"WKAuthenticationChallengeGetProposedCredential","nid":"3L6XDc-UNVA"}
 {"name":"_ZN7WebCore19JSDOMMatrixReadOnly14getConstructorERN3JSC2VMEPKNS1_14JSGlobalObjectE","nid":"3LBwhPy74PU"}
 {"name":"_ZN3JSC2VM29callbackGlobalObjectSpaceSlowEv","nid":"3LIRw+rB9A4"}
+{"name":"scePadInternalSetAssignLed","nid":"3LNwlXW4f54"}
 {"name":"sceKernelAioCancelRequests","nid":"3Lca1XBrQdY"}
 {"name":"_ZN3sce2np12StreamReader7SkipAllEPNS0_6HandleEPNS0_9StreamCtxEPl","nid":"3LiihJpByZE"}
 {"name":"_ZN3sce2np3ipc10IpmiClientD0Ev","nid":"3LuoWoXJ1WI"}
@@ -3891,6 +3896,7 @@
 {"name":"EVP_CIPHER_iv_length","nid":"4ryyfC3TknU"}
 {"name":"_ZN3sce3Xml3Dom15DocumentBuilder26setSkipIgnorableWhiteSpaceEb","nid":"4s-kfKFg+5o"}
 {"name":"sceVoiceGetMemorySize","nid":"4s3lpDzi0as"}
+{"name":"sceAppInstUtilAppGetIrremovableAppList2","nid":"4s4aW4Rnv08"}
 {"name":"_ZN9Inspector25DatabaseBackendDispatcher21getDatabaseTableNamesElON3WTF6RefPtrINS1_8JSONImpl6ObjectENS1_13DumbPtrTraitsIS4_EEEE","nid":"4sJZdDo9ZRs"}
 {"name":"ucol_getUCAVersion_67","nid":"4sklOXp+9tM"}
 {"name":"sceDebugIpmiGetChannelKidList","nid":"4slehMAh00w"}
@@ -5674,6 +5680,7 @@
 {"name":"_ZN7WebCore21DiagnosticLoggingKeys16internalErrorKeyEv","nid":"80J1+bA9ZIk"}
 {"name":"_ZN3WTF20ParallelHelperClientD2Ev","nid":"80LTtL71Ics"}
 {"name":"scePadStartRecording","nid":"80XdmVYsNPA"}
+{"name":"mono_thread_info_register_small_id","nid":"80hr6eRyLdk"}
 {"name":"WKPreferencesGetLargeImageAsyncDecodingEnabled","nid":"812ErfQJ70Q"}
 {"name":"YGConfigSetLogger","nid":"816frQKIUek"}
 {"name":"sceNpWebApi2IntPushEventCreateDestPs4CtxIndFilter","nid":"81DkaQt6J30"}
@@ -5846,6 +5853,7 @@
 {"name":"_ZNSt8time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEED0Ev","nid":"8H3yBUytv-0"}
 {"name":"_ZThn16_N9Inspector21InspectorRuntimeAgent14callFunctionOnERN3WTF6StringERKS2_S5_PKNS1_8JSONImpl5ArrayEPKbSB_SB_SB_RNS1_6RefPtrINS_8Protocol7Runtime12RemoteObjectENS1_13DumbPtrTraitsISF_EEEERNS1_8OptionalIbEE","nid":"8HOjWgy3dR4"}
 {"name":"sceSystemLogger2DeliveryResume","nid":"8Hc2nBp2nG4"}
+{"name":"sceAvcap2GetNonVclNalUnitStream3","nid":"8HjqtZXLvek"}
 {"name":"SSLeay","nid":"8I1tIrw0dvg"}
 {"name":"NetCtlCheckCallbackNative","nid":"8I7xekkfFhQ"}
 {"name":"_ZN9Inspector21InspectorConsoleAgentnwEmPv","nid":"8IEd1z5hqb8"}
@@ -6389,6 +6397,7 @@
 {"name":"sceKernelIccSetWlanBtGpio","nid":"9D07JRs47Fg"}
 {"name":"_ZN7WebCore11MediaPlayer11mediaEngineENS_16MediaPlayerEnums21MediaEngineIdentifierE","nid":"9D1PY1C0XK4"}
 {"name":"_ZN7WebCore22ResourceLoadStatistics6decodeERNS_12KeyedDecoderEj","nid":"9D40kL7Jyes"}
+{"name":"mono_thread_info_attach","nid":"9D7k3mJ3NZU"}
 {"name":"wpe_pasteboard_get_singleton","nid":"9DAe2g9wzX4"}
 {"name":"_ZN3JSC13BooleanObject14finishCreationERNS_2VME","nid":"9DDCGs+YGTE"}
 {"name":"ucurr_getRoundingIncrementForUsage_67","nid":"9DEHEHglTj4"}
@@ -6481,6 +6490,7 @@
 {"name":"ucol_getLocale_67","nid":"9QSdWfiLaBo"}
 {"name":"_ZNK7WebCore4Page15visibilityStateEv","nid":"9QZluZ4dNDY"}
 {"name":"pss_io_icall_install_functions","nid":"9Qbi8rLzfpI"}
+{"name":"sceMediaFwChangeVideoOutputMode2","nid":"9QsUR0sExmM"}
 {"name":"RSA_get0_key","nid":"9RMSBpPZVdk"}
 {"name":"_ZN7WebCore15HTMLBaseElement7setHrefERKN3WTF10AtomStringE","nid":"9RY5wR3m+BA"}
 {"name":"_ZN9Inspector30TargetBackendDispatcherHandlerC2ERKS0_","nid":"9RYsSzqyNrM"}
@@ -6834,6 +6844,7 @@
 {"name":"_ZNKSt8time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE11get_weekdayES3_S3_RSt8ios_baseRNSt5_IosbIiE8_IostateEP2tm","nid":"A0PftWMfrhk"}
 {"name":"sceHmd2InternalImageReadData","nid":"A0XKI-WjxK8"}
 {"name":"_ZThn64_N7WebCore10ScrollView15setScrollOffsetERKNS_8IntPointE","nid":"A0Xp97hSdNo"}
+{"name":"ERR_load_X509_strings","nid":"A0lZtFjhcTw"}
 {"name":"fmodl","nid":"A1R5T0xOyn8"}
 {"name":"sceSaveDataGetAllSize","nid":"A1ThglSGUwA"}
 {"name":"sceNpTitleMetadataIntCreateRequest","nid":"A1XQslLAA-Y"}
@@ -7407,6 +7418,7 @@
 {"name":"sceFsBfsTrim","nid":"B2Waw07963I"}
 {"name":"tgammaf","nid":"B2ZbqV9geCM"}
 {"name":"sceKernelSyncOnAddressWait32","nid":"B2n8aDorSH4"}
+{"name":"sceVrTracker2GetMapQualityEx","nid":"B2vw+s-0Dfo"}
 {"name":"_ZN3JSC4callEPNS_14JSGlobalObjectENS_7JSValueES2_RKNS_7ArgListEPKc","nid":"B2zNei739Gs"}
 {"name":"WKPreferencesGetMediaPlayable","nid":"B35ZcgDNE60"}
 {"name":"scePadGetFeatureReport2","nid":"B36fgKhpfUE"}
@@ -7447,6 +7459,7 @@
 {"name":"sceNpSignalingGetConnectionFromPeerAddressA","nid":"B7cT9aVby7A"}
 {"name":"WKPreferencesSetInlineMediaPlaybackRequiresPlaysInlineAttribute","nid":"B7ciVXz8B14"}
 {"name":"_ZNK7WebCore10ScrollView14scrollbarModesERNS_13ScrollbarModeES2_","nid":"B7gQbkr+FVU"}
+{"name":"sceVrTracker2GetPlayAreaOrientedBoundingBoxEx","nid":"B7hPwvvg79E"}
 {"name":"_ZN7WebCore15RemoteDOMWindowC1EON3WTF3RefINS_11RemoteFrameENS1_13DumbPtrTraitsIS3_EEEEONS_22GlobalWindowIdentifierE","nid":"B7pGVW6pRjU"}
 {"name":"sceNpTusGetDataForCrossSaveVUserAsync","nid":"B7rBR0CoYLI"}
 {"name":"WKPreferencesGetSubpixelAntialiasedLayerTextEnabled","nid":"B8-G2Ok8Wrk"}
@@ -8893,6 +8906,7 @@
 {"name":"_ZN3WTF20tryFastAlignedMallocEmm","nid":"DiMNwdYc2Yg"}
 {"name":"sceNpLookupNetInitWithFunctionPointer","nid":"DiUk6-mq--0"}
 {"name":"sceNpSessionSignalingGetConnectionFromPeerAddress2","nid":"DicBhsm2iR4"}
+{"name":"sceMbusSetCronosPrimaryUser","nid":"Difwh6usnK4"}
 {"name":"YGConfigSetExperimentalFeatureEnabled","nid":"Dij6Sj04Kwc"}
 {"name":"sceVoicePausePortAll","nid":"Dinob0yMRl8"}
 {"name":"_ZN15AbstractStorage12LocalService18append_storagelistERKSbIcSt11char_traitsIcENS_8StlAllocIcEEEb","nid":"Dj2WuKEtKsw"}
@@ -9269,6 +9283,7 @@
 {"name":"getProhibitionFlags","nid":"ENgBTg9H2yI"}
 {"name":"_ZN7WebCore8JSDOMURLC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_6DOMURLENS6_13DumbPtrTraitsIS8_EEEE","nid":"ENi-+3RjOHU"}
 {"name":"hb_buffer_get_glyph_infos","nid":"ENsHmJCNG4Q"}
+{"name":"sceApplicationSwitchToPprNativeMode2","nid":"EO-wjsuZdRM"}
 {"name":"_ZN7WebCore18PlatformTimeRangesnwEm10NotNullTagPv","nid":"EO7L0IQDZlE"}
 {"name":"c16rtomb","nid":"EOLQfNZ9HpE"}
 {"name":"sceCustomMusicNetBind","nid":"EOO+r1P-9Nc"}
@@ -9587,6 +9602,7 @@
 {"name":"_ZN7WebCore12SharedBuffer21createFromReadingFileERKN3WTF6StringE","nid":"EyHDz7bL4q8"}
 {"name":"_ZNK7WebCore13JSHTMLElement21pushEventHandlerScopeEPN3JSC14JSGlobalObjectEPNS1_7JSScopeE","nid":"EyLiGmBVSo8"}
 {"name":"_ZNK7WebCore8DOMTimer15alignedFireTimeEN3WTF13MonotonicTimeE","nid":"EySRvVSytPw"}
+{"name":"sceNpBandwidthTestInitStartDownloadInternal","nid":"EyZWS3ESnko"}
 {"name":"sceKernelIccIndicatorStandbyShutdown","nid":"Eye1lgCj9yo"}
 {"name":"_ZN3sce2np10MemoryFile4ReadEPNS0_6HandleEPvmPm","nid":"EyhtbPFMWNA"}
 {"name":"_ZN9Inspector27LayerTreeFrontendDispatchernaEm","nid":"EyqqC2OwC9M"}
@@ -9656,6 +9672,7 @@
 {"name":"sceFsPartitionTrim","nid":"F3Cug8WEm8k"}
 {"name":"_ZN7WebCore17JSDOMGlobalObject7destroyEPN3JSC6JSCellE","nid":"F3DpTj5CpPg"}
 {"name":"_ZN9Inspector31ConsoleBackendDispatcherHandlerC2ERKS0_","nid":"F3ILcSPTa-c"}
+{"name":"sceVideoOutDebugReadCrc2","nid":"F3cj7Bea07w"}
 {"name":"WKPageGetMediaState","nid":"F4AnS9A-OSc"}
 {"name":"sceKernelGetSanitizerNewReplace","nid":"F4Kib3Mb0wI"}
 {"name":"sceVdecCoreSetDecodeInput","nid":"F4nrEfi-M84"}
@@ -10398,6 +10415,7 @@
 {"name":"sceNpTusGetDataVUser","nid":"GQHCksS7aLs"}
 {"name":"mono_thread_get_num_threads","nid":"GQLPt+OUJkE"}
 {"name":"sceShareCaptureScreenshotExtended","nid":"GQTObcITIXI"}
+{"name":"__sys_dynlib_unload_prx","nid":"GQli4UAXTfQ"}
 {"name":"sceUsbdGetConfigDescriptorByValue","nid":"GQsAVJuy8gM"}
 {"name":"WKPreferencesGetTextAutosizingEnabled","nid":"GR+0ko0mEi0"}
 {"name":"_ZNK7WebCore22SkewTransformOperation27isAffectedByTransformOriginEv","nid":"GR+f8ocq5VE"}
@@ -10713,6 +10731,7 @@
 {"name":"_ZN7WebCore32serializationForRenderTreeAsTextERKNS_5SRGBAIfEE","nid":"H+BMUU6oC8s"}
 {"name":"_ZNK7WebCore20FontAttributeChanges18createEditingStyleEv","nid":"H+ED9TvVwUQ"}
 {"name":"sceMediaFwMediaKeysSetServerCertificate","nid":"H+Erp6W7+jM"}
+{"name":"sceMbusSetVibrationTriggerEffectWeakWhileEmbeddedMicInUse","nid":"H+PkGBdkvUQ"}
 {"name":"_ZNSt8numpunctIwEC1EPKcmb","nid":"H+T2VJ91dds"}
 {"name":"_ZN9Inspector15AsyncStackTrace6createEON3WTF3RefINS_15ScriptCallStackENS1_13DumbPtrTraitsIS3_EEEEbNS1_6RefPtrIS0_NS4_IS0_EEEE","nid":"H+kgNA1n6kA"}
 {"name":"AsyncGetCallTrace","nid":"H+oM6blpPU8"}
@@ -12218,6 +12237,7 @@
 {"name":"_WStoul","nid":"JhVR7D4Ax6Y"}
 {"name":"sceLoginMgrServerSetLoginFlag","nid":"Jha8yMoMzrg"}
 {"name":"_ZN3sce2np10Cancelable6CancelEij","nid":"Jhbrpz0YhHU"}
+{"name":"sceAvControlInit2","nid":"Jhcj4HDIw04"}
 {"name":"_ZN7Nicosia9AnimationC1ERKS0_","nid":"Jhj07sXaEnU"}
 {"name":"_ZN9Inspector32DebuggerBackendDispatcherHandlerC2ERKS0_","nid":"JhsJWxsvkZg"}
 {"name":"uprv_decContextDefault_67","nid":"JhsnkofpeOw"}
@@ -12306,6 +12326,7 @@
 {"name":"_ZN9Inspector8Protocol16InspectorHelpers24parseEnumValueFromStringINS0_4Heap17GarbageCollection4TypeEEEN3WTF8OptionalIT_EERKNS6_6StringE","nid":"JrVaQWvoJpw"}
 {"name":"u_versionFromUString_67","nid":"JrWihxj7ZLs"}
 {"name":"sceNpAsmAbort","nid":"JrXA7baBMPQ"}
+{"name":"sceVoiceChatUnregisterMicEventHandler2","nid":"Jra48Mpq8+Q"}
 {"name":"sceNpMatching2GetRoomDataInternal","nid":"Jraxifmoet4"}
 {"name":"_ZN6webrtc17AudioDeviceBuffer13StopRecordingEv","nid":"JripptJhPHs"}
 {"name":"_ZN6webrtc13PacketOptionsC1Ev","nid":"JrkG1cOMBwc"}
@@ -12671,6 +12692,7 @@
 {"name":"sceTextToSpeechInitImpl","nid":"KXBnxqAeTuo"}
 {"name":"_ZN7WebCore11FileChooserD1Ev","nid":"KXMqfl+qPpU"}
 {"name":"sceFontOpenFontMemory","nid":"KXUpebrFk1U"}
+{"name":"sceAppInstUtilGetAddons2","nid":"KXhNVXaVPgw"}
 {"name":"_ZN7WebCore16DOMGuardedObjectD1Ev","nid":"KXj7+ueLvdo"}
 {"name":"usearch_openFromCollator_67","nid":"KXjpglDjSQg"}
 {"name":"sceGnmSetCsShader","nid":"KXltnCwEJHQ"}
@@ -13139,6 +13161,7 @@
 {"name":"Java_java_awt_GnmImage_nativeDrawImageScaled","nid":"LKRfjglGlSA"}
 {"name":"scePadVirtualDeviceGetRemoteSetting","nid":"LKXfw7VJYqg"}
 {"name":"_ZN9Inspector24RuntimeBackendDispatcherD0Ev","nid":"LKZcmQ6G+v0"}
+{"name":"sceAppInstUtilInstallPatch2","nid":"LKn1-kgoTEA"}
 {"name":"_ZN3sce2np8msg_pack16MsgPackArrayImplC1EP14SceNpAllocator","nid":"LKo7ZNBUTlU"}
 {"name":"sceVnaSetAsrExclusive","nid":"LKwzp-Dsjug"}
 {"name":"tls_config_free","nid":"LL8N+X6DA-4"}
@@ -13561,6 +13584,7 @@
 {"name":"sceAppInstUtilAppGetCustomThemeInfo","nid":"M7qwhVoqyko"}
 {"name":"sceCesUtf8ToSJis","nid":"M7xXaEUT0AM"}
 {"name":"_ZN7WebCore19HTMLTableColElement7setSpanEj","nid":"M7zDhMX8ddM"}
+{"name":"ERR_load_PEM_strings","nid":"M7ze0mz2jQM"}
 {"name":"_ZN7WebCore13MIMETypeCachedlEPv","nid":"M8+wbBy-2n0"}
 {"name":"sceEsvmUseCustomMusicCoreForDecoderMode","nid":"M8-ylcEPnGo"}
 {"name":"JSRemoteInspectorSetParentProcessInformation","nid":"M829RJ26qMA"}
@@ -13645,6 +13669,7 @@
 {"name":"_ZN7WebCore9FrameView20enterCompositingModeEv","nid":"MFnPTtcUaaI"}
 {"name":"sceUserServiceGetTopMenuTutorialFlag","nid":"MG+ObGDYePw"}
 {"name":"FT_GlyphLoader_CheckSubGlyphs","nid":"MGEIQsujKaY"}
+{"name":"sceAgcGetRegisterDefaultsInternal_0090","nid":"MGEQMJBhdtc"}
 {"name":"cairo_region_create","nid":"MGMwq9DNMyE"}
 {"name":"_ZN7WebCore9FrameView39setViewportConstrainedObjectsNeedLayoutEv","nid":"MGUslo9y4pk"}
 {"name":"sceAudioOutSysOpen","nid":"MGkAS4ncQ90"}
@@ -13796,6 +13821,7 @@
 {"name":"sqrt","nid":"MXRNWnosNlM"}
 {"name":"_ZN9Inspector21InjectedScriptManager20createInjectedScriptERKN3WTF6StringEPN3JSC14JSGlobalObjectEi","nid":"MXcF5LJjxR8"}
 {"name":"FT_Get_CMap_Format","nid":"MXgrzq0nh1Q"}
+{"name":"sceAppInstUtilAppUnInstall3","nid":"MY+htcCxP0A"}
 {"name":"_ZN3sce2np10JsonNumber6SetNumEl","nid":"MY0CSk24EcY"}
 {"name":"_ZN9Inspector8Protocol16InspectorHelpers24parseEnumValueFromStringINS0_11DOMDebugger17DOMBreakpointTypeEEEN3WTF8OptionalIT_EERKNS5_6StringE","nid":"MY7cbaLIO0U"}
 {"name":"_ZNSt13basic_filebufIcSt11char_traitsIcEED0Ev","nid":"MYCRRmc7cDA"}
@@ -14055,6 +14081,7 @@
 {"name":"_ZNK3sce3Xml3Dom8NodeList8findItemENS1_6NodeIdE","nid":"N-2qBJYv6lw"}
 {"name":"mono_debug_close_image","nid":"N-BzGK0zsVs"}
 {"name":"sceAmprCommandBufferSetBuffer","nid":"N-FSPA4S3nI"}
+{"name":"GetFileSize","nid":"N-mLEg1EsU8"}
 {"name":"sceUserServiceSetGlsCameraBgFilter","nid":"N-xzO5-livc"}
 {"name":"sceSystemServiceSwitchToNonVRApp","nid":"N-z5LguAmc0"}
 {"name":"png_write_row","nid":"N09SXXRD6VI"}
@@ -14538,6 +14565,7 @@
 {"name":"munlockall","nid":"NpLBpgVV7PU"}
 {"name":"ubidi_getReorderingOptions_67","nid":"NpR-8-saS2E"}
 {"name":"sceNetCtlApUnregisterCallback","nid":"NpTcFtaQ-0E"}
+{"name":"sceUserServiceSetHintShowFlag3","nid":"NpbszubN7Y0"}
 {"name":"scePthreadBarrierattrSetpshared","nid":"NpfpcLf5PYM"}
 {"name":"_ZN7WebCore12DataTransferD1Ev","nid":"NpqX-u41+kA"}
 {"name":"sceCustomMusicDummyFileCheckReachability","nid":"NpvAtwSD4EM"}
@@ -15479,6 +15507,7 @@
 {"name":"sceUserServiceGetThemeBgImageWaveColor","nid":"POVfvCDcVUw"}
 {"name":"scePadSetLotusEnableIrKey","nid":"POf2HTFW5pw"}
 {"name":"mono_class_get_element_class","nid":"POgR2HblAXE"}
+{"name":"scePlayReadyCdmiGetSessionId2","nid":"POnQSapoh38"}
 {"name":"glUniform1f","nid":"POq8+5-inHY"}
 {"name":"sceNetConfigSetIfaddr6WithFlags","nid":"POrSEl8zySw"}
 {"name":"kldnext","nid":"POwLLYzZufU"}
@@ -16081,6 +16110,7 @@
 {"name":"WKBundleSetAllowFileAccessFromFileURLs","nid":"QOwNdOdlkw0"}
 {"name":"_ZN9Inspector26AnimationBackendDispatcher13startTrackingElON3WTF6RefPtrINS1_8JSONImpl6ObjectENS1_13DumbPtrTraitsIS4_EEEE","nid":"QOzWBuxaP60"}
 {"name":"sceFsExfatMkfsExternalHdd","nid":"QP4WA9hEAtM"}
+{"name":"mkostemp","nid":"QP8dYkB8zCU"}
 {"name":"_ZN7WebCore8Settings38setShowRepaintCounterInspectorOverrideEN3WTF8OptionalIbEE","nid":"QP99f0+e+B4"}
 {"name":"_ZN15AbstractStorage4ItemD1Ev","nid":"QPNELEk9zkI"}
 {"name":"_ZNK7WebCore6Widget25convertFromContainingViewERKNS_9FloatRectE","nid":"QPOc37Cy-oU"}
@@ -16743,6 +16773,7 @@
 {"name":"udata_readInt32","nid":"RawxplHcKrQ"}
 {"name":"umask","nid":"Rb6ziJKvCCQ"}
 {"name":"sceAjmInstanceDestroy","nid":"RbLbuKv8zho"}
+{"name":"sceKernelEnableDmemAliasing3","nid":"RbhD-epf6c0"}
 {"name":"_ZN7WebCore18pluginScriptObjectEPN3JSC14JSGlobalObjectEPNS_13JSHTMLElementE","nid":"RbuBuPUm5-0"}
 {"name":"sceNetNtohs","nid":"Rbvt+5Y2iEw"}
 {"name":"_ZN9Inspector31ScriptProfilerBackendDispatcher12stopTrackingElON3WTF6RefPtrINS1_8JSONImpl6ObjectENS1_13DumbPtrTraitsIS4_EEEE","nid":"RbxUhqWCoo0"}
@@ -17230,6 +17261,7 @@
 {"name":"WKPageHasMediaSessionWithActiveMediaElements","nid":"SVIcrS84xVo"}
 {"name":"_Atomic_fetch_or_2","nid":"SVIiJg5eppY"}
 {"name":"Java_java_io_FileOutputStream_initIDs","nid":"SVJZcnz9QIc"}
+{"name":"sceMbusSetCronosOutputMode","nid":"SVMVTE0HXiI"}
 {"name":"mono_debug_domain_create","nid":"SVQtfFl6UZo"}
 {"name":"_ZN7WebCore8Document24addMediaCanStartListenerERNS_21MediaCanStartListenerE","nid":"SVSxof5YKAc"}
 {"name":"Java_com_sony_bdjstack_init_Init_cleanup","nid":"SVVn5eaP+b4"}
@@ -18261,6 +18293,7 @@
 {"name":"sceNetConfigDelDefaultRoute6","nid":"UMlVCy7RX1s"}
 {"name":"sceFsWsFetchFileMetadata","nid":"UMm6gapfQN4"}
 {"name":"mono_image_open_full","nid":"UMqlHiqPQl0"}
+{"name":"sceMediaFwMediaKeySystemAccessCreateMediaKeys2","nid":"UMuQN3ysX9o"}
 {"name":"mono_btls_x509_lookup_get_type","nid":"UN1A7FriZLY"}
 {"name":"sceDeviceServiceQueryDeviceInfo_","nid":"UNMEa+5lrUA"}
 {"name":"_ZN7WebCore21PageOverlayController18installPageOverlayERNS_11PageOverlayENS1_8FadeModeE","nid":"UNOrI4X5kz0"}
@@ -18414,6 +18447,7 @@
 {"name":"sceUserServiceGetPartyMuteList","nid":"UeIv6aNXlOw"}
 {"name":"_ZN7WebCore15makeSimpleRangeERKNS_5RangeE","nid":"UeOJlAxhp98"}
 {"name":"ucol_openRules_67","nid":"UeSrsYzgEBA"}
+{"name":"scePadIsChargingCableConnected","nid":"UeUUvNOgXKU"}
 {"name":"_ZN7WebCore18StyleSheetContents11parseStringERKN3WTF6StringE","nid":"UeYdo-L+tuA"}
 {"name":"_ZNK7WebCore12RenderObject15localToAbsoluteERKNS_10FloatPointEjPb","nid":"UeYiDCqHWuM"}
 {"name":"ASN1_STRING_length","nid":"UeeYJN-SzZ8"}
@@ -21458,6 +21492,7 @@
 {"name":"pthread_barrierattr_getpshared","nid":"a5JZMyjFV68"}
 {"name":"sceSystemServiceEnableSuspendNotification","nid":"a5Kjjq6HgcU"}
 {"name":"sceAppContentTemporaryDataFormat","nid":"a5N7lAG0y2Q"}
+{"name":"sceAppInstUtilGetPatchInstallStatus2","nid":"a5SESfNdyL0"}
 {"name":"cairo_scaled_font_status","nid":"a5WkqZXnG2w"}
 {"name":"sceVideoCoreIfMainLoop","nid":"a5Z4yyiPbK8"}
 {"name":"WKWebsiteDataStoreSetResourceLoadStatisticsFirstPartyHostCNAMEDomainForTesting","nid":"a5ee7veMD9k"}
@@ -23460,6 +23495,7 @@
 {"name":"_ZN7WebCore6Editor24computeAndSetTypingStyleERNS_15StylePropertiesENS_10EditActionE","nid":"dcdqMikPEKg"}
 {"name":"_ZN9Inspector8Protocol16InspectorHelpers24parseEnumValueFromStringINS0_7Runtime12RemoteObject7SubtypeEEEN3WTF8OptionalIT_EERKNS6_6StringE","nid":"dclWhna3Zmk"}
 {"name":"sceSdmaCopyWindowT2T","nid":"dd8jmd0it24"}
+{"name":"sceAgcGetRegisterDefaults_0090","nid":"ddU6mOWyY40"}
 {"name":"_ZNSt16invalid_argumentD2Ev","nid":"ddr7Ie4u5Nw"}
 {"name":"sceLncUtilGetDbgExecutablePath","nid":"deCYc7iaC5Q"}
 {"name":"_ZN7WebCore8Document4openEPS0_","nid":"deFQEVRcKuQ"}
@@ -24443,6 +24479,7 @@
 {"name":"sceEsvmPlay","nid":"fIdN5WzxNXg"}
 {"name":"ures_getVersionNumber_67","nid":"fIs015Hhmkk"}
 {"name":"__srefill","nid":"fIskTFX9p68"}
+{"name":"sceSaveDataMountSysProspero2","nid":"fIu-ckf3n-o"}
 {"name":"sceCesUcsProfileInitSJis2004X0213","nid":"fIxLs+X4zBo"}
 {"name":"_ZN23sceMetadataReaderWriter8Metadata9SerializeERS0_RN3sce4Json5ValueE","nid":"fJ0X7gqv28M"}
 {"name":"X509_STORE_set_flags","nid":"fJ3lp5T2HxA"}
@@ -25736,6 +25773,7 @@
 {"name":"_ZNSt22_System_error_categoryD1Ev","nid":"hVQgfGhJz3U"}
 {"name":"_sceFiberInitializeImpl","nid":"hVYD7Ou2pCQ"}
 {"name":"uregex_matches64_67","nid":"hVYr51WGXZo"}
+{"name":"sceVoiceChatRegisterMicEventHandler2","nid":"hVf-dQZU4nE"}
 {"name":"_ZN3sce2np20BufferedStreamWriter4OpenEPNS0_12StreamWriterEm","nid":"hVmiW-7DUYw"}
 {"name":"WKUserContentControllerCopyUserScripts","nid":"hW-9++DsvQ4"}
 {"name":"sceFontDestroyWords","nid":"hWE4AwNixqY"}
@@ -26367,6 +26405,7 @@
 {"name":"_ZN3WTF18charactersToDoubleEPKDsmPb","nid":"iZcuO+Kb-4E"}
 {"name":"_ZN3sce4Json5ValueC1ERKNS0_5ArrayE","nid":"iZeYfOxtMRg"}
 {"name":"_ZN3WTF19tryFastZeroedMallocEm","nid":"iZfYbwM82bU"}
+{"name":"scePlayReadyCdmiGenerateRequest2","nid":"iZk5IYEltB8"}
 {"name":"_ZN3WTF13printInternalERNS_11PrintStreamEPKNS_10StringImplE","nid":"iZmKEESJ3mw"}
 {"name":"mono_get_uint16_class","nid":"iZv1dugN9C4"}
 {"name":"sceNpTusGetDataAVUser","nid":"iaH+Sxlw32k"}
@@ -26516,6 +26555,7 @@
 {"name":"sceNetCtlRegisterCallbackV6IpcInt","nid":"ipqlpcIqRsQ"}
 {"name":"sceNgs2ParseWaveformFile","nid":"iprCTXPVWMI"}
 {"name":"_ZN7WebCore17PageConsoleClient4muteEv","nid":"iq7Iszogzis"}
+{"name":"sceMediaFwRequestMediaKeySystemAccess2","nid":"iqJ90izN-3E"}
 {"name":"_ZN15AbstractStorage10YoutubeAPID1Ev","nid":"iqJYGVNed1E"}
 {"name":"sceVoiceQoSCreateRemoteEndpoint","nid":"iqQQW2cBmWU"}
 {"name":"_ZNK7WebCore6Editor17firstRectForRangeERKNS_11SimpleRangeE","nid":"iqS3bVfzFk4"}
@@ -27070,6 +27110,7 @@
 {"name":"_ZNK7WebCore21ISOTrackEncryptionBox20defaultSkipByteBlockEv","nid":"jkrrIsrKdVg"}
 {"name":"sceShellCoreUtilActivateIsActivated","nid":"jktCMQNgyFc"}
 {"name":"sceNpBandwidthTestInitStart","nid":"jktww3yJXnc"}
+{"name":"sceAvcap2ReadVideo2","nid":"jkv9MlN7gvs"}
 {"name":"BgsStorageFreeListResult","nid":"jkw52aHWgtk"}
 {"name":"FT_Stream_GetChar","nid":"jl0VxYZb8-o"}
 {"name":"DisableSystemMedia","nid":"jlIfgOEzZ2A"}
@@ -27248,6 +27289,7 @@
 {"name":"sceAudio3dPortOpenEx","nid":"k1epkaA96XU"}
 {"name":"sceKernelProtectDirectMemory","nid":"k1jIkFHa9OU"}
 {"name":"ucal_clone_67","nid":"k1jUC-pZKaY"}
+{"name":"sceAppInstUtilAppRequestMoveApps2","nid":"k1ugAupXfzA"}
 {"name":"sceNpWebApiGetHttpStatusCode","nid":"k210oKgP80Y"}
 {"name":"sceUserServiceSetHearingAssistSeparateLR","nid":"k2ByCHFFzOI"}
 {"name":"ubidi_close_67","nid":"k2Lax3CbnUg"}
@@ -27278,6 +27320,7 @@
 {"name":"_ZN3JSC17JSArrayBufferView19ConstructionContextC2ERNS_2VMEPNS_9StructureEON3WTF6RefPtrINS_11ArrayBufferENS6_13DumbPtrTraitsIS8_EEEEjj","nid":"k56Qrq3LviI"}
 {"name":"sceNpTssGetStorageAsync","nid":"k5NZIzggbuk"}
 {"name":"ksem_open","nid":"k5QQrJEpRYY"}
+{"name":"scePlayReadyDomainJoinProcessResponse2","nid":"k5bAoX35xgg"}
 {"name":"_ZN7WebCore16HTMLMediaElement16returnToRealtimeEv","nid":"k5rdY0oueBE"}
 {"name":"_ZN7WebCore8JSDOMURL15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE","nid":"k66VgjV17-M"}
 {"name":"_ZNK7WebCore5Range8containsERKS0_","nid":"k67ADtJOaR8"}
@@ -28263,6 +28306,7 @@
 {"name":"_ZN7WebCore4Page41setDOMTimerAlignmentIntervalIncreaseLimitEN3WTF7SecondsE","nid":"ljPTWMFwyIM"}
 {"name":"_ZNK7WebCore14StaticNodeList4itemEj","nid":"ljRSoeZdr5s"}
 {"name":"_ZN7WebCore17JSDOMGlobalObjectC2ERN3JSC2VMEPNS1_9StructureEON3WTF3RefINS_15DOMWrapperWorldENS6_13DumbPtrTraitsIS8_EEEEPKNS1_23GlobalObjectMethodTableE","nid":"ljYCJdPg5jU"}
+{"name":"sceOpusCeltMultistreamEncCreateEx","nid":"ljZrBiKSnko"}
 {"name":"sceRtcFormatRFC3339Precise","nid":"lja0nNPWojg"}
 {"name":"_ZN9Inspector24RuntimeBackendDispatcherD2Ev","nid":"ljacL714xNI"}
 {"name":"WKPreferencesSetPluginSandboxProfilesEnabledForAllPlugins","nid":"ljd2tQnZJwk"}
@@ -28707,6 +28751,7 @@
 {"name":"sceCesUcsProfileInitEucCnGb2312","nid":"mSG2okSQ7lI"}
 {"name":"sceHttpsDisableOption","nid":"mSQCxzWTwVI"}
 {"name":"cairo_line_to","nid":"mSda1B-vfkM"}
+{"name":"sceNpBandwidthTestInitStartUploadInternal","nid":"mSlIpH6-UAY"}
 {"name":"WKPreferencesGetWebArchiveDebugModeEnabled","nid":"mSohbeE5Qfk"}
 {"name":"sceAgcDcbDrawIndexIndirectGetSize","nid":"mStuvI0zOtc"}
 {"name":"_ZN3JSC8Debugger17didEvaluateScriptEN3WTF7SecondsENS_15ProfilingReasonE","nid":"mT9cSJ5H6Zw"}
@@ -29494,6 +29539,7 @@
 {"name":"sceAudioInSetUsbGain","nid":"nqXpw3MaN50"}
 {"name":"utrans_toRules_67","nid":"nqYEZn6swPY"}
 {"name":"cairo_font_face_reference","nid":"nqmUW6Z8xLE"}
+{"name":"sceUserServiceGetHintShowFlag3","nid":"nr1rQJEXuFQ"}
 {"name":"_ZN7WebCore13SleepDisablerD2Ev","nid":"nrPF1HGjG+0"}
 {"name":"sceHttp2AddRequestHeader","nid":"nrPfOE8TQu0"}
 {"name":"sceNpProfileDialogOpenA","nid":"nrQRlLKzdwE"}
@@ -29847,6 +29893,7 @@
 {"name":"_ZNK15AbstractStorage12LocalService14GetServiceTypeEv","nid":"oTaaYntc8RM"}
 {"name":"MD5_Update","nid":"oTayTlKeUBY"}
 {"name":"sceShellCoreUtilGetTelemetryToken","nid":"oThn-THyKOc"}
+{"name":"sceAppInstUtilGetContentSize3","nid":"oToUim0TPY4"}
 {"name":"uprv_decNumberRotate_67","nid":"oTwaXklH5dQ"}
 {"name":"sceKernelIsAllowedToSelectDvdRegion","nid":"oU4h4oBe2l0"}
 {"name":"sceEsvmVideoOutSetContentType","nid":"oUGLWJNfVwM"}
@@ -30403,6 +30450,8 @@
 {"name":"sceNetNtohl","nid":"pQGpHYopAIY"}
 {"name":"sceNetBweStartInternetConnectionTestBandwidthTestIpcInt","nid":"pQLJV5SEAqk"}
 {"name":"WKBundleSetAuthorAndUserStylesEnabled","nid":"pQYlY0YQm3w"}
+{"name":"sceNpHasEAAccessSubscriptionAbortRequest","nid":"pQfYTZHznMc"}
+{"name":"sceKernelKernelHeapUsage2","nid":"pQiLz-exzR4"}
 {"name":"_ZN9Inspector38ScriptProfilerBackendDispatcherHandlerD2Ev","nid":"pQktOxWPJUs"}
 {"name":"_ZN7WebCore6JSFile15subspaceForImplERN3JSC2VME","nid":"pQntjcFYZZo"}
 {"name":"udat_clone_67","nid":"pQtHunes6DY"}
@@ -30473,6 +30522,7 @@
 {"name":"WKPageHasSelectedRange","nid":"pY1NNqZbJ+4"}
 {"name":"WKPageWillHandleHorizontalScrollEvents","nid":"pYHt5lL67G8"}
 {"name":"_ZN9Inspector17ScriptDebugServerD1Ev","nid":"pYX+BazQZ2A"}
+{"name":"mono_cpu_count","nid":"pYes0XhDrSE"}
 {"name":"sceAgcDcbDrawIndirectMultiGetSize","nid":"pYoKs3lPy88"}
 {"name":"WKRenderLayerGetNegativeZOrderList","nid":"pYwJJhTpTSY"}
 {"name":"sceUserServiceIsKratosUser","nid":"pZL154KvMjU"}
@@ -31296,6 +31346,7 @@
 {"name":"WKBackForwardListGetForwardItem","nid":"r2P4v9m3K3s"}
 {"name":"sceUserServiceGetVolumeForMorpheusSidetone","nid":"r2QuHIT8u9I"}
 {"name":"_ZN9Inspector29SupplementalBackendDispatcherC2ERNS_17BackendDispatcherE","nid":"r2RAGCixu6c"}
+{"name":"scePadSetVibrationRawStrength","nid":"r2S7Nuicg8s"}
 {"name":"YGWrapToString","nid":"r2eb0xi4zjE"}
 {"name":"_ZN3sce3Xml3Dom6NodeIdC2EPvS3_b","nid":"r2rDWToC1MQ"}
 {"name":"_ZN9Inspector25NetworkFrontendDispatcher15loadingFinishedERKN3WTF6StringEdPS3_NS1_6RefPtrINS_8Protocol7Network7MetricsENS1_13DumbPtrTraitsIS9_EEEE","nid":"r31jn2QrKSU"}
@@ -31476,6 +31527,7 @@
 {"name":"sceShellCoreUtilSetVRBaseMatRectangles","nid":"rLpqhn6NUP8"}
 {"name":"_ZNK7WebCore16HTMLInputElement13valueAsNumberEv","nid":"rLsPBLktI-A"}
 {"name":"__fixunsdfti","nid":"rLuypv9iADw"}
+{"name":"ReadFile","nid":"rM01bNYVd60"}
 {"name":"u_strcasecmp_67","nid":"rMByn5JGEn0"}
 {"name":"sceSdmaOpen","nid":"rMaiuPQsNoM"}
 {"name":"mono_assembly_load","nid":"rMbGu0HyUlc"}
@@ -32195,6 +32247,7 @@
 {"name":"_ZN9Inspector15ScriptCallFrameC1ERKN3WTF6StringES4_mjj","nid":"si5AmqiLgyw"}
 {"name":"png_longjmp","nid":"si5cGkRLSH8"}
 {"name":"umutablecptrie_buildImmutable_67","nid":"si6oSGibQe0"}
+{"name":"sceMediaFwMediaKeysSetServerCertificate2","nid":"siSe0IdqHe0"}
 {"name":"_ZN7WebCore14ScrollableArea27scrollToOffsetWithAnimationERKNS_10FloatPointENS_14ScrollClampingE","nid":"siWkeyN1Q9w"}
 {"name":"_ZN3JSC22getInt32ArrayClassInfoEv","nid":"siYafTIfQdU"}
 {"name":"_ZN6webrtc11FileWrapper5WriteEPKvm","nid":"siZf-CzSPH4"}
@@ -32527,6 +32580,7 @@
 {"name":"ubrk_previous","nid":"tGeOQLpMGgA"}
 {"name":"mono_mempool_destroy","nid":"tGkzQrFgT3s"}
 {"name":"FT_Get_Glyph_Name","nid":"tGmYdLIYT98"}
+{"name":"mmap2","nid":"tGtH2GTWbyE"}
 {"name":"_ZNK9Inspector28InspectorScriptProfilerAgent18isAlreadyProfilingEv","nid":"tH-+IbGsGNE"}
 {"name":"_ZN7WebCore11JSDOMWindow14queueMicrotaskERN3JSC14JSGlobalObjectERNS1_9CallFrameE","nid":"tHCoD1Tx+ac"}
 {"name":"sceNpMatching2SignalingGetConnectionStatus","nid":"tHD5FPFXtu4"}
@@ -33919,6 +33973,7 @@
 {"name":"sceRudpGetMaxSegmentSize","nid":"vfrL8gPlm2Y"}
 {"name":"sceAvSettingGetDetailedHdcpStatus","nid":"vfzFZDaFuKU"}
 {"name":"_ZNK3WTF7SecondsmiENS_13MonotonicTimeE","nid":"vg-JBVgN8pE"}
+{"name":"mono_thread_internal_current","nid":"vgDnfPH8F3E"}
 {"name":"_ZN3JSC13RuntimeMethod18getOwnPropertySlotEPNS_8JSObjectEPNS_14JSGlobalObjectENS_12PropertyNameERNS_12PropertySlotE","nid":"vgLupZuxUEQ"}
 {"name":"sceMediaFwVideoTrackGetLanguage","nid":"vgbI+qwkpGg"}
 {"name":"_ZN7WebCore16FrameLoadRequestD2Ev","nid":"vgcKWwf4kk4"}
@@ -34818,6 +34873,7 @@
 {"name":"_ZThn16_N9Inspector22InspectorDebuggerAgent8stepOverERN3WTF6StringE","nid":"x6kUDye23Qw"}
 {"name":"sceUserServiceGetThemeEntitlementId","nid":"x6m8P9DBPSc"}
 {"name":"_ZNK7WebCore8FormData13lengthInBytesEv","nid":"x72MwKv0+Bo"}
+{"name":"sceUpsrvUpdateStartUpdateModeWithParam","nid":"x72adjkymuQ"}
 {"name":"sceNpManagerIntGetSandboxState","nid":"x7Dni-pgA+c"}
 {"name":"sceAmprMeasureCommandSizeWriteAddressFromTimeCounterOnCompletion","nid":"x7SQEXfeovg"}
 {"name":"sceVideoStreamingEngineGetLoop","nid":"x7Vr+deBKo0"}
@@ -35444,6 +35500,7 @@
 {"name":"_ZNSt8numpunctIcEC2EPKcmb","nid":"yIn4l8OO1zA"}
 {"name":"WKPageCallAfterNextPresentationUpdate","nid":"yIrZrdWAxtc"}
 {"name":"_ZN7WebCore24JSDeprecatedCSSOMCounter9toWrappedERN3JSC2VMENS1_7JSValueE","nid":"yJQmnLc1uBU"}
+{"name":"scePadIsInitialUserHandle","nid":"yJZwI7CZKv0"}
 {"name":"u_fgetc_67","nid":"yJeqoME3WSg"}
 {"name":"sceNpSessionSignalingGetConnectionInfo","nid":"yJw2m6UWDYU"}
 {"name":"_ZN7WebCore16parseHTMLIntegerEN3WTF10StringViewE","nid":"yK8R9Noa6Yg"}
@@ -35473,6 +35530,7 @@
 {"name":"_ZN7WebCore21BlobDataFileReference24expectedModificationTimeEv","nid":"yMs5663vXes"}
 {"name":"_ZN7WebCore8Document13createCommentERKN3WTF6StringE","nid":"yMsg1aIvVeQ"}
 {"name":"_ZN9Inspector14FrontendRouterC2Ev","nid":"yMsrqRsZRLs"}
+{"name":"sceAvcap2AllocateVideoEncoderMemory2","nid":"yN0w4tWivqs"}
 {"name":"ASN1_OBJECT_free","nid":"yN4VzSIfYfs"}
 {"name":"sceAvPlayerVprintf","nid":"yN7Jhuv8g24"}
 {"name":"_ZNK3WTF9MediaTimeleERKS0_","nid":"yN9P84N3C9k"}
@@ -35942,6 +36000,7 @@
 {"name":"_ZN9Inspector25NetworkFrontendDispatcher19responseInterceptedERKN3WTF6StringENS1_6RefPtrINS_8Protocol7Network8ResponseENS1_13DumbPtrTraitsIS8_EEEE","nid":"zC849BE7MJk"}
 {"name":"_ZNSt8numpunctIcE7_GetcatEPPKNSt6locale5facetEPKS1_","nid":"zCB24JBovnQ"}
 {"name":"sceNpMatching2CreateJoinRoom","nid":"zCWZmXXN600"}
+{"name":"EVP_MD_block_size","nid":"zCa75KLWWn4"}
 {"name":"_ZN7WebCore10ISOFullBoxC1ERKS0_","nid":"zCgYva0hGps"}
 {"name":"_ZNK7WebCore11MediaPlayer8fileSizeEv","nid":"zCqaT-DJauA"}
 {"name":"_ZNK3sce2np8msg_pack16MsgPackArrayImpl8GetEntryEjPPNS2_5EntryE","nid":"zCudJerqqx0"}
@@ -36329,6 +36388,7 @@
 {"name":"sceVdecCoreQueryComputeResourceInfo","nid":"zwcpjJ7WUgQ"}
 {"name":"_ZNK3WTF6String4utf8ENS_14ConversionModeE","nid":"zwvAXAgGj84"}
 {"name":"u_memcmp","nid":"zx0jGj+nSIM"}
+{"name":"sceKernelGetResidentFmemCount2","nid":"zx9n-9bt7IA"}
 {"name":"ubrk_open_67","nid":"zx9n5GVq4pI"}
 {"name":"sceHttp2SetRequestServerName","nid":"zx9s1Lk+O90"}
 {"name":"vsyslog","nid":"zxecOOffO68"}

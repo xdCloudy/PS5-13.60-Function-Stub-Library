@@ -5,9 +5,9 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 59 |
-| Named | 39 |
-| Unresolved or withheld | 20 |
-| Qualified stub candidate records | 32 |
+| Named | 42 |
+| Unresolved or withheld | 17 |
+| Qualified stub candidate records | 35 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
 
@@ -38,6 +38,6 @@ A bounded preview; the inventory file contains the complete library.
 | `4S4mGtzLmyI` | `sceAvcap2SetAudioOutVolume` |
 | `4jwUgirLFrA` | `sceAvcap2OpenVideo` |
 | `8CGNCwBsItI` | `sceAvcap2Start` |
+| `8HjqtZXLvek` | `sceAvcap2GetNonVclNalUnitStream3` |
 | `8j-pBJmjL7M` | `sceAvcap2ReadPadSpk` |
 | `96UQhNnBlxc` | `sceAvcap2FreeEncoderVideoMemory` |
-| `BPgql5PsMKo` | `sceAvcap2SetMicVolume` |

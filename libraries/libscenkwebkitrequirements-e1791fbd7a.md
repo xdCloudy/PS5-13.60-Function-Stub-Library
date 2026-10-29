@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 214 |
-| Named | 141 |
-| Unresolved or withheld | 73 |
+| Named | 142 |
+| Unresolved or withheld | 72 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -36,10 +36,10 @@ A bounded preview; the inventory file contains the complete library.
 | `-ZY+4CCqv7Y` | `psl_suffix_exception_count` |
 | `-gJRMHTKjwI` | `psl_free` |
 | `-n7NBjjuabo` | `sqlite3_column_text` |
+| `-paPKZnNT0Q` | `sqlite3_config` |
 | `0-24WRoyyAg` | `sqlite3_extended_result_codes` |
 | `03w8Wi7eD-A` | `sqlite3_step` |
 | `0NzQg1z-fGM` | `xmlStopParser` |
 | `0OeraXVXfzM` | `sqlite3_sql` |
 | `0Uek9fMv9z4` | `sqlite3_result_error` |
 | `0y370-q87ug` | `sqlite3_column_type` |
-| `1AYeyBFz+eM` | `xmlSAX2EntityDecl` |

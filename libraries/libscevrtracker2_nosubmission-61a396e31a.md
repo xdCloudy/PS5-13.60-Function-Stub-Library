@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 28 |
-| Named | 5 |
-| Unresolved or withheld | 23 |
+| Named | 6 |
+| Unresolved or withheld | 22 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -29,6 +29,7 @@ A bounded preview; the inventory file contains the complete library.
 
 | NID | Symbol |
 |---|---|
+| `B2vw+s-0Dfo` | `sceVrTracker2GetMapQualityEx` |
 | `G2PWj1HLqn8` | `sceVrTracker2GetRelocalizerConfig` |
 | `NBhWy+Gl0tY` | `sceVrTracker2GetRawCameraMeshSize` |
 | `ark13GkiskA` | `sceVrTracker2GetRelocalizerResult` |

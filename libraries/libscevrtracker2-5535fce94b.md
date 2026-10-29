@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 92 |
-| Named | 48 |
-| Unresolved or withheld | 44 |
+| Named | 51 |
+| Unresolved or withheld | 41 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -29,15 +29,15 @@ A bounded preview; the inventory file contains the complete library.
 
 | NID | Symbol |
 |---|---|
+| `-HFx+dnDSOI` | `sceVrTracker2GetResultForPlayAreaEx` |
 | `-YvjOUph8B0` | `sceVrTracker2GetMapQuality` |
 | `-e7A3rAM3Yk` | `SceVrTracker2DepthCubeMapUpdate` |
 | `1DwROxtuANs` | `sceVrTracker2GetPlayAreaInformation` |
+| `1m6DD9BBmSE` | `sceVrTracker2LocateCoordinateSystemEx` |
 | `3gQncidodmw` | `sceVrTracker2IrGetDebugRawImage` |
 | `4LNTLivfRuA` | `sceVrTracker2SetPlayAreaData2` |
 | `6Jy73SRfG-o` | `sceVrTracker2Initialize` |
 | `74IXIMe+Lto` | `sceVrTracker2SetPlayAreaData` |
 | `914+9oJxNts` | `sceVrTracker2GetPlayAreaResult` |
 | `AeBtEIE0idk` | `sceVrTracker2RefineMap` |
-| `DBa3wov7dKQ` | `sceVrTracker2ActivateMap` |
-| `DSTergmOvvE` | `sceVrTracker2CheckDeviceIsInsidePlayAreaBoundary` |
-| `Dog+g25QYjw` | `sceVrTracker2RegisterDevice` |
+| `B7hPwvvg79E` | `sceVrTracker2GetPlayAreaOrientedBoundingBoxEx` |

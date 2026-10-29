@@ -1328,7 +1328,7 @@
     {
       "generated": 0,
       "library": "libReactNative.Modules.Vsh.WebAppLauncher",
-      "named": 61,
+      "named": 63,
       "qualified": 0,
       "total": 138
     },
@@ -1405,8 +1405,8 @@
     {
       "generated": 0,
       "library": "libSceAgc",
-      "named": 241,
-      "qualified": 0,
+      "named": 243,
+      "qualified": 2,
       "total": 248
     },
     {
@@ -1447,7 +1447,7 @@
     {
       "generated": 0,
       "library": "libSceAgcVsh",
-      "named": 237,
+      "named": 239,
       "qualified": 0,
       "total": 245
     },
@@ -1559,8 +1559,8 @@
     {
       "generated": 0,
       "library": "libSceAppInstUtil",
-      "named": 124,
-      "qualified": 0,
+      "named": 132,
+      "qualified": 8,
       "total": 184
     },
     {
@@ -1699,8 +1699,8 @@
     {
       "generated": 0,
       "library": "libSceAvSetting",
-      "named": 127,
-      "qualified": 0,
+      "named": 128,
+      "qualified": 1,
       "total": 180
     },
     {
@@ -1713,8 +1713,8 @@
     {
       "generated": 0,
       "library": "libSceAvcap2",
-      "named": 39,
-      "qualified": 32,
+      "named": 42,
+      "qualified": 35,
       "total": 59
     },
     {
@@ -2523,7 +2523,7 @@
       "total": 3
     },
     {
-      "generated": 0,
+      "generated": 72,
       "library": "libSceIcu",
       "named": 661,
       "qualified": 72,
@@ -2742,7 +2742,7 @@
     {
       "generated": 0,
       "library": "libSceLibreSSl3",
-      "named": 638,
+      "named": 641,
       "qualified": 0,
       "total": 665
     },
@@ -2805,8 +2805,8 @@
     {
       "generated": 0,
       "library": "libSceMbus",
-      "named": 128,
-      "qualified": 8,
+      "named": 131,
+      "qualified": 11,
       "total": 143
     },
     {
@@ -2838,10 +2838,10 @@
       "total": 8
     },
     {
-      "generated": 135,
+      "generated": 139,
       "library": "libSceMediaFrameworkInterface",
-      "named": 135,
-      "qualified": 135,
+      "named": 139,
+      "qualified": 139,
       "total": 225
     },
     {
@@ -2938,7 +2938,7 @@
     {
       "generated": 0,
       "library": "libSceNKWebKitRequirements",
-      "named": 141,
+      "named": 142,
       "qualified": 0,
       "total": 214
     },
@@ -3190,8 +3190,8 @@
     {
       "generated": 0,
       "library": "libSceNpPartner001",
-      "named": 4,
-      "qualified": 0,
+      "named": 5,
+      "qualified": 1,
       "total": 5
     },
     {
@@ -3400,7 +3400,7 @@
     {
       "generated": 0,
       "library": "libSceNpUtility",
-      "named": 98,
+      "named": 100,
       "qualified": 0,
       "total": 102
     },
@@ -3456,8 +3456,8 @@
     {
       "generated": 0,
       "library": "libSceOpusCeltEnc",
-      "named": 14,
-      "qualified": 3,
+      "named": 15,
+      "qualified": 4,
       "total": 24
     },
     {
@@ -3484,8 +3484,8 @@
     {
       "generated": 0,
       "library": "libScePad",
-      "named": 190,
-      "qualified": 0,
+      "named": 194,
+      "qualified": 4,
       "total": 212
     },
     {
@@ -3547,14 +3547,14 @@
     {
       "generated": 0,
       "library": "libScePlayReady4",
-      "named": 86,
-      "qualified": 2,
+      "named": 89,
+      "qualified": 5,
       "total": 103
     },
     {
       "generated": 0,
       "library": "libScePlayReady4L",
-      "named": 86,
+      "named": 88,
       "qualified": 0,
       "total": 96
     },
@@ -3610,7 +3610,7 @@
     {
       "generated": 0,
       "library": "libScePosixForWebKit",
-      "named": 37,
+      "named": 38,
       "qualified": 0,
       "total": 38
     },
@@ -3806,8 +3806,8 @@
     {
       "generated": 0,
       "library": "libSceSaveData",
-      "named": 104,
-      "qualified": 7,
+      "named": 105,
+      "qualified": 8,
       "total": 123
     },
     {
@@ -4016,8 +4016,8 @@
     {
       "generated": 0,
       "library": "libSceSysCore",
-      "named": 78,
-      "qualified": 6,
+      "named": 79,
+      "qualified": 7,
       "total": 87
     },
     {
@@ -4422,7 +4422,7 @@
     {
       "generated": 0,
       "library": "libSceUpdateService",
-      "named": 49,
+      "named": 50,
       "qualified": 1,
       "total": 73
     },
@@ -4471,7 +4471,7 @@
     {
       "generated": 0,
       "library": "libSceUserService",
-      "named": 577,
+      "named": 579,
       "qualified": 0,
       "total": 693
     },
@@ -4786,7 +4786,7 @@
     {
       "generated": 0,
       "library": "libSceVideoOut_nosubmission",
-      "named": 30,
+      "named": 31,
       "qualified": 0,
       "total": 51
     },
@@ -4812,7 +4812,7 @@
       "total": 48
     },
     {
-      "generated": 0,
+      "generated": 58,
       "library": "libSceVideoStreamingEngine",
       "named": 70,
       "qualified": 58,
@@ -4847,7 +4847,7 @@
       "total": 63
     },
     {
-      "generated": 0,
+      "generated": 84,
       "library": "libSceVnaInternal",
       "named": 84,
       "qualified": 84,
@@ -4870,7 +4870,7 @@
     {
       "generated": 0,
       "library": "libSceVoiceChat",
-      "named": 32,
+      "named": 34,
       "qualified": 0,
       "total": 37
     },
@@ -4933,14 +4933,14 @@
     {
       "generated": 0,
       "library": "libSceVrTracker2",
-      "named": 48,
+      "named": 51,
       "qualified": 0,
       "total": 92
     },
     {
       "generated": 0,
       "library": "libSceVrTracker2_nosubmission",
-      "named": 5,
+      "named": 6,
       "qualified": 0,
       "total": 28
     },
@@ -5185,7 +5185,7 @@
     {
       "generated": 0,
       "library": "libkernel",
-      "named": 1352,
+      "named": 1357,
       "qualified": 0,
       "total": 1511
     },
@@ -5430,7 +5430,7 @@
     {
       "generated": 0,
       "library": "libmonosgen",
-      "named": 933,
+      "named": 937,
       "qualified": 0,
       "total": 1087
     },
@@ -5543,14 +5543,16 @@
   "logical_libraries": 791,
   "metrics": {
     "fully_validated_stubs": 0,
-    "generated_throwing_stubs": 745,
+    "generated_throwing_stubs": 963,
     "published_anyps5_stubs": 0,
-    "qualified_stub_records": 13365,
-    "qualified_unique_stub_candidates": 10718,
-    "shared_library_alias_records": 2647
+    "qualified_stub_records": 13397,
+    "qualified_unique_stub_candidates": 10750,
+    "shared_library_alias_records": 2647,
+    "statically_prepared_stubs": 963,
+    "unresolved_system_export_records": 9989
   },
-  "named_library_stub_records": 46517,
-  "named_stub_identities": 36353,
+  "named_library_stub_records": 46581,
+  "named_stub_identities": 36413,
   "scope_records": {
     "existing_firmware_system_library": 15703,
     "existing_upstream_placeholder_library": 21799,
@@ -5562,6 +5564,6 @@
     "shell_specific_review": 1659
   },
   "total_export_records": 314038,
-  "unresolved_or_withheld_records": 267521,
+  "unresolved_or_withheld_records": 267457,
   "validation_status": "incomplete"
 }
