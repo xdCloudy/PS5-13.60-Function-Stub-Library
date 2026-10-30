@@ -1,55 +1,106 @@
-# PS5 13.60 — live readiness
+# PS5 13.60 — readiness dashboard
 
-Generated from the checked-in inventory and a read-only AnyPS5 upstream checkout.
-No executable stubs or firmware are included here.
+**What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-## Export inventory and name recovery
+**Last refresh:** 2026-10-30T05:42:47+00:00 · **AnyPS5 main:** [42d992b02adb](https://github.com/boykopovar/AnyPS5/commit/42d992b02adb1729a9b0488d444ecafc81c0a5a8)
 
-| Metric | Count |
-|---|---:|
-| Export library/NID identities | 314,038 |
-| Firmware 13.60 observed exports | 302,338 |
-| Historical-only references | 11,700 |
-| Logical libraries | 791 |
-| Published named records | 47,085 (14.99%) |
-| Strict NID/name reverified records | 39,966 |
-| Named records requiring status/hash reconciliation | 7,119 |
-| Unresolved or withheld records | 266,953 |
-| Unique NIDs across all scopes | 300,846 |
-| Extra cross-library NID records (not deletions) | 12,302 |
-| Repeated library/NID identities across partitions | 890 |
+## At a glance
 
-## Stub progress — distinct stages
-
-| Measure | Count | Evidence level |
+| Workstream | Progress | Meaning |
 |---|---:|---|
-| Qualified unique NIDs (recomputed) | 10,749 | Named inventory assessment, excluding withheld identities |
-| Strictly rehashed qualified unique NIDs | 9,158 | Stronger gate for upstream matching || Generated throwing stubs | 963 | Saved local snapshot |
-| Offline statically prepared | 963 | Saved local snapshot |
-| Fully validated | 0 | Saved local snapshot |
-| Published to AnyPS5 | 0 | Saved historical snapshot; **not live** |
-| Qualified NIDs with matching AnyPS5 main source definitions | 0 | Source scan, not export/runtime validation |
-| Additional qualified NIDs seen in open-PR additions | 1,105 | Best-effort PR patch scan |
-| Qualified NIDs not seen by these scans | 9,644 | Not proof they are missing upstream |
-| Additional upstream NID observations needing review | 10,078 | No unverified names published |
+| **Recovered names** | **47,085 / 314,038 (15.0%)** | Inventory rows with a published name, not necessarily an ABI signature |
+| **AnyPS5 main (live source matches)** | **7,753 library/NID identities** | Matching definitions already present in merged upstream source; not proof of runtime functionality |
+| **Qualified throwing-stub candidates** | **10,749 unique NIDs** | Current eligible research backlog, not implemented functions |
+| **Locally generated stubs** | **963 / 10,749 (9.0%)** | Historical snapshot of throwing placeholders, not live upstream coverage |
 
-**Saved qualified-count discrepancy:** 10,750 published versus 10,749 recomputed (delta +1). This report does not silently modify canonical assessments.
+### Name recovery
 
-## Upstream observation
+`███░░░░░░░░░░░░░░░░░░░` **15.0%** — 266,953 unresolved/withheld records.
 
-- AnyPS5 main revision: `7d4006607aca6f71e80f6352d94e55b314ebaf41`
-- Open PRs observed: 1481
-- Open PRs scanned: 400
-- Open PR audit complete: NO — do not treat reservations as exhaustive
+### Local stub generation (saved snapshot)
 
-## Source and safety limits
+`██░░░░░░░░░░░░░░░░░░░░` **9.0%** — placeholders commonly throw rather than implement behaviour.
 
-Matching a source definition does not confirm its registration, exported NID, ABI, correct runtime behavior, or merge status. A throwing marker indicates only a source-level NotImplemented call. Multiple libraries sharing a NID are preserved until ownership and equivalence have been independently resolved.
+## How to interpret the pipeline
 
-Qualification counts reflect existing catalog assessments with withheld names excluded; strictly rehashed matches are a separate subset, not the full qualification inventory.
+| Gate | Count | Interpretation |
+|---|---:|---|
+| Published named export records | 47,085 | Has an associated name, but does not prove correct types/ABI |
+| Strictly rehashed named records | 39,966 | Stronger local NID/name/status evidence |
+| Qualified unique NIDs | 10,749 | Existing candidate assessments after withholding filter |
+| Strictly rehashed qualified NIDs | 9,158 | Conservative subset used for exact source matching |
+| Locally generated throwing stubs (saved) | 963 | Not necessarily compiled or merged |
+| Statically prepared (saved) | 963 | Historical offline gates |
+| Fully validated (saved) | 0 | Historical build/runtime validation only |
+| **Present in AnyPS5 main source (live)** | **7,753** | Matched and rehashed library/NID/name in current upstream main; separate from qualified backlog |
+| With NotImplemented marker (live) | 4,551 | Source-level placeholder, not working behaviour |
+| With nonthrowing C ABI body (live) | 3,202 | No matching NotImplemented marker; **not** necessarily a tested implementation |
 
-The strict rehash gate includes only records with verified_nid_binding status and a matching local SHA1 NID; other named records are withheld from automatic upstream reconciliation until separately audited.
+**Qualification correction:** the saved report listed 10,750, while the filtered count is 10,749 (difference +1 from saved). Separately, 7,119 named records need strict name/NID/status evidence review. These must not be silently promoted. The old `published to AnyPS5 = 0` is an **archived snapshot** and must not be treated as the current upstream count.
 
-Upstream-only observations are stored as **NID-only review candidates** in [upstream-review-queue.jsonl](reports/upstream-review-queue.jsonl); symbols cannot be promoted to verified names or qualified stubs without independent review.
+## AnyPS5 upstream — what is already being worked on?
 
-See [machine-readable progress](reports/progress.json), [library breakdown](reports/library-progress.md), [AnyPS5 integration rules](ANYPS5.md), and [publication policy](DATA_POLICY.md).
+| Evidence | Count | Meaning |
+|---|---:|---|
+| **Catalogued names present on merged AnyPS5 main** | **7,753 records / 7,746 unique NIDs** | **Live source evidence**, not the saved 0-counter |
+| Marked throwing/unimplemented | 4,551 | NotImplemented marker is visible in body |
+| Other nonthrowing source definitions | 3,202 | A source body exists; not necessarily correct, wired up or validated |
+| Qualified NIDs also in main source | 0 | Potential existing coverage |
+| Additional qualified NIDs seen in open-PR additions | 184 | Possible reservations, not yet merged |
+| Qualified NIDs not observed by scans | 10,565 | **Not proof of no overlap** |
+
+### Open PR coverage
+
+`████████░░░░░░░░░░░░░░` **540 / 1,470 (36.7%)** current open PR heads indexed.
+
+**Partial:** 930 PR heads remain. Scheduled runs accumulate results in an SHA-keyed cache.
+Cache hits: 0 · newly scanned: 540 · failed checks: 10.
+**Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
+
+## Automatically imported AnyPS5 source evidence
+
+**8,192** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **1** correspond to unnamed identities already in this firmware catalogue.
+
+The proposed name, NID and source location are searchable, but the name is **not independently verified against firmware**, nor are ABI or behaviour confirmed. Publication-filtered strings are not promoted. [NID-only review queue](reports/upstream-review-queue.jsonl).
+
+## Duplicates are review targets, not deletion instructions
+
+| Identity measure | Count |
+|---|---:|
+| Indexed export records | 314,038 |
+| Distinct NID strings globally, across all scopes | 300,846 |
+| Extra cross-library NID records | 12,302 |
+| Repeated library/NID across inventory partitions | 890 |
+
+Shared NIDs can be valid exports owned by different libraries. The canonical export inventory preserves their identities. Managed/application and historical-only records are **not automatically AnyPS5 system-library stubs**.
+
+## Which libraries should be reviewed next?
+
+Top 12 libraries sorted by assessed qualified records not seen in current main or scanned PR additions. This is a triage estimate, not a verified patch backlog.
+
+| Library | Qualified pending records | Main matched names (all statuses) | Main pending overlaps | Open PR pending overlaps | Not observed pending |
+|---|---:|---:|---:|---:|---:|
+| libSceNKWebKit | 8,614 | 125 | 0 | 0 | 8,614 |
+| libSceJsc | 2,951 | 84 | 0 | 0 | 2,951 |
+| libSceNpCommon | 782 | 263 | 0 | 17 | 765 |
+| libSceMediaFrameworkInterface | 139 | 0 | 0 | 0 | 139 |
+| libSceVideoOut | 133 | 44 | 0 | 0 | 133 |
+| libSceIcu | 72 | 0 | 0 | 0 | 72 |
+| libSceVideoStreamingEngine | 58 | 12 | 0 | 0 | 58 |
+| libSceEsvm | 45 | 0 | 0 | 0 | 45 |
+| libSceFont | 44 | 165 | 0 | 0 | 44 |
+| libSceAvcap2 | 35 | 7 | 0 | 0 | 35 |
+| libSceXml | 33 | 128 | 0 | 0 | 33 |
+| libSceDataTransfer | 28 | 51 | 0 | 0 | 28 |
+
+See [all 791 libraries](reports/library-progress.md) or [machine-readable metrics](reports/progress.json) for the full breakdown.
+
+## How it updates
+
+1. This repo's pushes refresh inventory and report files.
+2. Scheduled checks inspect AnyPS5 main and progressively scan **all** open PR heads, reusing cached results only when the head SHA remains unchanged.
+3. Public source names are staged for audit, without silently rewriting canonical names or qualification.
+4. Matching current AnyPS5 main definitions updates the external-source mirror and the live stage counts automatically; no manual movement between snapshot categories is needed.
+5. The final build, ABI, ownership and full pre-submission collision check remains a separate gate.
+
+[How synchronization works](UPSTREAM_SYNC.md) · [Integration policy](ANYPS5.md) · [Publication controls](DATA_POLICY.md)
