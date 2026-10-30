@@ -263,7 +263,7 @@ def main():
     pending_qualified_nids = {k[1] for k in pending_qualified} - main_qualified_nids
     total_qualified = len(qualified_nids)
     unaccounted = qualified_nids - main_qualified_nids - pending_qualified_nids
-    candidate_records = sorted(unmatched | pr_candidates)
+    candidate_records = sorted(unmatched | set(pr_candidates))
     # Keep old generated-stub counts labeled as saved. Do not fabricate fresh build/CI evidence.
     qualified_saved = old["metrics"]["qualified_unique_stub_candidates"]
     discrepancy = qualified_saved - total_qualified
