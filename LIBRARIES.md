@@ -342,7 +342,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libmdbg_syscore](libraries/libmdbg_syscore-53c596f5b7.md) | 191 | 148 | 5 |
 | [libmono-btls-shared](libraries/libmono-btls-shared-384a3700a1.md) | 212 | 205 | 0 |
 | [libmono-profiler-log](libraries/libmono-profiler-log-7860053204.md) | 2 | 2 | 0 |
-| [libmonosgen](libraries/libmonosgen-89a314ce00.md) | 1,087 | 937 | 0 |
+| [libmonosgen](libraries/libmonosgen-89a314ce00.md) | 1,087 | 964 | 0 |
 | [libmonosgen-2.0](libraries/libmonosgen-2-0-397d0b15ce.md) | 963 | 963 | 0 |
 | [libSceM4aacEnc](libraries/libscem4aacenc-b193408c34.md) | 18 | 17 | 0 |
 | [libSceMat2Enc](libraries/libscemat2enc-7f034e9009.md) | 4 | 0 | 0 |
