@@ -92,6 +92,19 @@ class Source320Tests(unittest.TestCase):
         proposals, _=classify(obs,{})
         self.assertTrue(all(p["status"]=="conflicting_source_names" for p in proposals))
 
+
+    def test_managed_library_suffix_alias_is_not_new_identity(self):
+        nid = nid_for("rgctx_fetch_trampoline_mrgctx_40")
+        obs = [{"library":"mscorlib.dll","nid":nid,
+                "name":"rgctx_fetch_trampoline_mrgctx_40",
+                "source_file":"mscorlib.dll.c"}]
+        known = {("mscorlib",nid): {"library":"mscorlib",
+                 "name":"rgctx_fetch_trampoline_mrgctx_40",
+                 "name_status":"verified_nid_binding"}}
+        proposals, metrics = classify(obs, known)
+        self.assertEqual(proposals, [])
+        self.assertEqual(metrics["statuses"]["already_indexed_and_named"], 1)
+
     def test_full_reconciliation_is_idempotent(self):
         with tempfile.TemporaryDirectory() as tmp:
             base=Path(tmp); repo=base/"repo"; src=base/"source"
