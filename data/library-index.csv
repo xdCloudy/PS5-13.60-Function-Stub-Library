@@ -364,7 +364,7 @@ libSceJpegDec,firmware-13.60,6,6,data/firmware-13.60/libscejpegdec-f773794b79.js
 libSceJpegDec_jvm,firmware-13.60,1,1,data/firmware-13.60/libscejpegdec_jvm-2d4c9de833.jsonl
 libSceJpegEnc,firmware-13.60,4,4,data/firmware-13.60/libscejpegenc-46f7798020.jsonl
 libSceJpegParser,firmware-13.60,7,1,data/firmware-13.60/libscejpegparser-3fc99ffc0b.jsonl
-libSceJsc,firmware-13.60,4439,3108,data/firmware-13.60/libscejsc-80e21a2f59.jsonl
+libSceJsc,firmware-13.60,4439,3110,data/firmware-13.60/libscejsc-80e21a2f59.jsonl
 libSceJsi-0.70,firmware-13.60,265,0,data/firmware-13.60/libscejsi-0-70-e7d0945620.jsonl
 libSceJson,firmware-13.60,88,88,data/firmware-13.60/libscejson-4373222ebf.jsonl
 libSceJson2,firmware-13.60,215,215,data/firmware-13.60/libscejson2-8c5e612736.jsonl

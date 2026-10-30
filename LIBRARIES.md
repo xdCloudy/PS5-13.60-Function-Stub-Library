@@ -274,7 +274,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceJpegDec_jvm](libraries/libscejpegdec_jvm-2d4c9de833.md) | 1 | 1 | 0 |
 | [libSceJpegEnc](libraries/libscejpegenc-46f7798020.md) | 4 | 4 | 0 |
 | [libSceJpegParser](libraries/libscejpegparser-3fc99ffc0b.md) | 11 | 5 | 0 |
-| [libSceJsc](libraries/libscejsc-80e21a2f59.md) | 5,446 | 4,115 | 2,952 |
+| [libSceJsc](libraries/libscejsc-80e21a2f59.md) | 5,446 | 4117 | 2,952 |
 | [libSceJsi-0.70](libraries/libscejsi-0-70-e7d0945620.md) | 265 | 0 | 0 |
 | [libSceJson](libraries/libscejson-4373222ebf.md) | 88 | 88 | 0 |
 | [libSceJson2](libraries/libscejson2-8c5e612736.md) | 215 | 215 | 0 |
