@@ -58,7 +58,7 @@ def parse_forwarders(source: str, source_file: str) -> tuple[list[dict], list[di
             observations.append({**common, "name": symbol})
     # Registration not parseable? A nonempty source with dlsym calls but no
     # matches is NOT accepted as an empty source inventory.
-    possible = len(re.findall(r'\bsprx_dlsym\s*\(', source))
+    possible = len(re.findall(r'\bif\s*\(\s*sprx_dlsym\s*\(', source))
     if possible > len(observations) + len(rejected):
         rejected.append({"source_file": source_file,
                          "reason": "unparsed_dlsym_registration",
