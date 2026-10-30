@@ -49,6 +49,37 @@ class ProgressiveOverlapTests(unittest.TestCase):
             self.assertEqual(meta["open_pr_scanned"],2)
             self.assertEqual(len(json.loads(cache.read_text())["prs"]),2)
 
+    def test_literal_export_alias_reserves_original_nid(self):
+        prs=[{"number":99,"head":{"sha":"aliashead"},
+              "updated_at":"2026-10-30T00:00:00Z"}]
+        def mock_fetch(url,token):
+            if "/pulls?state=open" in url:
+                return prs
+            return [{"filename":"core/libs/prx/libSceExample/Export.cpp",
+                     "patch":'@@ -0,0 +1 @@\n+APS5_EXPORT("H2e8t5ScQGc", helper_nid_no_patch);',
+                     "additions":1}]
+        with tempfile.TemporaryDirectory() as directory:
+            _,unknown,meta=scan_open_prs_cached(
+                "t",{},set(),nid_for,Path(directory)/"cache.json",10,mock_fetch)
+            self.assertEqual(unknown[("libsceexample","H2e8t5ScQGc")],{99})
+            self.assertTrue(meta["open_pr_coverage_complete"])
+            self.assertFalse(meta["open_pr_symbol_coverage_complete"])
+
+    def test_partial_nonempty_patch_is_not_accepted(self):
+        prs=[{"number":98,"head":{"sha":"truncated"},
+              "updated_at":"2026-10-30T00:00:00Z"}]
+        def mock_fetch(url,token):
+            if "/pulls?state=open" in url:
+                return prs
+            return [{"filename":"core/libs/prx/libSceExample/Export.cpp",
+                     "patch":"@@ -0,0 +1 @@\n+int APS5_VABI partial() {}",
+                     "additions":9}]
+        with tempfile.TemporaryDirectory() as directory:
+            _,_,meta=scan_open_prs_cached(
+                "t",{},set(),nid_for,Path(directory)/"cache.json",10,mock_fetch)
+            self.assertEqual(meta["open_pr_errors"],1)
+            self.assertFalse(meta["open_pr_coverage_complete"])
+
     def test_missing_patch_is_not_cached_as_safe(self):
         prs = [{"number":8,"head":{"sha":"h8"},"updated_at":"2026-10-30T00:00:00Z"}]
         def mock_fetch(url, token):
