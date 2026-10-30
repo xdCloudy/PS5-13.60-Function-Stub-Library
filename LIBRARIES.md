@@ -803,7 +803,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceUsbStorageAux](libraries/libsceusbstorageaux-9d4e5d2ebe.md) | 7 | 7 | 0 |
 | [libSceUsbStorageDialog](libraries/libsceusbstoragedialog-82fc91e3b4.md) | 7 | 7 | 0 |
 | [libSceUsbStorageForShellUI](libraries/libsceusbstorageforshellui-826a4d467f.md) | 69 | 21 | 0 |
-| [libSceUserService](libraries/libsceuserservice-ec97f04de9.md) | 693 | 579 | 0 |
+| [libSceUserService](libraries/libsceuserservice-ec97f04de9.md) | 693 | 591 | 0 |
 | [libSceUserServiceAudioFocus](libraries/libsceuserserviceaudiofocus-925eb40585.md) | 1 | 1 | 0 |
 | [libSceUserServiceForNpToolkit](libraries/libsceuserservicefornptoolkit-a1a43c2246.md) | 2 | 2 | 0 |
 | [libSceUserServiceForShellCore](libraries/libsceuserserviceforshellcore-0c9f6dca18.md) | 2 | 2 | 0 |

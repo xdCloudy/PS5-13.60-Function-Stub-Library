@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 693 |
-| Named | 579 |
-| Unresolved or withheld | 114 |
+| Named | 591 |
+| Unresolved or withheld | 102 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -43,3 +43,6 @@ A bounded preview; the inventory file contains the complete library.
 | `-7XgCmEwKrs` | `sceUserServiceIsSharePlayClientUser` |
 | `-YcNkLzNGmY` | `sceUserServiceGetNpEnv` |
 | `-c89vIPCwBg` | `sceUserServiceSetPadProfileDataHuntList` |
+| `-ebPm7QOhhM` | `sceUserServiceGetA11yControllerLedBrightness` |
+| `-jRGLt2Dbe4` | `sceUserServiceGetVoiceRecognitionTutorialState` |
+| `-sD02mFDBh4` | `sceUserServiceGetGamePresets` |
