@@ -46,7 +46,12 @@ jobs:
       - name: Rebuild report and collect upstream NID observations
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python tools/update_progress.py --upstream-dir ../AnyPS5
+        run: |
+          if [ "$GITHUB_REF_NAME" = "main" ]; then
+            python tools/update_progress.py --upstream-dir ../AnyPS5
+          else
+            python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
+          fi
       - name: Publish workflow summary
         run: |
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
