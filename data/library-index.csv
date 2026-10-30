@@ -751,7 +751,7 @@ libsceNpEulaDialog,firmware-13.60,9,9,data/firmware-13.60/libscenpeuladialog-3ed
 libverify,firmware-13.60,4,4,data/firmware-13.60/libverify-01b1134fa6.jsonl
 libwebrtc,firmware-13.60,412,352,data/firmware-13.60/libwebrtc-b0615fbda5.jsonl
 libwvoec,firmware-13.60,77,0,data/firmware-13.60/libwvoec-75861dc1a3.jsonl
-libzip,firmware-13.60,34,18,data/firmware-13.60/libzip-7a217c7878.jsonl
+libzip,firmware-13.60,34,22,data/firmware-13.60/libzip-7a217c7878.jsonl
 monoprofilerlog,firmware-13.60,1,0,data/firmware-13.60/monoprofilerlog-dd482786fb.jsonl
 mscorlib,firmware-13.60,23708,373,data/firmware-13.60/mscorlib-51872c7902.jsonl
 ulobjmgr,firmware-13.60,4,2,data/firmware-13.60/ulobjmgr-7c6be1d5eb.jsonl

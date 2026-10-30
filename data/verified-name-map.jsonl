@@ -36915,3 +36915,7 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"ZIP_InflateFully","nid":"0tRxq1I82CA"}
+{"name":"ZIP_ReadEntry","nid":"Fo81q-6RhDc"}
+{"name":"ZIP_GetNextEntry","nid":"aUu6+T0GLcw"}
+{"name":"ZIP_FindEntry","nid":"rfzHCzyH-uA"}

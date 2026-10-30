@@ -917,4 +917,4 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
 | [libSceZlib](libraries/libscezlib-d7fb26da39.md) | 5 | 5 | 0 |
-| [libzip](libraries/libzip-7a217c7878.md) | 34 | 18 | 0 |
+| [libzip](libraries/libzip-7a217c7878.md) | 34 | 22 | 0 |
