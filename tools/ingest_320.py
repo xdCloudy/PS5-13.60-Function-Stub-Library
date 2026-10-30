@@ -69,18 +69,36 @@ def parse_forwarders(source: str, source_file: str) -> tuple[list[dict], list[di
 def classify(observations: list[dict], known: dict) -> tuple[list[dict], dict]:
     """Preserve all library/NID ownership and withhold sensitive names."""
     global_nids = defaultdict(set)
-    for (owner, nid) in known:
+    known_owners = {}
+    for (owner, nid), record in known.items():
         global_nids[nid].add(owner)
+        known_owners[owner] = record["library"]
+    def resolve_owner(source_library: str) -> str:
+        """Match safe syntactic aliases, never guess between multiple owners."""
+        raw = source_library.casefold()
+        if raw in known_owners:
+            return raw
+        base = raw[:-4] if raw.endswith(".dll") else raw
+        if base in known_owners:
+            return base
+        # Managed assemblies can be named System.Core.dll in one source and
+        # SystemCore in the canonical index. Only unique matches are accepted.
+        signature = re.sub(r"[^a-z0-9]", "", base)
+        matches = [owner for owner in known_owners
+                   if re.sub(r"[^a-z0-9]", "", owner) == signature]
+        return matches[0] if len(matches) == 1 else raw
+
     grouped = defaultdict(set)
     for o in observations:
-        grouped[(o["library"].casefold(), o["nid"])].add(o["name"])
+        grouped[(resolve_owner(o["library"]), o["nid"])].add(o["name"])
     counts = Counter()
     proposals = []
     per_library = defaultdict(Counter)
     for o in sorted(observations, key=lambda x:
                     (x["library"].casefold(), x["nid"], x["name"], x["source_file"])):
-        key = (o["library"].casefold(), o["nid"])
+        key = (resolve_owner(o["library"]), o["nid"])
         record = known.get(key)
+        canonical_library = known_owners.get(key[0], o["library"])
         status = "already_indexed_and_named"
         existing_name = record.get("name") if record else None
         if len(grouped[key]) > 1:
@@ -98,16 +116,17 @@ def classify(observations: list[dict], known: dict) -> tuple[list[dict], dict]:
         elif record.get("name_status") != "verified_nid_binding":
             status = "existing_name_needs_independent_review"
         counts[status] += 1
-        per_library[o["library"]][status] += 1
+        per_library[canonical_library][status] += 1
         if status == "already_indexed_and_named":
             continue
-        item = {"library": o["library"], "nid": o["nid"],
+        item = {"library": canonical_library, "nid": o["nid"],
                 "source_file": o["source_file"], "status": status,
                 "firmware_13_60_export_confirmed": bool(
                     record and record.get("firmware_13_60_export_confirmed")),
                 "canonical_name_approved": False,
                 "abi_verified": False, "runtime_validated": False,
-                "source": SOURCE_NAME}
+                "source": SOURCE_NAME,
+                "source_library": o["library"]}
         # Public candidate names are allowed only when publication filter passes.
         if status not in ("withheld",):
             item["proposed_name"] = o["name"]
