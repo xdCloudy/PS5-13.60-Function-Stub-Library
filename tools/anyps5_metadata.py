@@ -12,7 +12,7 @@ from update_progress import nid_for, scan_source, write_if_changed
 SYMBOL = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
 # This is explicit register evidence, not an ABI/implementation certificate.
 # Keep the literal NID: helper names often deliberately have a different hash.
-ALIASES = re.compile(r'\bAPS5_EXPORT\s*\(\s*"(?P<nid>[A-Za-z0-9+\-]{11})"\s*,\s*(?P<target>[A-Za-z_]\w*)\s*\)')
+ALIASES = re.compile(r'\bAPS5_EXPORT\s*\(\s*"(?P<nid>[A-Za-z0-9+/\-]{11})"\s*,\s*(?P<target>[A-Za-z_]\w*)\s*\)')
 COMMENTS = re.compile(r'//[^\n]*|/\*[\s\S]*?\*/')
 SCHEMA = 3
 
