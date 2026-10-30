@@ -15,7 +15,7 @@ TOKEN = re.compile(r'//[^\n]*|/\*[\s\S]*?\*/|"(?:\\.|[^"\\])*"|'
 
 def blocks(source: str) -> list[tuple[int, int]]:
     """Return matching extern-C braces while ignoring comments and strings."""
-    masked = TOKEN.sub(lambda match: re.sub(r"[^\n]", " ", match.group()), source)
+    masked = TOKEN.sub(lambda match: match.group() if match.group() == '"C"' else re.sub(r"[^\n]", " ", match.group()), source)
     found = []
     for item in START.finditer(masked):
         depth = 0
