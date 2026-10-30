@@ -44,16 +44,29 @@ jobs:
             echo "No new reviewable identities; no PR required." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          key="$(python -c 'import json,hashlib,sys; x=json.load(open(sys.argv[1])); keys=sorted({(r["library"].casefold(),r["nid"],r["proposed_name"]) for r in x["candidates"]}); print(hashlib.sha256(json.dumps(keys).encode()).hexdigest()[:16])' "$proposal")"
           count="$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["reviewable_identity_count"])' "$proposal")"
-          branch="automation/catalogue-review-${key}"
-          if [[ "$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$branch" --state all --json number --jq 'length')" != "0" ]]; then
-            echo "A prior catalogue review PR already covers these exact identities." >> "$GITHUB_STEP_SUMMARY"
+          branch="automation/catalogue-review"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          open="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$branch" --state open --json number --jq 'length')"
+          if [[ "$open" != "0" ]]; then
+            git fetch origin "$branch"
+            git switch -c "$branch" "origin/$branch"
+            mkdir -p reports
+            cp "$proposal" reports/catalogue-import-proposal.json
+            git add reports/catalogue-import-proposal.json
+            if ! git diff --cached --quiet; then
+              git commit -m "data: refresh open source-name review proposal [skip ci]"
+              git push origin "HEAD:$branch"
+              echo "Updated existing draft review PR with current candidate evidence." >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "Existing review PR already matches latest source evidence." >> "$GITHUB_STEP_SUMMARY"
+            fi
             exit 0
           fi
           if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
-            echo "Branch already exists. Refusing to overwrite it." >> "$GITHUB_STEP_SUMMARY"
-            exit 0
+            echo "::error::The prior review branch exists with no open PR. Human reconciliation required."
+            exit 1
           fi
           git switch -c "$branch"
           mkdir -p reports
