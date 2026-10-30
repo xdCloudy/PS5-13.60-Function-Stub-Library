@@ -510,7 +510,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libReactNative.Modules.Vsh](libraries/libreactnative-modules-vsh-ea5def566a.md) | 122 | 87 | 0 |
 | [libReactNative.Modules.Vsh.Media](libraries/libreactnative-modules-vsh-media-3aef274cce.md) | 73 | 55 | 0 |
 | [libReactNative.Modules.Vsh.MediaPlayer.Contents](libraries/libreactnative-modules-vsh-mediaplayer-contents-7128bd93e2.md) | 9 | 7 | 0 |
-| [libReactNative.Modules.Vsh.WebAppLauncher](libraries/libreactnative-modules-vsh-webapplauncher-46dbce980c.md) | 138 | 63 | 0 |
+| [libReactNative.Modules.Vsh.WebAppLauncher](libraries/libreactnative-modules-vsh-webapplauncher-46dbce980c.md) | 138 | 135 | 0 |
 | [libRnpsDevSupport.Dummy](libraries/librnpsdevsupport-dummy-beb1826b80.md) | 1 | 0 | 0 |
 | [libSceRandom](libraries/libscerandom-1c0fa8a87a.md) | 1 | 1 | 0 |
 | [libSceRazorCpu](libraries/libscerazorcpu-98b3fdc87b.md) | 42 | 42 | 7 |

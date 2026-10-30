@@ -6,8 +6,8 @@ Named export identities are stub candidates, not implemented functions. Shared N
 
 | Measure | Count |
 |---|---:|
-| Unique named stub identities | 36,777 |
-| Named library/export records | 46,945 |
+| Unique named stub identities | 36,849 |
+| Named library/export records | 47,017 |
 | Qualified unique throwing-stub candidates | 10,750 |
 | Alternate library aliases among qualified records | 2,647 |
 | Additional system export records needing name/ABI review | 9,989 |
