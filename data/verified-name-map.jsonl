@@ -36915,3 +36915,10 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"JIMAGE_PackageToModule","nid":"6XvfzIZLw-I"}
+{"name":"JIMAGE_ResourcePath","nid":"D9eSnjbE8z4"}
+{"name":"JIMAGE_FindResource","nid":"E5Gmk7oLHiA"}
+{"name":"JIMAGE_GetResource","nid":"EN5Nh-dck7k"}
+{"name":"JIMAGE_Open","nid":"JLEFycKGC3k"}
+{"name":"JIMAGE_ResourceIterator","nid":"JLHUc4EerWE"}
+{"name":"JIMAGE_Close","nid":"t+e21WNSgf0"}

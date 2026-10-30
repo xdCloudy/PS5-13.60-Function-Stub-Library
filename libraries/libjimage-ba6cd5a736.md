@@ -1,24 +1,13 @@
-# libjimage
+## Named export preview
 
-[All libraries](../LIBRARIES.md) · [Readiness](../READINESS.md) · [Data dictionary](../DATA_DICTIONARY.md)
+A bounded preview; the inventory file contains the complete library.
 
-| Measure | Records |
-|---|---:|
-| Export identities | 8 |
-| Named | 0 |
-| Unresolved or withheld | 8 |
-| Qualified stub candidate records | 0 |
-
-Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
-
-## Inventory files
-
-| Evidence scope | Records | Download |
-|---|---:|---|
-| firmware-13.60 | 8 | [JSON Lines](../data/firmware-13.60/libjimage-ba6cd5a736.jsonl) |
-
-## Ownership classification
-
-| Classification | Records |
-|---|---:|
-| ownership_pending | 8 |
+| NID | Symbol |
+|---|---|
+| `6XvfzIZLw-I` | `JIMAGE_PackageToModule` |
+| `D9eSnjbE8z4` | `JIMAGE_ResourcePath` |
+| `E5Gmk7oLHiA` | `JIMAGE_FindResource` |
+| `EN5Nh-dck7k` | `JIMAGE_GetResource` |
+| `JLEFycKGC3k` | `JIMAGE_Open` |
+| `JLHUc4EerWE` | `JIMAGE_ResourceIterator` |
+| `t+e21WNSgf0` | `JIMAGE_Close` |

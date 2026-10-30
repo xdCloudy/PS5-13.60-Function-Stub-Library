@@ -266,7 +266,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
 | [libjava](libraries/libjava-480b127a88.md) | 262 | 177 | 0 |
-| [libjimage](libraries/libjimage-ba6cd5a736.md) | 8 | 0 | 0 |
+| [libjimage](libraries/libjimage-ba6cd5a736.md) | 8 | 7 | 0 |
 | [libjli](libraries/libjli-898be53013.md) | 18 | 0 | 0 |
 | [libjvm](libraries/libjvm-81d0bbfc3d.md) | 295 | 153 | 0 |
 | [libSceJemspace](libraries/libscejemspace-8746e1be9b.md) | 13 | 13 | 0 |
