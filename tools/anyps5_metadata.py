@@ -10,7 +10,11 @@ import subprocess
 from update_progress import nid_for, scan_source, write_if_changed
 
 SYMBOL = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
-SCHEMA = 1
+# This is explicit register evidence, not an ABI/implementation certificate.
+# Keep the literal NID: helper names often deliberately have a different hash.
+ALIASES = re.compile(r'\bAPS5_EXPORT\s*\(\s*"(?P<nid>[A-Za-z0-9+\-]{11})"\s*,\s*(?P<target>[A-Za-z_]\w*)\s*\)')
+COMMENTS = re.compile(r'//[^\n]*|/\*[\s\S]*?\*/')
+SCHEMA = 2
 
 
 def scan_files(upstream: Path):
@@ -26,20 +30,30 @@ def scan_files(upstream: Path):
             rel=path.relative_to(upstream).as_posix()
             declarations=SYMBOL.findall(content)
             definitions=dict(scan_source(content)) if path.suffix in (".cpp",".cc",".cxx") else {}
-            for name in set(declarations)|set(definitions):
-                key=(lib,nid_for(name))
+            # Alias registrations are exact-NID evidence, not inferred names.
+            # Do not evaluate or execute upstream sources or scripts.
+            aliases=list(ALIASES.finditer(COMMENTS.sub("",content)))
+            identities=[(nid_for(name), name, False) for name in set(declarations)|set(definitions)]
+            identities.extend((m["nid"],m["target"],True) for m in aliases)
+            for nid,name,explicit_alias in identities:
+                key=(lib,nid)
                 entry=observations.setdefault(key,{
                     "library":folder.name,"nid":key[1],
                     "declared":False,"definition_seen":False,
                     "throwing_marker":False,"nonthrowing_body_seen":False,
                     "build_config_present":build_file,
                     "export_registered":None,"build_verified":None,
+                    "explicit_alias_seen":False,
                     "abi_verified":None,"runtime_validated":None,
                     "source_files":set()})
-                entry["declared"] |= name in declarations and path.suffix in (".hpp",".h")
-                entry["definition_seen"] |= name in definitions
-                entry["throwing_marker"] |= definitions.get(name)=="throwing_marker"
-                entry["nonthrowing_body_seen"] |= definitions.get(name)=="source_definition"
+                if explicit_alias:
+                    entry["explicit_alias_seen"] = True
+                    entry["export_registered"] = True
+                else:
+                    entry["declared"] |= name in declarations and path.suffix in (".hpp",".h")
+                    entry["definition_seen"] |= name in definitions
+                    entry["throwing_marker"] |= definitions.get(name)=="throwing_marker"
+                    entry["nonthrowing_body_seen"] |= definitions.get(name)=="source_definition"
                 entry["source_files"].add(rel)
     for key in observations:
         observations[key]["source_files"]=sorted(observations[key]["source_files"])
@@ -66,6 +80,7 @@ def build(root: Path, upstream: Path):
         state=("definition_throwing" if row["throwing_marker"] and
                not row["nonthrowing_body_seen"] else
                "definition_nonthrowing_unvalidated" if row["nonthrowing_body_seen"] else
+               "explicit_alias_no_visible_definition" if row["explicit_alias_seen"] else
                "declaration_without_visible_definition")
         row["source_state"]=state
         row["source_commit"]=sha
@@ -78,6 +93,7 @@ def build(root: Path, upstream: Path):
         "observed_library_nid_records":len(scanned),
         "states":dict(sorted(counts.items())),
         "per_library":{k:dict(sorted(v.items())) for k,v in sorted(by_lib.items())},
+        "explicit_export_alias_records": sum(x["explicit_alias_seen"] for x in scanned.values()),
         "export_registration_verified":None,
         "build_verified":None,
         "runtime_validated":None,
