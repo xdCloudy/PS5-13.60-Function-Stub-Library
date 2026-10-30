@@ -1,0 +1,195 @@
+name: Prepare and optionally submit AnyPS5 stub batch
+
+on:
+  workflow_dispatch:
+    inputs:
+      evidence_url:
+        description: Public raw GitHub/Gist URL to independently reviewed ABI JSONL (outside catalogue)
+        required: true
+        type: string
+      evidence_sha256:
+        description: SHA-256 of the exact ABI JSONL contents
+        required: true
+        type: string
+      max_stubs:
+        description: Maximum functions in one library-focused PR (1 to 100)
+        required: true
+        type: number
+        default: 100
+      publish:
+        description: Submit a draft PR as xdCloudy after all gates pass
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: anyps5-stub-submit
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Test trusted catalogue tools
+        run: python -m unittest discover -s tests -v
+      - name: Validate and download SHA-256-pinned external ABI evidence
+        shell: bash
+        env:
+          EVIDENCE_URL: ${{ inputs.evidence_url }}
+          EVIDENCE_SHA: ${{ inputs.evidence_sha256 }}
+          MAX_STUBS: ${{ inputs.max_stubs }}
+        run: |
+          set -euo pipefail
+          [[ "$EVIDENCE_URL" =~ ^https://(raw|gist)\.githubusercontent\.com/ ]] || { echo "::error::Evidence must be a public GitHub raw file or Gist"; exit 1; }
+          [[ "$EVIDENCE_SHA" =~ ^[0-9a-fA-F]{64}$ ]] || { echo "::error::Invalid evidence digest"; exit 1; }
+          [[ "$MAX_STUBS" =~ ^[0-9]+$ ]] && (( MAX_STUBS >= 1 && MAX_STUBS <= 100 )) || { echo "::error::Batch must be 1-100"; exit 1; }
+          curl --fail --silent --show-error --location --max-redirs 3 --max-time 60 --max-filesize 200000 \
+            --proto '=https' --proto-redir '=https' "$EVIDENCE_URL" -o "$RUNNER_TEMP/reviewed-abi.jsonl"
+          printf '%s  %s\n' "$EVIDENCE_SHA" "$RUNNER_TEMP/reviewed-abi.jsonl" | sha256sum --check --status
+      - name: Clone upstream and generate the reviewed batch
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+          MAX_STUBS: ${{ inputs.max_stubs }}
+          EVIDENCE_SHA: ${{ inputs.evidence_sha256 }}
+        run: |
+          set -euo pipefail
+          git clone https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/AnyPS5"
+          branch="feat/automated-reviewed-stubs-$(printf '%s' "$EVIDENCE_SHA" | cut -c1-16)"
+          git -C "$RUNNER_TEMP/AnyPS5" switch -c "$branch"
+          echo "ANYPS5_BRANCH=$branch" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/review"
+          python tools/prepare_anyps5.py \
+            --anyps5-dir "$RUNNER_TEMP/AnyPS5" \
+            --abi-file "$RUNNER_TEMP/reviewed-abi.jsonl" \
+            --output-dir "$RUNNER_TEMP/review" --max-stubs "$MAX_STUBS" --apply
+          cp "$RUNNER_TEMP"/review/*-reviewed-void-stubs.patch "$RUNNER_TEMP/review/ANYPS5.patch"
+          test -s "$RUNNER_TEMP/review/SELECTED_CANDIDATES.json"
+          test -s "$RUNNER_TEMP/review/PULL_REQUEST_BODY.md"
+          git -C "$RUNNER_TEMP/AnyPS5" diff --check origin/main..HEAD
+          echo "Selected batch committed and verified against upstream conventions." >> "$GITHUB_STEP_SUMMARY"
+      - name: Build and run upstream Linux tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -q
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            ninja-build build-essential cmake libx11-dev libxext-dev libxrandr-dev \
+            libwayland-dev libxkbcommon-dev libegl1-mesa-dev libdecor-0-dev \
+            libpipewire-0.3-dev libpulse-dev libasound2-dev
+          cd "$RUNNER_TEMP/AnyPS5"
+          git submodule update --init --recursive
+          cmake -S . -B "$RUNNER_TEMP/AnyPS5-build" -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+          cmake --build "$RUNNER_TEMP/AnyPS5-build" --parallel 2
+          ctest --test-dir "$RUNNER_TEMP/AnyPS5-build" --parallel 2 \
+            --output-on-failure
+      - name: Final committed-batch audit after build
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python tools/final_anyps5_gate.py \
+            --checkout "$RUNNER_TEMP/AnyPS5" \
+            --batch "$RUNNER_TEMP/review/SELECTED_CANDIDATES.json" \
+            --report "$RUNNER_TEMP/review/FINAL_OVERLAP_AUDIT.json"
+          sed -i 's/Build and runtime testing: NOT RUN/Linux full build and CTest: passed; console runtime NOT TESTED/' \
+            "$RUNNER_TEMP/review/PULL_REQUEST_BODY.md"
+      - name: Store proposal and audit, never secret credentials
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: anyps5-reviewed-stub-proposal
+          path: |
+            ${{ runner.temp }}/review/ANYPS5.patch
+            ${{ runner.temp }}/review/SELECTED_CANDIDATES.json
+            ${{ runner.temp }}/review/PULL_REQUEST_BODY.md
+            ${{ runner.temp }}/review/FINAL_OVERLAP_AUDIT.json
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    if: github.event.inputs.publish == 'true'
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Fetch checked proposal into fresh runner
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: anyps5-reviewed-stub-proposal
+          path: ${{ runner.temp }}/review
+      - name: Reconstruct and recheck exact candidate batch before submission
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git clone https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/AnyPS5"
+          branch="$(python -c 'import hashlib,pathlib,os; p=pathlib.Path(os.environ["RUNNER_TEMP"])/"review/ANYPS5.patch"; print("feat/automated-reviewed-stubs-"+hashlib.sha256(p.read_bytes()).hexdigest()[:16])')"
+          git -C "$RUNNER_TEMP/AnyPS5" switch -c "$branch"
+          git -C "$RUNNER_TEMP/AnyPS5" apply --check "$RUNNER_TEMP/review/ANYPS5.patch"
+          git -C "$RUNNER_TEMP/AnyPS5" apply --index "$RUNNER_TEMP/review/ANYPS5.patch"
+          git -C "$RUNNER_TEMP/AnyPS5" diff --cached --binary > "$RUNNER_TEMP/review/RECONSTRUCTED.patch"
+          cmp "$RUNNER_TEMP/review/ANYPS5.patch" "$RUNNER_TEMP/review/RECONSTRUCTED.patch"
+          git -C "$RUNNER_TEMP/AnyPS5" -c user.name=xdCloudy \
+            -c user.email=52116030+xdCloudy@users.noreply.github.com \
+            commit -m "feat(stubs): add evidence-reviewed throwing exports"
+          python -c 'import json,pathlib,subprocess,os; p=pathlib.Path(os.environ["RUNNER_TEMP"])/"review/SELECTED_CANDIDATES.json"; x=json.loads(p.read_text()); x["patch_commit"]=subprocess.check_output(["git","-C",os.environ["RUNNER_TEMP"]+"/AnyPS5","rev-parse","HEAD"],text=True).strip(); p.write_text(json.dumps(x,sort_keys=True,indent=2)+"\n")'
+          python tools/final_anyps5_gate.py \
+            --checkout "$RUNNER_TEMP/AnyPS5" \
+            --batch "$RUNNER_TEMP/review/SELECTED_CANDIDATES.json" \
+            --report "$RUNNER_TEMP/review/PUBLISH_OVERLAP_AUDIT.json" \
+            --skip-upstream-tools
+          echo "ANYPS5_BRANCH=$branch" >> "$GITHUB_ENV"
+          echo "Proposal source and all current upstream identities rechecked." >> "$GITHUB_STEP_SUMMARY"
+      - name: Open draft upstream PR as xdCloudy (never as Actions bot)
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$GH_TOKEN" || { echo "::error::ANYPS5_SUBMIT_TOKEN secret is missing"; exit 1; }
+          account="$(gh api user --jq .login)"
+          [[ "$account" = "xdCloudy" ]] || { echo "::error::Token belongs to the wrong GitHub user"; exit 1; }
+          gh auth setup-git
+          cd "$RUNNER_TEMP/AnyPS5"
+          git remote add contributor https://github.com/xdCloudy/AnyPS5.git
+          if git ls-remote --heads contributor "$ANYPS5_BRANCH" | grep -q .; then
+            echo "::error::Contributor branch already exists; refusing to overwrite it"
+            exit 1
+          fi
+          git push contributor "HEAD:refs/heads/$ANYPS5_BRANCH"
+          count="$(python -c 'import json,os; print(len(json.load(open(os.environ["RUNNER_TEMP"]+"/review/SELECTED_CANDIDATES.json"))["candidates"]))')"
+          if gh pr create --repo boykopovar/AnyPS5 --base main \
+            --head "xdCloudy:$ANYPS5_BRANCH" --draft \
+            --title "feat(stubs): add $count ABI-reviewed throwing exports" \
+            --body-file "$RUNNER_TEMP/review/PULL_REQUEST_BODY.md"; then
+            echo "Created draft upstream PR as xdCloudy." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git push contributor ":refs/heads/$ANYPS5_BRANCH" || true
+            echo "::error::Could not create upstream PR using this token; fork branch cleanup attempted"
+            exit 1
+          fi
