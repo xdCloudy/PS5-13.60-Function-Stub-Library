@@ -171,7 +171,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceFiber](libraries/libscefiber-03c584ff93.md) | 15 | 15 | 0 |
 | [libSceFios2](libraries/libscefios2-f7b574bf34.md) | 168 | 168 | 0 |
 | [libSceFlexContent](libraries/libsceflexcontent-4bcb74e7f3.md) | 12 | 7 | 0 |
-| [libSceFollyShared](libraries/libscefollyshared-53f41da239.md) | 555 | 2 | 0 |
+| [libSceFollyShared](libraries/libscefollyshared-53f41da239.md) | 555 | 128 | 0 |
 | [libSceFont](libraries/libscefont-63ba420c2e.md) | 240 | 240 | 44 |
 | [libSceFont.native](libraries/libscefont-native-fca9c246fb.md) | 136 | 136 | 0 |
 | [libSceFontFt](libraries/libscefontft-4a57c746ed.md) | 21 | 21 | 0 |
@@ -245,7 +245,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [I18NRare](libraries/i18nrare-bfddaf1cb8.md) | 46 | 0 | 0 |
 | [I18NWest](libraries/i18nwest-99db625e4b.md) | 22 | 0 | 0 |
 | [libicu](libraries/libicu-daf9a1c9f7.md) | 1,698 | 1,698 | 0 |
-| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 855 | 661 | 72 |
+| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 855 | 813 | 72 |
 | [libSceIdu](libraries/libsceidu-8418625c2b.md) | 21 | 17 | 0 |
 | [libSceImageUtil](libraries/libsceimageutil-196f49c23b.md) | 13 | 0 | 0 |
 | [libSceIme](libraries/libsceime-7d565475dc.md) | 61 | 59 | 0 |

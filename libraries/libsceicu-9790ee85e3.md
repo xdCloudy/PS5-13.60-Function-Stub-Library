@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 855 |
-| Named | 661 |
-| Unresolved or withheld | 194 |
+| Named | 813 |
+| Unresolved or withheld | 42 |
 | Qualified stub candidate records | 72 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -31,6 +31,8 @@ A bounded preview; the inventory file contains the complete library.
 
 | NID | Symbol |
 |---|---|
+| `+4NYlDLIb6M` | `uidna_nameToUnicode` |
+| `+8UElQduDdA` | `udtitvfmt_close` |
 | `+L1K53Ku3mE` | `u_isalnum` |
 | `+Nd4bYkEgRc` | `ubrk_getAvailable` |
 | `+P5TDFU2-fc` | `u_isdefined` |
@@ -41,5 +43,3 @@ A bounded preview; the inventory file contains the complete library.
 | `+xsbcqOIJmM` | `u_austrcpy` |
 | `+yTcUbxieO8` | `ures_hasNext` |
 | `--GQ9Ov+0mM` | `ures_close` |
-| `-4dhc9m-vfs` | `ucptrie_getRange` |
-| `-8rPOnonqLI` | `ustr_hashUCharsN` |

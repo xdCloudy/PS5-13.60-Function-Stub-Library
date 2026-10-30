@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 46581,
+    "resolved_names": 46859,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 267457,
+    "unresolved_or_withheld_names": 267179,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -2628,10 +2628,10 @@
       "sha256": "8c2a04128825da26c81196dca5c6e800f876adb2a81bd5a9a13d36f66abd15a1"
     },
     {
-      "bytes": 197706,
+      "bytes": 214637,
       "path": "data/firmware-13.60/libscefollyshared-53f41da239.jsonl",
       "records": 555,
-      "sha256": "23451db95c5d6d4c20f7d85174796c286a4cea2d4abcf27116e89aab143647a2"
+      "sha256": "87d39696db178ef74bb48bed5d462455624153238af6cbe8e5e9224d6c94678c"
     },
     {
       "bytes": 110263,
@@ -2880,10 +2880,10 @@
       "sha256": "b677b0afec9bf7a9549df1689b7df03680c3c2fcf28e3a095e6f218575037c90"
     },
     {
-      "bytes": 116687,
+      "bytes": 133334,
       "path": "data/firmware-13.60/libsceicu-9790ee85e3.jsonl",
       "records": 298,
-      "sha256": "ba75f13c92b7ae6ea11a485b12eb500a3debc26329ac74a41ec2f11ea8a3da31"
+      "sha256": "ad01da70532974a3481b11ab39e84a0e99081e8fa351ee38560d03a9e2e2d759"
     },
     {
       "bytes": 8785,
@@ -5946,14 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85560,
+      "bytes": 86419,
       "path": "data/library-index.csv",
-      "sha256": "ca509d11c6837846f780ff5bad42b78448ae6a3c30a8f460cf8a83632f5a7d01"
+      "records": 857,
+      "sha256": "3dbe5842dd62e0c6e64330c325e1f0972bd0c7cc96de19eda5245d4af3a3ac5d"
     },
     {
-      "bytes": 2549586,
+      "bytes": 2606022,
       "path": "data/verified-name-map.jsonl",
-      "sha256": "64b6faf80b5f250bacb707f16bf36636c68acb463bb76a7ec97634af8dfa4fca"
+      "records": 36691,
+      "sha256": "e1890e68c212c6818723da52fc9c55d08d5ea21891a12c2f06568c60d54024be"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5974,7 +5976,7 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "b27db680c140b9ea78577cc137f509252649029164e7fec4e9e7a15d7667150b"
+    "sha256": "9e44c6389a1db33447152a63d75e61f578c93454c496d527d722f1bf4d7e9a70"
   },
   "report_image": {
     "bytes": 266263,
@@ -5983,5 +5985,5 @@
   },
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36413
+  "unique_verified_name_bindings": 36691
 }
