@@ -78,7 +78,9 @@ def inspect_pr(pr: dict, token: str, nid_for, fetch=api_json):
                            if line.startswith("+") and not line.startswith("+++")]
             # GitHub can return a nonempty but clipped patch. It is not safe
             # to infer an absent NID from an incomplete hunk.
-            if entry.get("additions") is not None and len(added_lines) != entry["additions"]:
+            if not isinstance(entry.get("additions"), int) or entry["additions"] < 0:
+                raise ValueError(f"Missing additions metadata for #{number} ({entry['filename']})")
+            if len(added_lines) != entry["additions"]:
                 raise ValueError(f"Truncated patch for #{number} ({entry['filename']})")
             additions = "\n".join(added_lines)
             for symbol in DEFINITION.findall(additions):
@@ -87,10 +89,14 @@ def inspect_pr(pr: dict, token: str, nid_for, fetch=api_json):
                 found.add((match.group(1).casefold(), nid))
         if len(files) < 100:
             break
+        if page >= 30:
+            # GitHub's files endpoint returns at most 3,000 entries even if
+            # more were changed; the 30th full page is not an absence proof.
+            raise ValueError(f"GitHub 3000-file pagination cap for #{number}")
         page += 1
     # GitHub patch lists are capped. A truncated listing cannot certify absence.
-    if pr.get("changed_files") is not None and files_seen < int(pr["changed_files"]):
-        raise ValueError(f"Truncated file list for #{number}: {files_seen}/{pr['changed_files']}")
+    if pr.get("changed_files") is not None and files_seen != int(pr["changed_files"]):
+        raise ValueError(f"Unexpected file list for #{number}: {files_seen}/{pr['changed_files']}")
     return {"head": pr["head"]["sha"],
             "keys": [list(key) for key in sorted(found)]}
 
@@ -147,6 +153,20 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
                     scanned += 1
                 except (TimeoutError, urllib.error.URLError, ValueError, KeyError, TypeError):
                     failures += 1
+    # A PR may merge, close or move to another head while parallel inspection
+    # runs. Re-enumerate once, and never persist evidence for a stale head.
+    final_prs = list_open_prs(token, fetch)
+    before_heads = {str(pr["number"]): pr["head"]["sha"] for pr in prs}
+    final_heads = {str(pr["number"]): pr["head"]["sha"] for pr in final_prs}
+    if len(before_heads) != len(prs) or len(final_heads) != len(final_prs):
+        raise ValueError("Duplicate PR numbers in open-head snapshots")
+    stable_snapshot = before_heads == final_heads
+    invalidated = [number for number, entry in current.items()
+                   if final_heads.get(number) != entry["head"]]
+    for number in invalidated:
+        del current[number]
+    hits = sum(1 for number, entry in current.items()
+               if number in old and old[number].get("head") == entry["head"])
     current = dict(sorted(current.items(), key=lambda item: int(item[0])))
     cache_text = json.dumps({"schema_version": 4, "prs": current},
                             indent=2, sort_keys=True) + "\n"
@@ -162,7 +182,7 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
                 reservations.setdefault(key, set()).add(int(number))
             else:
                 unknown.setdefault(key, set()).add(int(number))
-    total = len(prs)
+    total = len(final_prs)
     remaining = total - len(current)
     meta = {
         "open_pr_total": total,
@@ -171,11 +191,13 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
         "open_pr_newly_scanned": scanned,
         "open_pr_unscanned": remaining,
         "open_pr_errors": failures,
-        "open_pr_coverage_complete": remaining == 0 and failures == 0,
+        "open_pr_coverage_complete": remaining == 0 and failures == 0 and stable_snapshot,
+        "open_pr_snapshot_stable": stable_snapshot,
+        "open_pr_stale_heads_invalidated": len(invalidated),
         # Full coverage of parsed PR HEADS is not exhaustive symbol coverage:
         # macros and semantic registration conventions may escape this parser.
         "open_pr_symbol_coverage_complete": False,
         "open_pr_cache_expired_or_closed": len(old) - hits,
-        "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
+        "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
     }
     return reservations, unknown, meta
