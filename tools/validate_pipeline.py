@@ -74,6 +74,13 @@ def validate(root: Path) -> dict:
         raise ValueError("Invalid completed PR scan")
     if h["overlap_publication_safe"] is not False:
         raise ValueError("Heuristic symbol scan cannot certify safe publication")
+    diagnostic_rejections = sum(source.get("quarantine_by_reason", {}).values())
+    if diagnostic_rejections != source["quarantine_diagnostic_records"]:
+        raise ValueError("Quarantine source-reason ledger count disagrees")
+    if diagnostic_rejections + source.get("unowned_verified_hash_bindings", 0) != source["quarantined_registrations"]:
+        raise ValueError("Combined source quarantine totals disagree")
+    if h.get("source_320_quarantine_by_reason") != source.get("quarantine_by_reason", {}):
+        raise ValueError("Dashboard quarantine reason counts differ from source ledger")
     if source["canonical_rows_modified"] != 0:
         raise ValueError("External source importer unexpectedly mutated canonical records")
     md=(root/"reports/coverage-matrices.md").read_text(encoding="utf-8")
