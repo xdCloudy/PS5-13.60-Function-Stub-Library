@@ -96,7 +96,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceLibreSsl | 399 | 343 | 0 | 0 | 0 |
 | SceVshShellUITheme | 396 | 0 | 0 | 0 | 0 |
 | SceVshShellUIBaseSystem | 392 | 0 | 0 | 0 | 0 |
-| libNativeExtensions | 392 | 38 | 0 | 0 | 0 |
+| libNativeExtensions | 392 | 91 | 0 | 0 | 0 |
 | SceVshShellUISticker | 356 | 0 | 0 | 0 | 0 |
 | MonoDataTds | 348 | 0 | 0 | 0 | 0 |
 | libSceFreeType | 344 | 283 | 0 | 0 | 0 |

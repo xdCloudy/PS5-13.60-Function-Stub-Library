@@ -1,19 +1,19 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "8c8b9986204d5b1cbb23847b363df00ae832ec9c",
+    "anyps5_main_commit": "7d4006607aca6f71e80f6352d94e55b314ebaf41",
     "anyps5_open_prs": {
       "method": "added APS5_VABI declarations in GitHub PR patches; best-effort reservations",
       "open_pr_coverage_complete": false,
       "open_pr_errors": 0,
       "open_pr_scanned": 400,
-      "open_pr_total": 1478
+      "open_pr_total": 1481
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
       "historical-3.20-only": 11700,
-      "resolved_names": 47017,
+      "resolved_names": 47085,
       "total_records": 314038,
-      "unresolved_or_withheld_names": 267021,
+      "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
     "upstream_sync": "source-scanned"
@@ -23,10 +23,10 @@
     "firmware_13_60": 302338,
     "historical_only": 11700,
     "libraries": 791,
-    "name_nid_mismatches_or_nonverified_names": 7104,
-    "named_records_not_passed_by_strict_gate": 7104,
+    "name_nid_mismatches_or_nonverified_names": 7119,
+    "named_records_not_passed_by_strict_gate": 7119,
     "nid_shared_by_multiple_records": 11079,
-    "published_named_records": 47017,
+    "published_named_records": 47085,
     "records": 314038,
     "repeated_library_nid_records_across_scopes": 890,
     "scope_records": {
@@ -39,10 +39,10 @@
       "ownership_pending": 7322,
       "shell_specific_review": 1659
     },
-    "strictly_reverified_named_records": 39913,
+    "strictly_reverified_named_records": 39966,
     "unique_nids_all_scopes": 300846,
-    "unresolved_or_withheld": 267021,
-    "verified_named_records": 47017
+    "unresolved_or_withheld": 266953,
+    "verified_named_records": 47085
   },
   "libraries": [
     {
@@ -787,7 +787,7 @@
       "qualified_records": 0,
       "records": 392,
       "upstream_main_source_matches": 0,
-      "verified_names": 38
+      "verified_names": 91
     },
     {
       "library": "SceVshShellUISticker",
@@ -6387,7 +6387,7 @@
     "locally_generated_saved_snapshot": 963,
     "main_nonthrowing_definition_record_matches": 0,
     "main_throwing_marker_record_matches": 0,
-    "new_upstream_nid_candidates_for_review": 9274,
+    "new_upstream_nid_candidates_for_review": 10078,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
