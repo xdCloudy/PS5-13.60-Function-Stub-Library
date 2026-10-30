@@ -37,6 +37,8 @@ jobs:
           python-version: '3.12'
       - name: Unit tests
         run: python -m unittest discover -s tests -v
+      - name: Verify and refresh canonical manifest checksums
+        run: python tools/refresh_manifest.py
       - name: Clone upstream main (read-only)
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
       - name: Rebuild report and collect upstream NID observations
@@ -62,7 +64,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl
+          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl
           if git diff --cached --quiet; then
             echo "Progress files are current."
             exit 0
@@ -84,6 +86,8 @@ jobs:
           python-version: '3.12'
       - name: Unit tests
         run: python -m unittest discover -s tests -v
+      - name: Verify and refresh canonical manifest checksums
+        run: python tools/refresh_manifest.py
       - name: Clone upstream main (read-only)
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
       - name: Generate a PR preview (never pushes PR code)
