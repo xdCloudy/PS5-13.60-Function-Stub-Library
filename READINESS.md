@@ -16,6 +16,26 @@ Named export identities are stub candidates, not implemented functions. Shared N
 | Fully validated stubs | 0 |
 | Published AnyPS5 stubs | 0 |
 
+## Separate recovery candidate review queue
+
+The [sanitized candidate index](data/recovery-candidates.jsonl) has 742
+library/NID identities: 152 already named by the ICU recovery update, 588
+unresolved candidates requiring independent corroboration and source review,
+and 2 publication-filtered records. This index publishes no candidate names.
+It does not change the inventory shards or canonical qualification totals.
+
+If all 588 unresolved candidates were separately approved and integrated,
+the *projected* named count would be **46,733 → 47,321** (+588) and the
+unique named-NID count **36,565 → 37,150** (+585). These are projections,
+not current verified names or automatically qualified AnyPS5 functions.
+
+The retained snapshot counts **10,750** qualified unique candidates, whereas
+a read-only audit excluding one unique withheld NID yields **10,749**. This
+is an outstanding qualification inconsistency, not rounding. Correcting it
+requires a coordinated regeneration of the canonical assessments and reports.
+
+[Full candidate reconciliation](analysis/INTEGRATION-FINDINGS.md).
+
 ## What remains before AnyPS5 submission
 
 - Generate the remaining qualified candidates in library-focused batches of at most 150.
