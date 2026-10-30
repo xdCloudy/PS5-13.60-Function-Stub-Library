@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47085,
+    "resolved_names": 47102,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 266953,
+    "unresolved_or_withheld_names": 266936,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -5280,10 +5280,10 @@
       "sha256": "1f1c9f084d3a420f411ea8a3a7af454f484fe8854ac173bbbd8ee2b86697319f"
     },
     {
-      "bytes": 53000,
+      "bytes": 54957,
       "path": "data/firmware-13.60/libnio-8ce3c89141.jsonl",
       "records": 157,
-      "sha256": "57f24fb264f623262331b36ce1260af0881ecf40388c00bbb64e37e7356495cb"
+      "sha256": "a77d71d131e4a68e5727d6bcfbd120b5109c8b952adaa3dac7de474ce74085b1"
     },
     {
       "bytes": 64461,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85564,
+      "bytes": 86422,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "4abc44c7ba8c3c670af72667998df40fd40c9aabb92e098c24a831a140f0b41d"
+      "sha256": "e643ac289e1dd3b92b7b2d855613c8b1550ceb89b245c93dee219f0f86b6202e"
     },
     {
-      "bytes": 2581638,
+      "bytes": 2619811,
       "path": "data/verified-name-map.jsonl",
-      "records": 36849,
-      "sha256": "10d0fd3e633779b44224fa778c018b9dc140938ae90078cf54f315f90b02b211"
+      "records": 36934,
+      "sha256": "26220d4c57170ad113da59c9eaf4bb91fdb1ed00c8d226cd35a28655e26fd36b"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,10 +5976,10 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "a46de98732d4b73f13a2276e125a059fe16fecd06bd162fc35d9a278c341620d"
+    "sha256": "cfda478330c0ac4b4e272d7e5d0ac1b079f5914f3cfa56d28de9a64c7a94246b"
   },
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36917
+  "unique_verified_name_bindings": 36934
 }
