@@ -28,7 +28,7 @@ DLSYM = re.compile(
 )
 DLOPEN = re.compile(r'\bsprx_dlopen\s*\(\s*"(?P<library>[A-Za-z_][\w.\-]*)"')
 SYMBOL = re.compile(r"^[A-Za-z_]\w*$")
-SCHEMA = 2
+SCHEMA = 3
 SOURCE_NAME = "DNNDHH/PS5-3.20_Libs"
 
 
@@ -39,14 +39,14 @@ def parse_forwarders(source: str, source_file: str) -> tuple[list[dict], list[di
     C functions from unrelated registrations or from their position in the file.
     """
     owners = set(DLOPEN.findall(source))
-    if len(owners) != 1:
-        # One diagnostic per file, but account for ALL unread registrations.
-        # There is no reliable association with a logical library without an
-        # explicit owner. Filename guesses must not qualify the records.
+    if len(owners) > 1:
         registrations = len(re.findall(r'\bif\s*\(\s*sprx_dlsym\s*\(', source))
-        return [], [{"source_file": source_file, "reason": "ambiguous_or_missing_library",
+        return [], [{"source_file": source_file, "reason": "ambiguous_library",
                      "owner_count": len(owners), "count": registrations}]
-    library = next(iter(owners))
+    # A generated file without an explicit dlopen owner can still provide a
+    # valid symbol/NID registration pair. Parse it, but never guess ownership
+    # merely from the filename. Classify as ownership review, not canonical.
+    library = next(iter(owners)) if owners else None
     declared = set(re.findall(r'\bvoid\s*\*\s*__ptr_([A-Za-z_]\w*)\s*;', source))
     # Generated .global lines are inside string literals; literal text is sufficient.
     exported = set(re.findall(r'\.global\s+([A-Za-z_]\w*)\\n', source))
@@ -94,12 +94,28 @@ def classify(observations: list[dict], known: dict) -> tuple[list[dict], dict]:
 
     grouped = defaultdict(set)
     for o in observations:
-        grouped[(resolve_owner(o["library"]), o["nid"])].add(o["name"])
+        if o["library"] is not None:
+            grouped[(resolve_owner(o["library"]), o["nid"])].add(o["name"])
     counts = Counter()
     proposals = []
     per_library = defaultdict(Counter)
     for o in sorted(observations, key=lambda x:
-                    (x["library"].casefold(), x["nid"], x["name"], x["source_file"])):
+                    ((x["library"] or "").casefold(), x["nid"], x["name"], x["source_file"])):
+        if o["library"] is None:
+            status = "ownership_review_required"
+            counts[status] += 1
+            # An unknown owner is not a new canonical library/NID identity.
+            item = {"library": None, "nid": o["nid"],
+                    "source_file": o["source_file"], "status": status,
+                    "canonical_name_approved": False, "abi_verified": False,
+                    "runtime_validated": False, "source": SOURCE_NAME,
+                    "firmware_13_60_export_confirmed": False}
+            if PUBLIC_SYMBOL.fullmatch(o["name"]) and not SENSITIVE_SYMBOL.search(o["name"]):
+                item["proposed_name"] = o["name"]
+            else:
+                item["status"] = "withheld_owner_unknown"
+            proposals.append(item)
+            continue
         key = (resolve_owner(o["library"]), o["nid"])
         record = known.get(key)
         canonical_library = known_owners.get(key[0], o["library"])
@@ -200,8 +216,14 @@ def ingest(root: Path, source_dir: Path, force: bool = False) -> dict:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source_files_scanned": len(files),
         "source_file_sha256": dict(hashes),
-        "quarantined_registrations": sum(r.get("count", 1) for r in rejected),
+        "quarantined_registrations": sum(r.get("count", 1) for r in rejected)
+                                    + summary["statuses"].get("ownership_review_required", 0)
+                                    + summary["statuses"].get("withheld_owner_unknown", 0),
         "quarantine_diagnostic_records": len(rejected),
+        "unowned_verified_hash_bindings": (
+            summary["statuses"].get("ownership_review_required", 0)
+            + summary["statuses"].get("withheld_owner_unknown", 0)),
+        "unresolved_owner_registration_count": sum(1 for o in observations if o["library"] is None),
         "review_queue_records": len(queue),
         "canonical_rows_modified": 0,
         "publication_gate": "manual review required before canonical promotion",
