@@ -245,7 +245,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [I18NRare](libraries/i18nrare-bfddaf1cb8.md) | 46 | 0 | 0 |
 | [I18NWest](libraries/i18nwest-99db625e4b.md) | 22 | 0 | 0 |
 | [libicu](libraries/libicu-daf9a1c9f7.md) | 1,698 | 1,698 | 0 |
-| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 855 | 661 | 72 |
+| [libSceIcu](libraries/libsceicu-9790ee85e3.md) | 855 | 813 | 72 |
 | [libSceIdu](libraries/libsceidu-8418625c2b.md) | 21 | 17 | 0 |
 | [libSceImageUtil](libraries/libsceimageutil-196f49c23b.md) | 13 | 0 | 0 |
 | [libSceIme](libraries/libsceime-7d565475dc.md) | 61 | 59 | 0 |

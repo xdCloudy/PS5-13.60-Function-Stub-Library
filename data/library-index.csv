@@ -344,7 +344,7 @@ libSceHttp,firmware-13.60,115,115,data/firmware-13.60/libscehttp-bf24e60b44.json
 libSceHttp2,firmware-13.60,72,71,data/firmware-13.60/libscehttp2-1bb9426af8.jsonl
 libSceHttpCache,firmware-13.60,34,27,data/firmware-13.60/libscehttpcache-2641272dc1.jsonl
 libSceHubAppUtil,firmware-13.60,3,3,data/firmware-13.60/libscehubapputil-af38912160.jsonl
-libSceIcu,firmware-13.60,298,104,data/firmware-13.60/libsceicu-9790ee85e3.jsonl
+libSceIcu,firmware-13.60,298,256,data/firmware-13.60/libsceicu-9790ee85e3.jsonl
 libSceIdu,firmware-13.60,21,17,data/firmware-13.60/libsceidu-8418625c2b.jsonl
 libSceImageUtil,firmware-13.60,13,0,data/firmware-13.60/libsceimageutil-196f49c23b.jsonl
 libSceIme,firmware-13.60,61,59,data/firmware-13.60/libsceime-7d565475dc.jsonl

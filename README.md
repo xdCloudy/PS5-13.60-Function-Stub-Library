@@ -9,7 +9,7 @@ disassembly, decompiled code, console data, or local research paths.
 | Observed in the extraction labeled PS5 13.60 | 302,338 |
 | Historical PS5 3.20 references without a matching local 13.60 export | 11,700 |
 | Total distinct library/NID identities | 314,038 |
-| Records with a recovered name | 46,581 |
+| Records with a recovered name | 46,733 |
 
 ## Start here
 
@@ -36,5 +36,7 @@ are explicitly classified and must not all be turned into AnyPS5 system-library 
 The firmware label is research provenance, not an independent hardware measurement.
 
 ## Stub readiness report
+
+The image below was generated from an earlier readiness snapshot. See [readiness.json](readiness.json) and [READINESS.md](READINESS.md) for current naming totals.
 
 ![PS5 stub readiness report](reports/stub-readiness.png)

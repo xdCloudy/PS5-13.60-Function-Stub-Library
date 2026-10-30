@@ -15,3 +15,35 @@ Library ownership, export type, name identity, signature knowledge, implementati
 and readiness for an AnyPS5 pull request are separate facts.
 No proprietary implementation or binary material is included. Attribution does not
 grant rights to firmware, SDKs, or third-party source outside this metadata inventory.
+
+## Unpublished recovery research checkpoint (2026-10-29)
+
+The data-only inventory at commit `bfec40deb4c47a17d7603ee2bc79aa6862c0c56b`
+was checked in a separate read-only research workspace. Its manifest lists 858 data
+files, including 856 export JSONL shards. The local audit reported 314,038
+library/NID identities, no malformed or duplicate identities, and 46,581
+published name/NID bindings passing recomputation. The original export-file
+bytes and local audit ledger are **not** included in this repository, so this
+report is not an independently reproducible complete rebuild.
+
+An additional pinned candidate source is
+[`claimore22/ps5rs`](https://github.com/claimore22/ps5rs/tree/5f252a658ff470bcb2b6cd15205fd8ca64ae4477),
+particularly `data/nids.csv`. Its repository identifies its licence as GPL-2.0
+and acknowledges community symbol-catalogue sources. A local hash-checked
+intersection produced **742 candidate name/NID matches** against currently
+unnamed or withheld library identities: **740 normal review proposals** and
+**2 deliberately withheld-name records**, which must remain withheld.
+These are *research proposals*, not accepted published symbol bindings.
+Their per-row provenance, redistribution rights, firmware applicability and
+library ownership have not been independently approved. No external catalogue
+is copied here and no candidate names are published by this checkpoint.
+
+A cross-library join against the existing 46,581 verified named observations
+found **zero unnamed identities sharing a NID with an already verified name**.
+Future recovery therefore requires new source evidence or new researched names,
+not unverified alias propagation. A matching NID alone does not establish
+prototype, export origin, owner or AnyPS5 readiness.
+
+## Accepted ICU name recovery (2026-10-29)
+
+152 independently hash-verified names for observed 13.60 exports in `libSceIcu` were recovered from the pinned [ps5rs NID catalogue](https://github.com/claimore22/ps5rs/blob/5f252a658ff470bcb2b6cd15205fd8ca64ae4477/data/nids.csv) (blob `3a4e0ebf1852472ba738716184b4d7a730e349b4`; source tag `pasteBin-yntxH8Km`). Every name was independently corroborated against public ICU C headers (ICU4C 76.1; [Unicode ICU](https://github.com/unicode-org/icu/tree/b34cf4d07e71acf06f01b3a1902759609c111e2d)), and the NID was recomputed. This evidence supports the name/NID binding only, not the ABI, semantics or AnyPS5 readiness. No raw source code, whole catalogue or withheld names were published. Other candidate proposals remain unapproved.
