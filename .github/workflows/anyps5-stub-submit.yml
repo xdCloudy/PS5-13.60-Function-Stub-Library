@@ -175,9 +175,10 @@ jobs:
           fi
           git push contributor "HEAD:refs/heads/$ANYPS5_BRANCH"
           count="$(python -c 'import json,os; print(len(json.load(open(os.environ["RUNNER_TEMP"]+"/review/SELECTED_CANDIDATES.json"))["candidates"]))')"
+          library="$(python -c 'import json,os; print(json.load(open(os.environ["RUNNER_TEMP"]+"/review/SELECTED_CANDIDATES.json"))["candidates"][0]["library"])')"
           if gh pr create --repo boykopovar/AnyPS5 --base main \
             --head "xdCloudy:$ANYPS5_BRANCH" --draft \
-            --title "feat(stubs): add $count ABI-reviewed throwing exports" \
+            --title "feat($library): add $count ABI-reviewed throwing exports" \
             --body-file "$RUNNER_TEMP/review/PULL_REQUEST_BODY.md"; then
             echo "Created draft upstream PR as xdCloudy." >> "$GITHUB_STEP_SUMMARY"
           else
