@@ -18,6 +18,7 @@ import tempfile
 from anyps5_metadata import scan_files
 from candidate_overlap import save_report
 from git_candidate_overlap import check_candidates_git
+from layout_patch import plan
 from update_progress import nid_for
 
 SHA = re.compile(r"^[0-9a-f]{40}$")
@@ -82,6 +83,22 @@ def main() -> None:
              "--detach", str(pristine), "origin/main"], check=True)
         try:
             main_occupied = set(scan_files(pristine))
+            # Never trust an artifact just because it was uploaded by another
+            # job. Regenerate the expected text from the reviewed batch and
+            # prove that the published commit has no unrelated code changes.
+            planned = plan(pristine, candidates)
+            allowed = {p.relative_to(pristine).as_posix() for p in planned}
+            actual_paths = set(git(
+                checkout, "diff", "--name-only", "--no-renames",
+                "origin/main..HEAD").splitlines())
+            if actual_paths != allowed:
+                raise ValueError("Proposal changes files outside the approved "
+                                 "single-library throwing-stub placement")
+            for target, expected_content in planned.items():
+                published = checkout / target.relative_to(pristine)
+                if published.read_text(encoding="utf-8") != expected_content:
+                    raise ValueError(
+                        f"Proposal does not match regenerated safe patch: {published}")
         finally:
             subprocess.run(
                 ["git", "-C", str(checkout), "worktree", "remove", "--force",
