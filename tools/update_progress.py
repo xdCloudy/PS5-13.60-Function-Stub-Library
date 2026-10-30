@@ -390,7 +390,7 @@ def main():
         "The strict rehash gate includes only records with verified_nid_binding status "
         "and a matching local SHA1 NID; other named records are withheld from "
         "automatic upstream reconciliation until separately audited.", "",
-        "Upstream-only observations are stored as **NID-only review candidates** in 
+        "Upstream-only observations are stored as **NID-only review candidates** in "
         f"[upstream-review-queue.jsonl](reports/upstream-review-queue.jsonl); symbols "
         "cannot be promoted to verified names or qualified stubs without independent review.", "",
         "See [machine-readable progress](reports/progress.json), "
