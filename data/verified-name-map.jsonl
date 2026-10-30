@@ -36915,3 +36915,15 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"sceUserServiceSetHmd2CinematicAudioRotation","nid":"1NGArQcf8aA"}
+{"name":"sceUserServiceGetPartyGameIconInstallHistory","nid":"2Sr4VoLCSNI"}
+{"name":"sceUserServiceSetNotificationSettings_4","nid":"9Azht0PAl5Y"}
+{"name":"sceUserServiceGetPartyChatTranscriptionVoiceType","nid":"Ebq9pcMYrko"}
+{"name":"sceUserServiceSetVoiceAgentEnableByButton","nid":"Jz06XYyyqGE"}
+{"name":"sceUserServiceSetUserWithHearingAssist","nid":"O8g8pltXaSU"}
+{"name":"sceUserServiceSetAccessibilityKeyremapEnableAston","nid":"Q89EQaIzT0o"}
+{"name":"sceUserServiceSetProControllerBtAddress","nid":"aKx9SVQFoXo"}
+{"name":"sceUserServiceSetIsPersonalizedHrtfEnabled","nid":"enesn4WCCAc"}
+{"name":"sceUserServiceSetPartyGameIconInstallHistory","nid":"i9shhWDcEao"}
+{"name":"sceUserServiceSetHmd2HideCameraImage","nid":"jNsBCHVryzs"}
+{"name":"sceUserServiceGetNotificationSettings_4","nid":"yUJo-ds9Rks"}

@@ -614,7 +614,7 @@ libSceUsbStorageAux,firmware-13.60,7,7,data/firmware-13.60/libsceusbstorageaux-9
 libSceUsbStorageDialog,firmware-13.60,7,7,data/firmware-13.60/libsceusbstoragedialog-82fc91e3b4.jsonl
 libSceUsbStorageForShellUI,firmware-13.60,69,21,data/firmware-13.60/libsceusbstorageforshellui-826a4d467f.jsonl
 libSceUsbd,firmware-13.60,63,61,data/firmware-13.60/libsceusbd-e616aa44a4.jsonl
-libSceUserService,firmware-13.60,651,537,data/firmware-13.60/libsceuserservice-ec97f04de9.jsonl
+libSceUserService,firmware-13.60,651,549,data/firmware-13.60/libsceuserservice-ec97f04de9.jsonl
 libSceUserServiceAudioFocus,firmware-13.60,1,1,data/firmware-13.60/libsceuserserviceaudiofocus-925eb40585.jsonl
 libSceUserServiceForNpToolkit,firmware-13.60,2,2,data/firmware-13.60/libsceuserservicefornptoolkit-a1a43c2246.jsonl
 libSceUserServiceForShellCore,firmware-13.60,2,2,data/firmware-13.60/libsceuserserviceforshellcore-0c9f6dca18.jsonl
