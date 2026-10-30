@@ -882,7 +882,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceVrTrackerGpuTest](libraries/libscevrtrackergputest-09a999a35a.md) | 5 | 0 | 0 |
 | [libSceVrTrackerLiveCapture](libraries/libscevrtrackerlivecapture-95ce3424ff.md) | 5 | 5 | 0 |
 | [libSceVsePlugin](libraries/libscevseplugin-4a50bd9941.md) | 34 | 0 | 0 |
-| [libSceVshBrotli](libraries/libscevshbrotli-c395bb6628.md) | 6 | 0 | 0 |
+| [libSceVshBrotli](libraries/libscevshbrotli-c395bb6628.md) | 6 | 4 | 0 |
 | [libSceVshFreeType](libraries/libscevshfreetype-0bedd8123f.md) | 71 | 65 | 0 |
 | [libSceVshHarfBuzz](libraries/libscevshharfbuzz-bfae1bdef9.md) | 51 | 35 | 0 |
 | [libSceVshJpeg](libraries/libscevshjpeg-f4d3f6e0b9.md) | 25 | 25 | 0 |

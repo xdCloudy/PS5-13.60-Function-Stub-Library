@@ -682,7 +682,7 @@ libSceVrTrackerFourDeviceAllowed,firmware-13.60,1,1,data/firmware-13.60/libscevr
 libSceVrTrackerGpuTest,firmware-13.60,5,0,data/firmware-13.60/libscevrtrackergputest-09a999a35a.jsonl
 libSceVrTrackerLiveCapture,firmware-13.60,5,5,data/firmware-13.60/libscevrtrackerlivecapture-95ce3424ff.jsonl
 libSceVsePlugin,firmware-13.60,34,0,data/firmware-13.60/libscevseplugin-4a50bd9941.jsonl
-libSceVshBrotli,firmware-13.60,6,0,data/firmware-13.60/libscevshbrotli-c395bb6628.jsonl
+libSceVshBrotli,firmware-13.60,6,4,data/firmware-13.60/libscevshbrotli-c395bb6628.jsonl
 libSceVshFreeType,firmware-13.60,71,65,data/firmware-13.60/libscevshfreetype-0bedd8123f.jsonl
 libSceVshHarfBuzz,firmware-13.60,51,35,data/firmware-13.60/libscevshharfbuzz-bfae1bdef9.jsonl
 libSceVshJpeg,firmware-13.60,25,25,data/firmware-13.60/libscevshjpeg-f4d3f6e0b9.jsonl
