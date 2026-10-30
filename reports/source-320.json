@@ -1,0 +1,1206 @@
+{
+  "canonical_rows_modified": 0,
+  "inputs": {
+    "catalogue_manifest_sha256": "0f503f23221f5862499c109afd1e70111c491f3bcae80d078c2008cf34cb68ad",
+    "parser_schema": 5,
+    "source_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+    "source_content_sha256": "0b9d412bdaf509be4ebd154142e0c33a93e4e60a5e732259fd107409315a35cd"
+  },
+  "limitations": [
+    "3.20 symbol presence does not confirm a 13.60 firmware export.",
+    "Independent hash verification does not verify the C ABI or runtime behavior.",
+    "Unresolved owner, conflicting names and unsafe names remain unpromoted.",
+    "No C forwarding source, binary content or function body is published."
+  ],
+  "per_library": {
+    "gaikai-player": {
+      "already_indexed_and_named": 15
+    },
+    "libNativeExtensions": {
+      "already_indexed_and_named": 33
+    },
+    "libReactNative.Modules.Vsh": {
+      "already_indexed_and_named": 60
+    },
+    "libReactNative.Modules.Vsh.Media": {
+      "already_indexed_and_named": 42
+    },
+    "libReactNative.Modules.Vsh.MediaPlayer.Contents": {
+      "already_indexed_and_named": 4
+    },
+    "libReactNative.Modules.Vsh.WebAppLauncher": {
+      "already_indexed_and_named": 41
+    },
+    "libSceAbstractLocal": {
+      "already_indexed_and_named": 61
+    },
+    "libSceAbstractStorage": {
+      "already_indexed_and_named": 91
+    },
+    "libSceAbstractTwitter": {
+      "already_indexed_and_named": 60
+    },
+    "libSceAbstractYoutube": {
+      "already_indexed_and_named": 66
+    },
+    "libSceAc3Enc": {
+      "already_indexed_and_named": 7
+    },
+    "libSceAcm": {
+      "already_indexed_and_named": 9
+    },
+    "libSceAgc": {
+      "already_indexed_and_named": 170
+    },
+    "libSceAgcDriver": {
+      "already_indexed_and_named": 82
+    },
+    "libSceAgcVsh": {
+      "already_indexed_and_named": 170
+    },
+    "libSceAjm": {
+      "already_indexed_and_named": 19
+    },
+    "libSceAjm.native": {
+      "already_indexed_and_named": 35
+    },
+    "libSceAjmi": {
+      "already_indexed_and_named": 19
+    },
+    "libSceAmpr": {
+      "already_indexed_and_named": 76
+    },
+    "libSceAppContent": {
+      "already_indexed_and_named": 29
+    },
+    "libSceAppInstUtil": {
+      "already_indexed_and_named": 88
+    },
+    "libSceAt9Enc": {
+      "already_indexed_and_named": 5
+    },
+    "libSceAudio3d": {
+      "already_indexed_and_named": 28
+    },
+    "libSceAudioIn": {
+      "already_indexed_and_named": 34
+    },
+    "libSceAudioOut": {
+      "already_indexed_and_named": 107
+    },
+    "libSceAudioPropagation": {
+      "already_indexed_and_named": 23
+    },
+    "libSceAudioSystem": {
+      "already_indexed_and_named": 2
+    },
+    "libSceAudiodec": {
+      "already_indexed_and_named": 8
+    },
+    "libSceAudiodec.native": {
+      "already_indexed_and_named": 17
+    },
+    "libSceAudiodecCpu": {
+      "already_indexed_and_named": 7
+    },
+    "libSceAutoMounterClient": {
+      "already_indexed_and_named": 5
+    },
+    "libSceAvPlayer": {
+      "already_indexed_and_named": 23
+    },
+    "libSceAvPlayer.native": {
+      "already_indexed_and_named": 23
+    },
+    "libSceAvPlayerStreaming": {
+      "already_indexed_and_named": 28
+    },
+    "libSceAvSetting": {
+      "already_indexed_and_named": 90
+    },
+    "libSceBackupRestoreUtil": {
+      "already_indexed_and_named": 14
+    },
+    "libSceBeisobmf": {
+      "already_indexed_and_named": 16
+    },
+    "libSceBemp2sys": {
+      "already_indexed_and_named": 26
+    },
+    "libSceBgft": {
+      "already_indexed_and_named": 74
+    },
+    "libSceBluetoothHid": {
+      "already_indexed_and_named": 13
+    },
+    "libSceCamera": {
+      "already_indexed_and_named": 105
+    },
+    "libSceCdlgG2P": {
+      "already_indexed_and_named": 5
+    },
+    "libSceCdlgPlayerReview": {
+      "already_indexed_and_named": 6
+    },
+    "libSceCdlgUtilServer": {
+      "already_indexed_and_named": 10
+    },
+    "libSceCesCs": {
+      "already_indexed_and_named": 230
+    },
+    "libSceCommonDialog": {
+      "already_indexed_and_named": 14
+    },
+    "libSceCompanionHttpd": {
+      "already_indexed_and_named": 11
+    },
+    "libSceCompanionUtil": {
+      "already_indexed_and_named": 4
+    },
+    "libSceComposite": {
+      "already_indexed_and_named": 67
+    },
+    "libSceCompositeExt": {
+      "already_indexed_and_named": 67
+    },
+    "libSceContentDelete": {
+      "already_indexed_and_named": 4
+    },
+    "libSceContentExport": {
+      "already_indexed_and_named": 11
+    },
+    "libSceContentSearch": {
+      "already_indexed_and_named": 17
+    },
+    "libSceConvertKeycode": {
+      "already_indexed_and_named": 2
+    },
+    "libSceCustomMusicAudioOut": {
+      "already_indexed_and_named": 5
+    },
+    "libSceCustomMusicCore": {
+      "already_indexed_and_named": 17
+    },
+    "libSceCustomMusicSysCallWrapper": {
+      "already_indexed_and_named": 1
+    },
+    "libSceDataTransfer": {
+      "already_indexed_and_named": 51
+    },
+    "libSceDepth": {
+      "already_indexed_and_named": 35
+    },
+    "libSceDepth2": {
+      "already_indexed_and_named": 8
+    },
+    "libSceDipsw": {
+      "already_indexed_and_named": 7
+    },
+    "libSceDiscId": {
+      "already_indexed_and_named": 1
+    },
+    "libSceDiscMap": {
+      "already_indexed_and_named": 2
+    },
+    "libSceDseehx": {
+      "already_indexed_and_named": 3
+    },
+    "libSceDtsEnc": {
+      "already_indexed_and_named": 6
+    },
+    "libSceEditMp4": {
+      "already_indexed_and_named": 8
+    },
+    "libSceErrorDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libSceEsvmEngine": {
+      "already_indexed_and_named": 16
+    },
+    "libSceFacebook.Yoga": {
+      "already_indexed_and_named": 114
+    },
+    "libSceFiber": {
+      "already_indexed_and_named": 13
+    },
+    "libSceFios2": {
+      "already_indexed_and_named": 141
+    },
+    "libSceFont": {
+      "already_indexed_and_named": 113
+    },
+    "libSceFont.native": {
+      "already_indexed_and_named": 113
+    },
+    "libSceFontFt": {
+      "already_indexed_and_named": 15
+    },
+    "libSceFreeTypeOl": {
+      "already_indexed_and_named": 283
+    },
+    "libSceFreeTypeOptOl": {
+      "already_indexed_and_named": 3
+    },
+    "libSceFreeTypeOt": {
+      "already_indexed_and_named": 280
+    },
+    "libSceFsInternalForVsh": {
+      "already_indexed_and_named": 155
+    },
+    "libSceGLSlimVSH": {
+      "already_indexed_and_named": 170
+    },
+    "libSceGameCustomDataDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libSceGameLiveStreaming": {
+      "already_indexed_and_named": 42
+    },
+    "libSceGameUpdate": {
+      "already_indexed_and_named": 6
+    },
+    "libSceGic": {
+      "already_indexed_and_named": 1
+    },
+    "libSceGnmDriver": {
+      "already_indexed_and_named": 141
+    },
+    "libSceGnmDriverForNeoMode": {
+      "already_indexed_and_named": 141
+    },
+    "libSceGvMp4Parser": {
+      "already_indexed_and_named": 4
+    },
+    "libSceHidControl": {
+      "already_indexed_and_named": 18
+    },
+    "libSceHmd": {
+      "already_indexed_and_named": 144
+    },
+    "libSceHmd2": {
+      "already_indexed_and_named": 4
+    },
+    "libSceHmdSetupDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libSceHttp": {
+      "already_indexed_and_named": 91
+    },
+    "libSceHttp2": {
+      "already_indexed_and_named": 44
+    },
+    "libSceHttpCache": {
+      "already_indexed_and_named": 21
+    },
+    "libSceHubAppUtil": {
+      "already_indexed_and_named": 2
+    },
+    "libSceIcu": {
+      "already_indexed_and_named": 556
+    },
+    "libSceIdu": {
+      "already_indexed_and_named": 7
+    },
+    "libSceIme": {
+      "already_indexed_and_named": 41
+    },
+    "libSceImeDialog": {
+      "already_indexed_and_named": 11
+    },
+    "libSceInvitationDialog": {
+      "already_indexed_and_named": 9
+    },
+    "libSceIpmi": {
+      "already_indexed_and_named": 79
+    },
+    "libSceJpegDec": {
+      "already_indexed_and_named": 6
+    },
+    "libSceJpegEnc": {
+      "already_indexed_and_named": 3
+    },
+    "libSceJpegParser": {
+      "already_indexed_and_named": 5
+    },
+    "libSceJsc": {
+      "already_indexed_and_named": 3481,
+      "withheld": 10
+    },
+    "libSceJson": {
+      "already_indexed_and_named": 74
+    },
+    "libSceJson2": {
+      "already_indexed_and_named": 184
+    },
+    "libSceJxr": {
+      "already_indexed_and_named": 2
+    },
+    "libSceKbEmulate": {
+      "already_indexed_and_named": 2
+    },
+    "libSceKeyboard": {
+      "already_indexed_and_named": 21
+    },
+    "libSceLibreSSL": {
+      "already_indexed_and_named": 332,
+      "withheld": 11
+    },
+    "libSceLibreSsl3": {
+      "already_indexed_and_named": 409,
+      "withheld": 12
+    },
+    "libSceLoginDialog": {
+      "already_indexed_and_named": 6
+    },
+    "libSceLoginMgrServer": {
+      "already_indexed_and_named": 28
+    },
+    "libSceLoginService": {
+      "already_indexed_and_named": 1
+    },
+    "libSceM4aacEnc": {
+      "already_indexed_and_named": 14
+    },
+    "libSceMbus": {
+      "already_indexed_and_named": 102
+    },
+    "libSceMetadataReaderWriter": {
+      "already_indexed_and_named": 33
+    },
+    "libSceMouse": {
+      "already_indexed_and_named": 11
+    },
+    "libSceMove": {
+      "already_indexed_and_named": 16
+    },
+    "libSceMoveTracker": {
+      "already_indexed_and_named": 15
+    },
+    "libSceMsgDialog": {
+      "already_indexed_and_named": 8
+    },
+    "libSceMusicFrameworkInterface": {
+      "already_indexed_and_named": 17
+    },
+    "libSceNKWeb": {
+      "already_indexed_and_named": 3
+    },
+    "libSceNKWebKit": {
+      "already_indexed_and_named": 10072,
+      "withheld": 63
+    },
+    "libSceNKWebKitRequirements": {
+      "already_indexed_and_named": 109
+    },
+    "libSceNet": {
+      "already_indexed_and_named": 180
+    },
+    "libSceNetCtl": {
+      "already_indexed_and_named": 88
+    },
+    "libSceNetCtlApDialog": {
+      "already_indexed_and_named": 5
+    },
+    "libSceNgs2": {
+      "already_indexed_and_named": 36
+    },
+    "libSceNgs2.native": {
+      "already_indexed_and_named": 53
+    },
+    "libSceNotification": {
+      "already_indexed_and_named": 1
+    },
+    "libSceNpAuth": {
+      "already_indexed_and_named": 9
+    },
+    "libSceNpCommerce": {
+      "already_indexed_and_named": 9
+    },
+    "libSceNpCommon": {
+      "already_indexed_and_named": 637,
+      "withheld": 15
+    },
+    "libSceNpEntitlementAccess": {
+      "already_indexed_and_named": 23
+    },
+    "libSceNpFriendListDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libSceNpGameIntent": {
+      "already_indexed_and_named": 11
+    },
+    "libSceNpManager": {
+      "already_indexed_and_named": 344,
+      "withheld": 4
+    },
+    "libSceNpMatching2": {
+      "already_indexed_and_named": 60,
+      "withheld": 1
+    },
+    "libSceNpPartner001": {
+      "already_indexed_and_named": 1
+    },
+    "libSceNpParty": {
+      "already_indexed_and_named": 19
+    },
+    "libSceNpProfileDialog": {
+      "already_indexed_and_named": 6
+    },
+    "libSceNpRemotePlaySessionSignaling": {
+      "already_indexed_and_named": 8
+    },
+    "libSceNpScoreRanking": {
+      "already_indexed_and_named": 42
+    },
+    "libSceNpSessionSignaling": {
+      "already_indexed_and_named": 21
+    },
+    "libSceNpSignaling": {
+      "already_indexed_and_named": 21
+    },
+    "libSceNpSns": {
+      "already_indexed_and_named": 19
+    },
+    "libSceNpSnsFacebookDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libSceNpSnsYouTubeDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libSceNpTcs": {
+      "already_indexed_and_named": 3
+    },
+    "libSceNpTrophy": {
+      "already_indexed_and_named": 84
+    },
+    "libSceNpTrophy2": {
+      "already_indexed_and_named": 39
+    },
+    "libSceNpTus": {
+      "already_indexed_and_named": 127
+    },
+    "libSceNpUniversalDataSystem": {
+      "already_indexed_and_named": 72
+    },
+    "libSceNpUtility": {
+      "already_indexed_and_named": 85
+    },
+    "libSceNpWebApi": {
+      "already_indexed_and_named": 50
+    },
+    "libSceNpWebApi2": {
+      "already_indexed_and_named": 36
+    },
+    "libSceOpusCeltDec": {
+      "already_indexed_and_named": 9
+    },
+    "libSceOpusCeltEnc": {
+      "already_indexed_and_named": 8
+    },
+    "libSceOpusDec": {
+      "already_indexed_and_named": 10
+    },
+    "libSceOpusSilkEnc": {
+      "already_indexed_and_named": 11
+    },
+    "libScePSNowGkp": {
+      "already_indexed_and_named": 4
+    },
+    "libScePad": {
+      "already_indexed_and_named": 87
+    },
+    "libScePadTracker": {
+      "already_indexed_and_named": 4
+    },
+    "libScePatchCheckerClient": {
+      "already_indexed_and_named": 11
+    },
+    "libScePlayGo": {
+      "already_indexed_and_named": 15
+    },
+    "libScePlayGoDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libScePlayReady": {
+      "already_indexed_and_named": 43
+    },
+    "libScePlayReady2": {
+      "already_indexed_and_named": 46
+    },
+    "libScePlayReady4": {
+      "already_indexed_and_named": 70
+    },
+    "libScePlayerInvitationDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libScePlayerSelectionDialog": {
+      "already_indexed_and_named": 6
+    },
+    "libScePngDec": {
+      "already_indexed_and_named": 4
+    },
+    "libScePngEnc": {
+      "already_indexed_and_named": 4
+    },
+    "libScePosixForWebKit": {
+      "already_indexed_and_named": 29
+    },
+    "libScePs2EmuMenuDialog": {
+      "already_indexed_and_named": 6
+    },
+    "libScePsm": {
+      "already_indexed_and_named": 54
+    },
+    "libScePsmUtil": {
+      "already_indexed_and_named": 3
+    },
+    "libSceRandom": {
+      "already_indexed_and_named": 1
+    },
+    "libSceRazorCpu": {
+      "already_indexed_and_named": 31
+    },
+    "libSceRegMgr": {
+      "already_indexed_and_named": 56
+    },
+    "libSceRemoteplay": {
+      "already_indexed_and_named": 32
+    },
+    "libSceRnpsAppMgr": {
+      "already_indexed_and_named": 21
+    },
+    "libSceRtc": {
+      "already_indexed_and_named": 38
+    },
+    "libSceRudp": {
+      "already_indexed_and_named": 30
+    },
+    "libSceS3da": {
+      "already_indexed_and_named": 4
+    },
+    "libSceSaveData": {
+      "already_indexed_and_named": 82
+    },
+    "libSceSaveData.native": {
+      "already_indexed_and_named": 30
+    },
+    "libSceSaveDataDialog": {
+      "already_indexed_and_named": 8
+    },
+    "libSceSaveDataDialog.native": {
+      "already_indexed_and_named": 8
+    },
+    "libSceScreenShot": {
+      "already_indexed_and_named": 11
+    },
+    "libSceSdma": {
+      "already_indexed_and_named": 22
+    },
+    "libSceShare.native": {
+      "already_indexed_and_named": 11
+    },
+    "libSceShareFactoryUtil": {
+      "already_indexed_and_named": 5
+    },
+    "libSceSharePlay": {
+      "already_indexed_and_named": 15
+    },
+    "libSceShareUtility": {
+      "already_indexed_and_named": 18
+    },
+    "libSceShellUIUtil": {
+      "already_indexed_and_named": 5
+    },
+    "libSceSigninDialog": {
+      "already_indexed_and_named": 7
+    },
+    "libSceSocialScreen": {
+      "already_indexed_and_named": 11
+    },
+    "libSceSocialScreenDialog": {
+      "already_indexed_and_named": 6
+    },
+    "libSceSpSysCallWrapper": {
+      "already_indexed_and_named": 40
+    },
+    "libSceSrcUtl": {
+      "already_indexed_and_named": 8
+    },
+    "libSceSsl": {
+      "already_indexed_and_named": 41
+    },
+    "libSceSulphaDrv": {
+      "already_indexed_and_named": 6
+    },
+    "libSceSysCore": {
+      "already_indexed_and_named": 64
+    },
+    "libSceSysUtil": {
+      "already_indexed_and_named": 21
+    },
+    "libSceSysmodule": {
+      "already_indexed_and_named": 16
+    },
+    "libSceSystemGesture": {
+      "already_indexed_and_named": 19
+    },
+    "libSceSystemLogger": {
+      "already_indexed_and_named": 2
+    },
+    "libSceSystemLogger2": {
+      "already_indexed_and_named": 4
+    },
+    "libSceSystemLogger2Delivery": {
+      "already_indexed_and_named": 4
+    },
+    "libSceSystemLogger2NativeQueueClient": {
+      "already_indexed_and_named": 5
+    },
+    "libSceSystemService": {
+      "already_indexed_and_named": 416
+    },
+    "libSceSystemTts": {
+      "already_indexed_and_named": 5
+    },
+    "libSceTEEClient": {
+      "already_indexed_and_named": 10
+    },
+    "libSceTextToSpeech": {
+      "already_indexed_and_named": 8
+    },
+    "libSceUlt": {
+      "already_indexed_and_named": 53
+    },
+    "libSceUpdateService": {
+      "already_indexed_and_named": 32
+    },
+    "libSceUrlConfigResolver": {
+      "already_indexed_and_named": 4
+    },
+    "libSceUsbStorage": {
+      "already_indexed_and_named": 19
+    },
+    "libSceUsbStorageDialog": {
+      "already_indexed_and_named": 5
+    },
+    "libSceUsbd": {
+      "already_indexed_and_named": 47
+    },
+    "libSceUserService": {
+      "already_indexed_and_named": 384,
+      "withheld": 2
+    },
+    "libSceVdecCore": {
+      "already_indexed_and_named": 15
+    },
+    "libSceVdecCore.native": {
+      "already_indexed_and_named": 17
+    },
+    "libSceVdecSavc": {
+      "already_indexed_and_named": 4
+    },
+    "libSceVdecSavc2": {
+      "already_indexed_and_named": 4
+    },
+    "libSceVdecSavc2.native": {
+      "already_indexed_and_named": 4
+    },
+    "libSceVdecShevc": {
+      "already_indexed_and_named": 7
+    },
+    "libSceVdecShevc.native": {
+      "already_indexed_and_named": 7
+    },
+    "libSceVdecsw": {
+      "already_indexed_and_named": 14
+    },
+    "libSceVdecwrap": {
+      "already_indexed_and_named": 8
+    },
+    "libSceVenc": {
+      "already_indexed_and_named": 13
+    },
+    "libSceVideoArbitration": {
+      "already_indexed_and_named": 3
+    },
+    "libSceVideoCoreInterface": {
+      "already_indexed_and_named": 1
+    },
+    "libSceVideoCoreServerInterface": {
+      "already_indexed_and_named": 43
+    },
+    "libSceVideoDecoderArbitration": {
+      "already_indexed_and_named": 4
+    },
+    "libSceVideoNativeExtEssential": {
+      "already_indexed_and_named": 4
+    },
+    "libSceVideoOut": {
+      "already_indexed_and_named": 136
+    },
+    "libSceVideoRecording": {
+      "already_indexed_and_named": 13
+    },
+    "libSceVideoRecording.native": {
+      "already_indexed_and_named": 17
+    },
+    "libSceVideoStreamingEngine": {
+      "already_indexed_and_named": 12
+    },
+    "libSceVideoStreamingEngine_sys": {
+      "already_indexed_and_named": 12
+    },
+    "libSceVideodec": {
+      "already_indexed_and_named": 6
+    },
+    "libSceVideodec2": {
+      "already_indexed_and_named": 18
+    },
+    "libSceVisionManager": {
+      "already_indexed_and_named": 46
+    },
+    "libSceVoice": {
+      "already_indexed_and_named": 31
+    },
+    "libSceVoiceChat": {
+      "already_indexed_and_named": 26
+    },
+    "libSceVoiceQoS": {
+      "already_indexed_and_named": 20
+    },
+    "libSceVrServiceDialog": {
+      "already_indexed_and_named": 6
+    },
+    "libSceVrTracker": {
+      "already_indexed_and_named": 28
+    },
+    "libSceVrTracker2": {
+      "already_indexed_and_named": 4
+    },
+    "libSceWebBrowserDialog": {
+      "already_indexed_and_named": 12
+    },
+    "libSceWkFontConfig": {
+      "already_indexed_and_named": 6
+    },
+    "libSceXml": {
+      "already_indexed_and_named": 156
+    },
+    "libSceZlib": {
+      "already_indexed_and_named": 4
+    },
+    "libcairo": {
+      "already_indexed_and_named": 141
+    },
+    "libcurl": {
+      "already_indexed_and_named": 75
+    },
+    "libfontconfig": {
+      "already_indexed_and_named": 41
+    },
+    "libfreetype": {
+      "already_indexed_and_named": 141
+    },
+    "libharfbuzz": {
+      "already_indexed_and_named": 33
+    },
+    "libicu": {
+      "already_indexed_and_named": 1460
+    },
+    "libmdbg_syscore": {
+      "already_indexed_and_named": 123
+    },
+    "libmono-profiler-log": {
+      "already_indexed_and_named": 1
+    },
+    "libmonosgen-2.0": {
+      "already_indexed_and_named": 817
+    },
+    "libpng16": {
+      "already_indexed_and_named": 76
+    },
+    "libsceNpEulaDialog": {
+      "already_indexed_and_named": 8
+    },
+    "mscorlib": {
+      "already_indexed_and_named": 312
+    }
+  },
+  "publication_gate": "manual review required before canonical promotion",
+  "quarantine_by_reason": {
+    "nid_name_hash_mismatch": 5860
+  },
+  "quarantine_diagnostic_records": 5860,
+  "quarantined_registrations": 10728,
+  "review_queue_records": 10846,
+  "schema_version": 5,
+  "source": "DNNDHH/PS5-3.20_Libs",
+  "source_file_sha256": {
+    "WebAppBundle.c": "b2a08a9e23281b958536c08ff0a4c525d72b1e65e42e78dd18c618602cf61d02",
+    "gaikai-player.c": "92b3280f12eac63882ed7e72e6cb7044f962fc681ad01fbbb5c39cc14a6854fb",
+    "libNativeExtensions.c": "19b4d2735849a243ae2f0535d5159122f147d0c8b77f7126ef38311c03ebb77f",
+    "libReactNative.Modules.Vsh.Media.c": "016e6581b23df8299e07cd779cd27ddccd902f43a45f71dbb1fee0fc24883b24",
+    "libReactNative.Modules.Vsh.MediaPlayer.Contents.c": "07860b8a2f00cccb7b82af7c773f0ba9fd9a91ea3f64c4c2da5770aec800aa19",
+    "libReactNative.Modules.Vsh.WebAppLauncher.c": "99a62a1245994881e4a6498ec1e1d0738f5afc39019e6fd713aab0a8821643e6",
+    "libReactNative.Modules.Vsh.c": "97f2379780cf376a926d6b70696a3ee79719b56a14461629a2b49672e18458f1",
+    "libSceAbstractLocal.c": "1ae859251c6d50e29616c36dc679cb12998f18e028e6b1ecb67e79616b81a395",
+    "libSceAbstractStorage.c": "7414ba6698476223ae9f2d225c703c758d92a35b6aa8d86a84e906d9ef351b5c",
+    "libSceAbstractTwitter.c": "ce56773aa556e9b4e5b661c83263008c0d20dfb883173d6ee957c5027c154ce7",
+    "libSceAbstractYoutube.c": "2aebf29601c00c8ed2beb1d0c735aadf3374ff6c0d95fd90ac7b7a95be0b8aaf",
+    "libSceAc3Enc.c": "728e9e48ef1111001f1b8c1825279117bec1eb763f6f2d507fb58f60ba5133f2",
+    "libSceAcm.c": "4b1c04230a47f0aafaace8f00e884523560d542e6128b8a0f50e2b35ada7d733",
+    "libSceAgc.c": "88417464c5d698574d7d3500b165cd17e084481ac45cf9ac9246ba6f3be50f4d",
+    "libSceAgcDriver.c": "4853d5c24b407de0ea7c52fef6fe68b64fc8c61b1ebc615b482f66beb5480e5f",
+    "libSceAgcVsh.c": "ab2e43319b1eac5a33df1863247ce8887c7c389d6c47107b1dec4705cd9f06b7",
+    "libSceAjm.c": "ea1478160236fec87cce23c93ed757f869b0a0b9a009de21fa4a0ae8ede4e01b",
+    "libSceAjm.native.c": "02e3152c95261356c0d9ce151514a9a7f7030413c8bd24407e5320bad04af349",
+    "libSceAjmi.c": "1c840e1d6d684cab1763f1459ec3fdf4eabbfafd1ef4581d8c79f6cdaea369f9",
+    "libSceAmpr.c": "198d3199e32c4ba74878e0a28d6f010dd038712a0f77f9061e56d76e9790711c",
+    "libSceAppContent.c": "922965460725eeb32f3a80ae7483539a1b7359aa7c86c5befa6bb0699cb04155",
+    "libSceAppInstUtil.c": "d313fa28f11e2ccbbc158f4d3a2f3e3da54de47d1c0e6cb037490fd3123d91bc",
+    "libSceAt9Enc.c": "8fc95bfdd86c9063ca3da955e538f4c4772395fff4921ad18ffd323120fea71e",
+    "libSceAudio3d.c": "458db017407f9981d21220835a189f5e5c0d42a8b335e476f06665fb64e0fa97",
+    "libSceAudioIn.c": "c7c9717275aa58aab784b534f3f43c4b9c139ffb991dd674fd3c5dc9c7b02810",
+    "libSceAudioOut.c": "5d429b7733958a9882687d69412883e4b6a91012832c0bb36025f4a4c892cd11",
+    "libSceAudioPropagation.c": "107273aecb828cd41006f75dddf6cc69fee385b64a2c2c9670f87d6729a4857d",
+    "libSceAudioSystem.c": "6b63d34bd5ab69639f38cddb4d6e5dad02c5a3611df1b5ce9563b6a955940ef5",
+    "libSceAudiodec.c": "9975747cee7b40d0425693616c0b6e2d60651e2c3b234105e9878a093a9e7318",
+    "libSceAudiodec.native.c": "2e139966740ba905f00783bcef997d74eb9a2b9cdccba8abdf9433ac4a9bedc1",
+    "libSceAudiodecCpu.c": "816876c3bf650d863cc60572b611efd63c9ce2e970725e7ed0cc2985dae58450",
+    "libSceAutoMounterClient.c": "b70b91d270db0bd2565cf99ce7cc38f6c140f46a360b2078ead5df48e69a3e8c",
+    "libSceAvPlayer.c": "3ac8095cd417d8d5ceeaedc93d637a51a4133f07c5a3fd7e01795e43963d564a",
+    "libSceAvPlayer.native.c": "86567559229191250e29c5e8fddf611fa20eca8736f493d1a56d0a2490664b38",
+    "libSceAvPlayerStreaming.c": "72472bef0a1be77e502723c21fa808c1ca5a8da6a2ed5d6aee50044972f68aed",
+    "libSceAvSetting.c": "0a2db524a74863b073177ad9029e2d96a8f4a72244842cd4f5b0b2599ba98675",
+    "libSceBackupRestoreUtil.c": "345bbb144a162c767ce8d7bb47f8fce232eca9ade577dd828b81e106d6702e65",
+    "libSceBeisobmf.c": "540d841acea5cc98e448b9b01940f05bc59eed82d757d8e06bb1e7ce321d24bc",
+    "libSceBemp2sys.c": "049ff14b95298158a47ddb579f9d56754fe8621dd964de824e2457a369b6a7b4",
+    "libSceBgft.c": "079a9c8d2c782a59461ecf2ff12fd1e7c56b1ef8ce32a731905d52a971d306b4",
+    "libSceBluetoothHid.c": "828fd2ecf84596057ddd63f5f0ee769cfb54b8af9333da44a1d1c03b7b8f6236",
+    "libSceCamera.c": "341d1753cb0cd698c53b416acf5d20c2c574dae9a7e1477337ee3ed549d2e6a5",
+    "libSceCdlgG2P.c": "f056fd024a7f9dc1bf3bb8402b69e363ef0560b36d9a9f7a4af485cd4e94a7ad",
+    "libSceCdlgPlayerReview.c": "206a715641210ff249d4b855c37465934232055bb0a0795e30f08c506d2ebde6",
+    "libSceCdlgUtilServer.c": "97212cf4c168366a131faf72152320bafcbea23578a74bd784d7b99bf2beba7e",
+    "libSceCesCs.c": "c3e543609a5619c3dbc585ef9d203d9b138e7842c113c811cd5004e6d7dcd1b2",
+    "libSceCommonDialog.c": "6ea63afd2952975b2d8b31db4a59291a1df1901791c501d324ee8672c2ffdcec",
+    "libSceCompanionHttpd.c": "4a0139e91e13dadfc43ad29c17d1b375f53c58b64abb6a2313683ce7b0729843",
+    "libSceCompanionUtil.c": "ad0a5383435663ec2a5b82e0a70f05e0cfd0f5470e6ea70e0c333f78c56eb291",
+    "libSceComposite.c": "5fb83b1194c83c945b0d3dd8ebe9a89d407f1b251eb14f6cc2104eb532711405",
+    "libSceCompositeExt.c": "1555663a866227e8ebf149e0b78db889ff43ac58c08ee6bf1eb38f72fe6bc572",
+    "libSceContentDelete.c": "f88bf686a8ee0daabbef11972c7a3ae5d8b674a9f6adac8a77f9422d94f59bff",
+    "libSceContentExport.c": "9e46add7f13606132625d748c4a03a50e26811fd3fd24fd4d036636834fd9e40",
+    "libSceContentSearch.c": "068e5e135487991f64387def16fd734d4821d1df7cf8abf1056291c65303584a",
+    "libSceConvertKeycode.c": "31d60085f0400aa0904b53bc2933aca54fd1b0f72ce2aea6f965dc6e43c1745b",
+    "libSceCustomMusicAudioOut.c": "45ef5603dd5a9153b7569e44fcdd50c100eb1c68e2772e472507d6b53fdefa48",
+    "libSceCustomMusicCore.c": "385e5a29db3cdb745c52bc92f9a1b3f3e0d870b66d22353a18d9e9a932402a0d",
+    "libSceCustomMusicSysCallWrapper.c": "6138f04a1b24abfd1d57bd9082fa39d8503726cf9cf19b44c09b473893c5ac79",
+    "libSceDataTransfer.c": "eb5289388862e47390577d0fc97601a263fcbf0ba0631d9568ceed3a40fadf07",
+    "libSceDepth.c": "d1340d4a7a9390e5777bdc855b3852daac22fde77f5574d3eaffe1614111cc37",
+    "libSceDepth2.c": "052032a592cdf5d94566227fc3c842eacc0b90011e4b538ab8a4596c71dff2a3",
+    "libSceDipsw.c": "8e709e241b88be0aee26172777faa7eaefb3cea49ade8fa1da91a7debcf00c2f",
+    "libSceDiscId.c": "708ced6155b37724b581f64d274dc99203f3ff197c4846bb7f4067dc387eabad",
+    "libSceDiscMap.c": "1054f4b322cf776b02c012f3bbee9f489651d67295122c47aaf1897d8b389a96",
+    "libSceDseehx.c": "05ee3aa297c85b7e8d2a8494466397215dbc2e5f08d021014a8474aca38d190a",
+    "libSceDtsEnc.c": "63e164a622a33c5284fba1d5009ef53b4efe70444960efdec2f502fe9d878374",
+    "libSceEditMp4.c": "e1fcea52611eee7151119ebcbe02cfa4254962d80e96be01d9edd83a007c8f2e",
+    "libSceErrorDialog.c": "9af15c29e9601994c8f33b0c5ab8ebcf5f472ebf41539a0a97492eec1ad6015b",
+    "libSceEsvmEngine.c": "6a29f40adaf325908cb0f2176463e6a61e77922cdb005028cb6979ae8c78bf23",
+    "libSceFacebook.Yoga.c": "28810acde0b46c6fd4769457e1108780246346f5836c828ab37e67f7dedc443b",
+    "libSceFiber.c": "5cce06b59c20b3d01d5f2ce93deae1058680e2ddf08105bb05389f2f83d32e2c",
+    "libSceFios2.c": "6e7afa5e07016b57c6ebfa8484a77b450d2b62460a108083eef8539a7795762c",
+    "libSceFont.c": "1f1f712f3eb4989ed9b970de23456edb7737c47ac51d2f18fc78d73b197e10e6",
+    "libSceFont.native.c": "8ff54b1c0de98eb70df13c12a17a63fb89e88a710531c15f81405b80d8328222",
+    "libSceFontFt.c": "c015b7127e37b679593402d9e6a510cd5a8fe800df152072cd83c28aa7e85b26",
+    "libSceFreeTypeOl.c": "088fe19a9f83ab4b0ee9dc6b37e4d3b3ca4da1ab0c259f8f6c2ae6e0b5e250d4",
+    "libSceFreeTypeOptOl.c": "52c286186fe65bf0c3bd341a58f4f101f3289d45382a2094643c052d530844bb",
+    "libSceFreeTypeOt.c": "2d1924264e5d44b655f16c0f70809aeca4681aba73a749f6ff955dae82b44139",
+    "libSceFsInternalForVsh.c": "0d6c4a009b017154b3783cfa421ede44e7ffebb8c0f665362c298398032fccf7",
+    "libSceGLSlimVSH.c": "ecde55d07714b95b3181328fde54a46e8d1a1cc145d46cbcfde44386e619c2be",
+    "libSceGameCustomDataDialog.c": "369a6b20558c530a6088a8754111980130880ed9863c85beb326bcef8daff483",
+    "libSceGameLiveStreaming.c": "40b76a6ab2de44528d5f43598d153a3496c2571131f475ca1b31e4e4069acef3",
+    "libSceGameUpdate.c": "f0e33ca393d2a4c9c1c9f1200efec82a6e357a6084bf821c7bfec4428f7dd708",
+    "libSceGic.c": "15384852553da2f8f3b902ae4ec9f59fd0f034c4cd73d3562b82d9ba87b27780",
+    "libSceGnmDriver.c": "4e91f5dc2656f7fbffb7724762264ccd7e1767382c5af8858dd078a80cba989d",
+    "libSceGnmDriverForNeoMode.c": "6e3cd0011b72a0780457f290b32e439f3d6f5c60ac2dbaa10903f76031494b83",
+    "libSceGvMp4Parser.c": "b565757ee9f6fb3dead9f97be0c51598a3746e3346d698175d661f81a57c6ef0",
+    "libSceHidControl.c": "92b33300023534b6d8b31bf543e115799d54a04058f7668053443e2194dfc3ef",
+    "libSceHmd.c": "1e87d915087a2c261964f3869247a65cf8a20177f213179c55b0b8175d391b99",
+    "libSceHmd2.c": "1a85a3d22ddb1fdb6962ffc386707a9b822a53883950e0db65c5fa49c12978ce",
+    "libSceHmdSetupDialog.c": "42d21ab4210c2b3d6741fff318bf977c133625ce35aafb040115fb5cfd79c2cc",
+    "libSceHttp.c": "a2a65852689c2e00c2db628f6fafd3896bbc74f2df8ad25e8c442d4ed3cb9792",
+    "libSceHttp2.c": "a4f92a43d38d6471fd36c8438f2821eed18f5543a121f39f413fe4e64485d634",
+    "libSceHttpCache.c": "f84208c408d5ea9e2d53163f1d68c5634105fa03be1b7abc5cfc21652a5fd892",
+    "libSceHubAppUtil.c": "917fcf3b15f69ffb173b328c4899601fdd4589eacedbc982a773b375be1372e8",
+    "libSceIcu.c": "fa2d3201229da7255ac5154f8dce3afc68ced7a8e8ba45730d38a0a8efc3f22f",
+    "libSceIdu.c": "ed2d46206bae25e35f87544e1e990ddd1ce60ca94d0836b955c558b074a295ce",
+    "libSceIme.c": "6561fd05b3914cf5056669757c9aa65d54fbcd1623ec70addcaf4fc7f1dac19a",
+    "libSceImeDialog.c": "b59760d9206725092b24f716d3abb365ec25c022b03c37c520e63bf5f7bbb6f9",
+    "libSceInvitationDialog.c": "9c32df011af933d0d3eb2f902b63b363c8ed26e7ebb09661ed973a4bab0dd856",
+    "libSceIpmi.c": "1802bf1b89314ca3da0a175a1bd54eac0c799697dc6c0c33f5f4c4336615132d",
+    "libSceJpegDec.c": "12d4bd17d97af9a11af381c28064917cb3d4870882857b58f4d3d2621ecfff8c",
+    "libSceJpegEnc.c": "b02b9fb25adedf72e3401b36ae94e74cdb4eb00270765f4bb0093414e9e191e7",
+    "libSceJpegParser.c": "f4498a3ee3b8b1de009c13ed17bf22ab6a486d871caeffe6180f6127c02ecae1",
+    "libSceJsc.c": "c56e88ab41c68cda8cbd05998770c50d0d80c666b79ca185b8aed10bb4b39814",
+    "libSceJson.c": "cfc77fe137b2288441a36609eabdd1d9bf6b731ec001af86b81e17532982a6dc",
+    "libSceJson2.c": "bdaeaf67972e82732014e80df78baab02e0b9ca5b4278cf8d95897db9c6ec7f5",
+    "libSceJxr.c": "43093cd1f321edca0e47f16c86a09784c7ebe40dab5a0bee10788b8a9e6f51e2",
+    "libSceKbEmulate.c": "708b2ebe3dd7127f765cae1ccf9ad54aaa2fbdd15299c6ed526be71eba03019c",
+    "libSceKeyboard.c": "48b261a9d15a08bc7694274f723ed1e73704786171dfe3073c97394bed732678",
+    "libSceLibcInternal.c": "06728a14fb6580ae082dc319961b5458f99775f8bc5407fbae891c85667cc5da",
+    "libSceLibreSsl.c": "bfa3b0cc417b1afb9b7567054f19a88a54ba6a8f2b250752b78edb3e3fd8809f",
+    "libSceLibreSsl3.c": "a515d8c23db2070a251ce28ddb0f465db22cf16114cd8991da67bc23bf15895c",
+    "libSceLoginDialog.c": "11fab6d3a9afd78a6e8a4457095c7b4194d0e0c7ea6d64f28ccf4572ac4c3a21",
+    "libSceLoginMgrServer.c": "1739888b5e676d7209c5ea3df8f4b3ef7310045f7a34b6c57f6f62347c200ff2",
+    "libSceLoginService.c": "afec01d3cabefa4638b9f653a0bcd7af1488ecac490d01462ae9c384c52bfdc4",
+    "libSceM4aacEnc.c": "72747dce5bb4e53731d728a75041e74e920c90c23525af7e580d71f3513ba80c",
+    "libSceMbus.c": "ca1ffa958b8ac45934a4b86409607e25d623106fdbbe3b3e3515e6549e547ddb",
+    "libSceMetadataReaderWriter.c": "20d9f7b700603a6528ca1743f421701c4b26e24198f1ce356255176dc3fbb664",
+    "libSceMouse.c": "63925e9fd5ad5f238922ce632347689094703754359e5050c47b59e815c0af3c",
+    "libSceMove.c": "a5f37a7ffbf7a1ca15488cfa756f534aa12f23561f14a64bbf42b203281c9fbd",
+    "libSceMoveTracker.c": "e218178faa2b7cf3b1d1b7ae53d049e4beb75f09b2039f2d1916e2f13264f52f",
+    "libSceMsgDialog.c": "54414bd68e3fa88131e1946ab9e9dfdec2c44d0e250fd2006c9dd01bd8e72889",
+    "libSceMusicFrameworkInterface.c": "965294ae3b7f9fdf32a63753ba71c360f8798f68e5f76e762b28e94e31b0c348",
+    "libSceNKWeb.c": "d2daf459d5b3a13db320185a434dcab6605ec011721417148fac56a453a6224c",
+    "libSceNKWebCdlgInjectedBundle.c": "510603afed2d4f1889e23e540ee515a9b27a2db4bf6b38ff33d48e4d7e886a52",
+    "libSceNKWebKit.c": "c51b75eb76cb52aaaea97607eb568a98cfa6c8673e38ec4e2f665a4c504841c6",
+    "libSceNKWebKitRequirements.c": "d486898805c1b2ef7f6d1eda93e3743841cc7c932f10f1fdd294775c03ff3bf0",
+    "libSceNet.c": "331be6adb18b52c9156cdabc5a7082184ebf555ae8467e9a67472dfb66de12f2",
+    "libSceNetCtl.c": "b6acbbcd2819c16c13e5d555687d28ef7c25ee53bc388a2ffd934929aa1175bc",
+    "libSceNetCtlApDialog.c": "0acd4ab6a81c669ae9ab88f1569d3bfb4718a08045861a5ccc566bce37e50127",
+    "libSceNgs2.c": "7dc5aa800c1b2b023d8f309b7af9af66a5942f520dfca38a24feec7c1d1bc36d",
+    "libSceNgs2.native.c": "654bf36bd60e1efbe3a42d56e5eed165a2383d152685e5552edbd3a7b2f71578",
+    "libSceNotification.c": "60290a446813454215a45612b57ddf03f59bf6be7a91c81c4ff83695de41d827",
+    "libSceNpAuth.c": "cafdcee75ad3ffac5132406755b7c03ccefee93b56f2e0e4427872aaca718632",
+    "libSceNpCommerce.c": "dcfc753620e236d3532933613da674e66f8bf32b48b0f736b0c5f99754b9be7b",
+    "libSceNpCommon.c": "26f84134b8d74be51188150b1ee2f1d46fe704feb2883181d22002283ff5c313",
+    "libSceNpEntitlementAccess.c": "90789246ff40309d17809b1bcc9988c5d47196b31f38b5cf894d188a9225ee66",
+    "libSceNpEulaDialog.c": "aa415e8942e41de88b400d506d716554302ba57218e6bda618ab23855c566d88",
+    "libSceNpFriendListDialog.c": "e7ecfc0033979227befabc3543520e168c809efd8da367a1ab9d01f9e965da94",
+    "libSceNpGameIntent.c": "1dcede8d123bee3fdd8ea11d9e80f60f1ee1901a596449675c24f5ba6746194f",
+    "libSceNpManager.c": "f8538e100915827205e50161cc70a42ac18aa8056ee59f87346b6ffb8fed00ba",
+    "libSceNpMatching2.c": "aaa99e3270f3914f8e13aa3164e050d682755576ce0e6c4713a6d59e343e6b5b",
+    "libSceNpPartner001.c": "4a19185fefa41c44a718ec2ccb84427234bf1a88eed3b95b91338144e6faf052",
+    "libSceNpParty.c": "4fd53f13062386d25ba1f78e98ae848858e8944ee30a61f354215c8a4a84f30f",
+    "libSceNpProfileDialog.c": "a4b8fa74cbffaa5d03f8e533f99d02f4ccdb2c57058e9b3030e56452f0f0aa6d",
+    "libSceNpRemotePlaySessionSignaling.c": "fb64df70ec2373e82ae211a2cac3bf82367c26b8d7720b80cf54107e9611a013",
+    "libSceNpScoreRanking.c": "8dc51d8bcc92bffb3884852ecb082f301eae79004bb271678914f2fe8375800c",
+    "libSceNpSessionSignaling.c": "dcd4af60deac5ff693cb6804a3596a26104024cbe59e61d7db68a09683dc9605",
+    "libSceNpSignaling.c": "edff79b3d77fbe31149232c023d88e2f9da98e73c727e8bc2aca0ee7ee039cf1",
+    "libSceNpSns.c": "180313fe334f888acae19d23bfa826b1032584effb311b0c932359b9dd21fd72",
+    "libSceNpSnsFacebookDialog.c": "f75ad762dfb1d23498fba239c6359f2824157403e0dc8f19806c0ac6ab7c64a8",
+    "libSceNpSnsYouTubeDialog.c": "e27546b702c90325d36168c097d5adae3d816a04038bf473592cb9a2f218325d",
+    "libSceNpTcs.c": "bf00669650bcaadb29d2dcfd613dd7ebd1df96758f4e5b8af942a7b537f40ea4",
+    "libSceNpTrophy.c": "4c6485aa0bfc79db2f09c1529eadee4467d49902141c7906e71ea5cc849129f9",
+    "libSceNpTrophy2.c": "6c7aed5c8971b26de6182fdab5aa08c7a1407990bf40b498f4efcb8ba8373478",
+    "libSceNpTus.c": "fd35f2247f77e1ff7cdbcc5b324befe47b35136892a703b0da26be98102722e0",
+    "libSceNpUniversalDataSystem.c": "137472d0502e23c8b9ffeeba65aada542b63234fb4ecfb4b21f245003898abcd",
+    "libSceNpUtility.c": "7a71407d5785cfb418a39c2edcbac68c36eac39e0ce54ccf1cd58fc7043f2f41",
+    "libSceNpWebApi.c": "1042a09f0af0bcd7a4b30c14c84f00eda541471ec48230d82852efb19c1fdf7f",
+    "libSceNpWebApi2.c": "9b983a0161f19b4fe4eac5c7079de5a015376eaad65034d3fc3f845e45fad4ac",
+    "libSceOpusCeltDec.c": "bfa5d47d169253b6be12ce3302499e152e1cb6fdf2e08461f6d41f18597026fc",
+    "libSceOpusCeltEnc.c": "05fcd65a0198033705df7867c51a99752b1f93f075c3851a7e82b40c5e3f5c67",
+    "libSceOpusDec.c": "d7ecba5e14a177d2779aea547d2ba3dc42cf674cf5bf939894c8932c70f41732",
+    "libSceOpusSilkEnc.c": "1cb15df3dd4f2e64c63ece53f0273eb70cf64d779f6e2c698b1f3da484cfd0a6",
+    "libScePSNowGkp.c": "ad46c28d14afc8dab1e7927dd8108eb16980364aa1ea793e07b53d2274c62427",
+    "libScePad.c": "454ec66e9bd0eba346ac9240eea3f92992ad1d3bc499ff2b349b5e43ca8a5570",
+    "libScePadTracker.c": "9682a4aa5f5d442bbe88f885b4e60bdb49dd2fc783739f71938af1edc7eaa1bd",
+    "libScePatchCheckerClient.c": "9adc8d3936ac4a4d3f52a53b6e612dc3d5c2e41b822afa56841a762dc0b3fd96",
+    "libScePlayGo.c": "8af49872f1471a37cd07947c0902d12aacfcb0b8356a0976a54b7ef6f178924b",
+    "libScePlayGoDialog.c": "b1196d28ca6934bbe6f884033abc4ecf333bd1013e7e0e09330d7c99ba4d56aa",
+    "libScePlayReady.c": "59b46006c917983e18783443c2b7b2a2d6d3794e24da5d23a84d3bf20d8d188b",
+    "libScePlayReady2.c": "cceecbcc726c2074be65bfcb3f7d84d7f356ce1523f1bf443069db132320be9f",
+    "libScePlayReady4.c": "d7047a35efbece694a2837c3d11d44aa4a4be753aa18e20a7952eeda203efdf9",
+    "libScePlayerInvitationDialog.c": "003f271206a32f94bb02d6447c872bbb5abdda9d57828032d76fe626b50fadc4",
+    "libScePlayerSelectionDialog.c": "d66f0737892d638b316147d01afa904cfd0214c01f76bb6664cc149f3026c774",
+    "libScePngDec.c": "d1bb1d0c8b3fb2ae034969a1817716f009836c925914208956e180bb5f542a57",
+    "libScePngEnc.c": "361571e46524fd35df86044803a229829b65b8f3479c3370a41ebe27ea35b3f6",
+    "libScePosixForWebKit.c": "4dab8099f7fdd8d1cfa20d717faef1506339579acdefb7859723d038b9754d69",
+    "libScePs2EmuMenuDialog.c": "2a4746f63d5841d82c97ada6242c788c54022e03238f2bdf53467e4f6a22b1f2",
+    "libScePsm.c": "ef893631e9dcd523cedfdf0541b92a284ac6c0887cdf6f1f347d26f16179cf21",
+    "libScePsmUtil.c": "b170172d454a2a170f92286c5e6b7b1b5f165894baaa7d63631f0a5cab2aeae9",
+    "libSceRandom.c": "99d102058aad25d6d87c9c1b11ebef789d35c4cf4aa2119f77af5a949d54816b",
+    "libSceRazorCpu.c": "5455fb2ac5433b51847f7616e7794ea6c3a85c097e1e79c872884a45feaef463",
+    "libSceRegMgr.c": "330139ba9adb3aca3b538704a5844d4b55866aed3d5b7b1144d4a7b36815f781",
+    "libSceRemoteplay.c": "7f8cd7ee8a5813277ca8c0bb4c8e68d5ccd156b90847d9d179018ffc2ff45bc9",
+    "libSceRnpsAppMgr.c": "3d5f293dca4218fafab98c8d294a5ac8a70992246093fb2dffc7aaf21443a515",
+    "libSceRnpsNKInjectedBundle.c": "42ca0695d2964ee1ac7b255d5dd8c15cbc5034a75d41fadd6ed08e1a0b09126e",
+    "libSceRtc.c": "23ce0683deee885971e39e38f40109608099950850fd522aef26ec34d9813a0e",
+    "libSceRudp.c": "70a48bce5f38397ac21b23412932efa4b16325a140143176614cb06aac17ada8",
+    "libSceS3da.c": "40fd9551eb3d822d8e28d759e57cc84510407693ace1558cea7cc73cad64a510",
+    "libSceSaveData.c": "02690712872f3475535dba30ba7da20ab692f29bb2c8aba6ab9c8d0de0d6cc73",
+    "libSceSaveData.native.c": "9edccb173d479ab8b803c8fd7c769fcb632efa4a990bdee7c95e5be825fb8d2d",
+    "libSceSaveDataDialog.c": "bc171e9216337e68eaa85dacf35f7664dfba2c540fc3d7cc29fff1eecd468e10",
+    "libSceSaveDataDialog.native.c": "8e0bac878ed2cec056bb4336ffaa4c70349dceac2cbf83d1269c3b68d955a578",
+    "libSceScreenShot.c": "7ed458210189fdece368e6dbc58b86cf91ed1a1aae51b27167744f0596cd67a7",
+    "libSceSdma.c": "8bc291f7451d68bf1d35f2948f95850bb36e5aebde81bcd2f323d51965c4083c",
+    "libSceShare.native.c": "068f70ae22ab56b4a21e93906f72c7a9173b9a9458d1721fd48ddcc560bc1e46",
+    "libSceShareFactoryUtil.c": "3843d06860adafae4e3911e6973d4a29886c430cc8b9bbf4096859caee0caebb",
+    "libSceSharePlay.c": "ddb185ca0e5f2c58895f674febe7025056b3a08cbb14110354bf44057940f66b",
+    "libSceShareUtility.c": "268e3c1ebf3fb09faef856ceaa0ea74037bc7973b408fec4ea09c38b767dc72d",
+    "libSceShellUIUtil.c": "2ceb28985b35184f74bd90b38be37491137d1d45bf444f896adac377ae852705",
+    "libSceSigninDialog.c": "bd84eb3b0b134d2b2f91f52d05c8ba53d9da48ad15c02988b23a8a960e4e74b8",
+    "libSceSocialScreen.c": "d91e2db36b422f64e8002c1b8386a16a556cf1382513d47735e1957862f2efc4",
+    "libSceSocialScreenDialog.c": "49c37dae434f23b25ab7043d86a1eb3013def6fca27a5a2fdfd31dfa6d6100d1",
+    "libSceSpSysCallWrapper.c": "e9903f035bb89e1da7322b3e50b8b7cd8c54e48d2283b6f02c5f13ccde366f0a",
+    "libSceSrcUtl.c": "d6dc843cd8fb73ca1ae7dbff5a5d140143c7d1f19e1312c84e0ac7310d9c5614",
+    "libSceSsl.c": "65a607c35060161c935665c9f94d850edf6cfb942c8a09ddbf1f7ece565adef8",
+    "libSceSulphaDrv.c": "36218430605f045c59e08583cdb0d281f7a2e4ecd627d9ec0f19932851db7a71",
+    "libSceSysCore.c": "92447db74a19ce25268262cd500ea2b0bbe78d154a45f9cd6bce9b030e8cca4b",
+    "libSceSysUtil.c": "27855934ac023fedb3017df82e7fe264ada257f14f1c0dceede60418bb44cd04",
+    "libSceSysmodule.c": "aa67de1c83e0d9877ff3215472527743b4313911960925d64060a8c901bf79ac",
+    "libSceSystemGesture.c": "4f4df82b85d896b5161d07e4cc91707c5602db465d77cbe0d50a3748ec519749",
+    "libSceSystemLogger.c": "b01db122e169983932667cb135200311a77e8c2fd20662c88f3519613a62a782",
+    "libSceSystemLogger2.c": "2a529d65655b2bcb6eee3c9bb1ac5624d3a266d04afa29215d87e8b6e85ca65e",
+    "libSceSystemLogger2Delivery.c": "6315fa350e2f15cbf1a504d67133afb2804048b122c67423902f103f1169e124",
+    "libSceSystemLogger2NativeQueueClient.c": "0bde4f2ee821b0154fca18aa9aabbc8aacc873a7ac16e4b9a4626cafda12304f",
+    "libSceSystemService.c": "f25c39e0534883d903389efd4785719c57ecbe67a90053253dd8c1f1663ac3c1",
+    "libSceSystemTts.c": "5628f23eef1e4d67b2d15746e72f4e1a2f6107eaa0cadbf4752737a7c5fb7715",
+    "libSceTEEClient.c": "0fddf7f31575bccecf7d5ec204d3af89f8ccac4bff134a8a95ad1bd9cee5a2fd",
+    "libSceTextToSpeech.c": "c4bf44fe09f203d0ed045590d21dca0570912bfb2f3f73d56404eeb1c191d4f5",
+    "libSceUlt.c": "19c3e3273ba7c399c52f896c667c621e3413b0bb6a579b77f313617470b81185",
+    "libSceUpdateService.c": "b56e55ccb279e718b937fc7b6a4a6aebd66c657d5dae182062ffce600cddcb24",
+    "libSceUrlConfigResolver.c": "6a16d7f86521beb88f29ee8b7872914f92b6dae2d5cab502a998aad094c2d8c6",
+    "libSceUsbStorage.c": "728cdf02f421f14010c1ca6d377aa61a6f3d638ad946bc1f8612234696a350f6",
+    "libSceUsbStorageDialog.c": "0c4b0cf399e69daae1cdd974e4388c9f62d349f3fd2537c48f821396fbf5cb80",
+    "libSceUsbd.c": "5b26137133b538d4a83fcc2b821a61272646907ca0680f0372bebb6242b6f5f0",
+    "libSceUserService.c": "7d5d43f61e4079ff2f5796677a5e2f1fd2d081e50cd09611d9bb60671606b1a7",
+    "libSceVdecCore.c": "03d0b0c8a3d1b883397524a84d7a63e178e501f17618dc7ee5b04fac959b5afd",
+    "libSceVdecCore.native.c": "141695a777c13b9f85d1b6bf3f28295980441905e45528897a9495feffb4b4e6",
+    "libSceVdecSavc.c": "d3a1c94ed78ba19082d62caa680630ac90f532027e588d6841a2a53833ffa0f8",
+    "libSceVdecSavc2.c": "7b428a846e3337e1793318e9303e02c5ba24b874a14546f328765e616367e9da",
+    "libSceVdecSavc2.native.c": "052f34c6e0dda1d2efed21069e2834c1fd231fa66e5816dc92385459aabfe446",
+    "libSceVdecShevc.c": "0dda6923a4d344d830900bfa25d4496f67d897ec76e80ce89b7d513f5935ab77",
+    "libSceVdecShevc.native.c": "ccb1e05faf83d6dfee7e8d4da2d4cc73cd49db6a4e964e362a9e0ab369c2cbcf",
+    "libSceVdecsw.c": "5fc70730b0bc21c6c3499d8f02a4962e30aca99b11b789619eca102795efe845",
+    "libSceVdecwrap.c": "9229b7a0555cdc737a2ecd519f68bcc01a7bb497af25232ed86bc98d1021c11f",
+    "libSceVenc.c": "2a826599bd70098e276ba24c25ed180e7860d1a9c47c9b45f0329d27c0297eea",
+    "libSceVideoArbitration.c": "45998c8d065c5ddc411f0b435baa1ca086d6d9c167a791fc7836081959d5d1ad",
+    "libSceVideoCoreInterface.c": "13ca4dfe8c558edc36714e17e16c4703c0cdd1e01d15a9522e572c7af6ba0673",
+    "libSceVideoCoreServerInterface.c": "a7484e3b60339509cbdfcdf1b68a96acea7c58f883490f604582d08538d7a965",
+    "libSceVideoDecoderArbitration.c": "b0b7ebb7cdad068b700272404add900a2fab036b2391ba22433c9e3eb350da43",
+    "libSceVideoNativeExtEssential.c": "a7752094dddb9c9796b0f7ea17315d15193a23ce22ac78debd798d042d83f734",
+    "libSceVideoOut.c": "efca2fbf1f0934155c807f0ccebd9c54a655e7b2b93c8c634c3264ce7bcf5368",
+    "libSceVideoRecording.c": "8660b3e3ce50d96607a855e8e12d4b2f64454b06e733c323d4f27b58ff78c170",
+    "libSceVideoRecording.native.c": "c89c30ab7afeeb368067ea3dd8ce0dd9117541fd526075d9821b53c04103c79d",
+    "libSceVideoStreamingEngine.c": "a38a3c0e2ce64d554856c39f89c462fa1b97d65ef74b7c3aed171f42d6c3695d",
+    "libSceVideoStreamingEngine_sys.c": "cd36a2ec7ea6121cb97173811ef21d51c99a8cf897ec76287595acbadedf4ec3",
+    "libSceVideodec.c": "bc8fcdb14b6306b0d81ec826168328743a3cdd896b0f83a9b3e96273f4f73518",
+    "libSceVideodec2.c": "f6a57da7e826d005da53a5572d703c50de9199a851cff2136e19c0e2d1dd8280",
+    "libSceVisionManager.c": "6c75fc3d3bd9ebef4465d86baddb70672385b9a42f784052e1e2e1d42bb41547",
+    "libSceVoice.c": "137a944c92a113fdd9ce00f3463e9f02ac12fc65ed78e8b189ed3284b0aed12b",
+    "libSceVoiceChat.c": "a608707e7b530d49f8938dc53aa580f2a6d3409ac37272875507c41fe9cde108",
+    "libSceVoiceQoS.c": "a560ae6c2cb78a4d44c40eb8f4552ad6191b21d5d1e78f3b06166f051c6e0f45",
+    "libSceVrServiceDialog.c": "537a672e6d0c99355c35dc7ae4276edb88ba89ffc695989f1f299cd4b3776599",
+    "libSceVrTracker.c": "51aaeed0a31b00db5a6a6dc70f83594fcdf4f327c6d89686c02bfa0e133955ce",
+    "libSceVrTracker2.c": "5818a2febb02fc8671005f9b2e86ce73db27245b397c27c06bcb8fd919e9e3e3",
+    "libSceWebBrowserDialog.c": "39393a954d9e53f32e42fb24fc13ebb0a70dbd2fe5f28c8d28e7d2a8b28b412f",
+    "libSceWkFontConfig.c": "4bab21a40b8c5ddbf271089a29ea31bbedff02309f0fdd3ceb73d65e8ba6b1b4",
+    "libSceXml.c": "a225d7ee8009623efd593f91dce211f36a8a12d743347d48fc7d60ea1d1fefea",
+    "libSceZlib.c": "b9a68c6d79a035dd56ba9c911e13b764f424f04fc8fbd668dd94fe1645e31a6a",
+    "libcairo.c": "590f14d066353b6fc5a0c86cc0f55d1d65b7bb60088bcc1b402fba02b34a8e63",
+    "libcurl.c": "e46ff41ff4a2797f14752bcf3e9c8a9d669f480f9fcc2042731413621ac44fb6",
+    "libfontconfig.c": "4b0690b03cce2603047d4f6b35a34240d4a3a86efd32152edaa885bcbfed4413",
+    "libfreetype.c": "69d0079995d977ace0e16e5a28fa2e9ab5588f301c654ffaa899423a1c52a84d",
+    "libharfbuzz.c": "776a797e2fb4bdecde24567f76795ecf5901a65b04342fb8a2e76b6ce9c7e3e7",
+    "libicu.c": "acc9715e8d9f2a96acb60a10f7b198153574af605daf88aa2d7e6eeb2be3fdf2",
+    "libkernel.c": "135644c9ee8daa48cfc2f2cb7338271bf171bec553b66c618b9d63f8ad6994a3",
+    "libkernel_sys.c": "dc127f2231f55e4f6da15bdb839e9373cbe03a87988529db446f6a828dc7a334",
+    "libkernel_web.c": "fd43b3881536fc0d1b070a436b1e670cc5b3459827ba1f2db4677ed830da87e7",
+    "libmdbg_syscore.c": "92b2028231ead6c4d373d4e1eb805f51b97fc34866ce877b39377872826349e9",
+    "libmono-profiler-log.c": "32834b3b87771b4aa7e0321a6fd26ac5b5b08c89b14188481733998067d5dcd5",
+    "libmonosgen-2.0.c": "8c2245128a18cc12c31891addfeb8d85d1b5c01675c1b7c3d6e6ec1c0174d2d6",
+    "libpng16.c": "c7244536a64bd6e65dc77d29f3a2f9d8a4d7a9661e60088a192ef28b9b3d54bd",
+    "mscorlib.dll.c": "bd3e57b54c9014f0fd83eb2060c30a9e0831847f884355b861ae3aeb6a338e93"
+  },
+  "source_files_scanned": 275,
+  "statuses": {
+    "already_indexed_and_named": 28312,
+    "ownership_review_required": 4868,
+    "withheld": 118
+  },
+  "top_quarantine_sources": [
+    {
+      "rejected_registrations": 1803,
+      "source_file": "libSceNKWebKit.c"
+    },
+    {
+      "rejected_registrations": 623,
+      "source_file": "libSceJsc.c"
+    },
+    {
+      "rejected_registrations": 336,
+      "source_file": "libSceLibcInternal.c"
+    },
+    {
+      "rejected_registrations": 238,
+      "source_file": "libicu.c"
+    },
+    {
+      "rejected_registrations": 191,
+      "source_file": "libkernel_sys.c"
+    },
+    {
+      "rejected_registrations": 168,
+      "source_file": "libkernel.c"
+    },
+    {
+      "rejected_registrations": 163,
+      "source_file": "libkernel_web.c"
+    },
+    {
+      "rejected_registrations": 146,
+      "source_file": "libmonosgen-2.0.c"
+    },
+    {
+      "rejected_registrations": 105,
+      "source_file": "libSceIcu.c"
+    },
+    {
+      "rejected_registrations": 100,
+      "source_file": "libSceNpCommon.c"
+    },
+    {
+      "rejected_registrations": 88,
+      "source_file": "libSceSystemService.c"
+    },
+    {
+      "rejected_registrations": 70,
+      "source_file": "libSceUserService.c"
+    },
+    {
+      "rejected_registrations": 67,
+      "source_file": "libSceLibreSsl3.c"
+    },
+    {
+      "rejected_registrations": 63,
+      "source_file": "mscorlib.dll.c"
+    },
+    {
+      "rejected_registrations": 61,
+      "source_file": "libSceFreeTypeOl.c"
+    },
+    {
+      "rejected_registrations": 61,
+      "source_file": "libSceFreeTypeOt.c"
+    },
+    {
+      "rejected_registrations": 56,
+      "source_file": "libSceLibreSsl.c"
+    },
+    {
+      "rejected_registrations": 43,
+      "source_file": "libSceCesCs.c"
+    },
+    {
+      "rejected_registrations": 43,
+      "source_file": "libSceNpManager.c"
+    },
+    {
+      "rejected_registrations": 33,
+      "source_file": "libSceGLSlimVSH.c"
+    }
+  ],
+  "total_valid_registrations": 33298,
+  "unowned_verified_hash_bindings": 4868,
+  "unresolved_owner_registration_count": 4868
+}

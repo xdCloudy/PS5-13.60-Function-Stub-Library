@@ -2,7 +2,7 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-10-30T05:42:47+00:00 · **AnyPS5 main:** [42d992b02adb](https://github.com/boykopovar/AnyPS5/commit/42d992b02adb1729a9b0488d444ecafc81c0a5a8)
+**Last refresh:** 2026-10-30T07:23:47+00:00 · **AnyPS5 main:** [f7f03daf52f1](https://github.com/boykopovar/AnyPS5/commit/f7f03daf52f11191174b1be089a56e268390a707)
 
 ## At a glance
 
@@ -46,14 +46,14 @@
 | Marked throwing/unimplemented | 4,551 | NotImplemented marker is visible in body |
 | Other nonthrowing source definitions | 3,202 | A source body exists; not necessarily correct, wired up or validated |
 | Qualified NIDs also in main source | 0 | Potential existing coverage |
-| Additional qualified NIDs seen in open-PR additions | 184 | Possible reservations, not yet merged |
-| Qualified NIDs not observed by scans | 10,565 | **Not proof of no overlap** |
+| Additional qualified NIDs seen in open-PR additions | 110 | Possible reservations, not yet merged |
+| Qualified NIDs not observed by scans | 10,639 | **Not proof of no overlap** |
 
 ### Open PR coverage
 
-`████████░░░░░░░░░░░░░░` **540 / 1,470 (36.7%)** current open PR heads indexed.
+`████████░░░░░░░░░░░░░░` **540 / 1,500 (36.0%)** current open PR heads indexed.
 
-**Partial:** 930 PR heads remain. Scheduled runs accumulate results in an SHA-keyed cache.
+**Partial:** 960 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
 Cache hits: 0 · newly scanned: 540 · failed checks: 10.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
@@ -82,16 +82,16 @@ Top 12 libraries sorted by assessed qualified records not seen in current main o
 |---|---:|---:|---:|---:|---:|
 | libSceNKWebKit | 8,614 | 125 | 0 | 0 | 8,614 |
 | libSceJsc | 2,951 | 84 | 0 | 0 | 2,951 |
-| libSceNpCommon | 782 | 263 | 0 | 17 | 765 |
+| libSceNpCommon | 782 | 263 | 0 | 0 | 782 |
 | libSceMediaFrameworkInterface | 139 | 0 | 0 | 0 | 139 |
 | libSceVideoOut | 133 | 44 | 0 | 0 | 133 |
+| libSceVnaInternal | 84 | 0 | 0 | 0 | 84 |
 | libSceIcu | 72 | 0 | 0 | 0 | 72 |
 | libSceVideoStreamingEngine | 58 | 12 | 0 | 0 | 58 |
+| libSceCustomMusicSysCallWrapper | 53 | 1 | 0 | 0 | 53 |
 | libSceEsvm | 45 | 0 | 0 | 0 | 45 |
 | libSceFont | 44 | 165 | 0 | 0 | 44 |
-| libSceAvcap2 | 35 | 7 | 0 | 0 | 35 |
 | libSceXml | 33 | 128 | 0 | 0 | 33 |
-| libSceDataTransfer | 28 | 51 | 0 | 0 | 28 |
 
 See [all 791 libraries](reports/library-progress.md) or [machine-readable metrics](reports/progress.json) for the full breakdown.
 

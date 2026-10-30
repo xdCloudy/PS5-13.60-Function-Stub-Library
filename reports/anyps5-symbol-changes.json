@@ -1,0 +1,13 @@
+{
+  "added": null,
+  "baseline_only": true,
+  "changed_source_classifications": null,
+  "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
+  "previous_source_sha": null,
+  "removed": null,
+  "samples_added": [],
+  "samples_changed": [],
+  "samples_removed": [],
+  "schema_version": 1,
+  "source_sha": "f7f03daf52f11191174b1be089a56e268390a707"
+}

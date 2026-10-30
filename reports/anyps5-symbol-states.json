@@ -1,0 +1,976 @@
+{
+  "build_verified": null,
+  "explicit_export_alias_records": 2086,
+  "export_registration_verified": null,
+  "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
+  "observed_library_nid_records": 18169,
+  "per_library": {
+    "libc": {
+      "declaration_without_visible_definition": 4,
+      "definition_nonthrowing_unvalidated": 1517,
+      "definition_throwing": 15,
+      "explicit_alias_no_visible_definition": 1
+    },
+    "libkernel": {
+      "declaration_without_visible_definition": 6,
+      "definition_nonthrowing_unvalidated": 721,
+      "definition_throwing": 35,
+      "explicit_alias_no_visible_definition": 17
+    },
+    "libkernel_sys": {
+      "definition_nonthrowing_unvalidated": 128,
+      "definition_throwing": 705,
+      "explicit_alias_no_visible_definition": 160
+    },
+    "libmdbg_syscore": {
+      "definition_nonthrowing_unvalidated": 2,
+      "definition_throwing": 141
+    },
+    "libsceabstractstorage": {
+      "definition_throwing": 110,
+      "explicit_alias_no_visible_definition": 110
+    },
+    "libsceabstractyoutube": {
+      "definition_throwing": 17,
+      "explicit_alias_no_visible_definition": 17
+    },
+    "libsceac3enc": {
+      "definition_throwing": 7
+    },
+    "libsceacm": {
+      "definition_nonthrowing_unvalidated": 9,
+      "definition_throwing": 3
+    },
+    "libsceaddresssanitizer": {
+      "definition_throwing": 301
+    },
+    "libsceagc": {
+      "definition_nonthrowing_unvalidated": 237,
+      "definition_throwing": 7
+    },
+    "libsceagcdriver": {
+      "definition_nonthrowing_unvalidated": 95,
+      "definition_throwing": 46
+    },
+    "libsceagcvsh": {
+      "definition_throwing": 150,
+      "explicit_alias_no_visible_definition": 150
+    },
+    "libsceajm.native": {
+      "definition_nonthrowing_unvalidated": 36,
+      "definition_throwing": 9
+    },
+    "libsceajmi": {
+      "definition_nonthrowing_unvalidated": 2
+    },
+    "libsceampr": {
+      "definition_nonthrowing_unvalidated": 134,
+      "definition_throwing": 3,
+      "explicit_alias_no_visible_definition": 13
+    },
+    "libsceappchecker": {
+      "definition_throwing": 3
+    },
+    "libsceappcontent": {
+      "definition_nonthrowing_unvalidated": 24,
+      "definition_throwing": 12
+    },
+    "libsceappinstutil": {
+      "definition_throwing": 117
+    },
+    "libsceat9enc": {
+      "definition_throwing": 5
+    },
+    "libsceaudio3d": {
+      "definition_nonthrowing_unvalidated": 27,
+      "definition_throwing": 5
+    },
+    "libsceaudiodec": {
+      "definition_nonthrowing_unvalidated": 6
+    },
+    "libsceaudiodec.native": {
+      "definition_throwing": 14
+    },
+    "libsceaudiodeccpu": {
+      "definition_throwing": 8
+    },
+    "libsceaudioin": {
+      "definition_nonthrowing_unvalidated": 14,
+      "definition_throwing": 34,
+      "explicit_alias_no_visible_definition": 6
+    },
+    "libsceaudiolatencyestimation": {
+      "definition_throwing": 4
+    },
+    "libsceaudioout": {
+      "definition_nonthrowing_unvalidated": 69,
+      "definition_throwing": 91,
+      "explicit_alias_no_visible_definition": 2
+    },
+    "libsceaudiopropagation": {
+      "definition_nonthrowing_unvalidated": 23,
+      "definition_throwing": 10
+    },
+    "libsceaudiosystem": {
+      "definition_throwing": 2
+    },
+    "libsceautomounterclient": {
+      "definition_throwing": 6
+    },
+    "libsceavcap2": {
+      "definition_throwing": 7
+    },
+    "libsceavplayer": {
+      "definition_nonthrowing_unvalidated": 31
+    },
+    "libsceavplayer.native": {
+      "definition_throwing": 2
+    },
+    "libsceavplayerstreaming": {
+      "definition_throwing": 33
+    },
+    "libsceavsetting": {
+      "definition_throwing": 128
+    },
+    "libscebackuprestoreutil": {
+      "definition_throwing": 16
+    },
+    "libscebeisobmf": {
+      "definition_nonthrowing_unvalidated": 10,
+      "definition_throwing": 8
+    },
+    "libscebemp2sys": {
+      "definition_throwing": 31
+    },
+    "libscebgft": {
+      "definition_throwing": 101,
+      "explicit_alias_no_visible_definition": 5
+    },
+    "libscebluetoothhid": {
+      "definition_nonthrowing_unvalidated": 8,
+      "definition_throwing": 9
+    },
+    "libscecamera": {
+      "definition_nonthrowing_unvalidated": 52,
+      "definition_throwing": 69
+    },
+    "libscecdlgg2p": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscecdlgplayerreview": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscecdlgutilserver": {
+      "definition_throwing": 11
+    },
+    "libscecescs": {
+      "definition_nonthrowing_unvalidated": 240,
+      "definition_throwing": 47
+    },
+    "libscecommondialog": {
+      "definition_nonthrowing_unvalidated": 2,
+      "definition_throwing": 14,
+      "explicit_alias_no_visible_definition": 14
+    },
+    "libscecompanionhttpd": {
+      "definition_nonthrowing_unvalidated": 6,
+      "definition_throwing": 11
+    },
+    "libscecompanionutil": {
+      "definition_nonthrowing_unvalidated": 5
+    },
+    "libscecomposite": {
+      "definition_nonthrowing_unvalidated": 5,
+      "definition_throwing": 73
+    },
+    "libscecontentdelete": {
+      "definition_nonthrowing_unvalidated": 2,
+      "definition_throwing": 6
+    },
+    "libscecontentexport": {
+      "definition_nonthrowing_unvalidated": 5,
+      "definition_throwing": 17
+    },
+    "libscecontentsearch": {
+      "definition_nonthrowing_unvalidated": 15,
+      "definition_throwing": 12
+    },
+    "libsceconvertkeycode": {
+      "definition_nonthrowing_unvalidated": 4
+    },
+    "libscecustommusicaudioout": {
+      "definition_throwing": 5
+    },
+    "libscecustommusiccore": {
+      "definition_throwing": 18
+    },
+    "libscecustommusicsyscallwrapper": {
+      "definition_throwing": 1
+    },
+    "libscedatatransfer": {
+      "definition_throwing": 60
+    },
+    "libscedbgthreadsanitizer": {
+      "definition_throwing": 2
+    },
+    "libscedepth": {
+      "definition_throwing": 38
+    },
+    "libscedepth2": {
+      "definition_throwing": 10
+    },
+    "libscedipsw": {
+      "definition_throwing": 9
+    },
+    "libscediscid": {
+      "definition_throwing": 2
+    },
+    "libscediscmap": {
+      "definition_nonthrowing_unvalidated": 2,
+      "definition_throwing": 1,
+      "explicit_alias_no_visible_definition": 1
+    },
+    "libscedseehx": {
+      "definition_throwing": 4
+    },
+    "libscedtsenc": {
+      "definition_throwing": 7
+    },
+    "libsceeditmp4": {
+      "definition_throwing": 9
+    },
+    "libsceerrordialog": {
+      "definition_nonthrowing_unvalidated": 8
+    },
+    "libsceesvm": {
+      "definition_throwing": 3
+    },
+    "libsceesvmengine": {
+      "definition_throwing": 19
+    },
+    "libscefiber": {
+      "definition_nonthrowing_unvalidated": 16
+    },
+    "libscefios2": {
+      "definition_throwing": 168
+    },
+    "libscefont": {
+      "definition_nonthrowing_unvalidated": 146,
+      "definition_throwing": 50
+    },
+    "libscefontft": {
+      "definition_nonthrowing_unvalidated": 38,
+      "definition_throwing": 7
+    },
+    "libscefreetype": {
+      "declaration_without_visible_definition": 9,
+      "definition_nonthrowing_unvalidated": 79,
+      "definition_throwing": 4
+    },
+    "libscefreetypeol": {
+      "definition_throwing": 92,
+      "explicit_alias_no_visible_definition": 92
+    },
+    "libscefreetypeoptol": {
+      "definition_nonthrowing_unvalidated": 3
+    },
+    "libscefreetypeot": {
+      "definition_nonthrowing_unvalidated": 42,
+      "definition_throwing": 106,
+      "explicit_alias_no_visible_definition": 106
+    },
+    "libscefrontpaneldisplay": {
+      "definition_throwing": 3
+    },
+    "libscefsinternalforvsh": {
+      "definition_nonthrowing_unvalidated": 2,
+      "definition_throwing": 174
+    },
+    "libscegamecustomdatadialog": {
+      "definition_nonthrowing_unvalidated": 7,
+      "definition_throwing": 2
+    },
+    "libscegamelivestreaming": {
+      "definition_nonthrowing_unvalidated": 21,
+      "definition_throwing": 26
+    },
+    "libscegameupdate": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscegic": {
+      "definition_throwing": 1
+    },
+    "libscegnmdriverforneomode": {
+      "definition_nonthrowing_unvalidated": 84,
+      "definition_throwing": 34
+    },
+    "libscegvmp4parser": {
+      "definition_throwing": 5
+    },
+    "libscehidcontrol": {
+      "definition_throwing": 82,
+      "explicit_alias_no_visible_definition": 14
+    },
+    "libscehmd": {
+      "definition_nonthrowing_unvalidated": 32,
+      "definition_throwing": 136
+    },
+    "libscehmd2": {
+      "definition_nonthrowing_unvalidated": 92,
+      "definition_throwing": 42,
+      "explicit_alias_no_visible_definition": 175
+    },
+    "libscehmdsetupdialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscehttp": {
+      "definition_nonthrowing_unvalidated": 86,
+      "definition_throwing": 29
+    },
+    "libscehttp2": {
+      "definition_nonthrowing_unvalidated": 30,
+      "definition_throwing": 40
+    },
+    "libscehttpcache": {
+      "definition_nonthrowing_unvalidated": 13,
+      "definition_throwing": 14
+    },
+    "libscehubapputil": {
+      "definition_throwing": 3
+    },
+    "libsceicu": {
+      "definition_nonthrowing_unvalidated": 22,
+      "definition_throwing": 99,
+      "explicit_alias_no_visible_definition": 98
+    },
+    "libsceidu": {
+      "definition_throwing": 8
+    },
+    "libsceime": {
+      "definition_nonthrowing_unvalidated": 16,
+      "definition_throwing": 46
+    },
+    "libsceimebackend": {
+      "definition_throwing": 22
+    },
+    "libsceimedialog": {
+      "definition_nonthrowing_unvalidated": 13,
+      "definition_throwing": 1
+    },
+    "libsceinvitationdialog": {
+      "definition_nonthrowing_unvalidated": 7,
+      "definition_throwing": 2
+    },
+    "libsceipmi": {
+      "definition_throwing": 94,
+      "explicit_alias_no_visible_definition": 40
+    },
+    "libscejemspace": {
+      "definition_throwing": 13
+    },
+    "libscejobmanager": {
+      "definition_nonthrowing_unvalidated": 13
+    },
+    "libscejpegdec": {
+      "definition_nonthrowing_unvalidated": 5,
+      "definition_throwing": 1
+    },
+    "libscejpegenc": {
+      "definition_nonthrowing_unvalidated": 4
+    },
+    "libscejpegparser": {
+      "definition_throwing": 5
+    },
+    "libscejsc": {
+      "definition_nonthrowing_unvalidated": 10,
+      "definition_throwing": 150
+    },
+    "libscejson": {
+      "definition_throwing": 25,
+      "explicit_alias_no_visible_definition": 25
+    },
+    "libscejson2": {
+      "definition_nonthrowing_unvalidated": 151,
+      "definition_throwing": 66
+    },
+    "libscejxr": {
+      "definition_nonthrowing_unvalidated": 4
+    },
+    "libscekeyboard": {
+      "definition_nonthrowing_unvalidated": 8,
+      "definition_throwing": 18
+    },
+    "libscelibcinternal": {
+      "declaration_without_visible_definition": 1,
+      "definition_nonthrowing_unvalidated": 78,
+      "definition_throwing": 269,
+      "explicit_alias_no_visible_definition": 269
+    },
+    "libscelibressl": {
+      "definition_nonthrowing_unvalidated": 108,
+      "definition_throwing": 303
+    },
+    "libscelibressl3": {
+      "definition_nonthrowing_unvalidated": 12,
+      "definition_throwing": 265,
+      "explicit_alias_no_visible_definition": 521
+    },
+    "libscelogindialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libsceloginmgrserver": {
+      "definition_throwing": 30
+    },
+    "libsceloginservice": {
+      "definition_nonthrowing_unvalidated": 2,
+      "definition_throwing": 1
+    },
+    "libscem4aacenc": {
+      "definition_throwing": 17
+    },
+    "libscembus": {
+      "definition_nonthrowing_unvalidated": 7,
+      "definition_throwing": 113
+    },
+    "libscemetadatareaderwriter": {
+      "definition_throwing": 39
+    },
+    "libscemouse": {
+      "definition_nonthrowing_unvalidated": 5,
+      "definition_throwing": 20
+    },
+    "libscemove": {
+      "definition_nonthrowing_unvalidated": 10,
+      "definition_throwing": 11
+    },
+    "libscemovetracker": {
+      "definition_nonthrowing_unvalidated": 2,
+      "definition_throwing": 16
+    },
+    "libscemsgdialog": {
+      "definition_nonthrowing_unvalidated": 9
+    },
+    "libscemsgdialog.native": {
+      "definition_nonthrowing_unvalidated": 10
+    },
+    "libscemusicframeworkinterface": {
+      "definition_throwing": 37,
+      "explicit_alias_no_visible_definition": 1
+    },
+    "libscenet": {
+      "definition_nonthrowing_unvalidated": 85,
+      "definition_throwing": 141
+    },
+    "libscenetctl": {
+      "definition_nonthrowing_unvalidated": 45,
+      "definition_throwing": 43
+    },
+    "libscenetctlap": {
+      "definition_nonthrowing_unvalidated": 11
+    },
+    "libscenetctlapdialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscengs2": {
+      "definition_throwing": 6
+    },
+    "libscengs2.native": {
+      "declaration_without_visible_definition": 5,
+      "definition_nonthrowing_unvalidated": 113,
+      "definition_throwing": 14
+    },
+    "libscenkweb": {
+      "definition_throwing": 2
+    },
+    "libscenkwebkit": {
+      "definition_throwing": 150
+    },
+    "libscenkwebkitrequirements": {
+      "definition_throwing": 133,
+      "explicit_alias_no_visible_definition": 133
+    },
+    "libscenotification": {
+      "definition_throwing": 4
+    },
+    "libscenpauth": {
+      "definition_nonthrowing_unvalidated": 14
+    },
+    "libscenpauthauthorizedappdialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscenpcommerce": {
+      "definition_nonthrowing_unvalidated": 12
+    },
+    "libscenpcommon": {
+      "definition_nonthrowing_unvalidated": 124,
+      "definition_throwing": 184
+    },
+    "libscenpcppwebapi": {
+      "definition_nonthrowing_unvalidated": 570,
+      "definition_throwing": 181
+    },
+    "libscenpentitlementaccess": {
+      "definition_nonthrowing_unvalidated": 21,
+      "definition_throwing": 4
+    },
+    "libscenpeuladialog": {
+      "definition_throwing": 9
+    },
+    "libscenpfriendlistdialog": {
+      "definition_nonthrowing_unvalidated": 7,
+      "definition_throwing": 2
+    },
+    "libscenpgameintent": {
+      "definition_nonthrowing_unvalidated": 10,
+      "definition_throwing": 8
+    },
+    "libscenpmanager": {
+      "definition_nonthrowing_unvalidated": 70,
+      "definition_throwing": 137,
+      "explicit_alias_no_visible_definition": 2
+    },
+    "libscenpmatching2": {
+      "definition_nonthrowing_unvalidated": 12,
+      "definition_throwing": 57
+    },
+    "libscenppartner001": {
+      "definition_nonthrowing_unvalidated": 3
+    },
+    "libscenpparty": {
+      "definition_nonthrowing_unvalidated": 15,
+      "definition_throwing": 11
+    },
+    "libscenpprofiledialog": {
+      "definition_nonthrowing_unvalidated": 8
+    },
+    "libscenpremoteplaysessionsignaling": {
+      "definition_throwing": 10
+    },
+    "libscenpscoreranking": {
+      "definition_nonthrowing_unvalidated": 15,
+      "definition_throwing": 36
+    },
+    "libscenpsessionsignaling": {
+      "definition_nonthrowing_unvalidated": 18,
+      "definition_throwing": 8
+    },
+    "libscenpsignaling": {
+      "definition_nonthrowing_unvalidated": 9,
+      "definition_throwing": 15
+    },
+    "libscenpsns": {
+      "definition_throwing": 21
+    },
+    "libscenpsnsfacebookdialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscenpsnsyoutubedialog": {
+      "definition_throwing": 7
+    },
+    "libscenptcs": {
+      "definition_throwing": 3
+    },
+    "libscenptrophy": {
+      "definition_nonthrowing_unvalidated": 17,
+      "definition_throwing": 80
+    },
+    "libscenptrophy2": {
+      "definition_nonthrowing_unvalidated": 18,
+      "definition_throwing": 38
+    },
+    "libscenptus": {
+      "definition_nonthrowing_unvalidated": 121,
+      "definition_throwing": 21
+    },
+    "libscenpuniversaldatasystem": {
+      "definition_nonthrowing_unvalidated": 41,
+      "definition_throwing": 52
+    },
+    "libscenputility": {
+      "definition_nonthrowing_unvalidated": 30,
+      "definition_throwing": 66
+    },
+    "libscenpwebapi": {
+      "definition_nonthrowing_unvalidated": 18,
+      "definition_throwing": 5
+    },
+    "libscenpwebapi2": {
+      "definition_nonthrowing_unvalidated": 34,
+      "definition_throwing": 5
+    },
+    "libsceopusceltdec": {
+      "definition_nonthrowing_unvalidated": 9,
+      "definition_throwing": 2
+    },
+    "libsceopusceltenc": {
+      "definition_nonthrowing_unvalidated": 8,
+      "definition_throwing": 3
+    },
+    "libsceopusdec": {
+      "definition_nonthrowing_unvalidated": 11,
+      "definition_throwing": 3
+    },
+    "libsceopussilkenc": {
+      "definition_nonthrowing_unvalidated": 8,
+      "definition_throwing": 6
+    },
+    "libscepad": {
+      "definition_nonthrowing_unvalidated": 38,
+      "definition_throwing": 154,
+      "explicit_alias_no_visible_definition": 1
+    },
+    "libscepadtracker": {
+      "definition_throwing": 6
+    },
+    "libscepatchcheckerclient": {
+      "definition_throwing": 12
+    },
+    "libscepfs": {
+      "definition_throwing": 9
+    },
+    "libsceplayerinvitationdialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libsceplayerselectiondialog": {
+      "definition_nonthrowing_unvalidated": 8
+    },
+    "libsceplaygo": {
+      "definition_nonthrowing_unvalidated": 19,
+      "definition_throwing": 2
+    },
+    "libsceplaygodialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libsceplayready": {
+      "definition_nonthrowing_unvalidated": 1,
+      "definition_throwing": 49
+    },
+    "libsceplayready2": {
+      "definition_throwing": 16
+    },
+    "libsceplayready4": {
+      "definition_throwing": 35
+    },
+    "libscepngdec": {
+      "definition_nonthrowing_unvalidated": 5,
+      "definition_throwing": 1
+    },
+    "libscepngenc": {
+      "definition_nonthrowing_unvalidated": 4
+    },
+    "libsceposixforwebkit": {
+      "definition_nonthrowing_unvalidated": 29,
+      "definition_throwing": 8,
+      "explicit_alias_no_visible_definition": 2
+    },
+    "libsceproprietaryvoicechathelperprx": {
+      "definition_nonthrowing_unvalidated": 3,
+      "definition_throwing": 2
+    },
+    "libsceps2emumenudialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscepsm": {
+      "definition_throwing": 65
+    },
+    "libscepsml_debug": {
+      "definition_nonthrowing_unvalidated": 21,
+      "definition_throwing": 10
+    },
+    "libscepsmutil": {
+      "definition_throwing": 4
+    },
+    "libscepsnowgkp": {
+      "definition_throwing": 4
+    },
+    "libscerandom": {
+      "definition_nonthrowing_unvalidated": 1
+    },
+    "libscerazorcpu": {
+      "definition_nonthrowing_unvalidated": 21,
+      "definition_throwing": 14
+    },
+    "libsceregmgr": {
+      "definition_nonthrowing_unvalidated": 3,
+      "definition_throwing": 62
+    },
+    "libsceremoteplay": {
+      "definition_nonthrowing_unvalidated": 3,
+      "definition_throwing": 43
+    },
+    "libsceresourcearbitrator": {
+      "definition_throwing": 14,
+      "explicit_alias_no_visible_definition": 7
+    },
+    "libscernpsappmgr": {
+      "definition_throwing": 27
+    },
+    "libscernpsnkinjectedbundle": {
+      "definition_throwing": 1
+    },
+    "libscertc": {
+      "definition_nonthrowing_unvalidated": 51,
+      "definition_throwing": 1
+    },
+    "libscerudp": {
+      "definition_nonthrowing_unvalidated": 28,
+      "definition_throwing": 6
+    },
+    "libsces3da": {
+      "definition_throwing": 4
+    },
+    "libscesavedata": {
+      "declaration_without_visible_definition": 75
+    },
+    "libscesavedata.native": {
+      "definition_nonthrowing_unvalidated": 44,
+      "definition_throwing": 67
+    },
+    "libscesavedatadialog": {
+      "declaration_without_visible_definition": 8
+    },
+    "libscesavedatadialog.native": {
+      "definition_nonthrowing_unvalidated": 10
+    },
+    "libscescreenshot": {
+      "definition_nonthrowing_unvalidated": 7,
+      "definition_throwing": 6
+    },
+    "libscesdma": {
+      "definition_nonthrowing_unvalidated": 5,
+      "definition_throwing": 22,
+      "explicit_alias_no_visible_definition": 1
+    },
+    "libsceshare": {
+      "definition_nonthrowing_unvalidated": 17
+    },
+    "libscesharefactoryutil": {
+      "definition_throwing": 6
+    },
+    "libsceshareplay": {
+      "definition_nonthrowing_unvalidated": 5,
+      "definition_throwing": 15
+    },
+    "libsceshareutility": {
+      "definition_throwing": 22
+    },
+    "libsceshelluiutil": {
+      "definition_throwing": 6
+    },
+    "libscesignindialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscesocialscreen": {
+      "definition_throwing": 11
+    },
+    "libscesocialscreendialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscespsyscallwrapper": {
+      "declaration_without_visible_definition": 2,
+      "definition_nonthrowing_unvalidated": 48
+    },
+    "libscesrcutl": {
+      "definition_throwing": 9
+    },
+    "libscessl": {
+      "definition_nonthrowing_unvalidated": 35,
+      "definition_throwing": 20
+    },
+    "libscesulphadrv": {
+      "definition_nonthrowing_unvalidated": 1,
+      "definition_throwing": 7
+    },
+    "libscesyscore": {
+      "definition_throwing": 72
+    },
+    "libscesysmodule": {
+      "definition_nonthrowing_unvalidated": 10,
+      "definition_throwing": 6
+    },
+    "libscesystemgesture": {
+      "definition_nonthrowing_unvalidated": 23
+    },
+    "libscesystemlogger": {
+      "definition_throwing": 3
+    },
+    "libscesystemlogger2": {
+      "definition_throwing": 5
+    },
+    "libscesystemlogger2delivery": {
+      "definition_throwing": 4
+    },
+    "libscesystemlogger2game": {
+      "definition_throwing": 2
+    },
+    "libscesystemlogger2nativequeueclient": {
+      "definition_throwing": 5
+    },
+    "libscesystemservice": {
+      "definition_nonthrowing_unvalidated": 82,
+      "definition_throwing": 502
+    },
+    "libscesystemtts": {
+      "definition_throwing": 5
+    },
+    "libscesysutil": {
+      "definition_throwing": 24
+    },
+    "libsceteeclient": {
+      "definition_throwing": 10
+    },
+    "libscetexttospeech": {
+      "definition_throwing": 10
+    },
+    "libscetexttospeech2": {
+      "definition_nonthrowing_unvalidated": 8
+    },
+    "libsceult": {
+      "definition_nonthrowing_unvalidated": 70,
+      "definition_throwing": 18
+    },
+    "libsceupdateservice": {
+      "definition_throwing": 40
+    },
+    "libsceurlconfigresolver": {
+      "definition_throwing": 8
+    },
+    "libsceusbd": {
+      "definition_nonthrowing_unvalidated": 52,
+      "definition_throwing": 9
+    },
+    "libsceusbstorage": {
+      "definition_nonthrowing_unvalidated": 11,
+      "definition_throwing": 11
+    },
+    "libsceusbstoragedialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libsceuserservice": {
+      "definition_nonthrowing_unvalidated": 24,
+      "definition_throwing": 2
+    },
+    "libscevdeccore": {
+      "definition_throwing": 20
+    },
+    "libscevdeccore.native": {
+      "definition_throwing": 4
+    },
+    "libscevdecsavc": {
+      "definition_throwing": 4
+    },
+    "libscevdecsavc2": {
+      "definition_throwing": 4
+    },
+    "libscevdecshevc": {
+      "definition_throwing": 7
+    },
+    "libscevdecsw": {
+      "definition_nonthrowing_unvalidated": 17,
+      "definition_throwing": 1
+    },
+    "libscevdecwrap": {
+      "definition_throwing": 11
+    },
+    "libscevenc": {
+      "definition_throwing": 14
+    },
+    "libscevideoarbitration": {
+      "definition_throwing": 3
+    },
+    "libscevideocoreinterface": {
+      "definition_throwing": 4
+    },
+    "libscevideocoreserverinterface": {
+      "definition_throwing": 47
+    },
+    "libscevideodec": {
+      "definition_nonthrowing_unvalidated": 6,
+      "definition_throwing": 1
+    },
+    "libscevideodec2": {
+      "definition_nonthrowing_unvalidated": 9,
+      "definition_throwing": 20
+    },
+    "libscevideodecoderarbitration": {
+      "definition_throwing": 4
+    },
+    "libscevideonativeextessential": {
+      "definition_throwing": 5
+    },
+    "libscevideoout": {
+      "definition_nonthrowing_unvalidated": 57,
+      "definition_throwing": 5
+    },
+    "libscevideorecordingp": {
+      "definition_nonthrowing_unvalidated": 6,
+      "definition_throwing": 18,
+      "explicit_alias_no_visible_definition": 1
+    },
+    "libscevideostreamingengine": {
+      "definition_throwing": 12
+    },
+    "libscevisionmanager": {
+      "definition_nonthrowing_unvalidated": 11,
+      "definition_throwing": 45
+    },
+    "libscevoice": {
+      "definition_nonthrowing_unvalidated": 30,
+      "definition_throwing": 6
+    },
+    "libscevoicechat": {
+      "definition_nonthrowing_unvalidated": 62
+    },
+    "libscevoiceqos": {
+      "definition_nonthrowing_unvalidated": 14,
+      "definition_throwing": 11
+    },
+    "libscevorbisdec": {
+      "definition_nonthrowing_unvalidated": 31,
+      "definition_throwing": 3
+    },
+    "libscevrhand": {
+      "definition_throwing": 8
+    },
+    "libscevrservicedialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscevrsetupdialog": {
+      "definition_nonthrowing_unvalidated": 7
+    },
+    "libscevrtracker": {
+      "definition_nonthrowing_unvalidated": 9,
+      "definition_throwing": 21
+    },
+    "libscevrtracker2": {
+      "definition_nonthrowing_unvalidated": 81,
+      "definition_throwing": 8,
+      "explicit_alias_no_visible_definition": 102
+    },
+    "libscewebbrowserdialog": {
+      "definition_nonthrowing_unvalidated": 10,
+      "definition_throwing": 3
+    },
+    "libscewkfontconfig": {
+      "definition_throwing": 5
+    },
+    "libscexml": {
+      "definition_throwing": 150
+    },
+    "libscezlib": {
+      "definition_nonthrowing_unvalidated": 5
+    },
+    "ulobjmgr": {
+      "definition_nonthrowing_unvalidated": 4
+    }
+  },
+  "runtime_validated": null,
+  "scanner_version": 3,
+  "source_sha": "f7f03daf52f11191174b1be089a56e268390a707",
+  "states": {
+    "declaration_without_visible_definition": 110,
+    "definition_nonthrowing_unvalidated": 7254,
+    "definition_throwing": 8719,
+    "explicit_alias_no_visible_definition": 2086
+  }
+}
