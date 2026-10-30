@@ -491,7 +491,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceProprietaryVoiceChatHelper](libraries/libsceproprietaryvoicechathelper-367c047340.md) | 4 | 4 | 0 |
 | [libScePs2EmuMenuDialog](libraries/libsceps2emumenudialog-6c333897da.md) | 7 | 7 | 0 |
 | [libScePsm](libraries/libscepsm-645ab9cc0c.md) | 118 | 65 | 0 |
-| [libScePsml](libraries/libscepsml-42ee1f1451.md) | 27 | 19 | 0 |
+| [libScePsml](libraries/libscepsml-42ee1f1451.md) | 27 | 22 | 0 |
 | [libScePsml_lightweight](libraries/libscepsml_lightweight-f1ec3f2795.md) | 1 | 1 | 0 |
 | [libScePsml_mfsr2](libraries/libscepsml_mfsr2-4f0b091e18.md) | 9 | 9 | 0 |
 | [libScePsml_nosubmission](libraries/libscepsml_nosubmission-1be6a2f57f.md) | 3 | 0 | 0 |

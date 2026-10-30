@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47085,
+    "resolved_names": 47088,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 266953,
+    "unresolved_or_withheld_names": 266950,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -3804,10 +3804,10 @@
       "sha256": "d516636467bb7c1a4cc7415a3097ab029abc55358a95e164ebe88a34dc683aed"
     },
     {
-      "bytes": 11259,
+      "bytes": 11586,
       "path": "data/firmware-13.60/libscepsml-42ee1f1451.jsonl",
       "records": 27,
-      "sha256": "dcb37ef03ba44c82346ddd6bc15a7c3060e280189559814af0932040f2bee677"
+      "sha256": "90f5f03f4cc909f62ae22a789d234f74837d6658150320c08f4fa7f65588e76a"
     },
     {
       "bytes": 2318,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85564,
+      "bytes": 86421,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "4abc44c7ba8c3c670af72667998df40fd40c9aabb92e098c24a831a140f0b41d"
+      "sha256": "a544c36562ef1227e96554061e0de4534de7c854dfe0dc8b93f0810d108b41dc"
     },
     {
-      "bytes": 2581638,
+      "bytes": 2618759,
       "path": "data/verified-name-map.jsonl",
-      "records": 36849,
-      "sha256": "10d0fd3e633779b44224fa778c018b9dc140938ae90078cf54f315f90b02b211"
+      "records": 36920,
+      "sha256": "261befed73a80999c4f32a488ac3c326c77ba7952621585e57ac8d7c8f87e1ab"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,10 +5976,10 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "a46de98732d4b73f13a2276e125a059fe16fecd06bd162fc35d9a278c341620d"
+    "sha256": "5dcfa7179357edb53d5ff181f406cab03c315e28aa3b52be42e5ce38ab3492a1"
   },
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36917
+  "unique_verified_name_bindings": 36920
 }

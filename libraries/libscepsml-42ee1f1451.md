@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 27 |
-| Named | 19 |
-| Unresolved or withheld | 8 |
+| Named | 22 |
+| Unresolved or withheld | 5 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -34,6 +34,7 @@ A bounded preview; the inventory file contains the complete library.
 | `94iBp3KvIuI` | `scePsmlMfsrGetDispatchMfsrPacket1100` |
 | `AHalTX9wFZY` | `scePsmlMfsrGetDispatchMfsrPacketSizeInDwords` |
 | `ArakEpzsZo0` | `scePsmlMfsrGetContextBufferRequirement800M3_2` |
+| `CN7uea0UQso` | `scePsmlMfsrGetDispatchMfsrPacket` |
 | `DDVUyPyYHTA` | `scePsmlMfsrGetDispatchMfsrPacket1300` |
 | `FSGaTQze0UY` | `scePsmlMfsrSelectConfig` |
 | `GHna9-DvnUk` | `scePsmlMfsrGetMipmapBias` |
@@ -41,3 +42,5 @@ A bounded preview; the inventory file contains the complete library.
 | `JaLBe0P3jSU` | `scePsmlMfsrReleaseContext` |
 | `LXq+6mIxpCw` | `scePsmlMfsrIsCaptureInProgress` |
 | `RUNLFro+qok` | `scePsmlMfsrGetDispatchMfsrPacket900` |
+| `VGjrQa-WqdU` | `scePsmlMfsrGetContextBufferRequirement1100` |
+| `eWoKNeB6V-k` | `scePsmlMfsrCreateSharedResources` |

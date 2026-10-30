@@ -498,7 +498,7 @@ libSceProprietaryVoiceChatHelper,firmware-13.60,4,4,data/firmware-13.60/libscepr
 libScePs2EmuMenuDialog,firmware-13.60,7,7,data/firmware-13.60/libsceps2emumenudialog-6c333897da.jsonl
 libScePsm,firmware-13.60,118,65,data/firmware-13.60/libscepsm-645ab9cc0c.jsonl
 libScePsmUtil,firmware-13.60,4,4,data/firmware-13.60/libscepsmutil-d0f6c9bc8c.jsonl
-libScePsml,firmware-13.60,27,19,data/firmware-13.60/libscepsml-42ee1f1451.jsonl
+libScePsml,firmware-13.60,27,22,data/firmware-13.60/libscepsml-42ee1f1451.jsonl
 libScePsmlBcSisr,firmware-13.60,6,3,data/firmware-13.60/libscepsmlbcsisr-88d7de59b5.jsonl
 libScePsml_lightweight,firmware-13.60,1,1,data/firmware-13.60/libscepsml_lightweight-f1ec3f2795.jsonl
 libScePsml_mfsr2,firmware-13.60,9,9,data/firmware-13.60/libscepsml_mfsr2-4f0b091e18.jsonl

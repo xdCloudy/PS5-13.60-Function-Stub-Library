@@ -36915,3 +36915,6 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"scePsmlMfsrGetDispatchMfsrPacket","nid":"CN7uea0UQso"}
+{"name":"scePsmlMfsrCreateContext800M3","nid":"pwUkfVu0c0c"}
+{"name":"scePsmlMfsrGetDispatchMfsrPacketFrom2023July","nid":"wHto4IznfBE"}
