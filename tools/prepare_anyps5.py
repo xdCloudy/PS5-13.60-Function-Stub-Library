@@ -113,6 +113,8 @@ def main():
     cli.add_argument("--output-dir",type=Path,required=True)
     cli.add_argument("--max-stubs",type=int,default=100)
     cli.add_argument("--apply",action="store_true",help="Write a patch to a clean contribution branch")
+    cli.add_argument("--defer-live-api-audit",action="store_true",
+                     help="Workflow preparation only; publisher MUST do full API audit")
     args=cli.parse_args()
     root, checkout = args.root.resolve(), args.anyps5_dir.resolve()
     if args.abi_file.resolve().is_relative_to(root):
@@ -147,7 +149,9 @@ def main():
         # Live audit, not the historical dashboard cache. Every candidate
         # needs positive collision clearance from every current PR head.
         try:
-            audit = check_candidates(selected, occupied, os.getenv("GITHUB_TOKEN", ""), nid_for)
+            audit = ({"scan_complete": False, "deferred_to_publisher": True, "candidates": []}
+                     if args.defer_live_api_audit else
+                     check_candidates(selected, occupied, os.getenv("GITHUB_TOKEN", ""), nid_for))
         except Exception as exc:
             audit = {"schema_version": 1, "scan_complete": False,
                      "error_type": type(exc).__name__,
@@ -213,7 +217,8 @@ No implementation, ABI correctness or runtime support is claimed.
 ### Tested
 
 - Python catalogue identity and scope gates: passed
-- Current AnyPS5 main and all open PR heads: rechecked
+- AnyPS5 main and upstream Git-based open-PR checker: rechecked
+- Final REST API candidate audit: performed again in isolated publisher
 - tools/check_conventions.py --base origin/main: passed
 - tools/pr_overlap.py --branch {branch}: passed (exact no-overlap verdict)
 - Build and runtime testing: NOT RUN
