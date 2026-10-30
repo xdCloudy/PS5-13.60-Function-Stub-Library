@@ -19,6 +19,16 @@ def validate(root: Path) -> dict:
     manifest=j("manifest.json")
     source=j("reports/source-320.json")
     symbols=j("reports/anyps5-symbol-states.json")
+    changes_file = root/"reports/anyps5-symbol-changes.json"
+    changes = j("reports/anyps5-symbol-changes.json") if changes_file.exists() else None
+    if doc.get("recent_changes") != changes:
+        raise ValueError("Recent AnyPS5 source changes disagree with matrix feed")
+    if changes and changes.get("source_sha") != symbols.get("source_sha"):
+        raise ValueError("Recent changes reference a stale AnyPS5 commit")
+    if changes and changes.get("baseline_only"):
+        if any(changes.get(k) is not None for k in
+               ("added","removed","changed_source_classifications")):
+            raise ValueError("First snapshot must have unknown, not zero, change counts")
     if doc != preview:
         raise ValueError("Dashboard and canonical JSON matrix disagree")
     total=doc["discovery"]["indexed"]
