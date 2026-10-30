@@ -16,7 +16,8 @@ import sys
 import tempfile
 
 from anyps5_metadata import scan_files
-from candidate_overlap import check_candidates, save_report
+from candidate_overlap import save_report
+from git_candidate_overlap import check_candidates_git
 from update_progress import nid_for
 
 SHA = re.compile(r"^[0-9a-f]{40}$")
@@ -86,8 +87,9 @@ def main() -> None:
                 ["git", "-C", str(checkout), "worktree", "remove", "--force",
                  str(pristine)], check=True)
 
-    report = check_candidates(
-        candidates, main_occupied, os.environ.get("GITHUB_TOKEN", ""), nid_for)
+    report = check_candidates_git(
+        checkout, candidates, main_occupied, os.environ.get("GITHUB_TOKEN", ""),
+        nid_for)
     save_report(args.report, report)
     if not report["scan_complete"] or any(
         not r["verified_clear"] for r in report["candidates"]
