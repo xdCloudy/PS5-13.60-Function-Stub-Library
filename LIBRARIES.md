@@ -459,7 +459,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 |---|---:|---:|---:|
 | [libSceOpenPsId](libraries/libsceopenpsid-3222d173f7.md) | 1 | 1 | 0 |
 | [libSceOpusCeltDec](libraries/libsceopusceltdec-c6e554d356.md) | 12 | 12 | 1 |
-| [libSceOpusCeltEnc](libraries/libsceopusceltenc-b31be2adfa.md) | 24 | 15 | 4 |
+| [libSceOpusCeltEnc](libraries/libsceopusceltenc-b31be2adfa.md) | 24 | 19 | 4 |
 | [libSceOpusDec](libraries/libsceopusdec-69c895457e.md) | 30 | 15 | 1 |
 | [libSceOpusSilkEnc](libraries/libsceopussilkenc-5db8f0bbee.md) | 15 | 15 | 1 |
 

@@ -471,7 +471,7 @@ libSceNpWebApi2AsyncRestricted,firmware-13.60,3,0,data/firmware-13.60/libscenpwe
 libSceNpWebApiCompat,firmware-13.60,12,12,data/firmware-13.60/libscenpwebapicompat-f0705dedfa.jsonl
 libSceOpenPsId,firmware-13.60,1,1,data/firmware-13.60/libsceopenpsid-3222d173f7.jsonl
 libSceOpusCeltDec,firmware-13.60,12,12,data/firmware-13.60/libsceopusceltdec-c6e554d356.jsonl
-libSceOpusCeltEnc,firmware-13.60,24,15,data/firmware-13.60/libsceopusceltenc-b31be2adfa.jsonl
+libSceOpusCeltEnc,firmware-13.60,24,19,data/firmware-13.60/libsceopusceltenc-b31be2adfa.jsonl
 libSceOpusDec,firmware-13.60,30,15,data/firmware-13.60/libsceopusdec-69c895457e.jsonl
 libSceOpusSilkEnc,firmware-13.60,15,15,data/firmware-13.60/libsceopussilkenc-5db8f0bbee.jsonl
 libScePSNowGkp,firmware-13.60,9,9,data/firmware-13.60/libscepsnowgkp-aff6c2627b.jsonl

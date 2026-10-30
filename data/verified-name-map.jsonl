@@ -36915,3 +36915,7 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"sceOpusCeltMultistreamEncTerminate","nid":"1q-nl1oHj5w"}
+{"name":"sceOpusCeltMultistreamEncInitialize","nid":"8YEYUjp0bws"}
+{"name":"sceOpusCeltMultistreamEncDestroy","nid":"Oi1TJQXA0O8"}
+{"name":"sceOpusCeltMultistreamEncEncode","nid":"v5N0Fdb5icw"}
