@@ -27,7 +27,7 @@ DLSYM = re.compile(
 )
 DLOPEN = re.compile(r'\bsprx_dlopen\s*\(\s*"(?P<library>[A-Za-z_][\w.\-]*)"')
 SYMBOL = re.compile(r"^[A-Za-z_]\w*$")
-SCHEMA = 4
+SCHEMA = 5
 SOURCE_NAME = "DNNDHH/PS5-3.20_Libs"
 
 
