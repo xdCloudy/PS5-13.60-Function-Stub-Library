@@ -67,6 +67,7 @@
       <label>Search library <input id="search" type="search" placeholder="e.g. libSceAjm" autocomplete="off"></label>
       <label>Ownership filter <select id="scope"><option value="">All scopes</option></select></label>
       <label>Source filter <select id="source"><option value="">All libraries</option><option value="320">Has 3.20 references</option><option value="main">Seen on AnyPS5 main</option><option value="review">3.20 review candidates</option></select></label>
+      <label>Status filter <select id="statusFilter"><option value="">All statuses</option><option value="unnamed">Has unnamed identities</option><option value="verified">Has strict names</option><option value="historical">Historical-only identities</option><option value="withheld">Has withheld names</option><option value="alias">Explicit export aliases</option></select></label>
       <label>Sort by <select id="sort"><option value="indexed">Indexed exports</option><option value="unresolved">Unnamed</option><option value="strict_verified">Strict names</option><option value="anyps5_main_definitions">AnyPS5 main</option><option value="score_triage_only">Research priority</option></select></label>
     </div>
     <p id="resultcount" class="muted" aria-live="polite"></p>
@@ -74,6 +75,7 @@
     <p class="muted">*Open PR counts show observed matches only, not complete reservation coverage. Select a library to see its breakdown.</p>
   </section>
   <section aria-labelledby="health-heading"><h2 id="health-heading">Automation and review health</h2><div class="panel" id="health"></div></section>
+  <section aria-labelledby="changes-heading"><h2 id="changes-heading">Recent upstream changes</h2><div class="panel" id="changes">No comparable source revision yet.</div></section>
   <section aria-labelledby="trend-heading"><h2 id="trend-heading">Progress over time</h2><div class="panel"><div id="trends" aria-live="polite">Loading observed refresh history…</div><p><a href="https://github.com/xdCloudy/PS5-13.60-Function-Stub-Library/commits/main/reports/coverage-history.json">View report history in Git</a></p></div></section>
 </main>
 <dialog id="detail" class="details" aria-labelledby="detail-title"><div class="top"><h2 id="detail-title">Library</h2><button id="close" type="button" aria-label="Close library details">Close</button></div><dl id="detail-list"></dl><p><small>Definitions, naming and build/runtime validation are distinct forms of evidence.</small></p></dialog>
@@ -113,7 +115,13 @@ function update(){
     (!scope || Object.prototype.hasOwnProperty.call(r.ownership_scope_counts,scope)) &&
     (!source || (source==="320" && r.source_320_references>0) ||
                 (source==="main" && r.anyps5_main_definitions>0) ||
-                (source==="review" && r.name_recovery_candidates_320>0)));
+                (source==="review" && r.name_recovery_candidates_320>0)) &&
+    (!$("statusFilter").value ||
+      ($("statusFilter").value==="unnamed" && r.unresolved>0) ||
+      ($("statusFilter").value==="verified" && r.strict_verified>0) ||
+      ($("statusFilter").value==="historical" && r.historical_only>0) ||
+      ($("statusFilter").value==="withheld" && r.withheld>0) ||
+      ($("statusFilter").value==="alias" && r.anyps5_explicit_alias_without_visible_definition>0)));
   filtered.sort((a,b)=>(b[sort]||0)-(a[sort]||0) || a.library.localeCompare(b.library));
   $("rows").replaceChildren();
   const fields=["indexed","firmware_13_60","source_320_references","named","strict_verified","anyps5_main_definitions","anyps5_open_pr_matches_partial","unresolved"];
@@ -174,6 +182,22 @@ async function load(){
       const p=datum(health,"p",item[0]+": ");
       datum(p,"strong",fmt(item[1]));
   }
+  const change=d.recent_changes;
+  $("changes").replaceChildren();
+  if(!change || change.baseline_only){
+    datum($("changes"),"p","A baseline source snapshot has been recorded. Changes can be compared when a later revision is scanned.");
+  }else{
+    datum($("changes"),"p","Compared with source commit "+change.previous_source_sha);
+    const updates=[
+      ["Added source identities",change.added],
+      ["Removed source identities",change.removed],
+      ["Changed declaration or source-state evidence",change.changed_source_classifications]
+    ];
+    for(const [name,count] of updates){
+      datum($("changes"),"p",name+": "+fmt(count));
+    }
+    datum($("changes"),"small","These are differences in observed source identities/classifications; no runtime implementation claim is made.");
+  }
   const snapshots=(d.trends||[]).slice(-24);
   const trends=$("trends");trends.replaceChildren();
   if(snapshots.length<2){
@@ -212,7 +236,7 @@ async function load(){
   }
   const scopes=new Set(records.flatMap(r=>Object.keys(r.ownership_scope_counts)));
   for(const scope of [...scopes].sort()){const option=document.createElement("option");option.value=scope;option.textContent=scope.replaceAll("_"," ");$("scope").append(option);}
-  ["search","scope","source","sort"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",update));
+  ["search","scope","source","statusFilter","sort"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",update));
   $("close").addEventListener("click",()=>$("detail").close());
   update();
  } catch(e) {
