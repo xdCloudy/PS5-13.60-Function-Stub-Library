@@ -70,6 +70,13 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
                     # Inspect actual added C++ exports irrespective of library.
                     # Unrelated changed functions do not reserve a candidate NID.
                     if not CODE.search(path) or path.startswith(("docs/", ".github/")):
+                        # Changes to the global NID generator/registration
+                        # infrastructure need separate review, not a false
+                        # no-collision assertion.
+                        if re.search(r"^(?:tools/(?:nid_names|stubgen|pr_overlap)\.py|"
+                                     r"core/[^/]*(?:nid|export|registration)[^/]*)$",
+                                     path, re.I):
+                            unknown_global = True
                         continue
                     patch = file.get("patch")
                     if not isinstance(patch, str):
@@ -81,7 +88,13 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
                     text = "\n".join(added)
                     names = DEFINITION.findall(text)
                     nids = EXPORT_ALIAS.findall(text)
-                    reservations.update(nid_for(name) for name in names)
+                    for symbol in names:
+                        if symbol.endswith(("_nid_no_patch", "_nid_no_patch_cut")):
+                            continue  # Deliberately unexported helper.
+                        public_name = re.sub(
+                            r"_nid_disambig[0-9]+$", "",
+                            symbol.removesuffix("_nid_postfix"))
+                        reservations.add(nid_for(public_name))
                     reservations.update(nids)
                     # Any unrecognised export expression might have a literal,
                     # aliased or generated NID. Do not infer non-collision.
