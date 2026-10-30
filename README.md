@@ -40,3 +40,12 @@ The firmware label is research provenance, not an independent hardware measureme
 The image below was generated from an earlier readiness snapshot. See [readiness.json](readiness.json) and [READINESS.md](READINESS.md) for current naming totals.
 
 ![PS5 stub readiness report](reports/stub-readiness.png)
+
+## Separate recovery candidate index
+
+A [sanitized review queue](data/recovery-candidates.jsonl) tracks **742** candidate
+library/NID identities: **152 already recovered** in the ICU name update,
+**588 remaining unresolved candidates**, and **2 publication-filtered** records.
+The queue contains no proposed or withheld name strings. No additional names
+or throwing-stub candidates become verified by merging this queue.
+See the [candidate reconciliation](analysis/INTEGRATION-FINDINGS.md).
