@@ -400,7 +400,7 @@ libSceMusicCoreInterface,firmware-13.60,7,7,data/firmware-13.60/libscemusiccorei
 libSceMusicFrameworkInterface,firmware-13.60,37,36,data/firmware-13.60/libscemusicframeworkinterface-2861c664b4.jsonl
 libSceNKWeb,firmware-13.60,5,2,data/firmware-13.60/libscenkweb-c90c06666b.jsonl
 libSceNKWebCdlgInjectedBundle,firmware-13.60,1,1,data/firmware-13.60/libscenkwebcdlginjectedbundle-3fdecd9aba.jsonl
-libSceNKWebKit,firmware-13.60,15665,8836,data/firmware-13.60/libscenkwebkit-30d4baac63.jsonl
+libSceNKWebKit,firmware-13.60,15665,8841,data/firmware-13.60/libscenkwebkit-30d4baac63.jsonl
 libSceNKWebKitRequirements,firmware-13.60,177,105,data/firmware-13.60/libscenkwebkitrequirements-e1791fbd7a.jsonl
 libSceNet,firmware-13.60,233,221,data/firmware-13.60/libscenet-99b5a08cd0.jsonl
 libSceNetBwe,firmware-13.60,9,9,data/firmware-13.60/libscenetbwe-71486fcd7f.jsonl

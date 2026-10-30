@@ -391,7 +391,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceNgs2.native](libraries/libscengs2-native-d8f74d474b.md) | 65 | 65 | 0 |
 | [libSceNKWeb](libraries/libscenkweb-c90c06666b.md) | 6 | 3 | 0 |
 | [libSceNKWebCdlgInjectedBundle](libraries/libscenkwebcdlginjectedbundle-3fdecd9aba.md) | 1 | 1 | 0 |
-| [libSceNKWebKit](libraries/libscenkwebkit-30d4baac63.md) | 18,939 | 12,110 | 8,615 |
+| [libSceNKWebKit](libraries/libscenkwebkit-30d4baac63.md) | 18,939 | 12115 | 8,615 |
 | [libSceNKWebKitRequirements](libraries/libscenkwebkitrequirements-e1791fbd7a.md) | 214 | 142 | 0 |
 | [libSceNotification](libraries/libscenotification-9012c70655.md) | 4 | 4 | 0 |
 | [libSceNpAppLauncher](libraries/libscenpapplauncher-5798e16539.md) | 3 | 3 | 0 |
