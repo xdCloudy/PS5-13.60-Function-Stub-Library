@@ -117,6 +117,9 @@ def main():
     root, checkout = args.root.resolve(), args.anyps5_dir.resolve()
     if args.abi_file.resolve().is_relative_to(root):
         raise ValueError("ABI prototypes must remain outside this data-only repository")
+    output = args.output_dir.resolve()
+    if output.is_relative_to(root) or output.is_relative_to(checkout):
+        raise ValueError("Audit reports and patches must remain outside both source repositories")
     known,*other=load_inventory(root)
     verified=other[6]
     reviews=read_reviews(args.abi_file)
@@ -137,13 +140,14 @@ def main():
         initial_main_sha = git(checkout, "rev-parse", "origin/main")
         occupied = inspect_existing(checkout)
     selected,rejected=choose(reviews,known,verified,occupied,reserved,args.max_stubs)
-    print(json.dumps({"candidates":len(reviews),"ready_to_prepare":len(selected),
-                      "blocked":rejected,"overlap_checked":bool(args.apply)},indent=2))
+    print(json.dumps({"candidates":len(reviews),"identity_eligible":len(selected),
+                      "blocked":rejected, "live_overlap_checked": False,
+                      "mode": "apply" if args.apply else "read_only_preview"},indent=2))
     if args.apply and selected:
         # Live audit, not the historical dashboard cache. Every candidate
         # needs positive collision clearance from every current PR head.
         audit = check_candidates(selected, occupied, os.getenv("GITHUB_TOKEN", ""), nid_for)
-        save_report(args.output_dir / "CANDIDATE_OVERLAP_AUDIT.json", audit)
+        save_report(output / "CANDIDATE_OVERLAP_AUDIT.json", audit)
         blocked = [r for r in audit["candidates"] if not r["verified_clear"]]
         if blocked:
             raise ValueError(f"Candidate-level overlap not verified: {blocked[:5]}")
@@ -153,7 +157,7 @@ def main():
             raise ValueError("Upstream main advanced during PR audit; rerun on new base")
         if inspect_existing(checkout) != occupied:
             raise ValueError("Current upstream collision inventory changed")
-        patch=apply(checkout,selected,args.output_dir)
+        patch=apply(checkout,selected,output)
         try:
             subprocess.run([sys.executable,"tools/check_conventions.py","--base","origin/main"],
                            cwd=checkout,check=True)
@@ -161,7 +165,8 @@ def main():
             subprocess.run([sys.executable,"tools/pr_overlap.py","--branch",branch],
                            cwd=checkout,check=True)
         except BaseException:
-            # Restore only our modified files, never reset the contribution branch.
+            # Restore only our modified library, never reset the branch.
+            patch.unlink(missing_ok=True)
             subprocess.run(["git", "-C", str(checkout), "restore", "--",
                             "core/libs/prx/" + selected[0]["library"]],
                            check=True)
@@ -204,9 +209,9 @@ A maintainer must verify the complete ABI evidence, build and runtime results be
 """.format(count=len(selected),library=selected[0]["library"],
            branch=branch,sha=git(checkout,"rev-parse","origin/main"),
            patchname=patch.name)
-        (args.output_dir / "PULL_REQUEST_BODY.md").write_text(pr_body,encoding="utf-8")
+        (output / "PULL_REQUEST_BODY.md").write_text(pr_body,encoding="utf-8")
         print("Patch:",patch)
-        print("Draft PR body:",args.output_dir / "PULL_REQUEST_BODY.md")
+        print("Draft PR body:",output / "PULL_REQUEST_BODY.md")
         print("Build/runtime testing remains required; do not claim merge readiness.")
     elif args.apply:
         print("No changes written. ABI or identity evidence insufficient.")
