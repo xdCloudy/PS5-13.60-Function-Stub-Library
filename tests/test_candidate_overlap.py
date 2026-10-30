@@ -173,6 +173,23 @@ class LayoutPlanTests(unittest.TestCase):
                 apply_plan(base, planned, Path(tmp))
             self.assertEqual(original,{path:path.read_bytes() for path in planned})
 
+    def test_publisher_reconstructed_git_patch_is_identical(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp) / "AnyPS5"
+            self.make_repo(base, "libSceExample")
+            patch = apply_plan(
+                base, plan(base, [{"library": "libSceExample",
+                                   "name": "sceVerifiedNew", "parameters": "void"}]),
+                Path(tmp) / "out.patch")
+            original_patch = patch.read_bytes()
+            subprocess.run(["git", "-C", str(base), "restore", "--",
+                            "core/libs/prx/libSceExample"], check=True)
+            subprocess.run(["git", "-C", str(base), "apply", "--index",
+                            str(patch)], check=True)
+            staged = subprocess.check_output(
+                ["git", "-C", str(base), "diff", "--cached", "--binary"])
+            self.assertEqual(original_patch, staged)
+
 
 if __name__ == "__main__":
     unittest.main()
