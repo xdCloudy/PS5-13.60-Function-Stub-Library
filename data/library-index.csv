@@ -705,7 +705,7 @@ libfontconfig,firmware-13.60,53,53,data/firmware-13.60/libfontconfig-64ca5f57a1.
 libgnmawt,firmware-13.60,153,146,data/firmware-13.60/libgnmawt-10e49c6583.jsonl
 libhermes-0.11,firmware-13.60,107,0,data/firmware-13.60/libhermes-0-11-c931216034.jsonl
 libjava,firmware-13.60,262,177,data/firmware-13.60/libjava-480b127a88.jsonl
-libjimage,firmware-13.60,8,0,data/firmware-13.60/libjimage-ba6cd5a736.jsonl
+libjimage,firmware-13.60,8,7,data/firmware-13.60/libjimage-ba6cd5a736.jsonl
 libjli,firmware-13.60,18,0,data/firmware-13.60/libjli-898be53013.jsonl
 libjvm,firmware-13.60,295,153,data/firmware-13.60/libjvm-81d0bbfc3d.jsonl
 libkernel,firmware-13.60,1511,1357,data/firmware-13.60/libkernel-ef142ca503.jsonl

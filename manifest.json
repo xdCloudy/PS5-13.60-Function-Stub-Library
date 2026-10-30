@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47085,
+    "resolved_names": 47092,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 266953,
+    "unresolved_or_withheld_names": 266946,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -5046,10 +5046,10 @@
       "sha256": "9c6ca59852246c44cea23514dd66c9348005db042e6e64ac333c813b0331d519"
     },
     {
-      "bytes": 2720,
+      "bytes": 3307,
       "path": "data/firmware-13.60/libjimage-ba6cd5a736.jsonl",
       "records": 8,
-      "sha256": "bb4d61f01cfc521213a2dc301b402b56c04548a1ef7b5cba1b9cc471807a3c70"
+      "sha256": "61b74bcec84e2b2384baa7a179559ff74510d17b337e1dad3960e2a867279a6b"
     },
     {
       "bytes": 6066,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85564,
+      "bytes": 86421,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "4abc44c7ba8c3c670af72667998df40fd40c9aabb92e098c24a831a140f0b41d"
+      "sha256": "3b265af6e5c5f99360b3c79bdf50f27ece8455387e7beb2512319b892c9d9d03"
     },
     {
-      "bytes": 2581638,
+      "bytes": 2618910,
       "path": "data/verified-name-map.jsonl",
-      "records": 36849,
-      "sha256": "10d0fd3e633779b44224fa778c018b9dc140938ae90078cf54f315f90b02b211"
+      "records": 36924,
+      "sha256": "9ec8434bd5a9de1c445a95aedfc6721d680008656b8192a49cac62e0caf04f6e"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,10 +5976,10 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "a46de98732d4b73f13a2276e125a059fe16fecd06bd162fc35d9a278c341620d"
+    "sha256": "7c4d816f27955ee9f42bcd5f1b4bacc0954a311e85e131fb178eba1ed00aa2d1"
   },
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36917
+  "unique_verified_name_bindings": 36924
 }
