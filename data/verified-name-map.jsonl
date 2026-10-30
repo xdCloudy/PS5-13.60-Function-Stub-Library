@@ -36915,3 +36915,12 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"IsConnectedPsWirelessSpeakerNative","nid":"+-ngKTt9QXw"}
+{"name":"LoginMgrGetLukeConnectedInfo","nid":"+eVj2XDLUiQ"}
+{"name":"PSNowGetTitleInfoByIds","nid":"Uj+9nh6mMZE"}
+{"name":"RemoteplayGetOperationStatus","nid":"XltrW3BX8WI"}
+{"name":"LoginMgrSendTelemetryOfCreateUser","nid":"bbsP8-e8GZA"}
+{"name":"PSNowGetUserFeedbackConfig","nid":"d7IJuaDmd1g"}
+{"name":"PSNowHasEstBenefit","nid":"fZ+SaO+7O4E"}
+{"name":"PSNowGetPermittedIntentTypes","nid":"nezNJ9wnn60"}
+{"name":"PSNowGetStreamingClientInfo","nid":"uLwd43GwmAg"}

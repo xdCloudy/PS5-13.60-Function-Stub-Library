@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 122 |
-| Named | 87 |
-| Unresolved or withheld | 35 |
+| Named | 96 |
+| Unresolved or withheld | 26 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -29,8 +29,10 @@ A bounded preview; the inventory file contains the complete library.
 
 | NID | Symbol |
 |---|---|
+| `+-ngKTt9QXw` | `IsConnectedPsWirelessSpeakerNative` |
 | `+GG9O5nkoLg` | `ShareInitialize` |
 | `+I5sPs9FLXw` | `CryptographyEncryptAES128CBC_HS256` |
+| `+eVj2XDLUiQ` | `LoginMgrGetLukeConnectedInfo` |
 | `-9hYGDAsb4E` | `PSNowRequestClientId` |
 | `-N9SbnOwNto` | `LoginMgrDestroyUser` |
 | `0L0rPrqMqqE` | `CryptographyGenerateHmacSha256` |
@@ -41,3 +43,4 @@ A bounded preview; the inventory file contains the complete library.
 | `4T9kRhpb-V0` | `RemotePlaySetProhibitionForVsh` |
 | `4U7XQYIZAI0` | `RemotePlayGetRpMode` |
 | `5gsmp2Ox0Vs` | `NpStateManagerStop` |
+| `8WzUhuCvVx4` | `RtcGetCurrentDebugNetworkTickNative` |
