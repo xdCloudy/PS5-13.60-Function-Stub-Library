@@ -3,15 +3,15 @@
     "anyps5_main_commit": "f7f03daf52f11191174b1be089a56e268390a707",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 0,
-      "open_pr_cached": 0,
+      "open_pr_cache_expired_or_closed": 1,
+      "open_pr_cached": 539,
       "open_pr_coverage_complete": false,
-      "open_pr_errors": 10,
-      "open_pr_newly_scanned": 540,
-      "open_pr_scanned": 540,
+      "open_pr_errors": 13,
+      "open_pr_newly_scanned": 537,
+      "open_pr_scanned": 1076,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1500,
-      "open_pr_unscanned": 960
+      "open_pr_total": 1503,
+      "open_pr_unscanned": 427
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -21,7 +21,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-30T07:23:47+00:00",
+    "generated_at_utc": "2026-10-30T07:28:37+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -242,7 +242,7 @@
     },
     {
       "library": "libSceLibcInternal",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 11,
       "qualified_records": 11,
       "records": 2688,
       "upstream_main_catalogue_source_matches": 0,
@@ -458,7 +458,7 @@
     },
     {
       "library": "libSceNpCommon",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 17,
       "qualified_records": 782,
       "records": 1199,
       "upstream_main_catalogue_source_matches": 263,
@@ -557,7 +557,7 @@
     },
     {
       "library": "libSceIcu",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 60,
       "qualified_records": 72,
       "records": 855,
       "upstream_main_catalogue_source_matches": 0,
@@ -1151,7 +1151,7 @@
     },
     {
       "library": "libSceFont",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 36,
       "qualified_records": 44,
       "records": 240,
       "upstream_main_catalogue_source_matches": 165,
@@ -1160,7 +1160,7 @@
     },
     {
       "library": "libSceVideoOut",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 100,
       "qualified_records": 133,
       "records": 237,
       "upstream_main_catalogue_source_matches": 44,
@@ -1358,7 +1358,7 @@
     },
     {
       "library": "libSceXml",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 28,
       "qualified_records": 33,
       "records": 183,
       "upstream_main_catalogue_source_matches": 128,
@@ -1610,7 +1610,7 @@
     },
     {
       "library": "libSceCustomMusicSysCallWrapper",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 42,
       "qualified_records": 53,
       "records": 133,
       "upstream_main_catalogue_source_matches": 1,
@@ -1646,7 +1646,7 @@
     },
     {
       "library": "libSceSaveData",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 7,
       "qualified_records": 8,
       "records": 123,
       "upstream_main_catalogue_source_matches": 0,
@@ -1718,7 +1718,7 @@
     },
     {
       "library": "libSceNpTrophy",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 4,
       "qualified_records": 7,
       "records": 110,
       "upstream_main_catalogue_source_matches": 84,
@@ -1781,7 +1781,7 @@
     },
     {
       "library": "libScePlayReady4",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 4,
       "qualified_records": 5,
       "records": 103,
       "upstream_main_catalogue_source_matches": 30,
@@ -1961,7 +1961,7 @@
     },
     {
       "library": "libSceVnaInternal",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 71,
       "qualified_records": 84,
       "records": 88,
       "upstream_main_catalogue_source_matches": 0,
@@ -2051,7 +2051,7 @@
     },
     {
       "library": "libSceVideoStreamingEngine",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 46,
       "qualified_records": 58,
       "records": 74,
       "upstream_main_catalogue_source_matches": 12,
@@ -2087,7 +2087,7 @@
     },
     {
       "library": "libSceAcm",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 10,
       "qualified_records": 11,
       "records": 72,
       "upstream_main_catalogue_source_matches": 11,
@@ -2240,7 +2240,7 @@
     },
     {
       "library": "libSceEsvmEngine",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 12,
       "qualified_records": 13,
       "records": 62,
       "upstream_main_catalogue_source_matches": 16,
@@ -2294,7 +2294,7 @@
     },
     {
       "library": "libScePlayReady2",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 56,
       "upstream_main_catalogue_source_matches": 13,
@@ -2546,7 +2546,7 @@
     },
     {
       "library": "libSceEsvm",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 39,
       "qualified_records": 45,
       "records": 45,
       "upstream_main_catalogue_source_matches": 0,
@@ -2582,7 +2582,7 @@
     },
     {
       "library": "libSceAjmi",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 43,
       "upstream_main_catalogue_source_matches": 0,
@@ -2609,7 +2609,7 @@
     },
     {
       "library": "libSceRazorCpu",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 4,
       "qualified_records": 7,
       "records": 42,
       "upstream_main_catalogue_source_matches": 31,
@@ -2789,7 +2789,7 @@
     },
     {
       "library": "libSceAvPlayerStreaming",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 34,
       "upstream_main_catalogue_source_matches": 19,
@@ -2906,7 +2906,7 @@
     },
     {
       "library": "libSceNpSessionSignaling",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 5,
       "qualified_records": 5,
       "records": 31,
       "upstream_main_catalogue_source_matches": 21,
@@ -3095,7 +3095,7 @@
     },
     {
       "library": "libSceVdecCore",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 27,
       "upstream_main_catalogue_source_matches": 15,
@@ -3176,7 +3176,7 @@
     },
     {
       "library": "libSceMouse",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 3,
       "qualified_records": 4,
       "records": 25,
       "upstream_main_catalogue_source_matches": 16,
@@ -3230,7 +3230,7 @@
     },
     {
       "library": "libSceOpusCeltEnc",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 3,
       "qualified_records": 4,
       "records": 24,
       "upstream_main_catalogue_source_matches": 8,
@@ -3239,7 +3239,7 @@
     },
     {
       "library": "libScePlayGo",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 3,
       "qualified_records": 3,
       "records": 24,
       "upstream_main_catalogue_source_matches": 15,
@@ -3320,7 +3320,7 @@
     },
     {
       "library": "libSceAudiodec",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 2,
       "records": 22,
       "upstream_main_catalogue_source_matches": 6,
@@ -3734,7 +3734,7 @@
     },
     {
       "library": "libSceOpusSilkEnc",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 15,
       "upstream_main_catalogue_source_matches": 11,
@@ -3860,7 +3860,7 @@
     },
     {
       "library": "libSceTextToSpeech2",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 6,
       "qualified_records": 6,
       "records": 14,
       "upstream_main_catalogue_source_matches": 7,
@@ -3950,7 +3950,7 @@
     },
     {
       "library": "libSceSrcUtl",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 3,
       "qualified_records": 4,
       "records": 13,
       "upstream_main_catalogue_source_matches": 8,
@@ -4139,7 +4139,7 @@
     },
     {
       "library": "libSceMediaFrameworkUtil",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 4,
       "qualified_records": 5,
       "records": 11,
       "upstream_main_catalogue_source_matches": 0,
@@ -4256,7 +4256,7 @@
     },
     {
       "library": "libSceCustomMusicAudioOut",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 3,
       "qualified_records": 5,
       "records": 10,
       "upstream_main_catalogue_source_matches": 5,
@@ -4544,7 +4544,7 @@
     },
     {
       "library": "libSceVcodec",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 5,
       "qualified_records": 5,
       "records": 8,
       "upstream_main_catalogue_source_matches": 0,
@@ -4634,7 +4634,7 @@
     },
     {
       "library": "libSceConnectAccountDialog",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 6,
       "qualified_records": 7,
       "records": 7,
       "upstream_main_catalogue_source_matches": 0,
@@ -4715,7 +4715,7 @@
     },
     {
       "library": "libSceMusicCoreInterface",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 6,
       "qualified_records": 7,
       "records": 7,
       "upstream_main_catalogue_source_matches": 0,
@@ -4760,7 +4760,7 @@
     },
     {
       "library": "libSceNpSpeechToText",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 7,
       "qualified_records": 7,
       "records": 7,
       "upstream_main_catalogue_source_matches": 0,
@@ -7189,18 +7189,18 @@
     "anyps5_main_tracked_unique_nids_live": 7746,
     "auto_imported_catalog_matching_proposals": 1,
     "auto_imported_public_source_name_proposals": 8192,
-    "external_source_evidence_records": 18479,
+    "external_source_evidence_records": 24188,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
     "main_nonthrowing_definition_record_matches": 0,
     "main_throwing_marker_record_matches": 0,
-    "new_upstream_nid_candidates_for_review": 9582,
+    "new_upstream_nid_candidates_for_review": 13357,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
     "qualified_unique_nids_matched_in_main_source": 0,
-    "qualified_unique_nids_matched_in_open_pr_additions": 110,
-    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 10639,
+    "qualified_unique_nids_matched_in_open_pr_additions": 661,
+    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 10088,
     "qualified_unique_nids_recomputed": 10749,
     "saved_qualified_unique_nids": 10750,
     "saved_vs_recomputed_delta": 1,
