@@ -121,6 +121,7 @@ jobs:
           python tools/ingest_320.py --source-dir ../PS5-3.20_Libs
           python tools/build_coverage.py
           python tools/validate_pipeline.py
+          python tools/stage_catalogue_import.py --output reports/catalogue-import-proposal.json
       - name: Upload report preview
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
@@ -137,6 +138,7 @@ jobs:
             reports/coverage-matrices.json
             reports/coverage-matrices.md
             reports/coverage-history.json
+            reports/catalogue-import-proposal.json
             reports/anyps5-symbol-states.json
             reports/anyps5-symbol-states.jsonl
             site/index.html
