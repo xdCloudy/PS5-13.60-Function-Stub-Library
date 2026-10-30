@@ -89,7 +89,7 @@ jobs:
       - name: Generate a PR preview (never pushes PR code)
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python tools/update_progress.py --upstream-dir ../AnyPS5
+        run: python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
       - name: Upload report preview
         uses: actions/upload-artifact@v4
         with:
