@@ -18,7 +18,7 @@ SOURCE = re.compile(r"^core/libs/prx/([^/]+)/.*\.(?:cpp|cc|cxx|h|hpp)$")
 DEFINITION = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
 # Explicit NID aliases must reserve the literal export NID even when the
 # helper symbol is named *_nid_no_patch or intentionally hashes differently.
-EXPORT_ALIAS = re.compile(r'\bAPS5_EXPORT\s*\(\s*"([A-Za-z0-9+\-]{11})"\s*,\s*[A-Za-z_]\w*\s*\)')
+EXPORT_ALIAS = re.compile(r'\bAPS5_EXPORT\s*\(\s*"([A-Za-z0-9+\/\-]{11})"\s*,\s*[A-Za-z_]\w*\s*\)')
 ROOT_URL = "https://api.github.com/repos/boykopovar/AnyPS5"
 
 
