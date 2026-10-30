@@ -166,7 +166,7 @@ def build(root: Path) -> dict:
         "strictly_verified_names": inv["strictly_reverified_named_records"],
         "qualified_unique_nids": st["qualified_unique_nids_recomputed"],
         "anyps5_main_matches": st["anyps5_main_tracked_source_records_live"],
-        "open_pr_scanned": pr["open_pr_scanned"],
+        "open_pr_scanned": pr["open_pr_scanned"] if pr_scanned_this_run else None,
         "anyps5_commit": matrix["source_revisions"]["anyps5_main"],
         "ps5_320_commit": matrix["source_revisions"]["ps5_320"],
     }
