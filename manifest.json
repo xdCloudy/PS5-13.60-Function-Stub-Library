@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 46859,
+    "resolved_names": 46931,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 267179,
+    "unresolved_or_withheld_names": 267107,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -1932,10 +1932,10 @@
       "sha256": "275c125204232904310f59b3b13df32f3434809b32c1e6e593d683ad25cae06b"
     },
     {
-      "bytes": 56721,
+      "bytes": 62912,
       "path": "data/firmware-13.60/libreactnative-modules-vsh-webapplauncher-46dbce980c.jsonl",
       "records": 138,
-      "sha256": "f4e26fca1ff7fb83f1ef2d22d00a3ca5db80370052d47a515716b48184a4a6fa"
+      "sha256": "6542ad4a1eb408f54dbfc25cda0c1847939a38625854d95ffe30122ed80910e9"
     },
     {
       "bytes": 354,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85562,
+      "bytes": 86420,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "30648def9086b299b2a7781f320ac101f994da923e7dcc17e6e55afcd5ae0c78"
+      "sha256": "5802a092852d8036b80dc7e48c685fe6406cd48bd7bb1dd32ae8ace26d8379c9"
     },
     {
-      "bytes": 2569331,
+      "bytes": 2609771,
       "path": "data/verified-name-map.jsonl",
-      "records": 36691,
-      "sha256": "91028e68589290c8f27bea3d72cf106c91dfba3a63a5fb9286c77ef07a898900"
+      "records": 36763,
+      "sha256": "579e7a92c7d961c7306343a4b049d7161bc6779207f8b9f09231e1d56d7279c5"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,7 +5976,7 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "df46996fd4e85de1fb535dbb34b4d7e9d1971f6a56de4c7f9c63cfc969e0839c"
+    "sha256": "63b9bebb75b3b4c9befce7091063dfc3df299b0deebc8dc32ad8c54e2bf991e0"
   },
   "report_image": {
     "bytes": 266263,
@@ -5985,5 +5985,5 @@
   },
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36691
+  "unique_verified_name_bindings": 36763
 }

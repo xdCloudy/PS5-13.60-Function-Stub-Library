@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 138 |
-| Named | 63 |
-| Unresolved or withheld | 75 |
+| Named | 135 |
+| Unresolved or withheld | 3 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -31,13 +31,16 @@ A bounded preview; the inventory file contains the complete library.
 |---|---|
 | `+GG9O5nkoLg` | `ShareInitialize` |
 | `+UmoBB-Kur0` | `GetAccountCountryA` |
+| `+WhO08ZXOVs` | `SaveDataMount` |
 | `+ucrAt9fI7c` | `EnableSystemMusic` |
+| `--cudfTMQfc` | `MusicCoreGetShuffle` |
+| `-IldEhNuAvM` | `MusicCoreTerminate` |
 | `06N-dAyE+HY` | `SpeechSystemSettings` |
+| `07VBNMZQovE` | `MusicCoreStop` |
+| `0BebaW7IIwc` | `PostMessage` |
+| `0i+TAb24YYg` | `SaveDataUnmount` |
 | `0zuAEore8pY` | `NpWebInitialize` |
 | `19LEprfkGS0` | `GetVideoOutputStatus` |
-| `2uw51wxVsiI` | `GetOnlineId` |
-| `3rXpEBCRi1o` | `CommerceSetPsStoreIconLayout` |
-| `4Lx3K-A682o` | `ShareFeatureProhibit` |
-| `6dhVu-SHjHI` | `Hide` |
-| `6eoxFFSEuoY` | `IsDebuggingSupported` |
-| `7SmqB-eXB+4` | `SpeechClose` |
+| `1T8k4JZX6Hw` | `MusicCoreRegisterNotify` |
+| `1r+UZaDGVpQ` | `SaveDataCommit` |
+| `2erd+bVjKSU` | `NpWebSetAdditionalScope` |

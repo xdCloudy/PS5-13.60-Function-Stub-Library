@@ -186,7 +186,7 @@ libNativeExtensions,firmware-13.60,386,37,data/firmware-13.60/libnativeextension
 libReactNative.Modules.Vsh,firmware-13.60,122,87,data/firmware-13.60/libreactnative-modules-vsh-ea5def566a.jsonl
 libReactNative.Modules.Vsh.Media,firmware-13.60,66,48,data/firmware-13.60/libreactnative-modules-vsh-media-3aef274cce.jsonl
 libReactNative.Modules.Vsh.MediaPlayer.Contents,firmware-13.60,9,7,data/firmware-13.60/libreactnative-modules-vsh-mediaplayer-contents-7128bd93e2.jsonl
-libReactNative.Modules.Vsh.WebAppLauncher,firmware-13.60,138,63,data/firmware-13.60/libreactnative-modules-vsh-webapplauncher-46dbce980c.jsonl
+libReactNative.Modules.Vsh.WebAppLauncher,firmware-13.60,138,135,data/firmware-13.60/libreactnative-modules-vsh-webapplauncher-46dbce980c.jsonl
 libRnpsDevSupport.Dummy,firmware-13.60,1,0,data/firmware-13.60/librnpsdevsupport-dummy-beb1826b80.jsonl
 libSceAbstractLocal,firmware-13.60,70,40,data/firmware-13.60/libsceabstractlocal-0f876ab744.jsonl
 libSceAbstractStorage,firmware-13.60,119,74,data/firmware-13.60/libsceabstractstorage-fb08534467.jsonl
