@@ -114,8 +114,8 @@ class StubPreparationTests(unittest.TestCase):
             export=lib/"Export.cpp"
             header=lib/"include/Api.hpp"
             export.write_text('#include "prx/libSceExample/include/Api.hpp"\n'
-                              'extern "C" {\\nAPS5_DUMMY_FUN\\n}\n')
-            header.write_text('#pragma once\\nextern "C" {\\n}\n')
+                              'extern "C" {\nAPS5_DUMMY_FUN\n}\n')
+            header.write_text('#pragma once\nextern "C" {\n}\n')
             subprocess.run(["git","init","-q",str(checkout)],check=True)
             subprocess.run(["git","-C",str(checkout),"add","."],check=True)
             subprocess.run(["git","-C",str(checkout),"-c","user.name=Test",
