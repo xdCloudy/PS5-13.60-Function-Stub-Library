@@ -372,7 +372,7 @@ libSceJxr,firmware-13.60,136,136,data/firmware-13.60/libscejxr-59a05f1891.jsonl
 libSceJxrParser,firmware-13.60,7,0,data/firmware-13.60/libscejxrparser-5228dfb0bc.jsonl
 libSceKbEmulate,firmware-13.60,2,2,data/firmware-13.60/libscekbemulate-fda3ae4412.jsonl
 libSceKeyboard,firmware-13.60,22,18,data/firmware-13.60/libscekeyboard-c753859ff1.jsonl
-libSceLibcInternal,firmware-13.60,2688,2593,data/firmware-13.60/libscelibcinternal-f9a6d6abff.jsonl
+libSceLibcInternal,firmware-13.60,2688,2679,data/firmware-13.60/libscelibcinternal-f9a6d6abff.jsonl
 libSceLibcInternalExt,firmware-13.60,7,7,data/firmware-13.60/libscelibcinternalext-4f3e2b94d0.jsonl
 libSceLibreSSL,firmware-13.60,414,414,data/firmware-13.60/libscelibressl-5289bab5fc.jsonl
 libSceLibreSSl3,firmware-13.60,665,641,data/firmware-13.60/libscelibressl3-9440a73a0b.jsonl
