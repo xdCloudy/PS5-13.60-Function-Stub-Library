@@ -143,6 +143,8 @@ def build(root: Path) -> dict:
             "source_320_files": (historical or {}).get("source_files_scanned"),
             "source_320_registrations": (historical or {}).get("total_valid_registrations"),
             "source_320_conflicts_quarantined": (historical or {}).get("quarantined_registrations"),
+            "source_320_quarantine_by_reason": (historical or {}).get("quarantine_by_reason", {}),
+            "source_320_top_quarantine_sources": (historical or {}).get("top_quarantine_sources", []),
             "source_320_review_items": (historical or {}).get("review_queue_records"),
             "source_320_canonical_auto_changes": (historical or {}).get("canonical_rows_modified"),
             "source_320_statuses": (historical or {}).get("statuses", {}),
