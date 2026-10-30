@@ -387,7 +387,7 @@ libSceMbusDebug,firmware-13.60,28,28,data/firmware-13.60/libscembusdebug-82d8e50
 libSceMediaAppSharedStorageMa,firmware-13.60,5,0,data/firmware-13.60/libscemediaappsharedstoragema-868191c19d.jsonl
 libSceMediaAppSharedStorageMaDbg,firmware-13.60,6,0,data/firmware-13.60/libscemediaappsharedstoragemadbg-a01493b389.jsonl
 libSceMediaAppSharedStorageMc,firmware-13.60,8,0,data/firmware-13.60/libscemediaappsharedstoragemc-3ca5617d10.jsonl
-libSceMediaFrameworkInterface,firmware-13.60,225,139,data/firmware-13.60/libscemediaframeworkinterface-971396c6b2.jsonl
+libSceMediaFrameworkInterface,firmware-13.60,225,147,data/firmware-13.60/libscemediaframeworkinterface-971396c6b2.jsonl
 libSceMediaFrameworkUtil,firmware-13.60,11,5,data/firmware-13.60/libscemediaframeworkutil-c0af9aa86b.jsonl
 libSceMetadataReaderWriter,firmware-13.60,64,22,data/firmware-13.60/libscemetadatareaderwriter-a2bb1eaf2f.jsonl
 libSceMouse,firmware-13.60,25,23,data/firmware-13.60/libscemouse-acdd5b5e23.jsonl

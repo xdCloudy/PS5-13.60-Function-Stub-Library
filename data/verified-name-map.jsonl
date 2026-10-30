@@ -36915,3 +36915,11 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"sceMediaFwMediaKeySystemAccessDeleteMediaKeys","nid":"3n9Quq9m3Co"}
+{"name":"sceMediaFwMediaKeyStatusMapHas","nid":"4V5LZ62mN8w"}
+{"name":"sceMediaFwMediaKeyStatusMapGet","nid":"SRHp63O0qc4"}
+{"name":"sceMediaFwDeleteMediaKeySystemAccess","nid":"ZagUxqhkHbw"}
+{"name":"sceMediaFwGetMediaKeys","nid":"ddmctleupY4"}
+{"name":"sceMediaFwMediaKeysDeleteSession","nid":"iGQSSiaxmp4"}
+{"name":"sceMediaFwRender","nid":"jDow6uu9KS0"}
+{"name":"sceMediaFwUnregisterSrcAllocateStateChangeCallback","nid":"w2JFMpxrYmU"}
