@@ -146,7 +146,18 @@ def main():
     if args.apply and selected:
         # Live audit, not the historical dashboard cache. Every candidate
         # needs positive collision clearance from every current PR head.
-        audit = check_candidates(selected, occupied, os.getenv("GITHUB_TOKEN", ""), nid_for)
+        try:
+            audit = check_candidates(selected, occupied, os.getenv("GITHUB_TOKEN", ""), nid_for)
+        except Exception as exc:
+            audit = {"schema_version": 1, "scan_complete": False,
+                     "error_type": type(exc).__name__,
+                     "error": str(exc)[:300],
+                     "candidates": [{"library": row["library"], "nid": row["nid"],
+                                     "verified_clear": False,
+                                     "reasons": ["live_api_or_scan_failure"]}
+                                    for row in selected]}
+            save_report(output / "CANDIDATE_OVERLAP_AUDIT.json", audit)
+            raise ValueError("Live overlap verification failed; no patch applied") from exc
         save_report(output / "CANDIDATE_OVERLAP_AUDIT.json", audit)
         blocked = [r for r in audit["candidates"] if not r["verified_clear"]]
         if blocked:
