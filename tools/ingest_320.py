@@ -204,6 +204,19 @@ def ingest(root: Path, source_dir: Path, force: bool = False) -> dict:
         safe_errors.append({k: v for k, v in error.items()
                             if k in {"source_file", "library", "nid", "reason",
                                      "owner_count", "count"}})
+    # Diagnostic ledger summarises exact parser/quarantine reasons, without
+    # publishing unsafe original symbol names or guessing their meanings.
+    reason_totals = Counter()
+    affected_files = Counter()
+    for error in safe_errors:
+        count = error.get("count", 1)
+        reason_totals[error["reason"]] += count
+        affected_files[error["source_file"]] += count
+    top_quarantine_files = [
+        {"source_file": source, "rejected_registrations": count}
+        for source, count in sorted(affected_files.items(),
+                                    key=lambda x: (-x[1], x[0]))[:20]
+    ]
     for p in proposed:
         p["source_commit"] = head
     queue = proposed + sorted(safe_errors, key=lambda x:
@@ -218,6 +231,8 @@ def ingest(root: Path, source_dir: Path, force: bool = False) -> dict:
                                     + summary["statuses"].get("ownership_review_required", 0)
                                     + summary["statuses"].get("withheld_owner_unknown", 0),
         "quarantine_diagnostic_records": len(rejected),
+        "quarantine_by_reason": dict(sorted(reason_totals.items())),
+        "top_quarantine_sources": top_quarantine_files,
         "unowned_verified_hash_bindings": (
             summary["statuses"].get("ownership_review_required", 0)
             + summary["statuses"].get("withheld_owner_unknown", 0)),
