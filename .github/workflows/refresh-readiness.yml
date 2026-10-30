@@ -1,0 +1,102 @@
+name: Refresh PS5 readiness and AnyPS5 coverage
+
+on:
+  push:
+    branches: ['**']
+    paths-ignore:
+      - 'reports/progress.json'
+      - 'reports/library-progress.md'
+      - 'reports/upstream-review-queue.jsonl'
+  pull_request:
+    branches: [main]
+  schedule:
+    # A separate repository needs dispatch/webhook for instant cross-repo pushes.
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [anyps5-updated]
+
+concurrency:
+  group: ps5-progress-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Clone upstream main (read-only)
+        run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
+      - name: Rebuild report and collect upstream NID observations
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/update_progress.py --upstream-dir ../AnyPS5
+      - name: Publish workflow summary
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          d=json.load(open("reports/progress.json"))
+          i=d["inventory"]; s=d["stubs"]
+          print("## PS5 readiness")
+          print(f"- Verified names: {i['verified_named_records']:,} / {i['records']:,}")
+          print(f"- Qualified unique NIDs: {s['qualified_unique_nids_recomputed']:,}")
+          print(f"- AnyPS5 main definition matches: {s['qualified_unique_nids_matched_in_main_source']:,}")
+          print(f"- Open-PR patch matches: {s['qualified_unique_nids_matched_in_open_pr_additions']:,}")
+          print(f"- Open PR scan complete: {d['generated_from']['anyps5_open_prs']['open_pr_coverage_complete']}")
+          print("- Source matches do not guarantee export registration or runtime validation.")
+          PY
+      - name: Commit generated reports
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl
+          if git diff --cached --quiet; then
+            echo "Progress files are current."
+            exit 0
+          fi
+          git commit -m "docs: refresh readiness and AnyPS5 observations [skip ci]"
+          git push origin "HEAD:${{ github.ref_name }}"
+
+  preview:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Clone upstream main (read-only)
+        run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
+      - name: Generate a PR preview (never pushes PR code)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
+      - name: Upload report preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: ps5-readiness-preview
+          path: |
+            READINESS.md
+            reports/progress.json
+            reports/library-progress.md
+            reports/upstream-review-queue.jsonl
+          retention-days: 14
