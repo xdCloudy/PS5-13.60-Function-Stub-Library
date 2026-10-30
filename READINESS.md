@@ -11,10 +11,10 @@ No executable stubs or firmware are included here.
 | Firmware 13.60 observed exports | 302,338 |
 | Historical-only references | 11,700 |
 | Logical libraries | 791 |
-| Published named records | 47,017 (14.97%) |
-| Strict NID/name reverified records | 39,913 |
-| Named records requiring status/hash reconciliation | 7,104 |
-| Unresolved or withheld records | 267,021 |
+| Published named records | 47,085 (14.99%) |
+| Strict NID/name reverified records | 39,966 |
+| Named records requiring status/hash reconciliation | 7,119 |
+| Unresolved or withheld records | 266,953 |
 | Unique NIDs across all scopes | 300,846 |
 | Extra cross-library NID records (not deletions) | 12,302 |
 | Repeated library/NID identities across partitions | 890 |
@@ -29,16 +29,16 @@ No executable stubs or firmware are included here.
 | Fully validated | 0 | Saved local snapshot |
 | Published to AnyPS5 | 0 | Saved historical snapshot; **not live** |
 | Qualified NIDs with matching AnyPS5 main source definitions | 0 | Source scan, not export/runtime validation |
-| Additional qualified NIDs seen in open-PR additions | 1,105 | Best-effort PR patch scan |
-| Qualified NIDs not seen by these scans | 9,644 | Not proof they are missing upstream |
-| Additional upstream NID observations needing review | 9,274 | No unverified names published |
+| Additional qualified NIDs seen in open-PR additions | 1,147 | Best-effort PR patch scan |
+| Qualified NIDs not seen by these scans | 9,602 | Not proof they are missing upstream |
+| Additional upstream NID observations needing review | 10,267 | No unverified names published |
 
 **Saved qualified-count discrepancy:** 10,750 published versus 10,749 recomputed (delta +1). This report does not silently modify canonical assessments.
 
 ## Upstream observation
 
-- AnyPS5 main revision: `8c8b9986204d5b1cbb23847b363df00ae832ec9c`
-- Open PRs observed: 1478
+- AnyPS5 main revision: `42d992b02adb1729a9b0488d444ecafc81c0a5a8`
+- Open PRs observed: 1471
 - Open PRs scanned: 400
 - Open PR audit complete: NO — do not treat reservations as exhaustive
 

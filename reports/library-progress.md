@@ -96,7 +96,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceLibreSsl | 399 | 343 | 0 | 0 | 0 |
 | SceVshShellUITheme | 396 | 0 | 0 | 0 | 0 |
 | SceVshShellUIBaseSystem | 392 | 0 | 0 | 0 | 0 |
-| libNativeExtensions | 392 | 38 | 0 | 0 | 0 |
+| libNativeExtensions | 392 | 91 | 0 | 0 | 0 |
 | SceVshShellUISticker | 356 | 0 | 0 | 0 | 0 |
 | MonoDataTds | 348 | 0 | 0 | 0 | 0 |
 | libSceFreeType | 344 | 283 | 0 | 0 | 0 |
@@ -177,7 +177,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceFont.native | 136 | 113 | 0 | 0 | 0 |
 | libSceJxr | 136 | 111 | 0 | 0 | 0 |
 | libSceAgcDriver | 135 | 113 | 0 | 0 | 0 |
-| libSceCustomMusicSysCallWrapper | 133 | 48 | 53 | 0 | 0 |
+| libSceCustomMusicSysCallWrapper | 133 | 48 | 53 | 0 | 42 |
 | gaikai_player_lib | 132 | 15 | 0 | 0 | 0 |
 | SceVshOrbisBgft | 127 | 0 | 0 | 0 | 0 |
 | libSceCamera | 127 | 110 | 1 | 0 | 1 |

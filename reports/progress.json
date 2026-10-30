@@ -1,19 +1,19 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "8c8b9986204d5b1cbb23847b363df00ae832ec9c",
+    "anyps5_main_commit": "42d992b02adb1729a9b0488d444ecafc81c0a5a8",
     "anyps5_open_prs": {
       "method": "added APS5_VABI declarations in GitHub PR patches; best-effort reservations",
       "open_pr_coverage_complete": false,
       "open_pr_errors": 0,
       "open_pr_scanned": 400,
-      "open_pr_total": 1478
+      "open_pr_total": 1471
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
       "historical-3.20-only": 11700,
-      "resolved_names": 47017,
+      "resolved_names": 47085,
       "total_records": 314038,
-      "unresolved_or_withheld_names": 267021,
+      "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
     "upstream_sync": "source-scanned"
@@ -23,10 +23,10 @@
     "firmware_13_60": 302338,
     "historical_only": 11700,
     "libraries": 791,
-    "name_nid_mismatches_or_nonverified_names": 7104,
-    "named_records_not_passed_by_strict_gate": 7104,
+    "name_nid_mismatches_or_nonverified_names": 7119,
+    "named_records_not_passed_by_strict_gate": 7119,
     "nid_shared_by_multiple_records": 11079,
-    "published_named_records": 47017,
+    "published_named_records": 47085,
     "records": 314038,
     "repeated_library_nid_records_across_scopes": 890,
     "scope_records": {
@@ -39,10 +39,10 @@
       "ownership_pending": 7322,
       "shell_specific_review": 1659
     },
-    "strictly_reverified_named_records": 39913,
+    "strictly_reverified_named_records": 39966,
     "unique_nids_all_scopes": 300846,
-    "unresolved_or_withheld": 267021,
-    "verified_named_records": 47017
+    "unresolved_or_withheld": 266953,
+    "verified_named_records": 47085
   },
   "libraries": [
     {
@@ -787,7 +787,7 @@
       "qualified_records": 0,
       "records": 392,
       "upstream_main_source_matches": 0,
-      "verified_names": 38
+      "verified_names": 91
     },
     {
       "library": "SceVshShellUISticker",
@@ -1431,7 +1431,7 @@
     },
     {
       "library": "libSceCustomMusicSysCallWrapper",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 42,
       "qualified_records": 53,
       "records": 133,
       "upstream_main_source_matches": 0,
@@ -6387,19 +6387,19 @@
     "locally_generated_saved_snapshot": 963,
     "main_nonthrowing_definition_record_matches": 0,
     "main_throwing_marker_record_matches": 0,
-    "new_upstream_nid_candidates_for_review": 9274,
+    "new_upstream_nid_candidates_for_review": 10267,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
     "qualified_unique_nids_matched_in_main_source": 0,
-    "qualified_unique_nids_matched_in_open_pr_additions": 1105,
-    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 9644,
+    "qualified_unique_nids_matched_in_open_pr_additions": 1147,
+    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 9602,
     "qualified_unique_nids_recomputed": 10749,
     "saved_qualified_unique_nids": 10750,
     "saved_vs_recomputed_delta": 1,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 16027,
+    "upstream_source_definitions_seen": 16046,
     "verified_catalog_identity_main_source_matches": 7753
   }
 }
