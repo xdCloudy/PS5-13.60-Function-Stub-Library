@@ -82,6 +82,7 @@ def load_inventory(root: Path):
     all_libraries = Counter()
     library_named = Counter()
     qualified = set()
+    assessed_qualified = set()
     verified = set()
     invalid_bindings = 0
     withheld_qualified = 0
@@ -114,13 +115,15 @@ def load_inventory(root: Path):
                     elif name:
                         invalid_bindings += 1
                     if row.get("stub_assessment") == QUALIFIED:
+                        if name and row.get("name_status") != "withheld_by_publication_filter":
+                            assessed_qualified.add(key)
                         if valid:
                             qualified.add(key)
                         else:
                             withheld_qualified += 1
     return (by_identity, all_nids, scopes, all_libraries, library_named,
-            qualified, verified, invalid_bindings, withheld_qualified,
-            total_rows, verified_rows)
+            qualified, assessed_qualified, verified, invalid_bindings,
+            withheld_qualified, total_rows, verified_rows)
 
 
 def scan_upstream(upstream: Path, known: dict, verified: set):
@@ -233,15 +236,16 @@ def main():
     root = args.root.resolve()
     old = read_json(root / "readiness.json")
     manifest = read_json(root / "manifest.json")
-    (known, nids, scopes, libraries, named, qualified, verified,
-     invalid, qualified_invalid, total, names) = load_inventory(root)
+    (known, nids, scopes, libraries, named, qualified, assessed_qualified,
+     verified, invalid, qualified_invalid, total, names) = load_inventory(root)
     if total != manifest["counts"]["total_records"]:
         raise ValueError("Inventory row count does not match canonical manifest")
     named_total = names + invalid
     if named_total != manifest["counts"]["resolved_names"]:
         raise ValueError("Named record count differs from manifest; regenerate canonical inventory")
     strict_rehash_shortfall = named_total - names
-    qualified_nids = {key[1] for key in qualified}
+    qualified_nids = {key[1] for key in assessed_qualified}
+    strict_qualified_nids = {key[1] for key in qualified}
     all_uniq_nids = len(nids)
     cross_scope_repeated_identities = total - len(known)
     aliases = len(known) - all_uniq_nids
@@ -279,7 +283,7 @@ def main():
     per_lib = []
     for lib in sorted(libraries, key=lambda lib: (-libraries[lib], lib)):
         libkey = lib.casefold()
-        q = sum(k[0] == libkey for k in qualified)
+        q = sum(k[0] == libkey for k in assessed_qualified)
         main_q = sum(k[0] == libkey for k in main_qualified)
         reserved_q = sum(k[0] == libkey for k in pending_qualified)
         per_lib.append({"library": lib, "records": libraries[lib], "verified_names": named[lib],
@@ -307,10 +311,11 @@ def main():
         },
         "stubs": {
             "qualified_unique_nids_recomputed": total_qualified,
-            "qualified_library_nid_records_recomputed": len(qualified),
+            "qualified_library_nid_records_recomputed": len(assessed_qualified),
+            "strictly_rehashed_qualified_unique_nids": len(strict_qualified_nids),
             "saved_qualified_unique_nids": qualified_saved,
             "saved_vs_recomputed_delta": discrepancy,
-            "qualified_but_unverified_records_excluded": qualified_invalid,
+            "qualified_records_outside_strict_rehash_gate": qualified_invalid,
             "locally_generated_saved_snapshot": old["metrics"]["generated_throwing_stubs"],
             "statically_prepared_saved_snapshot": old["metrics"]["statically_prepared_stubs"],
             "fully_validated_saved_snapshot": old["metrics"]["fully_validated_stubs"],
@@ -363,7 +368,8 @@ def main():
         "",
         "## Stub progress — distinct stages", "",
         "| Measure | Count | Evidence level |", "|---|---:|---|",
-        f"| Qualified unique NIDs (recomputed) | {total_qualified:,} | Local inventory assessment only |",
+        f"| Qualified unique NIDs (recomputed) | {total_qualified:,} | Named inventory assessment, excluding withheld identities |",
+        f"| Strictly rehashed qualified unique NIDs | {len(strict_qualified_nids):,} | Stronger gate for upstream matching |"
         f"| Generated throwing stubs | {s['locally_generated_saved_snapshot']:,} | Saved local snapshot |",
         f"| Offline statically prepared | {s['statically_prepared_saved_snapshot']:,} | Saved local snapshot |",
         f"| Fully validated | {s['fully_validated_saved_snapshot']:,} | Saved local snapshot |",
@@ -387,6 +393,8 @@ def main():
         "correct runtime behavior, or merge status. A throwing marker indicates only a "
         "source-level NotImplemented call. Multiple libraries sharing a NID are preserved "
         "until ownership and equivalence have been independently resolved.", "",
+        "Qualification counts reflect existing catalog assessments with withheld names excluded; "
+        "strictly rehashed matches are a separate subset, not the full qualification inventory.", "",
         "The strict rehash gate includes only records with verified_nid_binding status "
         "and a matching local SHA1 NID; other named records are withheld from "
         "automatic upstream reconciliation until separately audited.", "",
