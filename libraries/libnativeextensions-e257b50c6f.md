@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 392 |
-| Named | 43 |
-| Unresolved or withheld | 349 |
+| Named | 111 |
+| Unresolved or withheld | 281 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -31,15 +31,18 @@ A bounded preview; the inventory file contains the complete library.
 
 | NID | Symbol |
 |---|---|
+| `+4WjUNpVBtk` | `JSExecutorSetGlobalVariableFromJSON` |
 | `+YbLnJwL+xw` | `AsyncStorageOpenNative` |
+| `-xVVeuGSZxM` | `JSExecutorEnableXRay` |
+| `0lUGKEDjbNg` | `JSExecutorCallFunctionReturnFlushedQueue` |
+| `0zU9W1x7e6w` | `SystemServiceTelemetrySetData2` |
+| `1LLvGjys2p8` | `JSExecutorEvaluateScript` |
+| `2CKOYCbz-AA` | `_sceRnpsMessageQueueThreadRegisterCallbacks` |
+| `2DNr1yAZ53A` | `RnpsAppMgrWrapperUnblockInstall` |
+| `3Xn6kj+U-PI` | `JSExecutorInstallNavigatorUserAgent` |
 | `3eCvb-utsDw` | `AsyncStorageClearNative` |
+| `3tbOMqGFOKk` | `_sceRnpsOnInActive` |
 | `6QMoWxdywac` | `CurlMultiAbortRequest` |
 | `6lwSxBExYLo` | `NetCtlUnregisterCallbackNative` |
-| `6wLehmKPNa4` | `PubSubSubscribe` |
+| `81luXgoX3Y0` | `InstallJSIPerformanceHooks` |
 | `85O5VmSVqmI` | `RnpsGetOpenPsIdForSystem` |
-| `8I7xekkfFhQ` | `NetCtlCheckCallbackNative` |
-| `B0PtaDqaYm0` | `BgsStorageGetItemsBySearch` |
-| `D-2SZbPFqzQ` | `RnpsAppMgrWrapperGetPath` |
-| `I4qJlIt9njM` | `PubSubPublish` |
-| `IjDmpUrMSz0` | `AsyncStorageRemoveItemNative` |
-| `J4I3Ue9vQ+E` | `ThreadUtils_SetThreadName` |

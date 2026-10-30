@@ -182,7 +182,7 @@ libBdplus,firmware-13.60,1,0,data/firmware-13.60/libbdplus-3ffc37d639.jsonl
 libCFWML,firmware-13.60,53,0,data/firmware-13.60/libcfwml-4cda6e4104.jsonl
 libCprm,firmware-13.60,35,0,data/firmware-13.60/libcprm-ab695d5a56.jsonl
 libCss,firmware-13.60,65,4,data/firmware-13.60/libcss-6260a27151.jsonl
-libNativeExtensions,firmware-13.60,386,37,data/firmware-13.60/libnativeextensions-e257b50c6f.jsonl
+libNativeExtensions,firmware-13.60,386,105,data/firmware-13.60/libnativeextensions-e257b50c6f.jsonl
 libReactNative.Modules.Vsh,firmware-13.60,122,87,data/firmware-13.60/libreactnative-modules-vsh-ea5def566a.jsonl
 libReactNative.Modules.Vsh.Media,firmware-13.60,66,48,data/firmware-13.60/libreactnative-modules-vsh-media-3aef274cce.jsonl
 libReactNative.Modules.Vsh.MediaPlayer.Contents,firmware-13.60,9,7,data/firmware-13.60/libreactnative-modules-vsh-mediaplayer-contents-7128bd93e2.jsonl

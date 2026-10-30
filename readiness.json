@@ -1300,7 +1300,7 @@
     {
       "generated": 0,
       "library": "libNativeExtensions",
-      "named": 43,
+      "named": 111,
       "qualified": 0,
       "total": 392
     },
@@ -5551,8 +5551,8 @@
     "statically_prepared_stubs": 963,
     "unresolved_system_export_records": 9989
   },
-  "named_library_stub_records": 47017,
-  "named_stub_identities": 36849,
+  "named_library_stub_records": 47085,
+  "named_stub_identities": 36917,
   "scope_records": {
     "existing_firmware_system_library": 15703,
     "existing_upstream_placeholder_library": 21799,
@@ -5564,6 +5564,6 @@
     "shell_specific_review": 1659
   },
   "total_export_records": 314038,
-  "unresolved_or_withheld_records": 267021,
+  "unresolved_or_withheld_records": 266953,
   "validation_status": "incomplete"
 }
