@@ -53,9 +53,10 @@ class ReportTests(unittest.TestCase):
             cpp.write_text("int APS5_VABI samplePublicFunction(void) {\n"
                            " NotImplemented_nid_no_patch(__func__);\n return 0;\n}\n"
                            "int APS5_VABI novelSymbol(void) { return 1; }\n")
-            subprocess.run([sys.executable, str(ROOT / "tools" / "update_progress.py"),
+            completed = subprocess.run([sys.executable, str(ROOT / "tools" / "update_progress.py"),
                             "--root", str(root), "--upstream-dir", str(upstream),
-                            "--skip-prs"], check=True, capture_output=True, text=True)
+                            "--skip-prs"], capture_output=True, text=True)
+            self.assertEqual(completed.returncode, 0, completed.stderr)
             report = json.loads((root / "reports/progress.json").read_text())
             self.assertEqual(report["inventory"]["records"], 4)
             self.assertEqual(report["inventory"]["cross_library_nid_extra_records_all_scopes"], 1)
