@@ -19,6 +19,7 @@ import subprocess
 import sys
 import urllib.error
 import urllib.request
+from upstream_sync import scan_open_prs_cached
 
 NID_SUFFIX = bytes.fromhex("518d64a635ded8c1e6b039b1c3e55230")
 DEF = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
@@ -126,9 +127,15 @@ def load_inventory(root: Path):
             withheld_qualified, total_rows, verified_rows)
 
 
+PUBLIC_SYMBOL = re.compile(r"^[A-Za-z_][A-Za-z_0-9]{0,230}$")
+SENSITIVE_SYMBOL = re.compile(r"(api.?key|password|credential|secret|bearer|auth.?token|private.?key)", re.I)
+
+
 def scan_upstream(upstream: Path, known: dict, verified: set):
     observations = {}
     new_candidates = set()
+    source_candidates = {}
+    withheld = 0
     seen_definitions = 0
     for path in sorted((upstream / "core" / "libs" / "prx").rglob("*.cpp")):
         rel = path.relative_to(upstream).as_posix()
@@ -136,80 +143,42 @@ def scan_upstream(upstream: Path, known: dict, verified: set):
         if not match:
             continue
         lib = match.group(1).casefold()
-        text = path.read_text(encoding="utf-8", errors="replace")
-        for name, kind in scan_source(text):
+        content = path.read_text(encoding="utf-8", errors="replace")
+        for name, kind in scan_source(content):
             seen_definitions += 1
             nid = nid_for(name)
             key = (lib, nid)
-            if key in verified and known[key].get("name") == name:
-                # A definition with no marker is not automatically a working implementation.
+            record = known.get(key)
+            if key in verified and record.get("name") == name:
                 if observations.get(key) != "source_definition":
                     observations[key] = kind
+                continue
+            new_candidates.add(key)
+            # Only approved, public C symbol-shaped strings may appear in
+            # the *separate* review queue. Canonical names are never mutated.
+            if record and record.get("name_status") == "withheld_by_publication_filter":
+                withheld += 1
+                continue
+            if not PUBLIC_SYMBOL.fullmatch(name) or SENSITIVE_SYMBOL.search(name):
+                withheld += 1
+                continue
+            if record is None:
+                status = "not_in_firmware_catalog"
+            elif not record.get("name"):
+                status = "unnamed_catalog_identity"
+            elif record.get("name") != name:
+                status = "conflicts_with_published_name"
             else:
-                # Capture an identifier only, never an unreviewed symbol name.
-                new_candidates.add((lib, nid))
-    return observations, new_candidates, seen_definitions
-
-
-def api_json(url: str, token: str):
-    headers = {"Accept": "application/vnd.github+json", "User-Agent": "ps5-readiness-sync",
-               "X-GitHub-Api-Version": "2022-11-28"}
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    request = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(request, timeout=45) as response:
-        return json.load(response)
-
-
-def scan_open_prs(token: str, known: dict, verified: set, max_prs: int):
-    root = "https://api.github.com/repos/boykopovar/AnyPS5"
-    prs = []
-    page = 1
-    while True:
-        chunk = api_json(f"{root}/pulls?state=open&per_page=100&page={page}", token)
-        prs.extend(chunk)
-        if len(chunk) < 100:
-            break
-        page += 1
-    total = len(prs)
-    reservations = defaultdict(set)
-    candidate_nids = set()
-    incomplete = total > max_prs
-    errors = 0
-    for pr in prs[:max_prs]:
-        number = pr["number"]
-        page = 1
-        try:
-            while True:
-                files = api_json(f"{root}/pulls/{number}/files?per_page=100&page={page}", token)
-                for item in files:
-                    match = SOURCE.match(item["filename"])
-                    if not match:
-                        continue
-                    lib = match.group(1).casefold()
-                    patch = item.get("patch")
-                    if patch is None:
-                        incomplete = True
-                        continue
-                    added = "\n".join(line[1:] for line in patch.splitlines()
-                                      if line.startswith("+") and not line.startswith("+++"))
-                    for name in DEF.findall(added):
-                        key = (lib, nid_for(name))
-                        if key in verified and known[key].get("name") == name:
-                            reservations[key].add(number)
-                        else:
-                            candidate_nids.add(key)
-                if len(files) < 100:
-                    break
-                page += 1
-        except (urllib.error.URLError, TimeoutError, ValueError):
-            errors += 1
-            incomplete = True
-    return reservations, candidate_nids, {
-        "open_pr_total": total, "open_pr_scanned": min(total, max_prs),
-        "open_pr_errors": errors, "open_pr_coverage_complete": not incomplete,
-        "method": "added APS5_VABI declarations in GitHub PR patches; best-effort reservations"
-    }
+                status = "published_name_requires_evidence_review"
+            source_candidates.setdefault(key, {
+                "library": lib, "nid": nid, "proposed_name": name,
+                "source": "boykopovar/AnyPS5",
+                "source_file": rel, "source_kind": kind,
+                "match_status": status, "verification": "public_source_nid_hash_only",
+                "canonical_name_approved": False, "signature_verified": False,
+                "implementation_verified": False,
+            })
+    return observations, new_candidates, seen_definitions, source_candidates, withheld
 
 
 def git_head(path: Path) -> str | None:
@@ -231,7 +200,8 @@ def main():
     cli.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     cli.add_argument("--upstream-dir", type=Path, help="Fresh read-only checkout of AnyPS5 main")
     cli.add_argument("--skip-prs", action="store_true", help="Offline/fixture mode")
-    cli.add_argument("--max-open-prs", type=int, default=400)
+    cli.add_argument("--max-open-prs", type=int, default=550,
+                     help="Maximum uncached PR heads to inspect per run; prior heads stay cached")
     args = cli.parse_args()
     root = args.root.resolve()
     old = read_json(root / "readiness.json")
@@ -252,6 +222,8 @@ def main():
     upstream = args.upstream_dir.resolve() if args.upstream_dir else None
     main_obs = {}
     unmatched = set()
+    source_candidates = {}
+    withheld_source_names = 0
     definition_count = 0
     pr_obs = {}
     pr_candidates = set()
@@ -260,12 +232,14 @@ def main():
                "method": "not checked"}
     sha = None
     if upstream:
-        main_obs, unmatched, definition_count = scan_upstream(upstream, known, verified)
+        (main_obs, unmatched, definition_count,
+         source_candidates, withheld_source_names) = scan_upstream(upstream, known, verified)
         sha = git_head(upstream)
         if not args.skip_prs:
             try:
-                pr_obs, pr_candidates, pr_meta = scan_open_prs(
-                    os.getenv("GITHUB_TOKEN", ""), known, verified, args.max_open_prs
+                pr_obs, pr_candidates, pr_meta = scan_open_prs_cached(
+                    os.getenv("GITHUB_TOKEN", ""), known, verified,
+                    nid_for, root / "reports/open-pr-cache.json", args.max_open_prs
                 )
             except (urllib.error.URLError, TimeoutError, ValueError) as e:
                 pr_meta["error"] = type(e).__name__
@@ -329,7 +303,10 @@ def main():
                                                        for k, v in main_obs.items()),
             "main_nonthrowing_definition_record_matches": sum(k in qualified and v == "source_definition"
                                                              for k, v in main_obs.items()),
-            "new_upstream_nid_candidates_for_review": len(candidate_records)
+            "new_upstream_nid_candidates_for_review": len(candidate_records),
+            "auto_imported_public_source_name_proposals": len(source_candidates),
+            "auto_imported_catalog_matching_proposals": sum(x["match_status"] == "unnamed_catalog_identity" for x in source_candidates.values()),
+            "source_names_withheld_by_safety_filter": withheld_source_names
         },
         "limitations": [
             "Cross-library NID repetition does not prove semantic equivalence or permit deletion.",
@@ -346,6 +323,10 @@ def main():
                                      "source_commit": sha}, sort_keys=True)
                            for lib, nid in candidate_records)
     write_if_changed(root / "reports" / "upstream-review-queue.jsonl", candidates + ("\n" if candidates else ""))
+    proposals = "\n".join(json.dumps({**record, "source_commit": sha}, sort_keys=True)
+                          for key, record in sorted(source_candidates.items()))
+    write_if_changed(root / "reports" / "upstream-source-candidates.jsonl",
+                     proposals + ("\n" if proposals else ""))
     s = summary["stubs"]
     i = summary["inventory"]
     lines = [
