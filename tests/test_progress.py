@@ -28,6 +28,10 @@ class ReportTests(unittest.TestCase):
                  "stub_assessment": "throwing_stub_candidate_validation_required"}
                 for lib in ("libSample", "libAlias")
             ]
+            records.append({"library": "libReview", "nid": nid_for("cataloguedSymbol"),
+                            "name": "cataloguedSymbol", "name_status": "historical_name_reference",
+                            "scope": "existing_firmware_system_library",
+                            "stub_assessment": "throwing_stub_candidate_validation_required"})
             records.append({"library": "libWithheld", "nid": nid_for("secretName"),
                             "name": None, "name_status": "withheld_by_publication_filter",
                             "scope": "ownership_pending",
@@ -35,10 +39,10 @@ class ReportTests(unittest.TestCase):
             (shard / "sample.jsonl").write_text(
                 "".join(json.dumps(row) + "\n" for row in records), encoding="utf-8")
             (root / "manifest.json").write_text(json.dumps({
-                "counts": {"total_records": 3, "resolved_names": 2,
-                           "firmware-13.60": 3, "historical-3.20-only": 0}}))
+                "counts": {"total_records": 4, "resolved_names": 3,
+                           "firmware-13.60": 4, "historical-3.20-only": 0}}))
             (root / "readiness.json").write_text(json.dumps({
-                "metrics": {"qualified_unique_stub_candidates": 2,
+                "metrics": {"qualified_unique_stub_candidates": 3,
                             "generated_throwing_stubs": 0,
                             "statically_prepared_stubs": 0,
                             "fully_validated_stubs": 0,
@@ -53,10 +57,11 @@ class ReportTests(unittest.TestCase):
                             "--root", str(root), "--upstream-dir", str(upstream),
                             "--skip-prs"], check=True, capture_output=True, text=True)
             report = json.loads((root / "reports/progress.json").read_text())
-            self.assertEqual(report["inventory"]["records"], 3)
+            self.assertEqual(report["inventory"]["records"], 4)
             self.assertEqual(report["inventory"]["cross_library_nid_extra_records_all_scopes"], 1)
-            self.assertEqual(report["stubs"]["qualified_unique_nids_recomputed"], 1)
-            self.assertEqual(report["stubs"]["qualified_but_unverified_records_excluded"], 1)
+            self.assertEqual(report["stubs"]["qualified_unique_nids_recomputed"], 2)
+            self.assertEqual(report["stubs"]["strictly_rehashed_qualified_unique_nids"], 1)
+            self.assertEqual(report["stubs"]["qualified_records_outside_strict_rehash_gate"], 2)
             self.assertEqual(report["stubs"]["qualified_unique_nids_matched_in_main_source"], 1)
             self.assertEqual(report["stubs"]["new_upstream_nid_candidates_for_review"], 1)
             queue = (root / "reports/upstream-review-queue.jsonl").read_text()
