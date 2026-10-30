@@ -53,14 +53,18 @@ class Source320Tests(unittest.TestCase):
                 self.assertEqual(len(obs), 1)
                 self.assertEqual(obs[0]["library"], owner)
 
-    def test_missing_owner_counts_all_skipped_registrations(self):
+    def test_missing_owner_parses_name_nid_but_does_not_promote(self):
         text = example().replace(
             'if(sprx_dlopen("libSceAjm", &__handle)) return;', '')
-        text += 'if(sprx_dlsym(__handle, "12345678901", &__ptr_other)) return;'
         obs, errors = parse_forwarders(text, "libkernel.c")
-        self.assertEqual(obs, [])
-        self.assertEqual(errors[0]["reason"], "ambiguous_or_missing_library")
-        self.assertEqual(errors[0]["count"], 2)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(obs), 1)
+        self.assertIsNone(obs[0]["library"])
+        proposals, summary = classify(obs,{})
+        self.assertEqual(proposals[0]["status"], "ownership_review_required")
+        self.assertFalse(proposals[0]["firmware_13_60_export_confirmed"])
+        self.assertEqual(summary["statuses"]["ownership_review_required"],1)
+        self.assertFalse(proposals[0]["canonical_name_approved"])
 
     def test_wrong_nid_quarantined(self):
         obs, errors = parse_forwarders(example(nid="12345678901"), "test.c")
@@ -71,7 +75,7 @@ class Source320Tests(unittest.TestCase):
         obs, errors = parse_forwarders(example() +
             'if(sprx_dlopen("libOther", &__handle)) return;', "test.c")
         self.assertEqual(obs, [])
-        self.assertEqual(errors[0]["reason"], "ambiguous_or_missing_library")
+        self.assertEqual(errors[0]["reason"], "ambiguous_library")
 
     def test_name_recovery_does_not_promote(self):
         n = nid_for("sceAjmBatchCancel")
