@@ -26,9 +26,9 @@ DLSYM = re.compile(
     r'\s*,\s*&\s*__ptr_(?P<symbol>[A-Za-z_]\w*)\s*\)',
     re.MULTILINE,
 )
-DLOPEN = re.compile(r'\bsprx_dlopen\s*\(\s*"(?P<library>[A-Za-z_][\w.]*)"')
+DLOPEN = re.compile(r'\bsprx_dlopen\s*\(\s*"(?P<library>[A-Za-z_][\w.\-]*)"')
 SYMBOL = re.compile(r"^[A-Za-z_]\w*$")
-SCHEMA = 1
+SCHEMA = 2
 SOURCE_NAME = "DNNDHH/PS5-3.20_Libs"
 
 
@@ -40,8 +40,12 @@ def parse_forwarders(source: str, source_file: str) -> tuple[list[dict], list[di
     """
     owners = set(DLOPEN.findall(source))
     if len(owners) != 1:
+        # One diagnostic per file, but account for ALL unread registrations.
+        # There is no reliable association with a logical library without an
+        # explicit owner. Filename guesses must not qualify the records.
+        registrations = len(re.findall(r'\bif\s*\(\s*sprx_dlsym\s*\(', source))
         return [], [{"source_file": source_file, "reason": "ambiguous_or_missing_library",
-                     "owner_count": len(owners)}]
+                     "owner_count": len(owners), "count": registrations}]
     library = next(iter(owners))
     declared = set(re.findall(r'\bvoid\s*\*\s*__ptr_([A-Za-z_]\w*)\s*;', source))
     # Generated .global lines are inside string literals; literal text is sufficient.
@@ -196,7 +200,8 @@ def ingest(root: Path, source_dir: Path, force: bool = False) -> dict:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source_files_scanned": len(files),
         "source_file_sha256": dict(hashes),
-        "quarantined_registrations": len(rejected),
+        "quarantined_registrations": sum(r.get("count", 1) for r in rejected),
+        "quarantine_diagnostic_records": len(rejected),
         "review_queue_records": len(queue),
         "canonical_rows_modified": 0,
         "publication_gate": "manual review required before canonical promotion",
