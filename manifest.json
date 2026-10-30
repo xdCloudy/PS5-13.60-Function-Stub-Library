@@ -5978,11 +5978,7 @@
     "path": "readiness.json",
     "sha256": "69e811f2ca5a2f2c9de190c61b4afc48faa4650678f6bce773155474b5847176"
   },
-  "report_image": {
-    "bytes": 266263,
-    "path": "reports/stub-readiness.png",
-    "sha256": "0b2f1d97d3bb3ca59248e6ebdc187aedd1346c87adb24376414c7976302d0794"
-  },
+  "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
   "unique_verified_name_bindings": 36849
