@@ -136,6 +136,7 @@ def scan_upstream(upstream: Path, known: dict, verified: set):
     observations = {}
     new_candidates = set()
     source_candidates = {}
+    matched_sources = {}
     withheld = 0
     seen_definitions = 0
     for path in sorted((upstream / "core" / "libs" / "prx").rglob("*.cpp")):
@@ -153,6 +154,7 @@ def scan_upstream(upstream: Path, known: dict, verified: set):
             if key in verified and record.get("name") == name:
                 if observations.get(key) != "source_definition":
                     observations[key] = kind
+                    matched_sources[key] = rel
                 continue
             new_candidates.add(key)
             # Only approved, public C symbol-shaped strings may appear in
@@ -179,7 +181,7 @@ def scan_upstream(upstream: Path, known: dict, verified: set):
                 "canonical_name_approved": False, "signature_verified": False,
                 "implementation_verified": False,
             })
-    return observations, new_candidates, seen_definitions, source_candidates, withheld
+    return observations, new_candidates, seen_definitions, source_candidates, matched_sources, withheld
 
 
 def git_head(path: Path) -> str | None:
@@ -224,6 +226,7 @@ def main():
     main_obs = {}
     unmatched = set()
     source_candidates = {}
+    matched_sources = {}
     withheld_source_names = 0
     definition_count = 0
     pr_obs = {}
@@ -234,7 +237,7 @@ def main():
     sha = None
     if upstream:
         (main_obs, unmatched, definition_count,
-         source_candidates, withheld_source_names) = scan_upstream(upstream, known, verified)
+         source_candidates, matched_sources, withheld_source_names) = scan_upstream(upstream, known, verified)
         sha = git_head(upstream)
         if not args.skip_prs:
             try:
@@ -307,6 +310,7 @@ def main():
                                                              for k, v in main_obs.items()),
             "new_upstream_nid_candidates_for_review": len(candidate_records),
             "auto_imported_public_source_name_proposals": len(source_candidates),
+            "external_source_evidence_records": len(main_obs) + len(source_candidates) + len(pr_candidates - set(main_obs) - set(source_candidates)),
             "auto_imported_catalog_matching_proposals": sum(x["match_status"] == "unnamed_catalog_identity" for x in source_candidates.values()),
             "source_names_withheld_by_safety_filter": withheld_source_names
         },
@@ -329,6 +333,51 @@ def main():
                           for key, record in sorted(source_candidates.items()))
     write_if_changed(root / "reports" / "upstream-source-candidates.jsonl",
                      proposals + ("\n" if proposals else ""))
+    # External-source mirror: one sanitized identity per (library, NID), with
+    # its provenance and current coverage. This is not canonical firmware data.
+    evidence = {}
+    for key, kind in sorted(main_obs.items()):
+        lib, nid = key
+        evidence[key] = {"library": lib, "nid": nid, "external_db": "boykopovar/AnyPS5",
+                         "upstream_main_commit": sha, "observed_on_main": True,
+                         "source_file": matched_sources.get(key),
+                         "source_classification": kind, "match_status": "catalogue_reverified",
+                         "canonical_name_approved": True,
+                         "abi_validated": False, "runtime_validated": False}
+    for key, item in sorted(source_candidates.items()):
+        lib, nid = key
+        evidence[key] = {"library": lib, "nid": nid, "external_db": "boykopovar/AnyPS5",
+                         "upstream_main_commit": sha, "observed_on_main": True,
+                         "source_file": item["source_file"],
+                         "source_classification": item["source_kind"],
+                         "match_status": item["match_status"],
+                         "proposed_name": item["proposed_name"],
+                         "canonical_name_approved": False,
+                         "abi_validated": False, "runtime_validated": False}
+    for key, numbers in pr_obs.items():
+        lib, nid = key
+        record = evidence.setdefault(key, {"library": lib, "nid": nid,
+                                           "external_db": "boykopovar/AnyPS5",
+                                           "upstream_main_commit": sha,
+                                           "observed_on_main": False,
+                                           "match_status": "pr_only_review",
+                                           "canonical_name_approved": False,
+                                           "abi_validated": False, "runtime_validated": False})
+        record["open_pr_numbers"] = sorted(numbers)
+    for lib, nid in sorted(pr_candidates):
+        key = (lib, nid)
+        evidence.setdefault(key, {"library": lib, "nid": nid,
+                                  "external_db": "boykopovar/AnyPS5",
+                                  "upstream_main_commit": sha,
+                                  "observed_on_main": False,
+                                  "match_status": "pr_only_nid_review",
+                                  "canonical_name_approved": False,
+                                  "abi_validated": False, "runtime_validated": False})
+    write_if_changed(root / "reports" / "anyps5-evidence.jsonl",
+                     "".join(json.dumps(record, sort_keys=True) + "\n"
+                             for key, record in sorted(evidence.items())))
+    summary["stubs"]["external_source_evidence_records"] = len(evidence)
+    write_if_changed(root / "reports" / "progress.json", json.dumps(summary, indent=2, sort_keys=True) + "\n")
     write_if_changed(root / "READINESS.md", render_report(summary))
     table = ["# Library progress", "",
              "All identities remain represented; source definition matches are **not** validation.", "",
