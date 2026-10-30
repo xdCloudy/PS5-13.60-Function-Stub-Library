@@ -5952,10 +5952,10 @@
       "sha256": "ee15fcb8a99176240e3f253de03b8269bc81f295cbe3b07ce73e69521e6d5604"
     },
     {
-      "bytes": 2618939,
+      "bytes": 2618837,
       "path": "data/verified-name-map.jsonl",
-      "records": 36923,
-      "sha256": "7b95d02cacd13088e889baa609916c5a3253313f0102c743fca0cbbf71d8af51"
+      "records": 36922,
+      "sha256": "f2bd18eef8ee25061ec16045abbc00aa887c388c55f0079f413289e3f749e411"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
