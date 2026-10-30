@@ -2628,10 +2628,10 @@
       "sha256": "8c2a04128825da26c81196dca5c6e800f876adb2a81bd5a9a13d36f66abd15a1"
     },
     {
-      "bytes": 214637,
+      "bytes": 214082,
       "path": "data/firmware-13.60/libscefollyshared-53f41da239.jsonl",
       "records": 555,
-      "sha256": "87d39696db178ef74bb48bed5d462455624153238af6cbe8e5e9224d6c94678c"
+      "sha256": "391ce178ee8e7b77f74531a035d6778b0c1390e6eb76fcb5d8d89087f64e32f9"
     },
     {
       "bytes": 110263,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 86419,
+      "bytes": 85562,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "3dbe5842dd62e0c6e64330c325e1f0972bd0c7cc96de19eda5245d4af3a3ac5d"
+      "sha256": "30648def9086b299b2a7781f320ac101f994da923e7dcc17e6e55afcd5ae0c78"
     },
     {
-      "bytes": 2606022,
+      "bytes": 2569331,
       "path": "data/verified-name-map.jsonl",
       "records": 36691,
-      "sha256": "e1890e68c212c6818723da52fc9c55d08d5ea21891a12c2f06568c60d54024be"
+      "sha256": "91028e68589290c8f27bea3d72cf106c91dfba3a63a5fb9286c77ef07a898900"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
