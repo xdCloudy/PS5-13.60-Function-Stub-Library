@@ -8,7 +8,7 @@ decompiled functions, disassembly, function bodies, signatures, and source code.
 
 Symbol/library strings are separately checked for path, contact, credential and
 host-identity patterns. An unsafe name is withheld while its safe NID record remains.
-There are no executable scripts, build files, workflows, packages, or C/C++ stubs.
+There are no C/C++ function implementations, executable stubs, firmware blobs, SDK files or build outputs. Standard-library-only Python reporting scripts, tests and GitHub Actions workflows are permitted solely to regenerate sanitized metadata and Markdown. Public upstream repository paths may be referenced as evidence; local research paths and raw captures remain excluded.
 New publication commits use a generic database identity and a generic noreply address.
 The original bootstrap commit uses a public pseudonym and a GitHub noreply address.
 
