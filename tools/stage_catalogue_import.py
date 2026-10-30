@@ -130,6 +130,8 @@ def write(root: Path, output: Path) -> dict:
     proposal = collect(root)
     # Do not publish a branch/PR with no proposed canonical work.
     if proposal["reviewable_identity_count"] == 0:
+        if output.exists():
+            output.unlink()
         return proposal
     write_if_changed(output, json.dumps(proposal,indent=2,sort_keys=True) + "\n")
     return proposal
