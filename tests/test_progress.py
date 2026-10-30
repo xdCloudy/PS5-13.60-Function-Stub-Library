@@ -67,7 +67,11 @@ class ReportTests(unittest.TestCase):
             queue = (root / "reports/upstream-review-queue.jsonl").read_text()
             self.assertNotIn("novelSymbol", queue)
             self.assertNotIn("secretName", queue)
-            self.assertIn("Saved qualified-count discrepancy", (root / "READINESS.md").read_text())
+            self.assertIn("Qualification correction", (root / "READINESS.md").read_text())
+            proposals = (root / "reports/upstream-source-candidates.jsonl").read_text()
+            self.assertIn("novelSymbol", proposals)
+            self.assertNotIn("secretName", proposals)
+            self.assertEqual(report["stubs"]["auto_imported_public_source_name_proposals"], 1)
 
 
 if __name__ == "__main__":
