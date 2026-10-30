@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+"""Full Git-object based final NID collision audit for a selected AnyPS5 batch.
+
+Unlike the background REST scanner, this scans exact open PR Git trees and
+never assumes a clipped GitHub textual patch proves an export is absent.
+The open PR head vector is snapshotted twice and every Git ref is verified.
+"""
+from __future__ import annotations
+
+import re
+from pathlib import Path
+import subprocess
+
+from candidate_overlap import head_vector, SOURCE, CODE, UNKNOWN_REGISTRATION
+from upstream_sync import list_open_prs, DEFINITION, EXPORT_ALIAS, api_json
+
+GLOBAL_CODEGEN = re.compile(
+    r"^(?:tools/(?:nid_names|stubgen)\.py|core/.*(?:nid_registry|export_registry).*)$",
+    re.I,
+)
+PUBLIC_NAME_DISAMBIG = re.compile(r"_nid_disambig[0-9]+$")
+
+
+def git(checkout: Path, *args: str) -> str:
+    proc = subprocess.run(
+        ["git", "-C", str(checkout), *args], capture_output=True,
+        text=True, errors="replace", check=True)
+    return proc.stdout.strip()
+
+
+def decode_changed_exports(diff: str, nid_for) -> tuple[set[str], bool]:
+    """Parse full textual Git diff additions; unknown registration syntax blocks."""
+    reservations: set[str] = set()
+    unknown = False
+    path = ""
+    additions: list[str] = []
+
+    def flush() -> None:
+        nonlocal unknown
+        if not additions:
+            return
+        text = "\n".join(additions)
+        if GLOBAL_CODEGEN.fullmatch(path):
+            unknown = True
+        if not CODE.search(path) or not path.startswith("core/libs/prx/"):
+            return
+        names = DEFINITION.findall(text)
+        aliases = EXPORT_ALIAS.findall(text)
+        for symbol in names:
+            if symbol.endswith(("_nid_no_patch", "_nid_no_patch_cut")):
+                continue
+            canonical = PUBLIC_NAME_DISAMBIG.sub(
+                "", symbol.removesuffix("_nid_postfix"))
+            reservations.add(nid_for(canonical))
+        reservations.update(aliases)
+        if (len(re.findall(r"\bAPS5_VABI\b", text)) != len(names) or
+                len(re.findall(r"\bAPS5_EXPORT\b", text)) != len(aliases) or
+                UNKNOWN_REGISTRATION.search(text)):
+            unknown = True
+
+    for line in diff.splitlines():
+        if line.startswith("diff --git "):
+            flush()
+            additions = []
+            path = ""
+        elif line.startswith("+++ b/"):
+            path = line[6:]
+        elif line.startswith("+") and not line.startswith("+++"):
+            additions.append(line[1:])
+        elif line.startswith("Binary files ") and CODE.search(path):
+            unknown = True
+    flush()
+    return reservations, unknown
+
+
+def check_candidates_git(
+    checkout: Path, candidates: list[dict],
+    main_occupied: set[tuple[str, str]], token: str, nid_for,
+    *, fetch=api_json, per_fetch: int = 80,
+) -> dict:
+    """Clear only exact selected identities absent on main and all open PR heads."""
+    if not 1 <= per_fetch <= 100:
+        raise ValueError("Invalid Git fetch batch")
+    before = head_vector(list_open_prs(token, fetch))
+    all_nids = {nid for _, nid in main_occupied}
+    reasons: dict[str, set[str]] = {
+        r["nid"]: ({"current_main_nid_collision"} if r["nid"] in all_nids else set())
+        for r in candidates
+    }
+    failures = []
+    scanned = 0
+    audit_refs = {}
+    numbered = sorted(before)
+    try:
+        for offset in range(0, len(numbered), per_fetch):
+            subset = numbered[offset:offset + per_fetch]
+            specs = [
+                f"+refs/pull/{n}/head:refs/anyps5-final/{n}"
+                for n in subset
+            ]
+            git(checkout, "fetch", "--quiet", "--no-tags", "origin", *specs)
+        for n in numbered:
+            ref = f"refs/anyps5-final/{n}"
+            sha = git(checkout, "rev-parse", ref)
+            if sha != before[n]:
+                raise ValueError(f"PR #{n} head moved while fetching Git ref")
+            base = git(checkout, "merge-base", "origin/main", ref)
+            # A complete local Git diff has no REST changed-files or patch cap.
+            diff = git(checkout, "diff", "--no-ext-diff", "--no-renames",
+                       "--unified=0", base, ref, "--", "core/", "tools/")
+            reserved, unknown = decode_changed_exports(diff, nid_for)
+            for nid, blocked in reasons.items():
+                if nid in reserved:
+                    blocked.add(f"pr_{n}_nid_collision")
+                if unknown:
+                    blocked.add(f"pr_{n}_unknown_export_registration")
+            audit_refs[str(n)] = {"sha": sha, "reserved_nids": len(reserved),
+                                  "unknown_registration": unknown}
+            scanned += 1
+    except (subprocess.CalledProcessError, OSError, ValueError) as exc:
+        failures.append({"reason": str(exc)[:300]})
+    try:
+        after = head_vector(list_open_prs(token, fetch))
+        stable = after == before
+    except (ValueError, OSError, TypeError) as exc:
+        stable = False
+        failures.append({"reason": "Failed to resnapshot PR heads: " + str(exc)[:200]})
+    complete = not failures and stable and scanned == len(before)
+    return {
+        "schema_version": 1, "method": "Exact immutable Git tree diff per current open PR head; two live PR head snapshots",
+        "scan_complete": complete,
+        "head_vector_stable": stable,
+        "open_pr_total": len(before),
+        "open_pr_verified_heads": scanned,
+        "failures": failures,
+        "per_pr_audit": audit_refs,
+        "candidates": [
+            {"library": r["library"], "nid": r["nid"],
+             "verified_clear": complete and not reasons[r["nid"]],
+             "reasons": sorted(reasons[r["nid"]] | (
+                 set() if complete else {"incomplete_or_moving_pr_snapshot"}
+             ))}
+            for r in candidates
+        ],
+    }
