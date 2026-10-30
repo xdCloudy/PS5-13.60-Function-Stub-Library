@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 24 |
-| Named | 15 |
-| Unresolved or withheld | 9 |
+| Named | 19 |
+| Unresolved or withheld | 5 |
 | Qualified stub candidate records | 4 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -30,9 +30,12 @@ A bounded preview; the inventory file contains the complete library.
 | NID | Symbol |
 |---|---|
 | `-TpTQG4cqr4` | `sceOpusCeltEncEncodeFloat` |
+| `1q-nl1oHj5w` | `sceOpusCeltMultistreamEncTerminate` |
+| `8YEYUjp0bws` | `sceOpusCeltMultistreamEncInitialize` |
 | `Am+ONet261k` | `sceOpusCeltEncEncodeWithPriority` |
 | `CdMxiPm8PRc` | `sceOpusCeltEncCreate` |
 | `EAL8o7yASZo` | `sceOpusCeltEncGetAjmContext` |
+| `Oi1TJQXA0O8` | `sceOpusCeltMultistreamEncDestroy` |
 | `TKiWvcaXe-g` | `sceOpusCeltEncInitialize` |
 | `UWCrWQtUc5w` | `sceOpusCeltEncEncodeFloatWithPriority` |
 | `WYwgHnzZDzc` | `sceOpusCeltEncGetSize` |

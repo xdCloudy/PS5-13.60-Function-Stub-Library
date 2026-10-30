@@ -330,7 +330,7 @@ libSceGnmWaitFreeSubmit,firmware-13.60,2,0,data/firmware-13.60/libscegnmwaitfree
 libSceGvMp4Parser,firmware-13.60,7,1,data/firmware-13.60/libscegvmp4parser-11803a4cb6.jsonl
 libSceHidControl,firmware-13.60,81,67,data/firmware-13.60/libscehidcontrol-3b1f591a82.jsonl
 libSceHmd,firmware-13.60,178,160,data/firmware-13.60/libscehmd-be39c4e9c8.jsonl
-libSceHmd2,firmware-13.60,276,161,data/firmware-13.60/libscehmd2-a02794ae28.jsonl
+libSceHmd2,firmware-13.60,276,164,data/firmware-13.60/libscehmd2-a02794ae28.jsonl
 libSceHmd2Distortion,firmware-13.60,6,0,data/firmware-13.60/libscehmd2distortion-275ff9225c.jsonl
 libSceHmd2ReprojectionBlankInBackground,firmware-13.60,1,0,data/firmware-13.60/libscehmd2reprojectionblankinbackground-f1defb120e.jsonl
 libSceHmd2ReprojectionMotionVector,firmware-13.60,1,0,data/firmware-13.60/libscehmd2reprojectionmotionvector-a3712ce199.jsonl
@@ -364,7 +364,7 @@ libSceJpegDec,firmware-13.60,6,6,data/firmware-13.60/libscejpegdec-f773794b79.js
 libSceJpegDec_jvm,firmware-13.60,1,1,data/firmware-13.60/libscejpegdec_jvm-2d4c9de833.jsonl
 libSceJpegEnc,firmware-13.60,4,4,data/firmware-13.60/libscejpegenc-46f7798020.jsonl
 libSceJpegParser,firmware-13.60,7,1,data/firmware-13.60/libscejpegparser-3fc99ffc0b.jsonl
-libSceJsc,firmware-13.60,4439,3108,data/firmware-13.60/libscejsc-80e21a2f59.jsonl
+libSceJsc,firmware-13.60,4439,3110,data/firmware-13.60/libscejsc-80e21a2f59.jsonl
 libSceJsi-0.70,firmware-13.60,265,0,data/firmware-13.60/libscejsi-0-70-e7d0945620.jsonl
 libSceJson,firmware-13.60,88,88,data/firmware-13.60/libscejson-4373222ebf.jsonl
 libSceJson2,firmware-13.60,215,215,data/firmware-13.60/libscejson2-8c5e612736.jsonl
@@ -471,7 +471,7 @@ libSceNpWebApi2AsyncRestricted,firmware-13.60,3,0,data/firmware-13.60/libscenpwe
 libSceNpWebApiCompat,firmware-13.60,12,12,data/firmware-13.60/libscenpwebapicompat-f0705dedfa.jsonl
 libSceOpenPsId,firmware-13.60,1,1,data/firmware-13.60/libsceopenpsid-3222d173f7.jsonl
 libSceOpusCeltDec,firmware-13.60,12,12,data/firmware-13.60/libsceopusceltdec-c6e554d356.jsonl
-libSceOpusCeltEnc,firmware-13.60,24,15,data/firmware-13.60/libsceopusceltenc-b31be2adfa.jsonl
+libSceOpusCeltEnc,firmware-13.60,24,19,data/firmware-13.60/libsceopusceltenc-b31be2adfa.jsonl
 libSceOpusDec,firmware-13.60,30,15,data/firmware-13.60/libsceopusdec-69c895457e.jsonl
 libSceOpusSilkEnc,firmware-13.60,15,15,data/firmware-13.60/libsceopussilkenc-5db8f0bbee.jsonl
 libScePSNowGkp,firmware-13.60,9,9,data/firmware-13.60/libscepsnowgkp-aff6c2627b.jsonl
@@ -498,7 +498,7 @@ libSceProprietaryVoiceChatHelper,firmware-13.60,4,4,data/firmware-13.60/libscepr
 libScePs2EmuMenuDialog,firmware-13.60,7,7,data/firmware-13.60/libsceps2emumenudialog-6c333897da.jsonl
 libScePsm,firmware-13.60,118,65,data/firmware-13.60/libscepsm-645ab9cc0c.jsonl
 libScePsmUtil,firmware-13.60,4,4,data/firmware-13.60/libscepsmutil-d0f6c9bc8c.jsonl
-libScePsml,firmware-13.60,27,19,data/firmware-13.60/libscepsml-42ee1f1451.jsonl
+libScePsml,firmware-13.60,27,22,data/firmware-13.60/libscepsml-42ee1f1451.jsonl
 libScePsmlBcSisr,firmware-13.60,6,3,data/firmware-13.60/libscepsmlbcsisr-88d7de59b5.jsonl
 libScePsml_lightweight,firmware-13.60,1,1,data/firmware-13.60/libscepsml_lightweight-f1ec3f2795.jsonl
 libScePsml_mfsr2,firmware-13.60,9,9,data/firmware-13.60/libscepsml_mfsr2-4f0b091e18.jsonl
@@ -506,7 +506,7 @@ libScePsml_nosubmission,firmware-13.60,3,0,data/firmware-13.60/libscepsml_nosubm
 libScePsml_quality8K,firmware-13.60,1,1,data/firmware-13.60/libscepsml_quality8k-6829a3fff8.jsonl
 libScePsml_set_mfsrversion,firmware-13.60,1,0,data/firmware-13.60/libscepsml_set_mfsrversion-76d4e1bf6b.jsonl
 libScePsml_specularAA,firmware-13.60,1,1,data/firmware-13.60/libscepsml_specularaa-f2288e4db1.jsonl
-libScePubSubClientShared,firmware-13.60,6,0,data/firmware-13.60/libscepubsubclientshared-bfceb02376.jsonl
+libScePubSubClientShared,firmware-13.60,6,5,data/firmware-13.60/libscepubsubclientshared-bfceb02376.jsonl
 libSceRandom,firmware-13.60,1,1,data/firmware-13.60/libscerandom-1c0fa8a87a.jsonl
 libSceRazorCpu,firmware-13.60,42,42,data/firmware-13.60/libscerazorcpu-98b3fdc87b.jsonl
 libSceRegMgr,firmware-13.60,86,65,data/firmware-13.60/libsceregmgr-8fde52949a.jsonl
@@ -634,7 +634,7 @@ libSceVideoCoreInterface,firmware-13.60,4,4,data/firmware-13.60/libscevideocorei
 libSceVideoCoreServerInterface,firmware-13.60,47,47,data/firmware-13.60/libscevideocoreserverinterface-00d37862c5.jsonl
 libSceVideoDecoderArbitration,firmware-13.60,4,4,data/firmware-13.60/libscevideodecoderarbitration-acfb080098.jsonl
 libSceVideoNativeExtEssential,firmware-13.60,6,5,data/firmware-13.60/libscevideonativeextessential-2d176e1ad5.jsonl
-libSceVideoOut,firmware-13.60,226,188,data/firmware-13.60/libscevideoout-54fc22c577.jsonl
+libSceVideoOut,firmware-13.60,226,191,data/firmware-13.60/libscevideoout-54fc22c577.jsonl
 libSceVideoOut8kTrial_nosubmission,firmware-13.60,1,0,data/firmware-13.60/libscevideoout8ktrial_nosubmission-bf9f578523.jsonl
 libSceVideoOutAniso,firmware-13.60,1,1,data/firmware-13.60/libscevideooutaniso-0798c25f50.jsonl
 libSceVideoOutAspectRatio21_9Trial_nosubmission,firmware-13.60,1,0,data/firmware-13.60/libscevideooutaspectratio21_9trial_nosubmission-75e466342a.jsonl
@@ -682,7 +682,7 @@ libSceVrTrackerFourDeviceAllowed,firmware-13.60,1,1,data/firmware-13.60/libscevr
 libSceVrTrackerGpuTest,firmware-13.60,5,0,data/firmware-13.60/libscevrtrackergputest-09a999a35a.jsonl
 libSceVrTrackerLiveCapture,firmware-13.60,5,5,data/firmware-13.60/libscevrtrackerlivecapture-95ce3424ff.jsonl
 libSceVsePlugin,firmware-13.60,34,0,data/firmware-13.60/libscevseplugin-4a50bd9941.jsonl
-libSceVshBrotli,firmware-13.60,6,0,data/firmware-13.60/libscevshbrotli-c395bb6628.jsonl
+libSceVshBrotli,firmware-13.60,6,4,data/firmware-13.60/libscevshbrotli-c395bb6628.jsonl
 libSceVshFreeType,firmware-13.60,71,65,data/firmware-13.60/libscevshfreetype-0bedd8123f.jsonl
 libSceVshHarfBuzz,firmware-13.60,51,35,data/firmware-13.60/libscevshharfbuzz-bfae1bdef9.jsonl
 libSceVshJpeg,firmware-13.60,25,25,data/firmware-13.60/libscevshjpeg-f4d3f6e0b9.jsonl
@@ -751,7 +751,7 @@ libsceNpEulaDialog,firmware-13.60,9,9,data/firmware-13.60/libscenpeuladialog-3ed
 libverify,firmware-13.60,4,4,data/firmware-13.60/libverify-01b1134fa6.jsonl
 libwebrtc,firmware-13.60,412,352,data/firmware-13.60/libwebrtc-b0615fbda5.jsonl
 libwvoec,firmware-13.60,77,0,data/firmware-13.60/libwvoec-75861dc1a3.jsonl
-libzip,firmware-13.60,34,18,data/firmware-13.60/libzip-7a217c7878.jsonl
+libzip,firmware-13.60,34,22,data/firmware-13.60/libzip-7a217c7878.jsonl
 monoprofilerlog,firmware-13.60,1,0,data/firmware-13.60/monoprofilerlog-dd482786fb.jsonl
 mscorlib,firmware-13.60,23708,373,data/firmware-13.60/mscorlib-51872c7902.jsonl
 ulobjmgr,firmware-13.60,4,2,data/firmware-13.60/ulobjmgr-7c6be1d5eb.jsonl

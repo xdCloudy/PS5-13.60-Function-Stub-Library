@@ -2427,7 +2427,7 @@
     {
       "generated": 0,
       "library": "libSceHmd2",
-      "named": 161,
+      "named": 164,
       "qualified": 0,
       "total": 276
     },
@@ -2665,7 +2665,7 @@
     {
       "generated": 150,
       "library": "libSceJsc",
-      "named": 4115,
+      "named": 4117,
       "qualified": 2952,
       "total": 5446
     },
@@ -3456,7 +3456,7 @@
     {
       "generated": 0,
       "library": "libSceOpusCeltEnc",
-      "named": 15,
+      "named": 19,
       "qualified": 4,
       "total": 24
     },
@@ -3645,7 +3645,7 @@
     {
       "generated": 0,
       "library": "libScePsml",
-      "named": 19,
+      "named": 22,
       "qualified": 0,
       "total": 27
     },
@@ -3701,7 +3701,7 @@
     {
       "generated": 0,
       "library": "libScePubSubClientShared",
-      "named": 0,
+      "named": 5,
       "qualified": 0,
       "total": 6
     },
@@ -4632,7 +4632,7 @@
     {
       "generated": 133,
       "library": "libSceVideoOut",
-      "named": 199,
+      "named": 202,
       "qualified": 133,
       "total": 237
     },
@@ -4982,7 +4982,7 @@
     {
       "generated": 0,
       "library": "libSceVshBrotli",
-      "named": 0,
+      "named": 4,
       "qualified": 0,
       "total": 6
     },
@@ -5507,7 +5507,7 @@
     {
       "generated": 0,
       "library": "libzip",
-      "named": 18,
+      "named": 22,
       "qualified": 0,
       "total": 34
     },

@@ -27,7 +27,7 @@ The last committed inventory baseline contains:
 | Firmware extraction labelled **13.60** | **302,338** |
 | Older **3.20-only** identities (not confirmed in 13.60) | **11,700** |
 | **Total** library/NID records | **314,038** |
-| Records with a published name | **47,085** |
+| Records with a published name | **47,113** |
 
 Those are inventory totals, **not** implementation percentages. The current
 [coverage matrices](reports/coverage-matrices.md) distinguish published names

@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 237 |
-| Named | 199 |
-| Unresolved or withheld | 38 |
+| Named | 202 |
+| Unresolved or withheld | 35 |
 | Qualified stub candidate records | 133 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -33,8 +33,6 @@ A bounded preview; the inventory file contains the complete library.
 |---|---|
 | `+I4K03i3EL0` | `sceVideoOutInitializeOutputOptions` |
 | `+XlDnumvLVA` | `sceVideoOutGetHdmiMonitorInfo_` |
-| `+epU+rgObyw` | `sceVideoOutSysCursorObtain` |
-| `+sXvR1JH9Aw` | `sceVideoOutGetHdmiRawEdid_` |
 | `+tB28CUr9W0` | `sceVideoOutGetStatusForWebcore` |
 | `-NhjL1kuqhk` | `sceVideoOutPostProcessorAddCallback` |
 | `-Ozn0F1AFRg` | `sceVideoOutDeleteFlipEvent` |
@@ -43,3 +41,8 @@ A bounded preview; the inventory file contains the complete library.
 | `-zRnJ7WoWSY` | `sceVideoOutSetAlphaControl` |
 | `0jGJbNTpSV4` | `sceVideoOutDriverDecrementBufferLabel` |
 | `18NPivA-byc` | `sceVideoOutSetDisplayEventPosition` |
+| `1FZBKy8HeNU` | `sceVideoOutGetVblankStatus` |
+| `21sS8EU45cw` | `sceVideoOutSysGetFlipStatus` |
+| `2CxY28ewv8g` | `sceVideoOutConfigureOutputEx` |
+| `2EBuouuYKgM` | `sceVideoOutSysDeleteVblankEvent2` |
+| `2sgenMqwczM` | `sceVideoOutSysGetDeviceInfo` |

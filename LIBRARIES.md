@@ -219,7 +219,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libhermes-0.11](libraries/libhermes-0-11-c931216034.md) | 107 | 0 | 0 |
 | [libSceHidControl](libraries/libscehidcontrol-3b1f591a82.md) | 82 | 68 | 0 |
 | [libSceHmd](libraries/libscehmd-be39c4e9c8.md) | 186 | 168 | 0 |
-| [libSceHmd2](libraries/libscehmd2-a02794ae28.md) | 276 | 161 | 0 |
+| [libSceHmd2](libraries/libscehmd2-a02794ae28.md) | 276 | 164 | 0 |
 | [libSceHmd2Distortion](libraries/libscehmd2distortion-275ff9225c.md) | 6 | 0 | 0 |
 | [libSceHmd2Reprojection_nosubmission](libraries/libscehmd2reprojection_nosubmission-6b0287ebd2.md) | 1 | 1 | 0 |
 | [libSceHmd2Reprojection_vrremote_nosubmission](libraries/libscehmd2reprojection_vrremote_nosubmission-ed9cfb1a89.md) | 1 | 0 | 0 |
@@ -274,7 +274,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceJpegDec_jvm](libraries/libscejpegdec_jvm-2d4c9de833.md) | 1 | 1 | 0 |
 | [libSceJpegEnc](libraries/libscejpegenc-46f7798020.md) | 4 | 4 | 0 |
 | [libSceJpegParser](libraries/libscejpegparser-3fc99ffc0b.md) | 11 | 5 | 0 |
-| [libSceJsc](libraries/libscejsc-80e21a2f59.md) | 5,446 | 4,115 | 2,952 |
+| [libSceJsc](libraries/libscejsc-80e21a2f59.md) | 5,446 | 4117 | 2,952 |
 | [libSceJsi-0.70](libraries/libscejsi-0-70-e7d0945620.md) | 265 | 0 | 0 |
 | [libSceJson](libraries/libscejson-4373222ebf.md) | 88 | 88 | 0 |
 | [libSceJson2](libraries/libscejson2-8c5e612736.md) | 215 | 215 | 0 |
@@ -459,7 +459,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 |---|---:|---:|---:|
 | [libSceOpenPsId](libraries/libsceopenpsid-3222d173f7.md) | 1 | 1 | 0 |
 | [libSceOpusCeltDec](libraries/libsceopusceltdec-c6e554d356.md) | 12 | 12 | 1 |
-| [libSceOpusCeltEnc](libraries/libsceopusceltenc-b31be2adfa.md) | 24 | 15 | 4 |
+| [libSceOpusCeltEnc](libraries/libsceopusceltenc-b31be2adfa.md) | 24 | 19 | 4 |
 | [libSceOpusDec](libraries/libsceopusdec-69c895457e.md) | 30 | 15 | 1 |
 | [libSceOpusSilkEnc](libraries/libsceopussilkenc-5db8f0bbee.md) | 15 | 15 | 1 |
 
@@ -491,7 +491,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceProprietaryVoiceChatHelper](libraries/libsceproprietaryvoicechathelper-367c047340.md) | 4 | 4 | 0 |
 | [libScePs2EmuMenuDialog](libraries/libsceps2emumenudialog-6c333897da.md) | 7 | 7 | 0 |
 | [libScePsm](libraries/libscepsm-645ab9cc0c.md) | 118 | 65 | 0 |
-| [libScePsml](libraries/libscepsml-42ee1f1451.md) | 27 | 19 | 0 |
+| [libScePsml](libraries/libscepsml-42ee1f1451.md) | 27 | 22 | 0 |
 | [libScePsml_lightweight](libraries/libscepsml_lightweight-f1ec3f2795.md) | 1 | 1 | 0 |
 | [libScePsml_mfsr2](libraries/libscepsml_mfsr2-4f0b091e18.md) | 9 | 9 | 0 |
 | [libScePsml_nosubmission](libraries/libscepsml_nosubmission-1be6a2f57f.md) | 3 | 0 | 0 |
@@ -501,7 +501,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libScePsmlBcSisr](libraries/libscepsmlbcsisr-88d7de59b5.md) | 6 | 3 | 0 |
 | [libScePsmUtil](libraries/libscepsmutil-d0f6c9bc8c.md) | 4 | 4 | 0 |
 | [libScePSNowGkp](libraries/libscepsnowgkp-aff6c2627b.md) | 9 | 9 | 0 |
-| [libScePubSubClientShared](libraries/libscepubsubclientshared-bfceb02376.md) | 6 | 0 | 0 |
+| [libScePubSubClientShared](libraries/libscepubsubclientshared-bfceb02376.md) | 6 | 5 | 0 |
 
 ## R
 
@@ -834,7 +834,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceVideodec2](libraries/libscevideodec2-ee6a07536d.md) | 21 | 21 | 0 |
 | [libSceVideoDecoderArbitration](libraries/libscevideodecoderarbitration-acfb080098.md) | 4 | 4 | 0 |
 | [libSceVideoNativeExtEssential](libraries/libscevideonativeextessential-2d176e1ad5.md) | 6 | 5 | 0 |
-| [libSceVideoOut](libraries/libscevideoout-54fc22c577.md) | 237 | 199 | 133 |
+| [libSceVideoOut](libraries/libscevideoout-54fc22c577.md) | 237 | 202 | 133 |
 | [libSceVideoOut8kTrial_nosubmission](libraries/libscevideoout8ktrial_nosubmission-bf9f578523.md) | 1 | 0 | 0 |
 | [libSceVideoOut_nosubmission](libraries/libscevideoout_nosubmission-4a48e1e9b7.md) | 51 | 31 | 0 |
 | [libSceVideoOutAniso](libraries/libscevideooutaniso-0798c25f50.md) | 1 | 1 | 0 |
@@ -882,7 +882,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceVrTrackerGpuTest](libraries/libscevrtrackergputest-09a999a35a.md) | 5 | 0 | 0 |
 | [libSceVrTrackerLiveCapture](libraries/libscevrtrackerlivecapture-95ce3424ff.md) | 5 | 5 | 0 |
 | [libSceVsePlugin](libraries/libscevseplugin-4a50bd9941.md) | 34 | 0 | 0 |
-| [libSceVshBrotli](libraries/libscevshbrotli-c395bb6628.md) | 6 | 0 | 0 |
+| [libSceVshBrotli](libraries/libscevshbrotli-c395bb6628.md) | 6 | 4 | 0 |
 | [libSceVshFreeType](libraries/libscevshfreetype-0bedd8123f.md) | 71 | 65 | 0 |
 | [libSceVshHarfBuzz](libraries/libscevshharfbuzz-bfae1bdef9.md) | 51 | 35 | 0 |
 | [libSceVshJpeg](libraries/libscevshjpeg-f4d3f6e0b9.md) | 25 | 25 | 0 |
@@ -917,4 +917,4 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
 | [libSceZlib](libraries/libscezlib-d7fb26da39.md) | 5 | 5 | 0 |
-| [libzip](libraries/libzip-7a217c7878.md) | 34 | 18 | 0 |
+| [libzip](libraries/libzip-7a217c7878.md) | 34 | 22 | 0 |
