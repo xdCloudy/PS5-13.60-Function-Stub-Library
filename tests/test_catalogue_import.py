@@ -1,6 +1,7 @@
 """Fail-closed tests for review proposals and AnyPS5 stub eligibility."""
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 import sys
 import tempfile
@@ -8,7 +9,7 @@ import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"tools"))
 from stage_catalogue_import import collect, safe, write
-from prepare_anyps5 import choose, read_reviews
+from prepare_anyps5 import choose, read_reviews, apply
 from update_progress import nid_for
 
 
@@ -104,6 +105,31 @@ class StubPreparationTests(unittest.TestCase):
         accepted,rejected=choose([review],{key:row},{key},set(),set(),150)
         self.assertFalse(accepted)
         self.assertEqual(rejected[0]["reason"],"unsafe_ownership_scope")
+
+    def test_external_checkout_patch_has_exactly_one_throwing_declaration(self):
+        with tempfile.TemporaryDirectory() as temp:
+            checkout=Path(temp)/"AnyPS5"
+            lib=checkout/"core/libs/prx/libSceExample"
+            (lib/"include").mkdir(parents=True)
+            export=lib/"Export.cpp"
+            header=lib/"include/Api.hpp"
+            export.write_text('#include "prx/libSceExample/include/Api.hpp"\n'
+                              'extern "C" {\\nAPS5_DUMMY_FUN\\n}\n')
+            header.write_text('#pragma once\\nextern "C" {\\n}\n')
+            subprocess.run(["git","init","-q",str(checkout)],check=True)
+            subprocess.run(["git","-C",str(checkout),"add","."],check=True)
+            subprocess.run(["git","-C",str(checkout),"-c","user.name=Test",
+                            "-c","user.email=test@example.invalid","commit","-qm","fixture"],check=True)
+            patch=apply(checkout,[{"library":"libSceExample",
+                                   "name":"sceExample", "parameters":"void"}],
+                        Path(temp)/"patches")
+            body=export.read_text()
+            self.assertEqual(body.count("sceExample(void)"),1)
+            self.assertEqual(header.read_text().count("sceExample(void)"),1)
+            self.assertEqual(body.count("NotImplemented_nid_no_patch(__func__)"),1)
+            self.assertNotIn("return 0;",body)
+            self.assertNotIn("APS5_DUMMY_FUN",body)
+            self.assertIn("sceExample(void)",patch.read_text())
 
     def test_stub_batch_limit(self):
         with self.assertRaisesRegex(ValueError,"1 to 150"):
