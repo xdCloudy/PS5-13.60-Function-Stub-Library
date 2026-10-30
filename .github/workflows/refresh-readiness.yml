@@ -9,6 +9,7 @@ on:
       - 'reports/upstream-review-queue.jsonl'
       - 'reports/upstream-source-candidates.jsonl'
       - 'reports/open-pr-cache.json'
+      - 'reports/anyps5-evidence.jsonl'
   pull_request:
     branches: [main]
   schedule:
@@ -73,7 +74,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl reports/upstream-source-candidates.jsonl reports/open-pr-cache.json
+          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl reports/upstream-source-candidates.jsonl reports/open-pr-cache.json reports/anyps5-evidence.jsonl
           if git diff --cached --quiet; then
             echo "Progress files are current."
             exit 0
@@ -113,4 +114,5 @@ jobs:
             reports/library-progress.md
             reports/upstream-review-queue.jsonl
             reports/upstream-source-candidates.jsonl
+            reports/anyps5-evidence.jsonl
           retention-days: 14
