@@ -111,6 +111,7 @@ class StubPreparationTests(unittest.TestCase):
             checkout=Path(temp)/"AnyPS5"
             lib=checkout/"core/libs/prx/libSceExample"
             (lib/"include").mkdir(parents=True)
+            (lib/"CMakeLists.txt").write_text("add_sce_library(libSceExample)")
             export=lib/"Export.cpp"
             header=lib/"include/Api.hpp"
             export.write_text('#include "prx/libSceExample/include/Api.hpp"\n'
@@ -128,7 +129,7 @@ class StubPreparationTests(unittest.TestCase):
             self.assertEqual(header.read_text().count("sceExample(void)"),1)
             self.assertEqual(body.count("NotImplemented_nid_no_patch(__func__)"),1)
             self.assertNotIn("return 0;",body)
-            self.assertNotIn("APS5_DUMMY_FUN",body)
+            self.assertIn("APS5_DUMMY_FUN",body)
             self.assertIn("sceExample(void)",patch.read_text())
 
     def test_stub_batch_limit(self):
