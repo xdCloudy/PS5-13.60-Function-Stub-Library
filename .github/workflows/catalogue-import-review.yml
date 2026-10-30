@@ -36,7 +36,7 @@ jobs:
       - name: Publish a deduplicated draft review PR when needed
         shell: bash
         env:
-          GH_TOKEN: ${ github.token }
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           proposal="$RUNNER_TEMP/catalogue-proposal.json"
