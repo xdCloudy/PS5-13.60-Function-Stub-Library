@@ -1,0 +1,6404 @@
+{
+  "generated_from": {
+    "anyps5_main_commit": "8c8b9986204d5b1cbb23847b363df00ae832ec9c",
+    "anyps5_open_prs": {
+      "method": "added APS5_VABI declarations in GitHub PR patches; best-effort reservations",
+      "open_pr_coverage_complete": false,
+      "open_pr_errors": 0,
+      "open_pr_scanned": 400,
+      "open_pr_total": 1475
+    },
+    "catalog_manifest_counts": {
+      "firmware-13.60": 302338,
+      "historical-3.20-only": 11700,
+      "resolved_names": 47017,
+      "total_records": 314038,
+      "unresolved_or_withheld_names": 267021,
+      "withheld_names": 2
+    },
+    "upstream_sync": "source-scanned"
+  },
+  "inventory": {
+    "cross_library_nid_extra_records_all_scopes": 12302,
+    "firmware_13_60": 302338,
+    "historical_only": 11700,
+    "libraries": 791,
+    "name_nid_mismatches_or_nonverified_names": 7104,
+    "named_records_not_passed_by_strict_gate": 7104,
+    "nid_shared_by_multiple_records": 11079,
+    "published_named_records": 47017,
+    "records": 314038,
+    "repeated_library_nid_records_across_scopes": 890,
+    "scope_records": {
+      "existing_firmware_system_library": 15703,
+      "existing_upstream_placeholder_library": 21799,
+      "historical_only": 11700,
+      "managed_or_application_native_image": 252818,
+      "middleware_scope_review": 445,
+      "new_system_library_review": 2592,
+      "ownership_pending": 7322,
+      "shell_specific_review": 1659
+    },
+    "strictly_reverified_named_records": 39913,
+    "unique_nids_all_scopes": 300846,
+    "unresolved_or_withheld": 267021,
+    "verified_named_records": 47017
+  },
+  "libraries": [
+    {
+      "library": "SystemReactiveLinq",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 26351,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "mscorlib",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 23710,
+      "upstream_main_source_matches": 0,
+      "verified_names": 312
+    },
+    {
+      "library": "SystemCore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 19731,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNKWebKit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 7331,
+      "records": 18939,
+      "upstream_main_source_matches": 0,
+      "verified_names": 10271
+    },
+    {
+      "library": "ScePlayStationPUI",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17872,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactNativePUI",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10924,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "System",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10621,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemXml",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8583,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemData",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8388,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUILegacy",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7981,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactNativeModulesVsh",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6713,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIReactNativeShellApp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6391,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "app",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5612,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceJsc",
+      "open_pr_added_matches": 313,
+      "qualified_records": 2550,
+      "records": 5446,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3493
+    },
+    {
+      "library": "SceVshShellUILoginMgr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4550,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactivePropertyPlayStation",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4457,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "NewtonsoftJsonPlayStation",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4016,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIIme",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3932,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUICaptureMenu",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3395,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemRuntimeSerialization",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3384,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIBroadcast",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2986,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceLibcInternal",
+      "open_pr_added_matches": 11,
+      "qualified_records": 11,
+      "records": 2688,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2282
+    },
+    {
+      "library": "SystemServiceModel",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2674,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemDataServicesClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2636,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemComponentModelComposition",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2592,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIReactNativeApps",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2343,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemReactiveCore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2335,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshMessagesAccessor",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2315,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIAppSystem",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2246,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUISystemModalDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2235,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshAccessorDb",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2219,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactNativeModulesVshTrophy",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2177,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemServiceModelInternals",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2044,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ScePlayStationCore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1830,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpTrophyAccessor",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1791,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "MicrosoftCSharp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1739,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshDiscordAccessor",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1726,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libicu",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1698,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1460
+    },
+    {
+      "library": "websocketsharp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1560,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libkernel",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1511,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1147
+    },
+    {
+      "library": "SceVshUILib",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1424,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemXmlLinq",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1327,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIBGLayer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1311,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemNetHttp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1283,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshUserServiceWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1272,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpCommon",
+      "open_pr_added_matches": 17,
+      "qualified_records": 671,
+      "records": 1199,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1026
+    },
+    {
+      "library": "SceVshShellUIVoiceAndAgent",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1189,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemWebServices",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1100,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libmonosgen",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1087,
+      "upstream_main_source_matches": 0,
+      "verified_names": 796
+    },
+    {
+      "library": "ReactNativeModulesVshMedia",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1058,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshVoiceAndAgent",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1050,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshLx",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1022,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactNativeVshCommon",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 990,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIQuickImageEdit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 981,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libmonosgen-2.0",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 963,
+      "upstream_main_source_matches": 0,
+      "verified_names": 817
+    },
+    {
+      "library": "MonoDataSqlite",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 898,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceIcu",
+      "open_pr_added_matches": 60,
+      "qualified_records": 60,
+      "records": 855,
+      "upstream_main_source_matches": 0,
+      "verified_names": 692
+    },
+    {
+      "library": "SceVshShellUIVisionRecognition",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 822,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactNativeComponentsVsh",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 820,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libdiscord",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 802,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshSQLite",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 779,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemIOCompression",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 739,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "MonoSecurity",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 700,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceUserService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 693,
+      "upstream_main_source_matches": 0,
+      "verified_names": 486
+    },
+    {
+      "library": "libSceLibreSSl3",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 665,
+      "upstream_main_source_matches": 0,
+      "verified_names": 554
+    },
+    {
+      "library": "SceVshOrbisContentManager",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 594,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIUgc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 591,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUICaptureContentUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 574,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactNativeModulesVshWebAppLauncher",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 562,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceFollyShared",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 555,
+      "upstream_main_source_matches": 0,
+      "verified_names": 103
+    },
+    {
+      "library": "SceVshShellUIShareVideoTranscoder",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 544,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpManager",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 539,
+      "upstream_main_source_matches": 0,
+      "verified_names": 367
+    },
+    {
+      "library": "SceVshGlsNativeCall",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 532,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshSysBridge",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 532,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellCoreUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 516,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 516,
+      "upstream_main_source_matches": 0,
+      "verified_names": 421
+    },
+    {
+      "library": "ScePlayStationJson",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 493,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIProfileCache",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 492,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceLibreSsl3",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 488,
+      "upstream_main_source_matches": 0,
+      "verified_names": 421
+    },
+    {
+      "library": "ScePlayStationIme",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 461,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceFsInternalForVsh",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 446,
+      "upstream_main_source_matches": 0,
+      "verified_names": 266
+    },
+    {
+      "library": "SceVshShellUILoginMgrWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 444,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshProfileCache",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 438,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshAppInstUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 433,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemComponentModelDataAnnotations",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 432,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ReactNativeModulesVshPSNowPlayer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 421,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceLibreSSL",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 414,
+      "upstream_main_source_matches": 0,
+      "verified_names": 357
+    },
+    {
+      "library": "libwebrtc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 412,
+      "upstream_main_source_matches": 0,
+      "verified_names": 293
+    },
+    {
+      "library": "SystemNumerics",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 411,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceLibreSsl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 399,
+      "upstream_main_source_matches": 0,
+      "verified_names": 343
+    },
+    {
+      "library": "SceVshShellUITheme",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 396,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIBaseSystem",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 392,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libNativeExtensions",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 392,
+      "upstream_main_source_matches": 0,
+      "verified_names": 38
+    },
+    {
+      "library": "SceVshShellUISticker",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 356,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "MonoDataTds",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 348,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceFreeType",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 344,
+      "upstream_main_source_matches": 0,
+      "verified_names": 283
+    },
+    {
+      "library": "libSceFreeTypeOl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 344,
+      "upstream_main_source_matches": 0,
+      "verified_names": 283
+    },
+    {
+      "library": "libSceFreeTypeOt",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 341,
+      "upstream_main_source_matches": 0,
+      "verified_names": 280
+    },
+    {
+      "library": "ScePlayStationOrbis",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 337,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshTheme",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 334,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemServiceModelWeb",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 334,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libbdj",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 301,
+      "upstream_main_source_matches": 0,
+      "verified_names": 228
+    },
+    {
+      "library": "SceVshNpManager",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 300,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libjvm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 295,
+      "upstream_main_source_matches": 0,
+      "verified_names": 126
+    },
+    {
+      "library": "SceVshShellUIStickerAccessor",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 291,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshResourceArbitrator",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 287,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIQuickVideoEdit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 276,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceHmd2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 276,
+      "upstream_main_source_matches": 0,
+      "verified_names": 132
+    },
+    {
+      "library": "libSceCes",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 274,
+      "upstream_main_source_matches": 0,
+      "verified_names": 230
+    },
+    {
+      "library": "libSceCesCs",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 273,
+      "upstream_main_source_matches": 0,
+      "verified_names": 230
+    },
+    {
+      "library": "ReactNativeComponentsVshPSNowPlayer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 271,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshUsbStorageScene",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 265,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceJsi-0.70",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 265,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libAacs",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 264,
+      "upstream_main_source_matches": 0,
+      "verified_names": 13
+    },
+    {
+      "library": "SceFacebookCSSLayout",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 263,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshVideoPlayer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 262,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libjava",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 262,
+      "upstream_main_source_matches": 0,
+      "verified_names": 146
+    },
+    {
+      "library": "libSceShellCoreUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 260,
+      "upstream_main_source_matches": 0,
+      "verified_names": 193
+    },
+    {
+      "library": "SceVshDbPreparationWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 249,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAgc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 2,
+      "records": 248,
+      "upstream_main_source_matches": 0,
+      "verified_names": 208
+    },
+    {
+      "library": "SceVshNpWebapi",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 246,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAgcVsh",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 245,
+      "upstream_main_source_matches": 0,
+      "verified_names": 204
+    },
+    {
+      "library": "libSceFont",
+      "open_pr_added_matches": 36,
+      "qualified_records": 36,
+      "records": 240,
+      "upstream_main_source_matches": 0,
+      "verified_names": 201
+    },
+    {
+      "library": "libSceVideoOut",
+      "open_pr_added_matches": 100,
+      "qualified_records": 111,
+      "records": 237,
+      "upstream_main_source_matches": 0,
+      "verified_names": 166
+    },
+    {
+      "library": "libSceNet",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 235,
+      "upstream_main_source_matches": 0,
+      "verified_names": 188
+    },
+    {
+      "library": "libSceMediaFrameworkInterface",
+      "open_pr_added_matches": 107,
+      "qualified_records": 120,
+      "records": 225,
+      "upstream_main_source_matches": 0,
+      "verified_names": 120
+    },
+    {
+      "library": "libSceGLSlimVSH",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 217,
+      "upstream_main_source_matches": 0,
+      "verified_names": 175
+    },
+    {
+      "library": "libSceJson2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 215,
+      "upstream_main_source_matches": 0,
+      "verified_names": 184
+    },
+    {
+      "library": "libSceNKWebKitRequirements",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 214,
+      "upstream_main_source_matches": 0,
+      "verified_names": 114
+    },
+    {
+      "library": "libScePad",
+      "open_pr_added_matches": 0,
+      "qualified_records": 4,
+      "records": 212,
+      "upstream_main_source_matches": 0,
+      "verified_names": 173
+    },
+    {
+      "library": "libmono-btls-shared",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 212,
+      "upstream_main_source_matches": 0,
+      "verified_names": 181
+    },
+    {
+      "library": "SceVshIme",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 211,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpWebapi2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 208,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShellUIVoiceChat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 208,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshSl2Sl2Client",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 204,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshAutoMounterWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 197,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshDiscPlayer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 197,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshMimeType",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 197,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePosix",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 197,
+      "upstream_main_source_matches": 0,
+      "verified_names": 164
+    },
+    {
+      "library": "SceVshSaveDataWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 195,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceGLSlimServerVSH",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 192,
+      "upstream_main_source_matches": 0,
+      "verified_names": 157
+    },
+    {
+      "library": "libmdbg_syscore",
+      "open_pr_added_matches": 4,
+      "qualified_records": 4,
+      "records": 191,
+      "upstream_main_source_matches": 0,
+      "verified_names": 127
+    },
+    {
+      "library": "ReactNativeModulesVshMediaPlayerContents",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 189,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceHmd",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 186,
+      "upstream_main_source_matches": 0,
+      "verified_names": 145
+    },
+    {
+      "library": "libSceAppInstUtil",
+      "open_pr_added_matches": 7,
+      "qualified_records": 7,
+      "records": 184,
+      "upstream_main_source_matches": 0,
+      "verified_names": 112
+    },
+    {
+      "library": "libSceXml",
+      "open_pr_added_matches": 28,
+      "qualified_records": 28,
+      "records": 183,
+      "upstream_main_source_matches": 0,
+      "verified_names": 156
+    },
+    {
+      "library": "SceVshSystemLoggerWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 182,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpAsm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 181,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAvSetting",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 180,
+      "upstream_main_source_matches": 0,
+      "verified_names": 109
+    },
+    {
+      "library": "SceVshUpdateServiceWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 178,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceGnmDriver",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 175,
+      "upstream_main_source_matches": 0,
+      "verified_names": 141
+    },
+    {
+      "library": "SceVshAppDbWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 173,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libfreetype",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 169,
+      "upstream_main_source_matches": 0,
+      "verified_names": 141
+    },
+    {
+      "library": "libprospero_wrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 169,
+      "upstream_main_source_matches": 0,
+      "verified_names": 53
+    },
+    {
+      "library": "libSceFios2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 168,
+      "upstream_main_source_matches": 0,
+      "verified_names": 141
+    },
+    {
+      "library": "SceVshNpRifManager",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 166,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libcairo",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 166,
+      "upstream_main_source_matches": 0,
+      "verified_names": 141
+    },
+    {
+      "library": "libSceGnmDriverForNeoMode",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 163,
+      "upstream_main_source_matches": 0,
+      "verified_names": 141
+    },
+    {
+      "library": "libSceFacebook.Yoga",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 158,
+      "upstream_main_source_matches": 0,
+      "verified_names": 117
+    },
+    {
+      "library": "libnio",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 157,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceAbstractStorage",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 155,
+      "upstream_main_source_matches": 0,
+      "verified_names": 91
+    },
+    {
+      "library": "libgnmawt",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 153,
+      "upstream_main_source_matches": 0,
+      "verified_names": 122
+    },
+    {
+      "library": "SceVshDbShared",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 149,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshKernelSysWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 148,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceMbus",
+      "open_pr_added_matches": 10,
+      "qualified_records": 10,
+      "records": 143,
+      "upstream_main_source_matches": 0,
+      "verified_names": 112
+    },
+    {
+      "library": "libSceNpTus",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 142,
+      "upstream_main_source_matches": 0,
+      "verified_names": 127
+    },
+    {
+      "library": "libSceAudioOut",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 139,
+      "upstream_main_source_matches": 0,
+      "verified_names": 114
+    },
+    {
+      "library": "libReactNative.Modules.Vsh.WebAppLauncher",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 138,
+      "upstream_main_source_matches": 0,
+      "verified_names": 113
+    },
+    {
+      "library": "libSceAudioOut2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 138,
+      "upstream_main_source_matches": 0,
+      "verified_names": 79
+    },
+    {
+      "library": "libSceComposite",
+      "open_pr_added_matches": 20,
+      "qualified_records": 20,
+      "records": 138,
+      "upstream_main_source_matches": 0,
+      "verified_names": 87
+    },
+    {
+      "library": "libSceFont.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 136,
+      "upstream_main_source_matches": 0,
+      "verified_names": 113
+    },
+    {
+      "library": "libSceJxr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 136,
+      "upstream_main_source_matches": 0,
+      "verified_names": 111
+    },
+    {
+      "library": "libSceAgcDriver",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 135,
+      "upstream_main_source_matches": 0,
+      "verified_names": 113
+    },
+    {
+      "library": "libSceCustomMusicSysCallWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 47,
+      "records": 133,
+      "upstream_main_source_matches": 0,
+      "verified_names": 48
+    },
+    {
+      "library": "gaikai_player_lib",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 132,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "SceVshOrbisBgft",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 127,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceCamera",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 127,
+      "upstream_main_source_matches": 0,
+      "verified_names": 110
+    },
+    {
+      "library": "libSceSaveData",
+      "open_pr_added_matches": 0,
+      "qualified_records": 7,
+      "records": 123,
+      "upstream_main_source_matches": 0,
+      "verified_names": 89
+    },
+    {
+      "library": "SceVshNpUds",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 122,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SystemNetHttpWebRequest",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 122,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libReactNative.Modules.Vsh",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 122,
+      "upstream_main_source_matches": 0,
+      "verified_names": 71
+    },
+    {
+      "library": "libSceAmpr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 118,
+      "upstream_main_source_matches": 0,
+      "verified_names": 99
+    },
+    {
+      "library": "libScePsm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 118,
+      "upstream_main_source_matches": 0,
+      "verified_names": 54
+    },
+    {
+      "library": "libSceHttp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 115,
+      "upstream_main_source_matches": 0,
+      "verified_names": 91
+    },
+    {
+      "library": "ScePlayStationOrbisSpeech",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 113,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpTrophy",
+      "open_pr_added_matches": 4,
+      "qualified_records": 4,
+      "records": 110,
+      "upstream_main_source_matches": 0,
+      "verified_names": 88
+    },
+    {
+      "library": "SceVshNpTrophy2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 109,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshDataTransfer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 108,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshLncUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 107,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libhermes-0.11",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 107,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpTmdb",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 105,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAbstractYoutube",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 103,
+      "upstream_main_source_matches": 0,
+      "verified_names": 66
+    },
+    {
+      "library": "libScePlayReady4",
+      "open_pr_added_matches": 4,
+      "qualified_records": 4,
+      "records": 103,
+      "upstream_main_source_matches": 0,
+      "verified_names": 74
+    },
+    {
+      "library": "libSceNpUtility",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 102,
+      "upstream_main_source_matches": 0,
+      "verified_names": 88
+    },
+    {
+      "library": "libSceBgft",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 101,
+      "upstream_main_source_matches": 0,
+      "verified_names": 80
+    },
+    {
+      "library": "SceVshNpTrophy",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 100,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAbstractLocal",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 100,
+      "upstream_main_source_matches": 0,
+      "verified_names": 61
+    },
+    {
+      "library": "libSceNetCtl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 99,
+      "upstream_main_source_matches": 0,
+      "verified_names": 89
+    },
+    {
+      "library": "libSceIpmi",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 97,
+      "upstream_main_source_matches": 0,
+      "verified_names": 79
+    },
+    {
+      "library": "libScePlayReady4L",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 96,
+      "upstream_main_source_matches": 0,
+      "verified_names": 73
+    },
+    {
+      "library": "SceVshPsnUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 94,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpWebApi",
+      "open_pr_added_matches": 23,
+      "qualified_records": 23,
+      "records": 94,
+      "upstream_main_source_matches": 0,
+      "verified_names": 50
+    },
+    {
+      "library": "libSceLncUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 93,
+      "upstream_main_source_matches": 0,
+      "verified_names": 70
+    },
+    {
+      "library": "libSceNpUniversalDataSystem",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 93,
+      "upstream_main_source_matches": 0,
+      "verified_names": 80
+    },
+    {
+      "library": "libcurl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 93,
+      "upstream_main_source_matches": 0,
+      "verified_names": 75
+    },
+    {
+      "library": "libpng16",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 93,
+      "upstream_main_source_matches": 0,
+      "verified_names": 76
+    },
+    {
+      "library": "SceVshSysUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 92,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAbstractTwitter",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 92,
+      "upstream_main_source_matches": 0,
+      "verified_names": 60
+    },
+    {
+      "library": "libSceVrTracker2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 92,
+      "upstream_main_source_matches": 0,
+      "verified_names": 42
+    },
+    {
+      "library": "SceVshOrbisAbstractStorage",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 91,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceDataTransfer",
+      "open_pr_added_matches": 24,
+      "qualified_records": 24,
+      "records": 88,
+      "upstream_main_source_matches": 0,
+      "verified_names": 75
+    },
+    {
+      "library": "libSceJson",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 88,
+      "upstream_main_source_matches": 0,
+      "verified_names": 74
+    },
+    {
+      "library": "libSceVnaInternal",
+      "open_pr_added_matches": 0,
+      "qualified_records": 71,
+      "records": 88,
+      "upstream_main_source_matches": 0,
+      "verified_names": 71
+    },
+    {
+      "library": "libSceRegMgr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 87,
+      "upstream_main_source_matches": 0,
+      "verified_names": 59
+    },
+    {
+      "library": "libSceSysCore",
+      "open_pr_added_matches": 4,
+      "qualified_records": 4,
+      "records": 87,
+      "upstream_main_source_matches": 0,
+      "verified_names": 68
+    },
+    {
+      "library": "SystemIOCompressionFileSystem",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 86,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libnet",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 84,
+      "upstream_main_source_matches": 0,
+      "verified_names": 57
+    },
+    {
+      "library": "libSceHidControl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 82,
+      "upstream_main_source_matches": 0,
+      "verified_names": 57
+    },
+    {
+      "library": "libSceMetadataReaderWriter",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 81,
+      "upstream_main_source_matches": 0,
+      "verified_names": 33
+    },
+    {
+      "library": "SystemTransactions",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 79,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceCompositeExt",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 78,
+      "upstream_main_source_matches": 0,
+      "verified_names": 67
+    },
+    {
+      "library": "libwvoec",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 77,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoStreamingEngine",
+      "open_pr_added_matches": 46,
+      "qualified_records": 46,
+      "records": 74,
+      "upstream_main_source_matches": 0,
+      "verified_names": 58
+    },
+    {
+      "library": "libReactNative.Modules.Vsh.Media",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 73,
+      "upstream_main_source_matches": 0,
+      "verified_names": 45
+    },
+    {
+      "library": "libSceUpdateService",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 73,
+      "upstream_main_source_matches": 0,
+      "verified_names": 40
+    },
+    {
+      "library": "I18N",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 72,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAcm",
+      "open_pr_added_matches": 10,
+      "qualified_records": 10,
+      "records": 72,
+      "upstream_main_source_matches": 0,
+      "verified_names": 21
+    },
+    {
+      "library": "libSceHttp2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 72,
+      "upstream_main_source_matches": 0,
+      "verified_names": 55
+    },
+    {
+      "library": "SceVshRemotePlay",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 71,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVshFreeType",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 71,
+      "upstream_main_source_matches": 0,
+      "verified_names": 54
+    },
+    {
+      "library": "libSceVshPng",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 70,
+      "upstream_main_source_matches": 0,
+      "verified_names": 56
+    },
+    {
+      "library": "libSceNpMatching2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 69,
+      "upstream_main_source_matches": 0,
+      "verified_names": 61
+    },
+    {
+      "library": "libSceUsbStorageForShellUI",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 69,
+      "upstream_main_source_matches": 0,
+      "verified_names": 18
+    },
+    {
+      "library": "SceVshVideoRecordingWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 68,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshAccessorDbMediaEventListener",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 66,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNgs2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 1,
+      "records": 66,
+      "upstream_main_source_matches": 0,
+      "verified_names": 54
+    },
+    {
+      "library": "SceVshNpGameIntent",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 65,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libCss",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 65,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceNgs2.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 65,
+      "upstream_main_source_matches": 0,
+      "verified_names": 53
+    },
+    {
+      "library": "libSceUlt",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 64,
+      "upstream_main_source_matches": 0,
+      "verified_names": 53
+    },
+    {
+      "library": "libSceUsbd",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 63,
+      "upstream_main_source_matches": 0,
+      "verified_names": 47
+    },
+    {
+      "library": "libSceVisionManager",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 63,
+      "upstream_main_source_matches": 0,
+      "verified_names": 46
+    },
+    {
+      "library": "SceVshRnpsAppMgrWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 62,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceEsvmEngine",
+      "open_pr_added_matches": 12,
+      "qualified_records": 12,
+      "records": 62,
+      "upstream_main_source_matches": 0,
+      "verified_names": 50
+    },
+    {
+      "library": "libSceIme",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 61,
+      "upstream_main_source_matches": 0,
+      "verified_names": 46
+    },
+    {
+      "library": "I18NCJK",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 59,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAvcap2",
+      "open_pr_added_matches": 28,
+      "qualified_records": 28,
+      "records": 59,
+      "upstream_main_source_matches": 0,
+      "verified_names": 35
+    },
+    {
+      "library": "libSceSsl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 57,
+      "upstream_main_source_matches": 0,
+      "verified_names": 42
+    },
+    {
+      "library": "libSceNpTrophy2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 56,
+      "upstream_main_source_matches": 0,
+      "verified_names": 45
+    },
+    {
+      "library": "libScePlayReady2",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 56,
+      "upstream_main_source_matches": 0,
+      "verified_names": 47
+    },
+    {
+      "library": "SceVshRegistry",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 54,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAjm",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 54,
+      "upstream_main_source_matches": 0,
+      "verified_names": 42
+    },
+    {
+      "library": "libCFWML",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 53,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceWebTransport",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 53,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libfontconfig",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 53,
+      "upstream_main_source_matches": 0,
+      "verified_names": 41
+    },
+    {
+      "library": "ScePlayStationSpeechSystemTts",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 52,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshWebBrowser",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 52,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShareLibWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 51,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshSl2Sl2Common",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 51,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpScore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 51,
+      "upstream_main_source_matches": 0,
+      "verified_names": 42
+    },
+    {
+      "library": "libSceNpScoreRanking",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 51,
+      "upstream_main_source_matches": 0,
+      "verified_names": 42
+    },
+    {
+      "library": "libSceVideoOut_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 51,
+      "upstream_main_source_matches": 0,
+      "verified_names": 25
+    },
+    {
+      "library": "libSceVshHarfBuzz",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 51,
+      "upstream_main_source_matches": 0,
+      "verified_names": 32
+    },
+    {
+      "library": "SceVshBackupRestoreUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 50,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshPadControllerUpdWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 50,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePlayReady",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 50,
+      "upstream_main_source_matches": 0,
+      "verified_names": 43
+    },
+    {
+      "library": "libSceAudioIn",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 49,
+      "upstream_main_source_matches": 0,
+      "verified_names": 38
+    },
+    {
+      "library": "libSceRemoteplay",
+      "open_pr_added_matches": 0,
+      "qualified_records": 3,
+      "records": 49,
+      "upstream_main_source_matches": 0,
+      "verified_names": 38
+    },
+    {
+      "library": "libSceSpSysCallWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 48,
+      "upstream_main_source_matches": 0,
+      "verified_names": 40
+    },
+    {
+      "library": "libSceVideoRecordingP",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 48,
+      "upstream_main_source_matches": 0,
+      "verified_names": 39
+    },
+    {
+      "library": "libSceGameLiveStreaming",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 47,
+      "upstream_main_source_matches": 0,
+      "verified_names": 42
+    },
+    {
+      "library": "libSceRtc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 47,
+      "upstream_main_source_matches": 0,
+      "verified_names": 38
+    },
+    {
+      "library": "libSceVideoCoreServerInterface",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 47,
+      "upstream_main_source_matches": 0,
+      "verified_names": 43
+    },
+    {
+      "library": "I18NRare",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 46,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshMorpheusUpdWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 46,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshAccessorDbNotify",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 45,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAgcDriverPaDebug",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 45,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceEsvm",
+      "open_pr_added_matches": 39,
+      "qualified_records": 39,
+      "records": 45,
+      "upstream_main_source_matches": 0,
+      "verified_names": 39
+    },
+    {
+      "library": "libSceLoginMgrServer",
+      "open_pr_added_matches": 2,
+      "qualified_records": 2,
+      "records": 45,
+      "upstream_main_source_matches": 0,
+      "verified_names": 30
+    },
+    {
+      "library": "libSceCdlgUtilServer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 44,
+      "upstream_main_source_matches": 0,
+      "verified_names": 10
+    },
+    {
+      "library": "libSceNpTusCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 44,
+      "upstream_main_source_matches": 0,
+      "verified_names": 41
+    },
+    {
+      "library": "libSceAjmi",
+      "open_pr_added_matches": 0,
+      "qualified_records": 1,
+      "records": 43,
+      "upstream_main_source_matches": 0,
+      "verified_names": 20
+    },
+    {
+      "library": "libSceNpWebApi2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 43,
+      "upstream_main_source_matches": 0,
+      "verified_names": 38
+    },
+    {
+      "library": "SceVshMyGameList",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 42,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceRazorCpu",
+      "open_pr_added_matches": 4,
+      "qualified_records": 4,
+      "records": 42,
+      "upstream_main_source_matches": 0,
+      "verified_names": 35
+    },
+    {
+      "library": "libSceAppDbShellCoreClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 41,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAudioPropagation",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 41,
+      "upstream_main_source_matches": 0,
+      "verified_names": 27
+    },
+    {
+      "library": "libSceSaveData_native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 40,
+      "upstream_main_source_matches": 0,
+      "verified_names": 35
+    },
+    {
+      "library": "libSceDepth",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 39,
+      "upstream_main_source_matches": 0,
+      "verified_names": 35
+    },
+    {
+      "library": "libSceAjm.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 38,
+      "upstream_main_source_matches": 0,
+      "verified_names": 35
+    },
+    {
+      "library": "libSceAppContent",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 38,
+      "upstream_main_source_matches": 0,
+      "verified_names": 32
+    },
+    {
+      "library": "libScePosixForWebKit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 38,
+      "upstream_main_source_matches": 0,
+      "verified_names": 31
+    },
+    {
+      "library": "libSceMusicFrameworkInterface",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 37,
+      "upstream_main_source_matches": 0,
+      "verified_names": 28
+    },
+    {
+      "library": "libSceVoiceChat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 37,
+      "upstream_main_source_matches": 0,
+      "verified_names": 29
+    },
+    {
+      "library": "libharfbuzz",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 37,
+      "upstream_main_source_matches": 0,
+      "verified_names": 33
+    },
+    {
+      "library": "libkernel_psmkit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 37,
+      "upstream_main_source_matches": 0,
+      "verified_names": 26
+    },
+    {
+      "library": "SceVshUrlConfigResolver",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 36,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libCprm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 35,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceHttpCache",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 35,
+      "upstream_main_source_matches": 0,
+      "verified_names": 26
+    },
+    {
+      "library": "libSceRnpsAppMgr",
+      "open_pr_added_matches": 7,
+      "qualified_records": 7,
+      "records": 35,
+      "upstream_main_source_matches": 0,
+      "verified_names": 28
+    },
+    {
+      "library": "libSceRudp",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 35,
+      "upstream_main_source_matches": 0,
+      "verified_names": 31
+    },
+    {
+      "library": "libSceVoice",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 35,
+      "upstream_main_source_matches": 0,
+      "verified_names": 32
+    },
+    {
+      "library": "SceVshAccessor",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpAppInfo",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAvPlayerStreaming",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 29
+    },
+    {
+      "library": "libSceCamera2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 28
+    },
+    {
+      "library": "libSceCamera2_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 28
+    },
+    {
+      "library": "libSceSaveData.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 30
+    },
+    {
+      "library": "libSceVrTracker",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 28
+    },
+    {
+      "library": "libSceVsePlugin",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libzip",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 34,
+      "upstream_main_source_matches": 0,
+      "verified_names": 14
+    },
+    {
+      "library": "SceVshPatchCheckerClientWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 33,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceBemp2sys",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 33,
+      "upstream_main_source_matches": 0,
+      "verified_names": 26
+    },
+    {
+      "library": "libSceSystemStateMgr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 33,
+      "upstream_main_source_matches": 0,
+      "verified_names": 26
+    },
+    {
+      "library": "SceVshVideoServiceWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 32,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAudio3d",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 32,
+      "upstream_main_source_matches": 0,
+      "verified_names": 29
+    },
+    {
+      "library": "libScePlayAreaEditor",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 32,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpSessionSignaling",
+      "open_pr_added_matches": 5,
+      "qualified_records": 5,
+      "records": 31,
+      "upstream_main_source_matches": 0,
+      "verified_names": 26
+    },
+    {
+      "library": "I18NOther",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 30,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "ScePlayStationBclExtensions",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 30,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpPapc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 30,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpSns",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 30,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshSl2Sl2Manage",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 30,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAvPlayer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 30,
+      "upstream_main_source_matches": 0,
+      "verified_names": 24
+    },
+    {
+      "library": "libSceOpusDec",
+      "open_pr_added_matches": 0,
+      "qualified_records": 1,
+      "records": 30,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "ReactNativeModulesVshTelemetryNq",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 29,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAvPlayer.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 29,
+      "upstream_main_source_matches": 0,
+      "verified_names": 23
+    },
+    {
+      "library": "libSceVoiceCommand",
+      "open_pr_added_matches": 18,
+      "qualified_records": 18,
+      "records": 29,
+      "upstream_main_source_matches": 0,
+      "verified_names": 18
+    },
+    {
+      "library": "SceVshNpSessionService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 28,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceCommonDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 28,
+      "upstream_main_source_matches": 0,
+      "verified_names": 14
+    },
+    {
+      "library": "libSceKeyboard",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 28,
+      "upstream_main_source_matches": 0,
+      "verified_names": 23
+    },
+    {
+      "library": "libSceMbusDebug",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 28,
+      "upstream_main_source_matches": 0,
+      "verified_names": 24
+    },
+    {
+      "library": "libSceVrTracker2_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 28,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceContentSearch",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 27,
+      "upstream_main_source_matches": 0,
+      "verified_names": 21
+    },
+    {
+      "library": "libSceImeBackend",
+      "open_pr_added_matches": 0,
+      "qualified_records": 4,
+      "records": 27,
+      "upstream_main_source_matches": 0,
+      "verified_names": 24
+    },
+    {
+      "library": "libSceNetCtlApIpcInt",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 27,
+      "upstream_main_source_matches": 0,
+      "verified_names": 16
+    },
+    {
+      "library": "libScePsml",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 27,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceSdma",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 27,
+      "upstream_main_source_matches": 0,
+      "verified_names": 22
+    },
+    {
+      "library": "libSceVdecCore",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 27,
+      "upstream_main_source_matches": 0,
+      "verified_names": 18
+    },
+    {
+      "library": "libSceVenc",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 27,
+      "upstream_main_source_matches": 0,
+      "verified_names": 16
+    },
+    {
+      "library": "SceVshShareServerPostWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 26,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpEntitlementAccess",
+      "open_pr_added_matches": 0,
+      "qualified_records": 1,
+      "records": 26,
+      "upstream_main_source_matches": 0,
+      "verified_names": 25
+    },
+    {
+      "library": "libSceNpParty",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 26,
+      "upstream_main_source_matches": 0,
+      "verified_names": 19
+    },
+    {
+      "library": "SceVshShellUIUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 25,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshVoiceMsgVoiceMsgWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 25,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAudioOutServer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 25,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceGameLiveStreamingCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 25,
+      "upstream_main_source_matches": 0,
+      "verified_names": 20
+    },
+    {
+      "library": "libSceMouse",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 25,
+      "upstream_main_source_matches": 0,
+      "verified_names": 19
+    },
+    {
+      "library": "libSceSharePlay",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 25,
+      "upstream_main_source_matches": 0,
+      "verified_names": 17
+    },
+    {
+      "library": "libSceVshJpeg",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 25,
+      "upstream_main_source_matches": 0,
+      "verified_names": 21
+    },
+    {
+      "library": "SceVshNpServiceChecker",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpSignaling",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 21
+    },
+    {
+      "library": "libSceNpSns",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 19
+    },
+    {
+      "library": "libSceOpusCeltEnc",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libScePlayGo",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 18
+    },
+    {
+      "library": "libSceSysUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 21
+    },
+    {
+      "library": "libSceSystemGesture",
+      "open_pr_added_matches": 0,
+      "qualified_records": 1,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 20
+    },
+    {
+      "library": "libSceVdecCore.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 17
+    },
+    {
+      "library": "libSceVoiceQoS",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 24,
+      "upstream_main_source_matches": 0,
+      "verified_names": 20
+    },
+    {
+      "library": "SceVshNpIdMapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 23,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShareVideoTranscoderWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 23,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libkernel_jvm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 23,
+      "upstream_main_source_matches": 0,
+      "verified_names": 17
+    },
+    {
+      "library": "I18NWest",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 22,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAudiodec",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 22,
+      "upstream_main_source_matches": 0,
+      "verified_names": 18
+    },
+    {
+      "library": "libSceShareUtility",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 22,
+      "upstream_main_source_matches": 0,
+      "verified_names": 18
+    },
+    {
+      "library": "libSceVnaWebsocket",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 22,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshErrorDialogUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpPbtc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAjm_legacy_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 19
+    },
+    {
+      "library": "libSceBackupRestoreUtil",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 17
+    },
+    {
+      "library": "libSceFontFt",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 16
+    },
+    {
+      "library": "libSceIdu",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceMove",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 16
+    },
+    {
+      "library": "libSceUsbStorage",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 19
+    },
+    {
+      "library": "libSceVideodec2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 21,
+      "upstream_main_source_matches": 0,
+      "verified_names": 21
+    },
+    {
+      "library": "libSceAsyncStorageInternal",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 20,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAudiodec.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 20,
+      "upstream_main_source_matches": 0,
+      "verified_names": 17
+    },
+    {
+      "library": "SceVshCsbMgrWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 19,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceBgsStorage",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 19,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceContentListController",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 19,
+      "upstream_main_source_matches": 0,
+      "verified_names": 16
+    },
+    {
+      "library": "libSceNpGameIntent",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 19,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceShareInternal",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 19,
+      "upstream_main_source_matches": 0,
+      "verified_names": 10
+    },
+    {
+      "library": "libSceSysmodule",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 19,
+      "upstream_main_source_matches": 0,
+      "verified_names": 16
+    },
+    {
+      "library": "SceVshAppContentUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpCommon",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpServiceChecker2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshSQLiteAux",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshSysfileUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceBeisobmf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 16
+    },
+    {
+      "library": "libSceCustomMusicCore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 17
+    },
+    {
+      "library": "libSceM4aacEnc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 14
+    },
+    {
+      "library": "libSceMoveTracker",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceRemotePlayClientIpc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceTtsCoreG3Bc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVdecsw",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 14
+    },
+    {
+      "library": "libSceVideoRecording.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 17
+    },
+    {
+      "library": "libjli",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 18,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpAppLaunchLink",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpAppLaunchLink2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceBluetoothHid",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17,
+      "upstream_main_source_matches": 0,
+      "verified_names": 13
+    },
+    {
+      "library": "libSceCompanionHttpd",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceCoredump",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceShare",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceSystemServiceUsbStorage",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 17,
+      "upstream_main_source_matches": 0,
+      "verified_names": 14
+    },
+    {
+      "library": "SceVshNpPreorderMgr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 16,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "gaikai-player",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 16,
+      "upstream_main_source_matches": 0,
+      "verified_names": 15
+    },
+    {
+      "library": "libSceSystemLogger2",
+      "open_pr_added_matches": 5,
+      "qualified_records": 5,
+      "records": 16,
+      "upstream_main_source_matches": 0,
+      "verified_names": 9
+    },
+    {
+      "library": "libSceVshWebP",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 16,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceFiber",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 15,
+      "upstream_main_source_matches": 0,
+      "verified_names": 13
+    },
+    {
+      "library": "libSceOpusSilkEnc",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 15,
+      "upstream_main_source_matches": 0,
+      "verified_names": 12
+    },
+    {
+      "library": "libSceTEEClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 15,
+      "upstream_main_source_matches": 0,
+      "verified_names": 10
+    },
+    {
+      "library": "I18NMidEast",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNpIga",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAudioSystem",
+      "open_pr_added_matches": 5,
+      "qualified_records": 5,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceCffMgr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceContentExport",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceGnmDriverPaDebug",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceImeDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 12
+    },
+    {
+      "library": "libSceNpAuth",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 10
+    },
+    {
+      "library": "libSceNpManagerCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 13
+    },
+    {
+      "library": "libSceNpRemotePlaySessionSignaling",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceResourceArbitrator",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceScreenShot",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceTextToSpeech2",
+      "open_pr_added_matches": 6,
+      "qualified_records": 6,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 13
+    },
+    {
+      "library": "libSceUgcBgUploaderClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceUgcServiceS3",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceVideoRecording",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 14,
+      "upstream_main_source_matches": 0,
+      "verified_names": 13
+    },
+    {
+      "library": "libSceAvSettingDebug",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceAvcap2mvr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceImageUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceJemspace",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libScePatchCheckerClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceShare.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceSrcUtl",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceVdecShevc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceWebBrowserDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 13,
+      "upstream_main_source_matches": 0,
+      "verified_names": 12
+    },
+    {
+      "library": "ScePlayStationIcu",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshDbRecoveryUtilityWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshNotificationClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshPartyCommon",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceEsvmWidevine",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 10
+    },
+    {
+      "library": "libSceFlexContent",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceFontGs",
+      "open_pr_added_matches": 0,
+      "qualified_records": 7,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceNpCommerce",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 10
+    },
+    {
+      "library": "libSceNpWebApiCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceOpusCeltDec",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 9
+    },
+    {
+      "library": "libSceSystemLogger2NativeQueueClient",
+      "open_pr_added_matches": 4,
+      "qualified_records": 4,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 9
+    },
+    {
+      "library": "libSceTextToSpeech",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceVideoStreamingEngine_sys",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 12,
+      "upstream_main_source_matches": 0,
+      "verified_names": 12
+    },
+    {
+      "library": "SceVshShellUIRetriever",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceCsbMgr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceDepth2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceGvMp4Parser",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceJpegParser",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceMediaFrameworkUtil",
+      "open_pr_added_matches": 4,
+      "qualified_records": 4,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceNetCtlAp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 9
+    },
+    {
+      "library": "libSceNpScoreCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 9
+    },
+    {
+      "library": "libSceNpSessionSignalingCrossplay",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceNpTextToSpeech",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceSocialScreen",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 11
+    },
+    {
+      "library": "libSceTtsEngine",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceVdecSvp9",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVdecwrap",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceWebRtc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceWtIpcClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 11,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshMarlinDownloaderWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAppMessaging",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceCustomMusicAudioOut",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceDipsw",
+      "open_pr_added_matches": 1,
+      "qualified_records": 1,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceMsgDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceMsgDialog.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceRnpsBundle",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceSaveDataDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceSaveDataDialog.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceSystemTts",
+      "open_pr_added_matches": 3,
+      "qualified_records": 3,
+      "records": 10,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "SceVshSystemLoggerUtilWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libReactNative.Modules.Vsh.MediaPlayer.Contents",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceCustomMusicDummy",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceEditMp4",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceGameCustomDataDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceHmdDistortion",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceInetStat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceInvitationDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 9
+    },
+    {
+      "library": "libSceNetBwe",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceNpEulaDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceNpFriendListDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libScePSNowGkp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libScePsml_mfsr2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libsceNpEulaDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 9,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "SceVshCloudClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAudiodecCpu",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceContentBinder",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 8
+    },
+    {
+      "library": "libSceErrorDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceGameUpdate",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceGnmDriverResourceRegistration",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceMediaAppSharedStorageMc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpProfileDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceSulphaDrv",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceUrlConfigResolver",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceVcodec",
+      "open_pr_added_matches": 5,
+      "qualified_records": 5,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceVrHand",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libjimage",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libkernel_qadisc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 8,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "SystemNet",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAc3Enc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceAgcDriverDebugWavefronts_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceCdlgAdIdClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceCdlgG2P",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceCdlgPlayerReview",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceConnectAccountDialog",
+      "open_pr_added_matches": 6,
+      "qualified_records": 6,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceCoredumpSeqHandlerIf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceDbgKeyboard",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceDtsEnc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceGifParser",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceHmdSetupDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceJxrParser",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceLibcInternalExt",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceLoginDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceMusicCoreInterface",
+      "open_pr_added_matches": 6,
+      "qualified_records": 6,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceNetCtlApDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceNpAuthAuthorizedAppDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceNpSnsFacebookDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceNpSnsYouTubeDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceNpSpeechToText",
+      "open_pr_added_matches": 7,
+      "qualified_records": 7,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libScePlayGoDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libScePlayerInvitationDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libScePlayerSelectionDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libScePngParser",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePs2EmuMenuDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceReportSeqHandlerIf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceShellUIUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceSigninDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceSocialScreenDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceSystemLogger2Delivery",
+      "open_pr_added_matches": 2,
+      "qualified_records": 2,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceSystemServiceActivateHevc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceSystemServiceActivateHevcSoft",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceUsbStorageAux",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceUsbStorageDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceVdecShevc.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 7
+    },
+    {
+      "library": "libSceVideoOutHdrScopes_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideodec",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceVrServiceDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceVrSetupDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceWebmParserMdrw",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 7,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "SceVshShareNpWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAutoMounterClient",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceCloudMessaging",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceContentSearchForSf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceHmd2Distortion",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceJpegDec",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libSceMediaAppSharedStorageMaDbg",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceMouseExtension_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceNKWeb",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpPartyCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpSessionService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libScePadTracker",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libScePngDec",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libScePsmlBcSisr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libScePubSubClientShared",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceShareFactoryUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceSystemServiceActivateMpeg2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceVideoNativeExtEssential",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceVshBrotli",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceWkFontConfig",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 6
+    },
+    {
+      "library": "libkernel_sync_on_address2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 6,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceAcm_Ref_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAsyncStorageInternalAux",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAt9Enc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceCompanionUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceContentExportForSf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceDeviceService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceDiscMap",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceIpmiDbg",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceMediaAppSharedStorageMa",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNetCtlV6",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceNpMatching2Compat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpPartner001",
+      "open_pr_added_matches": 0,
+      "qualified_records": 1,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceNpSignalingCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceVrTrackerGpuTest",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVrTrackerLiveCapture",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libSceZlib",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libkernel_aod",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libkernel_exception",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "libkernel_ps2emu",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 5,
+      "upstream_main_source_matches": 0,
+      "verified_names": 5
+    },
+    {
+      "library": "SceVshRemotePlayClientIpcWrapper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAcm_Propagation_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAgcDriverDebugReset_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceAppContentIro",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceContentDelete",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceConvertKeycode",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceDseehx",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceJpegEnc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceMat2Enc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNetCtlForNpToolkit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceNotification",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpPartnerSubscription",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceNpSnsTwitch",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpSnsYouTube",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceNpUbisoftPlus",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePngEnc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceProprietaryVoiceChatHelper",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libScePsmUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceS3da",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceShareForSf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceShareInternalForShellCore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServicePs2Emu",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceVdecSavc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceVdecSavc2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceVdecSavc2.native",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceVideoCoreInterface",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceVideoDecoderArbitration",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libSceVideoOutVrrStatus",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceVrHand_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libkernel_CFI",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libkernel_mtxgen",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libkernel_sysc_se",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 4
+    },
+    {
+      "library": "libverify",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "ulobjmgr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 4,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "ScePlayStationPUIPlatform",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceDbgVideoOut",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceEsvmAppAudioSync",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceEsvmPlayReady",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceFreeTypeOptOl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceHubAppUtil",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceLoginService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNetDebug",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceNpAppLauncher",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpCommonCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpManagerForToolkit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpTcs",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpUtilityCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceNpWebApi2AsyncRestricted",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePsml_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSysmodule_jvm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemLogger",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemServiceAppInfo",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServiceMicExclusiveMode",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServicePlatformPrivacy",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemServicePsmKit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceSystemServiceSuspend",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceSystemService_jvm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceVideoArbitration",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libkernel_devtoollog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libkernel_pre250mmap",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_unity",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 3,
+      "upstream_main_source_matches": 0,
+      "verified_names": 3
+    },
+    {
+      "library": "libSceAjmWVorbis",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceAppDbShellCoreClientForSystemService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceCoredump_debug",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceCoredump_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceDiscId",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceGameCustomDataDialogCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceGameLiveStreaming_debug",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceGameLiveStreaming_direct_streaming",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceGnmDebugReset",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceGnmDriverCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceGnmWaitFreeSubmit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceInvitationDialogCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceKbEmulate",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceNetConnSwitcher",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpAuthCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNpFriendListDialogCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNpPremiumAddcont",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePlayGo_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceShareForAcf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSisrSys",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemLogger2Game",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemModalDialog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemServiceClosedCaption",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemServiceEyeToEyeDistance",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServicePartyVoice",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemServicePowerControl",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemServiceTelemetry2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceSystemServiceTournamentMlg",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceVoiceRecognition",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceVrApp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceWebApp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceYouTubeAccountLinkStatus",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServiceYouTubeDeviceAuth",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceUserServiceForNpToolkit",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceUserServiceForShellCore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libSceVideoOutLatency",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutSecondary",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoOutServer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutVrrPeg",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libkernel_avcf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_cpumode",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libkernel_low_energy_mode",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libkernel_mmap",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_module_info",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libkernel_seh",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 2
+    },
+    {
+      "library": "libkernel_sync_on_address",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_wt_config",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libmono-profiler-log",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 2,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "WebAppBundle",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libBdplus",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libRnpsDevSupport.Dummy",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAcm_IrGeneration_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAgcDriverAsyncGraphicsRingEval_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceAppContentBundle",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAppContentGameTrials",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceAppContentMdid",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceAppContentPft",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceAppContentSc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceAudioOutDeviceService",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceContentDeleteForSf",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceDbgAudioOut",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceDbgAudioOut2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceDbgVideoOutSqa",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceEsvmDecoderModeEx",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceGic",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceGnmDebugModuleReset",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceGnmGetGpuCoreClockFrequency",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceHmd2ReprojectionBlankInBackground",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceHmd2ReprojectionMotionVector",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceHmd2ReprojectionMotionVector_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceHmd2ReprojectionPositional",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceHmd2Reprojection_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceHmd2Reprojection_vrremote_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceImeConsecutiveClauseConversionExtensions",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceImeDialogVoiceDictation",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceImeRemotePlayExtensions",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceImeVoiceDictation",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceJpegDec_jvm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNKWebCdlgInjectedBundle",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNetworkProfiler",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceNpAuthAuthorizedApp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNpEntitlementAccessGameTrials",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNpEntitlementAccessPft",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNpManagerIsPlusMember",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceNpProfileDialogCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceOpenPsId",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libScePngDec_jvm",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePsml_lightweight",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePsml_quality8K",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libScePsml_set_mfsrversion",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libScePsml_specularAA",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceRandom",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceRemoteplay_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceRnpsNKInjectedBundle",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSaveData_native_old_format",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceScreenShotDrc",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSharePlayCompat",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceShellCoreRedisModule",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServiceAppLaunchLink",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServiceDbg",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceForShellCoreOnly",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServicePadspkRouting",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServicePowerSaveLevel",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServiceStorageManagement",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceSystemServiceStore",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceTelemetry",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceTournament",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceUdsApp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceVideoServiceWebApp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceVideoToken",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceSystemServiceWebBrowser",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceTelemetryRedisModule",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceUserServiceAudioFocus",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceUserServicePlatformPrivacyWs1",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceUserServiceRegisteredUserIdList",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOut8kTrial_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoOutAniso",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutAspectRatio21_9Trial_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoOutAspectRatio32_9Trial_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoOutBaseMode4k",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutExtra",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutHdr",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutLatency_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutOverlay64bpp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoOutRawEdid",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutSqa_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutSubEx",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVideoOutSwitchBusFor64bpp",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoOutWindow2Pre400",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libSceVideoOutWqhd",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVoice_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVrTrackerDeviceRejection",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceVrTrackerFourDeviceAllowed",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libSceWebBrowserDialogLimited",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    },
+    {
+      "library": "libkernel_avlfmem",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_cpumode_platform",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_dmem_aliasing",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_dmem_aliasing2",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_dmem_aliasing2_for_dev",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_dmem_aliasing3",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_module_extension",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_module_extension_nosubmission",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_module_load_check",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libkernel_write_throttling",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "libsceHmdReprojectionMultilayer",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 1
+    },
+    {
+      "library": "monoprofilerlog",
+      "open_pr_added_matches": 0,
+      "qualified_records": 0,
+      "records": 1,
+      "upstream_main_source_matches": 0,
+      "verified_names": 0
+    }
+  ],
+  "limitations": [
+    "Cross-library NID repetition does not prove semantic equivalence or permit deletion.",
+    "A source definition or PR patch does not prove exported, registered, ABI-correct or runtime-tested behavior.",
+    "PR reservations are incomplete when pagination, patches or API requests fail.",
+    "Auto-discovered upstream NIDs are review inputs only; no new name or qualification is auto-approved.",
+    "Local generated/validated/published counts are historical saved snapshots, not live upstream measurements."
+  ],
+  "schema_version": 1,
+  "stubs": {
+    "fully_validated_saved_snapshot": 0,
+    "locally_generated_saved_snapshot": 963,
+    "main_nonthrowing_definition_record_matches": 0,
+    "main_throwing_marker_record_matches": 0,
+    "new_upstream_nid_candidates_for_review": 9261,
+    "published_upstream_saved_snapshot": 0,
+    "qualified_but_unverified_records_excluded": 1966,
+    "qualified_library_nid_records_recomputed": 11431,
+    "qualified_unique_nids_matched_in_main_source": 0,
+    "qualified_unique_nids_matched_in_open_pr_additions": 1034,
+    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 8124,
+    "qualified_unique_nids_recomputed": 9158,
+    "saved_qualified_unique_nids": 10750,
+    "saved_vs_recomputed_delta": 1592,
+    "statically_prepared_saved_snapshot": 963,
+    "upstream_source_definitions_seen": 16027,
+    "verified_catalog_identity_main_source_matches": 7753
+  }
+}
