@@ -20,6 +20,7 @@ import sys
 import urllib.error
 import urllib.request
 from upstream_sync import scan_open_prs_cached
+from render_readiness import render_report
 
 NID_SUFFIX = bytes.fromhex("518d64a635ded8c1e6b039b1c3e55230")
 DEF = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
@@ -265,7 +266,8 @@ def main():
                         "open_pr_added_matches": reserved_q})
     summary = {
         "schema_version": 1,
-        "generated_from": {"catalog_manifest_counts": manifest["counts"],
+        "generated_from": {"generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                           "catalog_manifest_counts": manifest["counts"],
                            "anyps5_main_commit": sha,
                            "anyps5_open_prs": pr_meta,
                            "upstream_sync": "source-scanned" if upstream else "unavailable"},
@@ -327,66 +329,7 @@ def main():
                           for key, record in sorted(source_candidates.items()))
     write_if_changed(root / "reports" / "upstream-source-candidates.jsonl",
                      proposals + ("\n" if proposals else ""))
-    s = summary["stubs"]
-    i = summary["inventory"]
-    lines = [
-        "# PS5 13.60 — live readiness", "",
-        "Generated from the checked-in inventory and a read-only AnyPS5 upstream checkout.",
-        "No executable stubs or firmware are included here.", "",
-        "## Export inventory and name recovery", "",
-        "| Metric | Count |", "|---|---:|",
-        f"| Export library/NID identities | {total:,} |",
-        f"| Firmware 13.60 observed exports | {i['firmware_13_60']:,} |",
-        f"| Historical-only references | {i['historical_only']:,} |",
-        f"| Logical libraries | {len(libraries):,} |",
-        f"| Published named records | {named_total:,} ({pct(named_total, total)}) |",
-        f"| Strict NID/name reverified records | {names:,} |",
-        f"| Named records requiring status/hash reconciliation | {strict_rehash_shortfall:,} |",
-        f"| Unresolved or withheld records | {total - named_total:,} |",
-        f"| Unique NIDs across all scopes | {all_uniq_nids:,} |",
-        f"| Extra cross-library NID records (not deletions) | {aliases:,} |",
-        f"| Repeated library/NID identities across partitions | {cross_scope_repeated_identities:,} |",
-        "",
-        "## Stub progress — distinct stages", "",
-        "| Measure | Count | Evidence level |", "|---|---:|---|",
-        f"| Qualified unique NIDs (recomputed) | {total_qualified:,} | Named inventory assessment, excluding withheld identities |",
-        f"| Strictly rehashed qualified unique NIDs | {len(strict_qualified_nids):,} | Stronger gate for upstream matching |"
-        f"| Generated throwing stubs | {s['locally_generated_saved_snapshot']:,} | Saved local snapshot |",
-        f"| Offline statically prepared | {s['statically_prepared_saved_snapshot']:,} | Saved local snapshot |",
-        f"| Fully validated | {s['fully_validated_saved_snapshot']:,} | Saved local snapshot |",
-        f"| Published to AnyPS5 | {s['published_upstream_saved_snapshot']:,} | Saved historical snapshot; **not live** |",
-        f"| Qualified NIDs with matching AnyPS5 main source definitions | {len(main_qualified_nids):,} | Source scan, not export/runtime validation |",
-        f"| Additional qualified NIDs seen in open-PR additions | {len(pending_qualified_nids):,} | Best-effort PR patch scan |",
-        f"| Qualified NIDs not seen by these scans | {len(unaccounted):,} | Not proof they are missing upstream |",
-        f"| Additional upstream NID observations needing review | {len(candidate_records):,} | No unverified names published |",
-        "",
-        f"**Saved qualified-count discrepancy:** {qualified_saved:,} published versus "
-        f"{total_qualified:,} recomputed (delta {discrepancy:+,}). "
-        "This report does not silently modify canonical assessments.", "",
-        "## Upstream observation", "",
-        f"- AnyPS5 main revision: {BT + sha + BT if sha else 'unavailable (offline generation)'}",
-        f"- Open PRs observed: {pr_meta['open_pr_total'] if pr_meta['open_pr_total'] is not None else 'unavailable'}",
-        f"- Open PRs scanned: {pr_meta['open_pr_scanned']}",
-        f"- Open PR audit complete: {'yes (patch availability subject to API)' if pr_meta['open_pr_coverage_complete'] else 'NO — do not treat reservations as exhaustive'}",
-        "",
-        "## Source and safety limits", "",
-        "Matching a source definition does not confirm its registration, exported NID, ABI, "
-        "correct runtime behavior, or merge status. A throwing marker indicates only a "
-        "source-level NotImplemented call. Multiple libraries sharing a NID are preserved "
-        "until ownership and equivalence have been independently resolved.", "",
-        "Qualification counts reflect existing catalog assessments with withheld names excluded; "
-        "strictly rehashed matches are a separate subset, not the full qualification inventory.", "",
-        "The strict rehash gate includes only records with verified_nid_binding status "
-        "and a matching local SHA1 NID; other named records are withheld from "
-        "automatic upstream reconciliation until separately audited.", "",
-        "Upstream-only observations are stored as **NID-only review candidates** in "
-        f"[upstream-review-queue.jsonl](reports/upstream-review-queue.jsonl); symbols "
-        "cannot be promoted to verified names or qualified stubs without independent review.", "",
-        "See [machine-readable progress](reports/progress.json), "
-        "[library breakdown](reports/library-progress.md), "
-        "[AnyPS5 integration rules](ANYPS5.md), and [publication policy](DATA_POLICY.md).", ""
-    ]
-    write_if_changed(root / "READINESS.md", "\n".join(lines))
+    write_if_changed(root / "READINESS.md", render_report(summary))
     table = ["# Library progress", "",
              "All identities remain represented; source definition matches are **not** validation.", "",
              "| Library | Exports | Named | Qualified | Main matches | Open PR matches |",
