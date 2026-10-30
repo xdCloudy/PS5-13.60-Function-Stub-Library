@@ -36915,3 +36915,14 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"sceNpPush2SetDataType","nid":"4CkpTzOLZKQ"}
+{"name":"sceNpSandboxIntCreateRequest","nid":"7IC43AzCrQU"}
+{"name":"sceNpManagerIntGetStreamingSandboxSecret","nid":"9aQPQa73zus"}
+{"name":"sceNpManagerIntSetStreamingSandboxSecret","nid":"LCgXXwy-Gpg"}
+{"name":"sceNpSandboxIntSetStreamingSandboxSecret","nid":"OTYUXXdJNbg"}
+{"name":"sceNpManagerIntGetClientCredentialJwtAccessToken","nid":"PuKANq-Ceqo"}
+{"name":"sceNpSandboxIntDeleteRequest","nid":"lkgRBuVtWFM"}
+{"name":"sceNpSandboxIntGetStreamingSandboxSecret","nid":"n1tgdduEHu8"}
+{"name":"sceNpSandboxIntAbortRequest","nid":"u0apsYwuTvE"}
+{"name":"sceNpManagerIntClearBcAccessToken","nid":"vMbEH4rT5CM"}
+{"name":"sceNpAsmClientExtTerminate","nid":"yODgcWKSa8Q"}

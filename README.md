@@ -9,7 +9,7 @@ disassembly, decompiled code, console data, or local research paths.
 | Observed in the extraction labeled PS5 13.60 | 302,338 |
 | Historical PS5 3.20 references without a matching local 13.60 export | 11,700 |
 | Total distinct library/NID identities | 314,038 |
-| Records with a recovered name | 47,085 |
+| Records with a recovered name | 47,096 |
 
 ## Start here
 

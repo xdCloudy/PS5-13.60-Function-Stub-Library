@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47085,
+    "resolved_names": 47096,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 266953,
+    "unresolved_or_withheld_names": 266942,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -3390,10 +3390,10 @@
       "sha256": "e2b3e42c0237e982b6cb5c6085d50e08810e4867588dccaf41144c814e328183"
     },
     {
-      "bytes": 237540,
+      "bytes": 239161,
       "path": "data/firmware-13.60/libscenpmanager-50685f94ae.jsonl",
       "records": 535,
-      "sha256": "12c73239c569e5cfef88ee52bf561e118caa52a6ffe2f17b4a18660c3dc5b724"
+      "sha256": "3632ad3ca8a367bbdea8c9ad3042f7c4e9ba597ecbf5a254a0a763ff64aa7200"
     },
     {
       "bytes": 6079,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85564,
+      "bytes": 86421,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "4abc44c7ba8c3c670af72667998df40fd40c9aabb92e098c24a831a140f0b41d"
+      "sha256": "5c953b9681dced685a3ed0783259164a11ae62ef2e145792b31f8b142047c4e0"
     },
     {
-      "bytes": 2581638,
+      "bytes": 2619289,
       "path": "data/verified-name-map.jsonl",
-      "records": 36849,
-      "sha256": "10d0fd3e633779b44224fa778c018b9dc140938ae90078cf54f315f90b02b211"
+      "records": 36928,
+      "sha256": "58d9c63792b86a904f150d976be8a660cf812648b5fbb00eef791c75eaa91eb3"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,10 +5976,10 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "a46de98732d4b73f13a2276e125a059fe16fecd06bd162fc35d9a278c341620d"
+    "sha256": "9a5f011446061666eeb5b759a5c099d7d35bcf8f58c6782cc0a626d6692e3e2e"
   },
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36917
+  "unique_verified_name_bindings": 36928
 }
