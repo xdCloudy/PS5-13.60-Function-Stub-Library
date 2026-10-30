@@ -1,0 +1,23 @@
+{
+  "baseline": "PR #1",
+  "baseline_sha": "37ee80c236a31ff652b0c4c99d71e02f61807e21",
+  "total_inventory_records": 314038,
+  "observed_13_60": 302338,
+  "historical_only": 11700,
+  "libraries_in_queue": 61,
+  "candidate_identities": 742,
+  "already_verified_in_icu_pr": 152,
+  "unresolved_requires_review": 588,
+  "withheld_by_publication_filter": 2,
+  "unique_pending_nids": 585,
+  "current_named_records": 46733,
+  "projected_named_if_588_approved": 47321,
+  "current_unique_named_nids": 36565,
+  "projected_unique_named_if_588_approved": 37150,
+  "current_unresolved_or_withheld": 267305,
+  "projected_unresolved_or_withheld": 266717,
+  "saved_qualified_unique_nids": 10750,
+  "read_only_corrected_unique_qualified_nids": 10749,
+  "newly_qualified_by_pr": 0,
+  "new_names_published_by_pr": 0
+}
