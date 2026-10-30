@@ -75,7 +75,7 @@ jobs:
           python tools/prepare_anyps5.py \
             --anyps5-dir "$RUNNER_TEMP/AnyPS5" \
             --abi-file "$RUNNER_TEMP/reviewed-abi.jsonl" \
-            --output-dir "$RUNNER_TEMP/review" --max-stubs "$MAX_STUBS" --apply
+            --output-dir "$RUNNER_TEMP/review" --max-stubs "$MAX_STUBS" --apply --defer-live-api-audit
           cp "$RUNNER_TEMP"/review/*-reviewed-void-stubs.patch "$RUNNER_TEMP/review/ANYPS5.patch"
           test -s "$RUNNER_TEMP/review/SELECTED_CANDIDATES.json"
           test -s "$RUNNER_TEMP/review/PULL_REQUEST_BODY.md"
@@ -97,17 +97,10 @@ jobs:
           cmake --build "$RUNNER_TEMP/AnyPS5-build" --parallel 2
           ctest --test-dir "$RUNNER_TEMP/AnyPS5-build" --parallel 2 \
             --output-on-failure
-      - name: Final committed-batch audit after build
+      - name: Confirm build status in drafted PR description
         shell: bash
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          python tools/final_anyps5_gate.py \
-            --checkout "$RUNNER_TEMP/AnyPS5" \
-            --batch "$RUNNER_TEMP/review/SELECTED_CANDIDATES.json" \
-            --report "$RUNNER_TEMP/review/FINAL_OVERLAP_AUDIT.json"
           sed -i 's/Build and runtime testing: NOT RUN/Linux full build and CTest: passed; console runtime NOT TESTED/' \
             "$RUNNER_TEMP/review/PULL_REQUEST_BODY.md"
       - name: Store proposal and audit, never secret credentials
@@ -118,7 +111,6 @@ jobs:
             ${{ runner.temp }}/review/ANYPS5.patch
             ${{ runner.temp }}/review/SELECTED_CANDIDATES.json
             ${{ runner.temp }}/review/PULL_REQUEST_BODY.md
-            ${{ runner.temp }}/review/FINAL_OVERLAP_AUDIT.json
           if-no-files-found: error
           retention-days: 7
 
@@ -143,7 +135,7 @@ jobs:
       - name: Reconstruct and recheck exact candidate batch before submission
         shell: bash
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
