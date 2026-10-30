@@ -45,6 +45,23 @@ class Source320Tests(unittest.TestCase):
         self.assertFalse(errors)
         self.assertEqual({r["name"] for r in obs}, {"sceAjmBatchWait", "sceAjmBatchCancel"})
 
+    def test_hyphenated_owners_and_dot_versions_are_registered(self):
+        for owner in ("gaikai-player", "libmonosgen-2.0", "libmono-profiler-log"):
+            with self.subTest(owner=owner):
+                obs, errors = parse_forwarders(example(owner=owner), owner + ".c")
+                self.assertEqual(errors, [])
+                self.assertEqual(len(obs), 1)
+                self.assertEqual(obs[0]["library"], owner)
+
+    def test_missing_owner_counts_all_skipped_registrations(self):
+        text = example().replace(
+            'if(sprx_dlopen("libSceAjm", &__handle)) return;', '')
+        text += 'if(sprx_dlsym(__handle, "12345678901", &__ptr_other)) return;'
+        obs, errors = parse_forwarders(text, "libkernel.c")
+        self.assertEqual(obs, [])
+        self.assertEqual(errors[0]["reason"], "ambiguous_or_missing_library")
+        self.assertEqual(errors[0]["count"], 2)
+
     def test_wrong_nid_quarantined(self):
         obs, errors = parse_forwarders(example(nid="12345678901"), "test.c")
         self.assertEqual(obs, [])
