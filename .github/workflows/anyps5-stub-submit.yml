@@ -135,7 +135,7 @@ jobs:
       - name: Reconstruct and recheck exact candidate batch before submission
         shell: bash
         env:
-          GITHUB_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
