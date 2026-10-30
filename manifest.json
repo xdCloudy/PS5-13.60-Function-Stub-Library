@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 46931,
+    "resolved_names": 47017,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 267107,
+    "unresolved_or_withheld_names": 267021,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -1932,10 +1932,10 @@
       "sha256": "275c125204232904310f59b3b13df32f3434809b32c1e6e593d683ad25cae06b"
     },
     {
-      "bytes": 62912,
+      "bytes": 62774,
       "path": "data/firmware-13.60/libreactnative-modules-vsh-webapplauncher-46dbce980c.jsonl",
       "records": 138,
-      "sha256": "6542ad4a1eb408f54dbfc25cda0c1847939a38625854d95ffe30122ed80910e9"
+      "sha256": "fc4fda65604ce13bb40ea5682fc8f493a116c583fed1fe69b961601aae487f19"
     },
     {
       "bytes": 354,
@@ -3048,10 +3048,10 @@
       "sha256": "4569f45d121d2f366f06bc0f81a8176a8c4fe0d16b1cc7357f47d2dba4b8e861"
     },
     {
-      "bytes": 1230694,
+      "bytes": 1238105,
       "path": "data/firmware-13.60/libscelibcinternal-f9a6d6abff.jsonl",
       "records": 2688,
-      "sha256": "60c4774f4d6bd4f6cfb1969a92e84d3c51ea3282bd211af729d165f7599c4666"
+      "sha256": "ce893acf364b6f3024f6c8a8b68c36ba01f9c795855591afa75b8de5d2bd1ed3"
     },
     {
       "bytes": 3076,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 86420,
+      "bytes": 85563,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "5802a092852d8036b80dc7e48c685fe6406cd48bd7bb1dd32ae8ace26d8379c9"
+      "sha256": "e856b5fe53f267d298451f430038d496030b79e44349892528350d2cb9b05d8d"
     },
     {
-      "bytes": 2609771,
+      "bytes": 2577581,
       "path": "data/verified-name-map.jsonl",
-      "records": 36763,
-      "sha256": "579e7a92c7d961c7306343a4b049d7161bc6779207f8b9f09231e1d56d7279c5"
+      "records": 36849,
+      "sha256": "f7a770cfaa69c8d250f57cb991ba22ababc7ccc38c5ef48e4f3c1ea127422ae4"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,7 +5976,7 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "63b9bebb75b3b4c9befce7091063dfc3df299b0deebc8dc32ad8c54e2bf991e0"
+    "sha256": "69e811f2ca5a2f2c9de190c61b4afc48faa4650678f6bce773155474b5847176"
   },
   "report_image": {
     "bytes": 266263,
@@ -5985,5 +5985,5 @@
   },
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36763
+  "unique_verified_name_bindings": 36849
 }
