@@ -324,7 +324,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
-| [libSceLibcInternal](libraries/libscelibcinternal-f9a6d6abff.md) | 2,688 | 2,593 | 11 |
+| [libSceLibcInternal](libraries/libscelibcinternal-f9a6d6abff.md) | 2,688 | 2,679 | 11 |
 | [libSceLibcInternalExt](libraries/libscelibcinternalext-4f3e2b94d0.md) | 7 | 7 | 0 |
 | [libSceLibreSSL](libraries/libscelibressl-5289bab5fc.md) | 414 | 414 | 0 |
 | [libSceLibreSsl](libraries/libscelibressl-d2f008391c.md) | 399 | 399 | 0 |

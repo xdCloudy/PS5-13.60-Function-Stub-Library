@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 2,688 |
-| Named | 2,593 |
-| Unresolved or withheld | 95 |
+| Named | 2,679 |
+| Unresolved or withheld | 9 |
 | Qualified stub candidate records | 11 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -41,3 +41,6 @@ A bounded preview; the inventory file contains the complete library.
 | `+KSnjvZ0NMc` | `srand48` |
 | `+Nc8JGdVLQs` | `_ZNSt9exceptionD0Ev` |
 | `+P6FRGH4LfA` | `memmove` |
+| `+Pxwa79wvyA` | `_Z25sceLibcForceTlsDestructori` |
+| `+RuThw5axA4` | `_ZNKSt8time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE3getES3_S3_RSt8ios_baseRNSt5_IosbIiE8_IostateEP2tmcc` |
+| `+Uuj++A+I14` | `_ZTv0_n24_NSiD1Ev` |
