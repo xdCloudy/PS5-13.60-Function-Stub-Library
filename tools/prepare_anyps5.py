@@ -16,7 +16,9 @@ import subprocess
 import sys
 
 from update_progress import load_inventory, nid_for
-from upstream_sync import scan_open_prs_cached
+from candidate_overlap import check_candidates, save_report
+from layout_patch import plan, apply_plan
+from anyps5_metadata import scan_files
 
 MAX_BATCH = 150
 SAFE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
@@ -30,15 +32,9 @@ def git(cwd: Path, *args: str) -> str:
 
 
 def inspect_existing(checkout: Path) -> set[tuple[str, str]]:
-    seen = set()
-    root = checkout / "core/libs/prx"
-    for path in sorted(root.rglob("*")):
-        if path.suffix not in {".cpp", ".cc", ".h", ".hpp", ".cxx"}:
-            continue
-        owner = path.relative_to(root).parts[0].casefold()
-        content = path.read_text(encoding="utf-8", errors="replace")
-        seen.update((owner, nid_for(name)) for name in REG.findall(content))
-    return seen
+    """Reserve declarations, definitions, and literal NID exports in every library."""
+    return set(scan_files(checkout))
+
 
 
 def read_reviews(path: Path) -> list[dict]:
@@ -99,36 +95,13 @@ def choose(reviews: list[dict], known: dict, verified: set,
 
 
 def apply(checkout: Path, candidates: list[dict], output_dir: Path) -> Path:
+    """Build a library-aware patch without altering unrelated upstream macros."""
     if not candidates:
         raise ValueError("No eligible stub candidates; cannot create empty patch")
     lib = candidates[0]["library"]
-    root = checkout / "core/libs/prx" / lib
-    export, header = root / "Export.cpp", root / "include/Api.hpp"
-    if not export.is_file() or not header.is_file():
-        raise ValueError("Missing existing registered system library files")
-    old_cpp, old_hpp = export.read_text(encoding="utf-8"), header.read_text(encoding="utf-8")
-    if 'extern "C"' not in old_cpp or 'extern "C"' not in old_hpp:
-        raise ValueError("Unexpected AnyPS5 C ABI layout; manual review required")
-    if "APS5_DUMMY_FUN" in old_cpp:
-        old_cpp = old_cpp.replace("APS5_DUMMY_FUN", "")
-    bodies = []
-    declarations = []
-    for r in candidates:
-        declaration = f'void APS5_VABI {r["name"]}({r["parameters"]})'
-        bodies.append(declaration + " {\n    NotImplemented_nid_no_patch(__func__);\n}\n")
-        declarations.append(declaration + ";\n")
-    # Use final brace only when it is the closing extern-C scope, otherwise block.
-    if not old_cpp.rstrip().endswith("}") or not old_hpp.rstrip().endswith("}"):
-        raise ValueError("Unexpected final extern-C scope")
-    old_cpp = old_cpp.rstrip()
-    old_hpp = old_hpp.rstrip()
-    export.write_text(old_cpp[:-1] + "\n" + "\n".join(bodies) + "\n}\n", encoding="utf-8")
-    header.write_text(old_hpp[:-1] + "\n" + "".join(declarations) + "\n}\n", encoding="utf-8")
-    output_dir.mkdir(parents=True, exist_ok=True)
-    patch = output_dir / (lib + "-reviewed-void-stubs.patch")
-    patch.write_text(git(checkout,"diff","--",str(export.relative_to(checkout)),
-                         str(header.relative_to(checkout)))+"\n",encoding="utf-8")
-    return patch
+    planned = plan(checkout, candidates)
+    return apply_plan(checkout, planned, output_dir / (lib + "-reviewed-void-stubs.patch"))
+
 
 
 def main():
@@ -149,6 +122,7 @@ def main():
     reviews=read_reviews(args.abi_file)
     occupied=inspect_existing(checkout)
     reserved=set()
+    initial_main_sha = None
     if args.apply:
         if git(checkout,"status","--porcelain"):
             raise ValueError("AnyPS5 checkout must be clean before preparation")
@@ -160,28 +134,39 @@ def main():
                        check=True,stdout=subprocess.DEVNULL)
         if git(checkout,"merge-base","HEAD","origin/main") != git(checkout,"rev-parse","origin/main"):
             raise ValueError("Contribution branch is not based on current AnyPS5 main")
-        main_occupied = inspect_existing(checkout)
-        # Reservations may include verified and unverified names. A complete
-        # scan is required; capped or missing-patch evidence is never clearance.
-        pr_known, pr_unknown, info = scan_open_prs_cached(
-            os.getenv("GITHUB_TOKEN", ""), known, verified, nid_for,
-            root/"reports/open-pr-cache.json", 100000)
-        if not info["open_pr_coverage_complete"]:
-            raise ValueError("Incomplete open-PR head scan: publication blocked")
-        if not info.get("open_pr_symbol_coverage_complete", False):
-            raise ValueError("Open-PR symbol forms are not exhaustively scanned; publication blocked")
-        occupied |= main_occupied
-        reserved = set(pr_known) | set(pr_unknown)
+        initial_main_sha = git(checkout, "rev-parse", "origin/main")
+        occupied = inspect_existing(checkout)
     selected,rejected=choose(reviews,known,verified,occupied,reserved,args.max_stubs)
     print(json.dumps({"candidates":len(reviews),"ready_to_prepare":len(selected),
                       "blocked":rejected,"overlap_checked":bool(args.apply)},indent=2))
     if args.apply and selected:
+        # Live audit, not the historical dashboard cache. Every candidate
+        # needs positive collision clearance from every current PR head.
+        audit = check_candidates(selected, occupied, os.getenv("GITHUB_TOKEN", ""), nid_for)
+        save_report(args.output_dir / "CANDIDATE_OVERLAP_AUDIT.json", audit)
+        blocked = [r for r in audit["candidates"] if not r["verified_clear"]]
+        if blocked:
+            raise ValueError(f"Candidate-level overlap not verified: {blocked[:5]}")
+        subprocess.run(["git", "-C", str(checkout), "fetch", "origin", "main"],
+                       check=True, stdout=subprocess.DEVNULL)
+        if git(checkout, "rev-parse", "origin/main") != initial_main_sha:
+            raise ValueError("Upstream main advanced during PR audit; rerun on new base")
+        if inspect_existing(checkout) != occupied:
+            raise ValueError("Current upstream collision inventory changed")
         patch=apply(checkout,selected,args.output_dir)
-        subprocess.run([sys.executable,"tools/check_conventions.py","--base","origin/main"],
-                       cwd=checkout,check=True)
+        try:
+            subprocess.run([sys.executable,"tools/check_conventions.py","--base","origin/main"],
+                           cwd=checkout,check=True)
+            branch=git(checkout,"branch","--show-current")
+            subprocess.run([sys.executable,"tools/pr_overlap.py","--branch",branch],
+                           cwd=checkout,check=True)
+        except BaseException:
+            # Restore only our modified files, never reset the contribution branch.
+            subprocess.run(["git", "-C", str(checkout), "restore", "--",
+                            "core/libs/prx/" + selected[0]["library"]],
+                           check=True)
+            raise
         branch=git(checkout,"branch","--show-current")
-        subprocess.run([sys.executable,"tools/pr_overlap.py","--branch",branch],
-                       cwd=checkout,check=True)
         pr_body = """### What
 
 Prepare {count} reviewed, throwing-only function stubs in {library}.
