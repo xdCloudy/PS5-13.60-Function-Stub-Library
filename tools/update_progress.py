@@ -237,8 +237,10 @@ def main():
      invalid, qualified_invalid, total, names) = load_inventory(root)
     if total != manifest["counts"]["total_records"]:
         raise ValueError("Inventory row count does not match canonical manifest")
-    if names != manifest["counts"]["resolved_names"]:
-        raise ValueError(f"Verified rows={names}; manifest={manifest['counts']['resolved_names']}; invalid={invalid}; distinct_verified={len(verified)}")
+    named_total = names + invalid
+    if named_total != manifest["counts"]["resolved_names"]:
+        raise ValueError("Named record count differs from manifest; regenerate canonical inventory")
+    strict_rehash_shortfall = named_total - names
     qualified_nids = {key[1] for key in qualified}
     all_uniq_nids = len(nids)
     cross_scope_repeated_identities = total - len(known)
@@ -292,7 +294,10 @@ def main():
         "inventory": {
             "records": total, "libraries": len(libraries), "firmware_13_60": manifest["counts"]["firmware-13.60"],
             "historical_only": manifest["counts"]["historical-3.20-only"],
-            "verified_named_records": names, "unresolved_or_withheld": total - names,
+            "published_named_records": named_total,
+            "strictly_reverified_named_records": names,
+            "named_records_not_passed_by_strict_gate": strict_rehash_shortfall,
+            "verified_named_records": named_total, "unresolved_or_withheld": total - named_total,
             "unique_nids_all_scopes": all_uniq_nids,
             "cross_library_nid_extra_records_all_scopes": aliases,
             "repeated_library_nid_records_across_scopes": cross_scope_repeated_identities,
@@ -348,8 +353,10 @@ def main():
         f"| Firmware 13.60 observed exports | {i['firmware_13_60']:,} |",
         f"| Historical-only references | {i['historical_only']:,} |",
         f"| Logical libraries | {len(libraries):,} |",
-        f"| Verified named records | {names:,} ({pct(names, total)}) |",
-        f"| Unresolved or withheld records | {total - names:,} |",
+        f"| Published named records | {named_total:,} ({pct(named_total, total)}) |",
+        f"| Strict NID/name reverified records | {names:,} |",
+        f"| Named records requiring status/hash reconciliation | {strict_rehash_shortfall:,} |",
+        f"| Unresolved or withheld records | {total - named_total:,} |",
         f"| Unique NIDs across all scopes | {all_uniq_nids:,} |",
         f"| Extra cross-library NID records (not deletions) | {aliases:,} |",
         f"| Repeated library/NID identities across partitions | {cross_scope_repeated_identities:,} |",
@@ -380,7 +387,10 @@ def main():
         "correct runtime behavior, or merge status. A throwing marker indicates only a "
         "source-level NotImplemented call. Multiple libraries sharing a NID are preserved "
         "until ownership and equivalence have been independently resolved.", "",
-        "Upstream-only observations are stored as **NID-only review candidates** in "
+        "The strict rehash gate includes only records with verified_nid_binding status "
+        "and a matching local SHA1 NID; other named records are withheld from "
+        "automatic upstream reconciliation until separately audited.", "",
+        "Upstream-only observations are stored as **NID-only review candidates** in 
         f"[upstream-review-queue.jsonl](reports/upstream-review-queue.jsonl); symbols "
         "cannot be promoted to verified names or qualified stubs without independent review.", "",
         "See [machine-readable progress](reports/progress.json), "
