@@ -66,7 +66,12 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
                     path = file.get("filename", "")
                     match = SOURCE.match(path)
                     if not match:
-                        if CENTRAL.search(path):
+                        # Source, build and code-generation changes outside
+                        # the library tree might alter global registrations.
+                        # Docs/assets are irrelevant unless explicitly NID-related.
+                        if (CENTRAL.search(path) or
+                                re.search(r"\\.(?:cpp|cc|cxx|h|hpp|py|cmake|json|yml|yaml)$", path, re.I)
+                                and not path.startswith(("docs/", ".github/ISSUE_TEMPLATE/"))):
                             unknown_global = True
                         continue
                     library = match.group(1).casefold()
