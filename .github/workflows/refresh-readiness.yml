@@ -7,6 +7,8 @@ on:
       - 'reports/progress.json'
       - 'reports/library-progress.md'
       - 'reports/upstream-review-queue.jsonl'
+      - 'reports/upstream-source-candidates.jsonl'
+      - 'reports/open-pr-cache.json'
   pull_request:
     branches: [main]
   schedule:
@@ -56,6 +58,8 @@ jobs:
           print(f"- Qualified unique NIDs: {s['qualified_unique_nids_recomputed']:,}")
           print(f"- AnyPS5 main definition matches: {s['qualified_unique_nids_matched_in_main_source']:,}")
           print(f"- Open-PR patch matches: {s['qualified_unique_nids_matched_in_open_pr_additions']:,}")
+          print(f"- Open PR heads indexed: {d['generated_from']['anyps5_open_prs']['open_pr_scanned']:,} / {d['generated_from']['anyps5_open_prs']['open_pr_total']:,}")
+          print(f"- Public source-name proposals staged: {s['auto_imported_public_source_name_proposals']:,}")
           print(f"- Open PR scan complete: {d['generated_from']['anyps5_open_prs']['open_pr_coverage_complete']}")
           print("- Source matches do not guarantee export registration or runtime validation.")
           PY
@@ -64,7 +68,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl
+          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl reports/upstream-source-candidates.jsonl reports/open-pr-cache.json
           if git diff --cached --quiet; then
             echo "Progress files are current."
             exit 0
@@ -103,4 +107,5 @@ jobs:
             reports/progress.json
             reports/library-progress.md
             reports/upstream-review-queue.jsonl
+            reports/upstream-source-candidates.jsonl
           retention-days: 14
