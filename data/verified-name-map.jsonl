@@ -36915,3 +36915,9 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"sceAgdGetWavefrontPc","nid":"6fugJiMPLGQ"}
+{"name":"sceAgdGetWavefrontErrorIds","nid":"CkL1hUyKZyo"}
+{"name":"sceAgdGetWavefrontStopReason","nid":"IfCY5tDfgK8"}
+{"name":"sceAgdGetWavefrontErrorCount","nid":"JvVqPfac9vE"}
+{"name":"sceAgdGetWavefrontBatchAddress","nid":"cRjqDvsrGkg"}
+{"name":"sceAgdGetWavefrontShaderGuid","nid":"dN1zf573IKU"}

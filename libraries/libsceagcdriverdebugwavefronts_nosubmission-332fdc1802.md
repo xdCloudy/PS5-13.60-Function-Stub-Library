@@ -1,24 +1,12 @@
-# libSceAgcDriverDebugWavefronts_nosubmission
+## Named export preview
 
-[All libraries](../LIBRARIES.md) · [Readiness](../READINESS.md) · [Data dictionary](../DATA_DICTIONARY.md)
+A bounded preview; the inventory file contains the complete library.
 
-| Measure | Records |
-|---|---:|
-| Export identities | 7 |
-| Named | 0 |
-| Unresolved or withheld | 7 |
-| Qualified stub candidate records | 0 |
-
-Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
-
-## Inventory files
-
-| Evidence scope | Records | Download |
-|---|---:|---|
-| firmware-13.60 | 7 | [JSON Lines](../data/firmware-13.60/libsceagcdriverdebugwavefronts_nosubmission-332fdc1802.jsonl) |
-
-## Ownership classification
-
-| Classification | Records |
-|---|---:|
-| ownership_pending | 7 |
+| NID | Symbol |
+|---|---|
+| `6fugJiMPLGQ` | `sceAgdGetWavefrontPc` |
+| `CkL1hUyKZyo` | `sceAgdGetWavefrontErrorIds` |
+| `IfCY5tDfgK8` | `sceAgdGetWavefrontStopReason` |
+| `JvVqPfac9vE` | `sceAgdGetWavefrontErrorCount` |
+| `cRjqDvsrGkg` | `sceAgdGetWavefrontBatchAddress` |
+| `dN1zf573IKU` | `sceAgdGetWavefrontShaderGuid` |
