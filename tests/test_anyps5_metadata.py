@@ -10,6 +10,22 @@ from update_progress import nid_for
 
 
 class AnyPS5SymbolStateTests(unittest.TestCase):
+    def test_explicit_nid_alias_is_registration_evidence_not_abi(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            lib=Path(tmp)/"core/libs/prx/libSceExample"
+            lib.mkdir(parents=True)
+            nid="H2e8t5ScQGc"
+            (lib/"Export.cpp").write_text(
+                '// APS5_EXPORT("12345678901", fakeComment);\\n'
+                'APS5_EXPORT("H2e8t5ScQGc", sceExampleUnknown_nid_no_patch);\\n')
+            rows=scan_files(Path(tmp))
+            entry=rows[("libsceexample",nid)]
+            self.assertTrue(entry["explicit_alias_seen"])
+            self.assertTrue(entry["export_registered"])
+            self.assertFalse(entry["definition_seen"])
+            self.assertIsNone(entry["abi_verified"])
+            self.assertNotIn(("libsceexample","12345678901"),rows)
+
     def test_declarations_definitions_and_build_presence_are_distinct(self):
         with tempfile.TemporaryDirectory() as tmp:
             lib=Path(tmp)/"core/libs/prx/libSceExample"
