@@ -139,6 +139,26 @@ def build(root: Path) -> dict:
             "Priority score indicates triage value, not safe stub-generation eligibility."
         ],
     }
+    # Append an actual observed point only when source-backed metrics or PR
+    # scan coverage change. Repeated identical refreshes do not create trends.
+    history_path = root / "reports/coverage-history.json"
+    history = json.loads(history_path.read_text(encoding="utf-8")) if history_path.exists() else []
+    entry = {
+        "observed_at_utc": matrix["generated_at_utc"],
+        "indexed": total,
+        "strictly_verified_names": inv["strictly_reverified_named_records"],
+        "qualified_unique_nids": st["qualified_unique_nids_recomputed"],
+        "anyps5_main_matches": st["anyps5_main_tracked_source_records_live"],
+        "open_pr_scanned": pr["open_pr_scanned"],
+        "anyps5_commit": matrix["source_revisions"]["anyps5_main"],
+        "ps5_320_commit": matrix["source_revisions"]["ps5_320"],
+    }
+    if not history or {k:v for k,v in history[-1].items() if k != "observed_at_utc"} != {
+            k:v for k,v in entry.items() if k != "observed_at_utc"}:
+        history.append(entry)
+    history = history[-120:]
+    matrix["trends"] = history
+    write_if_changed(history_path, json.dumps(history, indent=2, sort_keys=True) + "\n")
     report = json.dumps(matrix, indent=2, sort_keys=True) + "\n"
     write_if_changed(root / "reports/coverage-matrices.json", report)
     write_if_changed(root / "site/data.json", report)
@@ -206,6 +226,14 @@ def render_markdown(doc):
     for key, value in h.items():
         value = json.dumps(value, sort_keys=True) if isinstance(value, dict) else number(value)
         lines.append(f"| {key.replace('_', ' ')} | {value} |")
+    lines += ["", "### Actual progress trend", "",
+              "| Observed at (UTC) | Indexed | Strictly verified names | AnyPS5 main source matches | Open PR heads scanned |",
+              "|---|---:|---:|---:|---:|"]
+    for point in doc.get("trends", [])[-20:]:
+        lines.append(f"| {point['observed_at_utc']} | {number(point['indexed'])} | "
+                     f"{number(point['strictly_verified_names'])} | "
+                     f"{number(point['anyps5_main_matches'])} | "
+                     f"{number(point['open_pr_scanned'])} |")
     lines += ["", "### Coverage denominators", ""]
     for key, description in doc["denominators"].items():
         lines.append(f"- **{key}:** {description}")
