@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47017,
+    "resolved_names": 47085,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 267021,
+    "unresolved_or_withheld_names": 266953,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -5981,5 +5981,5 @@
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36849
+  "unique_verified_name_bindings": 36917
 }
