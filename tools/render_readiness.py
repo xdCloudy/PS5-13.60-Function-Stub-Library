@@ -13,6 +13,21 @@ def render_report(doc: dict) -> str:
     total, named, q = i["records"], i["published_named_records"], s["qualified_unique_nids_recomputed"]
     gen = s["locally_generated_saved_snapshot"]
     bt = chr(96)
+    if pr.get("open_pr_total") is None:
+        pr_line = "**Not scanned in this preview.** Open PR reservations are unknown, not zero."
+        pr_note = "No current PR-head completeness evidence is available for this report."
+        pr_cache = "Cache and PR match counts are unavailable until a live scan runs."
+    else:
+        pr_line = (f"{bt}{bar(pr['open_pr_scanned'], pr['open_pr_total'] or 0)}{bt} "
+                   f"**{n(pr['open_pr_scanned'])} / {n(pr['open_pr_total'])} "
+                   f"({pct(pr['open_pr_scanned'], pr['open_pr_total'])})** current open PR heads indexed.")
+        pr_note = ("**All current heads scanned.** Other symbol forms may still be missing."
+                   if pr["open_pr_coverage_complete"] else
+                   f"**Partial:** {n(pr.get('open_pr_unscanned', pr['open_pr_total'] - pr['open_pr_scanned']))} "
+                   "PR heads remain. Scheduled runs accumulate SHA-keyed observations.")
+        pr_cache = (f"Cache hits: {n(pr.get('open_pr_cached',0))} · "
+                    f"newly scanned: {n(pr.get('open_pr_newly_scanned',0))} "
+                    f"· failed checks: {n(pr.get('open_pr_errors',0))}.")
     revision = meta.get("anyps5_main_commit")
     link = (f"[{revision[:12]}](https://github.com/boykopovar/AnyPS5/commit/{revision})" if revision else "not scanned")
     lines = [
@@ -61,15 +76,7 @@ def render_report(doc: dict) -> str:
         f"| Qualified NIDs not observed by scans | {n(s['qualified_unique_nids_not_matched_in_main_or_pr_scans'])} | **Not proof of no overlap** |",
         "",
         "### Open PR coverage", "",
-        f"{bt}{bar(pr['open_pr_scanned'],pr['open_pr_total'] or 0)}{bt} "
-        f"**{n(pr['open_pr_scanned'])} / {n(pr['open_pr_total'] or 0)} "
-        f"({pct(pr['open_pr_scanned'],pr['open_pr_total'] or 0)})** current open PR heads indexed.", "",
-        ("**All current heads scanned.** The source parser still cannot guarantee every possible overlap."
-         if pr["open_pr_coverage_complete"] else
-         f"**Partial:** {n(pr.get('open_pr_unscanned', (pr['open_pr_total'] or 0)-pr['open_pr_scanned']))} "
-         "PR heads remain. Scheduled runs accumulate results in an SHA-keyed cache."),
-        f"Cache hits: {n(pr.get('open_pr_cached',0))} · newly scanned: {n(pr.get('open_pr_newly_scanned',0))} "
-        f"· failed checks: {n(pr.get('open_pr_errors',0))}.",
+        pr_line, "", pr_note, pr_cache,
         "**Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**", "",
         "## Automatically imported AnyPS5 source evidence", "",
         f"**{n(s.get('auto_imported_public_source_name_proposals',0))}** public source-name proposals "
