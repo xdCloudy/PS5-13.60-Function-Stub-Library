@@ -43,7 +43,7 @@ def pick_file(folder: Path, *, header: bool) -> tuple[Path, str, int]:
                 candidates.append((path, source, right))
     if not candidates:
         raise ValueError("No existing extern-C ABI declaration/definition layout; manual placement required")
-    libname = folder.name.removeprefix("lib")
+    libname = folder.name.removeprefix("lib").removeprefix("Sce")
     preferred = (["Api.hpp", libname + ".hpp", folder.name + ".hpp"] if header
                  else ["Export.cpp", "Unimplemented.cpp"])
     for basename in preferred:
