@@ -1,0 +1,87 @@
+name: Stage reviewed catalogue import proposals
+
+on:
+  workflow_run:
+    workflows: ["Refresh PS5 readiness and AnyPS5 coverage"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catalogue-import-proposals
+  cancel-in-progress: false
+
+jobs:
+  propose:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Validate trusted catalogue scripts
+        run: python -m unittest discover -s tests -v
+      - name: Stage public import candidates (no canonical mutation)
+        run: python tools/stage_catalogue_import.py --output "$RUNNER_TEMP/catalogue-proposal.json"
+      - name: Publish a deduplicated draft review PR when needed
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          proposal="$RUNNER_TEMP/catalogue-proposal.json"
+          if [[ ! -s "$proposal" ]]; then
+            echo "No new reviewable identities; no PR required." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          key="$(python -c 'import json,hashlib,sys; x=json.load(open(sys.argv[1])); keys=sorted({(r["library"].casefold(),r["nid"],r["proposed_name"]) for r in x["candidates"]}); print(hashlib.sha256(json.dumps(keys).encode()).hexdigest()[:16])' "$proposal")"
+          count="$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["reviewable_identity_count"])' "$proposal")"
+          branch="automation/catalogue-review-${key}"
+          if [[ "$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$branch" --state all --json number --jq 'length')" != "0" ]]; then
+            echo "A prior catalogue review PR already covers these exact identities." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "Branch already exists. Refusing to overwrite it." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git switch -c "$branch"
+          mkdir -p reports
+          cp "$proposal" reports/catalogue-import-proposal.json
+          git add reports/catalogue-import-proposal.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "data: stage public identities for independent review [skip ci]"
+          git push origin "HEAD:$branch"
+          cat > "$RUNNER_TEMP/catalogue-pr-body.md" <<MARKDOWN
+          ### What
+
+          This draft stages **${count} identity proposals** backed by public 3.20/AnyPS5 source metadata. No canonical inventory record is overwritten.
+
+          ### Tested
+
+          - Import metadata rehashed against the verified NID algorithm
+          - Source revisions and catalogue manifest consistency checked
+          - Unsafe names and source conflicts withheld
+          - Firmware scope, ABI, registration and behaviour **not automatically certified**
+
+          ### Review required
+
+          Independently assess licensing, ownership, name provenance and firmware evidence before separately regenerating canonical shards and the verified-name map. This PR must not be auto-merged.
+
+          The PR is deliberately metadata-only and contains no C/C++ function bodies.
+          MARKDOWN
+          gh pr create --repo "$GITHUB_REPOSITORY" --head "$branch" --base main --draft \
+            --title "data: review ${count} publicly sourced catalogue identities" \
+            --body-file "$RUNNER_TEMP/catalogue-pr-body.md"
+          echo "Draft catalogue review PR opened for ${count} identities." >> "$GITHUB_STEP_SUMMARY"
