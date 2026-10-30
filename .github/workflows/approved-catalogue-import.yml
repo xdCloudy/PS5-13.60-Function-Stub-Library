@@ -1,0 +1,86 @@
+name: Apply approved catalogue names
+
+on:
+  workflow_run:
+    workflows: ["Refresh PS5 readiness and AnyPS5 coverage"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: approved-catalogue-import
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.head_repository.full_name == github.repository && github.event.workflow_run.conclusion == 'success' && (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'schedule' || github.event.workflow_run.event == 'workflow_dispatch' || github.event.workflow_run.event == 'repository_dispatch'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Regression suite
+        run: python -m unittest discover -s tests -v
+      - name: Check trusted approvals
+        id: review
+        shell: bash
+        run: |
+          if [[ -s approvals/catalogue-name-approvals.jsonl ]]; then
+            echo "has_approvals=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No independently approved names on main." >> "$GITHUB_STEP_SUMMARY"
+            echo "has_approvals=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Apply independently reviewed records
+        if: steps.review.outputs.has_approvals == 'true'
+        run: python tools/apply_approved_imports.py --report "$RUNNER_TEMP/approved-import-ledger.json"
+      - name: Draft a non-overlapping canonical import PR
+        if: steps.review.outputs.has_approvals == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          count="$(python -c 'import json,os; d=json.load(open(os.environ["RUNNER_TEMP"]+"/approved-import-ledger.json")); print(d["canonical_names_added"])')"
+          if [[ "$count" = "0" ]]; then
+            echo "No approved canonical changes." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch="automation/approved-catalogue-import"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "::error::Approved-import branch exists. Reconcile it instead of opening an overlapping PR."
+            exit 1
+          fi
+          git switch -c "$branch"
+          cp "$RUNNER_TEMP/approved-import-ledger.json" reports/approved-import-ledger.json
+          git add data/ libraries/ manifest.json readiness.json LIBRARIES.md reports/approved-import-ledger.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "data: apply independently approved name recoveries"
+          git push origin "HEAD:$branch"
+          cat > "$RUNNER_TEMP/body.md" <<EOF
+          ## What
+          Proposes $count independently approved name recoveries for existing canonical identities.
+
+          No new NIDs, firmware-scope upgrades, prototypes or implementations were introduced.
+
+          ## Tested
+          - Rehash, publication policy, existing ownership and independent-review attestations
+          - Canonical manifest, name map, index and library documents regenerated
+          - Repository Python test suite
+
+          ## Review required
+          Independently confirm each approval record and its cited evidence. Review attestations are not cryptographic proof. This PR is intentionally a draft.
+          EOF
+          gh pr create --head "$branch" --base main --draft \
+            --title "data: apply $count independently approved names" --body-file "$RUNNER_TEMP/body.md"
+          echo "Prepared draft approved-name PR for $count records." >> "$GITHUB_STEP_SUMMARY"
