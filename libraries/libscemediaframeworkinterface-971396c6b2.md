@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 225 |
-| Named | 139 |
-| Unresolved or withheld | 86 |
+| Named | 147 |
+| Unresolved or withheld | 78 |
 | Qualified stub candidate records | 139 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -35,9 +35,12 @@ A bounded preview; the inventory file contains the complete library.
 | `2cAOxQQ2eMM` | `sceMediaFwGetResolution` |
 | `34h5lHqxORI` | `sceMediaFwMediaSampleDelete` |
 | `3W7C6hTospI` | `sceMediaFwSetAllLoop` |
+| `3n9Quq9m3Co` | `sceMediaFwMediaKeySystemAccessDeleteMediaKeys` |
 | `47Msr7Zjey8` | `sceMediaFwGetPlaybackRate` |
 | `4PQhrMOSD6U` | `sceMediaFwSetVolume` |
+| `4V5LZ62mN8w` | `sceMediaFwMediaKeyStatusMapHas` |
 | `56n3lSTmSIQ` | `sceMediaFwAddEsvmDecoder2` |
 | `5lNTWtwAD5Y` | `sceMediaFwSetPlaybackRange` |
 | `5w+Dk7yERtM` | `sceMediaFwAddSrcWithoutParam` |
 | `64Mrrmy8m2g` | `sceMediaFwGenerateThumbnail` |
+| `7XAzdmnlsog` | `sceMediaFwAudioTrackGetEnabled` |

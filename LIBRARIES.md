@@ -351,7 +351,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceMediaAppSharedStorageMa](libraries/libscemediaappsharedstoragema-868191c19d.md) | 5 | 0 | 0 |
 | [libSceMediaAppSharedStorageMaDbg](libraries/libscemediaappsharedstoragemadbg-a01493b389.md) | 6 | 0 | 0 |
 | [libSceMediaAppSharedStorageMc](libraries/libscemediaappsharedstoragemc-3ca5617d10.md) | 8 | 0 | 0 |
-| [libSceMediaFrameworkInterface](libraries/libscemediaframeworkinterface-971396c6b2.md) | 225 | 139 | 139 |
+| [libSceMediaFrameworkInterface](libraries/libscemediaframeworkinterface-971396c6b2.md) | 225 | 147 | 139 |
 | [libSceMediaFrameworkUtil](libraries/libscemediaframeworkutil-c0af9aa86b.md) | 11 | 5 | 5 |
 | [libSceMetadataReaderWriter](libraries/libscemetadatareaderwriter-a2bb1eaf2f.md) | 81 | 39 | 0 |
 | [libSceMouse](libraries/libscemouse-acdd5b5e23.md) | 25 | 23 | 4 |
