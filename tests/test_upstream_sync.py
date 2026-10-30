@@ -62,5 +62,18 @@ class ProgressiveOverlapTests(unittest.TestCase):
             self.assertEqual(meta["open_pr_unscanned"],1)
             self.assertEqual(meta["open_pr_errors"],1)
 
+    def test_unknown_upstream_identity_tracks_exact_pr(self):
+        prs = [{"number":42, "head":{"sha":"h42"}, "updated_at":"2026-10-30T01:00:00Z"}]
+        def mock_fetch(url, token):
+            if "/pulls?state=open" in url:
+                return prs
+            return [{"filename":"core/libs/prx/libSample/Export.cpp",
+                     "patch":"@@ -0,0 +1 @@\n+int APS5_VABI sourceOnly(void) { return 0; }"}]
+        with tempfile.TemporaryDirectory() as directory:
+            _, unknown, meta = scan_open_prs_cached(
+                "t", {}, set(), nid_for, Path(directory)/"cache.json", 10, mock_fetch)
+            self.assertEqual(unknown[("libsample",nid_for("sourceOnly"))], {42})
+            self.assertTrue(meta["open_pr_coverage_complete"])
+
 if __name__ == "__main__":
     unittest.main()
