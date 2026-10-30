@@ -42,6 +42,44 @@ ownership is eligible, the strict name binding is present, the main head
 has been updated, and all PR scans completed. The generator is intentionally
 restricted to reviewed void signatures and does not fabricate unknown ABIs.
 
+## Outstanding production gates for PR #10
+
+The read-only PR preview can establish source parsing, report consistency,
+layout placement and unit-test correctness. It **cannot** verify privileged
+workflows or deploy Pages from an unmerged branch.
+
+Before declaring the automation production-ready:
+
+1. Confirm GitHub Pages source is **GitHub Actions** under
+   **Settings → Pages → Build and deployment**. Confirm the deployment URL
+   from a successful `deploy-pages` job and inspect the published `data.json`.
+2. Under **Settings → Actions → General → Workflow permissions**, enable
+   **Read and write permissions**, and **Allow GitHub Actions to create and
+   approve pull requests**. Restrict human approval-file updates using
+   branch protection and CODEOWNERS.
+3. Run the trusted-main scheduled/manual `refresh` and verify report
+   commits, canonical manifest validation, source SHA consistency and
+   no-op rerun idempotence. Run the dependent proposal workflow and
+   confirm it updates the existing review branch, not a duplicate PR.
+4. A manually approved test identity is required before the canonical-import
+   draft workflow can be tested for a real PR; do not invent such an approval.
+5. Full upstream open-PR head coverage is not achieved merely by progressive
+   patch-cache completion. To publish a stub, obtain external ABI evidence
+   and a **successful candidate-level live audit**, including current main
+   and every open PR head SHA. A changed target library or uncertain
+   global registration must block.
+6. Exercise upstream CMake/build/test checks with a real authorised
+   contribution checkout. Source layout probes are not ABI, build or
+   runtime verification.
+7. Check open catalogue naming PRs before merge; their changed library shards
+   do not automatically conflict with automation, but shared manifest,
+   verified-name map, README, LIBRARIES.md and readiness files do.
+8. Keep PR #10 **draft** while privileged workflows/Pages remain unverified;
+   do not merge or publish upstream stubs merely to satisfy a coverage target.
+
+When the GitHub REST Pages settings endpoint is unavailable to the connector,
+report the setting as **unobserved**, not disabled or already configured.
+
 ## Safe release process
 
 Treat import proposals as review material. Approve canonical names only with
