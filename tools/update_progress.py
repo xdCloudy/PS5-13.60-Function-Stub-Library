@@ -233,7 +233,7 @@ def main():
     withheld_source_names = 0
     definition_count = 0
     pr_obs = {}
-    pr_candidates = set()
+    pr_candidates = {}
     pr_meta = {"open_pr_total": None, "open_pr_scanned": 0,
                "open_pr_errors": 0, "open_pr_coverage_complete": False,
                "method": "not checked"}
