@@ -55,6 +55,8 @@ jobs:
           else
             python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
           fi
+      - name: Derive AnyPS5 declaration and source-body states
+        run: python tools/anyps5_metadata.py --upstream-dir ../AnyPS5
       - name: Reconcile 3.20 registrations (metadata only)
         run: python tools/ingest_320.py --source-dir ../PS5-3.20_Libs
       - name: Regenerate coverage matrices and dashboard feed
@@ -80,7 +82,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl reports/upstream-source-candidates.jsonl reports/open-pr-cache.json reports/anyps5-evidence.jsonl reports/source-320.json reports/source-320-review.jsonl reports/coverage-matrices.json reports/coverage-matrices.md reports/coverage-history.json site/data.json
+          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl reports/upstream-source-candidates.jsonl reports/open-pr-cache.json reports/anyps5-evidence.jsonl reports/source-320.json reports/source-320-review.jsonl reports/coverage-matrices.json reports/coverage-matrices.md reports/coverage-history.json reports/anyps5-symbol-states.json reports/anyps5-symbol-states.jsonl site/data.json
           if git diff --cached --quiet; then
             echo "Progress files are current."
             exit 0
@@ -113,6 +115,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
+          python tools/anyps5_metadata.py --upstream-dir ../AnyPS5
           python tools/ingest_320.py --source-dir ../PS5-3.20_Libs
           python tools/build_coverage.py
       - name: Upload report preview
@@ -131,6 +134,8 @@ jobs:
             reports/coverage-matrices.json
             reports/coverage-matrices.md
             reports/coverage-history.json
+            reports/anyps5-symbol-states.json
+            reports/anyps5-symbol-states.jsonl
             site/index.html
             site/data.json
           retention-days: 14
