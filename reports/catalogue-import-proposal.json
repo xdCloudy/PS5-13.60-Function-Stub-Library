@@ -1,0 +1,28 @@
+{
+  "candidates": [
+    {
+      "canonical_name_approved": false,
+      "firmware_13_60_export_confirmed_by_this_source": false,
+      "library": "libsceresourcearbitrator",
+      "nid": "fBX+DBOwNis",
+      "observed_status": "unnamed_catalog_identity",
+      "proposed_name": "sceResourceArbitratorGetFeatureIdList",
+      "runtime_validated": false,
+      "signature_verified": false,
+      "source": "boykopovar/AnyPS5",
+      "source_commit": "f7f03daf52f11191174b1be089a56e268390a707",
+      "source_file": "core/libs/prx/libSceResourceArbitrator/Export.cpp"
+    }
+  ],
+  "canonical_manifest_sha256": "0f503f23221f5862499c109afd1e70111c491f3bcae80d078c2008cf34cb68ad",
+  "canonical_records_mutated": 0,
+  "conflicts": [],
+  "evidence_observations": 1,
+  "independent_approval_required": true,
+  "note": "These records are name or historical-reference proposals only; no ABI, runtime, source licence or 13.60 confirmation is inferred.",
+  "publication_status": "DRAFT_REVIEW_ONLY",
+  "reviewable_identity_count": 1,
+  "schema_version": 1,
+  "source_revision_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+  "source_revision_anyps5": "f7f03daf52f11191174b1be089a56e268390a707"
+}
