@@ -238,7 +238,7 @@ def main():
     if total != manifest["counts"]["total_records"]:
         raise ValueError("Inventory row count does not match canonical manifest")
     if names != manifest["counts"]["resolved_names"]:
-        raise ValueError("Verified names do not match manifest; regenerate canonical dataset first")
+        raise ValueError(f"Verified rows={names}; manifest={manifest['counts']['resolved_names']}; invalid={invalid}; distinct_verified={len(verified)}")
     qualified_nids = {key[1] for key in qualified}
     all_uniq_nids = len(nids)
     cross_scope_repeated_identities = total - len(known)
