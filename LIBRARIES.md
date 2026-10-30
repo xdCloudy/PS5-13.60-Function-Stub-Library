@@ -409,7 +409,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceNpFriendListDialog](libraries/libscenpfriendlistdialog-942df65042.md) | 9 | 9 | 0 |
 | [libSceNpFriendListDialogCompat](libraries/libscenpfriendlistdialogcompat-e1f311c5e9.md) | 2 | 2 | 0 |
 | [libSceNpGameIntent](libraries/libscenpgameintent-f7445aaf4f.md) | 19 | 19 | 0 |
-| [libSceNpManager](libraries/libscenpmanager-50685f94ae.md) | 539 | 413 | 0 |
+| [libSceNpManager](libraries/libscenpmanager-50685f94ae.md) | 539 | 424 | 0 |
 | [libSceNpManagerCompat](libraries/libscenpmanagercompat-48196e11ec.md) | 14 | 14 | 0 |
 | [libSceNpManagerForToolkit](libraries/libscenpmanagerfortoolkit-97c8d5ebb3.md) | 3 | 3 | 0 |
 | [libSceNpManagerIsPlusMember](libraries/libscenpmanagerisplusmember-e3a5212104.md) | 1 | 1 | 0 |

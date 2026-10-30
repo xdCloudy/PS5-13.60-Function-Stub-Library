@@ -429,7 +429,7 @@ libSceNpEntitlementAccessPft,firmware-13.60,1,1,data/firmware-13.60/libscenpenti
 libSceNpFriendListDialog,firmware-13.60,9,9,data/firmware-13.60/libscenpfriendlistdialog-942df65042.jsonl
 libSceNpFriendListDialogCompat,firmware-13.60,2,2,data/firmware-13.60/libscenpfriendlistdialogcompat-e1f311c5e9.jsonl
 libSceNpGameIntent,firmware-13.60,11,11,data/firmware-13.60/libscenpgameintent-f7445aaf4f.jsonl
-libSceNpManager,firmware-13.60,535,409,data/firmware-13.60/libscenpmanager-50685f94ae.jsonl
+libSceNpManager,firmware-13.60,535,420,data/firmware-13.60/libscenpmanager-50685f94ae.jsonl
 libSceNpManagerCompat,firmware-13.60,14,14,data/firmware-13.60/libscenpmanagercompat-48196e11ec.jsonl
 libSceNpManagerForToolkit,firmware-13.60,3,3,data/firmware-13.60/libscenpmanagerfortoolkit-97c8d5ebb3.jsonl
 libSceNpManagerIsPlusMember,firmware-13.60,1,1,data/firmware-13.60/libscenpmanagerisplusmember-e3a5212104.jsonl
