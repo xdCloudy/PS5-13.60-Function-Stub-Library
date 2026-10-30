@@ -501,7 +501,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libScePsmlBcSisr](libraries/libscepsmlbcsisr-88d7de59b5.md) | 6 | 3 | 0 |
 | [libScePsmUtil](libraries/libscepsmutil-d0f6c9bc8c.md) | 4 | 4 | 0 |
 | [libScePSNowGkp](libraries/libscepsnowgkp-aff6c2627b.md) | 9 | 9 | 0 |
-| [libScePubSubClientShared](libraries/libscepubsubclientshared-bfceb02376.md) | 6 | 0 | 0 |
+| [libScePubSubClientShared](libraries/libscepubsubclientshared-bfceb02376.md) | 6 | 5 | 0 |
 
 ## R
 

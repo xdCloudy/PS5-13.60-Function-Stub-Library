@@ -3701,7 +3701,7 @@
     {
       "generated": 0,
       "library": "libScePubSubClientShared",
-      "named": 0,
+      "named": 5,
       "qualified": 0,
       "total": 6
     },

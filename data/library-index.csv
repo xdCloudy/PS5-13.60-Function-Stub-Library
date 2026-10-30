@@ -506,7 +506,7 @@ libScePsml_nosubmission,firmware-13.60,3,0,data/firmware-13.60/libscepsml_nosubm
 libScePsml_quality8K,firmware-13.60,1,1,data/firmware-13.60/libscepsml_quality8k-6829a3fff8.jsonl
 libScePsml_set_mfsrversion,firmware-13.60,1,0,data/firmware-13.60/libscepsml_set_mfsrversion-76d4e1bf6b.jsonl
 libScePsml_specularAA,firmware-13.60,1,1,data/firmware-13.60/libscepsml_specularaa-f2288e4db1.jsonl
-libScePubSubClientShared,firmware-13.60,6,0,data/firmware-13.60/libscepubsubclientshared-bfceb02376.jsonl
+libScePubSubClientShared,firmware-13.60,6,5,data/firmware-13.60/libscepubsubclientshared-bfceb02376.jsonl
 libSceRandom,firmware-13.60,1,1,data/firmware-13.60/libscerandom-1c0fa8a87a.jsonl
 libSceRazorCpu,firmware-13.60,42,42,data/firmware-13.60/libscerazorcpu-98b3fdc87b.jsonl
 libSceRegMgr,firmware-13.60,86,65,data/firmware-13.60/libsceregmgr-8fde52949a.jsonl
