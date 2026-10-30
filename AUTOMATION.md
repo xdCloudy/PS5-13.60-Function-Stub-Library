@@ -58,6 +58,27 @@ update_progress.py. A partial scan is **not** an overlap clearance.
 The importer writes reports/source-320.json and reports/source-320-review.jsonl,
 not the original C forwarding code or canonical inventory.
 
+## Draft catalogue-import PR preparation
+
+After a successful refresh on trusted main, the separate
+`.github/workflows/catalogue-import-review.yml` workflow rechecks the
+catalogue manifest and stages strictly sanitised, hash-compatible name or
+historical-reference **proposals**. It opens a deterministic draft GitHub
+pull request only when it finds new reviewable (library, NID) identities.
+An identical candidate set does not create another PR, even when source SHAs
+move. Conflicts and publication-filtered names are excluded.
+
+The draft contains only public metadata in
+`reports/catalogue-import-proposal.json`, **not** a rewritten canonical
+inventory or an approved name binding. Independent review of provenance,
+source licensing and firmware/owner evidence remains necessary.
+
+Automatic PR creation requires `Allow GitHub Actions to create and approve
+pull requests` in the repository's **Settings → Actions → General →
+Workflow permissions**. Without that permission, the workflow may push a
+review branch but cannot open the PR; the failed step is visible in Actions.
+The review workflow never runs or executes code from untrusted external PRs.
+
 ## Draft AnyPS5 contributions
 
 tools/prepare_anyps5.py is explicitly opt-in, operates in a **separate AnyPS5
