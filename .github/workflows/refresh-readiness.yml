@@ -61,6 +61,8 @@ jobs:
         run: python tools/ingest_320.py --source-dir ../PS5-3.20_Libs
       - name: Regenerate coverage matrices and dashboard feed
         run: python tools/build_coverage.py
+      - name: Validate generated reports and dashboard consistency
+        run: python tools/validate_pipeline.py
       - name: Publish workflow summary
         run: |
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
@@ -68,7 +70,7 @@ jobs:
           d=json.load(open("reports/progress.json"))
           i=d["inventory"]; s=d["stubs"]
           print("## PS5 readiness")
-          print(f"- Verified names: {i['verified_named_records']:,} / {i['records']:,}")
+          print(f"- Strictly reverified names: {i['strictly_reverified_named_records']:,} / {i['records']:,}")
           print(f"- Qualified unique NIDs: {s['qualified_unique_nids_recomputed']:,}")
           print(f"- AnyPS5 main definition matches: {s['qualified_unique_nids_matched_in_main_source']:,}")
           print(f"- Open-PR patch matches: {s['qualified_unique_nids_matched_in_open_pr_additions']:,}")
@@ -118,6 +120,7 @@ jobs:
           python tools/anyps5_metadata.py --upstream-dir ../AnyPS5
           python tools/ingest_320.py --source-dir ../PS5-3.20_Libs
           python tools/build_coverage.py
+          python tools/validate_pipeline.py
       - name: Upload report preview
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
