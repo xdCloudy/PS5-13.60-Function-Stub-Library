@@ -22,6 +22,9 @@ def build(root: Path) -> dict:
     anyps5_states_file = root / "reports/anyps5-symbol-states.json"
     anyps5_states = (json.loads(anyps5_states_file.read_text(encoding="utf-8"))
                     if anyps5_states_file.exists() else None)
+    changes_file = root / "reports/anyps5-symbol-changes.json"
+    recent_changes = (json.loads(changes_file.read_text(encoding="utf-8"))
+                      if changes_file.exists() else None)
     stats = defaultdict(Counter)
     scopes = Counter()
     for part in ("firmware-13.60", "historical-3.20-only"):
@@ -126,6 +129,7 @@ def build(root: Path) -> dict:
             "runtime_validated_live": None, "fully_implemented_live": None,
         },
         "ownership": dict(sorted(scopes.items())),
+        "recent_changes": recent_changes,
         "automation_health": {
             "last_refresh_utc": progress["generated_from"]["generated_at_utc"],
             "pr_scanned": pr["open_pr_scanned"] if pr_scanned_this_run else None,
@@ -226,6 +230,17 @@ def render_markdown(doc):
                      + ("Not measured; never inferred from source bodies"
                         if v is None else "Saved snapshot, not live"
                         if k.startswith("snapshot_") else "Source-backed or canonical classification") + " |")
+    change=doc.get("recent_changes")
+    if change:
+        lines += ["", "### AnyPS5 changes since the previous revision", ""]
+        if change.get("baseline_only"):
+            lines.append("First observed source snapshot; deltas are unknown, not zero.")
+        else:
+            lines.append(f"Previous SHA: {change.get('previous_source_sha') or 'unknown'}")
+            lines.append(f"Added identities: {number(change['added'])}; "
+                         f"removed: {number(change['removed'])}; "
+                         f"changed source classifications: {number(change['changed_source_classifications'])}.")
+        lines.append("These values do not verify implementation changes or runtime behaviour.")
     lines += ["", "## D. Ownership classifications", "",
               "| Scope | Records |", "|---|---:|"]
     lines.extend(f"| {k} | {number(v)} |" for k,v in doc["ownership"].items())
