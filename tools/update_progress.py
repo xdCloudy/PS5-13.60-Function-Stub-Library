@@ -330,7 +330,7 @@ def main():
                                                              for k, v in main_obs.items()),
             "new_upstream_nid_candidates_for_review": len(candidate_records),
             "auto_imported_public_source_name_proposals": len(source_candidates),
-            "external_source_evidence_records": len(main_obs) + len(source_candidates) + len(pr_candidates - set(main_obs) - set(source_candidates)),
+            "external_source_evidence_records": len(main_obs) + len(source_candidates) + len(set(pr_candidates) - set(main_obs) - set(source_candidates)),
             "auto_imported_catalog_matching_proposals": sum(x["match_status"] == "unnamed_catalog_identity" for x in source_candidates.values()),
             "source_names_withheld_by_safety_filter": withheld_source_names
         },
@@ -391,8 +391,13 @@ def main():
                                   "upstream_main_commit": sha,
                                   "observed_on_main": False,
                                   "match_status": "pr_only_nid_review",
+                                  "open_pr_numbers": sorted(pr_candidates[(lib, nid)]),
                                   "canonical_name_approved": False,
                                   "abi_validated": False, "runtime_validated": False})
+    for key, numbers in pr_candidates.items():
+        if key in evidence:
+            record = evidence[key]
+            record["open_pr_numbers"] = sorted(set(record.get("open_pr_numbers", ())) | numbers)
     write_if_changed(root / "reports" / "anyps5-evidence.jsonl",
                      "".join(json.dumps(record, sort_keys=True) + "\n"
                              for key, record in sorted(evidence.items())))
