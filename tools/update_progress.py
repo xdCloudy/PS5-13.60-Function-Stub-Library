@@ -272,9 +272,12 @@ def main():
         libkey = lib.casefold()
         q = sum(k[0] == libkey for k in assessed_qualified)
         main_q = sum(k[0] == libkey for k in main_qualified)
+        main_known = sum(k[0] == libkey for k in main_obs)
         reserved_q = sum(k[0] == libkey for k in pending_qualified)
         per_lib.append({"library": lib, "records": libraries[lib], "verified_names": named[lib],
-                        "qualified_records": q, "upstream_main_source_matches": main_q,
+                        "qualified_records": q,
+                        "upstream_main_catalogue_source_matches": main_known,
+                        "upstream_main_source_matches": main_q,
                         "open_pr_added_matches": reserved_q})
     summary = {
         "schema_version": 1,
