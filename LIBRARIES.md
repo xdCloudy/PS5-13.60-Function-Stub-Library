@@ -340,7 +340,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | Library | Export records | Named | Qualified candidates |
 |---|---:|---:|---:|
 | [libmdbg_syscore](libraries/libmdbg_syscore-53c596f5b7.md) | 191 | 148 | 5 |
-| [libmono-btls-shared](libraries/libmono-btls-shared-384a3700a1.md) | 212 | 205 | 0 |
+| [libmono-btls-shared](libraries/libmono-btls-shared-384a3700a1.md) | 212 | 212 | 0 |
 | [libmono-profiler-log](libraries/libmono-profiler-log-7860053204.md) | 2 | 2 | 0 |
 | [libmonosgen](libraries/libmonosgen-89a314ce00.md) | 1,087 | 937 | 0 |
 | [libmonosgen-2.0](libraries/libmonosgen-2-0-397d0b15ce.md) | 963 | 963 | 0 |

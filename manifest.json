@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47085,
+    "resolved_names": 47092,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 266953,
+    "unresolved_or_withheld_names": 266946,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -5262,10 +5262,10 @@
       "sha256": "c191d4954500c83b329deb798c01c1959dc0ca3b5c84561b9cca35a25bbfbdcc"
     },
     {
-      "bytes": 88509,
+      "bytes": 89401,
       "path": "data/firmware-13.60/libmono-btls-shared-384a3700a1.jsonl",
       "records": 212,
-      "sha256": "758e1cb7a74108c0df49ed1e7b9418dedd02d722cb73c8b1dc0e07a42b40c566"
+      "sha256": "239224d00c14afd2fed0a0b77f24c875cd656b2fed387e78158b1d053f29e803"
     },
     {
       "bytes": 451903,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85564,
+      "bytes": 86421,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "4abc44c7ba8c3c670af72667998df40fd40c9aabb92e098c24a831a140f0b41d"
+      "sha256": "e734d9f3f2a368051718b562d4e9cdc15b42616e4d6b65f4de5e0a14d02e6570"
     },
     {
-      "bytes": 2581638,
+      "bytes": 2619011,
       "path": "data/verified-name-map.jsonl",
-      "records": 36849,
-      "sha256": "10d0fd3e633779b44224fa778c018b9dc140938ae90078cf54f315f90b02b211"
+      "records": 36924,
+      "sha256": "2c5439b05ac59cb58987a2060f1d781faf87c62a208934dab9388759b718d36f"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,10 +5976,10 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "a46de98732d4b73f13a2276e125a059fe16fecd06bd162fc35d9a278c341620d"
+    "sha256": "8883bb65792547cf08d26249fe64ecc3ee1a798fe556bbb841352c6823987efd"
   },
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36917
+  "unique_verified_name_bindings": 36924
 }
