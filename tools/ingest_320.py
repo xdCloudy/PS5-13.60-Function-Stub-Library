@@ -102,7 +102,9 @@ def classify(observations: list[dict], known: dict) -> tuple[list[dict], dict]:
     for o in sorted(observations, key=lambda x:
                     ((x["library"] or "").casefold(), x["nid"], x["name"], x["source_file"])):
         if o["library"] is None:
-            status = "ownership_review_required"
+            safe_name = bool(PUBLIC_SYMBOL.fullmatch(o["name"])
+                             and not SENSITIVE_SYMBOL.search(o["name"]))
+            status = "ownership_review_required" if safe_name else "withheld_owner_unknown"
             counts[status] += 1
             # An unknown owner is not a new canonical library/NID identity.
             item = {"library": None, "nid": o["nid"],
@@ -110,10 +112,8 @@ def classify(observations: list[dict], known: dict) -> tuple[list[dict], dict]:
                     "canonical_name_approved": False, "abi_verified": False,
                     "runtime_validated": False, "source": SOURCE_NAME,
                     "firmware_13_60_export_confirmed": False}
-            if PUBLIC_SYMBOL.fullmatch(o["name"]) and not SENSITIVE_SYMBOL.search(o["name"]):
+            if safe_name:
                 item["proposed_name"] = o["name"]
-            else:
-                item["status"] = "withheld_owner_unknown"
             proposals.append(item)
             continue
         key = (resolve_owner(o["library"]), o["nid"])
