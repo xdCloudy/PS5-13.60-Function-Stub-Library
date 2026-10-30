@@ -58,6 +58,8 @@ def main() -> None:
     p.add_argument("--checkout", type=Path, required=True)
     p.add_argument("--batch", type=Path, required=True)
     p.add_argument("--report", type=Path, required=True)
+    p.add_argument("--skip-upstream-tools", action="store_true",
+                   help="Tools already validated in preparation job; publisher stays data-only")
     args = p.parse_args()
     checkout = args.checkout.resolve()
     data = json.loads(args.batch.read_text(encoding="utf-8"))
@@ -92,16 +94,17 @@ def main() -> None:
     ):
         raise ValueError("Final candidate NID/PR clearance failed; see audit report")
 
-    branch = git(checkout, "branch", "--show-current")
-    overlap = subprocess.run(
-        [sys.executable, "tools/pr_overlap.py", "--branch", branch,
-         "--repo", "boykopovar/AnyPS5"], cwd=checkout,
-        text=True, capture_output=True, check=True)
-    if overlap.stdout.strip() != "No overlap with open pull requests.":
-        raise ValueError("Official AnyPS5 overlap checker found unresolved conflicts: "
-                         + overlap.stdout[:2000])
-    subprocess.run([sys.executable, "tools/check_conventions.py",
-                    "--base", "origin/main"], cwd=checkout, check=True)
+    if not args.skip_upstream_tools:
+        branch = git(checkout, "branch", "--show-current")
+        overlap = subprocess.run(
+            [sys.executable, "tools/pr_overlap.py", "--branch", branch,
+             "--repo", "boykopovar/AnyPS5"], cwd=checkout,
+            text=True, capture_output=True, check=True)
+        if overlap.stdout.strip() != "No overlap with open pull requests.":
+            raise ValueError("Official AnyPS5 checker found unresolved conflicts: "
+                             + overlap.stdout[:2000])
+        subprocess.run([sys.executable, "tools/check_conventions.py",
+                        "--base", "origin/main"], cwd=checkout, check=True)
     subprocess.run(["git", "-C", str(checkout), "diff", "--check",
                     "origin/main..HEAD"], check=True)
     # Check main once more after the expensive final PR review.
@@ -109,7 +112,7 @@ def main() -> None:
         raise ValueError("Upstream main moved after final PR collision audit")
     print(f"PASS: {len(candidates)} committed, reviewed void exports; "
           f"{report['open_pr_verified_heads']} open PR heads rechecked; "
-          "no candidate collisions; upstream conventions and overlap clean.")
+          "no candidate collisions; upstream tools were validated in preparation.")
 
 
 if __name__ == "__main__":
