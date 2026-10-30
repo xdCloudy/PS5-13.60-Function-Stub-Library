@@ -3048,10 +3048,10 @@
       "sha256": "4569f45d121d2f366f06bc0f81a8176a8c4fe0d16b1cc7357f47d2dba4b8e861"
     },
     {
-      "bytes": 1240793,
+      "bytes": 1238105,
       "path": "data/firmware-13.60/libscelibcinternal-f9a6d6abff.jsonl",
       "records": 2688,
-      "sha256": "f07f698f02f886504df034a4b6cc25a2960172e7ea798e695320f1a5edf79b65"
+      "sha256": "ce893acf364b6f3024f6c8a8b68c36ba01f9c795855591afa75b8de5d2bd1ed3"
     },
     {
       "bytes": 3076,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 86419,
+      "bytes": 85562,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "035103860f85285997fe8b0ee9439f8b8100a1068a117b06202b3fac42ac13ba"
+      "sha256": "2c6c928820e7411026ad82a13153b46383e1cd5800415c7541833cbbc6494735"
     },
     {
-      "bytes": 2610681,
+      "bytes": 2573904,
       "path": "data/verified-name-map.jsonl",
       "records": 36777,
-      "sha256": "e4a29188508cfcb270f1d889221a1b34e2f1a72c27d9c6ef7ae5452328778aa1"
+      "sha256": "e417e6f497ef299cc13115b2e964f371ca778ced5f85740e218f6d4b745bd527"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,7 +5976,7 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "633948dba4d5f9f5d26f3bbe9043f4cc1b38f3299fabf75ff436f7e0cedf187b"
+    "sha256": "29cc92a1cd12e4872cf639e09d3dcbacdb0931b7f1316477930f72d5b02953d2"
   },
   "report_image": {
     "bytes": 266263,
