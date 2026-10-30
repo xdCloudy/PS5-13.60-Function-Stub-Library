@@ -53,9 +53,10 @@ class ReportTests(unittest.TestCase):
             cpp.write_text("int APS5_VABI samplePublicFunction(void) {\n"
                            " NotImplemented_nid_no_patch(__func__);\n return 0;\n}\n"
                            "int APS5_VABI novelSymbol(void) { return 1; }\n")
-            subprocess.run([sys.executable, str(ROOT / "tools" / "update_progress.py"),
+            completed = subprocess.run([sys.executable, str(ROOT / "tools" / "update_progress.py"),
                             "--root", str(root), "--upstream-dir", str(upstream),
-                            "--skip-prs"], check=True, capture_output=True, text=True)
+                            "--skip-prs"], capture_output=True, text=True)
+            self.assertEqual(completed.returncode, 0, completed.stderr)
             report = json.loads((root / "reports/progress.json").read_text())
             self.assertEqual(report["inventory"]["records"], 4)
             self.assertEqual(report["inventory"]["cross_library_nid_extra_records_all_scopes"], 1)
@@ -63,11 +64,22 @@ class ReportTests(unittest.TestCase):
             self.assertEqual(report["stubs"]["strictly_rehashed_qualified_unique_nids"], 1)
             self.assertEqual(report["stubs"]["qualified_records_outside_strict_rehash_gate"], 2)
             self.assertEqual(report["stubs"]["qualified_unique_nids_matched_in_main_source"], 1)
+            self.assertEqual(report["stubs"]["anyps5_main_tracked_source_records_live"], 1)
+            self.assertEqual(report["stubs"]["anyps5_main_throwing_marker_records_live"], 1)
+            self.assertEqual(report["stubs"]["anyps5_main_nonthrowing_source_records_live"], 0)
+            self.assertEqual(report["stubs"]["anyps5_main_tracked_unique_nids_live"], 1)
             self.assertEqual(report["stubs"]["new_upstream_nid_candidates_for_review"], 1)
             queue = (root / "reports/upstream-review-queue.jsonl").read_text()
             self.assertNotIn("novelSymbol", queue)
             self.assertNotIn("secretName", queue)
-            self.assertIn("Saved qualified-count discrepancy", (root / "READINESS.md").read_text())
+            self.assertIn("Qualification correction", (root / "READINESS.md").read_text())
+            self.assertIn("Present in AnyPS5 main source (live)", (root / "READINESS.md").read_text())
+            mirrored = [json.loads(line) for line in (root / "reports/anyps5-evidence.jsonl").read_text().splitlines() if line]
+            self.assertTrue(any(row["nid"] == nid and row["source_classification"] == "throwing_marker" for row in mirrored))
+            proposals = (root / "reports/upstream-source-candidates.jsonl").read_text()
+            self.assertIn("novelSymbol", proposals)
+            self.assertNotIn("secretName", proposals)
+            self.assertEqual(report["stubs"]["auto_imported_public_source_name_proposals"], 1)
 
 
 if __name__ == "__main__":
