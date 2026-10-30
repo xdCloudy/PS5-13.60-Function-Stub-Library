@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47085,
+    "resolved_names": 47113,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 266953,
+    "unresolved_or_withheld_names": 266925,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -2796,10 +2796,10 @@
       "sha256": "6d75c82b6214e6826d1640c6ed424c5b363c07e9e795d6089f9a072e2c212d01"
     },
     {
-      "bytes": 110745,
+      "bytes": 111036,
       "path": "data/firmware-13.60/libscehmd2-a02794ae28.jsonl",
       "records": 276,
-      "sha256": "62e779c52e0d05cdb5477f995e3c2327995af6823652e4e63ab340665cbf8774"
+      "sha256": "0e97ebc9d222b4a6b02d2b3ef686ca91c0eed57f2a315ab086122a4f1d29b366"
     },
     {
       "bytes": 2112,
@@ -3000,10 +3000,10 @@
       "sha256": "f3967dad03ed67ada5995655dcc57732ef756f8424b40a24ac8ab99bfcd7bc3b"
     },
     {
-      "bytes": 1996178,
+      "bytes": 1996322,
       "path": "data/firmware-13.60/libscejsc-80e21a2f59.jsonl",
       "records": 4439,
-      "sha256": "25ad00d7c8ac2663ef8067947cfcb63314bcda236e145c470b020704e04546f0"
+      "sha256": "c51e525514a131eebcc48bddab8d9195200440386a01c63820cbfee17dfc4511"
     },
     {
       "bytes": 93545,
@@ -3642,10 +3642,10 @@
       "sha256": "793f1cdd09cd13f0fb0e3db8ae365d1c4de5c0e2c58cb501f81cea4df56a449c"
     },
     {
-      "bytes": 10273,
+      "bytes": 10665,
       "path": "data/firmware-13.60/libsceopusceltenc-b31be2adfa.jsonl",
       "records": 24,
-      "sha256": "1f92b1d9c078410d71ccdaeb01e91d369625b07cce2439ea62b022f0e6dc422c"
+      "sha256": "df1e32fcd6456639637aeefef8c9302ffef30cff1d67743e6b7a8e938550b65e"
     },
     {
       "bytes": 12438,
@@ -3804,10 +3804,10 @@
       "sha256": "d516636467bb7c1a4cc7415a3097ab029abc55358a95e164ebe88a34dc683aed"
     },
     {
-      "bytes": 11259,
+      "bytes": 11559,
       "path": "data/firmware-13.60/libscepsml-42ee1f1451.jsonl",
       "records": 27,
-      "sha256": "dcb37ef03ba44c82346ddd6bc15a7c3060e280189559814af0932040f2bee677"
+      "sha256": "b7503e0fdfd9f801332b074d8993c682609d957892acbe30f1323be378517dc8"
     },
     {
       "bytes": 2318,
@@ -3852,10 +3852,10 @@
       "sha256": "8b54c2e64b12967db3e65e155b8d938d3d38c93b240a0f500d2d13ce7b81835e"
     },
     {
-      "bytes": 2178,
+      "bytes": 2618,
       "path": "data/firmware-13.60/libscepubsubclientshared-bfceb02376.jsonl",
       "records": 6,
-      "sha256": "c131426ac3b797cc07aedc87c42a95118c71afafa59a17c588e9bc79aaf03caa"
+      "sha256": "3abafc003f82010e11118950e8b1c0e3271d793cb1fccb44c8cbad4484c708f2"
     },
     {
       "bytes": 503,
@@ -4620,10 +4620,10 @@
       "sha256": "3e4089c6c59ecc6f642ea9d1a07749aa31385cf95631477183b0dea17fc6b950"
     },
     {
-      "bytes": 105607,
+      "bytes": 105888,
       "path": "data/firmware-13.60/libscevideoout-54fc22c577.jsonl",
       "records": 226,
-      "sha256": "df4fe3ab1111eb5c0773c4213ec3a744579d59a9d4182a9f3ba0d3fd1b9fb7c8"
+      "sha256": "183f6182d8212e2ca739d4992f2339dc2fb750c38daf9a98dc6c94f07fdf8f52"
     },
     {
       "bytes": 365,
@@ -4908,10 +4908,10 @@
       "sha256": "ab16b6240ff64daf0b23c9b007d8f5cd6dd682a2e8553cf7692edf2b819706cf"
     },
     {
-      "bytes": 2100,
+      "bytes": 2467,
       "path": "data/firmware-13.60/libscevshbrotli-c395bb6628.jsonl",
       "records": 6,
-      "sha256": "c53c999479b2fb1a41af08c5725e18ee0c9bd54470ddd588e645a59211a8ce08"
+      "sha256": "325262781a1540627a6e3c7e4e63db01fcd9e81f24e92bfb288bba5afe450ee5"
     },
     {
       "bytes": 29166,
@@ -5322,10 +5322,10 @@
       "sha256": "7670a5c01d160c9f1c809b2c6b03f462e96bf305e59c59a2885c6f3877943c33"
     },
     {
-      "bytes": 12580,
+      "bytes": 12898,
       "path": "data/firmware-13.60/libzip-7a217c7878.jsonl",
       "records": 34,
-      "sha256": "5f9f732bebe94ac72a95ad5ac3bbe9b4f93c81647bf0191b9d000879b64ffdcf"
+      "sha256": "cd462db277cf52c700827f356e26a6088276a26c70a1b1af8fa223d49262847c"
     },
     {
       "bytes": 346,
@@ -5949,13 +5949,13 @@
       "bytes": 85564,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "4abc44c7ba8c3c670af72667998df40fd40c9aabb92e098c24a831a140f0b41d"
+      "sha256": "52701deccec91997df2c0c6a5632b56b03966068faa90f7a7809062d30e2f768"
     },
     {
-      "bytes": 2581638,
+      "bytes": 2583348,
       "path": "data/verified-name-map.jsonl",
-      "records": 36849,
-      "sha256": "10d0fd3e633779b44224fa778c018b9dc140938ae90078cf54f315f90b02b211"
+      "records": 36946,
+      "sha256": "5827e7893fd7d35df1774946ec1bf2d83a7c42027d48a34c11ca07006a51fecb"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,10 +5976,10 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "a46de98732d4b73f13a2276e125a059fe16fecd06bd162fc35d9a278c341620d"
+    "sha256": "0f00aec43bde6b03aa90450de7f27945da8f1d2c798dbacedc0a5ebcdc76c36b"
   },
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36917
+  "unique_verified_name_bindings": 36946
 }
