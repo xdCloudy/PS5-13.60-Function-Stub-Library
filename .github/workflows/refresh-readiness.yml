@@ -44,6 +44,8 @@ jobs:
         run: python tools/refresh_manifest.py
       - name: Clone upstream main (read-only)
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
+      - name: Verify layout-aware patch planning against real AnyPS5 libraries
+        run: python tools/live_layout_probe.py --upstream-dir ../AnyPS5
       - name: Clone PS5 3.20 public forwarding sources (read-only)
         run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git ../PS5-3.20_Libs
       - name: Rebuild report and collect upstream NID observations
@@ -110,6 +112,8 @@ jobs:
         run: python tools/refresh_manifest.py
       - name: Clone upstream main (read-only)
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
+      - name: Verify layout-aware patch planning against real AnyPS5 libraries
+        run: python tools/live_layout_probe.py --upstream-dir ../AnyPS5
       - name: Clone PS5 3.20 sources (read-only)
         run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git ../PS5-3.20_Libs
       - name: Generate a PR preview (never pushes PR code)
