@@ -168,19 +168,40 @@ def main():
             raise ValueError("Upstream main advanced during PR audit; rerun on new base")
         if inspect_existing(checkout) != occupied:
             raise ValueError("Current upstream collision inventory changed")
-        patch=apply(checkout,selected,output)
+        # The upstream overlap tool reads committed Git trees, not the
+        # working directory. Commit the generated patch to this clean,
+        # single-purpose branch BEFORE running either upstream checker.
+        original_head = git(checkout, "rev-parse", "HEAD")
+        patch = apply(checkout, selected, output)
+        changed_paths = sorted(str(p.relative_to(checkout)) for p in
+                               (checkout / "core/libs/prx" / selected[0]["library"]).rglob("*")
+                               if p.is_file() and p.suffix.lower() in (".cpp", ".cc", ".cxx", ".h", ".hpp"))
         try:
-            subprocess.run([sys.executable,"tools/check_conventions.py","--base","origin/main"],
-                           cwd=checkout,check=True)
-            branch=git(checkout,"branch","--show-current")
-            subprocess.run([sys.executable,"tools/pr_overlap.py","--branch",branch],
-                           cwd=checkout,check=True)
-        except BaseException:
-            # Restore only our modified library, never reset the branch.
-            patch.unlink(missing_ok=True)
-            subprocess.run(["git", "-C", str(checkout), "restore", "--",
-                            "core/libs/prx/" + selected[0]["library"]],
+            subprocess.run(["git", "-C", str(checkout), "add", "--", *changed_paths], check=True)
+            subprocess.run(["git", "-C", str(checkout), "-c",
+                            "user.name=xdCloudy", "-c",
+                            "user.email=52116030+xdCloudy@users.noreply.github.com",
+                            "commit", "-m",
+                            f"feat({selected[0]['library']}): add {len(selected)} reviewed throwing exports"],
                            check=True)
+            subprocess.run([sys.executable, "tools/check_conventions.py",
+                            "--base", "origin/main"], cwd=checkout, check=True)
+            branch = git(checkout, "branch", "--show-current")
+            # AnyPS5's checker returns 0 even when it PRINTS an overlap
+            # report; require the exact no-overlap result, not merely rc=0.
+            overlap = subprocess.run(
+                [sys.executable, "tools/pr_overlap.py", "--branch", branch,
+                 "--repo", "boykopovar/AnyPS5"],
+                cwd=checkout, check=True, capture_output=True, text=True)
+            if overlap.stdout.strip() != "No overlap with open pull requests.":
+                raise ValueError("AnyPS5 overlap checker rejected the batch: " +
+                                 overlap.stdout[:1500])
+            if git(checkout, "status", "--porcelain"):
+                raise ValueError("Unexpected uncommitted source changes after validation")
+        except BaseException:
+            patch.unlink(missing_ok=True)
+            subprocess.run(["git", "-C", str(checkout), "reset", "--hard",
+                            original_head], check=True)
             raise
         branch=git(checkout,"branch","--show-current")
         pr_body = """### What
@@ -194,7 +215,7 @@ No implementation, ABI correctness or runtime support is claimed.
 - Python catalogue identity and scope gates: passed
 - Current AnyPS5 main and all open PR heads: rechecked
 - tools/check_conventions.py --base origin/main: passed
-- tools/pr_overlap.py --branch {branch}: passed
+- tools/pr_overlap.py --branch {branch}: passed (exact no-overlap verdict)
 - Build and runtime testing: NOT RUN
 
 ### Checklist
@@ -205,10 +226,10 @@ No implementation, ABI correctness or runtime support is claimed.
 - [x] No notes or screenshots added to upstream repository
 - [x] No third-party code
 - [x] Generic system-library scope only
-- [ ] Depends on: none
-- [ ] Fixes: none
-- [ ] Unblocks: none
-- [ ] GPUs tested: n/a
+- [x] Depends on: none
+- [x] Fixes: none
+- [x] Unblocks: none
+- [x] GPUs tested: n/a
 - [x] AI-assisted: yes
 
 Source revision: {sha}
@@ -216,7 +237,7 @@ Functions: {count}
 Library: {library}
 Patch: {patchname}
 
-A maintainer must verify the complete ABI evidence, build and runtime results before changing this draft PR to ready for review.
+ABI evidence must be independently reviewed. This remains a draft until maintainers accept source evidence and downstream build/runtime results.
 """.format(count=len(selected),library=selected[0]["library"],
            branch=branch,sha=git(checkout,"rev-parse","origin/main"),
            patchname=patch.name)
