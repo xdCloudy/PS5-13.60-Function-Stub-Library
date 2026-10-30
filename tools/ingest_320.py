@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter, defaultdict
-from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
@@ -28,7 +27,7 @@ DLSYM = re.compile(
 )
 DLOPEN = re.compile(r'\bsprx_dlopen\s*\(\s*"(?P<library>[A-Za-z_][\w.\-]*)"')
 SYMBOL = re.compile(r"^[A-Za-z_]\w*$")
-SCHEMA = 3
+SCHEMA = 4
 SOURCE_NAME = "DNNDHH/PS5-3.20_Libs"
 
 
@@ -213,7 +212,6 @@ def ingest(root: Path, source_dir: Path, force: bool = False) -> dict:
         "schema_version": SCHEMA,
         "inputs": inputs,
         "source": SOURCE_NAME,
-        "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source_files_scanned": len(files),
         "source_file_sha256": dict(hashes),
         "quarantined_registrations": sum(r.get("count", 1) for r in rejected)
