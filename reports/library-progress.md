@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 0 | 669 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 6 | 665 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |
@@ -177,7 +177,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceFont.native | 136 | 136 | 0 | 0 | 0 |
 | libSceJxr | 136 | 136 | 0 | 0 | 0 |
 | libSceAgcDriver | 135 | 130 | 0 | 0 | 0 |
-| libSceCustomMusicSysCallWrapper | 133 | 54 | 53 | 0 | 42 |
+| libSceCustomMusicSysCallWrapper | 133 | 54 | 53 | 0 | 47 |
 | gaikai_player_lib | 132 | 16 | 0 | 0 | 0 |
 | SceVshOrbisBgft | 127 | 0 | 0 | 0 | 0 |
 | libSceCamera | 127 | 122 | 1 | 1 | 0 |
@@ -271,7 +271,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshPadControllerUpdWrapper | 50 | 0 | 0 | 0 | 0 |
 | libScePlayReady | 50 | 50 | 0 | 0 | 0 |
 | libSceAudioIn | 49 | 48 | 0 | 0 | 0 |
-| libSceRemoteplay | 49 | 48 | 3 | 0 | 0 |
+| libSceRemoteplay | 49 | 48 | 3 | 0 | 2 |
 | libSceSpSysCallWrapper | 48 | 48 | 0 | 0 | 0 |
 | libSceVideoRecordingP | 48 | 43 | 0 | 0 | 0 |
 | libSceGameLiveStreaming | 47 | 47 | 0 | 0 | 0 |
@@ -338,14 +338,14 @@ All identities remain represented; source definition matches are **not** validat
 | libSceMbusDebug | 28 | 28 | 0 | 0 | 0 |
 | libSceVrTracker2_nosubmission | 28 | 6 | 0 | 0 | 0 |
 | libSceContentSearch | 27 | 27 | 0 | 0 | 0 |
-| libSceImeBackend | 27 | 27 | 5 | 0 | 0 |
+| libSceImeBackend | 27 | 27 | 5 | 0 | 4 |
 | libSceNetCtlApIpcInt | 27 | 18 | 0 | 0 | 0 |
 | libScePsml | 27 | 19 | 0 | 0 | 0 |
 | libSceSdma | 27 | 27 | 0 | 0 | 0 |
 | libSceVdecCore | 27 | 25 | 1 | 1 | 0 |
 | libSceVenc | 27 | 19 | 5 | 3 | 0 |
 | SceVshShareServerPostWrapper | 26 | 0 | 0 | 0 | 0 |
-| libSceNpEntitlementAccess | 26 | 26 | 1 | 0 | 0 |
+| libSceNpEntitlementAccess | 26 | 26 | 1 | 0 | 1 |
 | libSceNpParty | 26 | 26 | 0 | 0 | 0 |
 | SceVshShellUIUtilWrapper | 25 | 0 | 0 | 0 | 0 |
 | SceVshVoiceMsgVoiceMsgWrapper | 25 | 0 | 0 | 0 | 0 |
@@ -446,7 +446,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshPartyCommon | 12 | 0 | 0 | 0 | 0 |
 | libSceEsvmWidevine | 12 | 12 | 0 | 0 | 0 |
 | libSceFlexContent | 12 | 7 | 0 | 0 | 0 |
-| libSceFontGs | 12 | 8 | 8 | 0 | 0 |
+| libSceFontGs | 12 | 8 | 8 | 2 | 0 |
 | libSceNpCommerce | 12 | 12 | 0 | 0 | 0 |
 | libSceNpWebApiCompat | 12 | 12 | 0 | 0 | 0 |
 | libSceOpusCeltDec | 12 | 12 | 1 | 0 | 0 |

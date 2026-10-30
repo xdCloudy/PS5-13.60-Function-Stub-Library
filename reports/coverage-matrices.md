@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-30T13:00:07+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-30T19:57:11+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -69,7 +69,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 | 0 | 1,311 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 | 0 | 1,283 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 | 0 | 1,272 |
-| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 289 | 669 | 12 |
+| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 295 | 665 | 12 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 | 0 | 1,189 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 | 0 | 1,100 |
 | libmonosgen | 1,087 | 0 | 937 | 796 | 0 | 0 | 150 |
@@ -197,7 +197,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceFont.native | 0 | 113 | 136 | 113 | 0 | 0 | 0 |
 | libSceJxr | 136 | 2 | 136 | 111 | 0 | 0 | 0 |
 | libSceAgcDriver | 119 | 82 | 130 | 113 | 103 | 0 | 5 |
-| libSceCustomMusicSysCallWrapper | 133 | 1 | 54 | 48 | 1 | 42 | 79 |
+| libSceCustomMusicSysCallWrapper | 133 | 1 | 54 | 48 | 1 | 47 | 79 |
 | gaikai_player_lib | 132 | 0 | 16 | 15 | 0 | 0 | 116 |
 | SceVshOrbisBgft | 127 | 0 | 0 | 0 | 0 | 0 | 127 |
 | libSceCamera | 93 | 105 | 122 | 110 | 110 | 0 | 5 |
@@ -259,10 +259,10 @@ All figures come from the canonical inventory and generated source observations.
 | libSceUsbStorageForShellUI | 69 | 0 | 21 | 18 | 0 | 0 | 48 |
 | SceVshVideoRecordingWrapper | 68 | 0 | 0 | 0 | 0 | 0 | 68 |
 | SceVshAccessorDbMediaEventListener | 66 | 0 | 0 | 0 | 0 | 0 | 66 |
-| libSceNgs2 | 66 | 36 | 66 | 54 | 4 | 0 | 0 |
+| libSceNgs2 | 66 | 36 | 66 | 54 | 2 | 0 | 0 |
 | SceVshNpGameIntent | 65 | 0 | 0 | 0 | 0 | 0 | 65 |
 | libCss | 65 | 0 | 4 | 4 | 0 | 0 | 61 |
-| libSceNgs2.native | 0 | 53 | 65 | 53 | 49 | 0 | 0 |
+| libSceNgs2.native | 0 | 53 | 65 | 53 | 51 | 0 | 0 |
 | libSceUlt | 64 | 53 | 64 | 53 | 47 | 0 | 0 |
 | libSceUsbd | 63 | 47 | 61 | 47 | 47 | 0 | 2 |
 | libSceVisionManager | 63 | 46 | 56 | 46 | 46 | 0 | 7 |
@@ -291,7 +291,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshPadControllerUpdWrapper | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
 | libScePlayReady | 50 | 43 | 50 | 43 | 43 | 0 | 0 |
 | libSceAudioIn | 43 | 34 | 48 | 38 | 33 | 0 | 1 |
-| libSceRemoteplay | 49 | 32 | 48 | 38 | 35 | 0 | 1 |
+| libSceRemoteplay | 49 | 32 | 48 | 38 | 35 | 2 | 1 |
 | libSceSpSysCallWrapper | 48 | 40 | 48 | 40 | 40 | 0 | 0 |
 | libSceVideoRecordingP | 48 | 0 | 43 | 39 | 18 | 0 | 5 |
 | libSceGameLiveStreaming | 45 | 42 | 47 | 42 | 42 | 0 | 0 |
@@ -358,14 +358,14 @@ All figures come from the canonical inventory and generated source observations.
 | libSceMbusDebug | 28 | 0 | 28 | 24 | 0 | 0 | 0 |
 | libSceVrTracker2_nosubmission | 28 | 0 | 6 | 5 | 0 | 0 | 22 |
 | libSceContentSearch | 19 | 17 | 27 | 21 | 21 | 0 | 0 |
-| libSceImeBackend | 27 | 0 | 27 | 24 | 20 | 0 | 0 |
+| libSceImeBackend | 27 | 0 | 27 | 24 | 20 | 4 | 0 |
 | libSceNetCtlApIpcInt | 27 | 0 | 18 | 16 | 0 | 0 | 9 |
 | libScePsml | 27 | 0 | 19 | 15 | 0 | 0 | 8 |
 | libSceSdma | 27 | 22 | 27 | 22 | 21 | 0 | 0 |
 | libSceVdecCore | 27 | 15 | 25 | 18 | 16 | 0 | 2 |
 | libSceVenc | 27 | 13 | 19 | 16 | 16 | 0 | 8 |
 | SceVshShareServerPostWrapper | 26 | 0 | 0 | 0 | 0 | 0 | 26 |
-| libSceNpEntitlementAccess | 25 | 23 | 26 | 25 | 23 | 0 | 0 |
+| libSceNpEntitlementAccess | 25 | 23 | 26 | 25 | 23 | 1 | 0 |
 | libSceNpParty | 26 | 19 | 26 | 19 | 19 | 0 | 0 |
 | SceVshShellUIUtilWrapper | 25 | 0 | 0 | 0 | 0 | 0 | 25 |
 | SceVshVoiceMsgVoiceMsgWrapper | 25 | 0 | 0 | 0 | 0 | 0 | 25 |
@@ -438,7 +438,7 @@ All figures come from the canonical inventory and generated source observations.
 | I18NMidEast | 14 | 0 | 0 | 0 | 0 | 0 | 14 |
 | SceVshNpIga | 14 | 0 | 0 | 0 | 0 | 0 | 14 |
 | libSceAudioSystem | 14 | 2 | 8 | 7 | 7 | 0 | 6 |
-| libSceCffMgr | 14 | 0 | 7 | 7 | 0 | 0 | 7 |
+| libSceCffMgr | 14 | 0 | 7 | 7 | 7 | 0 | 7 |
 | libSceContentExport | 13 | 11 | 14 | 11 | 11 | 0 | 0 |
 | libSceGnmDriverPaDebug | 14 | 0 | 11 | 7 | 0 | 0 | 3 |
 | libSceImeDialog | 14 | 11 | 14 | 12 | 12 | 0 | 0 |
@@ -449,7 +449,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceScreenShot | 12 | 11 | 14 | 11 | 10 | 0 | 0 |
 | libSceTextToSpeech2 | 14 | 0 | 14 | 13 | 13 | 0 | 0 |
 | libSceUgcBgUploaderClient | 14 | 0 | 0 | 0 | 0 | 0 | 14 |
-| libSceUgcServiceS3 | 14 | 0 | 4 | 4 | 0 | 0 | 10 |
+| libSceUgcServiceS3 | 14 | 0 | 4 | 4 | 4 | 0 | 10 |
 | libSceVideoRecording | 14 | 13 | 14 | 13 | 0 | 0 | 0 |
 | libSceAvSettingDebug | 13 | 0 | 8 | 7 | 0 | 0 | 5 |
 | libSceAvcap2mvr | 13 | 0 | 0 | 0 | 0 | 0 | 13 |
@@ -465,8 +465,8 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshNotificationClient | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
 | SceVshPartyCommon | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
 | libSceEsvmWidevine | 12 | 0 | 12 | 10 | 0 | 0 | 0 |
-| libSceFlexContent | 12 | 0 | 7 | 7 | 0 | 0 | 5 |
-| libSceFontGs | 12 | 0 | 8 | 7 | 0 | 0 | 4 |
+| libSceFlexContent | 12 | 0 | 7 | 7 | 7 | 0 | 5 |
+| libSceFontGs | 12 | 0 | 8 | 7 | 2 | 0 | 4 |
 | libSceNpCommerce | 12 | 9 | 12 | 10 | 10 | 0 | 0 |
 | libSceNpWebApiCompat | 12 | 0 | 12 | 11 | 0 | 0 | 0 |
 | libSceOpusCeltDec | 12 | 9 | 12 | 9 | 9 | 0 | 0 |
@@ -481,10 +481,10 @@ All figures come from the canonical inventory and generated source observations.
 | libSceMediaFrameworkUtil | 11 | 0 | 5 | 4 | 0 | 4 | 6 |
 | libSceNetCtlAp | 11 | 0 | 11 | 9 | 9 | 0 | 0 |
 | libSceNpScoreCompat | 11 | 0 | 11 | 9 | 0 | 0 | 0 |
-| libSceNpSessionSignalingCrossplay | 11 | 0 | 5 | 5 | 0 | 0 | 6 |
+| libSceNpSessionSignalingCrossplay | 11 | 0 | 5 | 5 | 5 | 0 | 6 |
 | libSceNpTextToSpeech | 11 | 0 | 5 | 5 | 5 | 0 | 6 |
 | libSceSocialScreen | 11 | 11 | 11 | 11 | 11 | 0 | 0 |
-| libSceTtsEngine | 11 | 0 | 9 | 8 | 0 | 0 | 2 |
+| libSceTtsEngine | 11 | 0 | 9 | 8 | 8 | 0 | 2 |
 | libSceVdecSvp9 | 11 | 0 | 0 | 0 | 0 | 0 | 11 |
 | libSceVdecwrap | 11 | 8 | 11 | 8 | 8 | 0 | 0 |
 | libSceWebRtc | 11 | 0 | 1 | 0 | 0 | 0 | 10 |
@@ -822,10 +822,10 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 15,544 | Source-backed or canonical classification |
-| anyps5 throwing marker | 12,285 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 3,259 | Source-backed or canonical classification |
-| open pr qualified partial | 1,327 | Source-backed or canonical classification |
+| anyps5 main definition matches | 15,583 | Source-backed or canonical classification |
+| anyps5 throwing marker | 12,291 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 3,292 | Source-backed or canonical classification |
+| open pr qualified partial | 1,335 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
 | build verified live | unknown | Not measured; never inferred from source bodies |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: f7f03daf52f11191174b1be089a56e268390a707
-Added identities: 10,154; removed: 4; changed source classifications: 100.
+Previous SHA: f91137142eafd5df646fca6419a1fc4ef61b89d9
+Added identities: 1,560; removed: 16; changed source classifications: 42.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -863,8 +863,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | libSceMediaFrameworkInterface | 13 | 139 | 86 | 0 |
 | libSceIcu | 12 | 72 | 42 | 0 |
 | libSceSaveData | 8 | 8 | 18 | 0 |
-| libSceFontGs | 7 | 8 | 4 | 0 |
-| libSceCustomMusicSysCallWrapper | 5 | 53 | 79 | 0 |
+| libSceFontGs | 5 | 8 | 4 | 0 |
 | libSceTEEClient | 1 | 1 | 4 | 0 |
 | I18N | 0 | 0 | 72 | 0 |
 | I18NCJK | 0 | 0 | 59 | 0 |
@@ -898,19 +897,20 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | ScePlayStationOrbis | 0 | 0 | 337 | 0 |
 | ScePlayStationOrbisSpeech | 0 | 0 | 113 | 0 |
 | ScePlayStationPUI | 0 | 0 | 17,872 | 0 |
+| ScePlayStationPUIPlatform | 0 | 0 | 3 | 0 |
 
 ## F. Automation health
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-30T13:00:07+00:00 |
-| pr scanned | 1,388 |
-| pr total | 1,450 |
+| last refresh utc | 2026-10-30T19:57:11+00:00 |
+| pr scanned | 1,610 |
+| pr total | 1,627 |
 | pr complete | 0 |
-| pr errors | 13 |
-| anyps5 symbol observations | 28,319 |
-| anyps5 declarations only | 115 |
-| anyps5 explicit alias records | 2,499 |
+| pr errors | 17 |
+| anyps5 symbol observations | 29,863 |
+| anyps5 declarations only | 120 |
+| anyps5 explicit alias records | 3,002 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
 | source 320 registrations | 33,298 |
@@ -920,8 +920,8 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 10,129 |
-| anyps5 withheld names | 32 |
+| anyps5 public source proposals | 11,125 |
+| anyps5 withheld names | 33 |
 | overlap publication safe | 0 |
 
 ### Actual progress trend
@@ -931,6 +931,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-30T07:23:47+00:00 | 314,038 | 39,966 | 7,753 | 540 |
 | 2026-10-30T07:28:37+00:00 | 314,038 | 39,966 | 7,753 | 1,076 |
 | 2026-10-30T13:00:07+00:00 | 314,038 | 39,966 | 15,544 | 1,388 |
+| 2026-10-30T19:57:11+00:00 | 314,038 | 39,966 | 15,583 | 1,610 |
 
 ### Coverage denominators
 
