@@ -36915,3 +36915,9 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"JSUnlock","nid":"OltXpyGFR5Y"}
+{"name":"WKWebsiteDataStoreSetClientCertificateV2","nid":"RvoCXQ5nSxk"}
+{"name":"WKWebsiteDataStoreSyncLocalStorage","nid":"TTlcyUCX-Ds"}
+{"name":"_ZN3JSC23objectProtoFuncToStringEPNS_14JSGlobalObjectEPNS_9CallFrameE","nid":"eUw-w9kwIhg"}
+{"name":"JSLock","nid":"vXlIIw7Kk7U"}
+{"name":"WKBundleCopyWebNotificationID","nid":"wcHYEkm0fqw"}

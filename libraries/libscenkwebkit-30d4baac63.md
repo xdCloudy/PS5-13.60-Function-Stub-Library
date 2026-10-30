@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 18,939 |
-| Named | 12,110 |
-| Unresolved or withheld | 6,829 |
+| Named | 12,115 |
+| Unresolved or withheld | 6,824 |
 | Qualified stub candidate records | 8,615 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -31,7 +31,6 @@ A bounded preview; the inventory file contains the complete library.
 
 | NID | Symbol |
 |---|---|
-| `++-URPJNZ18` | `_ZN9Inspector17ScriptDebugServer23removeBreakpointActionsEm` |
 | `++67uYkhqBU` | `_ZN7WebCore28InspectorFrontendClientLocal8Settings11getPropertyERKN3WTF6StringE` |
 | `++8RYr2gjrw` | `_ZN9Inspector21InjectedScriptManagerdaEPv` |
 | `++BntMcao1o` | `_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline13TimelineEventEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE` |
@@ -41,5 +40,9 @@ A bounded preview; the inventory file contains the complete library.
 | `+-wmVyLhgm0` | `WKPreferencesSetStandardFontFamily` |
 | `+02A3a282fI` | `_ZN7WebCore14JSSourceBuffer15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE` |
 | `+0QEt8ZQWgg` | `_ZN7WebCore15JSDOMWindowBaseD1Ev` |
-| `+0YNxcA-duk` | `_ZN9Inspector22InspectorDebuggerAgent24continueUntilNextRunLoopERN3WTF6StringE` |
 | `+0ZZzGYxx+I` | `_ZN7WebCore8Settings27setLoadsImagesAutomaticallyEb` |
+| `+14hrhyqXkw` | `_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE` |
+| `+1Ex5GCP8Xs` | `_ZN7WebCore18JSHTMLInputElementC2ERKS0_` |
+| `+1n+h4FUu9E` | `WKPreferencesSetAutostartOriginPlugInSnapshottingEnabled` |
+| `+2rTX2KM7Ms` | `_ZN7WebCore18HTMLMarqueeElement14setScrollDelayEj` |
+| `+31dbB3S-6Y` | `WKPreferencesResetTestRunnerOverrides` |
