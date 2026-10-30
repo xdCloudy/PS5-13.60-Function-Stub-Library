@@ -1,15 +1,47 @@
 import json
+import subprocess
 from pathlib import Path
 import sys
 import tempfile
 import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"tools"))
-from anyps5_metadata import scan_files
+from anyps5_metadata import scan_files, build
 from update_progress import nid_for
 
 
 class AnyPS5SymbolStateTests(unittest.TestCase):
+    def test_real_git_revisions_track_added_and_deleted_symbols(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder=Path(tmp)
+            upstream=folder/"upstream"
+            lib=upstream/"core/libs/prx/libSceExample"
+            lib.mkdir(parents=True)
+            repo=folder/"catalogue"
+            (repo/"reports").mkdir(parents=True)
+            export=lib/"Export.cpp"
+            export.write_text("void APS5_VABI sceOld() { return; }\n")
+            subprocess.run(["git","init","-q",str(upstream)],check=True)
+            def commit():
+                subprocess.run(["git","-C",str(upstream),"add","."],check=True)
+                subprocess.run(["git","-C",str(upstream),"-c","user.name=Test",
+                                "-c","user.email=test@example.invalid","commit","-qm","fixture"],check=True)
+            commit()
+            first=build(repo,upstream)
+            self.assertEqual(first["observed_library_nid_records"],1)
+            self.assertTrue(json.loads((repo/"reports/anyps5-symbol-changes.json").read_text())["baseline_only"])
+            export.write_text("void APS5_VABI sceNew() { return; }\n")
+            commit()
+            second=build(repo,upstream)
+            changes=json.loads((repo/"reports/anyps5-symbol-changes.json").read_text())
+            self.assertFalse(changes["baseline_only"])
+            self.assertEqual(changes["added"],1)
+            self.assertEqual(changes["removed"],1)
+            self.assertEqual(changes["changed_source_classifications"],0)
+            old=(repo/"reports/anyps5-symbol-changes.json").read_bytes()
+            build(repo,upstream)
+            self.assertEqual(old,(repo/"reports/anyps5-symbol-changes.json").read_bytes())
+
     def test_explicit_nid_alias_is_registration_evidence_not_abi(self):
         with tempfile.TemporaryDirectory() as tmp:
             lib=Path(tmp)/"core/libs/prx/libSceExample"
