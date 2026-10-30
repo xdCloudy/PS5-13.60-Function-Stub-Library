@@ -72,7 +72,7 @@ def classify(observations: list[dict], known: dict) -> tuple[list[dict], dict]:
     known_owners = {}
     for (owner, nid), record in known.items():
         global_nids[nid].add(owner)
-        known_owners[owner] = record["library"]
+        known_owners[owner] = record.get("library", owner)
     def resolve_owner(source_library: str) -> str:
         """Match safe syntactic aliases, never guess between multiple owners."""
         raw = source_library.casefold()
