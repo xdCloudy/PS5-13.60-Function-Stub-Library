@@ -16,6 +16,9 @@ import urllib.request
 
 SOURCE = re.compile(r"^core/libs/prx/([^/]+)/.*\.(?:cpp|cc|cxx|h|hpp)$")
 DEFINITION = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
+# Explicit NID aliases must reserve the literal export NID even when the
+# helper symbol is named *_nid_no_patch or intentionally hashes differently.
+EXPORT_ALIAS = re.compile(r'\bAPS5_EXPORT\s*\(\s*"([A-Za-z0-9+\-]{11})"\s*,\s*[A-Za-z_]\w*\s*\)')
 ROOT_URL = "https://api.github.com/repos/boykopovar/AnyPS5"
 
 
@@ -80,6 +83,8 @@ def inspect_pr(pr: dict, token: str, nid_for, fetch=api_json):
             additions = "\n".join(added_lines)
             for symbol in DEFINITION.findall(additions):
                 found.add((match.group(1).casefold(), nid_for(symbol)))
+            for nid in EXPORT_ALIAS.findall(additions):
+                found.add((match.group(1).casefold(), nid))
         if len(files) < 100:
             break
         page += 1
@@ -95,7 +100,7 @@ def read_cache(path: Path) -> dict:
         return {}
     try:
         document = json.loads(path.read_text(encoding="utf-8"))
-        if document.get("schema_version") != 3:
+        if document.get("schema_version") != 4:
             return {}
         return document.get("prs", {})
     except (OSError, ValueError, TypeError):
@@ -143,7 +148,7 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
                 except (TimeoutError, urllib.error.URLError, ValueError, KeyError, TypeError):
                     failures += 1
     current = dict(sorted(current.items(), key=lambda item: int(item[0])))
-    cache_text = json.dumps({"schema_version": 3, "prs": current},
+    cache_text = json.dumps({"schema_version": 4, "prs": current},
                             indent=2, sort_keys=True) + "\n"
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     if not cache_path.exists() or cache_path.read_text(encoding="utf-8") != cache_text:
@@ -171,6 +176,6 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
         # macros and semantic registration conventions may escape this parser.
         "open_pr_symbol_coverage_complete": False,
         "open_pr_cache_expired_or_closed": len(old) - hits,
-        "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI declarations/definitions are provisional evidence, not exhaustive symbol absence.",
+        "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
     }
     return reservations, unknown, meta
