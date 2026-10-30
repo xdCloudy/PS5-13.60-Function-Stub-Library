@@ -71,8 +71,13 @@ def inspect_pr(pr: dict, token: str, nid_for, fetch=api_json):
             patch = entry.get("patch")
             if patch is None:
                 raise ValueError(f"Missing patch for #{number} ({entry['filename']})")
-            additions = "\n".join(line[1:] for line in patch.splitlines()
-                                  if line.startswith("+") and not line.startswith("+++"))
+            added_lines = [line[1:] for line in patch.splitlines()
+                           if line.startswith("+") and not line.startswith("+++")]
+            # GitHub can return a nonempty but clipped patch. It is not safe
+            # to infer an absent NID from an incomplete hunk.
+            if entry.get("additions") is not None and len(added_lines) != entry["additions"]:
+                raise ValueError(f"Truncated patch for #{number} ({entry['filename']})")
+            additions = "\n".join(added_lines)
             for symbol in DEFINITION.findall(additions):
                 found.add((match.group(1).casefold(), nid_for(symbol)))
         if len(files) < 100:
@@ -90,7 +95,7 @@ def read_cache(path: Path) -> dict:
         return {}
     try:
         document = json.loads(path.read_text(encoding="utf-8"))
-        if document.get("schema_version") != 2:
+        if document.get("schema_version") != 3:
             return {}
         return document.get("prs", {})
     except (OSError, ValueError, TypeError):
@@ -138,7 +143,7 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
                 except (TimeoutError, urllib.error.URLError, ValueError, KeyError, TypeError):
                     failures += 1
     current = dict(sorted(current.items(), key=lambda item: int(item[0])))
-    cache_text = json.dumps({"schema_version": 2, "prs": current},
+    cache_text = json.dumps({"schema_version": 3, "prs": current},
                             indent=2, sort_keys=True) + "\n"
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     if not cache_path.exists() or cache_path.read_text(encoding="utf-8") != cache_text:
@@ -162,7 +167,10 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
         "open_pr_unscanned": remaining,
         "open_pr_errors": failures,
         "open_pr_coverage_complete": remaining == 0 and failures == 0,
+        # Full coverage of parsed PR HEADS is not exhaustive symbol coverage:
+        # macros and semantic registration conventions may escape this parser.
+        "open_pr_symbol_coverage_complete": False,
         "open_pr_cache_expired_or_closed": len(old) - hits,
-        "method": "Current PR heads cached by SHA; missing patches and truncated lists fail closed. Added APS5_VABI declarations/definitions are provisional reservations only",
+        "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI declarations/definitions are provisional evidence, not exhaustive symbol absence.",
     }
     return reservations, unknown, meta
