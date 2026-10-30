@@ -16,8 +16,8 @@ class AnyPS5SymbolStateTests(unittest.TestCase):
             lib.mkdir(parents=True)
             nid="H2e8t5ScQGc"
             (lib/"Export.cpp").write_text(
-                '// APS5_EXPORT("12345678901", fakeComment);\\n'
-                'APS5_EXPORT("H2e8t5ScQGc", sceExampleUnknown_nid_no_patch);\\n')
+                '// APS5_EXPORT("12345678901", fakeComment);\n'
+                'APS5_EXPORT("H2e8t5ScQGc", sceExampleUnknown_nid_no_patch);\n')
             rows=scan_files(Path(tmp))
             entry=rows[("libsceexample",nid)]
             self.assertTrue(entry["explicit_alias_seen"])
