@@ -70,7 +70,7 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
                         # the library tree might alter global registrations.
                         # Docs/assets are irrelevant unless explicitly NID-related.
                         if (CENTRAL.search(path) or
-                                re.search(r"\\.(?:cpp|cc|cxx|h|hpp|py|cmake|json|yml|yaml)$", path, re.I)
+                                re.search(r"\.(?:cpp|cc|cxx|h|hpp|py|cmake|json|yml|yaml)$", path, re.I)
                                 and not path.startswith(("docs/", ".github/ISSUE_TEMPLATE/"))):
                             unknown_global = True
                         continue
