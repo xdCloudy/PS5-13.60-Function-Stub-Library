@@ -171,7 +171,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceFiber](libraries/libscefiber-03c584ff93.md) | 15 | 15 | 0 |
 | [libSceFios2](libraries/libscefios2-f7b574bf34.md) | 168 | 168 | 0 |
 | [libSceFlexContent](libraries/libsceflexcontent-4bcb74e7f3.md) | 12 | 7 | 0 |
-| [libSceFollyShared](libraries/libscefollyshared-53f41da239.md) | 555 | 2 | 0 |
+| [libSceFollyShared](libraries/libscefollyshared-53f41da239.md) | 555 | 128 | 0 |
 | [libSceFont](libraries/libscefont-63ba420c2e.md) | 240 | 240 | 44 |
 | [libSceFont.native](libraries/libscefont-native-fca9c246fb.md) | 136 | 136 | 0 |
 | [libSceFontFt](libraries/libscefontft-4a57c746ed.md) | 21 | 21 | 0 |

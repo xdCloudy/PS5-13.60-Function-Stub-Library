@@ -302,7 +302,7 @@ libSceEsvmWidevine,firmware-13.60,12,12,data/firmware-13.60/libsceesvmwidevine-5
 libSceFacebook.Yoga,firmware-13.60,133,113,data/firmware-13.60/libscefacebook-yoga-c39a0027ac.jsonl
 libSceFiber,firmware-13.60,15,15,data/firmware-13.60/libscefiber-03c584ff93.jsonl
 libSceFlexContent,firmware-13.60,12,7,data/firmware-13.60/libsceflexcontent-4bcb74e7f3.jsonl
-libSceFollyShared,firmware-13.60,555,2,data/firmware-13.60/libscefollyshared-53f41da239.jsonl
+libSceFollyShared,firmware-13.60,555,128,data/firmware-13.60/libscefollyshared-53f41da239.jsonl
 libSceFont,firmware-13.60,240,240,data/firmware-13.60/libscefont-63ba420c2e.jsonl
 libSceFontFt,firmware-13.60,21,21,data/firmware-13.60/libscefontft-4a57c746ed.jsonl
 libSceFontGs,firmware-13.60,12,8,data/firmware-13.60/libscefontgs-b42f55c1c1.jsonl

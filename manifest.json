@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 46733,
+    "resolved_names": 46859,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 267305,
+    "unresolved_or_withheld_names": 267179,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -2628,10 +2628,10 @@
       "sha256": "8c2a04128825da26c81196dca5c6e800f876adb2a81bd5a9a13d36f66abd15a1"
     },
     {
-      "bytes": 197706,
+      "bytes": 214082,
       "path": "data/firmware-13.60/libscefollyshared-53f41da239.jsonl",
       "records": 555,
-      "sha256": "23451db95c5d6d4c20f7d85174796c286a4cea2d4abcf27116e89aab143647a2"
+      "sha256": "391ce178ee8e7b77f74531a035d6778b0c1390e6eb76fcb5d8d89087f64e32f9"
     },
     {
       "bytes": 110263,
@@ -5946,14 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85560,
+      "bytes": 85562,
       "path": "data/library-index.csv",
-      "sha256": "b94e075bd35a8996cfed47f63bb79abc19a0655bd2160d98e00c36c6c63aea23"
+      "records": 857,
+      "sha256": "30648def9086b299b2a7781f320ac101f994da923e7dcc17e6e55afcd5ae0c78"
     },
     {
-      "bytes": 2557113,
+      "bytes": 2569331,
       "path": "data/verified-name-map.jsonl",
-      "sha256": "aac4b2926a515acea302b28261b257491a9821f4e672afdbbee8f195f47907f9"
+      "records": 36691,
+      "sha256": "91028e68589290c8f27bea3d72cf106c91dfba3a63a5fb9286c77ef07a898900"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5974,7 +5976,7 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "00307b195ba69076c03f34ca1a7e100a61fad410ef5399d2444df4257eeb9cfe"
+    "sha256": "df46996fd4e85de1fb535dbb34b4d7e9d1971f6a56de4c7f9c63cfc969e0839c"
   },
   "report_image": {
     "bytes": 266263,
@@ -5983,5 +5985,5 @@
   },
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36565
+  "unique_verified_name_bindings": 36691
 }
