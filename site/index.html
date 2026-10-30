@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Live, evidence-based PS5 export identity catalogue and AnyPS5 coverage reports.">
+  <title>PS5 Function Coverage</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1020; --panel:#141d32; --edge:#34415a; --text:#eaf0fc; --muted:#b3c0d7; --accent:#8ebeff; }
+    * { box-sizing:border-box }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif; }
+    a { color:var(--accent) } a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible { outline:3px solid #ffe18a; outline-offset:3px }
+    header,main,footer { max-width:1240px; padding:24px; margin:auto }
+    h1 { font-size:clamp(1.8rem,4vw,3.1rem); margin:0 0 6px } h2 { margin:34px 0 14px; font-size:1.35rem }
+    p { margin:8px 0 } .muted,small { color:var(--muted) }
+    .top { display:flex; justify-content:space-between; align-items:start; gap:14px; flex-wrap:wrap }
+    .panel { background:var(--panel); border:1px solid var(--edge); border-radius:14px; padding:20px }
+    .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(205px,1fr)); gap:12px; margin:20px 0 }
+    .number { font-size:clamp(1.6rem,3vw,2rem); font-weight:750; letter-spacing:-.02em }
+    .label { color:var(--muted); font-size:.91rem }
+    .status { padding:12px 16px; border-radius:9px; border:1px solid var(--edge); margin:12px 0 }
+    .status.warning { border-left:5px solid #ffc46e } .status.ok { border-left:5px solid #73dfb1 }
+    .controls { display:flex; gap:12px; flex-wrap:wrap; align-items:end; margin-bottom:12px }
+    label { display:flex; flex-direction:column; gap:4px; font-size:.88rem; color:var(--muted) }
+    input,select,button { border:1px solid #65738e; color:var(--text); border-radius:8px; padding:9px 12px; background:#192642; font:inherit }
+    input { min-width:230px } button { cursor:pointer }
+    .scroll { overflow-x:auto; border:1px solid var(--edge); border-radius:12px }
+    table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:.88rem }
+    th,td { padding:10px 12px; text-align:right; border-bottom:1px solid #2b3851; white-space:nowrap }
+    th:first-child,td:first-child { text-align:left }
+    th { position:sticky; top:0; background:#1b2842 }
+    th button { border:0; padding:0; font-size:inherit; font-weight:700; background:transparent; text-align:right }
+    td button { background:transparent; border:none; padding:0; color:var(--accent); text-decoration:underline; text-align:left }
+    .chips { display:flex; flex-wrap:wrap; gap:8px }
+    .chip { display:inline-block; border:1px solid var(--edge); border-radius:30px; padding:5px 10px; background:#1a2945; font-size:.85rem }
+    .details { max-width:650px; width:calc(100% - 36px); max-height:85vh; overflow:auto; background:var(--panel); border:1px solid var(--edge); color:var(--text); border-radius:14px; padding:24px }
+    .details::backdrop { background:#000b }
+    dl { display:grid; grid-template-columns:minmax(150px,1fr) 1fr; gap:10px }
+    dt { color:var(--muted) } dd { margin:0; text-align:right; font-variant-numeric:tabular-nums }
+    .bars { display:grid; gap:12px; max-width:760px }
+    .meter { height:12px; border-radius:10px; background:#33425a; overflow:hidden }
+    .fill { height:100%; background:#88bfff }
+    .foot { padding-top:32px; padding-bottom:60px; }
+    @media(max-width:600px) { header,main,footer { padding:16px } .panel{ padding:15px } input {min-width:0;width:100%} label {flex:1 1 100%} dl {grid-template-columns:1fr 1fr} }
+    @media(prefers-reduced-motion:no-preference) { .fill {transition:width .25s} }
+  </style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div><h1>PS5 Function Coverage</h1><p class="muted">An evidence-based catalogue of identified functions, their names and AnyPS5 source coverage.</p></div>
+    <nav aria-label="Project links"><a href="https://github.com/xdCloudy/PS5-13.60-Function-Stub-Library">Repository</a> · <a href="https://github.com/xdCloudy/PS5-13.60-Function-Stub-Library/blob/main/reports/coverage-matrices.md">Text matrices</a></nav>
+  </div>
+  <p id="status" role="status" class="status">Loading the most recently generated report…</p>
+</header>
+<main>
+  <section aria-labelledby="overview"><h2 id="overview">At a glance</h2><div id="tiles" class="tiles"></div>
+  <div class="panel" id="explain"><strong>What counts as complete?</strong>
+  <p>Indexed means a library/NID identity was recorded. Named means a name is published. Strictly verified means the name, NID and status pass the current identity check. A throwing stub is not implemented functionality. A nonthrowing source body is not proof of correctness.</p></div></section>
+  <section aria-labelledby="name-heading"><h2 id="name-heading">Name recovery</h2><div id="bars" class="panel bars"></div></section>
+  <section aria-labelledby="sources-heading"><h2 id="sources-heading">Source comparisons and readiness</h2>
+    <div id="sourcecards" class="tiles"></div>
+    <p class="muted">Open-PR coverage is partial until all current PR heads are scanned. A missing match cannot prove absence.</p>
+  </section>
+  <section aria-labelledby="libraries-heading"><h2 id="libraries-heading">Explore libraries</h2>
+    <div class="controls">
+      <label>Search library <input id="search" type="search" placeholder="e.g. libSceAjm" autocomplete="off"></label>
+      <label>Ownership filter <select id="scope"><option value="">All scopes</option></select></label>
+      <label>Source filter <select id="source"><option value="">All libraries</option><option value="320">Has 3.20 references</option><option value="main">Seen on AnyPS5 main</option><option value="review">3.20 review candidates</option></select></label>
+      <label>Status filter <select id="statusFilter"><option value="">All statuses</option><option value="unnamed">Has unnamed identities</option><option value="verified">Has strict names</option><option value="historical">Historical-only identities</option><option value="withheld">Has withheld names</option><option value="alias">Explicit export aliases</option></select></label>
+      <label>Sort by <select id="sort"><option value="indexed">Indexed exports</option><option value="unresolved">Unnamed</option><option value="strict_verified">Strict names</option><option value="anyps5_main_definitions">AnyPS5 main</option><option value="score_triage_only">Research priority</option></select></label>
+    </div>
+    <p id="resultcount" class="muted" aria-live="polite"></p>
+    <div class="scroll"><table><thead><tr><th scope="col">Library</th><th scope="col">Indexed</th><th scope="col">13.60</th><th scope="col">3.20 refs</th><th scope="col">Named</th><th scope="col">Strict names</th><th scope="col">AnyPS5 main</th><th scope="col">Open PR*</th><th scope="col">Unnamed</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <p class="muted">*Open PR counts show observed matches only, not complete reservation coverage. Select a library to see its breakdown.</p>
+  </section>
+  <section aria-labelledby="health-heading"><h2 id="health-heading">Automation and review health</h2><div class="panel" id="health"></div></section>
+  <section aria-labelledby="changes-heading"><h2 id="changes-heading">Recent upstream changes</h2><div class="panel" id="changes">No comparable source revision yet.</div></section>
+  <section aria-labelledby="trend-heading"><h2 id="trend-heading">Progress over time</h2><div class="panel"><div id="trends" aria-live="polite">Loading observed refresh history…</div><p><a href="https://github.com/xdCloudy/PS5-13.60-Function-Stub-Library/commits/main/reports/coverage-history.json">View report history in Git</a></p></div></section>
+</main>
+<dialog id="detail" class="details" aria-labelledby="detail-title"><div class="top"><h2 id="detail-title">Library</h2><button id="close" type="button" aria-label="Close library details">Close</button></div><dl id="detail-list"></dl><p><small>Definitions, naming and build/runtime validation are distinct forms of evidence.</small></p></dialog>
+<footer class="foot muted">Updated by a scheduled workflow, not in real time. Counts are library/NID identities unless otherwise labelled. <a href="https://github.com/xdCloudy/PS5-13.60-Function-Stub-Library/blob/main/DATA_DICTIONARY.md">Data dictionary</a> · <a href="https://github.com/xdCloudy/PS5-13.60-Function-Stub-Library/blob/main/UPSTREAM_SYNC.md">Automation guide</a></footer>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const fmt = n => n === null || n === undefined ? "Unknown" : Number.isFinite(n) ? n.toLocaleString("en-GB") : String(n);
+const datum = (parent, tag, text, cls) => { const el=document.createElement(tag); el.textContent=text; if(cls) el.className=cls; parent.append(el); return el; };
+const card = (root, title, value, meaning) => {
+  const node=datum(root,"article","","panel");
+  datum(node,"div",title,"label");
+  datum(node,"div",fmt(value),"number");
+  datum(node,"small",meaning);
+};
+let records=[];
+function showDetail(r){
+  $("detail-title").textContent=r.library;
+  $("detail-list").replaceChildren();
+  for(const [label,value] of [
+    ["Indexed identities",r.indexed],["13.60 confirmed",r.firmware_13_60],
+    ["Historical only",r.historical_only],["3.20 references",r.source_320_references],
+    ["Published names",r.named],["Strictly reverified",r.strict_verified],
+    ["Unnamed",r.unresolved],["Qualified (assessment)",r.qualified_assessed],
+    ["AnyPS5 main definitions",r.anyps5_main_definitions],
+    ["Partial open-PR matches",r.anyps5_open_pr_matches_partial],
+    ["3.20 recovery proposals",r.name_recovery_candidates_320],
+    ["3.20 historical proposals",r.new_historical_candidates_320],
+    ["Ownership",Object.entries(r.ownership_scope_counts).map(([k,v])=>k+": "+fmt(v)).join(", ")]]){
+      datum($("detail-list"),"dt",label); datum($("detail-list"),"dd",fmt(value));
+  }
+  $("detail").showModal();
+}
+function update(){
+  const search=$("search").value.toLowerCase().trim(), scope=$("scope").value, source=$("source").value, sort=$("sort").value;
+  const filtered=records.filter(r=>r.library.toLowerCase().includes(search) &&
+    (!scope || Object.prototype.hasOwnProperty.call(r.ownership_scope_counts,scope)) &&
+    (!source || (source==="320" && r.source_320_references>0) ||
+                (source==="main" && r.anyps5_main_definitions>0) ||
+                (source==="review" && r.name_recovery_candidates_320>0)) &&
+    (!$("statusFilter").value ||
+      ($("statusFilter").value==="unnamed" && r.unresolved>0) ||
+      ($("statusFilter").value==="verified" && r.strict_verified>0) ||
+      ($("statusFilter").value==="historical" && r.historical_only>0) ||
+      ($("statusFilter").value==="withheld" && r.withheld>0) ||
+      ($("statusFilter").value==="alias" && r.anyps5_explicit_alias_without_visible_definition>0)));
+  filtered.sort((a,b)=>(b[sort]||0)-(a[sort]||0) || a.library.localeCompare(b.library));
+  $("rows").replaceChildren();
+  const fields=["indexed","firmware_13_60","source_320_references","named","strict_verified","anyps5_main_definitions","anyps5_open_pr_matches_partial","unresolved"];
+  for(const r of filtered.slice(0,350)){
+    const row=document.createElement("tr"), first=document.createElement("td"), button=document.createElement("button");
+    button.textContent=r.library; button.type="button"; button.addEventListener("click",()=>showDetail(r));
+    first.append(button);row.append(first);
+    for(const field of fields)datum(row,"td",fmt(r[field]));
+    $("rows").append(row);
+  }
+  $("resultcount").textContent=fmt(filtered.length)+" matching libraries"+(filtered.length>350?"; showing first 350, refine filters to see more":"");
+}
+async function load(){
+ try {
+  const response=await fetch("./data.json",{cache:"no-store"});
+  if(!response.ok)throw Error("HTTP "+response.status);
+  const d=await response.json();
+  if(d.schema_version!==1 || !Array.isArray(d.libraries))throw Error("Unrecognised report schema");
+  records=d.libraries;
+  const age=Date.now()-Date.parse(d.generated_at_utc);
+  const warning=!d.automation_health.pr_complete || age>6*60*60*1000 || age<0;
+  $("status").className="status "+(warning?"warning":"ok");
+  $("status").textContent="Last refreshed "+d.generated_at_utc+" · AnyPS5 PR scan "+
+    fmt(d.automation_health.pr_scanned)+"/"+fmt(d.automation_health.pr_total)+
+    (d.automation_health.pr_complete?" complete":" incomplete")+
+    (age>6*60*60*1000?" · STALE DATA":"");
+  const x=d.discovery, s=d.readiness, h=d.automation_health;
+  card($("tiles"),"Indexed identities",x.indexed,"Logical library + NID records, all firmware scopes");
+  card($("tiles"),"Confirmed in 13.60",x.confirmed_13_60,"Seen in the labelled firmware extraction");
+  card($("tiles"),"Published names",x.published_named,"Names may still need strict verification");
+  card($("tiles"),"Strict names",x.strictly_verified_names,"Valid NID/name and verified status");
+  card($("tiles"),"Historical 3.20 only",x.historical_only,"Not confirmation for firmware 13.60");
+  card($("tiles"),"Still unnamed",x.unnamed_or_withheld,"No published name associated");
+  const namedPercent=(100*x.strictly_verified_names/x.indexed).toFixed(2);
+  const meter=datum($("bars"),"div","Strictly verified names: "+namedPercent+"% of indexed identities");
+  const outer=datum($("bars"),"div","","meter"); outer.setAttribute("role","progressbar");
+  outer.setAttribute("aria-valuenow",x.strictly_verified_names);outer.setAttribute("aria-valuemax",x.indexed);
+  outer.setAttribute("aria-label","Strictly verified function names");
+  const fill=datum(outer,"div","","fill");fill.style.width=namedPercent+"%";
+  card($("sourcecards"),"3.20 registered forwarders",h.source_320_registrations,"3.20 source evidence; no claim about 13.60");
+  card($("sourcecards"),"AnyPS5 main definitions",s.anyps5_main_definition_matches,"Matches in merged C++ source, not validated functionality");
+  card($("sourcecards"),"Throwing placeholders",s.anyps5_throwing_marker,"NotImplemented markers in scanned bodies");
+  card($("sourcecards"),"Nonthrowing bodies",s.anyps5_nonthrowing_body,"Not automatically ABI or runtime verified");
+  card($("sourcecards"),"Qualified NIDs",s.qualified_unique_nids,"Previously assessed candidates, not all safely publishable");
+  card($("sourcecards"),"Open PR coverage",h.pr_scanned,"Successfully scanned heads out of "+fmt(h.pr_total));
+  const health=$("health");
+  for(const item of [
+    ["AnyPS5 main commit",d.source_revisions.anyps5_main||"unknown"],
+    ["3.20 commit",d.source_revisions.ps5_320||"not scanned"],
+    ["Open PRs scanned",fmt(h.pr_scanned)+" / "+fmt(h.pr_total)],
+    ["PR scan errors",h.pr_errors],
+    ["3.20 source files scanned",h.source_320_files],
+    ["3.20 records quarantined",h.source_320_conflicts_quarantined],
+    ["3.20 pending reviews",h.source_320_review_items],
+    ["Catalogued rows automatically changed",h.source_320_canonical_auto_changes],
+    ["AnyPS5 source-name proposals",h.anyps5_public_source_proposals],
+    ["Can absent PR symbols be safely published?",h.overlap_publication_safe?"Yes":"No — final complete scan required"]]){
+      const p=datum(health,"p",item[0]+": ");
+      datum(p,"strong",fmt(item[1]));
+  }
+  const change=d.recent_changes;
+  $("changes").replaceChildren();
+  if(!change || change.baseline_only){
+    datum($("changes"),"p","A baseline source snapshot has been recorded. Changes can be compared when a later revision is scanned.");
+  }else{
+    datum($("changes"),"p","Compared with source commit "+change.previous_source_sha);
+    const updates=[
+      ["Added source identities",change.added],
+      ["Removed source identities",change.removed],
+      ["Changed declaration or source-state evidence",change.changed_source_classifications]
+    ];
+    for(const [name,count] of updates){
+      datum($("changes"),"p",name+": "+fmt(count));
+    }
+    datum($("changes"),"small","These are differences in observed source identities/classifications; no runtime implementation claim is made.");
+  }
+  const snapshots=(d.trends||[]).slice(-24);
+  const trends=$("trends");trends.replaceChildren();
+  if(snapshots.length<2){
+    datum(trends,"p","Only one source-backed snapshot exists so far. A trend will appear after a future observed change.");
+  }else{
+    datum(trends,"p","Observed changes only; refreshes with identical measurements do not create extra points.","muted");
+    datum(trends,"p","Blue: strictly verified names. Green: AnyPS5 main source-definition matches.");
+    const ns="http://www.w3.org/2000/svg";
+    const svg=document.createElementNS(ns,"svg");
+    svg.setAttribute("viewBox","0 0 760 220");svg.setAttribute("width","100%");
+    svg.setAttribute("role","img");
+    svg.setAttribute("aria-label","Measured coverage trend over the last "+snapshots.length+" changed refreshes");
+    const max=Math.max(1,...snapshots.flatMap(p=>[p.strictly_verified_names,p.anyps5_main_matches]));
+    const createLine=(key,color)=>{
+      const line=document.createElementNS(ns,"polyline");
+      const points=snapshots.map((p,i)=>{
+        const x=36+i*690/(snapshots.length-1),y=185-160*p[key]/max;
+        return x.toFixed(1)+","+y.toFixed(1);
+      }).join(" ");
+      line.setAttribute("points",points);line.setAttribute("fill","none");
+      line.setAttribute("stroke",color);line.setAttribute("stroke-width","3");
+      svg.append(line);
+    };
+    createLine("strictly_verified_names","#8ebeff");
+    createLine("anyps5_main_matches","#73dfb1");
+    trends.append(svg);
+    const tab=document.createElement("table");
+    tab.innerHTML="<caption>Accessible recorded coverage trend data</caption><thead><tr><th scope='col'>UTC</th><th scope='col'>Strict names</th><th scope='col'>AnyPS5 main</th></tr></thead>";
+    const tbody=document.createElement("tbody");
+    for(const point of snapshots){
+      const row=document.createElement("tr");
+      for(const value of [point.observed_at_utc,fmt(point.strictly_verified_names),fmt(point.anyps5_main_matches)])datum(row,"td",value);
+      tbody.append(row);
+    }
+    tab.append(tbody);const wrap=datum(trends,"div","","scroll");wrap.append(tab);
+  }
+  const scopes=new Set(records.flatMap(r=>Object.keys(r.ownership_scope_counts)));
+  for(const scope of [...scopes].sort()){const option=document.createElement("option");option.value=scope;option.textContent=scope.replaceAll("_"," ");$("scope").append(option);}
+  ["search","scope","source","statusFilter","sort"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",update));
+  $("close").addEventListener("click",()=>$("detail").close());
+  update();
+ } catch(e) {
+  $("status").className="status warning";
+  $("status").textContent="Report unavailable: "+e.message+". Use the Markdown matrices linked above.";
+ }
+}
+load();
+</script>
+</body>
+</html>

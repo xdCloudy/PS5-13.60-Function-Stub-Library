@@ -32,10 +32,10 @@ jobs:
       pull-requests: read
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: true
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
       - name: Unit tests
@@ -44,6 +44,10 @@ jobs:
         run: python tools/refresh_manifest.py
       - name: Clone upstream main (read-only)
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
+      - name: Verify layout-aware patch planning against real AnyPS5 libraries
+        run: python tools/live_layout_probe.py --upstream-dir ../AnyPS5
+      - name: Clone PS5 3.20 public forwarding sources (read-only)
+        run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git ../PS5-3.20_Libs
       - name: Rebuild report and collect upstream NID observations
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -53,6 +57,14 @@ jobs:
           else
             python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
           fi
+      - name: Derive AnyPS5 declaration and source-body states
+        run: python tools/anyps5_metadata.py --upstream-dir ../AnyPS5
+      - name: Reconcile 3.20 registrations (metadata only)
+        run: python tools/ingest_320.py --source-dir ../PS5-3.20_Libs
+      - name: Regenerate coverage matrices and dashboard feed
+        run: python tools/build_coverage.py
+      - name: Validate generated reports and dashboard consistency
+        run: python tools/validate_pipeline.py
       - name: Publish workflow summary
         run: |
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
@@ -60,7 +72,7 @@ jobs:
           d=json.load(open("reports/progress.json"))
           i=d["inventory"]; s=d["stubs"]
           print("## PS5 readiness")
-          print(f"- Verified names: {i['verified_named_records']:,} / {i['records']:,}")
+          print(f"- Strictly reverified names: {i['strictly_reverified_named_records']:,} / {i['records']:,}")
           print(f"- Qualified unique NIDs: {s['qualified_unique_nids_recomputed']:,}")
           print(f"- AnyPS5 main definition matches: {s['qualified_unique_nids_matched_in_main_source']:,}")
           print(f"- Open-PR patch matches: {s['qualified_unique_nids_matched_in_open_pr_additions']:,}")
@@ -74,7 +86,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl reports/upstream-source-candidates.jsonl reports/open-pr-cache.json reports/anyps5-evidence.jsonl
+          git add manifest.json READINESS.md reports/progress.json reports/library-progress.md reports/upstream-review-queue.jsonl reports/upstream-source-candidates.jsonl reports/open-pr-cache.json reports/anyps5-evidence.jsonl reports/source-320.json reports/source-320-review.jsonl reports/coverage-matrices.json reports/coverage-matrices.md reports/coverage-history.json reports/anyps5-symbol-states.json reports/anyps5-symbol-states.jsonl reports/anyps5-symbol-changes.json site/data.json
           if git diff --cached --quiet; then
             echo "Progress files are current."
             exit 0
@@ -90,8 +102,8 @@ jobs:
       pull-requests: read
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
       - name: Unit tests
@@ -100,12 +112,22 @@ jobs:
         run: python tools/refresh_manifest.py
       - name: Clone upstream main (read-only)
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
+      - name: Verify layout-aware patch planning against real AnyPS5 libraries
+        run: python tools/live_layout_probe.py --upstream-dir ../AnyPS5
+      - name: Clone PS5 3.20 sources (read-only)
+        run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git ../PS5-3.20_Libs
       - name: Generate a PR preview (never pushes PR code)
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
+        run: |
+          python tools/update_progress.py --upstream-dir ../AnyPS5 --skip-prs
+          python tools/anyps5_metadata.py --upstream-dir ../AnyPS5
+          python tools/ingest_320.py --source-dir ../PS5-3.20_Libs
+          python tools/build_coverage.py
+          python tools/validate_pipeline.py
+          python tools/stage_catalogue_import.py --output reports/catalogue-import-proposal.json
       - name: Upload report preview
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: ps5-readiness-preview
           path: |
@@ -115,4 +137,42 @@ jobs:
             reports/upstream-review-queue.jsonl
             reports/upstream-source-candidates.jsonl
             reports/anyps5-evidence.jsonl
+            reports/source-320.json
+            reports/source-320-review.jsonl
+            reports/coverage-matrices.json
+            reports/coverage-matrices.md
+            reports/coverage-history.json
+            reports/catalogue-import-proposal.json
+            reports/anyps5-symbol-states.json
+            reports/anyps5-symbol-states.jsonl
+            reports/anyps5-symbol-changes.json
+            site/index.html
+            site/data.json
           retention-days: 14
+
+  deploy-pages:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Reject inconsistent or stale dashboard inputs
+        run: python tools/validate_pipeline.py
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
