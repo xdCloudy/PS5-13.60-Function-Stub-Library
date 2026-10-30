@@ -242,6 +242,13 @@ ABI evidence must be independently reviewed. This remains a draft until maintain
            branch=branch,sha=git(checkout,"rev-parse","origin/main"),
            patchname=patch.name)
         (output / "PULL_REQUEST_BODY.md").write_text(pr_body,encoding="utf-8")
+        # Preserve exactly what was committed so a final post-build gate can
+        # recheck precisely this batch before sending anything upstream.
+        (output / "SELECTED_CANDIDATES.json").write_text(
+            json.dumps({"base_sha": initial_main_sha,
+                        "patch_commit": git(checkout, "rev-parse", "HEAD"),
+                        "candidates": selected}, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8")
         print("Patch:",patch)
         print("Draft PR body:",output / "PULL_REQUEST_BODY.md")
         print("Build/runtime testing remains required; do not claim merge readiness.")
