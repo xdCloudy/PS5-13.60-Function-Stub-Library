@@ -85,6 +85,8 @@ def load_inventory(root: Path):
     verified = set()
     invalid_bindings = 0
     withheld_qualified = 0
+    total_rows = 0
+    verified_rows = 0
     for directory in ("firmware-13.60", "historical-3.20-only"):
         for path in sorted((root / "data" / directory).glob("*.jsonl")):
             with path.open(encoding="utf-8") as handle:
@@ -95,9 +97,10 @@ def load_inventory(root: Path):
                     lib = row["library"]
                     nid = row["nid"]
                     key = (lib.casefold(), nid)
-                    if key in by_identity:
-                        raise ValueError(f"Duplicate library/NID identity: {lib}/{nid}")
-                    by_identity[key] = row
+                    total_rows += 1
+                    # The same library/NID can appear in both firmware and historical
+                    # partitions. Retain every row; prefer the 13.60 row for lookup.
+                    by_identity.setdefault(key, row)
                     all_libraries[lib] += 1
                     all_nids[nid] += 1
                     scopes[row["scope"]] += 1
@@ -106,6 +109,7 @@ def load_inventory(root: Path):
                                  and nid_for(name) == nid)
                     if valid:
                         verified.add(key)
+                        verified_rows += 1
                         library_named[lib] += 1
                     elif name:
                         invalid_bindings += 1
@@ -114,7 +118,9 @@ def load_inventory(root: Path):
                             qualified.add(key)
                         else:
                             withheld_qualified += 1
-    return by_identity, all_nids, scopes, all_libraries, library_named, qualified, verified, invalid_bindings, withheld_qualified
+    return (by_identity, all_nids, scopes, all_libraries, library_named,
+            qualified, verified, invalid_bindings, withheld_qualified,
+            total_rows, verified_rows)
 
 
 def scan_upstream(upstream: Path, known: dict, verified: set):
@@ -227,16 +233,16 @@ def main():
     root = args.root.resolve()
     old = read_json(root / "readiness.json")
     manifest = read_json(root / "manifest.json")
-    known, nids, scopes, libraries, named, qualified, verified, invalid, qualified_invalid = load_inventory(root)
-    total = len(known)
-    names = len(verified)
+    (known, nids, scopes, libraries, named, qualified, verified,
+     invalid, qualified_invalid, total, names) = load_inventory(root)
     if total != manifest["counts"]["total_records"]:
         raise ValueError("Inventory row count does not match canonical manifest")
     if names != manifest["counts"]["resolved_names"]:
         raise ValueError("Verified names do not match manifest; regenerate canonical dataset first")
     qualified_nids = {key[1] for key in qualified}
     all_uniq_nids = len(nids)
-    aliases = total - all_uniq_nids
+    cross_scope_repeated_identities = total - len(known)
+    aliases = len(known) - all_uniq_nids
     upstream = args.upstream_dir.resolve() if args.upstream_dir else None
     main_obs = {}
     unmatched = set()
@@ -289,6 +295,7 @@ def main():
             "verified_named_records": names, "unresolved_or_withheld": total - names,
             "unique_nids_all_scopes": all_uniq_nids,
             "cross_library_nid_extra_records_all_scopes": aliases,
+            "repeated_library_nid_records_across_scopes": cross_scope_repeated_identities,
             "nid_shared_by_multiple_records": sum(1 for v in nids.values() if v > 1),
             "name_nid_mismatches_or_nonverified_names": invalid,
             "scope_records": dict(sorted(scopes.items()))
@@ -345,6 +352,7 @@ def main():
         f"| Unresolved or withheld records | {total - names:,} |",
         f"| Unique NIDs across all scopes | {all_uniq_nids:,} |",
         f"| Extra cross-library NID records (not deletions) | {aliases:,} |",
+        f"| Repeated library/NID identities across partitions | {cross_scope_repeated_identities:,} |",
         "",
         "## Stub progress — distinct stages", "",
         "| Measure | Count | Evidence level |", "|---|---:|---|",
