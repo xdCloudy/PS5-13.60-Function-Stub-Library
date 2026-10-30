@@ -36915,3 +36915,6 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"sceHmd2ReprojectionClearEventGpuEnd","nid":"+mRQqXcHRaQ"}
+{"name":"sceHmd2ReprojectionClearEventGpuStart","nid":"-B6awOZnmeU"}
+{"name":"sceHmd2GazeGetEnabledEye","nid":"638Tmg5y6U4"}

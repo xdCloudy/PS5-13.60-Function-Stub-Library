@@ -219,7 +219,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libhermes-0.11](libraries/libhermes-0-11-c931216034.md) | 107 | 0 | 0 |
 | [libSceHidControl](libraries/libscehidcontrol-3b1f591a82.md) | 82 | 68 | 0 |
 | [libSceHmd](libraries/libscehmd-be39c4e9c8.md) | 186 | 168 | 0 |
-| [libSceHmd2](libraries/libscehmd2-a02794ae28.md) | 276 | 161 | 0 |
+| [libSceHmd2](libraries/libscehmd2-a02794ae28.md) | 276 | 164 | 0 |
 | [libSceHmd2Distortion](libraries/libscehmd2distortion-275ff9225c.md) | 6 | 0 | 0 |
 | [libSceHmd2Reprojection_nosubmission](libraries/libscehmd2reprojection_nosubmission-6b0287ebd2.md) | 1 | 1 | 0 |
 | [libSceHmd2Reprojection_vrremote_nosubmission](libraries/libscehmd2reprojection_vrremote_nosubmission-ed9cfb1a89.md) | 1 | 0 | 0 |

@@ -3,9 +3,9 @@
   "counts": {
     "firmware-13.60": 302338,
     "historical-3.20-only": 11700,
-    "resolved_names": 47085,
+    "resolved_names": 47088,
     "total_records": 314038,
-    "unresolved_or_withheld_names": 266953,
+    "unresolved_or_withheld_names": 266950,
     "withheld_names": 2
   },
   "documentation_files": [
@@ -2796,10 +2796,10 @@
       "sha256": "6d75c82b6214e6826d1640c6ed424c5b363c07e9e795d6089f9a072e2c212d01"
     },
     {
-      "bytes": 110745,
+      "bytes": 111312,
       "path": "data/firmware-13.60/libscehmd2-a02794ae28.jsonl",
       "records": 276,
-      "sha256": "62e779c52e0d05cdb5477f995e3c2327995af6823652e4e63ab340665cbf8774"
+      "sha256": "347e1f020f413a833f075faa63dab4e65ab9a6fb3c0ff446bc23d7406e1be221"
     },
     {
       "bytes": 2112,
@@ -5946,16 +5946,16 @@
       "sha256": "940d527f768739efc1432f7948d1da98a8bf30076fa5037c38c960eca5f09930"
     },
     {
-      "bytes": 85564,
+      "bytes": 86421,
       "path": "data/library-index.csv",
       "records": 857,
-      "sha256": "4abc44c7ba8c3c670af72667998df40fd40c9aabb92e098c24a831a140f0b41d"
+      "sha256": "63e1248240677a90d5cce3d09856df05fac5e396ba39856a45b5f156dd9af8ea"
     },
     {
-      "bytes": 2581638,
+      "bytes": 2618750,
       "path": "data/verified-name-map.jsonl",
-      "records": 36849,
-      "sha256": "10d0fd3e633779b44224fa778c018b9dc140938ae90078cf54f315f90b02b211"
+      "records": 36920,
+      "sha256": "d44dc594f89c7e62af86e76bbaaaafaa044dbabebbfa042a998f9eb27d0604bb"
     }
   ],
   "firmware_provenance": "13.60 is the extraction label; not an independent hardware measurement",
@@ -5976,10 +5976,10 @@
   ],
   "readiness_file": {
     "path": "readiness.json",
-    "sha256": "a46de98732d4b73f13a2276e125a059fe16fecd06bd162fc35d9a278c341620d"
+    "sha256": "a67016d671b001a46a57aa743e0ca6a26b5dbbcb911ea0f1d011f94153e15b3a"
   },
   "report_image": null,
   "schema_version": 1,
   "source_code_included": false,
-  "unique_verified_name_bindings": 36917
+  "unique_verified_name_bindings": 36920
 }

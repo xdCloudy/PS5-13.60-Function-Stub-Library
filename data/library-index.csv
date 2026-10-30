@@ -330,7 +330,7 @@ libSceGnmWaitFreeSubmit,firmware-13.60,2,0,data/firmware-13.60/libscegnmwaitfree
 libSceGvMp4Parser,firmware-13.60,7,1,data/firmware-13.60/libscegvmp4parser-11803a4cb6.jsonl
 libSceHidControl,firmware-13.60,81,67,data/firmware-13.60/libscehidcontrol-3b1f591a82.jsonl
 libSceHmd,firmware-13.60,178,160,data/firmware-13.60/libscehmd-be39c4e9c8.jsonl
-libSceHmd2,firmware-13.60,276,161,data/firmware-13.60/libscehmd2-a02794ae28.jsonl
+libSceHmd2,firmware-13.60,276,164,data/firmware-13.60/libscehmd2-a02794ae28.jsonl
 libSceHmd2Distortion,firmware-13.60,6,0,data/firmware-13.60/libscehmd2distortion-275ff9225c.jsonl
 libSceHmd2ReprojectionBlankInBackground,firmware-13.60,1,0,data/firmware-13.60/libscehmd2reprojectionblankinbackground-f1defb120e.jsonl
 libSceHmd2ReprojectionMotionVector,firmware-13.60,1,0,data/firmware-13.60/libscehmd2reprojectionmotionvector-a3712ce199.jsonl

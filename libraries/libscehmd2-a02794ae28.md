@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 276 |
-| Named | 161 |
-| Unresolved or withheld | 115 |
+| Named | 164 |
+| Unresolved or withheld | 112 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -30,9 +30,11 @@ A bounded preview; the inventory file contains the complete library.
 | NID | Symbol |
 |---|---|
 | `+l0RQph81Z8` | `sceHmd2InternalLedDetectorStop` |
+| `+mRQqXcHRaQ` | `sceHmd2ReprojectionClearEventGpuEnd` |
 | `+rExHeC9lP0` | `sceHmd2GazeObjectSelectionInitialize` |
 | `+seEJVlljr0` | `sceHmd2ReprojectionSetMirroringOption` |
 | `--TFsJYXo04` | `sceHmd2InternalSlamTraceStop` |
+| `-B6awOZnmeU` | `sceHmd2ReprojectionClearEventGpuStart` |
 | `-C2nkoEYOnU` | `sceHmd2ReprojectionQueryDisplayBufferSizeAlign` |
 | `-FpzB+sfcYg` | `sceHmd2ReprojectionSetEventGpuStart` |
 | `-XPk5KWBYdo` | `sceHmd2InternalRelocalizerSetResultData` |
@@ -41,3 +43,4 @@ A bounded preview; the inventory file contains the complete library.
 | `-kZT7X7OMg0` | `sceHmd2InternalRelocalizerOpen` |
 | `-tfbonl+WQY` | `sceHmd2InternalSetPortStatus` |
 | `-tnG5UJPvAc` | `sceHmd2GazeStartUserCalibration` |
+| `1HZNE6jhBnQ` | `sceHmd2InternalPowerEventInitialize` |
