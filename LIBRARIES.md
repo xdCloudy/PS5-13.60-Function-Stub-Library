@@ -180,7 +180,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceFreeTypeOl](libraries/libscefreetypeol-4946750f90.md) | 344 | 344 | 0 |
 | [libSceFreeTypeOptOl](libraries/libscefreetypeoptol-099e622a02.md) | 3 | 3 | 0 |
 | [libSceFreeTypeOt](libraries/libscefreetypeot-02cf60edfe.md) | 341 | 341 | 0 |
-| [libSceFsInternalForVsh](libraries/libscefsinternalforvsh-05a5e357c4.md) | 446 | 309 | 0 |
+| [libSceFsInternalForVsh](libraries/libscefsinternalforvsh-05a5e357c4.md) | 446 | 340 | 0 |
 
 ## G
 
