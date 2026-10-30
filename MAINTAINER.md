@@ -42,43 +42,32 @@ ownership is eligible, the strict name binding is present, the main head
 has been updated, and all PR scans completed. The generator is intentionally
 restricted to reviewed void signatures and does not fabricate unknown ABIs.
 
-## Outstanding production gates for PR #10
+## Production automation status and remaining evidence gates
 
-The read-only PR preview can establish source parsing, report consistency,
-layout placement and unit-test correctness. It **cannot** verify privileged
-workflows or deploy Pages from an unmerged branch.
+PR #10 was merged into main on 30 October 2026. The GitHub Pages deployment
+and production refresh passed. The catalogue-import workflow subsequently
+passed its retry after enabling Actions PR creation permissions.
 
-Before declaring the automation production-ready:
+The catalogue review publisher now updates one existing open draft PR, recovers
+a branch left by a failed creation attempt, and suppresses re-publication of
+unchanged identities from a deliberately closed review. A new identity revision
+uses a separate fingerprinted branch. An unreadable closed proposal fails
+closed instead of silently treating review history as disposable.
 
-1. Confirm GitHub Pages source is **GitHub Actions** under
-   **Settings → Pages → Build and deployment**. Confirm the deployment URL
-   from a successful `deploy-pages` job and inspect the published `data.json`.
-2. Under **Settings → Actions → General → Workflow permissions**, enable
-   **Read and write permissions**, and **Allow GitHub Actions to create and
-   approve pull requests**. Restrict human approval-file updates using
-   branch protection and CODEOWNERS.
-3. Run the trusted-main scheduled/manual `refresh` and verify report
-   commits, canonical manifest validation, source SHA consistency and
-   no-op rerun idempotence. Run the dependent proposal workflow and
-   confirm it updates the existing review branch, not a duplicate PR.
-4. A manually approved test identity is required before the canonical-import
-   draft workflow can be tested for a real PR; do not invent such an approval.
-5. Full upstream open-PR head coverage is not achieved merely by progressive
-   patch-cache completion. To publish a stub, obtain external ABI evidence
-   and a **successful candidate-level live audit**, including current main
-   and every open PR head SHA. A changed target library or uncertain
-   global registration must block.
-6. Exercise upstream CMake/build/test checks with a real authorised
-   contribution checkout. Source layout probes are not ABI, build or
-   runtime verification.
-7. Check open catalogue naming PRs before merge; their changed library shards
-   do not automatically conflict with automation, but shared manifest,
-   verified-name map, README, LIBRARIES.md and readiness files do.
-8. Keep PR #10 **draft** while privileged workflows/Pages remain unverified;
-   do not merge or publish upstream stubs merely to satisfy a coverage target.
+**Still unverified:** An Actions-created *brand-new* draft PR after the
+permission change. The successful retry exercised the existing-PR path.
+Approved canonical name import needs a real independently reviewed approval
+before its privileged publication path can be exercised.
 
-When the GitHub REST Pages settings endpoint is unavailable to the connector,
-report the setting as **unobserved**, not disabled or already configured.
+Full upstream PR coverage does not follow from the progressive symbol cache
+alone. AnyPS5 patch generation still needs independent ABI evidence, a complete
+current-main/open-PR overlap audit, convention checks, builds and manual review.
+The reviewed-void signature generator is deliberately opt-in. Do not assert
+firmware scope or implementation correctness solely from matching hashes.
+
+When a privileged workflow fails, inspect its actual job logs and the branch
+state before retrying. Never remove a closed-review history marker simply to
+force another PR.
 
 ## Safe release process
 
