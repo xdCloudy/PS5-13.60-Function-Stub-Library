@@ -167,7 +167,9 @@ def main():
             os.getenv("GITHUB_TOKEN", ""), known, verified, nid_for,
             root/"reports/open-pr-cache.json", 100000)
         if not info["open_pr_coverage_complete"]:
-            raise ValueError("Incomplete open-PR overlap scan: publication blocked")
+            raise ValueError("Incomplete open-PR head scan: publication blocked")
+        if not info.get("open_pr_symbol_coverage_complete", False):
+            raise ValueError("Open-PR symbol forms are not exhaustively scanned; publication blocked")
         occupied |= main_occupied
         reserved = set(pr_known) | set(pr_unknown)
     selected,rejected=choose(reviews,known,verified,occupied,reserved,args.max_stubs)
