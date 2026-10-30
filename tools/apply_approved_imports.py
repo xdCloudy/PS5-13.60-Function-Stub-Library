@@ -210,6 +210,16 @@ def apply(root: Path, approval_file: Path) -> dict:
         manifest["counts"]["unresolved_or_withheld_names"] = manifest["counts"]["total_records"] - named_total
         manifest["unique_verified_name_bindings"] = len(verified)
         write_if_changed(manifest_path, json.dumps(manifest, indent=2, ensure_ascii=False)+"\n")
+        readme_path = root / "README.md"
+        if readme_path.is_file():
+            readme = readme_path.read_text(encoding="utf-8")
+            updated, replacements = re.subn(
+                r"(\| Records with a published name \| \*\*)[\d,]+(\*\* \|)",
+                lambda m: m.group(1) + f"{named_total:,}" + m.group(2),
+                readme)
+            if replacements != 1:
+                raise ValueError("Unable to regenerate README published-name total")
+            write_if_changed(readme_path, updated)
         from refresh_manifest import refresh
         refresh(root)
     return {"approved": approved, "rejected": rejected,
