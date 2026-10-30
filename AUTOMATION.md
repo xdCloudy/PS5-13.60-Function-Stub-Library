@@ -63,10 +63,9 @@ not the original C forwarding code or canonical inventory.
 After a successful refresh on trusted main, the separate
 `.github/workflows/catalogue-import-review.yml` workflow rechecks the
 catalogue manifest and stages strictly sanitised, hash-compatible name or
-historical-reference **proposals**. It opens a deterministic draft GitHub
-pull request only when it finds new reviewable (library, NID) identities.
-An identical candidate set does not create another PR, even when source SHAs
-move. Conflicts and publication-filtered names are excluded.
+historical-reference **proposals**. It opens or updates a single stable-branch draft GitHub
+pull request when it finds reviewable identities. A changed source revision
+updates an existing open proposal instead of creating another PR. Conflicts and publication-filtered names are excluded.
 
 The draft contains only public metadata in
 `reports/catalogue-import-proposal.json`, **not** a rewritten canonical
@@ -78,6 +77,56 @@ pull requests` in the repository's **Settings → Actions → General →
 Workflow permissions**. Without that permission, the workflow may push a
 review branch but cannot open the PR; the failed step is visible in Actions.
 The review workflow never runs or executes code from untrusted external PRs.
+
+## Promoting independently approved names into canonical inventory
+
+The staged metadata is not enough to publish. A second, trusted-main workflow,
+`.github/workflows/approved-catalogue-import.yml`, reads separately reviewed
+decisions from `approvals/catalogue-name-approvals.jsonl` and applies only
+previously unresolved **existing library/NID identities**. All source names
+are rehashed; the reviewer must attest independent evidence, ownership,
+firmware scope, publication rights, and a linked review PR.
+
+The importer keeps old firmware classifications, does not invent additional
+identities, rejects withheld names, checks collisions in the canonical name
+map, and regenerates affected shards, the index, library pages, verified-name
+map, manifest and readiness snapshot. It produces an auditable import ledger.
+
+A successful review decision does not merge automatically: the action opens a
+separate **draft** canonical-import PR for maintainers to review. The proposal
+workflow now uses a stable `automation/catalogue-review` branch and updates
+its existing open PR rather than opening a new overlapping PR for each
+source-revision change.
+
+When the stable approved-import PR branch already exists, the current workflow
+blocks rather than overwriting unreviewed changes. This requires reconciliation;
+it is a deliberate remaining limitation, not successful automatic deduplication.
+
+The approval format and trust requirements are documented in
+[approvals/README.md](approvals/README.md). Human rights/evidence attestation
+is not replaced with a hash match. No approval decisions have been committed.
+
+## Candidate-specific AnyPS5 collision proof
+
+`tools/candidate_overlap.py` is a **separate live gate** used only when the
+stub generator runs with `--apply`. It enumerates current open PRs, retrieves
+each exact head SHA and changed-file count, checks every file page and patch
+for omissions, and repeats the head enumeration afterwards. A candidate is
+blocked if its NID is seen anywhere on current main or an open PR, its library
+is touched by any open PR, a central registration path is uncertain, or any
+API response or snapshot is incomplete.
+
+This gate deliberately does **not** change
+`open_pr_symbol_coverage_complete = False` in the legacy progress cache.
+A complete series of cached *recognised* patches cannot certify that every
+possible C++ registration form was parsed. The live audit records a per-PR
+head vector and the reason for every candidate-level verdict. Publication is
+not allowed on a heuristic absence result.
+
+`tools/layout_patch.py` preserves upstream macros and places throwing void
+functions in reviewed ABI regions. CI read-only probes the current
+`libSceAudioIn`, `libSceVideoOut` and `libSceUserService` source layouts;
+ambiguous layouts fail rather than guessing a filename.
 
 ## Draft AnyPS5 contributions
 
