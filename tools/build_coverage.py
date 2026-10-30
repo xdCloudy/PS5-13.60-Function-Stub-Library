@@ -46,6 +46,7 @@ def build(root: Path) -> dict:
                         row["conflicted"] += 1
                     scopes[record["scope"]] += 1
                     row["scope:" + record["scope"]] += 1
+    pr_scanned_this_run = (progress["generated_from"]["anyps5_open_prs"].get("open_pr_total") is not None)
     upstream = {r["library"].casefold(): r for r in progress["libraries"]}
     sources = (historical or {}).get("per_library", {})
     sources = {name.casefold(): item for name, item in sources.items()}
@@ -57,12 +58,12 @@ def build(root: Path) -> dict:
         observed_states = state_by_library.get(library.casefold(), {})
         source_total = sum(ref.values()) if historical else None
         main = up.get("upstream_main_catalogue_source_matches", 0)
-        reserved = up.get("open_pr_added_matches", 0)
+        reserved = up.get("open_pr_added_matches", 0) if pr_scanned_this_run else None
         qualified = up.get("qualified_records", 0)
         # Priority is a triage ranking, not permission to generate stubs.
         eligible_scope = count.get("scope:existing_firmware_system_library", 0) + count.get(
             "scope:existing_upstream_placeholder_library", 0)
-        score = round((min(qualified, count["strict"]) - min(qualified, main + reserved))
+        score = round((min(qualified, count["strict"]) - min(qualified, main + (reserved or 0)))
                       * (1 if eligible_scope else 0), 2)
         row = {
             "library": library, "indexed": count["indexed"],
@@ -117,7 +118,8 @@ def build(root: Path) -> dict:
             "anyps5_main_definition_matches": st["anyps5_main_tracked_source_records_live"],
             "anyps5_throwing_marker": st["anyps5_main_throwing_marker_records_live"],
             "anyps5_nonthrowing_body": st["anyps5_main_nonthrowing_source_records_live"],
-            "open_pr_qualified_partial": st["qualified_unique_nids_matched_in_open_pr_additions"],
+            "open_pr_qualified_partial": (st["qualified_unique_nids_matched_in_open_pr_additions"]
+                                          if pr_scanned_this_run else None),
             "snapshot_locally_prepared_stubs": st["statically_prepared_saved_snapshot"],
             "snapshot_fully_validated_stubs": st["fully_validated_saved_snapshot"],
             "build_verified_live": None, "abi_verified_live": None,
@@ -126,7 +128,8 @@ def build(root: Path) -> dict:
         "ownership": dict(sorted(scopes.items())),
         "automation_health": {
             "last_refresh_utc": progress["generated_from"]["generated_at_utc"],
-            "pr_scanned": pr["open_pr_scanned"], "pr_total": pr["open_pr_total"],
+            "pr_scanned": pr["open_pr_scanned"] if pr_scanned_this_run else None,
+            "pr_total": pr["open_pr_total"],
             "pr_complete": pr["open_pr_coverage_complete"],
             "pr_errors": pr["open_pr_errors"],
             "anyps5_symbol_observations": (anyps5_states or {}).get("observed_library_nid_records"),
@@ -145,6 +148,7 @@ def build(root: Path) -> dict:
         },
         "libraries": rows,
         "limitations": [
+            "If open-PR scanning was skipped, its per-library counts are null (unknown), not zero.",
             "An absent PR match is unknown while PR scanning is incomplete.",
             "The 3.20-only source is not evidence of a firmware 13.60 export.",
             "Source definitions are not proof of registration, ABI, build or runtime verification.",
