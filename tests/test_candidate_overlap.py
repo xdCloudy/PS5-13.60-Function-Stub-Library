@@ -108,6 +108,22 @@ class CandidateOverlapTests(unittest.TestCase):
         self.assertFalse(report["candidates"][0]["verified_clear"])
         self.assertIn("pr_7_unverified_registration_path", report["candidates"][0]["reasons"])
 
+    def test_nid_postfix_is_normalised_to_public_identity(self):
+        target = [{"library": "libSceExample", "nid": nid_for("sceNamedAlias")}]
+        def fetch(url, token):
+            if "/pulls?state=open" in url:
+                return [{"number": 7, "head": {"sha": "a" * 40}}]
+            if url.endswith("/pulls/7"):
+                return {"head": {"sha": "a" * 40}, "changed_files": 1}
+            if "/pulls/7/files?" in url:
+                return [{"filename": "core/libs/prx/libOther/Export.cpp",
+                         "additions": 1,
+                         "patch": "+void APS5_VABI sceNamedAlias_nid_postfix() {}"}]
+            raise AssertionError(url)
+        report = check_candidates(target, set(), "token", nid_for, fetch)
+        self.assertFalse(report["candidates"][0]["verified_clear"])
+        self.assertIn("pr_7_nid_collision", report["candidates"][0]["reasons"])
+
 
 class LayoutPlanTests(unittest.TestCase):
     def make_repo(self, root, name, *, cpp_name="Export.cpp", header_name="Api.hpp"):
