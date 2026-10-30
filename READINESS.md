@@ -23,28 +23,30 @@ No executable stubs or firmware are included here.
 
 | Measure | Count | Evidence level |
 |---|---:|---|
-| Qualified unique NIDs (recomputed) | 9,158 | Local inventory assessment only |
-| Generated throwing stubs | 963 | Saved local snapshot |
+| Qualified unique NIDs (recomputed) | 10,749 | Named inventory assessment, excluding withheld identities |
+| Strictly rehashed qualified unique NIDs | 9,158 | Stronger gate for upstream matching || Generated throwing stubs | 963 | Saved local snapshot |
 | Offline statically prepared | 963 | Saved local snapshot |
 | Fully validated | 0 | Saved local snapshot |
 | Published to AnyPS5 | 0 | Saved historical snapshot; **not live** |
 | Qualified NIDs with matching AnyPS5 main source definitions | 0 | Source scan, not export/runtime validation |
-| Additional qualified NIDs seen in open-PR additions | 1,034 | Best-effort PR patch scan |
-| Qualified NIDs not seen by these scans | 8,124 | Not proof they are missing upstream |
-| Additional upstream NID observations needing review | 9,261 | No unverified names published |
+| Additional qualified NIDs seen in open-PR additions | 1,105 | Best-effort PR patch scan |
+| Qualified NIDs not seen by these scans | 9,644 | Not proof they are missing upstream |
+| Additional upstream NID observations needing review | 9,274 | No unverified names published |
 
-**Saved qualified-count discrepancy:** 10,750 published versus 9,158 recomputed (delta +1,592). This report does not silently modify canonical assessments.
+**Saved qualified-count discrepancy:** 10,750 published versus 10,749 recomputed (delta +1). This report does not silently modify canonical assessments.
 
 ## Upstream observation
 
 - AnyPS5 main revision: `8c8b9986204d5b1cbb23847b363df00ae832ec9c`
-- Open PRs observed: 1475
+- Open PRs observed: 1478
 - Open PRs scanned: 400
 - Open PR audit complete: NO — do not treat reservations as exhaustive
 
 ## Source and safety limits
 
 Matching a source definition does not confirm its registration, exported NID, ABI, correct runtime behavior, or merge status. A throwing marker indicates only a source-level NotImplemented call. Multiple libraries sharing a NID are preserved until ownership and equivalence have been independently resolved.
+
+Qualification counts reflect existing catalog assessments with withheld names excluded; strictly rehashed matches are a separate subset, not the full qualification inventory.
 
 The strict rehash gate includes only records with verified_nid_binding status and a matching local SHA1 NID; other named records are withheld from automatic upstream reconciliation until separately audited.
 
