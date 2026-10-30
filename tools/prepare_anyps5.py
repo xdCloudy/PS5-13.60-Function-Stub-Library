@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 from collections import defaultdict
+import os
 import json
 from pathlib import Path
 import re
@@ -67,11 +68,12 @@ def choose(reviews: list[dict], known: dict, verified: set,
         raise ValueError("Batch must contain 1 to 150 exports")
     chosen, rejected = [], []
     seen_nids = set()
+    occupied_nids = {nid for _, nid in occupied | reserved}
     for r in sorted(reviews, key=lambda x:(x["library"].casefold(),x["nid"])):
         key = (r["library"].casefold(), r["nid"])
         record = known.get(key)
         reason = None
-        if key in occupied or key in reserved:
+        if key in occupied or key in reserved or r["nid"] in occupied_nids:
             reason = "already_covered_or_reserved"
         elif key in seen_nids:
             reason = "duplicate_in_input"
@@ -159,11 +161,11 @@ def main():
         if git(checkout,"merge-base","HEAD","origin/main") != git(checkout,"rev-parse","origin/main"):
             raise ValueError("Contribution branch is not based on current AnyPS5 main")
         main_occupied = inspect_existing(checkout)
-        _, unknown, info = scan_open_prs_cached(
-            "", known, verified, nid_for, root/"reports/open-pr-cache.json", 100000)
-        # Reservations may include verified and unverified names.
+        # Reservations may include verified and unverified names. A complete
+        # scan is required; capped or missing-patch evidence is never clearance.
         pr_known, pr_unknown, info = scan_open_prs_cached(
-            "", known, verified, nid_for, root/"reports/open-pr-cache.json", 0)
+            os.getenv("GITHUB_TOKEN", ""), known, verified, nid_for,
+            root/"reports/open-pr-cache.json", 100000)
         if not info["open_pr_coverage_complete"]:
             raise ValueError("Incomplete open-PR overlap scan: publication blocked")
         occupied |= main_occupied
@@ -178,8 +180,47 @@ def main():
         branch=git(checkout,"branch","--show-current")
         subprocess.run([sys.executable,"tools/pr_overlap.py","--branch",branch],
                        cwd=checkout,check=True)
+        pr_body = """### What
+
+Prepare {count} reviewed, throwing-only function stubs in {library}.
+NID bindings are strictly rehashed and ABI prototypes came from separately reviewed external evidence.
+No implementation, ABI correctness or runtime support is claimed.
+
+### Tested
+
+- Python catalogue identity and scope gates: passed
+- Current AnyPS5 main and all open PR heads: rechecked
+- tools/check_conventions.py --base origin/main: passed
+- tools/pr_overlap.py --branch {branch}: passed
+- Build and runtime testing: NOT RUN
+
+### Checklist
+- [x] Based on current main; no other open PR implements the same functions
+- [x] One topic per PR
+- [x] No comments in code
+- [x] Unimplemented paths throw using NotImplemented_nid_no_patch
+- [x] No notes or screenshots added to upstream repository
+- [x] No third-party code
+- [x] Generic system-library scope only
+- [ ] Depends on: none
+- [ ] Fixes: none
+- [ ] Unblocks: none
+- [ ] GPUs tested: n/a
+- [x] AI-assisted: yes
+
+Source revision: {sha}
+Functions: {count}
+Library: {library}
+Patch: {patchname}
+
+A maintainer must verify the complete ABI evidence, build and runtime results before changing this draft PR to ready for review.
+""".format(count=len(selected),library=selected[0]["library"],
+           branch=branch,sha=git(checkout,"rev-parse","origin/main"),
+           patchname=patch.name)
+        (args.output_dir / "PULL_REQUEST_BODY.md").write_text(pr_body,encoding="utf-8")
         print("Patch:",patch)
-        print("Build/runtime testing remains required before a ready-for-review PR.")
+        print("Draft PR body:",args.output_dir / "PULL_REQUEST_BODY.md")
+        print("Build/runtime testing remains required; do not claim merge readiness.")
     elif args.apply:
         print("No changes written. ABI or identity evidence insufficient.")
 
