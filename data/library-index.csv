@@ -307,7 +307,7 @@ libSceFont,firmware-13.60,240,240,data/firmware-13.60/libscefont-63ba420c2e.json
 libSceFontFt,firmware-13.60,21,21,data/firmware-13.60/libscefontft-4a57c746ed.jsonl
 libSceFontGs,firmware-13.60,12,8,data/firmware-13.60/libscefontgs-b42f55c1c1.jsonl
 libSceFreeType,firmware-13.60,344,344,data/firmware-13.60/libscefreetype-191d06aeae.jsonl
-libSceFsInternalForVsh,firmware-13.60,431,294,data/firmware-13.60/libscefsinternalforvsh-05a5e357c4.jsonl
+libSceFsInternalForVsh,firmware-13.60,431,325,data/firmware-13.60/libscefsinternalforvsh-05a5e357c4.jsonl
 libSceGLSlimServerVSH,firmware-13.60,192,190,data/firmware-13.60/libsceglslimservervsh-aebf54bed3.jsonl
 libSceGLSlimVSH,firmware-13.60,217,208,data/firmware-13.60/libsceglslimvsh-d20bcf7d7a.jsonl
 libSceGameCustomDataDialog,firmware-13.60,9,9,data/firmware-13.60/libscegamecustomdatadialog-78f63f077e.jsonl

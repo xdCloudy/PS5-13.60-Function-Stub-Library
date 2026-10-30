@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 446 |
-| Named | 309 |
-| Unresolved or withheld | 137 |
+| Named | 340 |
+| Unresolved or withheld | 106 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -43,3 +43,6 @@ A bounded preview; the inventory file contains the complete library.
 | `0IZsBaLdkCw` | `sceFsNTBVerifyPartitionTable` |
 | `0T-kRNLcpAs` | `sceFsNTBRemoveDevice` |
 | `0jP1IzZnnI8` | `sceFsBfsGetCapacityInfoForTelemetry` |
+| `18ZEUpr-I0Q` | `sceFsUfsMkfsForCronos` |
+| `1Bj5GKpwjFo` | `sceFsNTBCreatePartitionTable` |
+| `1H-LQ4r7-F8` | `sceFsUfsRecryptIsUnfinished` |
