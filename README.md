@@ -35,11 +35,12 @@ Unknown names remain null. Managed/AOT, middleware, shell, and uncertain ownersh
 are explicitly classified and must not all be turned into AnyPS5 system-library stubs.
 The firmware label is research provenance, not an independent hardware measurement.
 
-## Stub readiness report
+## Live readiness and AnyPS5 progress
 
-The image below was generated from an earlier readiness snapshot. See [readiness.json](readiness.json) and [READINESS.md](READINESS.md) for current naming totals.
+[Readiness dashboard](READINESS.md) · [Per-library progress](reports/library-progress.md) · [Machine-readable progress](reports/progress.json) · [Upstream sync design](UPSTREAM_SYNC.md)
 
-![PS5 stub readiness report](reports/stub-readiness.png)
+A GitHub Actions workflow regenerates these text/JSON reports when inventory changes and polls upstream AnyPS5 every three hours. Main-branch source definitions, open-PR patch additions, verified names, qualified NIDs and review-only candidate NIDs are reported separately. Reports show evidence limits; upstream identifiers are **not** automatically qualified or named.
+
 
 ## Separate recovery candidate index
 
