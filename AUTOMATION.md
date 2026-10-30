@@ -94,9 +94,12 @@ map, manifest and readiness snapshot. It produces an auditable import ledger.
 
 A successful review decision does not merge automatically: the action opens a
 separate **draft** canonical-import PR for maintainers to review. The proposal
-workflow now uses a stable `automation/catalogue-review` branch and updates
-its existing open PR rather than opening a new overlapping PR for each
-source-revision change.
+workflow keeps one open draft PR and updates its source evidence without
+creating new PRs for source-only revisions. If a previous attempt pushed a
+branch but failed to create its PR, the workflow recovers the orphaned branch.
+A deliberately closed review of the same identities stays closed; genuinely
+new identity work uses a fingerprinted review branch. Unreadable past review
+evidence blocks publication rather than bypassing review history.
 
 When the stable approved-import PR branch already exists, the current workflow
 blocks rather than overwriting unreviewed changes. This requires reconciliation;
