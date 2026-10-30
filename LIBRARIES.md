@@ -375,7 +375,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 |---|---:|---:|---:|
 | [libNativeExtensions](libraries/libnativeextensions-e257b50c6f.md) | 392 | 111 | 0 |
 | [libnet](libraries/libnet-d57b8f8fc1.md) | 84 | 61 | 0 |
-| [libnio](libraries/libnio-8ce3c89141.md) | 157 | 2 | 0 |
+| [libnio](libraries/libnio-8ce3c89141.md) | 157 | 19 | 0 |
 | [libSceNet](libraries/libscenet-99b5a08cd0.md) | 235 | 223 | 0 |
 | [libSceNetBwe](libraries/libscenetbwe-71486fcd7f.md) | 9 | 9 | 0 |
 | [libSceNetConnSwitcher](libraries/libscenetconnswitcher-e0febe57f8.md) | 2 | 0 | 0 |

@@ -744,7 +744,7 @@ libmdbg_syscore,firmware-13.60,187,144,data/firmware-13.60/libmdbg_syscore-53c59
 libmono-btls-shared,firmware-13.60,212,205,data/firmware-13.60/libmono-btls-shared-384a3700a1.jsonl
 libmonosgen,firmware-13.60,1087,937,data/firmware-13.60/libmonosgen-89a314ce00.jsonl
 libnet,firmware-13.60,84,61,data/firmware-13.60/libnet-d57b8f8fc1.jsonl
-libnio,firmware-13.60,157,2,data/firmware-13.60/libnio-8ce3c89141.jsonl
+libnio,firmware-13.60,157,19,data/firmware-13.60/libnio-8ce3c89141.jsonl
 libprospero_wrapper,firmware-13.60,169,64,data/firmware-13.60/libprospero_wrapper-8bcfca4ff6.jsonl
 libsceHmdReprojectionMultilayer,firmware-13.60,1,1,data/firmware-13.60/libscehmdreprojectionmultilayer-bd91b3a135.jsonl
 libsceNpEulaDialog,firmware-13.60,9,9,data/firmware-13.60/libscenpeuladialog-3ed16b2399.jsonl
