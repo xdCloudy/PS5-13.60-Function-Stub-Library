@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 1,087 |
-| Named | 937 |
-| Unresolved or withheld | 150 |
+| Named | 964 |
+| Unresolved or withheld | 123 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -41,3 +41,6 @@ A bounded preview; the inventory file contains the complete library.
 | `+lFez3Ggt08` | `mono_g_hash_table_print_stats` |
 | `+pDyiHS3B0w` | `coil_dlsym` |
 | `+qLR-MW92Pc` | `mono_signature_is_instance` |
+| `+r8WvmR+-dA` | `mono_class_get_name` |
+| `+tCZrht05-k` | `mono_code_manager_reserve` |
+| `+wTsGed5J9I` | `mono_code_manager_set_read_only` |
