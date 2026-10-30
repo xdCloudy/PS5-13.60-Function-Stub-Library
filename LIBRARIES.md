@@ -27,7 +27,7 @@ Names are indexed by the first letter after the libSce/lib prefix. Use browser F
 | [libSceAgcDriver](libraries/libsceagcdriver-f86d440204.md) | 135 | 130 | 0 |
 | [libSceAgcDriverAsyncGraphicsRingEval_nosubmission](libraries/libsceagcdriverasyncgraphicsringeval_nosubmission-41525b1f7d.md) | 1 | 1 | 0 |
 | [libSceAgcDriverDebugReset_nosubmission](libraries/libsceagcdriverdebugreset_nosubmission-e7e6d9c26f.md) | 4 | 4 | 0 |
-| [libSceAgcDriverDebugWavefronts_nosubmission](libraries/libsceagcdriverdebugwavefronts_nosubmission-332fdc1802.md) | 7 | 0 | 0 |
+| [libSceAgcDriverDebugWavefronts_nosubmission](libraries/libsceagcdriverdebugwavefronts_nosubmission-332fdc1802.md) | 7 | 6 | 0 |
 | [libSceAgcDriverPaDebug](libraries/libsceagcdriverpadebug-4b242b1b6f.md) | 45 | 23 | 0 |
 | [libSceAgcVsh](libraries/libsceagcvsh-d56b62d397.md) | 245 | 239 | 0 |
 | [libSceAjm](libraries/libsceajm-5217837f40.md) | 54 | 46 | 3 |

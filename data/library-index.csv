@@ -201,7 +201,7 @@ libSceAgc,firmware-13.60,248,243,data/firmware-13.60/libsceagc-3be1b8ac02.jsonl
 libSceAgcDriver,firmware-13.60,119,114,data/firmware-13.60/libsceagcdriver-f86d440204.jsonl
 libSceAgcDriverAsyncGraphicsRingEval_nosubmission,firmware-13.60,1,1,data/firmware-13.60/libsceagcdriverasyncgraphicsringeval_nosubmission-41525b1f7d.jsonl
 libSceAgcDriverDebugReset_nosubmission,firmware-13.60,4,4,data/firmware-13.60/libsceagcdriverdebugreset_nosubmission-e7e6d9c26f.jsonl
-libSceAgcDriverDebugWavefronts_nosubmission,firmware-13.60,7,0,data/firmware-13.60/libsceagcdriverdebugwavefronts_nosubmission-332fdc1802.jsonl
+libSceAgcDriverDebugWavefronts_nosubmission,firmware-13.60,7,6,data/firmware-13.60/libsceagcdriverdebugwavefronts_nosubmission-332fdc1802.jsonl
 libSceAgcDriverPaDebug,firmware-13.60,45,23,data/firmware-13.60/libsceagcdriverpadebug-4b242b1b6f.jsonl
 libSceAgcVsh,firmware-13.60,245,239,data/firmware-13.60/libsceagcvsh-d56b62d397.jsonl
 libSceAjm,firmware-13.60,54,46,data/firmware-13.60/libsceajm-5217837f40.jsonl
