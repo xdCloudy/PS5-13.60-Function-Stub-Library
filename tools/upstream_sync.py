@@ -139,14 +139,14 @@ def scan_open_prs_cached(token: str, known: dict, verified: set, nid_for,
     if not cache_path.exists() or cache_path.read_text(encoding="utf-8") != cache_text:
         cache_path.write_text(cache_text, encoding="utf-8")
     reservations = {}
-    unknown = set()
+    unknown = {}
     for number, entry in current.items():
         for lib, nid in entry["keys"]:
             key = (lib, nid)
             if key in verified and known.get(key, {}).get("name"):
                 reservations.setdefault(key, set()).add(int(number))
             else:
-                unknown.add(key)
+                unknown.setdefault(key, set()).add(int(number))
     total = len(prs)
     remaining = total - len(current)
     meta = {
