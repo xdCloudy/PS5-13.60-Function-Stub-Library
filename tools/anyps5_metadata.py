@@ -14,7 +14,7 @@ SYMBOL = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
 # Keep the literal NID: helper names often deliberately have a different hash.
 ALIASES = re.compile(r'\bAPS5_EXPORT\s*\(\s*"(?P<nid>[A-Za-z0-9+\-]{11})"\s*,\s*(?P<target>[A-Za-z_]\w*)\s*\)')
 COMMENTS = re.compile(r'//[^\n]*|/\*[\s\S]*?\*/')
-SCHEMA = 2
+SCHEMA = 3
 
 
 def scan_files(upstream: Path):
@@ -68,10 +68,11 @@ def build(root: Path, upstream: Path):
         raise ValueError("Missing upstream revision")
     path=root/"reports/anyps5-symbol-states.jsonl"
     summary=root/"reports/anyps5-symbol-states.json"
+    previous = None
     if summary.exists() and path.exists():
-        old=json.loads(summary.read_text(encoding="utf-8"))
-        if old.get("source_sha")==sha and old.get("scanner_version")==SCHEMA:
-            return old
+        previous=json.loads(summary.read_text(encoding="utf-8"))
+        if previous.get("source_sha")==sha and previous.get("scanner_version")==SCHEMA:
+            return previous
     scanned=scan_files(upstream)
     by_lib=defaultdict(Counter)
     counts=Counter()
@@ -87,6 +88,39 @@ def build(root: Path, upstream: Path):
         counts[state]+=1
         by_lib[lib][state]+=1
         lines.append(json.dumps(row,sort_keys=True))
+    old_symbols = {}
+    if previous:
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                prior=json.loads(line)
+                old_symbols[(prior["library"].casefold(), prior["nid"])]=prior
+    new_symbols = {
+        (r["library"].casefold(), r["nid"]):r
+        for r in (json.loads(line) for line in lines)
+    }
+    added = sorted(set(new_symbols) - set(old_symbols))
+    removed = sorted(set(old_symbols) - set(new_symbols))
+    compare_fields = ("source_state","declared","definition_seen",
+                      "throwing_marker","nonthrowing_body_seen",
+                      "explicit_alias_seen","build_config_present","source_files")
+    changed = sorted(key for key in set(new_symbols) & set(old_symbols)
+                     if any(new_symbols[key].get(field) != old_symbols[key].get(field)
+                            for field in compare_fields))
+    first_snapshot = previous is None
+    changes = {
+        "schema_version": 1, "source_sha": sha,
+        "previous_source_sha": previous.get("source_sha") if previous else None,
+        "baseline_only": first_snapshot,
+        "added": None if first_snapshot else len(added),
+        "removed": None if first_snapshot else len(removed),
+        "changed_source_classifications": None if first_snapshot else len(changed),
+        "samples_added": [] if first_snapshot else [{"library":k[0],"nid":k[1]} for k in added[:80]],
+        "samples_removed": [] if first_snapshot else [{"library":k[0],"nid":k[1]} for k in removed[:80]],
+        "samples_changed": [] if first_snapshot else [{"library":k[0],"nid":k[1]} for k in changed[:80]],
+        "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared."
+    }
+    write_if_changed(root/"reports/anyps5-symbol-changes.json",
+                     json.dumps(changes,indent=2,sort_keys=True)+"\n")
     meta={
         "scanner_version":SCHEMA,
         "source_sha":sha,
