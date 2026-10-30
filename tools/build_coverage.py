@@ -19,6 +19,9 @@ def build(root: Path) -> dict:
     progress = json.loads((root / "reports/progress.json").read_text(encoding="utf-8"))
     source_file = root / "reports/source-320.json"
     historical = json.loads(source_file.read_text(encoding="utf-8")) if source_file.exists() else None
+    anyps5_states_file = root / "reports/anyps5-symbol-states.json"
+    anyps5_states = (json.loads(anyps5_states_file.read_text(encoding="utf-8"))
+                    if anyps5_states_file.exists() else None)
     stats = defaultdict(Counter)
     scopes = Counter()
     for part in ("firmware-13.60", "historical-3.20-only"):
@@ -46,10 +49,12 @@ def build(root: Path) -> dict:
     upstream = {r["library"].casefold(): r for r in progress["libraries"]}
     sources = (historical or {}).get("per_library", {})
     sources = {name.casefold(): item for name, item in sources.items()}
+    state_by_library = (anyps5_states or {}).get("per_library", {})
     rows = []
     for library, count in sorted(stats.items(), key=lambda entry: (-entry[1]["indexed"], entry[0])):
         up = upstream.get(library.casefold(), {})
         ref = sources.get(library.casefold(), {})
+        observed_states = state_by_library.get(library.casefold(), {})
         source_total = sum(ref.values()) if historical else None
         main = up.get("upstream_main_catalogue_source_matches", 0)
         reserved = up.get("open_pr_added_matches", 0)
@@ -67,6 +72,9 @@ def build(root: Path) -> dict:
             "withheld": count["withheld"], "conflicted": count["conflicted"],
             "source_320_references": source_total,
             "anyps5_main_definitions": main, "anyps5_open_pr_matches_partial": reserved,
+            "anyps5_declarations_without_definitions": observed_states.get("declaration_without_visible_definition", 0),
+            "anyps5_source_nonthrowing_unvalidated": observed_states.get("definition_nonthrowing_unvalidated", 0),
+            "anyps5_source_throwing": observed_states.get("definition_throwing", 0),
             "qualified_assessed": qualified,
             "name_recovery_candidates_320": ref.get("name_recovery_candidate", 0),
             "new_historical_candidates_320": ref.get("historical_only_candidate", 0),
@@ -120,6 +128,9 @@ def build(root: Path) -> dict:
             "pr_scanned": pr["open_pr_scanned"], "pr_total": pr["open_pr_total"],
             "pr_complete": pr["open_pr_coverage_complete"],
             "pr_errors": pr["open_pr_errors"],
+            "anyps5_symbol_observations": (anyps5_states or {}).get("observed_library_nid_records"),
+            "anyps5_declarations_only": (anyps5_states or {}).get("states", {}).get("declaration_without_visible_definition"),
+            "anyps5_export_registration_verified": None,
             "source_320_files": (historical or {}).get("source_files_scanned"),
             "source_320_registrations": (historical or {}).get("total_valid_registrations"),
             "source_320_conflicts_quarantined": (historical or {}).get("quarantined_registrations"),
