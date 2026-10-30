@@ -108,12 +108,13 @@ def load_inventory(root: Path):
                     all_nids[nid] += 1
                     scopes[row["scope"]] += 1
                     name = row.get("name")
+                    if name:
+                        library_named[lib] += 1
                     valid = bool(name and row.get("name_status") == "verified_nid_binding"
                                  and nid_for(name) == nid)
                     if valid:
                         verified.add(key)
                         verified_rows += 1
-                        library_named[lib] += 1
                     elif name:
                         invalid_bindings += 1
                     if row.get("stub_assessment") == QUALIFIED:
