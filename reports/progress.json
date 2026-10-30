@@ -1,17 +1,17 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "f7f03daf52f11191174b1be089a56e268390a707",
+    "anyps5_main_commit": "f91137142eafd5df646fca6419a1fc4ef61b89d9",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 1,
-      "open_pr_cached": 539,
+      "open_pr_cache_expired_or_closed": 225,
+      "open_pr_cached": 851,
       "open_pr_coverage_complete": false,
       "open_pr_errors": 13,
       "open_pr_newly_scanned": 537,
-      "open_pr_scanned": 1076,
+      "open_pr_scanned": 1388,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1503,
-      "open_pr_unscanned": 427
+      "open_pr_total": 1450,
+      "open_pr_unscanned": 62
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -21,7 +21,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-30T07:28:37+00:00",
+    "generated_at_utc": "2026-10-30T13:00:07+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -83,8 +83,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 8614,
       "records": 18939,
-      "upstream_main_catalogue_source_matches": 125,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 7336,
+      "upstream_main_source_matches": 7211,
       "verified_names": 12110
     },
     {
@@ -170,7 +170,7 @@
     },
     {
       "library": "libSceJsc",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 313,
       "qualified_records": 2951,
       "records": 5446,
       "upstream_main_catalogue_source_matches": 84,
@@ -242,11 +242,11 @@
     },
     {
       "library": "libSceLibcInternal",
-      "open_pr_added_matches": 11,
+      "open_pr_added_matches": 0,
       "qualified_records": 11,
       "records": 2688,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 11,
+      "upstream_main_source_matches": 11,
       "verified_names": 2679
     },
     {
@@ -458,10 +458,10 @@
     },
     {
       "library": "libSceNpCommon",
-      "open_pr_added_matches": 17,
+      "open_pr_added_matches": 669,
       "qualified_records": 782,
       "records": 1199,
-      "upstream_main_catalogue_source_matches": 263,
+      "upstream_main_catalogue_source_matches": 289,
       "upstream_main_source_matches": 0,
       "verified_names": 1187
     },
@@ -1151,20 +1151,20 @@
     },
     {
       "library": "libSceFont",
-      "open_pr_added_matches": 36,
+      "open_pr_added_matches": 0,
       "qualified_records": 44,
       "records": 240,
-      "upstream_main_catalogue_source_matches": 165,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 201,
+      "upstream_main_source_matches": 36,
       "verified_names": 240
     },
     {
       "library": "libSceVideoOut",
-      "open_pr_added_matches": 100,
+      "open_pr_added_matches": 0,
       "qualified_records": 133,
       "records": 237,
-      "upstream_main_catalogue_source_matches": 44,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 148,
+      "upstream_main_source_matches": 100,
       "verified_names": 199
     },
     {
@@ -1178,7 +1178,7 @@
     },
     {
       "library": "libSceMediaFrameworkInterface",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 107,
       "qualified_records": 139,
       "records": 225,
       "upstream_main_catalogue_source_matches": 0,
@@ -1325,8 +1325,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 191,
-      "upstream_main_catalogue_source_matches": 123,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 127,
+      "upstream_main_source_matches": 4,
       "verified_names": 148
     },
     {
@@ -1352,8 +1352,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 8,
       "records": 184,
-      "upstream_main_catalogue_source_matches": 101,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 112,
+      "upstream_main_source_matches": 7,
       "verified_names": 132
     },
     {
@@ -1388,8 +1388,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 180,
-      "upstream_main_catalogue_source_matches": 108,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 109,
+      "upstream_main_source_matches": 1,
       "verified_names": 128
     },
     {
@@ -1529,11 +1529,11 @@
     },
     {
       "library": "libSceMbus",
-      "open_pr_added_matches": 10,
+      "open_pr_added_matches": 0,
       "qualified_records": 11,
       "records": 143,
-      "upstream_main_catalogue_source_matches": 102,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 112,
+      "upstream_main_source_matches": 10,
       "verified_names": 131
     },
     {
@@ -1577,8 +1577,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 23,
       "records": 138,
-      "upstream_main_catalogue_source_matches": 67,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 87,
+      "upstream_main_source_matches": 20,
       "verified_names": 101
     },
     {
@@ -1637,16 +1637,16 @@
     },
     {
       "library": "libSceCamera",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 127,
-      "upstream_main_catalogue_source_matches": 109,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 110,
+      "upstream_main_source_matches": 1,
       "verified_names": 122
     },
     {
       "library": "libSceSaveData",
-      "open_pr_added_matches": 7,
+      "open_pr_added_matches": 0,
       "qualified_records": 8,
       "records": 123,
       "upstream_main_catalogue_source_matches": 0,
@@ -1718,11 +1718,11 @@
     },
     {
       "library": "libSceNpTrophy",
-      "open_pr_added_matches": 4,
+      "open_pr_added_matches": 0,
       "qualified_records": 7,
       "records": 110,
-      "upstream_main_catalogue_source_matches": 84,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 88,
+      "upstream_main_source_matches": 4,
       "verified_names": 104
     },
     {
@@ -1781,11 +1781,11 @@
     },
     {
       "library": "libScePlayReady4",
-      "open_pr_added_matches": 4,
+      "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 103,
-      "upstream_main_catalogue_source_matches": 30,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 34,
+      "upstream_main_source_matches": 4,
       "verified_names": 89
     },
     {
@@ -1862,11 +1862,11 @@
     },
     {
       "library": "libSceNpWebApi",
-      "open_pr_added_matches": 23,
+      "open_pr_added_matches": 0,
       "qualified_records": 27,
       "records": 94,
-      "upstream_main_catalogue_source_matches": 21,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 44,
+      "upstream_main_source_matches": 23,
       "verified_names": 56
     },
     {
@@ -1946,8 +1946,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 28,
       "records": 88,
-      "upstream_main_catalogue_source_matches": 51,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 75,
+      "upstream_main_source_matches": 24,
       "verified_names": 88
     },
     {
@@ -1982,8 +1982,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 7,
       "records": 87,
-      "upstream_main_catalogue_source_matches": 64,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 68,
+      "upstream_main_source_matches": 4,
       "verified_names": 79
     },
     {
@@ -2051,11 +2051,11 @@
     },
     {
       "library": "libSceVideoStreamingEngine",
-      "open_pr_added_matches": 46,
+      "open_pr_added_matches": 0,
       "qualified_records": 58,
       "records": 74,
-      "upstream_main_catalogue_source_matches": 12,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 58,
+      "upstream_main_source_matches": 46,
       "verified_names": 70
     },
     {
@@ -2072,8 +2072,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 73,
-      "upstream_main_catalogue_source_matches": 32,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 40,
+      "upstream_main_source_matches": 1,
       "verified_names": 50
     },
     {
@@ -2087,11 +2087,11 @@
     },
     {
       "library": "libSceAcm",
-      "open_pr_added_matches": 10,
+      "open_pr_added_matches": 0,
       "qualified_records": 11,
       "records": 72,
-      "upstream_main_catalogue_source_matches": 11,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 21,
+      "upstream_main_source_matches": 10,
       "verified_names": 23
     },
     {
@@ -2240,11 +2240,11 @@
     },
     {
       "library": "libSceEsvmEngine",
-      "open_pr_added_matches": 12,
+      "open_pr_added_matches": 0,
       "qualified_records": 13,
       "records": 62,
-      "upstream_main_catalogue_source_matches": 16,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 50,
+      "upstream_main_source_matches": 12,
       "verified_names": 56
     },
     {
@@ -2267,11 +2267,11 @@
     },
     {
       "library": "libSceAvcap2",
-      "open_pr_added_matches": 28,
+      "open_pr_added_matches": 0,
       "qualified_records": 35,
       "records": 59,
-      "upstream_main_catalogue_source_matches": 7,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 35,
+      "upstream_main_source_matches": 28,
       "verified_names": 42
     },
     {
@@ -2294,11 +2294,11 @@
     },
     {
       "library": "libScePlayReady2",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 56,
-      "upstream_main_catalogue_source_matches": 13,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 14,
+      "upstream_main_source_matches": 1,
       "verified_names": 56
     },
     {
@@ -2315,8 +2315,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 3,
       "records": 54,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 3,
+      "upstream_main_source_matches": 3,
       "verified_names": 46
     },
     {
@@ -2477,7 +2477,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 48,
-      "upstream_main_catalogue_source_matches": 17,
+      "upstream_main_catalogue_source_matches": 18,
       "upstream_main_source_matches": 0,
       "verified_names": 43
     },
@@ -2546,11 +2546,11 @@
     },
     {
       "library": "libSceEsvm",
-      "open_pr_added_matches": 39,
+      "open_pr_added_matches": 0,
       "qualified_records": 45,
       "records": 45,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 39,
+      "upstream_main_source_matches": 39,
       "verified_names": 45
     },
     {
@@ -2558,8 +2558,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 2,
       "records": 45,
-      "upstream_main_catalogue_source_matches": 28,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 30,
+      "upstream_main_source_matches": 2,
       "verified_names": 32
     },
     {
@@ -2609,11 +2609,11 @@
     },
     {
       "library": "libSceRazorCpu",
-      "open_pr_added_matches": 4,
+      "open_pr_added_matches": 0,
       "qualified_records": 7,
       "records": 42,
-      "upstream_main_catalogue_source_matches": 31,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 35,
+      "upstream_main_source_matches": 4,
       "verified_names": 42
     },
     {
@@ -2747,17 +2747,17 @@
       "open_pr_added_matches": 0,
       "qualified_records": 8,
       "records": 35,
-      "upstream_main_catalogue_source_matches": 21,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 28,
+      "upstream_main_source_matches": 7,
       "verified_names": 35
     },
     {
       "library": "libSceRudp",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 35,
-      "upstream_main_catalogue_source_matches": 30,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 31,
+      "upstream_main_source_matches": 1,
       "verified_names": 35
     },
     {
@@ -2789,11 +2789,11 @@
     },
     {
       "library": "libSceAvPlayerStreaming",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 34,
-      "upstream_main_catalogue_source_matches": 19,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 20,
+      "upstream_main_source_matches": 1,
       "verified_names": 34
     },
     {
@@ -2906,11 +2906,11 @@
     },
     {
       "library": "libSceNpSessionSignaling",
-      "open_pr_added_matches": 5,
+      "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 31,
-      "upstream_main_catalogue_source_matches": 21,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 26,
+      "upstream_main_source_matches": 5,
       "verified_names": 31
     },
     {
@@ -3095,11 +3095,11 @@
     },
     {
       "library": "libSceVdecCore",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 27,
-      "upstream_main_catalogue_source_matches": 15,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 16,
+      "upstream_main_source_matches": 1,
       "verified_names": 25
     },
     {
@@ -3107,8 +3107,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 27,
-      "upstream_main_catalogue_source_matches": 13,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 16,
+      "upstream_main_source_matches": 3,
       "verified_names": 19
     },
     {
@@ -3176,20 +3176,20 @@
     },
     {
       "library": "libSceMouse",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 4,
       "records": 25,
-      "upstream_main_catalogue_source_matches": 16,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 19,
+      "upstream_main_source_matches": 3,
       "verified_names": 23
     },
     {
       "library": "libSceSharePlay",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 25,
-      "upstream_main_catalogue_source_matches": 16,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 17,
+      "upstream_main_source_matches": 1,
       "verified_names": 21
     },
     {
@@ -3230,20 +3230,20 @@
     },
     {
       "library": "libSceOpusCeltEnc",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 4,
       "records": 24,
-      "upstream_main_catalogue_source_matches": 8,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 11,
+      "upstream_main_source_matches": 3,
       "verified_names": 15
     },
     {
       "library": "libScePlayGo",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 3,
       "records": 24,
-      "upstream_main_catalogue_source_matches": 15,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 18,
+      "upstream_main_source_matches": 3,
       "verified_names": 24
     },
     {
@@ -3320,11 +3320,11 @@
     },
     {
       "library": "libSceAudiodec",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 2,
       "records": 22,
-      "upstream_main_catalogue_source_matches": 6,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 7,
+      "upstream_main_source_matches": 1,
       "verified_names": 22
     },
     {
@@ -3374,11 +3374,11 @@
     },
     {
       "library": "libSceBackupRestoreUtil",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 21,
-      "upstream_main_catalogue_source_matches": 14,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 17,
+      "upstream_main_source_matches": 3,
       "verified_names": 21
     },
     {
@@ -3395,7 +3395,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 21,
-      "upstream_main_catalogue_source_matches": 7,
+      "upstream_main_catalogue_source_matches": 15,
       "upstream_main_source_matches": 0,
       "verified_names": 17
     },
@@ -3467,7 +3467,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 19,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 16,
       "upstream_main_source_matches": 0,
       "verified_names": 18
     },
@@ -3584,7 +3584,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 18,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 6,
       "upstream_main_source_matches": 0,
       "verified_names": 6
     },
@@ -3707,11 +3707,11 @@
     },
     {
       "library": "libSceSystemLogger2",
-      "open_pr_added_matches": 5,
+      "open_pr_added_matches": 0,
       "qualified_records": 6,
       "records": 16,
-      "upstream_main_catalogue_source_matches": 4,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 9,
+      "upstream_main_source_matches": 5,
       "verified_names": 11
     },
     {
@@ -3734,11 +3734,11 @@
     },
     {
       "library": "libSceOpusSilkEnc",
-      "open_pr_added_matches": 1,
+      "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 15,
-      "upstream_main_catalogue_source_matches": 11,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 12,
+      "upstream_main_source_matches": 1,
       "verified_names": 15
     },
     {
@@ -3770,11 +3770,11 @@
     },
     {
       "library": "libSceAudioSystem",
-      "open_pr_added_matches": 5,
+      "open_pr_added_matches": 0,
       "qualified_records": 6,
       "records": 14,
-      "upstream_main_catalogue_source_matches": 2,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 7,
+      "upstream_main_source_matches": 5,
       "verified_names": 8
     },
     {
@@ -3833,11 +3833,11 @@
     },
     {
       "library": "libSceNpRemotePlaySessionSignaling",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 4,
       "records": 14,
-      "upstream_main_catalogue_source_matches": 8,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 11,
+      "upstream_main_source_matches": 3,
       "verified_names": 14
     },
     {
@@ -3860,11 +3860,11 @@
     },
     {
       "library": "libSceTextToSpeech2",
-      "open_pr_added_matches": 6,
+      "open_pr_added_matches": 0,
       "qualified_records": 6,
       "records": 14,
-      "upstream_main_catalogue_source_matches": 7,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 13,
+      "upstream_main_source_matches": 6,
       "verified_names": 14
     },
     {
@@ -3950,11 +3950,11 @@
     },
     {
       "library": "libSceSrcUtl",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 4,
       "records": 13,
-      "upstream_main_catalogue_source_matches": 8,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 11,
+      "upstream_main_source_matches": 3,
       "verified_names": 13
     },
     {
@@ -4067,11 +4067,11 @@
     },
     {
       "library": "libSceSystemLogger2NativeQueueClient",
-      "open_pr_added_matches": 4,
+      "open_pr_added_matches": 0,
       "qualified_records": 6,
       "records": 12,
-      "upstream_main_catalogue_source_matches": 5,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 9,
+      "upstream_main_source_matches": 4,
       "verified_names": 11
     },
     {
@@ -4178,7 +4178,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 11,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 5,
       "upstream_main_source_matches": 0,
       "verified_names": 5
     },
@@ -4256,11 +4256,11 @@
     },
     {
       "library": "libSceCustomMusicAudioOut",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 10,
-      "upstream_main_catalogue_source_matches": 5,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 8,
+      "upstream_main_source_matches": 3,
       "verified_names": 10
     },
     {
@@ -4268,8 +4268,8 @@
       "open_pr_added_matches": 0,
       "qualified_records": 1,
       "records": 10,
-      "upstream_main_catalogue_source_matches": 7,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 8,
+      "upstream_main_source_matches": 1,
       "verified_names": 10
     },
     {
@@ -4319,11 +4319,11 @@
     },
     {
       "library": "libSceSystemTts",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 4,
       "records": 10,
-      "upstream_main_catalogue_source_matches": 5,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 8,
+      "upstream_main_source_matches": 3,
       "verified_names": 9
     },
     {
@@ -4430,7 +4430,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 9,
-      "upstream_main_catalogue_source_matches": 4,
+      "upstream_main_catalogue_source_matches": 7,
       "upstream_main_source_matches": 0,
       "verified_names": 9
     },
@@ -4634,11 +4634,11 @@
     },
     {
       "library": "libSceConnectAccountDialog",
-      "open_pr_added_matches": 6,
+      "open_pr_added_matches": 0,
       "qualified_records": 7,
       "records": 7,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 6,
+      "upstream_main_source_matches": 6,
       "verified_names": 7
     },
     {
@@ -4760,11 +4760,11 @@
     },
     {
       "library": "libSceNpSpeechToText",
-      "open_pr_added_matches": 7,
+      "open_pr_added_matches": 0,
       "qualified_records": 7,
       "records": 7,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 7,
+      "upstream_main_source_matches": 7,
       "verified_names": 7
     },
     {
@@ -4850,11 +4850,11 @@
     },
     {
       "library": "libSceSystemLogger2Delivery",
-      "open_pr_added_matches": 2,
+      "open_pr_added_matches": 0,
       "qualified_records": 3,
       "records": 7,
-      "upstream_main_catalogue_source_matches": 4,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 6,
+      "upstream_main_source_matches": 2,
       "verified_names": 7
     },
     {
@@ -5411,7 +5411,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 4,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 2,
       "upstream_main_source_matches": 0,
       "verified_names": 2
     },
@@ -7181,33 +7181,33 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7746,
-    "anyps5_main_nonthrowing_source_records_live": 3202,
-    "anyps5_main_nonthrowing_unique_nids_live": 3195,
-    "anyps5_main_throwing_marker_records_live": 4551,
-    "anyps5_main_throwing_unique_nids_live": 4551,
-    "anyps5_main_tracked_source_records_live": 7753,
-    "anyps5_main_tracked_unique_nids_live": 7746,
-    "auto_imported_catalog_matching_proposals": 1,
-    "auto_imported_public_source_name_proposals": 8192,
-    "external_source_evidence_records": 24188,
+    "anyps5_main_nonthrowing_source_records_live": 3259,
+    "anyps5_main_nonthrowing_unique_nids_live": 3252,
+    "anyps5_main_throwing_marker_records_live": 12285,
+    "anyps5_main_throwing_unique_nids_live": 12285,
+    "anyps5_main_tracked_source_records_live": 15544,
+    "anyps5_main_tracked_unique_nids_live": 15537,
+    "auto_imported_catalog_matching_proposals": 3,
+    "auto_imported_public_source_name_proposals": 10129,
+    "external_source_evidence_records": 37404,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
     "main_nonthrowing_definition_record_matches": 0,
-    "main_throwing_marker_record_matches": 0,
-    "new_upstream_nid_candidates_for_review": 13357,
+    "main_throwing_marker_record_matches": 7687,
+    "new_upstream_nid_candidates_for_review": 17079,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
-    "qualified_unique_nids_matched_in_main_source": 0,
-    "qualified_unique_nids_matched_in_open_pr_additions": 661,
-    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 10088,
+    "qualified_unique_nids_matched_in_main_source": 7687,
+    "qualified_unique_nids_matched_in_open_pr_additions": 1327,
+    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 1735,
     "qualified_unique_nids_recomputed": 10749,
     "saved_qualified_unique_nids": 10750,
     "saved_vs_recomputed_delta": 1,
-    "source_names_withheld_by_safety_filter": 28,
+    "source_names_withheld_by_safety_filter": 32,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 16046,
-    "verified_catalog_identity_main_source_matches": 7753
+    "upstream_source_definitions_seen": 25786,
+    "verified_catalog_identity_main_source_matches": 15544
   }
 }
