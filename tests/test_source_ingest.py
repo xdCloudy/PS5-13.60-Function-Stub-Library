@@ -126,6 +126,26 @@ class Source320Tests(unittest.TestCase):
         self.assertEqual(proposals, [])
         self.assertEqual(metrics["statuses"]["already_indexed_and_named"], 1)
 
+    def test_quarantine_reason_ledger_is_auditable(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base=Path(tmp); repo=base/"repo"; src=base/"source"
+            (repo/"reports").mkdir(parents=True)
+            (repo/"data/firmware-13.60").mkdir(parents=True)
+            (repo/"data/historical-3.20-only").mkdir(parents=True)
+            src.mkdir()
+            (repo/"manifest.json").write_text(json.dumps({"counts":{"total_records":0}}))
+            (src/"libSceAjm.c").write_text(example(nid="12345678901"))
+            subprocess.run(["git","init","-q",str(src)],check=True)
+            subprocess.run(["git","-C",str(src),"add","."],check=True)
+            subprocess.run(["git","-C",str(src),"-c","user.name=Test",
+                            "-c","user.email=test@example.invalid","commit","-qm","fixture"],check=True)
+            doc=ingest(repo,src)
+            self.assertEqual(doc["quarantine_diagnostic_records"],1)
+            self.assertEqual(doc["quarantine_by_reason"],{"nid_name_hash_mismatch":1})
+            self.assertEqual(doc["top_quarantine_sources"],
+                             [{"source_file":"libSceAjm.c","rejected_registrations":1}])
+            self.assertEqual(doc["canonical_rows_modified"],0)
+
     def test_full_reconciliation_is_idempotent(self):
         with tempfile.TemporaryDirectory() as tmp:
             base=Path(tmp); repo=base/"repo"; src=base/"source"
