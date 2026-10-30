@@ -36915,3 +36915,10 @@
 {"name":"_sceRnpsUpdateAppData","nid":"wI8xaqPU-qc"}
 {"name":"JSExecutorDelete","nid":"wixOE4yn80w"}
 {"name":"_sceRnpsRegisterProcessResponseFunc","nid":"z+Y+0l9cetw"}
+{"name":"mono_btls_ssl_ctx_set_server_name_callback","nid":"HTUn4CuvyBU"}
+{"name":"mono_btls_ssl_set_renegotiate_mode","nid":"NfrxXs16Hus"}
+{"name":"mono_btls_ssl_ctx_set_client_ca_list","nid":"bjUYqYtMLBw"}
+{"name":"mono_btls_error_get_reason","nid":"lnIdkRm9VsU"}
+{"name":"mono_btls_ssl_shutdown","nid":"pzdRYtKKJQo"}
+{"name":"mono_btls_ssl_set_quiet_shutdown","nid":"vIKM7EIbKrs"}
+{"name":"mono_btls_ssl_renegotiate_pending","nid":"xQU3QrP8Gmo"}

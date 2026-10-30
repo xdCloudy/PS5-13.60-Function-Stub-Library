@@ -741,7 +741,7 @@ libkernel_unity,firmware-13.60,3,3,data/firmware-13.60/libkernel_unity-a92524017
 libkernel_write_throttling,firmware-13.60,1,1,data/firmware-13.60/libkernel_write_throttling-10bdc0fbc3.jsonl
 libkernel_wt_config,firmware-13.60,2,0,data/firmware-13.60/libkernel_wt_config-2b93cf2b10.jsonl
 libmdbg_syscore,firmware-13.60,187,144,data/firmware-13.60/libmdbg_syscore-53c596f5b7.jsonl
-libmono-btls-shared,firmware-13.60,212,205,data/firmware-13.60/libmono-btls-shared-384a3700a1.jsonl
+libmono-btls-shared,firmware-13.60,212,212,data/firmware-13.60/libmono-btls-shared-384a3700a1.jsonl
 libmonosgen,firmware-13.60,1087,937,data/firmware-13.60/libmonosgen-89a314ce00.jsonl
 libnet,firmware-13.60,84,61,data/firmware-13.60/libnet-d57b8f8fc1.jsonl
 libnio,firmware-13.60,157,2,data/firmware-13.60/libnio-8ce3c89141.jsonl

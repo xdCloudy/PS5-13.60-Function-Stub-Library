@@ -5,8 +5,8 @@
 | Measure | Records |
 |---|---:|
 | Export identities | 212 |
-| Named | 205 |
-| Unresolved or withheld | 7 |
+| Named | 212 |
+| Unresolved or withheld | 0 |
 | Qualified stub candidate records | 0 |
 
 Qualified candidates still require current overlap, declaration, build, test and publication gates. Signatures remain unknown.
@@ -41,3 +41,6 @@ A bounded preview; the inventory file contains the complete library.
 | `0SExVGKxVkE` | `mono_btls_x509_get_raw_data` |
 | `0UF1X3lXjxs` | `mono_btls_bio_hexdump` |
 | `0Xut9CTEffw` | `mono_btls_ssl_new` |
+| `1Clr+azmpqU` | `mono_btls_ssl_set_min_version` |
+| `1MxNQj1dm+Q` | `mono_btls_x509_crl_get_revoked` |
+| `1XYVEI923n0` | `mono_btls_key_get_bytes` |
