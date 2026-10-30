@@ -137,6 +137,8 @@ def scan_upstream(upstream: Path, known: dict, verified: set):
     new_candidates = set()
     source_candidates = {}
     matched_sources = {}
+    withheld_nids = {row['nid'] for row in known.values()
+                     if row.get('name_status') == 'withheld_by_publication_filter'}
     withheld = 0
     seen_definitions = 0
     for path in sorted((upstream / "core" / "libs" / "prx").rglob("*.cpp")):
@@ -159,7 +161,7 @@ def scan_upstream(upstream: Path, known: dict, verified: set):
             new_candidates.add(key)
             # Only approved, public C symbol-shaped strings may appear in
             # the *separate* review queue. Canonical names are never mutated.
-            if record and record.get("name_status") == "withheld_by_publication_filter":
+            if nid in withheld_nids or (record and record.get("name_status") == "withheld_by_publication_filter"):
                 withheld += 1
                 continue
             if not PUBLIC_SYMBOL.fullmatch(name) or SENSITIVE_SYMBOL.search(name):
@@ -247,6 +249,13 @@ def main():
                 )
             except (urllib.error.URLError, TimeoutError, ValueError) as e:
                 pr_meta["error"] = type(e).__name__
+    # External source coverage is independent of canonical 'requires throwing stub'
+    # status: records already covered by AnyPS5 are normally NOT still qualified.
+    main_upstream_nids = {key[1] for key in main_obs}
+    main_upstream_throwing = {key[1] for key, value in main_obs.items()
+                             if value == 'throwing_marker'}
+    main_upstream_nonthrowing = {key[1] for key, value in main_obs.items()
+                                if value == 'source_definition'}
     main_qualified = {k for k in main_obs if k in qualified}
     pending_qualified = {k for k in pr_obs if k in qualified and k not in main_qualified}
     main_qualified_nids = {k[1] for k in main_qualified}
@@ -301,6 +310,13 @@ def main():
             "published_upstream_saved_snapshot": old["metrics"]["published_anyps5_stubs"],
             "upstream_source_definitions_seen": definition_count,
             "verified_catalog_identity_main_source_matches": len(main_obs),
+            "anyps5_main_tracked_source_records_live": len(main_obs),
+            "anyps5_main_tracked_unique_nids_live": len(main_upstream_nids),
+            "anyps5_main_throwing_marker_records_live": sum(v == "throwing_marker" for v in main_obs.values()),
+            "anyps5_main_nonthrowing_source_records_live": sum(v == "source_definition" for v in main_obs.values()),
+            "anyps5_main_throwing_unique_nids_live": len(main_upstream_throwing),
+            "anyps5_main_nonthrowing_unique_nids_live": len(main_upstream_nonthrowing),
+            "anyps5_main_existing_catalogue_records_covered": sum(k in main_obs and row.get("stub_assessment") == "covered_in_saved_upstream_snapshot" for k, row in known.items()),
             "qualified_unique_nids_matched_in_main_source": len(main_qualified_nids),
             "qualified_unique_nids_matched_in_open_pr_additions": len(pending_qualified_nids),
             "qualified_unique_nids_not_matched_in_main_or_pr_scans": len(unaccounted),
@@ -319,7 +335,7 @@ def main():
             "A source definition or PR patch does not prove exported, registered, ABI-correct or runtime-tested behavior.",
             "PR reservations are incomplete when pagination, patches or API requests fail.",
             "Auto-discovered upstream NIDs are review inputs only; no new name or qualification is auto-approved.",
-            "Local generated/validated/published counts are historical saved snapshots, not live upstream measurements."
+            "Local generated/validated/published counts are historical saved snapshots; active upstream source coverage is counted separately and does not prove registration."
         ],
         "libraries": per_lib
     }
