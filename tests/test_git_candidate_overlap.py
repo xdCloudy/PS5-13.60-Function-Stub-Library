@@ -214,6 +214,30 @@ class GitOverlapTests(unittest.TestCase):
                           outcome["candidates"][1]["reasons"])
 
 
+    def test_header_only_parameter_changes_reserve_exact_declaration(self):
+        header = (
+            "int APS5_VABI sceReviewed(\n"
+            "    int original_parameter\n"
+            ");\n"
+            "int APS5_VABI sceElse(\n"
+            "    int other_parameter\n"
+            ");\n"
+        )
+        changed_one = (
+            "diff --git a/Example.hpp b/Example.hpp\n"
+            "@@ -2 +2 @@\n"
+            "-    int original_parameter\n"
+            "+    int changed_parameter\n"
+        )
+        changed_other = changed_one.replace("@@ -2 +2 @@", "@@ -5 +5 @@")
+        self.assertTrue(changed_existing_function(
+            header, changed_one, "sceReviewed", declaration=True))
+        self.assertFalse(changed_existing_function(
+            header, changed_other, "sceReviewed", declaration=True))
+        self.assertTrue(changed_existing_function(
+            header, changed_other, "sceElse", declaration=True))
+
+
 
 if __name__ == "__main__":
     unittest.main()
