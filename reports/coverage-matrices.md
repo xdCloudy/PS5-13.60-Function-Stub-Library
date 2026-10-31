@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-31T17:16:26+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-31T21:37:41+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -387,7 +387,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShareVideoTranscoderWrapper | 23 | 0 | 0 | 0 | 0 | 0 | 23 |
 | libkernel_jvm | 23 | 0 | 23 | 17 | 0 | 0 | 0 |
 | I18NWest | 22 | 0 | 0 | 0 | 0 | 0 | 22 |
-| libSceAudiodec | 22 | 8 | 22 | 18 | 7 | 0 | 0 |
+| libSceAudiodec | 22 | 8 | 22 | 18 | 6 | 1 | 0 |
 | libSceShareUtility | 22 | 18 | 22 | 18 | 18 | 0 | 0 |
 | libSceVnaWebsocket | 22 | 0 | 0 | 0 | 0 | 0 | 22 |
 | SceVshErrorDialogUtilWrapper | 21 | 0 | 0 | 0 | 0 | 0 | 21 |
@@ -822,10 +822,10 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 15,662 | Source-backed or canonical classification |
-| anyps5 throwing marker | 11,272 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 4,390 | Source-backed or canonical classification |
-| open pr qualified partial | 1,290 | Source-backed or canonical classification |
+| anyps5 main definition matches | 15,661 | Source-backed or canonical classification |
+| anyps5 throwing marker | 11,261 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 4,400 | Source-backed or canonical classification |
+| open pr qualified partial | 1,291 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
 | build verified live | unknown | Not measured; never inferred from source bodies |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: 5de1621ff13712e8b3a6d70a2487b008d9ee80c3
-Added identities: 0; removed: 0; changed source classifications: 2.
+Previous SHA: 474030e58424fefdb65e5df9f3820810fbb4553c
+Added identities: 648; removed: 84; changed source classifications: 487.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,14 +903,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-31T17:16:26+00:00 |
-| pr scanned | 1,687 |
-| pr total | 1,706 |
+| last refresh utc | 2026-10-31T21:37:41+00:00 |
+| pr scanned | 1,668 |
+| pr total | 1,688 |
 | pr complete | 0 |
-| pr errors | 19 |
-| anyps5 symbol observations | 42,146 |
+| pr errors | 20 |
+| anyps5 symbol observations | 42,710 |
 | anyps5 declarations only | 120 |
-| anyps5 explicit alias records | 8,894 |
+| anyps5 explicit alias records | 9,155 |
 | anyps5 assembly definition records | 6 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
@@ -921,7 +921,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 17,424 |
+| anyps5 public source proposals | 17,728 |
 | anyps5 withheld names | 40 |
 | overlap publication safe | 0 |
 
@@ -947,6 +947,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-31T11:51:40+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T16:55:08+00:00 | 314,038 | 39,966 | 15,662 | 1,677 |
 | 2026-10-31T17:16:26+00:00 | 314,038 | 39,966 | 15,662 | 1,687 |
+| 2026-10-31T21:37:41+00:00 | 314,038 | 39,966 | 15,661 | 1,668 |
 
 ### Coverage denominators
 

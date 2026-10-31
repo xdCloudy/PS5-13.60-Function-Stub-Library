@@ -367,7 +367,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShareVideoTranscoderWrapper | 23 | 0 | 0 | 0 | 0 |
 | libkernel_jvm | 23 | 23 | 0 | 0 | 0 |
 | I18NWest | 22 | 0 | 0 | 0 | 0 |
-| libSceAudiodec | 22 | 22 | 2 | 1 | 0 |
+| libSceAudiodec | 22 | 22 | 2 | 0 | 1 |
 | libSceShareUtility | 22 | 22 | 0 | 0 | 0 |
 | libSceVnaWebsocket | 22 | 0 | 0 | 0 | 0 |
 | SceVshErrorDialogUtilWrapper | 21 | 0 | 0 | 0 | 0 |

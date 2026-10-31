@@ -1,19 +1,19 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "474030e58424fefdb65e5df9f3820810fbb4553c",
+    "anyps5_main_commit": "6190e0efeb2e686e763a00518547b593f23ff163",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 8,
-      "open_pr_cached": 1669,
+      "open_pr_cache_expired_or_closed": 191,
+      "open_pr_cached": 1496,
       "open_pr_coverage_complete": false,
-      "open_pr_errors": 19,
-      "open_pr_newly_scanned": 18,
-      "open_pr_scanned": 1687,
+      "open_pr_errors": 20,
+      "open_pr_newly_scanned": 172,
+      "open_pr_scanned": 1668,
       "open_pr_snapshot_stable": true,
       "open_pr_stale_heads_invalidated": 0,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1706,
-      "open_pr_unscanned": 19
+      "open_pr_total": 1688,
+      "open_pr_unscanned": 20
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-31T17:16:26+00:00",
+    "generated_at_utc": "2026-10-31T21:37:41+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -3322,11 +3322,11 @@
     },
     {
       "library": "libSceAudiodec",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 2,
       "records": 22,
-      "upstream_main_catalogue_source_matches": 7,
-      "upstream_main_source_matches": 1,
+      "upstream_main_catalogue_source_matches": 6,
+      "upstream_main_source_matches": 0,
       "verified_names": 22
     },
     {
@@ -7183,25 +7183,25 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7739,
-    "anyps5_main_nonthrowing_source_records_live": 4390,
-    "anyps5_main_nonthrowing_unique_nids_live": 4383,
-    "anyps5_main_throwing_marker_records_live": 11272,
-    "anyps5_main_throwing_unique_nids_live": 11272,
-    "anyps5_main_tracked_source_records_live": 15662,
-    "anyps5_main_tracked_unique_nids_live": 15655,
+    "anyps5_main_nonthrowing_source_records_live": 4400,
+    "anyps5_main_nonthrowing_unique_nids_live": 4393,
+    "anyps5_main_throwing_marker_records_live": 11261,
+    "anyps5_main_throwing_unique_nids_live": 11261,
+    "anyps5_main_tracked_source_records_live": 15661,
+    "anyps5_main_tracked_unique_nids_live": 15654,
     "auto_imported_catalog_matching_proposals": 5,
-    "auto_imported_public_source_name_proposals": 17424,
-    "external_source_evidence_records": 44938,
+    "auto_imported_public_source_name_proposals": 17728,
+    "external_source_evidence_records": 44595,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
-    "main_nonthrowing_definition_record_matches": 998,
-    "main_throwing_marker_record_matches": 6742,
-    "new_upstream_nid_candidates_for_review": 24702,
+    "main_nonthrowing_definition_record_matches": 1004,
+    "main_throwing_marker_record_matches": 6735,
+    "new_upstream_nid_candidates_for_review": 24484,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
-    "qualified_unique_nids_matched_in_main_source": 7740,
-    "qualified_unique_nids_matched_in_open_pr_additions": 1290,
+    "qualified_unique_nids_matched_in_main_source": 7739,
+    "qualified_unique_nids_matched_in_open_pr_additions": 1291,
     "qualified_unique_nids_not_matched_in_main_or_pr_scans": 1719,
     "qualified_unique_nids_recomputed": 10749,
     "saved_qualified_unique_nids": 10750,
@@ -7209,7 +7209,7 @@
     "source_names_withheld_by_safety_filter": 40,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 33207,
-    "verified_catalog_identity_main_source_matches": 15662
+    "upstream_source_definitions_seen": 33510,
+    "verified_catalog_identity_main_source_matches": 15661
   }
 }
