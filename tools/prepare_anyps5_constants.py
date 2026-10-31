@@ -20,16 +20,18 @@ MAX_BATCH = 150
 NAME = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
 NID = re.compile(r"^[A-Za-z0-9+/-]{11}$")
 SHA = re.compile(r"^[a-f0-9]{64}$")
-FUNCTION = re.compile(
-    r"(?P<signature>(?P<rtype>(?:[A-Za-z_][A-Za-z0-9_:]*\s*\*?\s*){1,3})"
-    r"\s+APS5_VABI\s+(?P<name>[A-Za-z_][A-Za-z_0-9]*)\s*"
-    r"\((?P<args>[^(){};]*)\))\s*\{(?P<body>[^{}]*)\}",
-    re.MULTILINE,
-)
+# The old general-purpose whitespace expression backtracked catastrophically
+# across large real AnyPS5 source files. Keep the accepted layout narrow and
+# search patterns bounded; exact signature/body SHA-256 validation is unchanged.
+TYPE = r"(?:const[ \t]+)?[A-Za-z_][A-Za-z0-9_:]*(?:[ \t]+[A-Za-z_][A-Za-z0-9_:]*){0,2}(?:[ \t]*\*+)?"
+ABI_NAME = r"[A-Za-z_][A-Za-z0-9_]*"
+ABI_FRONT = (r"(?P<signature>(?P<rtype>" + TYPE + r")[ \t]+APS5_VABI[ \t]+"
+             r"(?P<name>" + ABI_NAME + r")[ \t]*\((?P<args>[^(){};]{0,500})\))")
+FUNCTION = re.compile(ABI_FRONT + r"[ \t\r\n]*\{(?P<body>[^{}]{0,512})\}")
 THROW_ONLY = re.compile(r"\s*NotImplemented_nid_no_patch\s*\(\s*__func__\s*\)\s*;\s*")
 DECLARATION = re.compile(
-    r"(?P<rtype>(?:[A-Za-z_][A-Za-z0-9_:]*\s*\*?\s*){1,3})"
-    r"\s+APS5_VABI\s+(?P<name>[A-Za-z_][A-Za-z0-9_]*)\s*\([^(){};]*\)\s*;"
+    r"(?P<rtype>" + TYPE + r")[ \t]+APS5_VABI[ \t]+"
+    r"(?P<name>" + ABI_NAME + r")[ \t]*\([^(){};]{0,500}\)[ \t\r\n]*;"
 )
 INTEGER = re.compile(r"^(?:int|long|short|size_t|ssize_t|unsigned(?:\s+(?:int|long|short))?|"
                      r"(?:std::)?u?int(?:8|16|32|64)_t)$")
