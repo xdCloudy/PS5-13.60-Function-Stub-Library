@@ -1,6 +1,12 @@
 name: Automatically submit independently reviewed AnyPS5 batches
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'approvals/anyps5/**'
+      - 'tools/anyps5_auto_queue.py'
+      - '.github/workflows/anyps5-auto-dispatch.yml'
   schedule:
     - cron: '17 */6 * * *'
   workflow_dispatch:
