@@ -1,0 +1,67 @@
+name: Automatically submit reviewed AnyPS5 zero/null/no-op implementations
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'approvals/anyps5-constants/**'
+      - 'tools/anyps5_constants_queue.py'
+      - '.github/workflows/anyps5-constant-auto-dispatch.yml'
+  schedule:
+    - cron: '43 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: anyps5-constant-review-dispatch
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    if: github.repository == 'xdCloudy/PS5-13.60-Function-Stub-Library'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Verify trusted constant-implementation queue
+        run: python -m unittest discover -s tests -p 'test_anyps5_constants_queue.py' -v
+      - name: Select next approved, nonduplicate source-locked batch
+        id: next
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/anyps5_constants_queue.py --github-output "$GITHUB_OUTPUT"
+      - name: Dispatch build, complete live collision scan and draft upstream PR
+        if: steps.next.outputs.ready == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVIDENCE_PATH: ${{ steps.next.outputs.evidence_path }}
+          EVIDENCE_SHA: ${{ steps.next.outputs.evidence_sha256 }}
+        run: |
+          set -euo pipefail
+          [[ "$EVIDENCE_PATH" =~ ^approvals/anyps5-constants/[A-Za-z0-9][A-Za-z0-9_.-]{0,110}\.jsonl$ ]] || exit 1
+          [[ "$EVIDENCE_SHA" =~ ^[a-f0-9]{64}$ ]] || exit 1
+          main_sha="$(git rev-parse HEAD)"
+          [[ "$main_sha" =~ ^[a-f0-9]{40}$ ]] || exit 1
+          url="https://raw.githubusercontent.com/xdCloudy/PS5-13.60-Function-Stub-Library/$main_sha/$EVIDENCE_PATH"
+          gh workflow run anyps5-constant-submit.yml \
+            --repo xdCloudy/PS5-13.60-Function-Stub-Library --ref main \
+            --field evidence_url="$url" \
+            --field evidence_sha256="$EVIDENCE_SHA" \
+            --field publish=true
+          echo "Dispatched approved existing-implementation batch $EVIDENCE_PATH." >> "$GITHUB_STEP_SUMMARY"
+      - name: Safe empty queue
+        if: steps.next.outputs.ready != 'true'
+        run: |
+          echo "No explicitly approved zero/null/false/no-op implementations to publish." >> "$GITHUB_STEP_SUMMARY"
+          echo "Existing function declarations and PS5 3.20 forwarding sources are not semantic proof." >> "$GITHUB_STEP_SUMMARY"
