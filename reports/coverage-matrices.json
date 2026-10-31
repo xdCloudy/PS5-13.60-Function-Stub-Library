@@ -2,12 +2,12 @@
   "automation_health": {
     "anyps5_assembly_definition_records": 6,
     "anyps5_declarations_only": 120,
-    "anyps5_explicit_alias_records": 8893,
+    "anyps5_explicit_alias_records": 8894,
     "anyps5_export_registration_verified": null,
-    "anyps5_public_source_proposals": 17423,
-    "anyps5_symbol_observations": 42144,
+    "anyps5_public_source_proposals": 17424,
+    "anyps5_symbol_observations": 42146,
     "anyps5_withheld_names": 40,
-    "last_refresh_utc": "2026-10-31T11:43:23+00:00",
+    "last_refresh_utc": "2026-10-31T11:51:40+00:00",
     "overlap_publication_safe": false,
     "pr_complete": false,
     "pr_errors": 14,
@@ -127,7 +127,7 @@
     "strictly_verified_names": 39966,
     "unnamed_or_withheld": 266953
   },
-  "generated_at_utc": "2026-10-31T11:43:23+00:00",
+  "generated_at_utc": "2026-10-31T11:51:40+00:00",
   "libraries": [
     {
       "anyps5_assembly_unvalidated": 0,
@@ -2923,11 +2923,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 193,
+      "anyps5_explicit_alias_without_visible_definition": 194,
       "anyps5_main_definitions": 67,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 92,
-      "anyps5_source_throwing": 60,
+      "anyps5_source_throwing": 61,
       "conflicted": 0,
       "firmware_13_60": 276,
       "historical_only": 0,
@@ -20796,33 +20796,28 @@
   "recent_changes": {
     "added": 2,
     "baseline_only": false,
-    "changed_source_classifications": 1,
+    "changed_source_classifications": 0,
     "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-    "previous_source_sha": "0da91ea5be617c434096d8909f3f1f1c46ce5cde",
+    "previous_source_sha": "cbed91529193c47194bef11811906c7cb6054af1",
     "removed": 0,
     "samples_added": [
       {
-        "library": "libscewebbrowserdialog",
-        "nid": "8r4EJ3FiX4w"
+        "library": "libscehmd2",
+        "nid": "2X7RUuD/cNA"
       },
       {
-        "library": "libscewebbrowserdialog",
-        "nid": "dSrsmhm9CDE"
+        "library": "libscehmd2",
+        "nid": "CBkVZi9WhVo"
       }
     ],
-    "samples_changed": [
-      {
-        "library": "libsceicu",
-        "nid": "lEeq4G4ROgo"
-      }
-    ],
+    "samples_changed": [],
     "samples_removed": [],
     "schema_version": 1,
-    "source_sha": "cbed91529193c47194bef11811906c7cb6054af1"
+    "source_sha": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3"
   },
   "schema_version": 1,
   "source_revisions": {
-    "anyps5_main": "cbed91529193c47194bef11811906c7cb6054af1",
+    "anyps5_main": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3",
     "ps5_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad"
   },
   "trends": [
@@ -20971,6 +20966,16 @@
       "anyps5_main_matches": 15662,
       "indexed": 314038,
       "observed_at_utc": "2026-10-31T11:39:53+00:00",
+      "open_pr_scanned": 1575,
+      "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+      "qualified_unique_nids": 10749,
+      "strictly_verified_names": 39966
+    },
+    {
+      "anyps5_commit": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3",
+      "anyps5_main_matches": 15662,
+      "indexed": 314038,
+      "observed_at_utc": "2026-10-31T11:51:40+00:00",
       "open_pr_scanned": 1575,
       "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
       "qualified_unique_nids": 10749,

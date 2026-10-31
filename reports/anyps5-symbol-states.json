@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 6,
   "build_verified": null,
-  "explicit_export_alias_records": 8893,
+  "explicit_export_alias_records": 8894,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 42144,
+  "observed_library_nid_records": 42146,
   "per_library": {
     "libc": {
       "assembly_definition_unvalidated": 2,
@@ -410,8 +410,8 @@
     },
     "libscehmd2": {
       "definition_nonthrowing_unvalidated": 92,
-      "definition_throwing": 60,
-      "explicit_alias_no_visible_definition": 193
+      "definition_throwing": 61,
+      "explicit_alias_no_visible_definition": 194
     },
     "libscehmdsetupdialog": {
       "definition_nonthrowing_unvalidated": 7
@@ -1209,12 +1209,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "cbed91529193c47194bef11811906c7cb6054af1",
+  "source_sha": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
     "definition_nonthrowing_unvalidated": 9138,
-    "definition_throwing": 23987,
-    "explicit_alias_no_visible_definition": 8893
+    "definition_throwing": 23988,
+    "explicit_alias_no_visible_definition": 8894
   }
 }
