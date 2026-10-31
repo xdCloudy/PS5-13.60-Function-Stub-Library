@@ -115,6 +115,14 @@ def render(checkout: Path, rows: list[dict]) -> dict[Path, str]:
         path = (checkout / row["path"]).resolve()
         if not path.is_relative_to(folder.resolve()) or not path.is_file():
             raise ValueError("Source escapes registered library or is missing")
+        cmake_files = [p for p in folder.rglob("CMakeLists.txt")
+                       if p.is_file() and not p.is_symlink()]
+        # EXCLUDE_FROM_ALL libraries must still compile the exact edited source.
+        # A merely present but unregistered C++ file is not a valid target.
+        if not any(re.search(r"(?<![A-Za-z0-9_.-])" + re.escape(path.name) +
+                             r"(?![A-Za-z0-9_.-])",
+                             p.read_text(encoding="utf-8")) for p in cmake_files):
+            raise ValueError("Reviewed source is not explicitly registered in a CMake target")
         original = planned.get(path, path.read_text(encoding="utf-8"))
         matches = [m for m in FUNCTION.finditer(original) if m.group("name") == row["name"]]
         if len(matches) != 1 or sum(name == row["name"] for _, name in all_definitions) != 1:
