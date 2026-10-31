@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 6 | 665 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 629 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |
@@ -127,13 +127,13 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshNpWebapi | 246 | 0 | 0 | 0 | 0 |
 | libSceAgcVsh | 245 | 239 | 0 | 0 | 0 |
 | libSceFont | 240 | 240 | 44 | 36 | 0 |
-| libSceVideoOut | 237 | 199 | 133 | 100 | 0 |
+| libSceVideoOut | 237 | 199 | 133 | 100 | 1 |
 | libSceNet | 235 | 223 | 0 | 0 | 0 |
 | libSceMediaFrameworkInterface | 225 | 139 | 139 | 0 | 107 |
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |
 | libSceJson2 | 215 | 215 | 0 | 0 | 0 |
 | libSceNKWebKitRequirements | 214 | 142 | 0 | 0 | 0 |
-| libScePad | 212 | 194 | 4 | 0 | 3 |
+| libScePad | 212 | 194 | 4 | 0 | 0 |
 | libmono-btls-shared | 212 | 205 | 0 | 0 | 0 |
 | SceVshIme | 211 | 0 | 0 | 0 | 0 |
 | SceVshNpWebapi2 | 208 | 0 | 0 | 0 | 0 |
@@ -271,7 +271,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshPadControllerUpdWrapper | 50 | 0 | 0 | 0 | 0 |
 | libScePlayReady | 50 | 50 | 0 | 0 | 0 |
 | libSceAudioIn | 49 | 48 | 0 | 0 | 0 |
-| libSceRemoteplay | 49 | 48 | 3 | 0 | 2 |
+| libSceRemoteplay | 49 | 48 | 3 | 2 | 0 |
 | libSceSpSysCallWrapper | 48 | 48 | 0 | 0 | 0 |
 | libSceVideoRecordingP | 48 | 43 | 0 | 0 | 0 |
 | libSceGameLiveStreaming | 47 | 47 | 0 | 0 | 0 |
@@ -328,7 +328,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshNpSns | 30 | 0 | 0 | 0 | 0 |
 | SceVshSl2Sl2Manage | 30 | 0 | 0 | 0 | 0 |
 | libSceAvPlayer | 30 | 30 | 0 | 0 | 0 |
-| libSceOpusDec | 30 | 15 | 1 | 0 | 0 |
+| libSceOpusDec | 30 | 15 | 1 | 0 | 1 |
 | ReactNativeModulesVshTelemetryNq | 29 | 0 | 0 | 0 | 0 |
 | libSceAvPlayer.native | 29 | 29 | 0 | 0 | 0 |
 | libSceVoiceCommand | 29 | 23 | 23 | 0 | 18 |
@@ -338,7 +338,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceMbusDebug | 28 | 28 | 0 | 0 | 0 |
 | libSceVrTracker2_nosubmission | 28 | 6 | 0 | 0 | 0 |
 | libSceContentSearch | 27 | 27 | 0 | 0 | 0 |
-| libSceImeBackend | 27 | 27 | 5 | 0 | 4 |
+| libSceImeBackend | 27 | 27 | 5 | 4 | 0 |
 | libSceNetCtlApIpcInt | 27 | 18 | 0 | 0 | 0 |
 | libScePsml | 27 | 19 | 0 | 0 | 0 |
 | libSceSdma | 27 | 27 | 0 | 0 | 0 |
@@ -360,7 +360,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceOpusCeltEnc | 24 | 15 | 4 | 3 | 0 |
 | libScePlayGo | 24 | 24 | 3 | 3 | 0 |
 | libSceSysUtil | 24 | 24 | 0 | 0 | 0 |
-| libSceSystemGesture | 24 | 24 | 1 | 0 | 0 |
+| libSceSystemGesture | 24 | 24 | 1 | 0 | 1 |
 | libSceVdecCore.native | 24 | 24 | 0 | 0 | 0 |
 | libSceVoiceQoS | 24 | 23 | 0 | 0 | 0 |
 | SceVshNpIdMapper | 23 | 0 | 0 | 0 | 0 |
@@ -580,7 +580,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceMediaAppSharedStorageMa | 5 | 0 | 0 | 0 | 0 |
 | libSceNetCtlV6 | 5 | 5 | 0 | 0 | 0 |
 | libSceNpMatching2Compat | 5 | 5 | 0 | 0 | 0 |
-| libSceNpPartner001 | 5 | 5 | 1 | 0 | 0 |
+| libSceNpPartner001 | 5 | 5 | 1 | 0 | 1 |
 | libSceNpSignalingCompat | 5 | 5 | 0 | 0 | 0 |
 | libSceVrTrackerGpuTest | 5 | 0 | 0 | 0 | 0 |
 | libSceVrTrackerLiveCapture | 5 | 5 | 0 | 0 | 0 |

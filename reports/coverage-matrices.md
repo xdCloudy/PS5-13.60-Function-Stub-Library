@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-30T19:57:11+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-31T00:49:18+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -69,7 +69,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 | 0 | 1,311 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 | 0 | 1,283 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 | 0 | 1,272 |
-| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 295 | 665 | 12 |
+| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 331 | 629 | 12 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 | 0 | 1,189 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 | 0 | 1,100 |
 | libmonosgen | 1,087 | 0 | 937 | 796 | 0 | 0 | 150 |
@@ -147,13 +147,13 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshNpWebapi | 246 | 0 | 0 | 0 | 0 | 0 | 246 |
 | libSceAgcVsh | 245 | 170 | 239 | 204 | 0 | 0 | 6 |
 | libSceFont | 240 | 113 | 240 | 201 | 201 | 0 | 0 |
-| libSceVideoOut | 226 | 136 | 199 | 166 | 148 | 0 | 38 |
+| libSceVideoOut | 226 | 136 | 199 | 166 | 148 | 1 | 38 |
 | libSceNet | 233 | 180 | 223 | 188 | 182 | 0 | 12 |
 | libSceMediaFrameworkInterface | 225 | 0 | 139 | 120 | 0 | 107 | 86 |
-| libSceGLSlimVSH | 217 | 170 | 208 | 175 | 0 | 0 | 9 |
+| libSceGLSlimVSH | 217 | 170 | 208 | 175 | 7 | 0 | 9 |
 | libSceJson2 | 215 | 184 | 215 | 184 | 126 | 0 | 0 |
 | libSceNKWebKitRequirements | 177 | 109 | 142 | 114 | 0 | 0 | 72 |
-| libScePad | 212 | 87 | 194 | 173 | 164 | 3 | 18 |
+| libScePad | 212 | 87 | 194 | 173 | 164 | 0 | 18 |
 | libmono-btls-shared | 212 | 0 | 205 | 181 | 0 | 0 | 7 |
 | SceVshIme | 211 | 0 | 0 | 0 | 0 | 0 | 211 |
 | SceVshNpWebapi2 | 208 | 0 | 0 | 0 | 0 | 0 | 208 |
@@ -291,7 +291,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshPadControllerUpdWrapper | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
 | libScePlayReady | 50 | 43 | 50 | 43 | 43 | 0 | 0 |
 | libSceAudioIn | 43 | 34 | 48 | 38 | 33 | 0 | 1 |
-| libSceRemoteplay | 49 | 32 | 48 | 38 | 35 | 2 | 1 |
+| libSceRemoteplay | 49 | 32 | 48 | 38 | 37 | 0 | 1 |
 | libSceSpSysCallWrapper | 48 | 40 | 48 | 40 | 40 | 0 | 0 |
 | libSceVideoRecordingP | 48 | 0 | 43 | 39 | 18 | 0 | 5 |
 | libSceGameLiveStreaming | 45 | 42 | 47 | 42 | 42 | 0 | 0 |
@@ -348,7 +348,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshNpSns | 30 | 0 | 0 | 0 | 0 | 0 | 30 |
 | SceVshSl2Sl2Manage | 30 | 0 | 0 | 0 | 0 | 0 | 30 |
 | libSceAvPlayer | 30 | 23 | 30 | 24 | 23 | 0 | 0 |
-| libSceOpusDec | 30 | 10 | 15 | 11 | 10 | 0 | 15 |
+| libSceOpusDec | 30 | 10 | 15 | 11 | 10 | 1 | 15 |
 | ReactNativeModulesVshTelemetryNq | 29 | 0 | 0 | 0 | 0 | 0 | 29 |
 | libSceAvPlayer.native | 0 | 23 | 29 | 23 | 1 | 0 | 0 |
 | libSceVoiceCommand | 29 | 0 | 23 | 18 | 0 | 18 | 6 |
@@ -358,7 +358,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceMbusDebug | 28 | 0 | 28 | 24 | 0 | 0 | 0 |
 | libSceVrTracker2_nosubmission | 28 | 0 | 6 | 5 | 0 | 0 | 22 |
 | libSceContentSearch | 19 | 17 | 27 | 21 | 21 | 0 | 0 |
-| libSceImeBackend | 27 | 0 | 27 | 24 | 20 | 4 | 0 |
+| libSceImeBackend | 27 | 0 | 27 | 24 | 24 | 0 | 0 |
 | libSceNetCtlApIpcInt | 27 | 0 | 18 | 16 | 0 | 0 | 9 |
 | libScePsml | 27 | 0 | 19 | 15 | 0 | 0 | 8 |
 | libSceSdma | 27 | 22 | 27 | 22 | 21 | 0 | 0 |
@@ -380,7 +380,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceOpusCeltEnc | 24 | 8 | 15 | 11 | 11 | 0 | 9 |
 | libScePlayGo | 22 | 15 | 24 | 18 | 18 | 0 | 0 |
 | libSceSysUtil | 24 | 21 | 24 | 21 | 21 | 0 | 0 |
-| libSceSystemGesture | 24 | 19 | 24 | 20 | 19 | 0 | 0 |
+| libSceSystemGesture | 24 | 19 | 24 | 20 | 19 | 1 | 0 |
 | libSceVdecCore.native | 0 | 17 | 24 | 17 | 2 | 0 | 0 |
 | libSceVoiceQoS | 24 | 20 | 23 | 20 | 20 | 0 | 1 |
 | SceVshNpIdMapper | 23 | 0 | 0 | 0 | 0 | 0 | 23 |
@@ -600,7 +600,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceMediaAppSharedStorageMa | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | libSceNetCtlV6 | 5 | 0 | 5 | 5 | 0 | 0 | 0 |
 | libSceNpMatching2Compat | 5 | 0 | 5 | 3 | 0 | 0 | 0 |
-| libSceNpPartner001 | 4 | 1 | 5 | 4 | 2 | 0 | 0 |
+| libSceNpPartner001 | 4 | 1 | 5 | 4 | 2 | 1 | 0 |
 | libSceNpSignalingCompat | 5 | 0 | 5 | 5 | 0 | 0 | 0 |
 | libSceVrTrackerGpuTest | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | libSceVrTrackerLiveCapture | 5 | 0 | 5 | 5 | 0 | 0 | 0 |
@@ -822,10 +822,10 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 15,583 | Source-backed or canonical classification |
-| anyps5 throwing marker | 12,291 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 3,292 | Source-backed or canonical classification |
-| open pr qualified partial | 1,335 | Source-backed or canonical classification |
+| anyps5 main definition matches | 15,632 | Source-backed or canonical classification |
+| anyps5 throwing marker | 12,213 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 3,419 | Source-backed or canonical classification |
+| open pr qualified partial | 1,294 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
 | build verified live | unknown | Not measured; never inferred from source bodies |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: f91137142eafd5df646fca6419a1fc4ef61b89d9
-Added identities: 1,560; removed: 16; changed source classifications: 42.
+Previous SHA: 9310f48f1599d0b0a73ccdba39ed8bacee861bb7
+Added identities: 1,743; removed: 156; changed source classifications: 114.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,14 +903,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-30T19:57:11+00:00 |
-| pr scanned | 1,610 |
-| pr total | 1,627 |
+| last refresh utc | 2026-10-31T00:49:18+00:00 |
+| pr scanned | 1,530 |
+| pr total | 1,548 |
 | pr complete | 0 |
 | pr errors | 17 |
-| anyps5 symbol observations | 29,863 |
+| anyps5 symbol observations | 31,450 |
 | anyps5 declarations only | 120 |
-| anyps5 explicit alias records | 3,002 |
+| anyps5 explicit alias records | 3,759 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
 | source 320 registrations | 33,298 |
@@ -920,7 +920,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 11,125 |
+| anyps5 public source proposals | 11,906 |
 | anyps5 withheld names | 33 |
 | overlap publication safe | 0 |
 
@@ -932,6 +932,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-30T07:28:37+00:00 | 314,038 | 39,966 | 7,753 | 1,076 |
 | 2026-10-30T13:00:07+00:00 | 314,038 | 39,966 | 15,544 | 1,388 |
 | 2026-10-30T19:57:11+00:00 | 314,038 | 39,966 | 15,583 | 1,610 |
+| 2026-10-31T00:49:18+00:00 | 314,038 | 39,966 | 15,632 | 1,530 |
 
 ### Coverage denominators
 

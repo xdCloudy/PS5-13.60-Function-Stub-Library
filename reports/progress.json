@@ -1,17 +1,17 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "9310f48f1599d0b0a73ccdba39ed8bacee861bb7",
+    "anyps5_main_commit": "e49d43d6256b7c2283539d86b42325a36653275a",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 235,
-      "open_pr_cached": 1153,
+      "open_pr_cache_expired_or_closed": 264,
+      "open_pr_cached": 1346,
       "open_pr_coverage_complete": false,
       "open_pr_errors": 17,
-      "open_pr_newly_scanned": 457,
-      "open_pr_scanned": 1610,
+      "open_pr_newly_scanned": 185,
+      "open_pr_scanned": 1530,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1627,
-      "open_pr_unscanned": 17
+      "open_pr_total": 1548,
+      "open_pr_unscanned": 18
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -21,7 +21,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-30T19:57:11+00:00",
+    "generated_at_utc": "2026-10-31T00:49:18+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -458,11 +458,11 @@
     },
     {
       "library": "libSceNpCommon",
-      "open_pr_added_matches": 665,
+      "open_pr_added_matches": 629,
       "qualified_records": 782,
       "records": 1199,
-      "upstream_main_catalogue_source_matches": 295,
-      "upstream_main_source_matches": 6,
+      "upstream_main_catalogue_source_matches": 331,
+      "upstream_main_source_matches": 42,
       "verified_names": 1187
     },
     {
@@ -1160,7 +1160,7 @@
     },
     {
       "library": "libSceVideoOut",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 133,
       "records": 237,
       "upstream_main_catalogue_source_matches": 148,
@@ -1190,7 +1190,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 217,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 7,
       "upstream_main_source_matches": 0,
       "verified_names": 208
     },
@@ -1214,7 +1214,7 @@
     },
     {
       "library": "libScePad",
-      "open_pr_added_matches": 3,
+      "open_pr_added_matches": 0,
       "qualified_records": 4,
       "records": 212,
       "upstream_main_catalogue_source_matches": 164,
@@ -2456,11 +2456,11 @@
     },
     {
       "library": "libSceRemoteplay",
-      "open_pr_added_matches": 2,
+      "open_pr_added_matches": 0,
       "qualified_records": 3,
       "records": 49,
-      "upstream_main_catalogue_source_matches": 35,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 37,
+      "upstream_main_source_matches": 2,
       "verified_names": 48
     },
     {
@@ -2969,7 +2969,7 @@
     },
     {
       "library": "libSceOpusDec",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 30,
       "upstream_main_catalogue_source_matches": 10,
@@ -3059,11 +3059,11 @@
     },
     {
       "library": "libSceImeBackend",
-      "open_pr_added_matches": 4,
+      "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 27,
-      "upstream_main_catalogue_source_matches": 20,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 24,
+      "upstream_main_source_matches": 4,
       "verified_names": 27
     },
     {
@@ -3257,7 +3257,7 @@
     },
     {
       "library": "libSceSystemGesture",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 24,
       "upstream_main_catalogue_source_matches": 19,
@@ -5237,7 +5237,7 @@
     },
     {
       "library": "libSceNpPartner001",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 1,
       "qualified_records": 1,
       "records": 5,
       "upstream_main_catalogue_source_matches": 2,
@@ -7181,33 +7181,33 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7746,
-    "anyps5_main_nonthrowing_source_records_live": 3292,
-    "anyps5_main_nonthrowing_unique_nids_live": 3285,
-    "anyps5_main_throwing_marker_records_live": 12291,
-    "anyps5_main_throwing_unique_nids_live": 12291,
-    "anyps5_main_tracked_source_records_live": 15583,
-    "anyps5_main_tracked_unique_nids_live": 15576,
-    "auto_imported_catalog_matching_proposals": 3,
-    "auto_imported_public_source_name_proposals": 11125,
-    "external_source_evidence_records": 40776,
+    "anyps5_main_nonthrowing_source_records_live": 3419,
+    "anyps5_main_nonthrowing_unique_nids_live": 3412,
+    "anyps5_main_throwing_marker_records_live": 12213,
+    "anyps5_main_throwing_unique_nids_live": 12213,
+    "anyps5_main_tracked_source_records_live": 15632,
+    "anyps5_main_tracked_unique_nids_live": 15625,
+    "auto_imported_catalog_matching_proposals": 5,
+    "auto_imported_public_source_name_proposals": 11906,
+    "external_source_evidence_records": 40190,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
-    "main_nonthrowing_definition_record_matches": 6,
+    "main_nonthrowing_definition_record_matches": 48,
     "main_throwing_marker_record_matches": 7689,
-    "new_upstream_nid_candidates_for_review": 20354,
+    "new_upstream_nid_candidates_for_review": 19744,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
-    "qualified_unique_nids_matched_in_main_source": 7695,
-    "qualified_unique_nids_matched_in_open_pr_additions": 1335,
-    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 1719,
+    "qualified_unique_nids_matched_in_main_source": 7737,
+    "qualified_unique_nids_matched_in_open_pr_additions": 1294,
+    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 1718,
     "qualified_unique_nids_recomputed": 10749,
     "saved_qualified_unique_nids": 10750,
     "saved_vs_recomputed_delta": 1,
     "source_names_withheld_by_safety_filter": 33,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 26822,
-    "verified_catalog_identity_main_source_matches": 15583
+    "upstream_source_definitions_seen": 27652,
+    "verified_catalog_identity_main_source_matches": 15632
   }
 }
