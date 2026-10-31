@@ -133,13 +133,14 @@ def changed_existing_function(base_source: str, patch: str, name: str) -> bool:
     return False
 
 
-GENERATED_FORK_REF = re.compile(r"^refs/heads/feat/automated-reviewed-stubs-([0-9a-f]{16})$")
+GENERATED_FORK_REF = re.compile(r"^refs/heads/(feat/automated-reviewed-(?:stubs|constants)-[0-9a-f]{16})$")
 
 
 def generated_heads(checkout: Path, fork: str) -> dict[str, str]:
     """Snapshot only branches produced by this workflow, not historical work."""
     listing = git(checkout, "ls-remote", "--heads", fork,
-                  "refs/heads/feat/automated-reviewed-stubs-*")
+                  "refs/heads/feat/automated-reviewed-stubs-*",
+                  "refs/heads/feat/automated-reviewed-constants-*")
     heads = {}
     for line in listing.splitlines():
         parts = line.split()
@@ -243,10 +244,10 @@ def check_candidates_git(
         try:
             fork_before = generated_heads(checkout, pending_fork_url)
             for suffix, head in sorted(fork_before.items()):
-                ref = f"refs/anyps5-pending/{suffix}"
+                ref = f"refs/anyps5-pending/{suffix.replace('/', '-')}"
                 git(checkout, "fetch", "--quiet", "--no-tags",
                     pending_fork_url,
-                    f"+refs/heads/feat/automated-reviewed-stubs-{suffix}:{ref}")
+                    f"+refs/heads/{suffix}:{ref}")
                 sha = git(checkout, "rev-parse", ref)
                 if sha != head:
                     raise ValueError("Generated fork branch moved while fetching")
