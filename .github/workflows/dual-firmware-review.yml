@@ -7,6 +7,8 @@ on:
       - '.github/workflows/dual-firmware-review.yml'
       - 'tools/dual_firmware_review.py'
       - 'tests/test_dual_firmware_review.py'
+      - 'tools/investigate_anyps5_source_evidence.py'
+      - 'tests/test_investigate_anyps5_source_evidence.py'
   workflow_dispatch:
   schedule:
     - cron: '37 */12 * * *'
@@ -37,9 +39,13 @@ jobs:
         with:
           python-version: '3.12'
       - name: Run dual-source regression tests
-        run: python -m unittest discover -s tests -p 'test_dual_firmware_review.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_dual_firmware_review.py' -v
+          python -m unittest discover -s tests -p 'test_investigate_anyps5_source_evidence.py' -v
       - name: Clone original public 3.20 forwarding sources
         run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git "$RUNNER_TEMP/original-320"
+      - name: Clone current AnyPS5 main for source-evidence inspection
+        run: git clone --quiet --depth 1 https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/current-anyps5"
       - name: Independently enumerate both firmware sources
         shell: bash
         run: |
@@ -48,7 +54,13 @@ jobs:
             --source-320 "$RUNNER_TEMP/original-320" \
             --out-json "$RUNNER_TEMP/dual-firmware-triage.json" \
             --out-md "$RUNNER_TEMP/dual-firmware-review.md" \
+            --out-queue "$RUNNER_TEMP/dual-firmware-all-candidates.jsonl" \
             --limit 75
+          python tools/investigate_anyps5_source_evidence.py \
+            --queue "$RUNNER_TEMP/dual-firmware-all-candidates.jsonl" \
+            --upstream "$RUNNER_TEMP/current-anyps5" \
+            --out "$RUNNER_TEMP/dual-firmware-reviewed-against-main.jsonl" \
+            --summary "$RUNNER_TEMP/dual-firmware-upstream-observations.json"
           python - <<'PY'
           import json, os
           from pathlib import Path
@@ -68,22 +80,18 @@ jobs:
           path: |
             ${{ runner.temp }}/dual-firmware-triage.json
             ${{ runner.temp }}/dual-firmware-review.md
+            ${{ runner.temp }}/dual-firmware-all-candidates.jsonl
+            ${{ runner.temp }}/dual-firmware-reviewed-against-main.jsonl
+            ${{ runner.temp }}/dual-firmware-upstream-observations.json
           if-no-files-found: error
           retention-days: 90
       - name: Stage at most one review-only draft PR in catalogue
         shell: bash
         env:
-          GH_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          [[ -n "$GH_TOKEN" ]] || {
-            echo "::error::Existing ANYPS5_SUBMIT_TOKEN secret is required to create the review PR"
-            exit 1
-          }
-          [[ "$(gh api user --jq .login)" == "xdCloudy" ]] || {
-            echo "::error::Token identity must be xdCloudy"
-            exit 1
-          }
+          [[ -n "$GH_TOKEN" ]] || { echo "::error::GitHub Actions token unavailable"; exit 1; }
           branch="automation/dual-firmware-review"
           existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --state all \
             --head "$branch" --limit 100 --json number,state --jq '.[0].state // empty')"
