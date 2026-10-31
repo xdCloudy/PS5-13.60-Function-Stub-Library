@@ -106,7 +106,7 @@ def main() -> None:
 
     report = check_candidates_git(
         checkout, candidates, main_occupied, os.environ.get("GITHUB_TOKEN", ""),
-        nid_for)
+        nid_for, pending_fork_url="https://github.com/xdCloudy/AnyPS5.git")
     save_report(args.report, report)
     if not report["scan_complete"] or any(
         not r["verified_clear"] for r in report["candidates"]
