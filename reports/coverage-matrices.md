@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-31T11:51:40+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-31T16:55:08+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: cbed91529193c47194bef11811906c7cb6054af1
-Added identities: 2; removed: 0; changed source classifications: 0.
+Previous SHA: 5de1621ff13712e8b3a6d70a2487b008d9ee80c3
+Added identities: 0; removed: 0; changed source classifications: 2.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,11 +903,11 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-31T11:51:40+00:00 |
-| pr scanned | 1,575 |
-| pr total | 1,589 |
+| last refresh utc | 2026-10-31T16:55:08+00:00 |
+| pr scanned | 1,677 |
+| pr total | 1,696 |
 | pr complete | 0 |
-| pr errors | 14 |
+| pr errors | 19 |
 | anyps5 symbol observations | 42,146 |
 | anyps5 declarations only | 120 |
 | anyps5 explicit alias records | 8,894 |
@@ -945,6 +945,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-31T11:33:56+00:00 | 314,038 | 39,966 | 15,662 | unknown |
 | 2026-10-31T11:39:53+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T11:51:40+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
+| 2026-10-31T16:55:08+00:00 | 314,038 | 39,966 | 15,662 | 1,677 |
 
 ### Coverage denominators
 

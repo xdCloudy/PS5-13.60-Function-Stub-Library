@@ -7,12 +7,12 @@
     "anyps5_public_source_proposals": 17424,
     "anyps5_symbol_observations": 42146,
     "anyps5_withheld_names": 40,
-    "last_refresh_utc": "2026-10-31T11:51:40+00:00",
+    "last_refresh_utc": "2026-10-31T16:55:08+00:00",
     "overlap_publication_safe": false,
     "pr_complete": false,
-    "pr_errors": 14,
-    "pr_scanned": 1575,
-    "pr_total": 1589,
+    "pr_errors": 19,
+    "pr_scanned": 1677,
+    "pr_total": 1696,
     "source_320_canonical_auto_changes": 0,
     "source_320_conflicts_quarantined": 10728,
     "source_320_files": 275,
@@ -127,7 +127,7 @@
     "strictly_verified_names": 39966,
     "unnamed_or_withheld": 266953
   },
-  "generated_at_utc": "2026-10-31T11:51:40+00:00",
+  "generated_at_utc": "2026-10-31T16:55:08+00:00",
   "libraries": [
     {
       "anyps5_assembly_unvalidated": 0,
@@ -1804,8 +1804,8 @@
       "anyps5_explicit_alias_without_visible_definition": 521,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 20,
-      "anyps5_source_throwing": 260,
+      "anyps5_source_nonthrowing_unvalidated": 22,
+      "anyps5_source_throwing": 258,
       "conflicted": 0,
       "firmware_13_60": 665,
       "historical_only": 0,
@@ -2170,8 +2170,8 @@
       "anyps5_explicit_alias_without_visible_definition": 521,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 20,
-      "anyps5_source_throwing": 260,
+      "anyps5_source_nonthrowing_unvalidated": 22,
+      "anyps5_source_throwing": 258,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 488,
@@ -20794,30 +20794,30 @@
     "strict_qualified_unique_nids": 9158
   },
   "recent_changes": {
-    "added": 2,
+    "added": 0,
     "baseline_only": false,
-    "changed_source_classifications": 0,
+    "changed_source_classifications": 2,
     "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-    "previous_source_sha": "cbed91529193c47194bef11811906c7cb6054af1",
+    "previous_source_sha": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3",
     "removed": 0,
-    "samples_added": [
+    "samples_added": [],
+    "samples_changed": [
       {
-        "library": "libscehmd2",
-        "nid": "2X7RUuD/cNA"
+        "library": "libscelibressl3",
+        "nid": "5VepMO+uG8M"
       },
       {
-        "library": "libscehmd2",
-        "nid": "CBkVZi9WhVo"
+        "library": "libscelibressl3",
+        "nid": "L43NRwKtKw0"
       }
     ],
-    "samples_changed": [],
     "samples_removed": [],
     "schema_version": 1,
-    "source_sha": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3"
+    "source_sha": "474030e58424fefdb65e5df9f3820810fbb4553c"
   },
   "schema_version": 1,
   "source_revisions": {
-    "anyps5_main": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3",
+    "anyps5_main": "474030e58424fefdb65e5df9f3820810fbb4553c",
     "ps5_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad"
   },
   "trends": [
@@ -20977,6 +20977,16 @@
       "indexed": 314038,
       "observed_at_utc": "2026-10-31T11:51:40+00:00",
       "open_pr_scanned": 1575,
+      "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+      "qualified_unique_nids": 10749,
+      "strictly_verified_names": 39966
+    },
+    {
+      "anyps5_commit": "474030e58424fefdb65e5df9f3820810fbb4553c",
+      "anyps5_main_matches": 15662,
+      "indexed": 314038,
+      "observed_at_utc": "2026-10-31T16:55:08+00:00",
+      "open_pr_scanned": 1677,
       "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
       "qualified_unique_nids": 10749,
       "strictly_verified_names": 39966

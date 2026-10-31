@@ -1,22 +1,22 @@
 {
-  "added": 2,
+  "added": 0,
   "baseline_only": false,
-  "changed_source_classifications": 0,
+  "changed_source_classifications": 2,
   "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-  "previous_source_sha": "cbed91529193c47194bef11811906c7cb6054af1",
+  "previous_source_sha": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3",
   "removed": 0,
-  "samples_added": [
+  "samples_added": [],
+  "samples_changed": [
     {
-      "library": "libscehmd2",
-      "nid": "2X7RUuD/cNA"
+      "library": "libscelibressl3",
+      "nid": "5VepMO+uG8M"
     },
     {
-      "library": "libscehmd2",
-      "nid": "CBkVZi9WhVo"
+      "library": "libscelibressl3",
+      "nid": "L43NRwKtKw0"
     }
   ],
-  "samples_changed": [],
   "samples_removed": [],
   "schema_version": 1,
-  "source_sha": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3"
+  "source_sha": "474030e58424fefdb65e5df9f3820810fbb4553c"
 }

@@ -1,19 +1,19 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "5de1621ff13712e8b3a6d70a2487b008d9ee80c3",
+    "anyps5_main_commit": "474030e58424fefdb65e5df9f3820810fbb4553c",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 6,
-      "open_pr_cached": 1569,
+      "open_pr_cache_expired_or_closed": 106,
+      "open_pr_cached": 1469,
       "open_pr_coverage_complete": false,
-      "open_pr_errors": 14,
-      "open_pr_newly_scanned": 6,
-      "open_pr_scanned": 1575,
+      "open_pr_errors": 19,
+      "open_pr_newly_scanned": 208,
+      "open_pr_scanned": 1677,
       "open_pr_snapshot_stable": true,
       "open_pr_stale_heads_invalidated": 0,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1589,
-      "open_pr_unscanned": 14
+      "open_pr_total": 1696,
+      "open_pr_unscanned": 19
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-31T11:51:40+00:00",
+    "generated_at_utc": "2026-10-31T16:55:08+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -7191,12 +7191,12 @@
     "anyps5_main_tracked_unique_nids_live": 15655,
     "auto_imported_catalog_matching_proposals": 5,
     "auto_imported_public_source_name_proposals": 17424,
-    "external_source_evidence_records": 45005,
+    "external_source_evidence_records": 44938,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
     "main_nonthrowing_definition_record_matches": 998,
     "main_throwing_marker_record_matches": 6742,
-    "new_upstream_nid_candidates_for_review": 24744,
+    "new_upstream_nid_candidates_for_review": 24702,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
