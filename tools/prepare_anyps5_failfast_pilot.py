@@ -102,13 +102,15 @@ def prepare(checkout: Path, selected: list[dict], apply: bool) -> list[str]:
     header = folder / "include/FailFastExports.hpp"
     umbrella = folder / "libSceJsc.hpp"
     cmake = folder / "CMakeLists.txt"
+    debt = checkout / "docs/dev/debt/libSceJsc.md"
     for path in (source, header):
         if path.exists() or path.is_symlink():
             raise ValueError("Pilot source already exists; do not overwrite: " + str(path))
-    if not umbrella.is_file() or not cmake.is_file():
+    if not umbrella.is_file() or not cmake.is_file() or not debt.is_file():
         raise ValueError("Missing library build or umbrella header")
     old_header = umbrella.read_text(encoding="utf-8")
     old_cmake = cmake.read_text(encoding="utf-8")
+    old_debt = debt.read_text(encoding="utf-8")
     include = '#include "prx/libSceJsc/include/FailFastExports.hpp"\n'
     build = 'target_sources(libSceJsc PRIVATE FailFastExports.cpp)\n'
     if include in old_header or build in old_cmake:
@@ -122,14 +124,32 @@ def prepare(checkout: Path, selected: list[dict], apply: bool) -> list[str]:
         impl += ("int APS5_VABI " + row["name"] + "() {\n"
                  "    NotImplemented_nid_no_patch(__func__);\n}\n\n")
     impl += "}\n"
+    debt_intro = (
+        "\n### Source-backed pending PS5 3.20 and 13.60 exports\n\n"
+        "These provisional parameterless C++ declarations are for import-resolution "
+        "only. Names/NIDs are independently observed in original 3.20 forwarders "
+        "and confirmed 13.60 catalogue exports; signatures and behaviour are "
+        "unverified. All throw through NotImplemented_nid_no_patch without "
+        "accessing guest arguments or returning normally.\n\n"
+    )
+    debt_items = "".join(
+        "- [" + row["name"] + "]"
+        "(../../../core/libs/prx/libSceJsc/FailFastExports.cpp)"
+        " (NID `" + row["nid"] + "`) - original 3.20 "
+        "forwarder and 13.60 confirmed; prototype and behavior unverified.\n"
+        for row in selected
+    )
+    if "### Source-backed pending PS5 3.20 and 13.60 exports" in old_debt:
+        raise ValueError("Existing pilot debt ledger: refuse duplicate")
     if not apply:
-        return [str(header), str(source), str(umbrella), str(cmake)]
+        return [str(header), str(source), str(umbrella), str(cmake), str(debt)]
     header.write_text(decl, encoding="utf-8")
     source.write_text(impl, encoding="utf-8")
     umbrella.write_text(old_header.rstrip() + "\n\n" + include, encoding="utf-8")
     cmake.write_text(old_cmake.rstrip() + "\n" + build, encoding="utf-8")
+    debt.write_text(old_debt.rstrip() + "\n" + debt_intro + debt_items, encoding="utf-8")
     return [str(path.relative_to(checkout).as_posix())
-            for path in (header, source, umbrella, cmake)]
+            for path in (header, source, umbrella, cmake, debt)]
 
 
 def main() -> None:
