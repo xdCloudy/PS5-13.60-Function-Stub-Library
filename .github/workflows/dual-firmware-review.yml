@@ -1,0 +1,140 @@
+name: Review original PS5 3.20 and catalogue 13.60 AnyPS5 candidates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/dual-firmware-review.yml'
+      - 'tools/dual_firmware_review.py'
+      - 'tests/test_dual_firmware_review.py'
+  workflow_dispatch:
+  schedule:
+    - cron: '37 */12 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anyps5-dual-firmware-review
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    if: github.repository == 'xdCloudy/PS5-13.60-Function-Stub-Library'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout trusted catalogue main
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Install supported Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Run dual-source regression tests
+        run: python -m unittest discover -s tests -p 'test_dual_firmware_review.py' -v
+      - name: Clone original public 3.20 forwarding sources
+        run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git "$RUNNER_TEMP/original-320"
+      - name: Independently enumerate both firmware sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/dual_firmware_review.py \
+            --source-320 "$RUNNER_TEMP/original-320" \
+            --out-json "$RUNNER_TEMP/dual-firmware-triage.json" \
+            --out-md "$RUNNER_TEMP/dual-firmware-review.md" \
+            --limit 75
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          doc=json.loads((Path(os.environ["RUNNER_TEMP"])/"dual-firmware-triage.json").read_text())
+          assert doc["review_only"] is True
+          assert doc["automatically_approved"] == 0
+          assert doc["automatically_submitted"] == 0
+          assert doc["sources"]["3.20"]["repository"] == "DNNDHH/PS5-3.20_Libs"
+          assert doc["sources"]["13.60"]["repository"] == "xdCloudy/PS5-13.60-Function-Stub-Library"
+          print(json.dumps(doc["classification_counts"], sort_keys=True))
+          PY
+          cat "$RUNNER_TEMP/dual-firmware-review.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve original evidence review output
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: dual-firmware-review-proposal
+          path: |
+            ${{ runner.temp }}/dual-firmware-triage.json
+            ${{ runner.temp }}/dual-firmware-review.md
+          if-no-files-found: error
+          retention-days: 90
+      - name: Stage at most one review-only draft PR in catalogue
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
+        run: |
+          set -euo pipefail
+          [[ -n "$GH_TOKEN" ]] || {
+            echo "::error::Existing ANYPS5_SUBMIT_TOKEN secret is required to create the review PR"
+            exit 1
+          }
+          [[ "$(gh api user --jq .login)" == "xdCloudy" ]] || {
+            echo "::error::Token identity must be xdCloudy"
+            exit 1
+          }
+          branch="automation/dual-firmware-review"
+          existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --state all \
+            --head "$branch" --limit 100 --json number,state --jq '.[0].state // empty')"
+          if [[ "$existing" == "CLOSED" || "$existing" == "MERGED" ]]; then
+            echo "A review PR was already resolved. Do not silently reopen it." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          gh auth setup-git
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null 2>&1; then
+            git fetch --quiet origin "$branch"
+            git switch -c "$branch" --track "origin/$branch"
+          else
+            git switch -c "$branch"
+          fi
+          mkdir -p reports
+          cp "$RUNNER_TEMP/dual-firmware-triage.json" reports/dual-firmware-triage.json
+          cp "$RUNNER_TEMP/dual-firmware-review.md" reports/dual-firmware-review.md
+          git add reports/dual-firmware-triage.json reports/dual-firmware-review.md
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh dual-firmware review queue [skip ci]"
+            git push origin "HEAD:$branch"
+          fi
+          if [[ "$existing" == "OPEN" ]]; then
+            echo "Updated existing review-only PR; no duplicate PR created." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          cat > "$RUNNER_TEMP/review-pr-body.md" <<'BODY'
+          ## Scope
+          Review candidates drawn from the ORIGINAL PS5 3.20 forwarding source
+          (DNNDHH/PS5-3.20_Libs) and from the distinct, confirmed PS5 13.60
+          catalogue shards in xdCloudy/PS5-13.60-Function-Stub-Library.
+
+          ## Guarantees and blockers
+          - Reports record both exact source Git SHAs.
+          - Name/NID bindings and cross-firmware matches are not signature or behaviour proof.
+          - 3.20-only records do not become 13.60-confirmed records.
+          - Stored upstream/open-PR status is provisional; publishing rescans live PRs.
+          - No implementation, signature, guest ABI, or behaviour is auto-approved.
+          - No upstream AnyPS5 changes are included in this PR.
+
+          ## Review flow
+          Independently verify source permissions, exact provider ownership, ABI
+          and signature evidence before preparing immutable, explicitly approved
+          JSONL batches under approvals/anyps5 or approvals/anyps5-constants.
+          The existing scheduled submitter then compiles, tests, rechecks all
+          upstream PR overlaps, and opens a draft AnyPS5 PR as xdCloudy.
+
+          This review PR is intentionally never auto-merged.
+          BODY
+          gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$branch" \
+            --draft --title "data: review 3.20 and 13.60 AnyPS5 export candidates" \
+            --body-file "$RUNNER_TEMP/review-pr-body.md"
