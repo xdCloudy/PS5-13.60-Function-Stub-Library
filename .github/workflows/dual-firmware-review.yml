@@ -9,6 +9,8 @@ on:
       - 'tests/test_dual_firmware_review.py'
       - 'tools/investigate_anyps5_source_evidence.py'
       - 'tests/test_investigate_anyps5_source_evidence.py'
+      - 'tools/match_public_ps5_sdk_hints.py'
+      - 'tests/test_match_public_ps5_sdk_hints.py'
   workflow_dispatch:
   schedule:
     - cron: '37 */12 * * *'
@@ -42,10 +44,15 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_dual_firmware_review.py' -v
           python -m unittest discover -s tests -p 'test_investigate_anyps5_source_evidence.py' -v
+          python -m unittest discover -s tests -p 'test_match_public_ps5_sdk_hints.py' -v
       - name: Clone original public 3.20 forwarding sources
         run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git "$RUNNER_TEMP/original-320"
       - name: Clone current AnyPS5 main for source-evidence inspection
         run: git clone --quiet --depth 1 https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/current-anyps5"
+      - name: Clone public PS5 SDK header references
+        run: |
+          git clone --quiet --depth 1 https://github.com/PS5Dev/PS5SDK.git "$RUNNER_TEMP/ps5dev-sdk"
+          git clone --quiet --depth 1 https://github.com/ps5-payload-dev/sdk.git "$RUNNER_TEMP/ps5-payload-sdk"
       - name: Independently enumerate both firmware sources
         shell: bash
         run: |
@@ -61,6 +68,12 @@ jobs:
             --upstream "$RUNNER_TEMP/current-anyps5" \
             --out "$RUNNER_TEMP/dual-firmware-reviewed-against-main.jsonl" \
             --summary "$RUNNER_TEMP/dual-firmware-upstream-observations.json"
+          python tools/match_public_ps5_sdk_hints.py \
+            --queue "$RUNNER_TEMP/dual-firmware-reviewed-against-main.jsonl" \
+            --sdk-ps5dev "$RUNNER_TEMP/ps5dev-sdk" \
+            --sdk-payload "$RUNNER_TEMP/ps5-payload-sdk" \
+            --out "$RUNNER_TEMP/dual-firmware-public-evidence-hints.jsonl" \
+            --summary "$RUNNER_TEMP/dual-firmware-public-evidence-summary.json"
           python - <<'PY'
           import json, os
           from pathlib import Path
@@ -83,6 +96,8 @@ jobs:
             ${{ runner.temp }}/dual-firmware-all-candidates.jsonl
             ${{ runner.temp }}/dual-firmware-reviewed-against-main.jsonl
             ${{ runner.temp }}/dual-firmware-upstream-observations.json
+            ${{ runner.temp }}/dual-firmware-public-evidence-hints.jsonl
+            ${{ runner.temp }}/dual-firmware-public-evidence-summary.json
           if-no-files-found: error
           retention-days: 90
       - name: Stage at most one review-only draft PR in catalogue
