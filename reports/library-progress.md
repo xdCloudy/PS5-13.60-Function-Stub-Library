@@ -127,7 +127,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshNpWebapi | 246 | 0 | 0 | 0 | 0 |
 | libSceAgcVsh | 245 | 239 | 0 | 0 | 0 |
 | libSceFont | 240 | 240 | 44 | 36 | 0 |
-| libSceVideoOut | 237 | 199 | 133 | 100 | 1 |
+| libSceVideoOut | 237 | 199 | 133 | 101 | 0 |
 | libSceNet | 235 | 223 | 0 | 0 | 0 |
 | libSceMediaFrameworkInterface | 225 | 139 | 139 | 0 | 107 |
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |

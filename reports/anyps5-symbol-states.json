@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 6,
   "build_verified": null,
-  "explicit_export_alias_records": 8844,
+  "explicit_export_alias_records": 8884,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 42015,
+  "observed_library_nid_records": 42096,
   "per_library": {
     "libc": {
       "assembly_definition_unvalidated": 2,
@@ -183,8 +183,8 @@
       "explicit_alias_no_visible_definition": 2
     },
     "libscebgft": {
-      "definition_throwing": 101,
-      "explicit_alias_no_visible_definition": 5
+      "definition_throwing": 103,
+      "explicit_alias_no_visible_definition": 7
     },
     "libscebgsstorage": {
       "definition_throwing": 17,
@@ -263,7 +263,8 @@
       "definition_throwing": 10
     },
     "libscecustommusiccore": {
-      "definition_throwing": 18
+      "definition_throwing": 29,
+      "explicit_alias_no_visible_definition": 11
     },
     "libscecustommusicplayready4": {
       "definition_throwing": 82,
@@ -642,8 +643,8 @@
     },
     "libscenpmanager": {
       "definition_nonthrowing_unvalidated": 70,
-      "definition_throwing": 137,
-      "explicit_alias_no_visible_definition": 2
+      "definition_throwing": 144,
+      "explicit_alias_no_visible_definition": 9
     },
     "libscenpmatching2": {
       "definition_nonthrowing_unvalidated": 12,
@@ -694,7 +695,8 @@
       "definition_throwing": 7
     },
     "libscenptcs": {
-      "definition_throwing": 3
+      "definition_throwing": 11,
+      "explicit_alias_no_visible_definition": 8
     },
     "libscenptexttospeech": {
       "definition_throwing": 11,
@@ -707,7 +709,8 @@
     },
     "libscenptrophy2": {
       "definition_nonthrowing_unvalidated": 18,
-      "definition_throwing": 38
+      "definition_throwing": 43,
+      "explicit_alias_no_visible_definition": 5
     },
     "libscenptus": {
       "definition_nonthrowing_unvalidated": 122,
@@ -776,8 +779,8 @@
       "definition_nonthrowing_unvalidated": 7
     },
     "libsceplayready": {
-      "definition_nonthrowing_unvalidated": 1,
-      "definition_throwing": 49
+      "definition_nonthrowing_unvalidated": 7,
+      "definition_throwing": 43
     },
     "libsceplayready2": {
       "definition_throwing": 17
@@ -1090,8 +1093,8 @@
     },
     "libscevideoout": {
       "definition_nonthrowing_unvalidated": 58,
-      "definition_throwing": 187,
-      "explicit_alias_no_visible_definition": 50
+      "definition_throwing": 195,
+      "explicit_alias_no_visible_definition": 57
     },
     "libscevideooutsecondary": {
       "definition_throwing": 2,
@@ -1195,12 +1198,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "c3c45d73abd34dca81da6bad87cb6d36ea437a66",
+  "source_sha": "cf5a1805e50ceeccf6574abd98b13e9783c412c1",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
-    "definition_nonthrowing_unvalidated": 7967,
-    "definition_throwing": 25078,
-    "explicit_alias_no_visible_definition": 8844
+    "definition_nonthrowing_unvalidated": 7973,
+    "definition_throwing": 25113,
+    "explicit_alias_no_visible_definition": 8884
   }
 }
