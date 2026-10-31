@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "library": "libSceJsc",
+  "require_original_320": true,
+  "max_functions": 3,
+  "candidates": [
+    {
+      "name": "JSGlobalContextSetDebuggerRunLoopWithCurrentRunLoop",
+      "nid": "DojSTghs5jU"
+    },
+    {
+      "name": "JSRunLoopIterateCurrentRunLoop",
+      "nid": "XIAOofO0nN4"
+    },
+    {
+      "name": "JSGlobalContextUnsetDebuggerRunLoop",
+      "nid": "rWPnHtWTIRg"
+    }
+  ]
+}
