@@ -17,7 +17,7 @@ All identities remain represented; source definition matches are **not** validat
 | ReactNativeModulesVsh | 6,713 | 0 | 0 | 0 | 0 |
 | SceVshShellUIReactNativeShellApp | 6,391 | 0 | 0 | 0 | 0 |
 | app | 5,612 | 0 | 0 | 0 | 0 |
-| libSceJsc | 5,446 | 4,115 | 2,951 | 0 | 313 |
+| libSceJsc | 5,446 | 4,115 | 2,951 | 0 | 0 |
 | SceVshShellUILoginMgr | 4,550 | 0 | 0 | 0 | 0 |
 | ReactivePropertyPlayStation | 4,457 | 0 | 0 | 0 | 0 |
 | NewtonsoftJsonPlayStation | 4,016 | 0 | 0 | 0 | 0 |
@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 629 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 0 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |
@@ -60,7 +60,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIQuickImageEdit | 981 | 0 | 0 | 0 | 0 |
 | libmonosgen-2.0 | 963 | 963 | 0 | 0 | 0 |
 | MonoDataSqlite | 898 | 0 | 0 | 0 | 0 |
-| libSceIcu | 855 | 813 | 72 | 0 | 60 |
+| libSceIcu | 855 | 813 | 72 | 0 | 0 |
 | SceVshShellUIVisionRecognition | 822 | 0 | 0 | 0 | 0 |
 | ReactNativeComponentsVsh | 820 | 0 | 0 | 0 | 0 |
 | libdiscord | 802 | 0 | 0 | 0 | 0 |
@@ -129,7 +129,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceFont | 240 | 240 | 44 | 36 | 0 |
 | libSceVideoOut | 237 | 199 | 133 | 101 | 0 |
 | libSceNet | 235 | 223 | 0 | 0 | 0 |
-| libSceMediaFrameworkInterface | 225 | 139 | 139 | 0 | 107 |
+| libSceMediaFrameworkInterface | 225 | 139 | 139 | 0 | 0 |
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |
 | libSceJson2 | 215 | 215 | 0 | 0 | 0 |
 | libSceNKWebKitRequirements | 214 | 142 | 0 | 0 | 0 |
@@ -149,7 +149,7 @@ All identities remain represented; source definition matches are **not** validat
 | ReactNativeModulesVshMediaPlayerContents | 189 | 0 | 0 | 0 | 0 |
 | libSceHmd | 186 | 168 | 0 | 0 | 0 |
 | libSceAppInstUtil | 184 | 132 | 8 | 7 | 0 |
-| libSceXml | 183 | 183 | 33 | 0 | 28 |
+| libSceXml | 183 | 183 | 33 | 0 | 0 |
 | SceVshSystemLoggerWrapper | 182 | 0 | 0 | 0 | 0 |
 | SceVshNpAsm | 181 | 0 | 0 | 0 | 0 |
 | libSceAvSetting | 180 | 128 | 1 | 1 | 0 |
@@ -177,7 +177,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceFont.native | 136 | 136 | 0 | 0 | 0 |
 | libSceJxr | 136 | 136 | 0 | 0 | 0 |
 | libSceAgcDriver | 135 | 130 | 0 | 0 | 0 |
-| libSceCustomMusicSysCallWrapper | 133 | 54 | 53 | 0 | 47 |
+| libSceCustomMusicSysCallWrapper | 133 | 54 | 53 | 0 | 0 |
 | gaikai_player_lib | 132 | 16 | 0 | 0 | 0 |
 | SceVshOrbisBgft | 127 | 0 | 0 | 0 | 0 |
 | libSceCamera | 127 | 122 | 1 | 1 | 0 |
@@ -216,7 +216,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshOrbisAbstractStorage | 91 | 0 | 0 | 0 | 0 |
 | libSceDataTransfer | 88 | 88 | 28 | 24 | 0 |
 | libSceJson | 88 | 88 | 0 | 0 | 0 |
-| libSceVnaInternal | 88 | 84 | 84 | 0 | 71 |
+| libSceVnaInternal | 88 | 84 | 84 | 0 | 0 |
 | libSceRegMgr | 87 | 66 | 0 | 0 | 0 |
 | libSceSysCore | 87 | 79 | 7 | 4 | 0 |
 | SystemIOCompressionFileSystem | 86 | 0 | 0 | 0 | 0 |
@@ -285,7 +285,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceLoginMgrServer | 45 | 32 | 2 | 2 | 0 |
 | libSceCdlgUtilServer | 44 | 11 | 0 | 0 | 0 |
 | libSceNpTusCompat | 44 | 44 | 0 | 0 | 0 |
-| libSceAjmi | 43 | 22 | 1 | 0 | 1 |
+| libSceAjmi | 43 | 22 | 1 | 0 | 0 |
 | libSceNpWebApi2 | 43 | 41 | 0 | 0 | 0 |
 | SceVshMyGameList | 42 | 0 | 0 | 0 | 0 |
 | libSceRazorCpu | 42 | 42 | 7 | 4 | 0 |
@@ -331,7 +331,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceOpusDec | 30 | 15 | 1 | 1 | 0 |
 | ReactNativeModulesVshTelemetryNq | 29 | 0 | 0 | 0 | 0 |
 | libSceAvPlayer.native | 29 | 29 | 0 | 0 | 0 |
-| libSceVoiceCommand | 29 | 23 | 23 | 0 | 18 |
+| libSceVoiceCommand | 29 | 23 | 23 | 0 | 0 |
 | SceVshNpSessionService | 28 | 0 | 0 | 0 | 0 |
 | libSceCommonDialog | 28 | 16 | 0 | 0 | 0 |
 | libSceKeyboard | 28 | 24 | 0 | 0 | 0 |
@@ -345,7 +345,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceVdecCore | 27 | 25 | 1 | 1 | 0 |
 | libSceVenc | 27 | 19 | 5 | 3 | 0 |
 | SceVshShareServerPostWrapper | 26 | 0 | 0 | 0 | 0 |
-| libSceNpEntitlementAccess | 26 | 26 | 1 | 0 | 1 |
+| libSceNpEntitlementAccess | 26 | 26 | 1 | 0 | 0 |
 | libSceNpParty | 26 | 26 | 0 | 0 | 0 |
 | SceVshShellUIUtilWrapper | 25 | 0 | 0 | 0 | 0 |
 | SceVshVoiceMsgVoiceMsgWrapper | 25 | 0 | 0 | 0 | 0 |
@@ -458,7 +458,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceDepth2 | 11 | 10 | 0 | 0 | 0 |
 | libSceGvMp4Parser | 11 | 5 | 0 | 0 | 0 |
 | libSceJpegParser | 11 | 5 | 0 | 0 | 0 |
-| libSceMediaFrameworkUtil | 11 | 5 | 5 | 0 | 4 |
+| libSceMediaFrameworkUtil | 11 | 5 | 5 | 0 | 0 |
 | libSceNetCtlAp | 11 | 11 | 0 | 0 | 0 |
 | libSceNpScoreCompat | 11 | 11 | 0 | 0 | 0 |
 | libSceNpSessionSignalingCrossplay | 11 | 5 | 0 | 0 | 0 |
@@ -503,7 +503,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceNpProfileDialog | 8 | 8 | 0 | 0 | 0 |
 | libSceSulphaDrv | 8 | 8 | 0 | 0 | 0 |
 | libSceUrlConfigResolver | 8 | 8 | 0 | 0 | 0 |
-| libSceVcodec | 8 | 5 | 5 | 0 | 5 |
+| libSceVcodec | 8 | 5 | 5 | 0 | 0 |
 | libSceVrHand | 8 | 8 | 0 | 0 | 0 |
 | libjimage | 8 | 0 | 0 | 0 | 0 |
 | libkernel_qadisc | 8 | 6 | 0 | 0 | 0 |
@@ -522,7 +522,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceJxrParser | 7 | 0 | 0 | 0 | 0 |
 | libSceLibcInternalExt | 7 | 7 | 0 | 0 | 0 |
 | libSceLoginDialog | 7 | 7 | 0 | 0 | 0 |
-| libSceMusicCoreInterface | 7 | 7 | 7 | 0 | 6 |
+| libSceMusicCoreInterface | 7 | 7 | 7 | 0 | 0 |
 | libSceNetCtlApDialog | 7 | 7 | 0 | 0 | 0 |
 | libSceNpAuthAuthorizedAppDialog | 7 | 7 | 0 | 0 | 0 |
 | libSceNpSnsFacebookDialog | 7 | 7 | 0 | 0 | 0 |
