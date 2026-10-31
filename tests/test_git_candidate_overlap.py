@@ -60,6 +60,16 @@ class GitOverlapTests(unittest.TestCase):
                 diff, nid_for, candidate_libraries={"libsceexample"})
             self.assertEqual(unknown, expected, owner)
 
+    def test_unrelated_library_export_map_is_global_unknown(self):
+        diff = (
+            "diff --git a/core/libs/prx/libOther/Exports.map b/core/libs/prx/libOther/Exports.map\n"
+            "+++ b/core/libs/prx/libOther/Exports.map\n"
+            "+sceExportFromOtherLib;\n"
+        )
+        _, unknown = decode_changed_exports(
+            diff, nid_for, candidate_libraries={"libsceexample"})
+        self.assertTrue(unknown)
+
     def test_unsupported_dynamic_export_fails_closed(self):
         diff = (
             "diff --git a/core/libs/prx/libSceExample/Export.cpp b/core/libs/prx/libSceExample/Export.cpp\n"
