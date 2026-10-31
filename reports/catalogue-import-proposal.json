@@ -3,6 +3,19 @@
     {
       "canonical_name_approved": false,
       "firmware_13_60_export_confirmed_by_this_source": false,
+      "library": "libsceaudiopropagation",
+      "nid": "yW8FldaufkU",
+      "observed_status": "unnamed_catalog_identity",
+      "proposed_name": "sceAudioPropagationSourceQueryAudioPaths",
+      "runtime_validated": false,
+      "signature_verified": false,
+      "source": "boykopovar/AnyPS5",
+      "source_commit": "e49d43d6256b7c2283539d86b42325a36653275a",
+      "source_file": "core/libs/prx/libSceAudioPropagation/InventoryExports.cpp"
+    },
+    {
+      "canonical_name_approved": false,
+      "firmware_13_60_export_confirmed_by_this_source": false,
       "library": "libsceresourcearbitrator",
       "nid": "fBX+DBOwNis",
       "observed_status": "unnamed_catalog_identity",
@@ -10,8 +23,21 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "9310f48f1599d0b0a73ccdba39ed8bacee861bb7",
+      "source_commit": "e49d43d6256b7c2283539d86b42325a36653275a",
       "source_file": "core/libs/prx/libSceResourceArbitrator/Export.cpp"
+    },
+    {
+      "canonical_name_approved": false,
+      "firmware_13_60_export_confirmed_by_this_source": false,
+      "library": "libscevenc",
+      "nid": "i5yjeSwjlAY",
+      "observed_status": "unnamed_catalog_identity",
+      "proposed_name": "sceVencUnmapMemory",
+      "runtime_validated": false,
+      "signature_verified": false,
+      "source": "boykopovar/AnyPS5",
+      "source_commit": "e49d43d6256b7c2283539d86b42325a36653275a",
+      "source_file": "core/libs/prx/libSceVenc/Export.cpp"
     },
     {
       "canonical_name_approved": false,
@@ -23,7 +49,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "9310f48f1599d0b0a73ccdba39ed8bacee861bb7",
+      "source_commit": "e49d43d6256b7c2283539d86b42325a36653275a",
       "source_file": "core/libs/prx/libSceVideoOut/InventoryExports.cpp"
     },
     {
@@ -36,19 +62,19 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "9310f48f1599d0b0a73ccdba39ed8bacee861bb7",
+      "source_commit": "e49d43d6256b7c2283539d86b42325a36653275a",
       "source_file": "core/libs/prx/libSceVideoOut/InventoryExports.cpp"
     }
   ],
   "canonical_manifest_sha256": "0f503f23221f5862499c109afd1e70111c491f3bcae80d078c2008cf34cb68ad",
   "canonical_records_mutated": 0,
   "conflicts": [],
-  "evidence_observations": 3,
+  "evidence_observations": 5,
   "independent_approval_required": true,
   "note": "These records are name or historical-reference proposals only; no ABI, runtime, source licence or 13.60 confirmation is inferred.",
   "publication_status": "DRAFT_REVIEW_ONLY",
-  "reviewable_identity_count": 3,
+  "reviewable_identity_count": 5,
   "schema_version": 1,
   "source_revision_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
-  "source_revision_anyps5": "9310f48f1599d0b0a73ccdba39ed8bacee861bb7"
+  "source_revision_anyps5": "e49d43d6256b7c2283539d86b42325a36653275a"
 }
