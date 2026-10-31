@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-31T10:25:39+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-31T10:30:25+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: c3c45d73abd34dca81da6bad87cb6d36ea437a66
-Added identities: 81; removed: 0; changed source classifications: 6.
+Previous SHA: cf5a1805e50ceeccf6574abd98b13e9783c412c1
+Added identities: 2; removed: 0; changed source classifications: 0.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,12 +903,12 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-31T10:25:39+00:00 |
-| pr scanned | 1,570 |
+| last refresh utc | 2026-10-31T10:30:25+00:00 |
+| pr scanned | 1,577 |
 | pr total | 1,592 |
 | pr complete | 0 |
 | pr errors | 15 |
-| anyps5 symbol observations | 42,096 |
+| anyps5 symbol observations | 42,098 |
 | anyps5 declarations only | 120 |
 | anyps5 explicit alias records | 8,884 |
 | anyps5 assembly definition records | 6 |
@@ -921,7 +921,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 17,379 |
+| anyps5 public source proposals | 17,381 |
 | anyps5 withheld names | 40 |
 | overlap publication safe | 0 |
 
@@ -939,6 +939,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-31T06:04:40+00:00 | 314,038 | 39,966 | 15,632 | 1,568 |
 | 2026-10-31T09:41:48+00:00 | 314,038 | 39,966 | 15,666 | 1,606 |
 | 2026-10-31T10:25:39+00:00 | 314,038 | 39,966 | 15,667 | 1,570 |
+| 2026-10-31T10:30:25+00:00 | 314,038 | 39,966 | 15,667 | 1,577 |
 
 ### Coverage denominators
 

@@ -4,7 +4,7 @@
   "explicit_export_alias_records": 8884,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 42096,
+  "observed_library_nid_records": 42098,
   "per_library": {
     "libc": {
       "assembly_definition_unvalidated": 2,
@@ -274,7 +274,7 @@
       "definition_throwing": 1
     },
     "libscedatatransfer": {
-      "definition_throwing": 88
+      "definition_throwing": 90
     },
     "libscedbgthreadsanitizer": {
       "definition_throwing": 2
@@ -1198,12 +1198,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "cf5a1805e50ceeccf6574abd98b13e9783c412c1",
+  "source_sha": "0aefc11766faae78bdaf179ab4909d9d17f020e4",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
     "definition_nonthrowing_unvalidated": 7973,
-    "definition_throwing": 25113,
+    "definition_throwing": 25115,
     "explicit_alias_no_visible_definition": 8884
   }
 }

@@ -2,7 +2,7 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-10-31T10:25:39+00:00 · **AnyPS5 main:** [cf5a1805e50c](https://github.com/boykopovar/AnyPS5/commit/cf5a1805e50ceeccf6574abd98b13e9783c412c1)
+**Last refresh:** 2026-10-31T10:30:25+00:00 · **AnyPS5 main:** [0aefc11766fa](https://github.com/boykopovar/AnyPS5/commit/0aefc11766faae78bdaf179ab4909d9d17f020e4)
 
 ## At a glance
 
@@ -51,15 +51,15 @@
 
 ### Open PR coverage
 
-`██████████████████████` **1,570 / 1,592 (98.6%)** current open PR heads indexed.
+`██████████████████████` **1,577 / 1,592 (99.1%)** current open PR heads indexed.
 
-**Partial:** 22 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
-Cache hits: 1,521 · newly scanned: 55 · failed checks: 15.
+**Partial:** 15 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
+Cache hits: 1,563 · newly scanned: 14 · failed checks: 15.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
 ## Automatically imported AnyPS5 source evidence
 
-**17,379** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **5** correspond to unnamed identities already in this firmware catalogue.
+**17,381** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **5** correspond to unnamed identities already in this firmware catalogue.
 
 The proposed name, NID and source location are searchable, but the name is **not independently verified against firmware**, nor are ABI or behaviour confirmed. Publication-filtered strings are not promoted. [NID-only review queue](reports/upstream-review-queue.jsonl).
 
