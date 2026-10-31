@@ -137,10 +137,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GH_TOKEN: ${{ github.token }}
+          EVIDENCE_SHA: ${{ inputs.evidence_sha256 }}
         run: |
           set -euo pipefail
           git clone https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/AnyPS5"
-          branch="$(python -c 'import hashlib,pathlib,os; p=pathlib.Path(os.environ["RUNNER_TEMP"])/"review/ANYPS5.patch"; print("feat/automated-reviewed-stubs-"+hashlib.sha256(p.read_bytes()).hexdigest()[:16])')"
+          branch="feat/automated-reviewed-stubs-$(printf '%s' "$EVIDENCE_SHA" | cut -c1-16)"
           git -C "$RUNNER_TEMP/AnyPS5" switch -c "$branch"
           git -C "$RUNNER_TEMP/AnyPS5" apply --check "$RUNNER_TEMP/review/ANYPS5.patch"
           git -C "$RUNNER_TEMP/AnyPS5" apply --index "$RUNNER_TEMP/review/ANYPS5.patch"
@@ -173,7 +174,8 @@ jobs:
             echo "::error::Contributor branch already exists; refusing to overwrite it"
             exit 1
           fi
-          git push contributor "HEAD:refs/heads/$ANYPS5_BRANCH"
+          # Atomic create-only lease: even a race cannot overwrite an existing branch.
+          git push --force-with-lease="refs/heads/$ANYPS5_BRANCH:" contributor "HEAD:refs/heads/$ANYPS5_BRANCH"
           count="$(python -c 'import json,os; print(len(json.load(open(os.environ["RUNNER_TEMP"]+"/review/SELECTED_CANDIDATES.json"))["candidates"]))')"
           library="$(python -c 'import json,os; print(json.load(open(os.environ["RUNNER_TEMP"]+"/review/SELECTED_CANDIDATES.json"))["candidates"][0]["library"])')"
           if gh pr create --repo boykopovar/AnyPS5 --base main \
