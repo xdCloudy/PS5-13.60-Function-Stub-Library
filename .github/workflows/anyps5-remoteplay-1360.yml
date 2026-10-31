@@ -108,14 +108,53 @@ jobs:
             exit 1
           }
           cd "$RUNNER_TEMP/AnyPS5"
-          live="$(git ls-remote https://github.com/boykopovar/AnyPS5.git refs/heads/main | cut -f1)"
-          [[ "$live" == "$ANYPS5_HEAD" ]] || {
-            echo "::error::Upstream main advanced; regenerate and rebuild"
-            exit 1
-          }
-          scan="$(python tools/pr_overlap.py --branch "$ANYPS5_BRANCH" --repo boykopovar/AnyPS5)"
-          [[ "$scan" == "No overlap with open pull requests." ]] || {
-            echo "::error::Live upstream PR overlap changed, refusing publication"
+          # The initial full build and all CTests ran on the pinned source
+          # recorded in evidence.json. AnyPS5 main can advance while these
+          # thousands of tests run. Rebase onto fresh upstream main, rebuild
+          # the affected target, rerun tests and recheck every open PR.
+          # Never skip a conflicting rebase, missing scan or failed test.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          validated=false
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            current="$(git rev-parse origin/main)"
+            if ! git merge-base --is-ancestor "$current" HEAD; then
+              echo "Upstream main advanced; validating a rebase attempt $attempt"
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "::error::Updated upstream main conflicts with the generated export"
+                exit 1
+              fi
+              # Source names/NIDs must remain absent from every upstream
+              # provider, not merely from this library.
+              if git grep -n -e sceRemoteplayGetClientInfo -e igQYjjcKOFo \
+                  origin/main -- core/libs; then
+                echo "::error::New upstream already declares the same name/NID"
+                exit 1
+              fi
+              git diff --check origin/main...HEAD
+              python tools/check_conventions.py --base origin/main
+              python core/libs/tests/test_public_headers.py --audit-only
+              cmake --build "$RUNNER_TEMP/build" --target libSceRemoteplay --parallel 2
+              ctest --test-dir "$RUNNER_TEMP/build" --parallel 2 --output-on-failure
+            fi
+            scan="$(python tools/pr_overlap.py --branch "$ANYPS5_BRANCH" --repo boykopovar/AnyPS5)"
+            [[ "$scan" == "No overlap with open pull requests." ]] || {
+              echo "::error::Current live open PR set has a conflict or incomplete scan"
+              printf '%s\n' "$scan"
+              exit 1
+            }
+            live="$(git ls-remote https://github.com/boykopovar/AnyPS5.git refs/heads/main | cut -f1)"
+            if [[ "$live" == "$current" ]]; then
+              validated=true
+              echo "Publish gate passed on upstream main $live" >> "$GITHUB_STEP_SUMMARY"
+              break
+            fi
+            echo "Upstream moved again during the full PR scan; retrying validation"
+          done
+          [[ "$validated" == "true" ]] || {
+            echo "::error::Upstream advanced on three consecutive review attempts"
             exit 1
           }
           gh auth setup-git
