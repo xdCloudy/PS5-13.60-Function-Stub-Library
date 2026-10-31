@@ -7,12 +7,12 @@
     "anyps5_public_source_proposals": 11906,
     "anyps5_symbol_observations": 31456,
     "anyps5_withheld_names": 33,
-    "last_refresh_utc": "2026-10-31T05:41:47+00:00",
+    "last_refresh_utc": "2026-10-31T05:51:29+00:00",
     "overlap_publication_safe": false,
     "pr_complete": false,
     "pr_errors": 17,
-    "pr_scanned": 1563,
-    "pr_total": 1580,
+    "pr_scanned": 1564,
+    "pr_total": 1583,
     "source_320_canonical_auto_changes": 0,
     "source_320_conflicts_quarantined": 10728,
     "source_320_files": 275,
@@ -127,7 +127,7 @@
     "strictly_verified_names": 39966,
     "unnamed_or_withheld": 266953
   },
-  "generated_at_utc": "2026-10-31T05:41:47+00:00",
+  "generated_at_utc": "2026-10-31T05:51:29+00:00",
   "libraries": [
     {
       "anyps5_assembly_unvalidated": 0,
@@ -21214,6 +21214,16 @@
       "indexed": 314038,
       "observed_at_utc": "2026-10-31T05:41:47+00:00",
       "open_pr_scanned": 1563,
+      "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+      "qualified_unique_nids": 10749,
+      "strictly_verified_names": 39966
+    },
+    {
+      "anyps5_commit": "6a691f69ee44888635bed90833a0ab20ed9889ab",
+      "anyps5_main_matches": 15632,
+      "indexed": 314038,
+      "observed_at_utc": "2026-10-31T05:51:29+00:00",
+      "open_pr_scanned": 1564,
       "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
       "qualified_unique_nids": 10749,
       "strictly_verified_names": 39966
