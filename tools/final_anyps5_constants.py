@@ -14,7 +14,7 @@ import tempfile
 from anyps5_metadata import scan_files
 from candidate_overlap import save_report
 from git_candidate_overlap import check_candidates_git
-from prepare_anyps5_constants import render, validate_records
+from prepare_anyps5_constants import render, validate_records, DECLARATION
 from update_progress import nid_for
 
 SHA = re.compile(r"^[0-9a-f]{40}$")
@@ -76,6 +76,20 @@ def main() -> None:
                 actual = checkout / file.relative_to(pristine)
                 if actual.read_text(encoding="utf-8") != expected:
                     raise ValueError("Committed implementation differs from regenerated review plan")
+            declaration_paths: dict[str, str] = {}
+            for row in rows:
+                folder = pristine / "core/libs/prx" / row["library"]
+                declared = []
+                for header in folder.rglob("*"):
+                    if (header.is_file() and not header.is_symlink()
+                            and header.suffix.lower() in (".h", ".hpp")):
+                        content = header.read_text(encoding="utf-8")
+                        if any(m.group("name") == row["name"]
+                               for m in DECLARATION.finditer(content)):
+                            declared.append(header.relative_to(pristine).as_posix())
+                if len(declared) != 1:
+                    raise ValueError("Cannot bind reviewed function to one exact header declaration")
+                declaration_paths[row["nid"]] = declared[0]
             occupied = set(scan_files(pristine))
             confirmed = {(r["library"].casefold(), r["nid"]) for r in rows}
             if not confirmed <= {(lib.casefold(), nid) for lib, nid in occupied}:
@@ -89,7 +103,8 @@ def main() -> None:
             subprocess.run(["git", "-C", str(checkout), "worktree", "remove",
                             "--force", str(pristine)], check=True)
 
-    targets = {r["nid"]: {"path": r["path"], "name": r["name"]} for r in rows}
+    targets = {r["nid"]: {"path": r["path"], "name": r["name"],
+                          "header_path": declaration_paths[r["nid"]]} for r in rows}
     report = check_candidates_git(
         checkout, rows, main_other, os.getenv("GITHUB_TOKEN", ""), nid_for,
         pending_fork_url=FORK, existing_targets=targets)
