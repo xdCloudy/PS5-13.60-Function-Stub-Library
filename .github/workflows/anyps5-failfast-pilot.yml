@@ -64,7 +64,7 @@ jobs:
             --proposal proposals/anyps5-failfast-pilot.json \
             --report "$RUNNER_TEMP/failfast/EVIDENCE.json" --apply
           cd "$RUNNER_TEMP/AnyPS5"
-          git add core/libs/prx/libSceJsc
+          git add core/libs/prx/libSceJsc docs/dev/debt/libSceJsc.md
           git diff --cached --check
           git -c user.name=xdCloudy -c user.email=52116030+xdCloudy@users.noreply.github.com \
             commit -m "feat(libSceJsc): register three provisional throwing exports"
@@ -135,6 +135,9 @@ jobs:
             contributor "HEAD:refs/heads/$ANYPS5_BRANCH"
           cat > "$RUNNER_TEMP/failfast/PR_BODY.md" <<'BODY'
           ## What
+          The merged precedent is #10068 (106 parameterless throwing exports),
+          #9990 (150 exports) and #9695 (49 exports); all explicitly note that
+          unverified ABI declarations are import-resolution placeholders.
           Three libSceJsc exports confirmed in the PS5 13.60 catalogue and
           the original public 3.20 forwarding source. All throw immediately
           through NotImplemented_nid_no_patch; no no-op or success value.
