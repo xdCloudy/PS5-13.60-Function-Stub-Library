@@ -328,7 +328,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshNpSns | 30 | 0 | 0 | 0 | 0 |
 | SceVshSl2Sl2Manage | 30 | 0 | 0 | 0 | 0 |
 | libSceAvPlayer | 30 | 30 | 0 | 0 | 0 |
-| libSceOpusDec | 30 | 15 | 1 | 0 | 1 |
+| libSceOpusDec | 30 | 15 | 1 | 1 | 0 |
 | ReactNativeModulesVshTelemetryNq | 29 | 0 | 0 | 0 | 0 |
 | libSceAvPlayer.native | 29 | 29 | 0 | 0 | 0 |
 | libSceVoiceCommand | 29 | 23 | 23 | 0 | 18 |
@@ -360,7 +360,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceOpusCeltEnc | 24 | 15 | 4 | 3 | 0 |
 | libScePlayGo | 24 | 24 | 3 | 3 | 0 |
 | libSceSysUtil | 24 | 24 | 0 | 0 | 0 |
-| libSceSystemGesture | 24 | 24 | 1 | 0 | 1 |
+| libSceSystemGesture | 24 | 24 | 1 | 1 | 0 |
 | libSceVdecCore.native | 24 | 24 | 0 | 0 | 0 |
 | libSceVoiceQoS | 24 | 23 | 0 | 0 | 0 |
 | SceVshNpIdMapper | 23 | 0 | 0 | 0 | 0 |
@@ -580,7 +580,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceMediaAppSharedStorageMa | 5 | 0 | 0 | 0 | 0 |
 | libSceNetCtlV6 | 5 | 5 | 0 | 0 | 0 |
 | libSceNpMatching2Compat | 5 | 5 | 0 | 0 | 0 |
-| libSceNpPartner001 | 5 | 5 | 1 | 0 | 1 |
+| libSceNpPartner001 | 5 | 5 | 1 | 0 | 0 |
 | libSceNpSignalingCompat | 5 | 5 | 0 | 0 | 0 |
 | libSceVrTrackerGpuTest | 5 | 0 | 0 | 0 | 0 |
 | libSceVrTrackerLiveCapture | 5 | 5 | 0 | 0 | 0 |
