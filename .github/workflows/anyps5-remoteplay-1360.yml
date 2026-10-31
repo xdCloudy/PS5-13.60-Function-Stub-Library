@@ -108,16 +108,62 @@ jobs:
             exit 1
           }
           cd "$RUNNER_TEMP/AnyPS5"
-          live="$(git ls-remote https://github.com/boykopovar/AnyPS5.git refs/heads/main | cut -f1)"
-          [[ "$live" == "$ANYPS5_HEAD" ]] || {
-            echo "::error::Upstream main advanced; regenerate and rebuild"
+          # A complete AnyPS5 build takes long enough for upstream to move.
+          # Never publish the stale build. Rebase, revalidate, rebuild and
+          # rerun the official live overlap scanner, capped to three attempts.
+          git config user.name "xdCloudy"
+          git config user.email "52116030+xdCloudy@users.noreply.github.com"
+          validated_main=""
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            newest_main="$(git rev-parse origin/main)"
+            built_main="$(git rev-parse HEAD^)"
+            if [[ "$newest_main" != "$built_main" ]]; then
+              echo "Upstream advanced to $newest_main; rebasing attempt $attempt"
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "::error::Upstream rebase conflicts with this batch; stop for review"
+                exit 1
+              fi
+              # Validate against the NEW BASE, not the generated batch itself:
+              # this rejects a name/NID already introduced while we built.
+              base_check="$RUNNER_TEMP/base-check"
+              git worktree add --quiet --detach "$base_check" origin/main
+              cd "$GITHUB_WORKSPACE"
+              python tools/prepare_anyps5_remoteplay_1360.py \
+                --catalogue "$GITHUB_WORKSPACE" \
+                --upstream "$base_check" \
+                --report "$RUNNER_TEMP/remoteplay-batch/base-recheck.json"
+              cd "$RUNNER_TEMP/AnyPS5"
+              git worktree remove --force "$base_check"
+              git diff --check origin/main...HEAD
+              python tools/check_conventions.py --base origin/main
+              python core/libs/tests/test_public_headers.py --audit-only
+              cmake -S . -B "$RUNNER_TEMP/build" -G Ninja \
+                -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+              cmake --build "$RUNNER_TEMP/build" --target libSceRemoteplay --parallel 2
+              cmake --build "$RUNNER_TEMP/build" --parallel 2
+              ctest --test-dir "$RUNNER_TEMP/build" --parallel 2 --output-on-failure
+            fi
+            scan="$(python tools/pr_overlap.py --branch "$ANYPS5_BRANCH" --repo boykopovar/AnyPS5)"
+            [[ "$scan" == "No overlap with open pull requests." ]] || {
+              echo "::error::Official live upstream PR overlap failed or is incomplete"
+              printf '%s\n' "$scan"
+              exit 1
+            }
+            live="$(git ls-remote https://github.com/boykopovar/AnyPS5.git refs/heads/main | cut -f1)"
+            if [[ "$live" == "$(git rev-parse HEAD^)" ]]; then
+              validated_main="$live"
+              break
+            fi
+            echo "Upstream moved during verification; attempt $attempt of 3"
+          done
+          [[ -n "$validated_main" ]] || {
+            echo "::error::Upstream moved too often; no stale PR will be published"
             exit 1
           }
-          scan="$(python tools/pr_overlap.py --branch "$ANYPS5_BRANCH" --repo boykopovar/AnyPS5)"
-          [[ "$scan" == "No overlap with open pull requests." ]] || {
-            echo "::error::Live upstream PR overlap changed, refusing publication"
-            exit 1
-          }
+          echo "Validated AnyPS5 main: $validated_main" >> "$GITHUB_STEP_SUMMARY"
+          git diff --binary origin/main..HEAD > "$RUNNER_TEMP/remoteplay-batch/anyps5-validated.patch"
           gh auth setup-git
           git remote add contributor https://github.com/xdCloudy/AnyPS5.git
           if [[ -n "$(git ls-remote --heads contributor "$ANYPS5_BRANCH")" ]]; then
