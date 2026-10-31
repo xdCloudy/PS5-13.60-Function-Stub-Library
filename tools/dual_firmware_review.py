@@ -149,7 +149,7 @@ def classify(older: dict, current: dict) -> tuple[list[dict], dict]:
     return rows, dict(sorted(stats.items()))
 
 
-def generate(root: Path, original: Path, limit: int) -> tuple[dict, str]:
+def generate(root: Path, original: Path, limit: int) -> tuple[dict, str, list[dict]]:
     if not 1 <= limit <= 200:
         raise ValueError("limit must be 1..200 per source class")
     original_sha, catalogue_sha = commit(original), commit(root)
@@ -215,7 +215,7 @@ def generate(root: Path, original: Path, limit: int) -> tuple[dict, str]:
         for row in group:
             md.append("| {library} | {name} | {nid} | {review_status} |".format(**row))
         md.append("")
-    return report, "\n".join(md) + "\n"
+    return report, "\n".join(md) + "\n", entries
 
 
 def main() -> None:
@@ -224,15 +224,22 @@ def main() -> None:
     parser.add_argument("--source-320", type=Path, required=True)
     parser.add_argument("--out-json", type=Path, required=True)
     parser.add_argument("--out-md", type=Path, required=True)
+    parser.add_argument("--out-queue", type=Path, help="Complete source-separated review queue (JSONL, unapproved)")
     parser.add_argument("--limit", type=int, default=75)
     args = parser.parse_args()
-    report, md = generate(args.root.resolve(), args.source_320.resolve(), args.limit)
+    report, md, entries = generate(args.root.resolve(), args.source_320.resolve(), args.limit)
     args.out_json.parent.mkdir(parents=True, exist_ok=True)
     args.out_md.parent.mkdir(parents=True, exist_ok=True)
     args.out_json.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
     args.out_md.write_text(md)
+    if args.out_queue:
+        args.out_queue.parent.mkdir(parents=True, exist_ok=True)
+        with args.out_queue.open("w", encoding="utf-8") as output:
+            for row in entries:
+                output.write(json.dumps(row, sort_keys=True) + "\n")
     print(json.dumps({"counts": report["classification_counts"],
                       "sample_size": len(report["candidates_for_manual_review"]),
+                      "full_queue_size": len(entries),
                       "auto_approved": 0}, sort_keys=True))
 
 
