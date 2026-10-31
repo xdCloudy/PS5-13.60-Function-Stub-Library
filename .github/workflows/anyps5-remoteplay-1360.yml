@@ -137,6 +137,7 @@ jobs:
               python tools/check_conventions.py --base origin/main
               python core/libs/tests/test_public_headers.py --audit-only
               cmake --build "$RUNNER_TEMP/build" --target libSceRemoteplay --parallel 2
+              cmake --build "$RUNNER_TEMP/build" --parallel 2
               ctest --test-dir "$RUNNER_TEMP/build" --parallel 2 --output-on-failure
             fi
             scan="$(python tools/pr_overlap.py --branch "$ANYPS5_BRANCH" --repo boykopovar/AnyPS5)"
