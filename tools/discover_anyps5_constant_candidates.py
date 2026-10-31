@@ -51,7 +51,7 @@ def abi_matches(source: str, pattern: re.Pattern):
     files. Narrow candidate discovery to a short local source fragment,
     anchored to the exact macro token being inspected.
     """
-    for token in re.finditer(r"\\bAPS5_VABI\\b", source):
+    for token in re.finditer(r"\bAPS5_VABI\b", source):
         start = max(0, token.start() - 160)
         fragment = source[start:min(len(source), token.end() + 512)]
         offset = token.start() - start
