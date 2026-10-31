@@ -65,8 +65,20 @@ class WebCorePendingTests(unittest.TestCase):
             self.assertNotIn("return 0;",cpp)
             self.assertIn(NAME+"();",header)
             self.assertIn(nid_for(NAME),debt)
-            with self.assertRaisesRegex(ValueError,"no longer empty"):
+            with self.assertRaisesRegex(ValueError,"already present"):
                 render(root,selected,True)
+
+    def test_preserves_existing_export_code(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            folder=upstream(root)
+            old='int APS5_VABI existingExport() { return 7; }\n'
+            (folder/"Export.cpp").write_text(old)
+            selected,_=select(catalogue(),root,FakeNids(),40)
+            render(root,selected,True)
+            result=(folder/"Export.cpp").read_text()
+            self.assertTrue(result.startswith(old))
+            self.assertIn("NotImplemented_nid_no_patch(__func__)",result)
 
     def test_global_other_provider_prevents_duplicate(self):
         with tempfile.TemporaryDirectory() as tmp:
