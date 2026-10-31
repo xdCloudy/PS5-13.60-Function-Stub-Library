@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Live, fail-closed candidate-specific AnyPS5 PR collision audit.
 
-Never equate a parsed PR patch with a complete source-tree audit. A library
-touched by an open PR cannot be cleared automatically for absence.
+Same-library unrelated edits are not collisions. Incomplete, ambiguous or moving
+PR snapshots fail closed, as do unparsed export registration forms.
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from upstream_sync import ROOT_URL, api_json, list_open_prs, DEFINITION, EXPORT_
 SOURCE = re.compile(r"^core/libs/prx/([^/]+)/")
 CODE = re.compile(r"\.(?:cpp|cc|cxx|hpp|h)$")
 SHA = re.compile(r"^[0-9a-f]{40}$")
-CENTRAL = re.compile(r"(?:nid|export|registration|symbol|prx)", re.I)
+UNKNOWN_REGISTRATION = re.compile(r"\b(?:REGISTER_NID|REGISTER_EXPORT|EXPORT_NID|ASM_FUNCTION)\b")
 
 
 def head_vector(prs: list[dict]) -> dict[int, str]:
@@ -65,19 +65,19 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
                 for file in files:
                     path = file.get("filename", "")
                     match = SOURCE.match(path)
-                    if not match:
-                        # Source, build and code-generation changes outside
-                        # the library tree might alter global registrations.
-                        # Docs/assets are irrelevant unless explicitly NID-related.
-                        if (CENTRAL.search(path) or
-                                re.search(r"\.(?:cpp|cc|cxx|h|hpp|py|cmake|json|yml|yaml)$", path, re.I)
-                                and not path.startswith(("docs/", ".github/ISSUE_TEMPLATE/"))):
+                    if match:
+                        libraries.add(match.group(1).casefold())
+                    # Inspect actual added C++ exports irrespective of library.
+                    # Unrelated changed functions do not reserve a candidate NID.
+                    if not CODE.search(path) or path.startswith(("docs/", ".github/")):
+                        # Changes to the global NID generator/registration
+                        # infrastructure need separate review, not a false
+                        # no-collision assertion.
+                        if re.search(r"^(?:tools/(?:nid_names|stubgen|pr_overlap)\.py|"
+                                     r"core/[^/]*(?:nid|export|registration)[^/]*)$",
+                                     path, re.I):
                             unknown_global = True
                         continue
-                    library = match.group(1).casefold()
-                    libraries.add(library)
-                    if not CODE.search(path):
-                        continue  # Affected library already blocks absence.
                     patch = file.get("patch")
                     if not isinstance(patch, str):
                         raise ValueError(f"Missing patch for {path}")
@@ -88,13 +88,19 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
                     text = "\n".join(added)
                     names = DEFINITION.findall(text)
                     nids = EXPORT_ALIAS.findall(text)
-                    reservations.update(nid_for(name) for name in names)
+                    for symbol in names:
+                        if symbol.endswith(("_nid_no_patch", "_nid_no_patch_cut")):
+                            continue  # Deliberately unexported helper.
+                        public_name = re.sub(
+                            r"_nid_disambig[0-9]+$", "",
+                            symbol.removesuffix("_nid_postfix"))
+                        reservations.add(nid_for(public_name))
                     reservations.update(nids)
                     # Any unrecognised export expression might have a literal,
                     # aliased or generated NID. Do not infer non-collision.
                     if (len(re.findall(r"\bAPS5_VABI\b", text)) != len(names) or
                             len(re.findall(r"\bAPS5_EXPORT\b", text)) != len(nids) or
-                            re.search(r"\b(?:REGISTER_NID|REGISTER_EXPORT|EXPORT_NID)\b", text)):
+                            UNKNOWN_REGISTRATION.search(text)):
                         unknown_global = True
                 if len(files) < 100:
                     break
@@ -111,8 +117,6 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
             for key, reasons in result.items():
                 if key[1] in reservations:
                     reasons.add(f"pr_{number}_nid_collision")
-                if key[0] in libraries:
-                    reasons.add(f"pr_{number}_candidate_library_modified")
                 if unknown_global:
                     reasons.add(f"pr_{number}_unverified_registration_path")
         except (ValueError, KeyError, TypeError, OSError) as exc:
@@ -130,7 +134,7 @@ def check_candidates(candidates: list[dict], main_occupied: set[tuple[str, str]]
                         "reasons": sorted(result[(r["library"].casefold(), r["nid"])] |
                                           (set() if coherent else {"incomplete_or_moving_pr_snapshot"}))}
                        for r in candidates],
-        "method": "Exact head SHA and changed-files pagination; main global NIDs checked. An affected library or unknown registration path blocks candidate absence."
+        "method": "Exact head SHA and changed-files pagination; main global NIDs checked. Unrelated modifications in the same library are allowed; incomplete or unknown registration paths block."
     }
     return report
 

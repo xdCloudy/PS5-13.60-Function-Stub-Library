@@ -115,9 +115,10 @@ is not replaced with a hash match. No approval decisions have been committed.
 stub generator runs with `--apply`. It enumerates current open PRs, retrieves
 each exact head SHA and changed-file count, checks every file page and patch
 for omissions, and repeats the head enumeration afterwards. A candidate is
-blocked if its NID is seen anywhere on current main or an open PR, its library
-is touched by any open PR, a central registration path is uncertain, or any
+blocked if its NID is seen anywhere on current main or an open PR, an actual NID or export overlaps a current PR, a global registration path is uncertain, or any
 API response or snapshot is incomplete.
+
+Unrelated source edits in the same library are not function overlaps.
 
 This gate deliberately does **not** change
 `open_pr_symbol_coverage_complete = False` in the legacy progress cache.
@@ -150,6 +151,76 @@ The tool rechecks every open PR head and blocks publication on incomplete scans.
 It then runs the upstream convention and overlap tools. The generated draft
 description explicitly says that build and runtime validation remain outstanding.
 The default command is read-only and does not open a PR or write into the catalogue.
+
+## Submitting reviewed AnyPS5 stubs as xdCloudy
+
+The opt-in Actions workflow **Prepare and optionally submit AnyPS5 stub
+batch** requires a public GitHub/Gist raw JSONL containing independently
+reviewed ABI prototypes, a pinned SHA-256 digest, and a maximum of
+100 functions. Draft publication is off by default. No missing signature
+is guessed, and a hash match is not proof of ABI correctness.
+
+The preparation job runs without the personal submission token: it selects
+one library, commits a throwing-only stub patch, checks exact candidate
+NIDs against all current open upstream PRs, runs AnyPS5 conventions and
+the official Git-commit-aware overlap checker, and attempts the complete
+Linux CMake build and CTest. It records the patch and the audited batch.
+
+When publication is enabled, a separate clean runner reconstructs that
+patch, confirms upstream main is unchanged, and repeats a live exact
+candidate overlap audit immediately before requesting the submission token.
+It verifies the token belongs to xdCloudy, pushes to the personal AnyPS5
+fork, and opens a draft PR against the upstream repository. The branch
+is never overwritten and is removed if PR creation fails.
+
+The Actions secret must be named ANYPS5_SUBMIT_TOKEN and configured in
+the catalogue repository Settings > Secrets and variables > Actions.
+A fine-grained token restricted to the fork may be unable to create a
+cross-fork PR into an unrelated public upstream repository; if GitHub
+refuses it, a classic token with public_repo permission is an option.
+Never supply a personal token as workflow inputs or in source code.
+
+ABI evidence must be independently checked before review. Passing a
+Linux build does not prove guest ABI or console runtime correctness.
+
+## Scheduled, evidence-gated AnyPS5 PR submission
+
+The new `.github/workflows/anyps5-auto-dispatch.yml` runs every six
+hours and can also be triggered manually. It automatically selects the
+first eligible, not-already-submitted **explicitly reviewed** ABI batch in
+[`approvals/anyps5/`](approvals/anyps5/README.md). With an empty queue it
+exits successfully and **opens no PR**.
+
+Each batch is a library-specific JSONL paired with a separate approval file
+on trusted `main`, signed off via a linked catalogue PR and pinned to an
+exact SHA-256. The scheduler validates the NID hash, 13.60 provenance, ABI
+review declaration, current catalogue eligibility, fork-branch state, duplicate
+identities and maximum 100 functions. It dispatches the existing submission
+workflow with a raw GitHub URL pinned to the **actual committed SHA** and
+`publish=true`. The submission workflow independently verifies the source
+bytes, rebuilds AnyPS5, audits main/open PR heads and creates a draft upstream
+PR as `xdCloudy` only if the final gates pass.
+
+Each contribution branch is addressed by the first 16 hex characters of the
+reviewed evidence SHA-256. An existing branch is never overwritten. The
+scheduler skips existing contribution branches; a failed/unreachable Git query
+fails closed. It dispatches at most one batch per run, avoiding a mass
+submission and letting upstream reviews settle.
+
+This does **not** automatically approve newly discovered NIDs or invent ABI
+prototypes. In particular, PS5-3.20_Libs contains forwarders, not
+behavioural evidence. This workflow generates reviewed *throwing void stubs*,
+not zero/null/false/no-op implementations. Constant-return implementations
+need their own evidence-specific generator and separate tests. A scheduled
+run cannot make independently reviewed ABI or behaviour proof unnecessary.
+
+For unattended submission to work, `ANYPS5_SUBMIT_TOKEN` must exist as a
+repository Actions secret, belong to `xdCloudy`, support pushes to the
+personal AnyPS5 fork and PR creation against `boykopovar/AnyPS5`. The
+scheduled dispatcher uses only the short-lived Actions token with
+`actions: write` to start the publisher; it does not receive the personal
+submission secret. Without the verified secret and queued approved candidates,
+successful PR publication cannot be claimed.
 
 ## Safety model
 

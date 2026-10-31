@@ -42,11 +42,10 @@ class CandidateOverlapTests(unittest.TestCase):
         self.assertTrue(report["candidates"][0]["verified_clear"])
         self.assertEqual(report["open_pr_verified_heads"], 1)
 
-    def test_touched_library_is_unknown_even_when_no_literal_collision(self):
+    def test_unrelated_function_in_same_library_is_not_collision(self):
         report = check_candidates(self.candidate(), set(), "token", nid_for,
                                   self.fixture("core/libs/prx/libSceExample/Export.cpp"))
-        self.assertFalse(report["candidates"][0]["verified_clear"])
-        self.assertIn("pr_7_candidate_library_modified", report["candidates"][0]["reasons"])
+        self.assertTrue(report["candidates"][0]["verified_clear"])
 
     def test_other_library_same_nid_on_main_blocks(self):
         candidate = self.candidate()
@@ -73,10 +72,57 @@ class CandidateOverlapTests(unittest.TestCase):
         self.assertFalse(report["candidates"][0]["verified_clear"])
         self.assertIn("pr_7_nid_collision", report["candidates"][0]["reasons"])
 
-    def test_global_registration_change_does_not_prove_absence(self):
+    def test_unrelated_core_change_does_not_block(self):
         report = check_candidates(self.candidate(), set(), "token", nid_for,
                                   self.fixture("core/kernel/nid_registry.cpp"))
+        self.assertTrue(report["candidates"][0]["verified_clear"])
+
+    def test_exact_function_nid_on_open_pr_blocks(self):
+        candidate = self.candidate()
+        def fetch(url, token):
+            if "/pulls?state=open" in url:
+                return [{"number": 7, "head": {"sha": "a" * 40}}]
+            if url.endswith("/pulls/7"):
+                return {"head": {"sha": "a" * 40}, "changed_files": 1}
+            if "/pulls/7/files?" in url:
+                return [{"filename": "core/libs/prx/libSceExample/Export.cpp",
+                         "additions": 1,
+                         "patch": "+void APS5_VABI sceUniqueForTest() {}"}]
+            raise AssertionError(url)
+        report = check_candidates(candidate, set(), "token", nid_for, fetch)
         self.assertFalse(report["candidates"][0]["verified_clear"])
+        self.assertIn("pr_7_nid_collision", report["candidates"][0]["reasons"])
+
+    def test_ambiguous_export_macro_blocks(self):
+        def fetch(url, token):
+            if "/pulls?state=open" in url:
+                return [{"number": 7, "head": {"sha": "a" * 40}}]
+            if url.endswith("/pulls/7"):
+                return {"head": {"sha": "a" * 40}, "changed_files": 1}
+            if "/pulls/7/files?" in url:
+                return [{"filename": "core/libs/prx/libSceExample/Export.cpp",
+                         "additions": 1,
+                         "patch": "+APS5_EXPORT(dynamicNid(), opaque);"}]
+            raise AssertionError(url)
+        report = check_candidates(self.candidate(), set(), "token", nid_for, fetch)
+        self.assertFalse(report["candidates"][0]["verified_clear"])
+        self.assertIn("pr_7_unverified_registration_path", report["candidates"][0]["reasons"])
+
+    def test_nid_postfix_is_normalised_to_public_identity(self):
+        target = [{"library": "libSceExample", "nid": nid_for("sceNamedAlias")}]
+        def fetch(url, token):
+            if "/pulls?state=open" in url:
+                return [{"number": 7, "head": {"sha": "a" * 40}}]
+            if url.endswith("/pulls/7"):
+                return {"head": {"sha": "a" * 40}, "changed_files": 1}
+            if "/pulls/7/files?" in url:
+                return [{"filename": "core/libs/prx/libOther/Export.cpp",
+                         "additions": 1,
+                         "patch": "+void APS5_VABI sceNamedAlias_nid_postfix() {}"}]
+            raise AssertionError(url)
+        report = check_candidates(target, set(), "token", nid_for, fetch)
+        self.assertFalse(report["candidates"][0]["verified_clear"])
+        self.assertIn("pr_7_nid_collision", report["candidates"][0]["reasons"])
 
 
 class LayoutPlanTests(unittest.TestCase):
@@ -126,6 +172,23 @@ class LayoutPlanTests(unittest.TestCase):
             with self.assertRaises(OSError):
                 apply_plan(base, planned, Path(tmp))
             self.assertEqual(original,{path:path.read_bytes() for path in planned})
+
+    def test_publisher_reconstructed_git_patch_is_identical(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp) / "AnyPS5"
+            self.make_repo(base, "libSceExample")
+            patch = apply_plan(
+                base, plan(base, [{"library": "libSceExample",
+                                   "name": "sceVerifiedNew", "parameters": "void"}]),
+                Path(tmp) / "out.patch")
+            original_patch = patch.read_bytes()
+            subprocess.run(["git", "-C", str(base), "restore", "--",
+                            "core/libs/prx/libSceExample"], check=True)
+            subprocess.run(["git", "-C", str(base), "apply", "--index",
+                            str(patch)], check=True)
+            staged = subprocess.check_output(
+                ["git", "-C", str(base), "diff", "--cached", "--binary"])
+            self.assertEqual(original_patch, staged)
 
 
 if __name__ == "__main__":

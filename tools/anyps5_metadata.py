@@ -14,7 +14,11 @@ SYMBOL = re.compile(r"\bAPS5_VABI\s+([A-Za-z_]\w*)\s*\(")
 # Keep the literal NID: helper names often deliberately have a different hash.
 ALIASES = re.compile(r'\bAPS5_EXPORT\s*\(\s*"(?P<nid>[A-Za-z0-9+/\-]{11})"\s*,\s*(?P<target>[A-Za-z_]\w*)\s*\)')
 COMMENTS = re.compile(r'//[^\n]*|/\*[\s\S]*?\*/')
-SCHEMA = 3
+ASM_SYMBOL = re.compile(
+    r'\bAPS5_(?:SIGNAL_)?ASM_FUNCTION\s*\(\s*"([A-Za-z_]\w*)"\s*\)'
+)
+ASM_SUFFIX = re.compile(r"_nid_disambig[0-9]+$")
+SCHEMA = 4
 
 
 def scan_files(upstream: Path):
@@ -32,10 +36,17 @@ def scan_files(upstream: Path):
             definitions=dict(scan_source(content)) if path.suffix in (".cpp",".cc",".cxx") else {}
             # Alias registrations are exact-NID evidence, not inferred names.
             # Do not evaluate or execute upstream sources or scripts.
-            aliases=list(ALIASES.finditer(COMMENTS.sub("",content)))
-            identities=[(nid_for(name), name, False) for name in set(declarations)|set(definitions)]
-            identities.extend((m["nid"],m["target"],True) for m in aliases)
-            for nid,name,explicit_alias in identities:
+            masked=COMMENTS.sub("",content)
+            aliases=list(ALIASES.finditer(masked))
+            assemblies=ASM_SYMBOL.findall(masked)
+            identities=[(nid_for(name), name, False, False) for name in set(declarations)|set(definitions)]
+            identities.extend((m["nid"],m["target"],True,False) for m in aliases)
+            for symbol in assemblies:
+                if symbol.endswith(("_nid_no_patch", "_nid_no_patch_cut")):
+                    continue
+                canonical=ASM_SUFFIX.sub("",symbol.removesuffix("_nid_postfix"))
+                identities.append((nid_for(canonical),symbol,False,True))
+            for nid,name,explicit_alias,assembly_seen in identities:
                 key=(lib,nid)
                 entry=observations.setdefault(key,{
                     "library":folder.name,"nid":key[1],
@@ -44,11 +55,14 @@ def scan_files(upstream: Path):
                     "build_config_present":build_file,
                     "export_registered":None,"build_verified":None,
                     "explicit_alias_seen":False,
+                    "assembly_definition_seen":False,
                     "abi_verified":None,"runtime_validated":None,
                     "source_files":set()})
                 if explicit_alias:
                     entry["explicit_alias_seen"] = True
                     entry["export_registered"] = True
+                elif assembly_seen:
+                    entry["assembly_definition_seen"] = True
                 else:
                     entry["declared"] |= name in declarations and path.suffix in (".hpp",".h")
                     entry["definition_seen"] |= name in definitions
@@ -82,6 +96,7 @@ def build(root: Path, upstream: Path):
                not row["nonthrowing_body_seen"] else
                "definition_nonthrowing_unvalidated" if row["nonthrowing_body_seen"] else
                "explicit_alias_no_visible_definition" if row["explicit_alias_seen"] else
+               "assembly_definition_unvalidated" if row["assembly_definition_seen"] else
                "declaration_without_visible_definition")
         row["source_state"]=state
         row["source_commit"]=sha
@@ -102,7 +117,8 @@ def build(root: Path, upstream: Path):
     removed = sorted(set(old_symbols) - set(new_symbols))
     compare_fields = ("source_state","declared","definition_seen",
                       "throwing_marker","nonthrowing_body_seen",
-                      "explicit_alias_seen","build_config_present","source_files")
+                      "explicit_alias_seen","assembly_definition_seen",
+                      "build_config_present","source_files")
     changed = sorted(key for key in set(new_symbols) & set(old_symbols)
                      if any(new_symbols[key].get(field) != old_symbols[key].get(field)
                             for field in compare_fields))
@@ -128,6 +144,7 @@ def build(root: Path, upstream: Path):
         "states":dict(sorted(counts.items())),
         "per_library":{k:dict(sorted(v.items())) for k,v in sorted(by_lib.items())},
         "explicit_export_alias_records": sum(x["explicit_alias_seen"] for x in scanned.values()),
+        "assembly_definition_records": sum(x["assembly_definition_seen"] for x in scanned.values()),
         "export_registration_verified":None,
         "build_verified":None,
         "runtime_validated":None,
