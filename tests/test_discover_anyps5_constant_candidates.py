@@ -98,9 +98,9 @@ class CandidateDiscoveryTests(unittest.TestCase):
     def test_large_whitespace_only_does_not_match(self):
         self.fixture()
         self.cpp.write_text(
-            self.cpp.read_text() + "\\n" +
+            self.cpp.read_text() + "\n" +
             "int " + " " * 30000 + " APS5_VABI " + " " * 30000 +
-            "invalid_no_signature;\\n")
+            "invalid_no_signature;\n")
         rows = self.discover()
         self.assertEqual(len(rows), 1)
 
@@ -108,8 +108,8 @@ class CandidateDiscoveryTests(unittest.TestCase):
         self.fixture()
         second = self.folder / "Other.cpp"
         second.write_text(
-            f'int APS5_VABI {self.name}(int count) {{\\n'
-            '  return 0;\\n}\\n')
+            f'int APS5_VABI {self.name}(int count) {{\n'
+            '  return 0;\n}\n')
         self.assertEqual(self.discover(), [])
 
     def test_missing_real_upstream_checkout_or_revision_fails(self):
