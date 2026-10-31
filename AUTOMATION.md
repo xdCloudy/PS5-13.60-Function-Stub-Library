@@ -180,6 +180,45 @@ Never supply a personal token as workflow inputs or in source code.
 ABI evidence must be independently checked before review. Passing a
 Linux build does not prove guest ABI or console runtime correctness.
 
+## Scheduled, evidence-gated AnyPS5 PR submission
+
+The new `.github/workflows/anyps5-auto-dispatch.yml` runs every six
+hours and can also be triggered manually. It automatically selects the
+first eligible, not-already-submitted **explicitly reviewed** ABI batch in
+[`approvals/anyps5/`](approvals/anyps5/README.md). With an empty queue it
+exits successfully and **opens no PR**.
+
+Each batch is a library-specific JSONL paired with a separate approval file
+on trusted `main`, signed off via a linked catalogue PR and pinned to an
+exact SHA-256. The scheduler validates the NID hash, 13.60 provenance, ABI
+review declaration, current catalogue eligibility, fork-branch state, duplicate
+identities and maximum 100 functions. It dispatches the existing submission
+workflow with a raw GitHub URL pinned to the **actual committed SHA** and
+`publish=true`. The submission workflow independently verifies the source
+bytes, rebuilds AnyPS5, audits main/open PR heads and creates a draft upstream
+PR as `xdCloudy` only if the final gates pass.
+
+Each contribution branch is addressed by the first 16 hex characters of the
+reviewed evidence SHA-256. An existing branch is never overwritten. The
+scheduler skips existing contribution branches; a failed/unreachable Git query
+fails closed. It dispatches at most one batch per run, avoiding a mass
+submission and letting upstream reviews settle.
+
+This does **not** automatically approve newly discovered NIDs or invent ABI
+prototypes. In particular, PS5-3.20_Libs contains forwarders, not
+behavioural evidence. This workflow generates reviewed *throwing void stubs*,
+not zero/null/false/no-op implementations. Constant-return implementations
+need their own evidence-specific generator and separate tests. A scheduled
+run cannot make independently reviewed ABI or behaviour proof unnecessary.
+
+For unattended submission to work, `ANYPS5_SUBMIT_TOKEN` must exist as a
+repository Actions secret, belong to `xdCloudy`, support pushes to the
+personal AnyPS5 fork and PR creation against `boykopovar/AnyPS5`. The
+scheduled dispatcher uses only the short-lived Actions token with
+`actions: write` to start the publisher; it does not receive the personal
+submission secret. Without the verified secret and queued approved candidates,
+successful PR publication cannot be claimed.
+
 ## Safety model
 
 * Pull request previews have read-only repository credentials.
