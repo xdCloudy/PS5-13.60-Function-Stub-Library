@@ -1,18 +1,18 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "5fb1747fa7a4dd794358048c55c53d4e65566e45",
+    "anyps5_main_commit": "0da91ea5be617c434096d8909f3f1f1c46ce5cde",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 46,
-      "open_pr_cached": 1531,
+      "open_pr_cache_expired_or_closed": 11,
+      "open_pr_cached": 1567,
       "open_pr_coverage_complete": false,
       "open_pr_errors": 14,
-      "open_pr_newly_scanned": 47,
-      "open_pr_scanned": 1578,
+      "open_pr_newly_scanned": 9,
+      "open_pr_scanned": 1576,
       "open_pr_snapshot_stable": true,
       "open_pr_stale_heads_invalidated": 0,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1592,
+      "open_pr_total": 1590,
       "open_pr_unscanned": 14
     },
     "catalog_manifest_counts": {
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-31T11:24:14+00:00",
+    "generated_at_utc": "2026-10-31T11:31:06+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {

@@ -518,8 +518,8 @@
       "definition_throwing": 302
     },
     "libscelibressl3": {
-      "definition_nonthrowing_unvalidated": 19,
-      "definition_throwing": 261,
+      "definition_nonthrowing_unvalidated": 20,
+      "definition_throwing": 260,
       "explicit_alias_no_visible_definition": 521
     },
     "libscelogindialog": {
@@ -1208,12 +1208,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "5fb1747fa7a4dd794358048c55c53d4e65566e45",
+  "source_sha": "0da91ea5be617c434096d8909f3f1f1c46ce5cde",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
-    "definition_nonthrowing_unvalidated": 9136,
-    "definition_throwing": 23988,
+    "definition_nonthrowing_unvalidated": 9137,
+    "definition_throwing": 23987,
     "explicit_alias_no_visible_definition": 8892
   }
 }
