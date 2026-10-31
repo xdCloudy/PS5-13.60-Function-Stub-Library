@@ -88,10 +88,14 @@ jobs:
       - name: Stage at most one review-only draft PR in catalogue
         shell: bash
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
         run: |
           set -euo pipefail
-          [[ -n "$GH_TOKEN" ]] || { echo "::error::GitHub Actions token unavailable"; exit 1; }
+          [[ -n "$GH_TOKEN" ]] || { echo "::error::ANYPS5_SUBMIT_TOKEN is missing"; exit 1; }
+          [[ "$(gh api user --jq .login)" == "xdCloudy" ]] || {
+            echo "::error::Submission token must belong to xdCloudy"
+            exit 1
+          }
           branch="automation/dual-firmware-review"
           existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --state all \
             --head "$branch" --limit 100 --json number,state --jq '.[0].state // empty')"
