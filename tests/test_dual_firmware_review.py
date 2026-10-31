@@ -4,10 +4,11 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from dual_firmware_review import (classify, identity, load_320, load_1360,
-                                  safe_name)
+                                  safe_name, generate)
 from update_progress import nid_for
 
 
@@ -101,6 +102,34 @@ class DualFirmwareReviewTests(unittest.TestCase):
             (directory/"test.jsonl").write_text(json.dumps(row())+"\n"+json.dumps(row())+"\n")
             with self.assertRaisesRegex(ValueError,"Duplicate"):
                 load_1360(root)
+
+    def test_generate_returns_untruncated_full_queue(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "reports").mkdir()
+            (root / "reports/progress.json").write_text(json.dumps({
+                "generated_from": {
+                    "anyps5_main_commit": "a" * 40,
+                    "anyps5_open_prs": {
+                        "open_pr_coverage_complete": False,
+                        "open_pr_symbol_coverage_complete": False
+                    }
+                }
+            }))
+            old = {}
+            new = {}
+            for n in ("sceAjmBatchCancel", "sceAjmBatchWait", "sceAjmBatchStart"):
+                record = row(name=n)
+                new[identity(record["library"], record["nid"])] = record
+            with (patch("dual_firmware_review.commit", return_value="b" * 40),
+                  patch("dual_firmware_review.load_320", return_value=(old, {})),
+                  patch("dual_firmware_review.load_1360", return_value=(new, {}))):
+                report, markdown, entries = generate(root, root, limit=1)
+            self.assertEqual(len(entries), 3)
+            self.assertEqual(len(report["candidates_for_manual_review"]), 1)
+            self.assertIn("confirmed_13.60_only", markdown)
+            self.assertEqual(report["automatically_approved"], 0)
+            self.assertFalse(report["sources"]["upstream_open_pr_scan_complete"])
 
 
 if __name__ == "__main__":
