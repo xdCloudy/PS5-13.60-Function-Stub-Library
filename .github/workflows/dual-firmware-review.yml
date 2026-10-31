@@ -1,6 +1,12 @@
 name: Review original PS5 3.20 and catalogue 13.60 AnyPS5 candidates
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/dual-firmware-review.yml'
+      - 'tools/dual_firmware_review.py'
+      - 'tests/test_dual_firmware_review.py'
   workflow_dispatch:
   schedule:
     - cron: '37 */12 * * *'
