@@ -101,10 +101,31 @@ def decode_changed_exports(
     return reservations, unknown
 
 
+GENERATED_FORK_REF = re.compile(r"^refs/heads/feat/automated-reviewed-stubs-([0-9a-f]{16})$")
+
+
+def generated_heads(checkout: Path, fork: str) -> dict[str, str]:
+    """Snapshot only branches produced by this workflow, not historical work."""
+    listing = git(checkout, "ls-remote", "--heads", fork,
+                  "refs/heads/feat/automated-reviewed-stubs-*")
+    heads = {}
+    for line in listing.splitlines():
+        parts = line.split()
+        if len(parts) != 2 or not re.fullmatch(r"[0-9a-f]{40}", parts[0]):
+            raise ValueError("Malformed generated-fork ref")
+        match = GENERATED_FORK_REF.fullmatch(parts[1])
+        if not match or match.group(1) in heads:
+            raise ValueError("Unexpected generated-fork ref")
+        heads[match.group(1)] = parts[0]
+    if len(heads) > 300:
+        raise ValueError("Too many pending generated fork branches")
+    return heads
+
+
 def check_candidates_git(
     checkout: Path, candidates: list[dict],
     main_occupied: set[tuple[str, str]], token: str, nid_for,
-    *, fetch=api_json, per_fetch: int = 80,
+    *, fetch=api_json, per_fetch: int = 80, pending_fork_url: str | None = None,
 ) -> dict:
     """Clear only exact selected identities absent on main and all open PR heads."""
     if not 1 <= per_fetch <= 100:
@@ -119,6 +140,8 @@ def check_candidates_git(
     failures = []
     scanned = 0
     audit_refs = {}
+    fork_audit = {}
+    fork_stable = pending_fork_url is None
     numbered = sorted(before)
     try:
         for offset in range(0, len(numbered), per_fetch):
@@ -149,17 +172,48 @@ def check_candidates_git(
             scanned += 1
     except (subprocess.CalledProcessError, OSError, ValueError) as exc:
         failures.append({"reason": str(exc)[:300]})
+    if pending_fork_url is not None:
+        try:
+            fork_before = generated_heads(checkout, pending_fork_url)
+            for suffix, head in sorted(fork_before.items()):
+                ref = f"refs/anyps5-pending/{suffix}"
+                git(checkout, "fetch", "--quiet", "--no-tags",
+                    pending_fork_url,
+                    f"+refs/heads/feat/automated-reviewed-stubs-{suffix}:{ref}")
+                sha = git(checkout, "rev-parse", ref)
+                if sha != head:
+                    raise ValueError("Generated fork branch moved while fetching")
+                base = git(checkout, "merge-base", "origin/main", ref)
+                diff = git(checkout, "diff", "--no-ext-diff", "--no-renames",
+                           "--unified=0", base, ref, "--", "core/", "tools/")
+                reserved, unknown = decode_changed_exports(
+                    diff, nid_for, candidate_libraries=candidate_libraries)
+                for nid, blocked in reasons.items():
+                    if nid in reserved:
+                        blocked.add(f"generated_fork_{suffix}_nid_collision")
+                    if unknown:
+                        blocked.add(f"generated_fork_{suffix}_unknown_registration")
+                fork_audit[suffix] = {"sha": sha, "reserved_nids": len(reserved),
+                                      "unknown_registration": unknown}
+            fork_stable = generated_heads(checkout, pending_fork_url) == fork_before
+        except (subprocess.CalledProcessError, OSError, ValueError) as exc:
+            fork_stable = False
+            failures.append({"reason": "Generated fork branch audit failed: " +
+                             str(exc)[:220]})
     try:
         after = head_vector(list_open_prs(token, fetch))
         stable = after == before
     except (ValueError, OSError, TypeError) as exc:
         stable = False
         failures.append({"reason": "Failed to resnapshot PR heads: " + str(exc)[:200]})
-    complete = not failures and stable and scanned == len(before)
+    complete = not failures and stable and fork_stable and scanned == len(before)
     return {
-        "schema_version": 1, "method": "Exact immutable Git tree diff per current open PR head; two live PR head snapshots",
+        "schema_version": 1, "method": "Exact Git diffs for all open PRs and generated pending fork branches, with before/after head snapshots",
         "scan_complete": complete,
         "head_vector_stable": stable,
+        "generated_fork_snapshot_stable": fork_stable,
+        "generated_fork_branches_verified": len(fork_audit),
+        "per_generated_fork_branch_audit": fork_audit,
         "open_pr_total": len(before),
         "open_pr_verified_heads": scanned,
         "failures": failures,
