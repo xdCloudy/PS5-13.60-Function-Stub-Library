@@ -29,8 +29,10 @@ recording only file/line references (not GPL-licensed header text).
 - Other rows remain excluded from candidate sampling with counts explaining
   covered, reserved, mismatched, unsafe, or unverified source states.
 
-The direct source scan marks candidates with APS5_VABI declarations or literal
-APS5_EXPORT aliases in present AnyPS5 main, reporting exact repository paths.
+The direct source scan now indexes **all** AnyPS5 providers, including `.native`
+variants, not just the candidate's own library. It marks candidates with
+APS5_VABI declarations or literal APS5_EXPORT aliases, reports their exact
+repository paths and source provider, and quarantines cross-library matches.
 It does not deduce absence from a missing textual match because exports can be
 macro-generated. Its output is explicitly **not ABI certification**.
 
@@ -97,3 +99,15 @@ not permission to write a stub. Historical 3.20-only records are excluded.
 
 The reviewed report and priority table are updated on the existing review
 PR; the complete unapproved ranked queue remains in the run artifact.
+
+## Cross-library overlap reliability
+
+Open upstream PR #13135 already declares all three libSceJsc exports selected
+by the initial fail-fast pilot and the official overlap gate blocked it. A
+second audit found `libSceFontGs.native` already provides the five apparent
+libSceFontGs gaps. Both cases demonstrate why neither a source-name match nor
+absence in one library is sufficient to automatically publish an export.
+
+A candidate matched in another provider remains **review-only**; it is never
+automatically classified as unimplemented. Open PR status still needs a fresh,
+complete official `pr_overlap.py` run before preparing a new submission.
