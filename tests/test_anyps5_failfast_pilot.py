@@ -35,6 +35,8 @@ class FailFastPilotTests(unittest.TestCase):
             '#include "prx/libSceJsc/include/Api.hpp"\n')
         (library / "CMakeLists.txt").write_text(
             'add_library(libSceJsc SHARED EXCLUDE_FROM_ALL Export.cpp)\n')
+        (root / "docs/dev/debt").mkdir(parents=True)
+        (root / "docs/dev/debt/libSceJsc.md").write_text("# libSceJsc technical debt\n")
         return library
 
     def valid(self, name="JSScriptEvaluate"):
@@ -63,7 +65,8 @@ class FailFastPilotTests(unittest.TestCase):
             self.assertIn("NotImplemented_nid_no_patch(__func__)",impl)
             self.assertNotIn("return 0;",impl)
             self.assertIn("int APS5_VABI JSScriptEvaluate();",header)
-            self.assertEqual(len(files),4)
+            self.assertEqual(len(files),5)
+            self.assertIn("JSScriptEvaluate", (root/"docs/dev/debt/libSceJsc.md").read_text())
             self.assertIn("FailFastExports.cpp",
                 (folder/"CMakeLists.txt").read_text())
             with self.assertRaisesRegex(ValueError,"already exists"):
