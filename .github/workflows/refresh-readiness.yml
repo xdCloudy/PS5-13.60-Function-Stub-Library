@@ -21,7 +21,8 @@ on:
 
 concurrency:
   group: ps5-progress-${{ github.ref }}
-  cancel-in-progress: false
+  # Keep trusted-main refreshes intact, but cancel obsolete PR previews.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   refresh:
@@ -46,6 +47,18 @@ jobs:
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
       - name: Verify layout-aware patch planning against real AnyPS5 libraries
         run: python tools/live_layout_probe.py --upstream-dir ../AnyPS5
+      - name: Discover exact existing throwing signatures for separate behaviour review
+        run: |
+          python tools/discover_anyps5_constant_candidates.py \
+            --upstream-dir ../AnyPS5 \
+            --output reports/anyps5-constant-candidates.jsonl
+      - name: Publish read-only constant candidate review queue artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: anyps5-existing-constant-review-candidates
+          path: reports/anyps5-constant-candidates.jsonl
+          if-no-files-found: error
+          retention-days: 14
       - name: Clone PS5 3.20 public forwarding sources (read-only)
         run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git ../PS5-3.20_Libs
       - name: Rebuild report and collect upstream NID observations
@@ -114,6 +127,11 @@ jobs:
         run: git clone --quiet --depth 1 --filter=blob:none https://github.com/boykopovar/AnyPS5.git ../AnyPS5
       - name: Verify layout-aware patch planning against real AnyPS5 libraries
         run: python tools/live_layout_probe.py --upstream-dir ../AnyPS5
+      - name: Enumerate unapproved constant-function review candidates
+        run: |
+          python tools/discover_anyps5_constant_candidates.py \
+            --upstream-dir ../AnyPS5 \
+            --output reports/anyps5-constant-candidates.jsonl
       - name: Clone PS5 3.20 sources (read-only)
         run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git ../PS5-3.20_Libs
       - name: Generate a PR preview (never pushes PR code)
@@ -146,6 +164,7 @@ jobs:
             reports/anyps5-symbol-states.json
             reports/anyps5-symbol-states.jsonl
             reports/anyps5-symbol-changes.json
+            reports/anyps5-constant-candidates.jsonl
             site/index.html
             site/data.json
           retention-days: 14

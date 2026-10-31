@@ -261,6 +261,38 @@ a candidate is committed to the approved queue. No active such
 evidence is included by default; absent reviewed data means no
 upstream submissions.
 
+## Automatic existing-stub evidence discovery (no speculative implementations)
+
+`tools/discover_anyps5_constant_candidates.py` now runs during trusted-main
+readiness refreshes and pull-request previews. It walks the current public
+AnyPS5 checkout and selects **only** functions with:
+
+- an exactly single `APS5_VABI` source definition in a registered CMake
+  file, and one same-name, matching-return-type public ABI declaration;
+- a precisely isolated `NotImplemented_nid_no_patch(__func__);` body;
+- a return type supported by the separate constant/no-op publisher
+  (integer, boolean, pointer or void).
+
+The reproducible result is written to
+`reports/anyps5-constant-candidates.jsonl` in the job and uploaded as
+an Actions artifact for inspection (14-day retention). Each row has its
+upstream SHA, original source and declaration paths, name/NID,
+signature/body SHA-256 and return-type category.
+
+Every row explicitly has `behavior: null`,
+`behavior_reviewed: false`, `evidence: null` and
+`review_status: independent_semantic_and_abi_review_required`.
+**The scanner does not call zero, false, null or a no-op the correct
+behaviour just because that value compiles.** The output is never added
+to `approvals/anyps5-constants` or dispatched upstream automatically.
+
+Use the artifact as a reproducible **review candidate list**, then
+provide independently validated behavioural evidence and explicit
+owner approval in the format documented in
+[`approvals/anyps5-constants/README.md`](approvals/anyps5-constants/README.md).
+Approved batches are subsequently picked up by the unattended draft
+PR publisher and its complete live overlap/build/security gates.
+
 ## Safety model
 
 * Pull request previews have read-only repository credentials.
