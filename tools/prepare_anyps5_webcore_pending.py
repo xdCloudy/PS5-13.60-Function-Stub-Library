@@ -104,7 +104,7 @@ def render(upstream:Path, records:list[dict], apply:bool) -> list[str]:
     old_source = source.read_text(encoding="utf-8")
     old_header = header.read_text(encoding="utf-8")
     old_debt = debt.read_text(encoding="utf-8")
-    if any(re.search(r"\\b" + re.escape(row["name"]) + r"\\b", old_source)
+    if any(re.search(r"\b" + re.escape(row["name"]) + r"\b", old_source)
            for row in records):
         raise ValueError("Candidate is already present in Export.cpp")
     if ('#include "prx/libSceNKWebKit/include/InventoryExports.hpp"'
