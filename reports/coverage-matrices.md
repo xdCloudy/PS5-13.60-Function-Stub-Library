@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-31T06:07:06+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-31T09:41:48+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -87,7 +87,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshSQLite | 779 | 0 | 0 | 0 | 0 | 0 | 779 |
 | SystemIOCompression | 739 | 0 | 0 | 0 | 0 | 0 | 739 |
 | MonoSecurity | 700 | 0 | 0 | 0 | 0 | 0 | 700 |
-| libSceUserService | 651 | 386 | 579 | 486 | 17 | 0 | 114 |
+| libSceUserService | 651 | 386 | 579 | 486 | 51 | 0 | 114 |
 | libSceLibreSSl3 | 665 | 421 | 641 | 554 | 0 | 0 | 24 |
 | SceVshOrbisContentManager | 594 | 0 | 0 | 0 | 0 | 0 | 594 |
 | SceVshShellUIUgc | 591 | 0 | 0 | 0 | 0 | 0 | 591 |
@@ -822,9 +822,9 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 15,632 | Source-backed or canonical classification |
-| anyps5 throwing marker | 12,205 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 3,427 | Source-backed or canonical classification |
+| anyps5 main definition matches | 15,666 | Source-backed or canonical classification |
+| anyps5 throwing marker | 12,233 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 3,433 | Source-backed or canonical classification |
 | open pr qualified partial | 1,294 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: e49d43d6256b7c2283539d86b42325a36653275a
-Added identities: 6; removed: 0; changed source classifications: 31,450.
+Previous SHA: 6a691f69ee44888635bed90833a0ab20ed9889ab
+Added identities: 10,559; removed: 0; changed source classifications: 6.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,14 +903,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-31T06:07:06+00:00 |
-| pr scanned | 1,568 |
-| pr total | 1,585 |
+| last refresh utc | 2026-10-31T09:41:48+00:00 |
+| pr scanned | 1,606 |
+| pr total | 1,621 |
 | pr complete | 0 |
-| pr errors | 17 |
-| anyps5 symbol observations | 31,456 |
+| pr errors | 15 |
+| anyps5 symbol observations | 42,015 |
 | anyps5 declarations only | 120 |
-| anyps5 explicit alias records | 3,759 |
+| anyps5 explicit alias records | 8,844 |
 | anyps5 assembly definition records | 6 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
@@ -921,8 +921,8 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 11,906 |
-| anyps5 withheld names | 33 |
+| anyps5 public source proposals | 17,339 |
+| anyps5 withheld names | 40 |
 | overlap publication safe | 0 |
 
 ### Actual progress trend
@@ -937,6 +937,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-31T05:41:47+00:00 | 314,038 | 39,966 | 15,632 | 1,563 |
 | 2026-10-31T05:51:29+00:00 | 314,038 | 39,966 | 15,632 | 1,564 |
 | 2026-10-31T06:04:40+00:00 | 314,038 | 39,966 | 15,632 | 1,568 |
+| 2026-10-31T09:41:48+00:00 | 314,038 | 39,966 | 15,666 | 1,606 |
 
 ### Coverage denominators
 
