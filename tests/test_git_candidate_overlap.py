@@ -28,6 +28,38 @@ class GitOverlapTests(unittest.TestCase):
         self.assertIn(nid_for("sceMissing"), reserved)
         self.assertFalse(unknown)
 
+    def test_assembly_export_nid_postfix_is_reserved(self):
+        diff = (
+            "diff --git a/core/libs/prx/libSceExample/Clock.cpp b/core/libs/prx/libSceExample/Clock.cpp\n"
+            "+++ b/core/libs/prx/libSceExample/Clock.cpp\n"
+            "@@ -0,0 +1 @@\n"
+            '+APS5_SIGNAL_ASM_FUNCTION("sceClockGuest_nid_postfix")\n'
+        )
+        reserved, unknown = decode_changed_exports(diff, nid_for)
+        self.assertIn(nid_for("sceClockGuest"), reserved)
+        self.assertFalse(unknown)
+
+    def test_unrecognised_assembly_macro_is_unknown(self):
+        diff = (
+            "diff --git a/core/libs/prx/libSceExample/Export.cpp b/core/libs/prx/libSceExample/Export.cpp\n"
+            "+++ b/core/libs/prx/libSceExample/Export.cpp\n"
+            "+APS5_ASM_FUNCTION(dynamicSymbol)\n"
+        )
+        reserved, unknown = decode_changed_exports(diff, nid_for)
+        self.assertEqual(reserved, set())
+        self.assertTrue(unknown)
+
+    def test_relevant_cmake_change_blocks_but_unrelated_library_does_not(self):
+        for owner, expected in [("libSceExample",True),("libOther",False)]:
+            diff = (
+                f"diff --git a/core/libs/prx/{owner}/CMakeLists.txt b/core/libs/prx/{owner}/CMakeLists.txt\n"
+                f"+++ b/core/libs/prx/{owner}/CMakeLists.txt\n"
+                "+add_library(extra_export_registration)\n"
+            )
+            _, unknown = decode_changed_exports(
+                diff, nid_for, candidate_libraries={"libsceexample"})
+            self.assertEqual(unknown, expected, owner)
+
     def test_unsupported_dynamic_export_fails_closed(self):
         diff = (
             "diff --git a/core/libs/prx/libSceExample/Export.cpp b/core/libs/prx/libSceExample/Export.cpp\n"
