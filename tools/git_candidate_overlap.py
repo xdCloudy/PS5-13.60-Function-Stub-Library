@@ -13,7 +13,7 @@ import subprocess
 
 from candidate_overlap import head_vector, SOURCE, CODE, UNKNOWN_REGISTRATION
 from upstream_sync import list_open_prs, DEFINITION, EXPORT_ALIAS, api_json
-from prepare_anyps5_constants import FUNCTION
+from prepare_anyps5_constants import FUNCTION, DECLARATION
 
 GLOBAL_CODEGEN = re.compile(
     r"^(?:tools/(?:nid_names|stubgen)\.py|core/.*(?:nid_registry|export_registry).*)$",
@@ -105,7 +105,8 @@ def decode_changed_exports(
 HUNK = re.compile(r"^@@ -([0-9]+)(?:,([0-9]+))? \+[0-9]+(?:,[0-9]+)? @@", re.MULTILINE)
 
 
-def changed_existing_function(base_source: str, patch: str, name: str) -> bool:
+def changed_existing_function(base_source: str, patch: str, name: str,
+                              *, declaration: bool = False) -> bool:
     """Did an exact Git old-line hunk touch this function, even without a name?
 
     Unknown function layouts fail closed. In particular, body-only PR edits
@@ -113,7 +114,8 @@ def changed_existing_function(base_source: str, patch: str, name: str) -> bool:
     """
     if not patch.strip():
         return False
-    matches = [m for m in FUNCTION.finditer(base_source) if m.group("name") == name]
+    parser = DECLARATION if declaration else FUNCTION
+    matches = [m for m in parser.finditer(base_source) if m.group("name") == name]
     if len(matches) != 1:
         return True
     match = matches[0]
@@ -164,7 +166,7 @@ def check_candidates_git(
     """Clear only exact selected identities absent on main and all open PR heads."""
     if not 1 <= per_fetch <= 100:
         raise ValueError("Invalid Git fetch batch")
-    by_path: dict[str, list[tuple[str, str]]] = {}
+    by_path: dict[str, list[tuple[str, str, bool]]] = {}
     if existing_targets:
         expected_nids = {r["nid"] for r in candidates}
         if set(existing_targets) != expected_nids:
@@ -176,7 +178,14 @@ def check_candidates_git(
             path = row["path"]
             if not path.startswith("core/libs/prx/" + row["library"] + "/"):
                 raise ValueError("Reviewed target escapes candidate library")
-            by_path.setdefault(path, []).append((row["nid"], row["name"]))
+            by_path.setdefault(path, []).append((row["nid"], row["name"], False))
+            header = target.get("header_path")
+            if header is not None:
+                if (not isinstance(header, str) or
+                        not header.startswith("core/libs/prx/" + row["library"] + "/") or
+                        not header.endswith((".h", ".hpp"))):
+                    raise ValueError("Reviewed ABI declaration path is invalid")
+                by_path.setdefault(header, []).append((row["nid"], row["name"], True))
 
     def changed_existing(base: str, ref: str) -> set[str]:
         if not by_path:
@@ -190,8 +199,8 @@ def check_candidates_git(
             base_source = git(checkout, "show", f"{base}:{path}")
             patch = git(checkout, "diff", "--no-ext-diff", "--no-renames",
                         "--unified=0", base, ref, "--", path)
-            for nid, name in by_path[path]:
-                if changed_existing_function(base_source, patch, name):
+            for nid, name, declaration in by_path[path]:
+                if changed_existing_function(base_source, patch, name, declaration=declaration):
                     touched.add(nid)
         return touched
 
