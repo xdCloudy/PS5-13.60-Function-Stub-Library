@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-31T16:55:08+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-31T17:16:26+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -903,9 +903,9 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-31T16:55:08+00:00 |
-| pr scanned | 1,677 |
-| pr total | 1,696 |
+| last refresh utc | 2026-10-31T17:16:26+00:00 |
+| pr scanned | 1,687 |
+| pr total | 1,706 |
 | pr complete | 0 |
 | pr errors | 19 |
 | anyps5 symbol observations | 42,146 |
@@ -946,6 +946,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-31T11:39:53+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T11:51:40+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T16:55:08+00:00 | 314,038 | 39,966 | 15,662 | 1,677 |
+| 2026-10-31T17:16:26+00:00 | 314,038 | 39,966 | 15,662 | 1,687 |
 
 ### Coverage denominators
 
