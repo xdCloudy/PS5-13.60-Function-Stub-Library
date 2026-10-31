@@ -1,17 +1,19 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "e49d43d6256b7c2283539d86b42325a36653275a",
+    "anyps5_main_commit": "6a691f69ee44888635bed90833a0ab20ed9889ab",
     "anyps5_open_prs": {
-      "method": "Current PR heads cached by SHA; missing/truncated patches fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 264,
-      "open_pr_cached": 1346,
+      "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
+      "open_pr_cache_expired_or_closed": 129,
+      "open_pr_cached": 1401,
       "open_pr_coverage_complete": false,
       "open_pr_errors": 17,
-      "open_pr_newly_scanned": 185,
-      "open_pr_scanned": 1530,
+      "open_pr_newly_scanned": 162,
+      "open_pr_scanned": 1563,
+      "open_pr_snapshot_stable": true,
+      "open_pr_stale_heads_invalidated": 0,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1548,
-      "open_pr_unscanned": 18
+      "open_pr_total": 1580,
+      "open_pr_unscanned": 17
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -21,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-31T00:49:18+00:00",
+    "generated_at_utc": "2026-10-31T05:41:47+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -7181,20 +7183,20 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7746,
-    "anyps5_main_nonthrowing_source_records_live": 3419,
-    "anyps5_main_nonthrowing_unique_nids_live": 3412,
-    "anyps5_main_throwing_marker_records_live": 12213,
-    "anyps5_main_throwing_unique_nids_live": 12213,
+    "anyps5_main_nonthrowing_source_records_live": 3427,
+    "anyps5_main_nonthrowing_unique_nids_live": 3420,
+    "anyps5_main_throwing_marker_records_live": 12205,
+    "anyps5_main_throwing_unique_nids_live": 12205,
     "anyps5_main_tracked_source_records_live": 15632,
     "anyps5_main_tracked_unique_nids_live": 15625,
     "auto_imported_catalog_matching_proposals": 5,
     "auto_imported_public_source_name_proposals": 11906,
-    "external_source_evidence_records": 40190,
+    "external_source_evidence_records": 40369,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
-    "main_nonthrowing_definition_record_matches": 48,
-    "main_throwing_marker_record_matches": 7689,
-    "new_upstream_nid_candidates_for_review": 19744,
+    "main_nonthrowing_definition_record_matches": 56,
+    "main_throwing_marker_record_matches": 7681,
+    "new_upstream_nid_candidates_for_review": 19922,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,

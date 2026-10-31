@@ -2,7 +2,7 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-10-31T00:49:18+00:00 · **AnyPS5 main:** [e49d43d6256b](https://github.com/boykopovar/AnyPS5/commit/e49d43d6256b7c2283539d86b42325a36653275a)
+**Last refresh:** 2026-10-31T05:41:47+00:00 · **AnyPS5 main:** [6a691f69ee44](https://github.com/boykopovar/AnyPS5/commit/6a691f69ee44888635bed90833a0ab20ed9889ab)
 
 ## At a glance
 
@@ -33,8 +33,8 @@
 | Statically prepared (saved) | 963 | Historical offline gates |
 | Fully validated (saved) | 0 | Historical build/runtime validation only |
 | **Present in AnyPS5 main source (live)** | **15,632** | Matched and rehashed library/NID/name in current upstream main; separate from qualified backlog |
-| With NotImplemented marker (live) | 12,213 | Source-level placeholder, not working behaviour |
-| With nonthrowing C ABI body (live) | 3,419 | No matching NotImplemented marker; **not** necessarily a tested implementation |
+| With NotImplemented marker (live) | 12,205 | Source-level placeholder, not working behaviour |
+| With nonthrowing C ABI body (live) | 3,427 | No matching NotImplemented marker; **not** necessarily a tested implementation |
 
 **Qualification correction:** the saved report listed 10,750, while the filtered count is 10,749 (difference +1 from saved). Separately, 7,119 named records need strict name/NID/status evidence review. These must not be silently promoted. The old `published to AnyPS5 = 0` is an **archived snapshot** and must not be treated as the current upstream count.
 
@@ -43,18 +43,18 @@
 | Evidence | Count | Meaning |
 |---|---:|---|
 | **Catalogued names present on merged AnyPS5 main** | **15,632 records / 15,625 unique NIDs** | **Live source evidence**, not the saved 0-counter |
-| Marked throwing/unimplemented | 12,213 | NotImplemented marker is visible in body |
-| Other nonthrowing source definitions | 3,419 | A source body exists; not necessarily correct, wired up or validated |
+| Marked throwing/unimplemented | 12,205 | NotImplemented marker is visible in body |
+| Other nonthrowing source definitions | 3,427 | A source body exists; not necessarily correct, wired up or validated |
 | Qualified NIDs also in main source | 7,737 | Potential existing coverage |
 | Additional qualified NIDs seen in open-PR additions | 1,294 | Possible reservations, not yet merged |
 | Qualified NIDs not observed by scans | 1,718 | **Not proof of no overlap** |
 
 ### Open PR coverage
 
-`██████████████████████` **1,530 / 1,548 (98.8%)** current open PR heads indexed.
+`██████████████████████` **1,563 / 1,580 (98.9%)** current open PR heads indexed.
 
-**Partial:** 18 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
-Cache hits: 1,346 · newly scanned: 185 · failed checks: 17.
+**Partial:** 17 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
+Cache hits: 1,401 · newly scanned: 162 · failed checks: 17.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
 ## Automatically imported AnyPS5 source evidence

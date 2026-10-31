@@ -1,11 +1,13 @@
 {
+  "assembly_definition_records": 6,
   "build_verified": null,
   "explicit_export_alias_records": 3759,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 31450,
+  "observed_library_nid_records": 31456,
   "per_library": {
     "libc": {
+      "assembly_definition_unvalidated": 2,
       "declaration_without_visible_definition": 4,
       "definition_nonthrowing_unvalidated": 1517,
       "definition_throwing": 15,
@@ -20,14 +22,15 @@
       "explicit_alias_no_visible_definition": 24
     },
     "libkernel": {
+      "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 4,
       "definition_nonthrowing_unvalidated": 720,
       "definition_throwing": 38,
       "explicit_alias_no_visible_definition": 17
     },
     "libkernel_sys": {
-      "definition_nonthrowing_unvalidated": 142,
-      "definition_throwing": 691,
+      "definition_nonthrowing_unvalidated": 146,
+      "definition_throwing": 687,
       "explicit_alias_no_visible_definition": 160
     },
     "libkernel_web": {
@@ -491,8 +494,8 @@
       "explicit_alias_no_visible_definition": 566
     },
     "libscelibressl": {
-      "definition_nonthrowing_unvalidated": 108,
-      "definition_throwing": 303
+      "definition_nonthrowing_unvalidated": 109,
+      "definition_throwing": 302
     },
     "libscelibressl3": {
       "definition_nonthrowing_unvalidated": 19,
@@ -578,7 +581,8 @@
       "explicit_alias_no_visible_definition": 1
     },
     "libscenkwebkit": {
-      "definition_throwing": 8853,
+      "definition_nonthrowing_unvalidated": 11,
+      "definition_throwing": 8842,
       "explicit_alias_no_visible_definition": 243
     },
     "libscenkwebkitrequirements": {
@@ -1170,12 +1174,13 @@
     }
   },
   "runtime_validated": null,
-  "scanner_version": 3,
-  "source_sha": "e49d43d6256b7c2283539d86b42325a36653275a",
+  "scanner_version": 4,
+  "source_sha": "6a691f69ee44888635bed90833a0ab20ed9889ab",
   "states": {
+    "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
-    "definition_nonthrowing_unvalidated": 7618,
-    "definition_throwing": 19953,
+    "definition_nonthrowing_unvalidated": 7634,
+    "definition_throwing": 19937,
     "explicit_alias_no_visible_definition": 3759
   }
 }
