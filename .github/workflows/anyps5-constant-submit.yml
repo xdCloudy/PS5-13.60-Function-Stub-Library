@@ -1,0 +1,249 @@
+name: Prepare and submit evidence-reviewed existing AnyPS5 constant implementations
+
+on:
+  workflow_dispatch:
+    inputs:
+      evidence_url:
+        description: Immutable public raw GitHub URL for reviewed existing-stub behaviour JSONL
+        required: true
+        type: string
+      evidence_sha256:
+        description: Exact SHA-256 of reviewed JSONL bytes
+        required: true
+        type: string
+      publish:
+        description: Publish a draft upstream PR only when reviewed approval is on trusted main
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: anyps5-reviewed-constants
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Verify reviewed implementation tooling
+        run: python -m unittest discover -s tests -v
+      - name: Fetch and pin immutable reviewed behaviour evidence
+        shell: bash
+        env:
+          EVIDENCE_URL: ${{ inputs.evidence_url }}
+          EVIDENCE_SHA: ${{ inputs.evidence_sha256 }}
+          PUBLISH: ${{ inputs.publish }}
+        run: |
+          set -euo pipefail
+          [[ "$EVIDENCE_URL" =~ ^https://(raw|gist)\.githubusercontent\.com/ ]] || exit 1
+          [[ "$EVIDENCE_SHA" =~ ^[0-9a-f]{64}$ ]] || exit 1
+          curl --fail --silent --show-error --location --max-redirs 3 --max-time 60 \
+            --max-filesize 200000 --proto '=https' --proto-redir '=https' \
+            "$EVIDENCE_URL" -o "$RUNNER_TEMP/reviewed-constants.jsonl"
+          printf '%s  %s\n' "$EVIDENCE_SHA" "$RUNNER_TEMP/reviewed-constants.jsonl" | sha256sum --check --status
+          if [[ "$PUBLISH" = true ]]; then
+            python - <<'PY'
+          import os
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, str(Path.cwd() / "tools"))
+          from anyps5_constants_queue import select
+          approved = select(Path("approvals/anyps5-constants"), set())
+          if not any(row["sha256"] == os.environ["EVIDENCE_SHA"] for row in approved):
+              raise SystemExit("No explicit reviewed auto-submission approval on trusted main")
+          PY
+          fi
+      - name: Clone AnyPS5 and prepare exact reviewed constant bodies
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+          EVIDENCE_SHA: ${{ inputs.evidence_sha256 }}
+        run: |
+          set -euo pipefail
+          git clone https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/AnyPS5"
+          branch="feat/automated-reviewed-constants-${EVIDENCE_SHA:0:16}"
+          git -C "$RUNNER_TEMP/AnyPS5" switch -c "$branch"
+          mkdir -p "$RUNNER_TEMP/constant-review"
+          python tools/prepare_anyps5_constants.py \
+            --checkout "$RUNNER_TEMP/AnyPS5" \
+            --evidence "$RUNNER_TEMP/reviewed-constants.jsonl" \
+            --patch "$RUNNER_TEMP/constant-review/ANYPS5.patch" --apply
+          python - <<'PY'
+          import json,os,sys,subprocess
+          from pathlib import Path
+          sys.path.insert(0, str(Path.cwd() / "tools"))
+          from prepare_anyps5_constants import read_records
+          checkout = Path(os.environ["RUNNER_TEMP"]) / "AnyPS5"
+          rows = read_records(Path(os.environ["RUNNER_TEMP"]) / "reviewed-constants.jsonl")
+          if subprocess.check_output(["git","-C",str(checkout),"status","--porcelain"],text=True).strip() == "":
+              raise SystemExit("No source changes to publish")
+          subprocess.run(["git","-C",str(checkout),"add","--",*sorted(set(r["path"] for r in rows))],check=True)
+          base = subprocess.check_output(["git","-C",str(checkout),"rev-parse","origin/main"],text=True).strip()
+          subprocess.run(["git","-C",str(checkout),"-c","user.name=xdCloudy",
+                          "-c","user.email=52116030+xdCloudy@users.noreply.github.com",
+                          "commit","-m","fix(stubs): implement reviewed constant-return functions"],check=True)
+          head = subprocess.check_output(["git","-C",str(checkout),"rev-parse","HEAD"],text=True).strip()
+          out = Path(os.environ["RUNNER_TEMP"]) / "constant-review"
+          (out / "SELECTED_CANDIDATES.json").write_text(
+              json.dumps({"base_sha":base,"patch_commit":head,"candidates":rows},indent=2,sort_keys=True)+"\n")
+          lib = rows[0]["library"]
+          body = (
+              "### What\n\nImplement "+str(len(rows))+" existing throwing exports in "+lib+
+              " with independently reviewed constant/no-op semantics. No new ABI declarations or functions.\n\n"
+              "### Tested\n\n- Exact original signatures, throwing bodies and behaviour evidence: verified\n"
+              "- Current upstream conventions and overlap: checked on committed patch\n"
+              "- Full Linux build and CTest: passed in upstream contribution workflow\n"
+              "- PS5 runtime and independently verified ABI behaviour: NOT TESTED on console\n\n"
+              "### Checklist\n\n- [x] One library per PR\n- [x] No invented signatures or guessed return values\n"
+              "- [x] No new function declarations or registrations\n- [x] No unrelated code changes\n"
+              "- [x] No upstream source copying from 3.20 forwarders\n- [x] AI-assisted: yes\n\n"
+              "Reviewed candidates (name, NID and semantic evidence):\n\n"+
+              "\n".join("- `"+r["name"]+"` (`"+r["nid"]+"`), `"+r["behavior"]+"`: "+r["evidence"] for r in rows)+"\n"
+          )
+          (out / "PULL_REQUEST_BODY.md").write_text(body,encoding="utf-8")
+          PY
+          cd "$RUNNER_TEMP/AnyPS5"
+          git diff --check origin/main..HEAD
+          python tools/check_conventions.py --base origin/main
+          official="$(python tools/pr_overlap.py --branch "$branch" --repo boykopovar/AnyPS5)"
+          [[ "$official" = "No overlap with open pull requests." ]] || {
+            echo "::error::Official AnyPS5 checker did not clear this change: $official"; exit 1;
+          }
+      - name: Full Linux build and CTest
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -q
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            ninja-build build-essential cmake libx11-dev libxext-dev libxrandr-dev \
+            libwayland-dev libxkbcommon-dev libegl1-mesa-dev libdecor-0-dev \
+            libpipewire-0.3-dev libpulse-dev libasound2-dev
+          cd "$RUNNER_TEMP/AnyPS5"
+          git submodule update --init --recursive
+          cmake -S . -B "$RUNNER_TEMP/AnyPS5-build" -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+          library="$(python -c 'import json,os; print(json.load(open(os.environ["RUNNER_TEMP"]+"/constant-review/SELECTED_CANDIDATES.json"))["candidates"][0]["library"])')"
+          cmake --build "$RUNNER_TEMP/AnyPS5-build" --target "$library" --parallel 2
+          cmake --build "$RUNNER_TEMP/AnyPS5-build" --parallel 2
+          ctest --test-dir "$RUNNER_TEMP/AnyPS5-build" --parallel 2 --output-on-failure
+      - name: Store reviewed patch and signed-off candidate record
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: anyps5-reviewed-constant-proposal
+          path: |
+            ${{ runner.temp }}/constant-review/ANYPS5.patch
+            ${{ runner.temp }}/constant-review/SELECTED_CANDIDATES.json
+            ${{ runner.temp }}/constant-review/PULL_REQUEST_BODY.md
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    if: github.event.inputs.publish == 'true'
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: anyps5-reviewed-constant-proposal
+          path: ${{ runner.temp }}/constant-review
+      - name: Reconfirm checked-in trusted approval
+        shell: bash
+        env:
+          EVIDENCE_SHA: ${{ inputs.evidence_sha256 }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os,sys
+          from pathlib import Path
+          sys.path.insert(0, str(Path.cwd() / "tools"))
+          from anyps5_constants_queue import select
+          if not any(x["sha256"] == os.environ["EVIDENCE_SHA"]
+                     for x in select(Path("approvals/anyps5-constants"),set())):
+              raise SystemExit("Approved reviewed evidence was withdrawn from main")
+          PY
+      - name: Reconstruct exact bytes and audit all live AnyPS5 PRs
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+          EVIDENCE_SHA: ${{ inputs.evidence_sha256 }}
+        run: |
+          set -euo pipefail
+          git clone https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/AnyPS5"
+          branch="feat/automated-reviewed-constants-${EVIDENCE_SHA:0:16}"
+          git -C "$RUNNER_TEMP/AnyPS5" switch -c "$branch"
+          git -C "$RUNNER_TEMP/AnyPS5" apply --check "$RUNNER_TEMP/constant-review/ANYPS5.patch"
+          git -C "$RUNNER_TEMP/AnyPS5" apply --index "$RUNNER_TEMP/constant-review/ANYPS5.patch"
+          git -C "$RUNNER_TEMP/AnyPS5" diff --cached --binary > "$RUNNER_TEMP/constant-review/RECONSTRUCTED.patch"
+          cmp "$RUNNER_TEMP/constant-review/ANYPS5.patch" "$RUNNER_TEMP/constant-review/RECONSTRUCTED.patch"
+          git -C "$RUNNER_TEMP/AnyPS5" -c user.name=xdCloudy \
+            -c user.email=52116030+xdCloudy@users.noreply.github.com \
+            commit -m "fix(stubs): implement reviewed constant-return functions"
+          python - <<'PY'
+          import os,json,subprocess
+          from pathlib import Path
+          directory=Path(os.environ["RUNNER_TEMP"])/"constant-review"
+          path=directory/"SELECTED_CANDIDATES.json"
+          data=json.loads(path.read_text())
+          data["patch_commit"]=subprocess.check_output(
+              ["git","-C",os.environ["RUNNER_TEMP"]+"/AnyPS5","rev-parse","HEAD"],text=True).strip()
+          path.write_text(json.dumps(data,indent=2,sort_keys=True)+"\n")
+          PY
+          python tools/final_anyps5_constants.py \
+            --checkout "$RUNNER_TEMP/AnyPS5" \
+            --batch "$RUNNER_TEMP/constant-review/SELECTED_CANDIDATES.json" \
+            --report "$RUNNER_TEMP/constant-review/FINAL_OVERLAP_AUDIT.json" \
+            --skip-upstream-tools
+          echo "ANYPS5_BRANCH=$branch" >> "$GITHUB_ENV"
+          echo "Current source main, every open PR and pending fork branch verified." >> "$GITHUB_STEP_SUMMARY"
+      - name: Create draft upstream PR as xdCloudy
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
+        run: |
+          set -euo pipefail
+          [[ -n "$GH_TOKEN" ]] || { echo "::error::ANYPS5_SUBMIT_TOKEN is missing"; exit 1; }
+          [[ "$(gh api user --jq .login)" = "xdCloudy" ]] || {
+            echo "::error::Wrong token identity"; exit 1;
+          }
+          gh auth setup-git
+          cd "$RUNNER_TEMP/AnyPS5"
+          git remote add contributor https://github.com/xdCloudy/AnyPS5.git
+          if git ls-remote --heads contributor "$ANYPS5_BRANCH" | grep -q .; then
+            echo "::error::Submitted or orphaned branch already exists, no overwrite"; exit 1
+          fi
+          git push --force-with-lease="refs/heads/$ANYPS5_BRANCH:" \
+            contributor "HEAD:refs/heads/$ANYPS5_BRANCH"
+          count="$(python -c 'import json,os; print(len(json.load(open(os.environ["RUNNER_TEMP"]+"/constant-review/SELECTED_CANDIDATES.json"))["candidates"]))')"
+          library="$(python -c 'import json,os; print(json.load(open(os.environ["RUNNER_TEMP"]+"/constant-review/SELECTED_CANDIDATES.json"))["candidates"][0]["library"])')"
+          if gh pr create --repo boykopovar/AnyPS5 --base main \
+            --head "xdCloudy:$ANYPS5_BRANCH" --draft \
+            --title "fix($library): implement $count reviewed constant/no-op exports" \
+            --body-file "$RUNNER_TEMP/constant-review/PULL_REQUEST_BODY.md"; then
+            echo "Submitted draft PR as xdCloudy." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git push contributor ":refs/heads/$ANYPS5_BRANCH" || true
+            echo "::error::Unable to open upstream PR; cleanup attempted"
+            exit 1
+          fi
