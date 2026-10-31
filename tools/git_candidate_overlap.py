@@ -53,9 +53,15 @@ def decode_changed_exports(
         if GLOBAL_CODEGEN.fullmatch(path):
             unknown = True
         build = BUILD_REGISTRATION.fullmatch(path)
-        if build and (candidate_libraries is None or
-                      build.group(1).casefold() in candidate_libraries):
-            unknown = True
+        if build:
+            # Export maps, definition files and included registration snippets
+            # can introduce a global NID collision from ANY library. Ordinary
+            # library-local CMake changes are only uncertain for that library.
+            export_metadata = Path(path).suffix.lower() in (
+                ".def", ".map", ".exports", ".inc")
+            if (export_metadata or candidate_libraries is None or
+                    build.group(1).casefold() in candidate_libraries):
+                unknown = True
         if not CODE.search(path) or not path.startswith("core/libs/prx/"):
             return
         names = DEFINITION.findall(text)
