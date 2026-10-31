@@ -3,11 +3,11 @@
     "anyps5_main_commit": "cbed91529193c47194bef11811906c7cb6054af1",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 15,
-      "open_pr_cached": 1561,
+      "open_pr_cache_expired_or_closed": 1,
+      "open_pr_cached": 1574,
       "open_pr_coverage_complete": false,
       "open_pr_errors": 14,
-      "open_pr_newly_scanned": 14,
+      "open_pr_newly_scanned": 1,
       "open_pr_scanned": 1575,
       "open_pr_snapshot_stable": true,
       "open_pr_stale_heads_invalidated": 0,
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-31T11:39:53+00:00",
+    "generated_at_utc": "2026-10-31T11:43:23+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {

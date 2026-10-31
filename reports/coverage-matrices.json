@@ -7,7 +7,7 @@
     "anyps5_public_source_proposals": 17423,
     "anyps5_symbol_observations": 42144,
     "anyps5_withheld_names": 40,
-    "last_refresh_utc": "2026-10-31T11:39:53+00:00",
+    "last_refresh_utc": "2026-10-31T11:43:23+00:00",
     "overlap_publication_safe": false,
     "pr_complete": false,
     "pr_errors": 14,
@@ -127,7 +127,7 @@
     "strictly_verified_names": 39966,
     "unnamed_or_withheld": 266953
   },
-  "generated_at_utc": "2026-10-31T11:39:53+00:00",
+  "generated_at_utc": "2026-10-31T11:43:23+00:00",
   "libraries": [
     {
       "anyps5_assembly_unvalidated": 0,

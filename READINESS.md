@@ -2,7 +2,7 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-10-31T11:39:53+00:00 · **AnyPS5 main:** [cbed91529193](https://github.com/boykopovar/AnyPS5/commit/cbed91529193c47194bef11811906c7cb6054af1)
+**Last refresh:** 2026-10-31T11:43:23+00:00 · **AnyPS5 main:** [cbed91529193](https://github.com/boykopovar/AnyPS5/commit/cbed91529193c47194bef11811906c7cb6054af1)
 
 ## At a glance
 
@@ -54,7 +54,7 @@
 `██████████████████████` **1,575 / 1,589 (99.1%)** current open PR heads indexed.
 
 **Partial:** 14 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
-Cache hits: 1,561 · newly scanned: 14 · failed checks: 14.
+Cache hits: 1,574 · newly scanned: 1 · failed checks: 14.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
 ## Automatically imported AnyPS5 source evidence
