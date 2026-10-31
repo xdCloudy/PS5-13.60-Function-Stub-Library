@@ -43,6 +43,24 @@ def registered_source(folder: Path, source: Path, cmake_text: str) -> bool:
                           cmake_text))
 
 
+def abi_matches(source: str, pattern: re.Pattern):
+    """Bound regex searches to individual ABI occurrences.
+
+    The original repository parser operates on complete source files and its
+    whitespace-heavy signature regex can backtrack severely on large C++
+    files. Narrow candidate discovery to a short local source fragment,
+    anchored to the exact macro token being inspected.
+    """
+    for token in re.finditer(r"\\bAPS5_VABI\\b", source):
+        start = max(0, token.start() - 160)
+        fragment = source[start:min(len(source), token.end() + 512)]
+        offset = token.start() - start
+        for match in pattern.finditer(fragment):
+            local = fragment.find("APS5_VABI", match.start(), match.end())
+            if local == offset:
+                yield match
+
+
 def discover(upstream: Path, revision: str) -> list[dict]:
     """Return only uniquely defined, declared, CMake-listed throw-only bodies."""
     libraries = upstream / "core/libs/prx"
@@ -73,7 +91,7 @@ def discover(upstream: Path, revision: str) -> list[dict]:
             source_text = p.read_text(encoding="utf-8", errors="replace")
             if "APS5_VABI" not in source_text:
                 continue
-            for match in DECLARATION.finditer(source_text):
+            for match in abi_matches(source_text, DECLARATION):
                 declarations.append((p, match))
         # Definitions can appear in several .cpp files: reject all duplicates.
         definitions = []
@@ -81,7 +99,7 @@ def discover(upstream: Path, revision: str) -> list[dict]:
             content = source.read_text(encoding="utf-8", errors="replace")
             if "APS5_VABI" not in content:
                 continue
-            for match in FUNCTION.finditer(content):
+            for match in abi_matches(content, FUNCTION):
                 definitions.append((source, match))
         name_count = Counter(m.group("name") for _, m in definitions)
         decl_count = Counter(m.group("name") for _, m in declarations)
