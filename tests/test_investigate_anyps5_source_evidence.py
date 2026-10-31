@@ -62,6 +62,32 @@ class EvidenceInvestigatorTests(unittest.TestCase):
             self.assertEqual(counts["no_direct_upstream_source_observation"],1)
             self.assertFalse(result[0]["safe_to_submit_without_further_evidence"])
 
+    def test_cross_library_native_provider_blocks_candidate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            folder = root / "core/libs/prx/libSceFontGs.native"
+            folder.mkdir(parents=True)
+            (folder / "Export.cpp").write_text(
+                "int APS5_VABI sceFontSelectGraphicsAgc(void) { return 0; }\n")
+            record = row(name="sceFontSelectGraphicsAgc", library="libSceFontGs")
+            output, counts = reconcile([record], scan(root, {"libscefontgs"}))
+            self.assertEqual(counts["upstream_other_library_source_symbol_observed"], 1)
+            self.assertEqual(output[0]["upstream_source_observations"][0]["provider"],
+                             "libscefontgs.native")
+            self.assertFalse(output[0]["safe_to_submit_without_further_evidence"])
+
+    def test_local_source_preferred_over_other_provider(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name in ("libSceExample", "libSceExample.native"):
+                folder = root / "core/libs/prx" / name
+                folder.mkdir(parents=True)
+                (folder / "Export.cpp").write_text(
+                    "int APS5_VABI sceTest(void) { return 1; }\n")
+            output, counts = reconcile([row()], scan(root, {"libsceexample"}))
+            self.assertEqual(counts["upstream_source_symbol_observed"], 1)
+            self.assertEqual(len(output[0]["upstream_source_observations"]), 2)
+
     def test_unauthorised_approval_is_rejected(self):
         with tempfile.TemporaryDirectory() as temp:
             p=Path(temp)/"candidates.jsonl"
