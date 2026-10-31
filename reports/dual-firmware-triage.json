@@ -2716,7 +2716,7 @@
   "schema_version": 1,
   "sources": {
     "13.60": {
-      "commit": "bb5abe4cfe0680ba2a961e7d426ba090461e1ec1",
+      "commit": "70650cf626b55a70d3a0a449994c222b8d0cc677",
       "counts": {
         "confirmed_exports": 302338,
         "files": 757,
@@ -2736,6 +2736,6 @@
       "repository": "DNNDHH/PS5-3.20_Libs"
     },
     "upstream_open_pr_scan_complete": false,
-    "upstream_snapshot_commit": "cf5a1805e50ceeccf6574abd98b13e9783c412c1"
+    "upstream_snapshot_commit": "0da91ea5be617c434096d8909f3f1f1c46ce5cde"
   }
 }

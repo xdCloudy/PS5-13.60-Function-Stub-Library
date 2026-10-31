@@ -1,22 +1,24 @@
 # PS5 3.20 + 13.60 evidence investigation priorities
 
 All records are unapproved. A missing direct source-text match is not proof of export absence.
-Full live open-PR overlap and independent ABI checks remain mandatory.
+Full live open-PR overlap, provider ownership and build checks remain mandatory.
+Exact guest ABI is needed to claim returning behaviour, not to propose an explicitly provisional always-throwing import placeholder.
 
 ## Classification
 
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 3680 |
-| source_symbol_already_observed | 7706 |
+| priority_candidates | 1440 |
+| source_symbol_already_observed | 7709 |
+| source_symbol_in_other_provider | 2237 |
 
 ## Highest-volume libraries
 
 | Library | Dual-source | 13.60-only | Total |
 |---|---:|---:|---:|
-| libSceJsc | 2545 | 2 | 2547 |
 | libSceNpCommon | 281 | 348 | 629 |
+| libSceJsc | 313 | 2 | 315 |
 | libSceMediaFrameworkInterface | 0 | 120 | 120 |
 | libSceNKWebKit | 0 | 120 | 120 |
 | libSceVnaInternal | 0 | 71 | 71 |
@@ -26,18 +28,14 @@ Full live open-PR overlap and independent ABI checks remain mandatory.
 | libSceVoiceCommand | 0 | 18 | 18 |
 | libSceVideoOut | 0 | 10 | 10 |
 | libSceMusicCoreInterface | 0 | 6 | 6 |
-| libSceFontGs | 0 | 5 | 5 |
 | libSceVcodec | 0 | 5 | 5 |
 | libSceMediaFrameworkUtil | 0 | 4 | 4 |
 | libSceAgc | 0 | 2 | 2 |
 | libSceAjmi | 0 | 1 | 1 |
 | libSceNgs2 | 0 | 1 | 1 |
 | libSceNpEntitlementAccess | 0 | 1 | 1 |
-| libSceNpPartner001 | 0 | 1 | 1 |
-| libSceOpusDec | 0 | 1 | 1 |
 | libScePad | 0 | 1 | 1 |
 | libSceRemoteplay | 0 | 1 | 1 |
-| libSceSystemGesture | 0 | 1 | 1 |
 
 ## Leading individual research targets
 
@@ -103,21 +101,22 @@ Full live open-PR overlap and independent ABI checks remain mandatory.
 | libSceIcu | utext_openConstUnicodeString | yc1XEzBopCw | dual_3.20_and_13.60 | none |
 | libSceIcu | ubrk_isBoundary | ypOz3lP3VhE | dual_3.20_and_13.60 | none |
 | libSceIcu | uloc_toLanguageTag | zmMWRKwedmw | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC25numberOfOSRExitFuzzChecksEv | 0yriBj5rS3U | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC4Yarr17RegularExpressiondaEPv | 1+Y+ykZkTwg | dual_3.20_and_13.60 | none |
 | libSceJsc | _ZN3JSC6JSCell12dumpToStreamEPKS0_RN3WTF11PrintStreamE | 13Vdz0yQpSw | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3WTF10hasElapsedERKNS_24TimeWithDynamicClockTypeE | 13eZprwQdRI | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN9Inspector24NetworkBackendDispatcherD2Ev | 15Cz0VyipAQ | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN9Inspector26TimelineFrontendDispatcherdlEPv | 15DNj4tGe8c | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC16CompleteSubspace16allocatorForSlowEm | 15JBN0lRT1s | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectERKNS_10SourceCodeENS_7JSValueE | 167jPcYThXk | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3WTF6String28numberToStringFixedPrecisionEfjNS_29TrailingZerosTruncatingPolicyE | 16H0tI43iL8 | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN9Inspector24CanvasFrontendDispatcher16recordingStartedERKN3WTF6StringENS_8Protocol9Recording9InitiatorE | 16iE1U5SFuk | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3WTF17charactersToFloatEPKDsmRm | 18MTG+xtvtU | dual_3.20_and_13.60 | none |
 | libSceJsc | _ZN3JSC16InternalFunction13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE | 18gO8FIVDOg | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZNK9Inspector22InspectorDebuggerAgent7enabledEv | 1DD+9cjt3hU | dual_3.20_and_13.60 | none |
 | libSceJsc | _ZNK9Inspector18InjectedScriptHost16savedResultAliasEv | 1EYcTwBoE4w | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC18GCActivityCallback6cancelEv | 1Gm03etxDkU | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN3WTF6String6appendEPKhj | 1IIKnMD2xqM | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN3WTF6String23make16BitFrom8BitSourceEPKhm | 1dq4iQIG88U | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN3JSC23JSModuleNamespaceObject17defineOwnPropertyEPNS_8JSObjectEPNS_14JSGlobalObjectENS_12PropertyNameERKNS_18PropertyDescriptorEb | 24sBys581sg | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN3JSC14JSGlobalObject17defineOwnPropertyEPNS_8JSObjectEPS0_NS_12PropertyNameERKNS_18PropertyDescriptorEb | 2A508ZEMWzM | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZNK3WTF10StringImpl10startsWithEPKS0_ | 2K6zyWD2WxI | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZNK3WTF3URL11isLocalFileEv | 2awTIdIwODI | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN9Inspector14InjectedScriptC1EN10Deprecated12ScriptObjectEPNS_20InspectorEnvironmentE | 32lzv0QiLbo | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN10Deprecated11ScriptValueaSERKS0_ | 35ORvn0jTS8 | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN3JSC11SymbolTable14finishCreationERNS_2VME | 3EUK5l6RAVk | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN10Deprecated25ScriptCallArgumentHandler14appendArgumentEPKc | 3U2E2PkIKxM | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN3WTF11Persistence5CoderISt5arrayIhLm20EEE6decodeERNS0_7DecoderE | 3U2pDdbhjag | dual_3.20_and_13.60 | none |
+| libSceJsc | _ZN3JSC15JSWeakObjectRef14finishCreationERNS_2VMEPNS_8JSObjectE | 3WxN4u0Qywg | dual_3.20_and_13.60 | none |
 
-None of these are approved for upstream submission. Public SDK header names
+None of these are independently validated as guest ABI. Public SDK header names
 and 3.20 forwarding entries do not establish the correct guest ABI or behaviour.
+Merged upstream precedents #10068, #9990 and #9695 permit provisional parameterless throwing exports; all still require complete live overlap checks.
