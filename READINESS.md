@@ -2,7 +2,7 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-10-31T11:33:56+00:00 · **AnyPS5 main:** [0da91ea5be61](https://github.com/boykopovar/AnyPS5/commit/0da91ea5be617c434096d8909f3f1f1c46ce5cde)
+**Last refresh:** 2026-10-31T11:39:53+00:00 · **AnyPS5 main:** [cbed91529193](https://github.com/boykopovar/AnyPS5/commit/cbed91529193c47194bef11811906c7cb6054af1)
 
 ## At a glance
 
@@ -46,20 +46,20 @@
 | Marked throwing/unimplemented | 11,272 | NotImplemented marker is visible in body |
 | Other nonthrowing source definitions | 4,390 | A source body exists; not necessarily correct, wired up or validated |
 | Qualified NIDs also in main source | 7,740 | Potential existing coverage |
-| Additional qualified NIDs seen in open-PR additions | 0 | Possible reservations, not yet merged |
-| Qualified NIDs not observed by scans | 3,009 | **Not proof of no overlap** |
+| Additional qualified NIDs seen in open-PR additions | 1,290 | Possible reservations, not yet merged |
+| Qualified NIDs not observed by scans | 1,719 | **Not proof of no overlap** |
 
 ### Open PR coverage
 
-**Not scanned in this preview.** Open PR reservations are unknown, not zero.
+`██████████████████████` **1,575 / 1,589 (99.1%)** current open PR heads indexed.
 
-No current PR-head completeness evidence is available for this report.
-Cache and PR match counts are unavailable until a live scan runs.
+**Partial:** 14 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
+Cache hits: 1,561 · newly scanned: 14 · failed checks: 14.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
 ## Automatically imported AnyPS5 source evidence
 
-**17,422** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **5** correspond to unnamed identities already in this firmware catalogue.
+**17,423** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **5** correspond to unnamed identities already in this firmware catalogue.
 
 The proposed name, NID and source location are searchable, but the name is **not independently verified against firmware**, nor are ABI or behaviour confirmed. Publication-filtered strings are not promoted. [NID-only review queue](reports/upstream-review-queue.jsonl).
 
@@ -80,18 +80,18 @@ Top 12 libraries sorted by assessed qualified records not seen in current main o
 
 | Library | Qualified pending records | Main matched names (all statuses) | Main pending overlaps | Open PR pending overlaps | Not observed pending |
 |---|---:|---:|---:|---:|---:|
-| libSceJsc | 2,951 | 77 | 0 | 0 | 2,951 |
+| libSceJsc | 2,951 | 77 | 0 | 313 | 2,638 |
 | libSceNKWebKit | 8,614 | 7,336 | 7,211 | 0 | 1,403 |
-| libSceNpCommon | 782 | 331 | 42 | 0 | 740 |
-| libSceMediaFrameworkInterface | 139 | 0 | 0 | 0 | 139 |
-| libSceVnaInternal | 84 | 0 | 0 | 0 | 84 |
-| libSceIcu | 72 | 0 | 0 | 0 | 72 |
-| libSceCustomMusicSysCallWrapper | 53 | 1 | 0 | 0 | 53 |
-| libSceXml | 33 | 128 | 0 | 0 | 33 |
+| libSceNpCommon | 782 | 331 | 42 | 629 | 111 |
+| libSceMediaFrameworkInterface | 139 | 0 | 0 | 107 | 32 |
 | libSceVideoOut | 133 | 149 | 101 | 0 | 32 |
-| libSceVoiceCommand | 23 | 0 | 0 | 0 | 23 |
+| libSceVnaInternal | 84 | 0 | 0 | 71 | 13 |
+| libSceIcu | 72 | 0 | 0 | 60 | 12 |
 | libSceVideoStreamingEngine | 58 | 58 | 46 | 0 | 12 |
 | libSceFont | 44 | 201 | 36 | 0 | 8 |
+| libSceSaveData | 8 | 0 | 0 | 0 | 8 |
+| libSceAvcap2 | 35 | 35 | 28 | 0 | 7 |
+| libSceCustomMusicSysCallWrapper | 53 | 1 | 0 | 47 | 6 |
 
 See [all 791 libraries](reports/library-progress.md) or [machine-readable metrics](reports/progress.json) for the full breakdown.
 

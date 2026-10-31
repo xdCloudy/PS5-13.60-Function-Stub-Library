@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 6,
   "build_verified": null,
-  "explicit_export_alias_records": 8892,
+  "explicit_export_alias_records": 8893,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 42142,
+  "observed_library_nid_records": 42144,
   "per_library": {
     "libc": {
       "assembly_definition_unvalidated": 2,
@@ -433,8 +433,8 @@
       "definition_throwing": 3
     },
     "libsceicu": {
-      "definition_nonthrowing_unvalidated": 32,
-      "definition_throwing": 2448,
+      "definition_nonthrowing_unvalidated": 33,
+      "definition_throwing": 2447,
       "explicit_alias_no_visible_definition": 2371
     },
     "libsceidu": {
@@ -1168,7 +1168,8 @@
     },
     "libscewebbrowserdialog": {
       "definition_nonthrowing_unvalidated": 10,
-      "definition_throwing": 3
+      "definition_throwing": 4,
+      "explicit_alias_no_visible_definition": 1
     },
     "libscewebmparsermdrw": {
       "definition_throwing": 7,
@@ -1208,12 +1209,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "0da91ea5be617c434096d8909f3f1f1c46ce5cde",
+  "source_sha": "cbed91529193c47194bef11811906c7cb6054af1",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
-    "definition_nonthrowing_unvalidated": 9137,
+    "definition_nonthrowing_unvalidated": 9138,
     "definition_throwing": 23987,
-    "explicit_alias_no_visible_definition": 8892
+    "explicit_alias_no_visible_definition": 8893
   }
 }

@@ -1,18 +1,27 @@
 {
-  "added": 0,
+  "added": 2,
   "baseline_only": false,
   "changed_source_classifications": 1,
   "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-  "previous_source_sha": "5fb1747fa7a4dd794358048c55c53d4e65566e45",
+  "previous_source_sha": "0da91ea5be617c434096d8909f3f1f1c46ce5cde",
   "removed": 0,
-  "samples_added": [],
+  "samples_added": [
+    {
+      "library": "libscewebbrowserdialog",
+      "nid": "8r4EJ3FiX4w"
+    },
+    {
+      "library": "libscewebbrowserdialog",
+      "nid": "dSrsmhm9CDE"
+    }
+  ],
   "samples_changed": [
     {
-      "library": "libscelibressl3",
-      "nid": "k5HEMLWYwjc"
+      "library": "libsceicu",
+      "nid": "lEeq4G4ROgo"
     }
   ],
   "samples_removed": [],
   "schema_version": 1,
-  "source_sha": "0da91ea5be617c434096d8909f3f1f1c46ce5cde"
+  "source_sha": "cbed91529193c47194bef11811906c7cb6054af1"
 }
