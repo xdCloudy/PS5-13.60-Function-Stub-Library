@@ -15,12 +15,25 @@ import re
 import subprocess
 
 from prepare_anyps5_constants import (
-    DECLARATION, FUNCTION, INTEGER, POINTER, THROW_ONLY, normalize_type, sha256,
+    INTEGER, POINTER, THROW_ONLY, normalize_type, sha256,
 )
 from update_progress import nid_for
 
 SUFFIXES = {".cpp", ".cc", ".cxx"}
 HEADERS = {".h", ".hpp"}
+
+# Avoid the upstream generator's whitespace-heavy generic regex on entire
+# multi-megabyte source files. These bounded, non-overlapping token patterns
+# identify only simple source layouts and never infer guest semantics.
+TYPE = r"(?:const[ \t]+)?[A-Za-z_][A-Za-z0-9_:]*(?:[ \t]+[A-Za-z_][A-Za-z0-9_:]*){0,2}(?:[ \t]*\*+)?"
+NAME = r"[A-Za-z_][A-Za-z0-9_]*"
+FRONT = (r"(?P<signature>(?P<rtype>" + TYPE + r")[ \t]+APS5_VABI[ \t]+"
+         r"(?P<name>" + NAME + r")[ \t]*\((?P<args>[^(){};]{0,500})\))")
+SOURCE_DEFINITION = re.compile(FRONT + r"[ \t\r\n]*\{")
+SIMPLE_BODY_DEFINITION = re.compile(FRONT + r"[ \t\r\n]*\{(?P<body>[^{}]{0,512})\}")
+HEADER_DECLARATION = re.compile(r"(?P<rtype>" + TYPE + r")[ \t]+APS5_VABI[ \t]+"
+                                r"(?P<name>" + NAME + r")[ \t]*\([^(){};]{0,500}\)[ \t\r\n]*;")
+
 
 
 def signature_return_class(rtype: str) -> str | None:
@@ -41,24 +54,6 @@ def registered_source(folder: Path, source: Path, cmake_text: str) -> bool:
     name = re.escape(source.name)
     return bool(re.search(r"(?<![A-Za-z0-9_.-])" + name + r"(?![A-Za-z0-9_.-])",
                           cmake_text))
-
-
-def abi_matches(source: str, pattern: re.Pattern):
-    """Bound regex searches to individual ABI occurrences.
-
-    The original repository parser operates on complete source files and its
-    whitespace-heavy signature regex can backtrack severely on large C++
-    files. Narrow candidate discovery to a short local source fragment,
-    anchored to the exact macro token being inspected.
-    """
-    for token in re.finditer(r"\bAPS5_VABI\b", source):
-        start = max(0, token.start() - 160)
-        fragment = source[start:min(len(source), token.end() + 512)]
-        offset = token.start() - start
-        for match in pattern.finditer(fragment):
-            local = fragment.find("APS5_VABI", match.start(), match.end())
-            if local == offset:
-                yield match
 
 
 def discover(upstream: Path, revision: str) -> list[dict]:
@@ -91,17 +86,20 @@ def discover(upstream: Path, revision: str) -> list[dict]:
             source_text = p.read_text(encoding="utf-8", errors="replace")
             if "APS5_VABI" not in source_text:
                 continue
-            for match in abi_matches(source_text, DECLARATION):
+            for match in HEADER_DECLARATION.finditer(source_text):
                 declarations.append((p, match))
         # Definitions can appear in several .cpp files: reject all duplicates.
         definitions = []
+        name_count = Counter()
         for source in sources:
             content = source.read_text(encoding="utf-8", errors="replace")
             if "APS5_VABI" not in content:
                 continue
-            for match in abi_matches(content, FUNCTION):
-                definitions.append((source, match))
-        name_count = Counter(m.group("name") for _, m in definitions)
+            # Count every simple C-ABI definition, including nonthrowing
+            # bodies, so unrelated extra definitions invalidate eligibility.
+            name_count.update(m.group("name") for m in SOURCE_DEFINITION.finditer(content))
+            definitions.extend((source, match)
+                               for match in SIMPLE_BODY_DEFINITION.finditer(content))
         decl_count = Counter(m.group("name") for _, m in declarations)
         decl_by_name = {m.group("name"): (p, m) for p, m in declarations}
         for source, match in definitions:
