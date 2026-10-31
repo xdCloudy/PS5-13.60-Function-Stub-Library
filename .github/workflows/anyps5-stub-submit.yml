@@ -94,6 +94,8 @@ jobs:
           git submodule update --init --recursive
           cmake -S . -B "$RUNNER_TEMP/AnyPS5-build" -G Ninja \
             -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+          library="$(python -c 'import json,os; print(json.load(open(os.environ["RUNNER_TEMP"]+"/review/SELECTED_CANDIDATES.json"))["candidates"][0]["library"])')"
+          cmake --build "$RUNNER_TEMP/AnyPS5-build" --target "$library" --parallel 2
           cmake --build "$RUNNER_TEMP/AnyPS5-build" --parallel 2
           ctest --test-dir "$RUNNER_TEMP/AnyPS5-build" --parallel 2 \
             --output-on-failure
