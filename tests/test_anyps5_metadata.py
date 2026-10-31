@@ -42,6 +42,24 @@ class AnyPS5SymbolStateTests(unittest.TestCase):
             build(repo,upstream)
             self.assertEqual(old,(repo/"reports/anyps5-symbol-changes.json").read_bytes())
 
+    def test_assembly_exports_are_separate_unvalidated_identities(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            lib=Path(tmp)/"core/libs/prx/libSceExample"
+            lib.mkdir(parents=True)
+            (lib/"Export.cpp").write_text(
+                'asm(".text\\n" APS5_ASM_FUNCTION("sceAsmSignal_nid_postfix") "ret\\n");\n'
+                'asm(".text\\n" APS5_SIGNAL_ASM_FUNCTION("sceAsmCall") "ret\\n");\n'
+                'APS5_ASM_FUNCTION("internalHelper_nid_no_patch");\n'
+            )
+            result=scan_files(Path(tmp))
+            for name in ("sceAsmSignal","sceAsmCall"):
+                entry=result[("libsceexample",nid_for(name))]
+                self.assertTrue(entry["assembly_definition_seen"])
+                self.assertIsNone(entry["runtime_validated"])
+                self.assertIsNone(entry["abi_verified"])
+                self.assertIsNone(entry["export_registered"])
+            self.assertNotIn(("libsceexample",nid_for("internalHelper")),result)
+
     def test_explicit_nid_alias_is_registration_evidence_not_abi(self):
         with tempfile.TemporaryDirectory() as tmp:
             lib=Path(tmp)/"core/libs/prx/libSceExample"
