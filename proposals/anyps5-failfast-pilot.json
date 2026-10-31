@@ -5,16 +5,16 @@
   "max_functions": 3,
   "candidates": [
     {
-      "name": "_ZN3JSC25numberOfOSRExitFuzzChecksEv",
-      "nid": "0yriBj5rS3U"
+      "name": "JSGlobalContextSetDebuggerRunLoopWithCurrentRunLoop",
+      "nid": "DojSTghs5jU"
     },
     {
-      "name": "JSObjectDeletePropertyForKey",
-      "nid": "1dmShONVJEc"
+      "name": "JSRunLoopIterateCurrentRunLoop",
+      "nid": "XIAOofO0nN4"
     },
     {
-      "name": "JSScriptEvaluate",
-      "nid": "1gXYOYMR+m8"
+      "name": "JSGlobalContextUnsetDebuggerRunLoop",
+      "nid": "rWPnHtWTIRg"
     }
   ]
 }
