@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-10-31T06:04:40+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-10-31T06:07:06+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -903,7 +903,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-10-31T06:04:40+00:00 |
+| last refresh utc | 2026-10-31T06:07:06+00:00 |
 | pr scanned | 1,568 |
 | pr total | 1,585 |
 | pr complete | 0 |
