@@ -1,0 +1,171 @@
+name: AnyPS5 three-export fail-fast proof
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/prepare_anyps5_failfast_pilot.py'
+      - 'tests/test_anyps5_failfast_pilot.py'
+      - 'proposals/anyps5-failfast-pilot.json'
+      - '.github/workflows/anyps5-failfast-pilot.yml'
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Open a draft AnyPS5 PR after validation
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anyps5-failfast-pilot
+  cancel-in-progress: false
+
+jobs:
+  pilot:
+    if: github.repository == 'xdCloudy/PS5-13.60-Function-Stub-Library'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Regression tests
+        run: |
+          python -m unittest discover -s tests -p 'test_anyps5_failfast_pilot.py' -v
+          python -m unittest discover -s tests -p 'test_dual_firmware_review.py' -v
+      - name: Clone verified source inputs
+        run: |
+          git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git "$RUNNER_TEMP/original-320"
+          git clone --quiet https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/AnyPS5"
+      - name: Generate branch, verify source and check current upstream PR overlaps
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/AnyPS5"
+          source_sha="$(git rev-parse HEAD)"
+          digest="$(sha256sum "$GITHUB_WORKSPACE/proposals/anyps5-failfast-pilot.json" | cut -c1-16)"
+          branch="feat/dual-firmware-failfast-$digest"
+          echo "ANYPS5_BRANCH=$branch" >> "$GITHUB_ENV"
+          echo "ANYPS5_SOURCE_SHA=$source_sha" >> "$GITHUB_ENV"
+          git switch -c "$branch"
+          mkdir -p "$RUNNER_TEMP/failfast"
+          cd "$GITHUB_WORKSPACE"
+          python tools/prepare_anyps5_failfast_pilot.py \
+            --source-320 "$RUNNER_TEMP/original-320" \
+            --upstream "$RUNNER_TEMP/AnyPS5" \
+            --proposal proposals/anyps5-failfast-pilot.json \
+            --report "$RUNNER_TEMP/failfast/EVIDENCE.json" --apply
+          cd "$RUNNER_TEMP/AnyPS5"
+          git add core/libs/prx/libSceJsc
+          git diff --cached --check
+          git -c user.name=xdCloudy -c user.email=52116030+xdCloudy@users.noreply.github.com \
+            commit -m "feat(libSceJsc): register three provisional throwing exports"
+          python tools/check_conventions.py --base origin/main
+          python core/libs/tests/test_public_headers.py --audit-only
+          overlap="$(python tools/pr_overlap.py --branch "$branch" --repo boykopovar/AnyPS5)"
+          [[ "$overlap" == "No overlap with open pull requests." ]] || {
+            echo "::error::Official upstream PR overlap check did not clear the pilot"
+            printf '%s\n' "$overlap"
+            exit 1
+          }
+          git diff --binary origin/main..HEAD > "$RUNNER_TEMP/failfast/ANYPS5.patch"
+      - name: Full Linux build and CTest
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -q
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            ninja-build build-essential cmake libx11-dev libxext-dev libxrandr-dev \
+            libwayland-dev libxkbcommon-dev libegl1-mesa-dev libdecor-0-dev \
+            libpipewire-0.3-dev libpulse-dev libasound2-dev
+          cd "$RUNNER_TEMP/AnyPS5"
+          git submodule update --init --recursive
+          cmake -S . -B "$RUNNER_TEMP/build" -G Ninja -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+          cmake --build "$RUNNER_TEMP/build" --target libSceJsc --parallel 2
+          cmake --build "$RUNNER_TEMP/build" --parallel 2
+          ctest --test-dir "$RUNNER_TEMP/build" --parallel 2 --output-on-failure
+      - name: Preserve validated patch and evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: anyps5-provisional-throwing-pilot
+          path: |
+            ${{ runner.temp }}/failfast/EVIDENCE.json
+            ${{ runner.temp }}/failfast/ANYPS5.patch
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Recheck current upstream and open a draft PR as xdCloudy
+        if: github.event_name == 'push' || inputs.publish == true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
+        run: |
+          set -euo pipefail
+          [[ -n "$GH_TOKEN" ]] || { echo "::error::ANYPS5_SUBMIT_TOKEN absent"; exit 1; }
+          [[ "$(gh api user --jq .login)" == "xdCloudy" ]] || {
+            echo "::error::Token owner is not xdCloudy"
+            exit 1
+          }
+          cd "$RUNNER_TEMP/AnyPS5"
+          live="$(git ls-remote https://github.com/boykopovar/AnyPS5.git refs/heads/main | cut -f1)"
+          [[ "$live" == "$ANYPS5_SOURCE_SHA" ]] || {
+            echo "::error::Upstream main changed; fresh build required"
+            exit 1
+          }
+          overlap="$(python tools/pr_overlap.py --branch "$ANYPS5_BRANCH" --repo boykopovar/AnyPS5)"
+          [[ "$overlap" == "No overlap with open pull requests." ]] || {
+            echo "::error::Open PR overlap changed; block submission"
+            exit 1
+          }
+          gh auth setup-git
+          git remote add contributor https://github.com/xdCloudy/AnyPS5.git
+          if [[ -n "$(git ls-remote --heads contributor "$ANYPS5_BRANCH")" ]]; then
+            echo "Pilot already published; no branch overwrite or duplicate." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git push --force-with-lease="refs/heads/$ANYPS5_BRANCH:" \
+            contributor "HEAD:refs/heads/$ANYPS5_BRANCH"
+          cat > "$RUNNER_TEMP/failfast/PR_BODY.md" <<'BODY'
+          ## What
+          Three libSceJsc exports confirmed in the PS5 13.60 catalogue and
+          the original public 3.20 forwarding source. All throw immediately
+          through NotImplemented_nid_no_patch; no no-op or success value.
+
+          ## Provisional ABI disclaimer
+          Parameterless int() declarations follow existing libSceJsc
+          LegacyExports-style fail-fast host placeholders. These are
+          **not** verified guest ABI prototypes. They never return normally
+          or read caller arguments. Maintainer approval of this approach
+          is required before expansion or merge.
+
+          ## Tested
+          - Historical and 13.60 identities and NID hashes validated
+          - Current main source and official open-PR overlap scan cleared
+          - Public header/conventions checker cleared
+          - Linux full build and CTest passed
+          - Console/guest ABI validation: NOT TESTED
+
+          ## Checklist
+          - Depends on: none
+          - Fixes: none
+          - Unblocks: none
+          - AI-assisted: yes
+          - No normal-return, guessed-success, or silent stubs
+          BODY
+          if ! gh pr create --repo boykopovar/AnyPS5 --base main \
+            --head "xdCloudy:$ANYPS5_BRANCH" --draft \
+            --title "feat(libSceJsc): add three provisional throwing exports" \
+            --body-file "$RUNNER_TEMP/failfast/PR_BODY.md"; then
+            git push contributor ":refs/heads/$ANYPS5_BRANCH" || true
+            echo "::error::PR creation failed; fork branch cleanup attempted"
+            exit 1
+          fi
+          echo "Pilot draft upstream PR created as xdCloudy" >> "$GITHUB_STEP_SUMMARY"
