@@ -1,0 +1,167 @@
+name: AnyPS5 checked 13.60 WebCore throwing exports
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/prepare_anyps5_webcore_pending.py'
+      - 'tests/test_anyps5_webcore_pending.py'
+      - '.github/workflows/anyps5-webcore-pending.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '53 5 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anyps5-webcore-pending
+  cancel-in-progress: false
+
+jobs:
+  verify-and-submit:
+    if: github.repository == 'xdCloudy/PS5-13.60-Function-Stub-Library'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Check generator regression tests
+        run: |
+          python -m unittest discover -s tests -p 'test_anyps5_webcore_pending.py' -v
+          python -m unittest discover -s tests -p 'test_dual_firmware_review.py' -v
+      - name: Clone current AnyPS5
+        run: git clone --quiet https://github.com/boykopovar/AnyPS5.git "$RUNNER_TEMP/AnyPS5"
+      - name: Generate and locally inspect candidate batch
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/AnyPS5"
+          upstream_sha="$(git rev-parse HEAD)"
+          short_sha="$(printf '%s' "$upstream_sha" | cut -c1-12)"
+          branch="feat/nkwebkit-webcore-1360-$short_sha"
+          echo "ANYPS5_BRANCH=$branch" >> "$GITHUB_ENV"
+          echo "ANYPS5_HEAD=$upstream_sha" >> "$GITHUB_ENV"
+          git switch -c "$branch"
+          mkdir -p "$RUNNER_TEMP/webcore-batch"
+          cd "$GITHUB_WORKSPACE"
+          python tools/prepare_anyps5_webcore_pending.py \
+            --catalogue "$GITHUB_WORKSPACE" \
+            --upstream "$RUNNER_TEMP/AnyPS5" \
+            --limit 40 \
+            --report "$RUNNER_TEMP/webcore-batch/evidence.json" --apply
+          cd "$RUNNER_TEMP/AnyPS5"
+          git add core/libs/prx/libSceNKWebKit/Export.cpp \
+            core/libs/prx/libSceNKWebKit/include/InventoryExports.hpp \
+            docs/dev/debt/libSceNKWebKit.md
+          git diff --cached --check
+          git -c user.name=xdCloudy -c user.email=52116030+xdCloudy@users.noreply.github.com \
+            commit -m "feat(libSceNKWebKit): declare PS5 13.60 WebCore pending exports"
+          python tools/check_conventions.py --base origin/main
+          python core/libs/tests/test_public_headers.py --audit-only
+          scan="$(python tools/pr_overlap.py --branch "$branch" --repo boykopovar/AnyPS5)"
+          [[ "$scan" == "No overlap with open pull requests." ]] || {
+            echo "::error::Official upstream open PR overlap scan failed or detected overlap"
+            printf '%s\n' "$scan"
+            exit 1
+          }
+          git diff --binary origin/main..HEAD > "$RUNNER_TEMP/webcore-batch/anyps5.patch"
+      - name: Full Linux build and tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -q
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            ninja-build build-essential cmake libx11-dev libxext-dev libxrandr-dev \
+            libwayland-dev libxkbcommon-dev libegl1-mesa-dev libdecor-0-dev \
+            libpipewire-0.3-dev libpulse-dev libasound2-dev
+          cd "$RUNNER_TEMP/AnyPS5"
+          git submodule update --init --recursive
+          cmake -S . -B "$RUNNER_TEMP/build" -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+          cmake --build "$RUNNER_TEMP/build" --target libSceNKWebKit --parallel 2
+          cmake --build "$RUNNER_TEMP/build" --parallel 2
+          ctest --test-dir "$RUNNER_TEMP/build" --parallel 2 --output-on-failure
+      - name: Upload evidence and patch
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: nkwebkit-webcore-1360-candidate-batch
+          path: |
+            ${{ runner.temp }}/webcore-batch/evidence.json
+            ${{ runner.temp }}/webcore-batch/anyps5.patch
+          retention-days: 90
+          if-no-files-found: warn
+      - name: Recheck overlap and create draft AnyPS5 PR as xdCloudy
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.ANYPS5_SUBMIT_TOKEN }}
+        run: |
+          set -euo pipefail
+          [[ -n "$GH_TOKEN" ]] || { echo "::error::ANYPS5_SUBMIT_TOKEN missing"; exit 1; }
+          [[ "$(gh api user --jq .login)" == "xdCloudy" ]] || {
+            echo "::error::Submission token does not belong to xdCloudy"
+            exit 1
+          }
+          cd "$RUNNER_TEMP/AnyPS5"
+          live="$(git ls-remote https://github.com/boykopovar/AnyPS5.git refs/heads/main | cut -f1)"
+          [[ "$live" == "$ANYPS5_HEAD" ]] || {
+            echo "::error::Upstream main advanced; regenerate and rebuild"
+            exit 1
+          }
+          scan="$(python tools/pr_overlap.py --branch "$ANYPS5_BRANCH" --repo boykopovar/AnyPS5)"
+          [[ "$scan" == "No overlap with open pull requests." ]] || {
+            echo "::error::Live upstream PR overlap changed, refusing publication"
+            exit 1
+          }
+          gh auth setup-git
+          git remote add contributor https://github.com/xdCloudy/AnyPS5.git
+          if [[ -n "$(git ls-remote --heads contributor "$ANYPS5_BRANCH")" ]]; then
+            echo "Identical contributor branch already exists, avoiding duplicates." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git push --force-with-lease="refs/heads/$ANYPS5_BRANCH:" contributor \
+            "HEAD:refs/heads/$ANYPS5_BRANCH"
+          cat > "$RUNNER_TEMP/webcore-batch/body.md" <<'BODY'
+          ## What
+
+          Adds PS5 13.60-confirmed libSceNKWebKit WebCore export
+          declarations as always-throwing NotImplemented_nid_no_patch
+          placeholders. They do not return 0 or invent functional behaviour.
+
+          These parameterless int declarations are provisional for import
+          resolution only, as accepted in merged PRs #10068, #9990 and #9695.
+          Exact guest prototypes and runtime behaviour remain unverified.
+
+          ## Validation
+
+          - NIDs independently rehashed and matched to 13.60 export records
+          - All upstream PRX providers checked for existing exports
+          - Official open-PR overlap tool run against live PRs
+          - Header and conventions checks passed
+          - Linux libSceNKWebKit build and CTest passed
+          - Console runtime and guest ABI not measured
+
+          ## Checklist
+
+          - Depends on: none
+          - Fixes: none
+          - Unblocks: none
+          - AI-assisted: yes
+          - Technical debt records provisional signatures and NIDs
+          BODY
+          if ! gh pr create --repo boykopovar/AnyPS5 --base main \
+            --head "xdCloudy:$ANYPS5_BRANCH" --draft \
+            --title "feat(libSceNKWebKit): declare PS5 13.60 WebCore pending exports" \
+            --body-file "$RUNNER_TEMP/webcore-batch/body.md"; then
+            git push contributor ":refs/heads/$ANYPS5_BRANCH" || true
+            echo "::error::Upstream draft PR creation failed; cleanup attempted"
+            exit 1
+          fi
