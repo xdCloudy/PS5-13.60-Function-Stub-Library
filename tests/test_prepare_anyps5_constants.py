@@ -112,6 +112,31 @@ class ConstantStubTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "ambiguous"):
             constants.render(self.root, [self.row])
 
+    def test_whitespace_heavy_unrelated_signature_does_not_block_review(self):
+        self.fixture()
+        self.cpp.write_text(
+            self.cpp.read_text() + "\n" +
+            "int " + " " * 30000 + " APS5_VABI " + " " * 30000 +
+            "not_an_export;\n")
+        plan = constants.render(self.root, [self.row])
+        self.assertIn("return 0;", plan[self.cpp])
+
+    def test_supported_signature_byte_hashes_remain_stable(self):
+        for return_type in ("int", "unsigned int", "bool", "void*", "const char *"):
+            with self.subTest(return_type=return_type):
+                behavior = ("null" if "*" in return_type else
+                            "false" if return_type == "bool" else "zero")
+                self.fixture(rtype=return_type, behavior=behavior)
+                original = self.cpp.read_text()
+                match = constants.FUNCTION.search(original)
+                self.assertIsNotNone(match)
+                self.assertEqual(constants.sha256(match.group("signature")),
+                                 self.row["signature_sha256"])
+                self.assertEqual(constants.sha256(match.group("body")),
+                                 self.row["body_sha256"])
+                self.assertIn(constants.RETURNS[behavior],
+                              constants.render(self.root, [self.row])[self.cpp])
+
     def test_unregistered_cpp_is_not_silently_accepted(self):
         self.fixture()
         (self.folder / "CMakeLists.txt").write_text("add_library(example Other.cpp)\n")
