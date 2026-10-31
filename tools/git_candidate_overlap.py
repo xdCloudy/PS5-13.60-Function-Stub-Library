@@ -13,6 +13,7 @@ import subprocess
 
 from candidate_overlap import head_vector, SOURCE, CODE, UNKNOWN_REGISTRATION
 from upstream_sync import list_open_prs, DEFINITION, EXPORT_ALIAS, api_json
+from prepare_anyps5_constants import FUNCTION
 
 GLOBAL_CODEGEN = re.compile(
     r"^(?:tools/(?:nid_names|stubgen)\.py|core/.*(?:nid_registry|export_registry).*)$",
@@ -101,6 +102,37 @@ def decode_changed_exports(
     return reservations, unknown
 
 
+HUNK = re.compile(r"^@@ -([0-9]+)(?:,([0-9]+))? \+[0-9]+(?:,[0-9]+)? @@", re.MULTILINE)
+
+
+def changed_existing_function(base_source: str, patch: str, name: str) -> bool:
+    """Did an exact Git old-line hunk touch this function, even without a name?
+
+    Unknown function layouts fail closed. In particular, body-only PR edits
+    must not silently bypass NID scanners looking only at added signatures.
+    """
+    if not patch.strip():
+        return False
+    matches = [m for m in FUNCTION.finditer(base_source) if m.group("name") == name]
+    if len(matches) != 1:
+        return True
+    match = matches[0]
+    first = base_source.count("\n", 0, match.start()) + 1
+    last = base_source.count("\n", 0, match.end()) + 1
+    hunks = list(HUNK.finditer(patch))
+    if not hunks:
+        return True
+    for h in hunks:
+        old_start = int(h.group(1))
+        old_count = int(h.group(2) or 1)
+        if old_count:
+            if old_start <= last and old_start + old_count - 1 >= first:
+                return True
+        elif first - 1 <= old_start <= last:
+            return True
+    return False
+
+
 GENERATED_FORK_REF = re.compile(r"^refs/heads/feat/automated-reviewed-stubs-([0-9a-f]{16})$")
 
 
@@ -126,10 +158,42 @@ def check_candidates_git(
     checkout: Path, candidates: list[dict],
     main_occupied: set[tuple[str, str]], token: str, nid_for,
     *, fetch=api_json, per_fetch: int = 80, pending_fork_url: str | None = None,
+    existing_targets: dict[str, dict] | None = None,
 ) -> dict:
     """Clear only exact selected identities absent on main and all open PR heads."""
     if not 1 <= per_fetch <= 100:
         raise ValueError("Invalid Git fetch batch")
+    by_path: dict[str, list[tuple[str, str]]] = {}
+    if existing_targets:
+        expected_nids = {r["nid"] for r in candidates}
+        if set(existing_targets) != expected_nids:
+            raise ValueError("Every reviewed implementation requires an exact target")
+        for row in candidates:
+            target = existing_targets[row["nid"]]
+            if target.get("path") != row.get("path") or target.get("name") != row.get("name"):
+                raise ValueError("Reviewed source targets differ from submitted candidates")
+            path = row["path"]
+            if not path.startswith("core/libs/prx/" + row["library"] + "/"):
+                raise ValueError("Reviewed target escapes candidate library")
+            by_path.setdefault(path, []).append((row["nid"], row["name"]))
+
+    def changed_existing(base: str, ref: str) -> set[str]:
+        if not by_path:
+            return set()
+        changed = git(checkout, "diff", "--no-ext-diff", "--no-renames",
+                      "--name-only", base, ref, "--", *sorted(by_path)).splitlines()
+        if not set(changed) <= set(by_path):
+            raise ValueError("Unexpected path from reviewed implementation diff")
+        touched: set[str] = set()
+        for path in changed:
+            base_source = git(checkout, "show", f"{base}:{path}")
+            patch = git(checkout, "diff", "--no-ext-diff", "--no-renames",
+                        "--unified=0", base, ref, "--", path)
+            for nid, name in by_path[path]:
+                if changed_existing_function(base_source, patch, name):
+                    touched.add(nid)
+        return touched
+
     before = head_vector(list_open_prs(token, fetch))
     candidate_libraries = {r["library"].casefold() for r in candidates}
     all_nids = {nid for _, nid in main_occupied}
@@ -162,7 +226,10 @@ def check_candidates_git(
                        "--unified=0", base, ref, "--", "core/", "tools/")
             reserved, unknown = decode_changed_exports(
                 diff, nid_for, candidate_libraries=candidate_libraries)
+            body_modified = changed_existing(base, ref)
             for nid, blocked in reasons.items():
+                if nid in body_modified:
+                    blocked.add(f"pr_{n}_existing_function_modified")
                 if nid in reserved:
                     blocked.add(f"pr_{n}_nid_collision")
                 if unknown:
@@ -188,7 +255,10 @@ def check_candidates_git(
                            "--unified=0", base, ref, "--", "core/", "tools/")
                 reserved, unknown = decode_changed_exports(
                     diff, nid_for, candidate_libraries=candidate_libraries)
+                body_modified = changed_existing(base, ref)
                 for nid, blocked in reasons.items():
+                    if nid in body_modified:
+                        blocked.add(f"generated_fork_{suffix}_existing_function_modified")
                     if nid in reserved:
                         blocked.add(f"generated_fork_{suffix}_nid_collision")
                     if unknown:
