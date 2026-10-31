@@ -21,7 +21,8 @@ on:
 
 concurrency:
   group: ps5-progress-${{ github.ref }}
-  cancel-in-progress: false
+  # Keep trusted-main refreshes intact, but cancel obsolete PR previews.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   refresh:
