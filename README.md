@@ -14,9 +14,8 @@ visible so researchers can avoid repeating the same discovery work.
 [Browse all libraries](LIBRARIES.md) ·
 [Readiness summary](READINESS.md)
 
-The dashboard is generated from JSON by GitHub Actions. GitHub Pages must be
-enabled in repository settings before the public site can be opened.
-For an always-readable alternative, use the Markdown matrices above.
+The dashboard is generated from JSON by GitHub Actions and published through
+GitHub Pages. For an always-readable alternative, use the Markdown matrices above.
 
 ## What has been recorded?
 

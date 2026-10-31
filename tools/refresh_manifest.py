@@ -30,7 +30,8 @@ def refresh(root: Path) -> bool:
         raise ValueError(f"Inventory count mismatch: {total}")
     if named != document["counts"]["resolved_names"]:
         raise ValueError(f"Published names mismatch: {named} != {document['counts']['resolved_names']}")
-    unique = sum(bool(line.strip()) for line in (root / "data/verified-name-map.jsonl").open(encoding="utf-8"))
+    with (root / "data/verified-name-map.jsonl").open(encoding="utf-8") as names:
+        unique = sum(bool(line.strip()) for line in names)
     if unique != document["unique_verified_name_bindings"]:
         raise ValueError(f"Verified-name-map count mismatch: {unique}")
     serialised = json.dumps(document, indent=2, ensure_ascii=False) + "\n"

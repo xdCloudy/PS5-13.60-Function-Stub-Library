@@ -45,56 +45,106 @@ jobs:
             exit 0
           fi
           count="$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["reviewable_identity_count"])' "$proposal")"
-          branch="automation/catalogue-review"
+          fingerprint="$(python tools/review_proposal_identity.py fingerprint "$proposal")"
+          base_branch="automation/catalogue-review"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          open="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$branch" --state open --json number --jq 'length')"
-          if [[ "$open" != "0" ]]; then
-            git fetch origin "$branch"
-            git switch -c "$branch" "origin/$branch"
-            mkdir -p reports
-            cp "$proposal" reports/catalogue-import-proposal.json
-            git add reports/catalogue-import-proposal.json
-            if ! git diff --cached --quiet; then
-              git commit -m "data: refresh open source-name review proposal [skip ci]"
-              git push origin "HEAD:$branch"
-              echo "Updated existing draft review PR with current candidate evidence." >> "$GITHUB_STEP_SUMMARY"
-            else
-              echo "Existing review PR already matches latest source evidence." >> "$GITHUB_STEP_SUMMARY"
-            fi
-            exit 0
-          fi
-          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
-            echo "::error::The prior review branch exists with no open PR. Human reconciliation required."
+
+          # Keep exactly one live review PR, updating evidence when source SHAs move.
+          open_heads="$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --limit 250 \
+            --json headRefName --jq '[.[].headRefName | select(startswith("automation/catalogue-review"))] | unique | .[]')"
+          if [[ "$open_heads" == *$'\n'* ]]; then
+            echo "::error::Multiple catalogue-review PRs are open; refuse to publish a duplicate."
             exit 1
           fi
-          git switch -c "$branch"
+          create_pr=true
+          if [[ -n "$open_heads" ]]; then
+            branch="$open_heads"
+            create_pr=false
+          else
+            branch="$base_branch"
+            # A prior *closed* review must never silently reopen merely because
+            # a source SHA or report timestamp moved.
+            prior="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$base_branch" \
+              --state closed --limit 100 --json number --jq '.[0].number // empty')"
+            if [[ -n "$prior" ]]; then
+              if ! git fetch --quiet --no-tags origin "refs/pull/${prior}/head"; then
+                echo "::error::Cannot inspect the closed review's exact proposal."
+                exit 1
+              fi
+              if ! git show "FETCH_HEAD:reports/catalogue-import-proposal.json" > "$RUNNER_TEMP/closed-catalogue-proposal.json"; then
+                echo "::error::Closed review has no inspectable proposal; require reconciliation."
+                exit 1
+              fi
+              set +e
+              python tools/review_proposal_identity.py same "$proposal" "$RUNNER_TEMP/closed-catalogue-proposal.json"
+              same_status=$?
+              set -e
+              if [[ "$same_status" == 0 ]]; then
+                echo "Matching review was previously closed; do not reopen unchanged identities." >> "$GITHUB_STEP_SUMMARY"
+                exit 0
+              elif [[ "$same_status" != 1 ]]; then
+                echo "::error::Invalid historical proposal; refuse to republish."
+                exit 1
+              fi
+              branch="${base_branch}-${fingerprint}"
+            fi
+          fi
+
+          if [[ "$create_pr" == true ]]; then
+            # Unique content-addressed branches also retain their closed-PR
+            # history. Orphaned branches from failed gh pr create are recovered.
+            existing_reviews="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$branch" \
+              --state all --limit 100 --json number --jq 'length')"
+            if [[ "$existing_reviews" != "0" ]]; then
+              echo "This proposal revision already had a review PR; no duplicate created." >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+          fi
+
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            git fetch --quiet origin "$branch"
+            git switch -c "$branch" "origin/$branch"
+          else
+            if [[ "$create_pr" != true ]]; then
+              echo "::error::Open review PR points to a missing origin branch."
+              exit 1
+            fi
+            git switch -c "$branch"
+          fi
+
           mkdir -p reports
           cp "$proposal" reports/catalogue-import-proposal.json
           git add reports/catalogue-import-proposal.json
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: stage public identities for independent review [skip ci]"
-          git push origin "HEAD:$branch"
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh public identity review proposal [skip ci]"
+            git push origin "HEAD:$branch"
+          else
+            echo "Existing review branch is already current." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [[ "$create_pr" != true ]]; then
+            echo "Updated existing review PR rather than opening another." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
           cat > "$RUNNER_TEMP/catalogue-pr-body.md" <<MARKDOWN
           ### What
 
-          This draft stages **${count} identity proposals** backed by public 3.20/AnyPS5 source metadata. No canonical inventory record is overwritten.
+          This draft stages **${count} public identity proposals** backed by 3.20/AnyPS5 source metadata. No canonical records are changed.
 
           ### Tested
 
-          - Import metadata rehashed against the verified NID algorithm
+          - Public names rehashed against the verified NID algorithm
           - Source revisions and catalogue manifest consistency checked
-          - Unsafe names and source conflicts withheld
-          - Firmware scope, ABI, registration and behaviour **not automatically certified**
+          - Unsafe names and conflicting source identities withheld
+          - Publication identity fingerprint: \`${fingerprint}\`
+          - Firmware scope, ABI, registration and runtime behaviour **not certified**
 
           ### Review required
 
-          Independently assess licensing, ownership, name provenance and firmware evidence before separately regenerating canonical shards and the verified-name map. This PR must not be auto-merged.
-
-          The PR is deliberately metadata-only and contains no C/C++ function bodies.
+          Independently verify provenance, licensing, owner, firmware scope and signature evidence. This metadata-only PR must not be auto-merged.
           MARKDOWN
           gh pr create --repo "$GITHUB_REPOSITORY" --head "$branch" --base main --draft \
             --title "data: review ${count} publicly sourced catalogue identities" \
             --body-file "$RUNNER_TEMP/catalogue-pr-body.md"
-          echo "Draft catalogue review PR opened for ${count} identities." >> "$GITHUB_STEP_SUMMARY"
+          echo "Opened draft catalogue review PR on $branch." >> "$GITHUB_STEP_SUMMARY"
