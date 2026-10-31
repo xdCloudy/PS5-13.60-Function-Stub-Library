@@ -70,13 +70,17 @@ def discover(upstream: Path, revision: str) -> list[dict]:
             continue
         declarations = []
         for p in headers:
-            for match in DECLARATION.finditer(
-                    p.read_text(encoding="utf-8", errors="replace")):
+            source_text = p.read_text(encoding="utf-8", errors="replace")
+            if "APS5_VABI" not in source_text:
+                continue
+            for match in DECLARATION.finditer(source_text):
                 declarations.append((p, match))
         # Definitions can appear in several .cpp files: reject all duplicates.
         definitions = []
         for source in sources:
             content = source.read_text(encoding="utf-8", errors="replace")
+            if "APS5_VABI" not in content:
+                continue
             for match in FUNCTION.finditer(content):
                 definitions.append((source, match))
         name_count = Counter(m.group("name") for _, m in definitions)
@@ -84,7 +88,9 @@ def discover(upstream: Path, revision: str) -> list[dict]:
         decl_by_name = {m.group("name"): (p, m) for p, m in declarations}
         for source, match in definitions:
             name = match.group("name")
-            if name_count[name] != 1 or decl_count[name] != 1:
+            if (name.endswith(("_nid_no_patch", "_nid_no_patch_cut",
+                               "_nid_postfix"))
+                    or name_count[name] != 1 or decl_count[name] != 1):
                 continue
             rtype = normalize_type(match.group("rtype"))
             category = signature_return_class(rtype)
