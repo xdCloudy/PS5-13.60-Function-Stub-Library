@@ -84,15 +84,20 @@ jobs:
           import json
           d=json.load(open("reports/progress.json"))
           i=d["inventory"]; s=d["stubs"]
+          def metric(value):
+              if isinstance(value, int) and not isinstance(value, bool):
+                  return f"{value:,}"
+              return "unavailable (incomplete source/PR scan)"
+          prs=d['generated_from']['anyps5_open_prs']
           print("## PS5 readiness")
-          print(f"- Strictly reverified names: {i['strictly_reverified_named_records']:,} / {i['records']:,}")
-          print(f"- Qualified unique NIDs: {s['qualified_unique_nids_recomputed']:,}")
-          print(f"- AnyPS5 main definition matches: {s['qualified_unique_nids_matched_in_main_source']:,}")
-          print(f"- Open-PR patch matches: {s['qualified_unique_nids_matched_in_open_pr_additions']:,}")
-          print(f"- Open PR heads indexed: {d['generated_from']['anyps5_open_prs']['open_pr_scanned']:,} / {d['generated_from']['anyps5_open_prs']['open_pr_total']:,}")
-          print(f"- Public source-name proposals staged: {s['auto_imported_public_source_name_proposals']:,}")
-          print(f"- Open PR scan complete: {d['generated_from']['anyps5_open_prs']['open_pr_coverage_complete']}")
-          print("- Source matches do not guarantee export registration or runtime validation.")
+          print(f"- Strictly reverified names: {metric(i.get('strictly_reverified_named_records'))} / {metric(i.get('records'))}")
+          print(f"- Qualified unique NIDs: {metric(s.get('qualified_unique_nids_recomputed'))}")
+          print(f"- AnyPS5 main definition matches: {metric(s.get('qualified_unique_nids_matched_in_main_source'))}")
+          print(f"- Open-PR patch matches: {metric(s.get('qualified_unique_nids_matched_in_open_pr_additions'))}")
+          print(f"- Open PR heads indexed: {metric(prs.get('open_pr_scanned'))} / {metric(prs.get('open_pr_total'))}")
+          print(f"- Public source-name proposals staged: {metric(s.get('auto_imported_public_source_name_proposals'))}")
+          print(f"- Open PR scan complete: {prs.get('open_pr_coverage_complete') is True and prs.get('open_pr_symbol_coverage_complete') is True}")
+          print("- Missing metrics block publication readiness; source matches are not ABI or runtime validation.")
           PY
       - name: Commit generated reports
         shell: bash

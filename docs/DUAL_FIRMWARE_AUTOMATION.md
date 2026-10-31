@@ -11,7 +11,12 @@ prepares a separate, review-only candidate report from two sources:
 The workflow checks out trusted main, clones the original 3.20 repository,
 runs tools/dual_firmware_review.py and its regression tests, uploads an
 artifact and opens/updates one draft catalogue PR at
-automation/dual-firmware-review. It runs twice daily or by manual dispatch.
+automation/dual-firmware-review. It runs twice daily or by manual dispatch. In addition to the 75-row-per-class
+review PR preview, it uploads the complete untruncated JSONL review queue and
+runs a separate direct-source scan against the latest AnyPS5 main. It also
+checks symbol names against two independent public SDK header collections:
+PS5Dev/PS5SDK and ps5-payload-dev/sdk, pinning their source commits and
+recording only file/line references (not GPL-licensed header text).
 
 ## Classification
 
@@ -24,9 +29,19 @@ automation/dual-firmware-review. It runs twice daily or by manual dispatch.
 - Other rows remain excluded from candidate sampling with counts explaining
   covered, reserved, mismatched, unsafe, or unverified source states.
 
-The current AnyPS5 main/open PR comparison is explicitly marked as a
-snapshot. The existing final publisher must perform a fresh and complete
-overlap scan immediately before publication.
+The direct source scan marks candidates with APS5_VABI declarations or literal
+APS5_EXPORT aliases in present AnyPS5 main, reporting exact repository paths.
+It does not deduce absence from a missing textual match because exports can be
+macro-generated. Its output is explicitly **not ABI certification**.
+
+The current AnyPS5 main/open PR comparison is marked as a snapshot, and source
+PR coverage may be incomplete. The existing final publisher must perform a
+fresh, **complete** overlap scan immediately before publication. Incomplete
+scans block publication. The review queue is not a publisher input.
+
+Both public SDKs are works in progress and are not guaranteed to provide the
+correct ABI for each PS5 firmware. Even matching header names in both sources
+do not automatically approve prototypes or guest behaviour.
 
 ## Submission and approval rules
 
@@ -60,5 +75,12 @@ From this repository checkout:
       --out-json /tmp/dual-firmware-triage.json \
       --out-md /tmp/dual-firmware-review.md
 
-Results are metadata-only, capped at 75 sampled candidates per source
-class by default, and produce zero automatic approvals or upstream PRs.
+Results are metadata-only and produce zero automatic approvals or upstream
+PRs. The Markdown and small JSON review summary sample 75 candidates per
+source class, but the GitHub Actions artifact includes EVERY candidate in
+dual-firmware-all-candidates.jsonl and their direct-source observations in
+dual-firmware-reviewed-against-main.jsonl, plus public SDK header evidence
+hints in dual-firmware-public-evidence-hints.jsonl.
+
+The authorized submission secret remains required only for the catalogue
+review PR and the existing approved upstream submission workflows.
