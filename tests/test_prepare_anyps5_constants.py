@@ -112,6 +112,13 @@ class ConstantStubTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "ambiguous"):
             constants.render(self.root, [self.row])
 
+    def test_unregistered_cpp_is_not_silently_accepted(self):
+        self.fixture()
+        (self.folder / "CMakeLists.txt").write_text("add_library(example Other.cpp)\n")
+        with self.assertRaisesRegex(ValueError, "CMake target"):
+            constants.render(self.root, [self.row])
+
+
 
 if __name__ == "__main__":
     unittest.main()
