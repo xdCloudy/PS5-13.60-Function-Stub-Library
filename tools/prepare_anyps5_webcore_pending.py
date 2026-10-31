@@ -104,8 +104,9 @@ def render(upstream:Path, records:list[dict], apply:bool) -> list[str]:
     old_source = source.read_text(encoding="utf-8")
     old_header = header.read_text(encoding="utf-8")
     old_debt = debt.read_text(encoding="utf-8")
-    if old_source.strip():
-        raise ValueError("Export.cpp is no longer empty; inspect layout manually")
+    if any(re.search(r"\\b" + re.escape(row["name"]) + r"\\b", old_source)
+           for row in records):
+        raise ValueError("Candidate is already present in Export.cpp")
     if ('#include "prx/libSceNKWebKit/include/InventoryExports.hpp"'
             not in umbrella.read_text(encoding="utf-8")):
         raise ValueError("Header not reachable via library umbrella")
@@ -150,7 +151,7 @@ def render(upstream:Path, records:list[dict], apply:bool) -> list[str]:
             "identity; prototype/behavior unknown.\n"
         )
     if apply:
-        source.write_text(definitions,encoding="utf-8")
+        source.write_text((old_source.rstrip() + "\n\n" if old_source.strip() else "") + definitions, encoding="utf-8")
         header.write_text(expanded_header,encoding="utf-8")
         debt.write_text(old_debt.rstrip()+"\n"+audit,encoding="utf-8")
     return [x.relative_to(upstream).as_posix() for x in (source,header,debt)]
