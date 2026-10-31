@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
-from git_candidate_overlap import check_candidates_git, decode_changed_exports
+from git_candidate_overlap import check_candidates_git, decode_changed_exports, changed_existing_function
 from update_progress import nid_for
 
 
@@ -148,6 +148,71 @@ class GitOverlapTests(unittest.TestCase):
             self.assertFalse(result["candidates"][0]["verified_clear"])
             self.assertIn("pr_7_nid_collision", result["candidates"][0]["reasons"])
             self.assertTrue(result["candidates"][1]["verified_clear"])
+
+    def test_body_only_pr_collision_detected_without_repeated_abi_line(self):
+        source = (
+            "int APS5_VABI sceReviewed() {\n"
+            " NotImplemented_nid_no_patch(__func__);\n"
+            "}\n"
+            "int APS5_VABI sceUnrelated() {\n"
+            " NotImplemented_nid_no_patch(__func__);\n"
+            "}\n"
+        )
+        inside = ("diff --git a/Export.cpp b/Export.cpp\n"
+                  "@@ -2 +2 @@\n"
+                  "- NotImplemented_nid_no_patch(__func__);\n"
+                  "+ return 0;\n")
+        outside = inside.replace("@@ -2 +2 @@", "@@ -5 +5 @@")
+        self.assertTrue(changed_existing_function(source, inside, "sceReviewed"))
+        self.assertFalse(changed_existing_function(source, outside, "sceReviewed"))
+        self.assertTrue(changed_existing_function(source, outside, "sceUnrelated"))
+        self.assertTrue(changed_existing_function("bad source", inside, "sceReviewed"))
+
+    def test_existing_function_body_pr_head_blocks_only_changed_function(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            bare = Path(tmp) / "remote.git"
+            checkout = Path(tmp) / "repo"
+            subprocess.run(["git", "init", "--bare", "-q", str(bare)], check=True)
+            subprocess.run(["git", "clone", "-q", str(bare), str(checkout)], check=True)
+            source = checkout / "core/libs/prx/libSceExample/Export.cpp"
+            source.parent.mkdir(parents=True)
+            source.write_text(
+                "int APS5_VABI sceOne() {\n NotImplemented_nid_no_patch(__func__);\n}\n"
+                "int APS5_VABI sceTwo() {\n NotImplemented_nid_no_patch(__func__);\n}\n"
+            )
+            git(checkout, "add", ".")
+            git(checkout, "-c", "user.name=Fixture", "-c",
+                "user.email=fixture@example.invalid", "commit", "-qm", "main")
+            git(checkout, "branch", "-M", "main")
+            git(checkout, "push", "-q", "-u", "origin", "main")
+            git(checkout, "switch", "-q", "-c", "other-implementation")
+            source.write_text(source.read_text().replace(
+                "int APS5_VABI sceTwo() {\n NotImplemented_nid_no_patch(__func__);",
+                "int APS5_VABI sceTwo() {\n return 0;"))
+            git(checkout, "add", ".")
+            git(checkout, "-c", "user.name=Fixture", "-c",
+                "user.email=fixture@example.invalid", "commit", "-qm", "change body")
+            head = git(checkout, "rev-parse", "HEAD")
+            git(checkout, "push", "-q", "origin", "HEAD:refs/pull/9/head")
+            git(checkout, "switch", "-q", "main")
+            path = "core/libs/prx/libSceExample/Export.cpp"
+            candidates = [
+                {"library": "libSceExample", "name": name, "nid": nid_for(name),
+                 "path": path} for name in ("sceOne", "sceTwo")
+            ]
+            targets = {r["nid"]: {"name": r["name"], "path": path}
+                       for r in candidates}
+            with patch("git_candidate_overlap.list_open_prs",
+                       return_value=[{"number": 9, "head": {"sha": head}}]):
+                outcome = check_candidates_git(
+                    checkout, candidates, set(), "mock", nid_for,
+                    existing_targets=targets)
+            self.assertTrue(outcome["scan_complete"])
+            self.assertTrue(outcome["candidates"][0]["verified_clear"])
+            self.assertFalse(outcome["candidates"][1]["verified_clear"])
+            self.assertIn("pr_9_existing_function_modified",
+                          outcome["candidates"][1]["reasons"])
+
 
 
 if __name__ == "__main__":
