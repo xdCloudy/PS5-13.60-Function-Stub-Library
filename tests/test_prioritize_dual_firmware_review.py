@@ -46,6 +46,19 @@ class PriorityTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Duplicate"):
             prioritize([one,one])
 
+    def test_cross_provider_symbols_are_excluded_from_submissions(self):
+        rows=[
+            entry("sceTestA", "dual_3.20_and_13.60",
+                  status="upstream_other_library_source_symbol_observed"),
+            entry("sceTestB", "confirmed_13.60_only",
+                  status="no_direct_upstream_source_observation"),
+        ]
+        ranked, stats=prioritize(rows)
+        self.assertEqual([row["name"] for row in ranked], ["sceTestB"])
+        self.assertEqual(stats["counts"]["source_symbol_in_other_provider"], 1)
+        self.assertFalse(ranked[0]["approved_for_auto_submit"])
+        self.assertIn("provisional", report_md(ranked, stats, 5).lower())
+
     def test_unknown_source_state_rejected(self):
         with self.assertRaisesRegex(ValueError,"Unknown"):
             prioritize([entry("sceTestA","dual_3.20_and_13.60",
