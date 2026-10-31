@@ -222,6 +222,45 @@ scheduled dispatcher uses only the short-lived Actions token with
 submission secret. Without the verified secret and queued approved candidates,
 successful PR publication cannot be claimed.
 
+## Scheduled existing-stub constant/null/no-op implementations
+
+The independently gated constant-function stream is **not** the throwing-stub
+stream. `.github/workflows/anyps5-constant-auto-dispatch.yml` checks
+[`approvals/anyps5-constants/`](approvals/anyps5-constants/README.md) every
+six hours and after trusted-main approvals merge. For the first
+unpublished, owner-reviewed, digest-pinned one-library batch (1–150
+functions), it dispatches `anyps5-constant-submit.yml` with an immutable
+source-revision URL and `publish=true`. An empty approval queue is a
+successful, safe no-op.
+
+`tools/prepare_anyps5_constants.py` can only modify a pre-existing
+`APS5_VABI` source function with a matching declaration, registered CMake
+source file, matching canonical name/NID, independently reviewed original
+signature+body SHA-256, and a body containing **only**
+`NotImplemented_nid_no_patch(__func__);`. The declared return type
+must support exactly the reviewed `return 0;`, `return false;`,
+`return nullptr;` or an empty `void` body. It cannot infer
+semantics from a function name, stub inventory, 3.20 forwarding wrapper
+or generic default. It cannot add or change API declarations.
+
+The publisher commits and tests the exact changes, builds the specific
+affected library target even when upstream marks it `EXCLUDE_FROM_ALL`,
+runs Linux CTest and AnyPS5 conventions, and reconstructs the verified
+patch on a fresh runner. The final gate independently rechecks upstream
+main and every open Git PR head, including body-only edits to the
+specific function that would evade a declaration/export-only scan;
+other functions in the same file do not falsely reserve that identity.
+Pending generated contributor branches from **both** streams are
+checked. Only then does the isolated publisher load the private
+`ANYPS5_SUBMIT_TOKEN`, atomically create a unique evidence-digest
+branch on `xdCloudy/AnyPS5`, and open a **draft** upstream PR.
+
+A complete Linux build is not console runtime/ABI proof. The
+attested behaviour must have independently reviewed evidence *before*
+a candidate is committed to the approved queue. No active such
+evidence is included by default; absent reviewed data means no
+upstream submissions.
+
 ## Safety model
 
 * Pull request previews have read-only repository credentials.
