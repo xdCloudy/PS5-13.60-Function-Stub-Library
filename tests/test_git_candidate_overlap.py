@@ -80,6 +80,38 @@ class GitOverlapTests(unittest.TestCase):
         _, unknown = decode_changed_exports(diff, nid_for)
         self.assertTrue(unknown)
 
+    def test_generated_fork_branch_reserves_unsubmitted_nid(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            bare=Path(tmp)/"fork.git"
+            checkout=Path(tmp)/"checkout"
+            subprocess.run(["git","init","--bare","-q",str(bare)],check=True)
+            subprocess.run(["git","clone","-q",str(bare),str(checkout)],check=True)
+            path=checkout/"core/libs/prx/libSceExample/Export.cpp"
+            path.parent.mkdir(parents=True)
+            path.write_text("void APS5_VABI sceExisting() {}\n")
+            git(checkout,"add",".")
+            git(checkout,"-c","user.name=Fixture","-c","user.email=fixture@example.invalid",
+                "commit","-qm","base")
+            git(checkout,"branch","-M","main")
+            git(checkout,"push","-q","-u","origin","main")
+            git(checkout,"switch","-q","-c","feat/automated-reviewed-stubs-0123456789abcdef")
+            path.write_text(path.read_text()+"void APS5_VABI scePendingFromFork() {}\n")
+            git(checkout,"add",".")
+            git(checkout,"-c","user.name=Fixture","-c","user.email=fixture@example.invalid",
+                "commit","-qm","pending")
+            git(checkout,"push","-q","origin","HEAD")
+            git(checkout,"switch","-q","main")
+            candidate=[{"library":"libSceExample","nid":nid_for("scePendingFromFork")}]
+            with patch("git_candidate_overlap.list_open_prs",return_value=[]):
+                report=check_candidates_git(
+                    checkout,candidate,set(),"mock",nid_for,
+                    pending_fork_url=str(bare))
+            self.assertTrue(report["scan_complete"])
+            self.assertEqual(report["generated_fork_branches_verified"],1)
+            self.assertFalse(report["candidates"][0]["verified_clear"])
+            self.assertTrue(any(reason.startswith("generated_fork_")
+                                for reason in report["candidates"][0]["reasons"]))
+
     def test_local_git_refs_clear_unrelated_and_block_exact_collision(self):
         with tempfile.TemporaryDirectory() as tmp:
             bare = Path(tmp) / "upstream.git"
