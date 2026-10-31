@@ -10,7 +10,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "c3c45d73abd34dca81da6bad87cb6d36ea437a66",
+      "source_commit": "cf5a1805e50ceeccf6574abd98b13e9783c412c1",
       "source_file": "core/libs/prx/libSceAudioPropagation/InventoryExports.cpp"
     },
     {
@@ -23,7 +23,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "c3c45d73abd34dca81da6bad87cb6d36ea437a66",
+      "source_commit": "cf5a1805e50ceeccf6574abd98b13e9783c412c1",
       "source_file": "core/libs/prx/libSceResourceArbitrator/Export.cpp"
     },
     {
@@ -36,7 +36,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "c3c45d73abd34dca81da6bad87cb6d36ea437a66",
+      "source_commit": "cf5a1805e50ceeccf6574abd98b13e9783c412c1",
       "source_file": "core/libs/prx/libSceVenc/Export.cpp"
     },
     {
@@ -49,7 +49,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "c3c45d73abd34dca81da6bad87cb6d36ea437a66",
+      "source_commit": "cf5a1805e50ceeccf6574abd98b13e9783c412c1",
       "source_file": "core/libs/prx/libSceVideoOut/InventoryExports.cpp"
     },
     {
@@ -62,7 +62,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "c3c45d73abd34dca81da6bad87cb6d36ea437a66",
+      "source_commit": "cf5a1805e50ceeccf6574abd98b13e9783c412c1",
       "source_file": "core/libs/prx/libSceVideoOut/InventoryExports.cpp"
     }
   ],
@@ -76,5 +76,5 @@
   "reviewable_identity_count": 5,
   "schema_version": 1,
   "source_revision_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
-  "source_revision_anyps5": "c3c45d73abd34dca81da6bad87cb6d36ea437a66"
+  "source_revision_anyps5": "cf5a1805e50ceeccf6574abd98b13e9783c412c1"
 }
