@@ -84,6 +84,34 @@ class CandidateDiscoveryTests(unittest.TestCase):
         self.fixture("SceCustomResult")
         self.assertEqual(self.discover(), [])
 
+    def test_signature_hash_matches_implementation_patch_parser(self):
+        self.fixture("unsigned int")
+        rows = self.discover()
+        from prepare_anyps5_constants import FUNCTION
+        original = FUNCTION.search(self.cpp.read_text())
+        self.assertIsNotNone(original)
+        self.assertEqual(rows[0]["signature_sha256"],
+                         discovery.sha256(original.group("signature")))
+        self.assertEqual(rows[0]["body_sha256"],
+                         discovery.sha256(original.group("body")))
+
+    def test_large_whitespace_only_does_not_match(self):
+        self.fixture()
+        self.cpp.write_text(
+            self.cpp.read_text() + "\\n" +
+            "int " + " " * 30000 + " APS5_VABI " + " " * 30000 +
+            "invalid_no_signature;\\n")
+        rows = self.discover()
+        self.assertEqual(len(rows), 1)
+
+    def test_nonthrowing_duplicate_is_still_detected(self):
+        self.fixture()
+        second = self.folder / "Other.cpp"
+        second.write_text(
+            f'int APS5_VABI {self.name}(int count) {{\\n'
+            '  return 0;\\n}\\n')
+        self.assertEqual(self.discover(), [])
+
     def test_missing_real_upstream_checkout_or_revision_fails(self):
         with self.assertRaises(ValueError):
             discovery.discover(self.root / "missing", REVISION)
