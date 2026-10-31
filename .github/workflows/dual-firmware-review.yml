@@ -11,6 +11,8 @@ on:
       - 'tests/test_investigate_anyps5_source_evidence.py'
       - 'tools/match_public_ps5_sdk_hints.py'
       - 'tests/test_match_public_ps5_sdk_hints.py'
+      - 'tools/prioritize_dual_firmware_review.py'
+      - 'tests/test_prioritize_dual_firmware_review.py'
   workflow_dispatch:
   schedule:
     - cron: '37 */12 * * *'
@@ -45,6 +47,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_dual_firmware_review.py' -v
           python -m unittest discover -s tests -p 'test_investigate_anyps5_source_evidence.py' -v
           python -m unittest discover -s tests -p 'test_match_public_ps5_sdk_hints.py' -v
+          python -m unittest discover -s tests -p 'test_prioritize_dual_firmware_review.py' -v
       - name: Clone original public 3.20 forwarding sources
         run: git clone --quiet --depth 1 https://github.com/DNNDHH/PS5-3.20_Libs.git "$RUNNER_TEMP/original-320"
       - name: Clone current AnyPS5 main for source-evidence inspection
@@ -74,6 +77,11 @@ jobs:
             --sdk-payload "$RUNNER_TEMP/ps5-payload-sdk" \
             --out "$RUNNER_TEMP/dual-firmware-public-evidence-hints.jsonl" \
             --summary "$RUNNER_TEMP/dual-firmware-public-evidence-summary.json"
+          python tools/prioritize_dual_firmware_review.py \
+            --input "$RUNNER_TEMP/dual-firmware-public-evidence-hints.jsonl" \
+            --out "$RUNNER_TEMP/dual-firmware-priority-queue.jsonl" \
+            --summary "$RUNNER_TEMP/dual-firmware-priority-summary.json" \
+            --markdown "$RUNNER_TEMP/dual-firmware-priority.md"
           python - <<'PY'
           import json, os
           from pathlib import Path
@@ -85,7 +93,7 @@ jobs:
           assert doc["sources"]["13.60"]["repository"] == "xdCloudy/PS5-13.60-Function-Stub-Library"
           print(json.dumps(doc["classification_counts"], sort_keys=True))
           PY
-          cat "$RUNNER_TEMP/dual-firmware-review.md" >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUNNER_TEMP/dual-firmware-priority.md" >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve original evidence review output
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
@@ -98,6 +106,9 @@ jobs:
             ${{ runner.temp }}/dual-firmware-upstream-observations.json
             ${{ runner.temp }}/dual-firmware-public-evidence-hints.jsonl
             ${{ runner.temp }}/dual-firmware-public-evidence-summary.json
+            ${{ runner.temp }}/dual-firmware-priority-queue.jsonl
+            ${{ runner.temp }}/dual-firmware-priority-summary.json
+            ${{ runner.temp }}/dual-firmware-priority.md
           if-no-files-found: error
           retention-days: 90
       - name: Stage at most one review-only draft PR in catalogue
@@ -130,7 +141,8 @@ jobs:
           mkdir -p reports
           cp "$RUNNER_TEMP/dual-firmware-triage.json" reports/dual-firmware-triage.json
           cp "$RUNNER_TEMP/dual-firmware-review.md" reports/dual-firmware-review.md
-          git add reports/dual-firmware-triage.json reports/dual-firmware-review.md
+          cp "$RUNNER_TEMP/dual-firmware-priority.md" reports/dual-firmware-priority.md
+          git add reports/dual-firmware-triage.json reports/dual-firmware-review.md reports/dual-firmware-priority.md
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh dual-firmware review queue [skip ci]"
             git push origin "HEAD:$branch"

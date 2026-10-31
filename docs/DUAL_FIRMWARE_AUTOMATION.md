@@ -84,3 +84,16 @@ hints in dual-firmware-public-evidence-hints.jsonl.
 
 The authorized submission secret remains required only for the catalogue
 review PR and the existing approved upstream submission workflows.
+
+## Priority queue
+
+The workflow also emits dual-firmware-priority-queue.jsonl and the concise
+dual-firmware-priority.md report. They rank 13.60-confirmed candidates that
+have **no direct** APS5_VABI or literal APS5_EXPORT source observation,
+prioritising a matching historical 3.20 source. The source-existence check
+is not exhaustive: macros, aliases, open PRs, and generated definitions may
+still claim these exports. A candidate is only an investigation target,
+not permission to write a stub. Historical 3.20-only records are excluded.
+
+The reviewed report and priority table are updated on the existing review
+PR; the complete unapproved ranked queue remains in the run artifact.
