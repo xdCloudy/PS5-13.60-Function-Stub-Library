@@ -19,6 +19,14 @@ GLOBAL_CODEGEN = re.compile(
     re.I,
 )
 PUBLIC_NAME_DISAMBIG = re.compile(r"_nid_disambig[0-9]+$")
+ASM_EXPORT = re.compile(
+    r'\bAPS5_(?:SIGNAL_)?ASM_FUNCTION\s*\(\s*"([A-Za-z_][A-Za-z_0-9]*)"\s*\)'
+)
+ASM_TOKEN = re.compile(r"\bAPS5_(?:SIGNAL_)?ASM_FUNCTION\b")
+BUILD_REGISTRATION = re.compile(
+    r"^core/libs/prx/([^/]+)/.*(?:CMakeLists\.txt|\.(?:def|map|exports|inc))$",
+    re.I,
+)
 
 
 def git(checkout: Path, *args: str) -> str:
@@ -28,7 +36,9 @@ def git(checkout: Path, *args: str) -> str:
     return proc.stdout.strip()
 
 
-def decode_changed_exports(diff: str, nid_for) -> tuple[set[str], bool]:
+def decode_changed_exports(
+    diff: str, nid_for, *, candidate_libraries: set[str] | None = None
+) -> tuple[set[str], bool]:
     """Parse full textual Git diff additions; unknown registration syntax blocks."""
     reservations: set[str] = set()
     unknown = False
@@ -42,10 +52,15 @@ def decode_changed_exports(diff: str, nid_for) -> tuple[set[str], bool]:
         text = "\n".join(additions)
         if GLOBAL_CODEGEN.fullmatch(path):
             unknown = True
+        build = BUILD_REGISTRATION.fullmatch(path)
+        if build and (candidate_libraries is None or
+                      build.group(1).casefold() in candidate_libraries):
+            unknown = True
         if not CODE.search(path) or not path.startswith("core/libs/prx/"):
             return
         names = DEFINITION.findall(text)
         aliases = EXPORT_ALIAS.findall(text)
+        assembly = ASM_EXPORT.findall(text)
         for symbol in names:
             if symbol.endswith(("_nid_no_patch", "_nid_no_patch_cut")):
                 continue
@@ -53,8 +68,15 @@ def decode_changed_exports(diff: str, nid_for) -> tuple[set[str], bool]:
                 "", symbol.removesuffix("_nid_postfix"))
             reservations.add(nid_for(canonical))
         reservations.update(aliases)
+        for symbol in assembly:
+            if symbol.endswith(("_nid_no_patch", "_nid_no_patch_cut")):
+                continue
+            canonical = PUBLIC_NAME_DISAMBIG.sub(
+                "", symbol.removesuffix("_nid_postfix"))
+            reservations.add(nid_for(canonical))
         if (len(re.findall(r"\bAPS5_VABI\b", text)) != len(names) or
                 len(re.findall(r"\bAPS5_EXPORT\b", text)) != len(aliases) or
+                len(ASM_TOKEN.findall(text)) != len(assembly) or
                 UNKNOWN_REGISTRATION.search(text)):
             unknown = True
 
@@ -82,6 +104,7 @@ def check_candidates_git(
     if not 1 <= per_fetch <= 100:
         raise ValueError("Invalid Git fetch batch")
     before = head_vector(list_open_prs(token, fetch))
+    candidate_libraries = {r["library"].casefold() for r in candidates}
     all_nids = {nid for _, nid in main_occupied}
     reasons: dict[str, set[str]] = {
         r["nid"]: ({"current_main_nid_collision"} if r["nid"] in all_nids else set())
@@ -108,7 +131,8 @@ def check_candidates_git(
             # A complete local Git diff has no REST changed-files or patch cap.
             diff = git(checkout, "diff", "--no-ext-diff", "--no-renames",
                        "--unified=0", base, ref, "--", "core/", "tools/")
-            reserved, unknown = decode_changed_exports(diff, nid_for)
+            reserved, unknown = decode_changed_exports(
+                diff, nid_for, candidate_libraries=candidate_libraries)
             for nid, blocked in reasons.items():
                 if nid in reserved:
                     blocked.add(f"pr_{n}_nid_collision")
