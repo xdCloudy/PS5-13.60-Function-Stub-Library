@@ -30,6 +30,9 @@ def prioritize(rows):
         if status=="upstream_source_symbol_observed":
             counts["source_symbol_already_observed"]+=1
             continue
+        if status=="upstream_other_library_source_symbol_observed":
+            counts["source_symbol_in_other_provider"]+=1
+            continue
         if status!="no_direct_upstream_source_observation":
             raise ValueError("Unknown source scan state: "+str(status))
         rank=(0 if group=="dual_3.20_and_13.60" else 1,
@@ -38,10 +41,11 @@ def prioritize(rows):
         record=dict(item)
         record["research_priority"]="dual-source" if rank[0]==0 else "13.60-confirmed"
         record["next_evidence_requirements"]=[
-            "independent exact PS5 guest ABI and prototype",
-            "verify provider ownership and export registration",
+            "verify original name/NID hashes and chosen system-library ownership",
             "complete live upstream main and open PR overlap scan",
-            "build, CTest and conventions validation",
+            "only a fail-fast throwing placeholder; no guessed normal return",
+            "pass compile, CTest, conventions and technical debt checks",
+            "independent ABI required before claiming any returning behaviour",
         ]
         record["approved_for_auto_submit"]=False
         record["safe_to_submit_without_further_evidence"]=False
@@ -54,13 +58,14 @@ def prioritize(rows):
              "by_library":{lib:dict(groups) for lib,groups in sorted(
                 libraries.items(),key=lambda x:(-sum(x[1].values()),x[0].casefold()))},
              "automatic_approvals":0,"automatic_upstream_prs":0,
-             "policy":"Evidence triage is not guest ABI verification or permission to publish"}
+             "policy":"Provisional throwing placeholders may follow accepted AnyPS5 convention, but source dedup, complete live PR overlap, build and upstream review remain mandatory"}
     return ordered,summary
 
 def report_md(ordered,summary,limit):
     lines=["# PS5 3.20 + 13.60 evidence investigation priorities","",
            "All records are unapproved. A missing direct source-text match is not proof of export absence.",
-           "Full live open-PR overlap and independent ABI checks remain mandatory.","",
+           "Full live open-PR overlap, provider ownership and build checks remain mandatory.", 
+           "Exact guest ABI is needed to claim returning behaviour, not to propose an explicitly provisional always-throwing import placeholder.","",
            "## Classification","",
            "| Status | Count |","|---|---:|"]
     for name,count in summary["counts"].items():
@@ -78,8 +83,9 @@ def report_md(ordered,summary,limit):
         hints=item.get("public_sdk_header_name_observations") or {}
         lines.append("| "+item["library"]+" | "+item["name"]+" | "+item["nid"]+" | "+
                      item["evidence_class"]+" | "+("yes" if hints else "none")+" |")
-    lines.extend(["","None of these are approved for upstream submission. Public SDK header names",
-                  "and 3.20 forwarding entries do not establish the correct guest ABI or behaviour."])
+    lines.extend(["","None of these are independently validated as guest ABI. Public SDK header names",
+                  "and 3.20 forwarding entries do not establish the correct guest ABI or behaviour.",
+                  "Merged upstream precedents #10068, #9990 and #9695 permit provisional parameterless throwing exports; all still require complete live overlap checks."])
     return "\n".join(lines)+"\n"
 
 def main():
