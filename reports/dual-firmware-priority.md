@@ -9,9 +9,9 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 1440 |
-| source_symbol_already_observed | 7709 |
-| source_symbol_in_other_provider | 2237 |
+| priority_candidates | 1229 |
+| source_symbol_already_observed | 7919 |
+| source_symbol_in_other_provider | 2238 |
 
 ## Highest-volume libraries
 
@@ -19,17 +19,12 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 |---|---:|---:|---:|
 | libSceNpCommon | 281 | 348 | 629 |
 | libSceJsc | 313 | 2 | 315 |
-| libSceMediaFrameworkInterface | 0 | 120 | 120 |
 | libSceNKWebKit | 0 | 120 | 120 |
-| libSceVnaInternal | 0 | 71 | 71 |
 | libSceIcu | 60 | 0 | 60 |
 | libSceCustomMusicSysCallWrapper | 0 | 47 | 47 |
 | libSceXml | 28 | 0 | 28 |
-| libSceVoiceCommand | 0 | 18 | 18 |
+| libSceMediaFrameworkInterface | 0 | 13 | 13 |
 | libSceVideoOut | 0 | 10 | 10 |
-| libSceMusicCoreInterface | 0 | 6 | 6 |
-| libSceVcodec | 0 | 5 | 5 |
-| libSceMediaFrameworkUtil | 0 | 4 | 4 |
 | libSceAgc | 0 | 2 | 2 |
 | libSceAjmi | 0 | 1 | 1 |
 | libSceNgs2 | 0 | 1 | 1 |
