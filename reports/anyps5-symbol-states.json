@@ -4,7 +4,7 @@
   "explicit_export_alias_records": 9000,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 44129,
+  "observed_library_nid_records": 44130,
   "per_library": {
     "libc": {
       "assembly_definition_unvalidated": 2,
@@ -915,7 +915,7 @@
       "explicit_alias_no_visible_definition": 14
     },
     "libscesavedata.native": {
-      "definition_nonthrowing_unvalidated": 44,
+      "definition_nonthrowing_unvalidated": 45,
       "definition_throwing": 74
     },
     "libscesavedatadialog": {
@@ -1091,13 +1091,16 @@
       "definition_throwing": 4
     },
     "libscevdecsavc": {
-      "definition_throwing": 4
+      "definition_nonthrowing_unvalidated": 1,
+      "definition_throwing": 3
     },
     "libscevdecsavc2": {
-      "definition_throwing": 4
+      "definition_nonthrowing_unvalidated": 1,
+      "definition_throwing": 3
     },
     "libscevdecshevc": {
-      "definition_throwing": 13,
+      "definition_nonthrowing_unvalidated": 1,
+      "definition_throwing": 12,
       "explicit_alias_no_visible_definition": 6
     },
     "libscevdecsvp9": {
@@ -1262,12 +1265,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "f1a7b02028ae50adaf6c5aaaef892a51841b25bf",
+  "source_sha": "e0caf1360035286bd22b9f2a3030e97b880ffb28",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
-    "definition_nonthrowing_unvalidated": 9645,
-    "definition_throwing": 25358,
+    "definition_nonthrowing_unvalidated": 9649,
+    "definition_throwing": 25355,
     "explicit_alias_no_visible_definition": 9000
   }
 }
