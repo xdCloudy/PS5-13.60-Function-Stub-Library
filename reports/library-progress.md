@@ -129,7 +129,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceFont | 240 | 240 | 44 | 36 | 0 |
 | libSceVideoOut | 237 | 199 | 133 | 101 | 0 |
 | libSceNet | 235 | 223 | 0 | 0 | 0 |
-| libSceMediaFrameworkInterface | 225 | 139 | 139 | 0 | 107 |
+| libSceMediaFrameworkInterface | 225 | 139 | 139 | 107 | 0 |
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |
 | libSceJson2 | 215 | 215 | 0 | 0 | 0 |
 | libSceNKWebKitRequirements | 214 | 142 | 0 | 0 | 0 |

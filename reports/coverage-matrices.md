@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-11-01T06:08:46+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-11-01T13:28:30+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -87,7 +87,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshSQLite | 779 | 0 | 0 | 0 | 0 | 0 | 779 |
 | SystemIOCompression | 739 | 0 | 0 | 0 | 0 | 0 | 739 |
 | MonoSecurity | 700 | 0 | 0 | 0 | 0 | 0 | 700 |
-| libSceUserService | 651 | 386 | 579 | 486 | 51 | 0 | 114 |
+| libSceUserService | 651 | 386 | 579 | 486 | 486 | 0 | 114 |
 | libSceLibreSSl3 | 665 | 421 | 641 | 554 | 0 | 0 | 24 |
 | SceVshOrbisContentManager | 594 | 0 | 0 | 0 | 0 | 0 | 594 |
 | SceVshShellUIUgc | 591 | 0 | 0 | 0 | 0 | 0 | 591 |
@@ -149,8 +149,8 @@ All figures come from the canonical inventory and generated source observations.
 | libSceFont | 240 | 113 | 240 | 201 | 201 | 0 | 0 |
 | libSceVideoOut | 226 | 136 | 199 | 166 | 149 | 0 | 38 |
 | libSceNet | 233 | 180 | 223 | 188 | 182 | 0 | 12 |
-| libSceMediaFrameworkInterface | 225 | 0 | 139 | 120 | 0 | 107 | 86 |
-| libSceGLSlimVSH | 217 | 170 | 208 | 175 | 7 | 0 | 9 |
+| libSceMediaFrameworkInterface | 225 | 0 | 139 | 120 | 107 | 0 | 86 |
+| libSceGLSlimVSH | 217 | 170 | 208 | 175 | 23 | 0 | 9 |
 | libSceJson2 | 215 | 184 | 215 | 184 | 126 | 0 | 0 |
 | libSceNKWebKitRequirements | 177 | 109 | 142 | 114 | 0 | 0 | 72 |
 | libScePad | 212 | 87 | 194 | 173 | 164 | 0 | 18 |
@@ -495,7 +495,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceDipsw | 10 | 7 | 10 | 8 | 8 | 0 | 0 |
 | libSceMsgDialog | 10 | 8 | 10 | 8 | 7 | 0 | 0 |
 | libSceMsgDialog.native | 10 | 0 | 10 | 8 | 8 | 0 | 0 |
-| libSceRnpsBundle | 10 | 0 | 5 | 4 | 0 | 0 | 5 |
+| libSceRnpsBundle | 10 | 0 | 5 | 4 | 4 | 0 | 5 |
 | libSceSaveDataDialog | 10 | 8 | 10 | 8 | 0 | 0 | 0 |
 | libSceSaveDataDialog.native | 10 | 8 | 10 | 8 | 8 | 0 | 0 |
 | libSceSystemTts | 10 | 5 | 9 | 8 | 8 | 0 | 1 |
@@ -822,10 +822,10 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 16,102 | Source-backed or canonical classification |
-| anyps5 throwing marker | 11,618 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 4,484 | Source-backed or canonical classification |
-| open pr qualified partial | 1,187 | Source-backed or canonical classification |
+| anyps5 main definition matches | 16,664 | Source-backed or canonical classification |
+| anyps5 throwing marker | 12,056 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 4,608 | Source-backed or canonical classification |
+| open pr qualified partial | 1,080 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
 | build verified live | unknown | Not measured; never inferred from source bodies |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: 6190e0efeb2e686e763a00518547b593f23ff163
-Added identities: 1,235; removed: 642; changed source classifications: 186.
+Previous SHA: 3ee28266a3eea1f59d7ecead00b1e760f778ccac
+Added identities: 855; removed: 29; changed source classifications: 268.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,14 +903,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-11-01T06:08:46+00:00 |
-| pr scanned | 1,595 |
-| pr total | 1,615 |
+| last refresh utc | 2026-11-01T13:28:30+00:00 |
+| pr scanned | 1,647 |
+| pr total | 1,669 |
 | pr complete | 0 |
 | pr errors | 20 |
-| anyps5 symbol observations | 43,303 |
+| anyps5 symbol observations | 44,129 |
 | anyps5 declarations only | 120 |
-| anyps5 explicit alias records | 8,973 |
+| anyps5 explicit alias records | 9,000 |
 | anyps5 assembly definition records | 6 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
@@ -921,15 +921,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 18,056 |
-| anyps5 withheld names | 46 |
+| anyps5 public source proposals | 18,292 |
+| anyps5 withheld names | 47 |
 | overlap publication safe | 0 |
 
 ### Actual progress trend
 
 | Observed at (UTC) | Indexed | Strictly verified names | AnyPS5 main source matches | Open PR heads scanned |
 |---|---:|---:|---:|---:|
-| 2026-10-30T07:23:47+00:00 | 314,038 | 39,966 | 7,753 | 540 |
 | 2026-10-30T07:28:37+00:00 | 314,038 | 39,966 | 7,753 | 1,076 |
 | 2026-10-30T13:00:07+00:00 | 314,038 | 39,966 | 15,544 | 1,388 |
 | 2026-10-30T19:57:11+00:00 | 314,038 | 39,966 | 15,583 | 1,610 |
@@ -949,6 +948,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-10-31T17:16:26+00:00 | 314,038 | 39,966 | 15,662 | 1,687 |
 | 2026-10-31T21:37:41+00:00 | 314,038 | 39,966 | 15,661 | 1,668 |
 | 2026-11-01T06:08:46+00:00 | 314,038 | 39,966 | 16,102 | 1,595 |
+| 2026-11-01T13:28:30+00:00 | 314,038 | 39,966 | 16,664 | 1,647 |
 
 ### Coverage denominators
 
