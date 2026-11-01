@@ -216,7 +216,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshOrbisAbstractStorage | 91 | 0 | 0 | 0 | 0 |
 | libSceDataTransfer | 88 | 88 | 28 | 24 | 0 |
 | libSceJson | 88 | 88 | 0 | 0 | 0 |
-| libSceVnaInternal | 88 | 84 | 84 | 0 | 71 |
+| libSceVnaInternal | 88 | 84 | 84 | 71 | 0 |
 | libSceRegMgr | 87 | 66 | 0 | 0 | 0 |
 | libSceSysCore | 87 | 79 | 7 | 4 | 0 |
 | SystemIOCompressionFileSystem | 86 | 0 | 0 | 0 | 0 |
@@ -331,7 +331,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceOpusDec | 30 | 15 | 1 | 1 | 0 |
 | ReactNativeModulesVshTelemetryNq | 29 | 0 | 0 | 0 | 0 |
 | libSceAvPlayer.native | 29 | 29 | 0 | 0 | 0 |
-| libSceVoiceCommand | 29 | 23 | 23 | 0 | 18 |
+| libSceVoiceCommand | 29 | 23 | 23 | 18 | 0 |
 | SceVshNpSessionService | 28 | 0 | 0 | 0 | 0 |
 | libSceCommonDialog | 28 | 16 | 0 | 0 | 0 |
 | libSceKeyboard | 28 | 24 | 0 | 0 | 0 |
@@ -458,7 +458,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceDepth2 | 11 | 10 | 0 | 0 | 0 |
 | libSceGvMp4Parser | 11 | 5 | 0 | 0 | 0 |
 | libSceJpegParser | 11 | 5 | 0 | 0 | 0 |
-| libSceMediaFrameworkUtil | 11 | 5 | 5 | 0 | 4 |
+| libSceMediaFrameworkUtil | 11 | 5 | 5 | 4 | 0 |
 | libSceNetCtlAp | 11 | 11 | 0 | 0 | 0 |
 | libSceNpScoreCompat | 11 | 11 | 0 | 0 | 0 |
 | libSceNpSessionSignalingCrossplay | 11 | 5 | 0 | 0 | 0 |
@@ -503,7 +503,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceNpProfileDialog | 8 | 8 | 0 | 0 | 0 |
 | libSceSulphaDrv | 8 | 8 | 0 | 0 | 0 |
 | libSceUrlConfigResolver | 8 | 8 | 0 | 0 | 0 |
-| libSceVcodec | 8 | 5 | 5 | 0 | 5 |
+| libSceVcodec | 8 | 5 | 5 | 5 | 0 |
 | libSceVrHand | 8 | 8 | 0 | 0 | 0 |
 | libjimage | 8 | 0 | 0 | 0 | 0 |
 | libkernel_qadisc | 8 | 6 | 0 | 0 | 0 |
@@ -522,7 +522,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceJxrParser | 7 | 0 | 0 | 0 | 0 |
 | libSceLibcInternalExt | 7 | 7 | 0 | 0 | 0 |
 | libSceLoginDialog | 7 | 7 | 0 | 0 | 0 |
-| libSceMusicCoreInterface | 7 | 7 | 7 | 0 | 6 |
+| libSceMusicCoreInterface | 7 | 7 | 7 | 6 | 0 |
 | libSceNetCtlApDialog | 7 | 7 | 0 | 0 | 0 |
 | libSceNpAuthAuthorizedAppDialog | 7 | 7 | 0 | 0 | 0 |
 | libSceNpSnsFacebookDialog | 7 | 7 | 0 | 0 | 0 |

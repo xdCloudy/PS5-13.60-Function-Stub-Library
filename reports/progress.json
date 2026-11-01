@@ -1,18 +1,18 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "6190e0efeb2e686e763a00518547b593f23ff163",
+    "anyps5_main_commit": "3ee28266a3eea1f59d7ecead00b1e760f778ccac",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 191,
-      "open_pr_cached": 1496,
+      "open_pr_cache_expired_or_closed": 329,
+      "open_pr_cached": 1339,
       "open_pr_coverage_complete": false,
       "open_pr_errors": 20,
-      "open_pr_newly_scanned": 172,
-      "open_pr_scanned": 1668,
+      "open_pr_newly_scanned": 256,
+      "open_pr_scanned": 1595,
       "open_pr_snapshot_stable": true,
       "open_pr_stale_heads_invalidated": 0,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 1688,
+      "open_pr_total": 1615,
       "open_pr_unscanned": 20
     },
     "catalog_manifest_counts": {
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-10-31T21:37:41+00:00",
+    "generated_at_utc": "2026-11-01T06:08:46+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -409,7 +409,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 1511,
-      "upstream_main_catalogue_source_matches": 263,
+      "upstream_main_catalogue_source_matches": 264,
       "upstream_main_source_matches": 0,
       "verified_names": 1357
     },
@@ -463,7 +463,7 @@
       "open_pr_added_matches": 629,
       "qualified_records": 782,
       "records": 1199,
-      "upstream_main_catalogue_source_matches": 331,
+      "upstream_main_catalogue_source_matches": 358,
       "upstream_main_source_matches": 42,
       "verified_names": 1187
     },
@@ -697,7 +697,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 539,
-      "upstream_main_catalogue_source_matches": 179,
+      "upstream_main_catalogue_source_matches": 198,
       "upstream_main_source_matches": 0,
       "verified_names": 413
     },
@@ -1462,7 +1462,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 166,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 141,
       "upstream_main_source_matches": 0,
       "verified_names": 161
     },
@@ -1894,7 +1894,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 93,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 75,
       "upstream_main_source_matches": 0,
       "verified_names": 85
     },
@@ -1963,11 +1963,11 @@
     },
     {
       "library": "libSceVnaInternal",
-      "open_pr_added_matches": 71,
+      "open_pr_added_matches": 0,
       "qualified_records": 84,
       "records": 88,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 71,
+      "upstream_main_source_matches": 71,
       "verified_names": 84
     },
     {
@@ -1975,7 +1975,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 87,
-      "upstream_main_catalogue_source_matches": 58,
+      "upstream_main_catalogue_source_matches": 59,
       "upstream_main_source_matches": 0,
       "verified_names": 66
     },
@@ -2344,7 +2344,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 53,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 41,
       "upstream_main_source_matches": 0,
       "verified_names": 53
     },
@@ -2704,7 +2704,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 37,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 32,
       "upstream_main_source_matches": 0,
       "verified_names": 37
     },
@@ -2998,11 +2998,11 @@
     },
     {
       "library": "libSceVoiceCommand",
-      "open_pr_added_matches": 18,
+      "open_pr_added_matches": 0,
       "qualified_records": 23,
       "records": 29,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 18,
+      "upstream_main_source_matches": 18,
       "verified_names": 23
     },
     {
@@ -4141,11 +4141,11 @@
     },
     {
       "library": "libSceMediaFrameworkUtil",
-      "open_pr_added_matches": 4,
+      "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 11,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 4,
+      "upstream_main_source_matches": 4,
       "verified_names": 5
     },
     {
@@ -4546,11 +4546,11 @@
     },
     {
       "library": "libSceVcodec",
-      "open_pr_added_matches": 5,
+      "open_pr_added_matches": 0,
       "qualified_records": 5,
       "records": 8,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 5,
+      "upstream_main_source_matches": 5,
       "verified_names": 5
     },
     {
@@ -4717,11 +4717,11 @@
     },
     {
       "library": "libSceMusicCoreInterface",
-      "open_pr_added_matches": 6,
+      "open_pr_added_matches": 0,
       "qualified_records": 7,
       "records": 7,
-      "upstream_main_catalogue_source_matches": 0,
-      "upstream_main_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 6,
+      "upstream_main_source_matches": 6,
       "verified_names": 7
     },
     {
@@ -7183,33 +7183,33 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7739,
-    "anyps5_main_nonthrowing_source_records_live": 4400,
-    "anyps5_main_nonthrowing_unique_nids_live": 4393,
-    "anyps5_main_throwing_marker_records_live": 11261,
-    "anyps5_main_throwing_unique_nids_live": 11261,
-    "anyps5_main_tracked_source_records_live": 15661,
-    "anyps5_main_tracked_unique_nids_live": 15654,
-    "auto_imported_catalog_matching_proposals": 5,
-    "auto_imported_public_source_name_proposals": 17728,
-    "external_source_evidence_records": 44595,
+    "anyps5_main_nonthrowing_source_records_live": 4484,
+    "anyps5_main_nonthrowing_unique_nids_live": 4477,
+    "anyps5_main_throwing_marker_records_live": 11618,
+    "anyps5_main_throwing_unique_nids_live": 11618,
+    "anyps5_main_tracked_source_records_live": 16102,
+    "anyps5_main_tracked_unique_nids_live": 16095,
+    "auto_imported_catalog_matching_proposals": 11,
+    "auto_imported_public_source_name_proposals": 18056,
+    "external_source_evidence_records": 44478,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
-    "main_nonthrowing_definition_record_matches": 1004,
-    "main_throwing_marker_record_matches": 6735,
-    "new_upstream_nid_candidates_for_review": 24484,
+    "main_nonthrowing_definition_record_matches": 1008,
+    "main_throwing_marker_record_matches": 6835,
+    "new_upstream_nid_candidates_for_review": 24372,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
-    "qualified_unique_nids_matched_in_main_source": 7739,
-    "qualified_unique_nids_matched_in_open_pr_additions": 1291,
+    "qualified_unique_nids_matched_in_main_source": 7843,
+    "qualified_unique_nids_matched_in_open_pr_additions": 1187,
     "qualified_unique_nids_not_matched_in_main_or_pr_scans": 1719,
     "qualified_unique_nids_recomputed": 10749,
     "saved_qualified_unique_nids": 10750,
     "saved_vs_recomputed_delta": 1,
-    "source_names_withheld_by_safety_filter": 40,
+    "source_names_withheld_by_safety_filter": 46,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 33510,
-    "verified_catalog_identity_main_source_matches": 15661
+    "upstream_source_definitions_seen": 34285,
+    "verified_catalog_identity_main_source_matches": 16102
   }
 }
