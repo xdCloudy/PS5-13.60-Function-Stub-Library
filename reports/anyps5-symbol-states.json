@@ -1,15 +1,15 @@
 {
   "assembly_definition_records": 6,
   "build_verified": null,
-  "explicit_export_alias_records": 9000,
+  "explicit_export_alias_records": 8955,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 44130,
+  "observed_library_nid_records": 44110,
   "per_library": {
     "libc": {
       "assembly_definition_unvalidated": 2,
       "declaration_without_visible_definition": 4,
-      "definition_nonthrowing_unvalidated": 1526,
+      "definition_nonthrowing_unvalidated": 1544,
       "definition_throwing": 15,
       "explicit_alias_no_visible_definition": 1
     },
@@ -210,8 +210,8 @@
       "definition_throwing": 9
     },
     "libscecamera": {
-      "definition_nonthrowing_unvalidated": 52,
-      "definition_throwing": 73,
+      "definition_nonthrowing_unvalidated": 54,
+      "definition_throwing": 71,
       "explicit_alias_no_visible_definition": 3
     },
     "libscecdlgadidclient": {
@@ -531,7 +531,7 @@
       "declaration_without_visible_definition": 1,
       "definition_nonthrowing_unvalidated": 84,
       "definition_throwing": 720,
-      "explicit_alias_no_visible_definition": 658
+      "explicit_alias_no_visible_definition": 613
     },
     "libscelibressl": {
       "definition_nonthrowing_unvalidated": 114,
@@ -660,8 +660,7 @@
       "definition_throwing": 276
     },
     "libscenpentitlementaccess": {
-      "definition_nonthrowing_unvalidated": 22,
-      "definition_throwing": 3
+      "definition_nonthrowing_unvalidated": 25
     },
     "libscenpeuladialog": {
       "definition_throwing": 9
@@ -760,8 +759,8 @@
       "definition_throwing": 66
     },
     "libscenpwebapi": {
-      "definition_nonthrowing_unvalidated": 31,
-      "definition_throwing": 57,
+      "definition_nonthrowing_unvalidated": 34,
+      "definition_throwing": 54,
       "explicit_alias_no_visible_definition": 38
     },
     "libscenpwebapi2": {
@@ -1053,7 +1052,7 @@
       "explicit_alias_no_visible_definition": 10
     },
     "libsceult": {
-      "definition_nonthrowing_unvalidated": 70,
+      "definition_nonthrowing_unvalidated": 77,
       "definition_throwing": 18
     },
     "libsceupdateservice": {
@@ -1265,12 +1264,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "e0caf1360035286bd22b9f2a3030e97b880ffb28",
+  "source_sha": "93dbd0f82aea684e95f15f06e7d42c0064af18cf",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 120,
-    "definition_nonthrowing_unvalidated": 9649,
-    "definition_throwing": 25355,
-    "explicit_alias_no_visible_definition": 9000
+    "definition_nonthrowing_unvalidated": 9682,
+    "definition_throwing": 25347,
+    "explicit_alias_no_visible_definition": 8955
   }
 }
