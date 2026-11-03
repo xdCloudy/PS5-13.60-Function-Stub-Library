@@ -9,8 +9,8 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 1153 |
-| source_symbol_already_observed | 7995 |
+| priority_candidates | 1143 |
+| source_symbol_already_observed | 8005 |
 | source_symbol_in_other_provider | 2238 |
 
 ## Highest-volume libraries
@@ -22,7 +22,6 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceNKWebKit | 0 | 120 | 120 |
 | libSceIcu | 60 | 0 | 60 |
 | libSceMediaFrameworkInterface | 0 | 13 | 13 |
-| libSceVideoOut | 0 | 10 | 10 |
 | libSceAgc | 0 | 2 | 2 |
 | libSceNgs2 | 0 | 1 | 1 |
 | libSceNpEntitlementAccess | 0 | 1 | 1 |

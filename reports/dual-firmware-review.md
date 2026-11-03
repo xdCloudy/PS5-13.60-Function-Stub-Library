@@ -4,8 +4,8 @@ Read-only identity/evidence triage. This is NOT approval to generate,
 implement, submit, or merge AnyPS5 stubs.
 
 Original 3.20 source: DNNDHH/PS5-3.20_Libs @ b2a77c09cd71c01f34c790cfbe98c751a13262ad
-13.60 catalogue: xdCloudy/PS5-13.60-Function-Stub-Library @ 6483a6ec643efcd519c9ab51644bb770fe2703a4
-AnyPS5 comparison snapshot: d1ae628bc2f62459cce1e9872ba5632c938c71f2
+13.60 catalogue: xdCloudy/PS5-13.60-Function-Stub-Library @ 24c390639597fe886260089f14841f8543ec203d
+AnyPS5 comparison snapshot: 1e658521a0a599872612bb91949311e2956b5283
 Complete upstream open PR snapshot: False
 
 ## Classification counts
