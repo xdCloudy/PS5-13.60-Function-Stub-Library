@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 612 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 629 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |
@@ -127,13 +127,13 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshNpWebapi | 246 | 0 | 0 | 0 | 0 |
 | libSceAgcVsh | 245 | 239 | 0 | 0 | 0 |
 | libSceFont | 240 | 240 | 44 | 36 | 0 |
-| libSceVideoOut | 237 | 199 | 133 | 101 | 10 |
+| libSceVideoOut | 237 | 199 | 133 | 111 | 0 |
 | libSceNet | 235 | 223 | 0 | 0 | 0 |
 | libSceMediaFrameworkInterface | 225 | 139 | 139 | 107 | 0 |
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |
 | libSceJson2 | 215 | 215 | 0 | 0 | 0 |
 | libSceNKWebKitRequirements | 214 | 142 | 0 | 0 | 0 |
-| libScePad | 212 | 194 | 4 | 0 | 0 |
+| libScePad | 212 | 194 | 4 | 0 | 1 |
 | libmono-btls-shared | 212 | 205 | 0 | 0 | 0 |
 | SceVshIme | 211 | 0 | 0 | 0 | 0 |
 | SceVshNpWebapi2 | 208 | 0 | 0 | 0 | 0 |
@@ -367,7 +367,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShareVideoTranscoderWrapper | 23 | 0 | 0 | 0 | 0 |
 | libkernel_jvm | 23 | 23 | 0 | 0 | 0 |
 | I18NWest | 22 | 0 | 0 | 0 | 0 |
-| libSceAudiodec | 22 | 22 | 2 | 0 | 1 |
+| libSceAudiodec | 22 | 22 | 2 | 0 | 0 |
 | libSceShareUtility | 22 | 22 | 0 | 0 | 0 |
 | libSceVnaWebsocket | 22 | 0 | 0 | 0 | 0 |
 | SceVshErrorDialogUtilWrapper | 21 | 0 | 0 | 0 | 0 |

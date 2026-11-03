@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 6,
   "build_verified": null,
-  "explicit_export_alias_records": 9606,
+  "explicit_export_alias_records": 9608,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 46780,
+  "observed_library_nid_records": 46881,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -13,7 +13,7 @@
     "libc": {
       "assembly_definition_unvalidated": 2,
       "declaration_without_visible_definition": 5,
-      "definition_nonthrowing_unvalidated": 1622,
+      "definition_nonthrowing_unvalidated": 1651,
       "definition_throwing": 17,
       "explicit_alias_no_visible_definition": 1
     },
@@ -45,13 +45,13 @@
     "libkernel": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 4,
-      "definition_nonthrowing_unvalidated": 721,
+      "definition_nonthrowing_unvalidated": 723,
       "definition_throwing": 41,
       "explicit_alias_no_visible_definition": 17
     },
     "libkernel_sys": {
-      "definition_nonthrowing_unvalidated": 153,
-      "definition_throwing": 677,
+      "definition_nonthrowing_unvalidated": 162,
+      "definition_throwing": 667,
       "explicit_alias_no_visible_definition": 160
     },
     "libkernel_web": {
@@ -130,14 +130,16 @@
     },
     "libsceappcontent": {
       "definition_nonthrowing_unvalidated": 27,
-      "definition_throwing": 9
+      "definition_throwing": 12,
+      "explicit_alias_no_visible_definition": 1
     },
     "libsceappdbshellcoreclient": {
       "definition_throwing": 28,
       "explicit_alias_no_visible_definition": 28
     },
     "libsceappinstutil": {
-      "definition_throwing": 158,
+      "definition_nonthrowing_unvalidated": 3,
+      "definition_throwing": 155,
       "explicit_alias_no_visible_definition": 26
     },
     "libsceasyncstorageinternal": {
@@ -390,11 +392,12 @@
       "explicit_alias_no_visible_definition": 4
     },
     "libscefontgs.native": {
-      "definition_throwing": 6
+      "definition_nonthrowing_unvalidated": 4,
+      "definition_throwing": 2
     },
     "libscefreetype": {
       "declaration_without_visible_definition": 13,
-      "definition_nonthrowing_unvalidated": 90,
+      "definition_nonthrowing_unvalidated": 93,
       "definition_throwing": 6
     },
     "libscefreetypeol": {
@@ -443,8 +446,8 @@
       "explicit_alias_no_visible_definition": 7
     },
     "libscegnmdriverforneomode": {
-      "definition_nonthrowing_unvalidated": 85,
-      "definition_throwing": 54,
+      "definition_nonthrowing_unvalidated": 86,
+      "definition_throwing": 53,
       "explicit_alias_no_visible_definition": 20
     },
     "libscegputrace": {
@@ -566,12 +569,12 @@
     "libscelibcinternal": {
       "declaration_without_visible_definition": 1,
       "definition_nonthrowing_unvalidated": 89,
-      "definition_throwing": 863,
+      "definition_throwing": 903,
       "explicit_alias_no_visible_definition": 760
     },
     "libscelibressl": {
-      "definition_nonthrowing_unvalidated": 152,
-      "definition_throwing": 269
+      "definition_nonthrowing_unvalidated": 188,
+      "definition_throwing": 242
     },
     "libscelibressl3": {
       "definition_nonthrowing_unvalidated": 29,
@@ -670,8 +673,8 @@
       "definition_throwing": 1
     },
     "libscenkwebkit": {
-      "definition_nonthrowing_unvalidated": 1318,
-      "definition_throwing": 9954,
+      "definition_nonthrowing_unvalidated": 1326,
+      "definition_throwing": 9946,
       "explicit_alias_no_visible_definition": 2636
     },
     "libscenkwebkitrequirements": {
@@ -713,8 +716,8 @@
       "definition_throwing": 16
     },
     "libscenpmanager": {
-      "definition_nonthrowing_unvalidated": 76,
-      "definition_throwing": 475,
+      "definition_nonthrowing_unvalidated": 77,
+      "definition_throwing": 474,
       "explicit_alias_no_visible_definition": 124
     },
     "libscenpmatching2": {
@@ -959,8 +962,8 @@
       "explicit_alias_no_visible_definition": 14
     },
     "libscesavedata.native": {
-      "definition_nonthrowing_unvalidated": 51,
-      "definition_throwing": 69
+      "definition_nonthrowing_unvalidated": 52,
+      "definition_throwing": 68
     },
     "libscesavedatadialog": {
       "declaration_without_visible_definition": 8
@@ -1061,8 +1064,8 @@
     },
     "libscesystemservice": {
       "definition_nonthrowing_unvalidated": 146,
-      "definition_throwing": 470,
-      "explicit_alias_no_visible_definition": 32
+      "definition_throwing": 471,
+      "explicit_alias_no_visible_definition": 33
     },
     "libscesystemtts": {
       "definition_throwing": 10,
@@ -1190,7 +1193,7 @@
     },
     "libscevideoout": {
       "definition_nonthrowing_unvalidated": 58,
-      "definition_throwing": 195,
+      "definition_throwing": 208,
       "explicit_alias_no_visible_definition": 57
     },
     "libscevideooutsecondary": {
@@ -1299,8 +1302,8 @@
       "definition_nonthrowing_unvalidated": 5
     },
     "libwebrtc": {
-      "definition_nonthrowing_unvalidated": 59,
-      "definition_throwing": 353,
+      "definition_nonthrowing_unvalidated": 60,
+      "definition_throwing": 352,
       "explicit_alias_no_visible_definition": 60
     },
     "libwvoec": {
@@ -1315,12 +1318,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "d1ae628bc2f62459cce1e9872ba5632c938c71f2",
+  "source_sha": "1e658521a0a599872612bb91949311e2956b5283",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 125,
-    "definition_nonthrowing_unvalidated": 10408,
-    "definition_throwing": 26635,
-    "explicit_alias_no_visible_definition": 9606
+    "definition_nonthrowing_unvalidated": 10506,
+    "definition_throwing": 26636,
+    "explicit_alias_no_visible_definition": 9608
   }
 }

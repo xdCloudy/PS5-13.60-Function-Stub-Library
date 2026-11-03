@@ -2,14 +2,14 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-11-03T06:52:08+00:00 · **AnyPS5 main:** [d1ae628bc2f6](https://github.com/boykopovar/AnyPS5/commit/d1ae628bc2f62459cce1e9872ba5632c938c71f2)
+**Last refresh:** 2026-11-03T17:07:10+00:00 · **AnyPS5 main:** [1e658521a0a5](https://github.com/boykopovar/AnyPS5/commit/1e658521a0a599872612bb91949311e2956b5283)
 
 ## At a glance
 
 | Workstream | Progress | Meaning |
 |---|---:|---|
 | **Recovered names** | **47,085 / 314,038 (15.0%)** | Inventory rows with a published name, not necessarily an ABI signature |
-| **AnyPS5 main (live source matches)** | **17,348 library/NID identities** | Matching definitions already present in merged upstream source; not proof of runtime functionality |
+| **AnyPS5 main (live source matches)** | **17,359 library/NID identities** | Matching definitions already present in merged upstream source; not proof of runtime functionality |
 | **Qualified throwing-stub candidates** | **10,749 unique NIDs** | Current eligible research backlog, not implemented functions |
 | **Locally generated stubs** | **963 / 10,749 (9.0%)** | Historical snapshot of throwing placeholders, not live upstream coverage |
 
@@ -32,9 +32,9 @@
 | Locally generated throwing stubs (saved) | 963 | Not necessarily compiled or merged |
 | Statically prepared (saved) | 963 | Historical offline gates |
 | Fully validated (saved) | 0 | Historical build/runtime validation only |
-| **Present in AnyPS5 main source (live)** | **17,348** | Matched and rehashed library/NID/name in current upstream main; separate from qualified backlog |
-| With NotImplemented marker (live) | 12,404 | Source-level placeholder, not working behaviour |
-| With nonthrowing C ABI body (live) | 4,944 | No matching NotImplemented marker; **not** necessarily a tested implementation |
+| **Present in AnyPS5 main source (live)** | **17,359** | Matched and rehashed library/NID/name in current upstream main; separate from qualified backlog |
+| With NotImplemented marker (live) | 12,403 | Source-level placeholder, not working behaviour |
+| With nonthrowing C ABI body (live) | 4,956 | No matching NotImplemented marker; **not** necessarily a tested implementation |
 
 **Qualification correction:** the saved report listed 10,750, while the filtered count is 10,749 (difference +1 from saved). Separately, 7,119 named records need strict name/NID/status evidence review. These must not be silently promoted. The old `published to AnyPS5 = 0` is an **archived snapshot** and must not be treated as the current upstream count.
 
@@ -42,24 +42,24 @@
 
 | Evidence | Count | Meaning |
 |---|---:|---|
-| **Catalogued names present on merged AnyPS5 main** | **17,348 records / 17,341 unique NIDs** | **Live source evidence**, not the saved 0-counter |
-| Marked throwing/unimplemented | 12,404 | NotImplemented marker is visible in body |
-| Other nonthrowing source definitions | 4,944 | A source body exists; not necessarily correct, wired up or validated |
-| Qualified NIDs also in main source | 8,026 | Potential existing coverage |
-| Additional qualified NIDs seen in open-PR additions | 997 | Possible reservations, not yet merged |
-| Qualified NIDs not observed by scans | 1,726 | **Not proof of no overlap** |
+| **Catalogued names present on merged AnyPS5 main** | **17,359 records / 17,352 unique NIDs** | **Live source evidence**, not the saved 0-counter |
+| Marked throwing/unimplemented | 12,403 | NotImplemented marker is visible in body |
+| Other nonthrowing source definitions | 4,956 | A source body exists; not necessarily correct, wired up or validated |
+| Qualified NIDs also in main source | 8,036 | Potential existing coverage |
+| Additional qualified NIDs seen in open-PR additions | 1,004 | Possible reservations, not yet merged |
+| Qualified NIDs not observed by scans | 1,709 | **Not proof of no overlap** |
 
 ### Open PR coverage
 
-`███████████████████░░░` **1,510 / 1,727 (87.4%)** current open PR heads indexed.
+`██████████████████████` **1,711 / 1,730 (98.9%)** current open PR heads indexed.
 
-**Partial:** 217 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
-Cache hits: 970 · newly scanned: 540 · failed checks: 10.
+**Partial:** 19 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
+Cache hits: 1,266 · newly scanned: 445 · failed checks: 19.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
 ## Automatically imported AnyPS5 source evidence
 
-**19,644** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **20** correspond to unnamed identities already in this firmware catalogue.
+**19,732** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **20** correspond to unnamed identities already in this firmware catalogue.
 
 The proposed name, NID and source location are searchable, but the name is **not independently verified against firmware**, nor are ABI or behaviour confirmed. Publication-filtered strings are not promoted. [NID-only review queue](reports/upstream-review-queue.jsonl).
 
@@ -82,9 +82,9 @@ Top 12 libraries sorted by assessed qualified records not seen in current main o
 |---|---:|---:|---:|---:|---:|
 | libSceJsc | 2,951 | 77 | 0 | 313 | 2,638 |
 | libSceNKWebKit | 8,614 | 7,336 | 7,211 | 0 | 1,403 |
-| libSceNpCommon | 782 | 380 | 42 | 612 | 128 |
+| libSceNpCommon | 782 | 380 | 42 | 629 | 111 |
 | libSceMediaFrameworkInterface | 139 | 107 | 107 | 0 | 32 |
-| libSceVideoOut | 133 | 149 | 101 | 10 | 22 |
+| libSceVideoOut | 133 | 159 | 111 | 0 | 22 |
 | libSceVnaInternal | 84 | 71 | 71 | 0 | 13 |
 | libSceIcu | 72 | 0 | 0 | 60 | 12 |
 | libSceVideoStreamingEngine | 58 | 58 | 46 | 0 | 12 |
