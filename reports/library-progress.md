@@ -17,7 +17,7 @@ All identities remain represented; source definition matches are **not** validat
 | ReactNativeModulesVsh | 6,713 | 0 | 0 | 0 | 0 |
 | SceVshShellUIReactNativeShellApp | 6,391 | 0 | 0 | 0 | 0 |
 | app | 5,612 | 0 | 0 | 0 | 0 |
-| libSceJsc | 5,446 | 4,115 | 2,951 | 0 | 0 |
+| libSceJsc | 5,446 | 4,115 | 2,951 | 0 | 313 |
 | SceVshShellUILoginMgr | 4,550 | 0 | 0 | 0 | 0 |
 | ReactivePropertyPlayStation | 4,457 | 0 | 0 | 0 | 0 |
 | NewtonsoftJsonPlayStation | 4,016 | 0 | 0 | 0 | 0 |
@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 0 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 612 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |
@@ -60,7 +60,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIQuickImageEdit | 981 | 0 | 0 | 0 | 0 |
 | libmonosgen-2.0 | 963 | 963 | 0 | 0 | 0 |
 | MonoDataSqlite | 898 | 0 | 0 | 0 | 0 |
-| libSceIcu | 855 | 813 | 72 | 0 | 0 |
+| libSceIcu | 855 | 813 | 72 | 0 | 60 |
 | SceVshShellUIVisionRecognition | 822 | 0 | 0 | 0 | 0 |
 | ReactNativeComponentsVsh | 820 | 0 | 0 | 0 | 0 |
 | libdiscord | 802 | 0 | 0 | 0 | 0 |
@@ -127,7 +127,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshNpWebapi | 246 | 0 | 0 | 0 | 0 |
 | libSceAgcVsh | 245 | 239 | 0 | 0 | 0 |
 | libSceFont | 240 | 240 | 44 | 36 | 0 |
-| libSceVideoOut | 237 | 199 | 133 | 101 | 0 |
+| libSceVideoOut | 237 | 199 | 133 | 101 | 10 |
 | libSceNet | 235 | 223 | 0 | 0 | 0 |
 | libSceMediaFrameworkInterface | 225 | 139 | 139 | 107 | 0 |
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |
@@ -177,7 +177,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceFont.native | 136 | 136 | 0 | 0 | 0 |
 | libSceJxr | 136 | 136 | 0 | 0 | 0 |
 | libSceAgcDriver | 135 | 130 | 0 | 0 | 0 |
-| libSceCustomMusicSysCallWrapper | 133 | 54 | 53 | 42 | 0 |
+| libSceCustomMusicSysCallWrapper | 133 | 54 | 53 | 47 | 0 |
 | gaikai_player_lib | 132 | 16 | 0 | 0 | 0 |
 | SceVshOrbisBgft | 127 | 0 | 0 | 0 | 0 |
 | libSceCamera | 127 | 122 | 1 | 1 | 0 |
@@ -345,7 +345,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceVdecCore | 27 | 25 | 1 | 1 | 0 |
 | libSceVenc | 27 | 19 | 5 | 3 | 0 |
 | SceVshShareServerPostWrapper | 26 | 0 | 0 | 0 | 0 |
-| libSceNpEntitlementAccess | 26 | 26 | 1 | 0 | 0 |
+| libSceNpEntitlementAccess | 26 | 26 | 1 | 0 | 1 |
 | libSceNpParty | 26 | 26 | 0 | 0 | 0 |
 | SceVshShellUIUtilWrapper | 25 | 0 | 0 | 0 | 0 |
 | SceVshVoiceMsgVoiceMsgWrapper | 25 | 0 | 0 | 0 | 0 |
@@ -367,7 +367,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShareVideoTranscoderWrapper | 23 | 0 | 0 | 0 | 0 |
 | libkernel_jvm | 23 | 23 | 0 | 0 | 0 |
 | I18NWest | 22 | 0 | 0 | 0 | 0 |
-| libSceAudiodec | 22 | 22 | 2 | 0 | 0 |
+| libSceAudiodec | 22 | 22 | 2 | 0 | 1 |
 | libSceShareUtility | 22 | 22 | 0 | 0 | 0 |
 | libSceVnaWebsocket | 22 | 0 | 0 | 0 | 0 |
 | SceVshErrorDialogUtilWrapper | 21 | 0 | 0 | 0 | 0 |
