@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 6,
   "build_verified": null,
-  "explicit_export_alias_records": 9608,
+  "explicit_export_alias_records": 9624,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 46881,
+  "observed_library_nid_records": 46914,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -479,8 +479,8 @@
       "definition_throwing": 29
     },
     "libscehttp2": {
-      "definition_nonthrowing_unvalidated": 32,
-      "definition_throwing": 39,
+      "definition_nonthrowing_unvalidated": 34,
+      "definition_throwing": 38,
       "explicit_alias_no_visible_definition": 1
     },
     "libscehttpcache": {
@@ -604,6 +604,10 @@
       "definition_throwing": 126,
       "explicit_alias_no_visible_definition": 4
     },
+    "libscemediaappsharedstorage": {
+      "definition_throwing": 16,
+      "explicit_alias_no_visible_definition": 16
+    },
     "libscemediaframeworkinterface": {
       "definition_throwing": 177,
       "explicit_alias_no_visible_definition": 46
@@ -716,8 +720,8 @@
       "definition_throwing": 16
     },
     "libscenpmanager": {
-      "definition_nonthrowing_unvalidated": 77,
-      "definition_throwing": 474,
+      "definition_nonthrowing_unvalidated": 78,
+      "definition_throwing": 473,
       "explicit_alias_no_visible_definition": 124
     },
     "libscenpmatching2": {
@@ -1318,12 +1322,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "1e658521a0a599872612bb91949311e2956b5283",
+  "source_sha": "1c8c0efc8c41314402e6966da5bef6ea3d639d10",
   "states": {
     "assembly_definition_unvalidated": 6,
     "declaration_without_visible_definition": 125,
-    "definition_nonthrowing_unvalidated": 10506,
-    "definition_throwing": 26636,
-    "explicit_alias_no_visible_definition": 9608
+    "definition_nonthrowing_unvalidated": 10509,
+    "definition_throwing": 26650,
+    "explicit_alias_no_visible_definition": 9624
   }
 }
