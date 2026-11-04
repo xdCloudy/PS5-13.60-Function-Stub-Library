@@ -1,155 +1,363 @@
 {
-  "added": 33,
+  "added": 345,
   "baseline_only": false,
-  "changed_source_classifications": 2,
+  "changed_source_classifications": 7,
   "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-  "previous_source_sha": "1e658521a0a599872612bb91949311e2956b5283",
+  "previous_source_sha": "1c8c0efc8c41314402e6966da5bef6ea3d639d10",
   "removed": 0,
   "samples_added": [
     {
-      "library": "libscehttp2",
-      "nid": "XWs8friSjoI"
+      "library": "libc",
+      "nid": "+F+9hhi6k9Q"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "3nm+Kb/sN5s"
+      "library": "libc",
+      "nid": "0b4+9rIaQUE"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "3wl+ZGtL0ws"
+      "library": "libc",
+      "nid": "0fqKxWZIewo"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "5gBMATX7muw"
+      "library": "libc",
+      "nid": "1jBIEnecvLg"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "5inVitPGAUY"
+      "library": "libc",
+      "nid": "2BO974I9lhg"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "760upNsgHcw"
+      "library": "libc",
+      "nid": "96x+T8n73Ao"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "9O8M3-DsGXw"
+      "library": "libc",
+      "nid": "AVN5C3QT8PQ"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "MOT7jJkjW7c"
+      "library": "libc",
+      "nid": "BtRj7AVDURU"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "NHgygM58yx0"
+      "library": "libc",
+      "nid": "L4cqNV8xEcY"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "Ob1qflD5Mg4"
+      "library": "libc",
+      "nid": "LLwpW2DJa5s"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "PhlPIVLxvSo"
+      "library": "libc",
+      "nid": "Mc7fmgDQZ+Q"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "PrP8SJS-TpQ"
+      "library": "libc",
+      "nid": "YOSrjUxOUV8"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "T0qKzc9IKW0"
+      "library": "libc",
+      "nid": "esZJpINC+8c"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "VeM9wMswCI4"
+      "library": "libc",
+      "nid": "kpLb8LruYDk"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "VwWRXO2tHmE"
+      "library": "libc",
+      "nid": "sjpkrhugvVI"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "Z73u4QmwUfo"
+      "library": "libc",
+      "nid": "sxXVhZfpda8"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "aTobjJev0ZU"
+      "library": "libc",
+      "nid": "tNoAPJOtZzA"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "bEWlk0h-kT8"
+      "library": "libc",
+      "nid": "xw6aXlJOJHw"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "bPwgGr83SrU"
+      "library": "libsceicu",
+      "nid": "0hRte96Ujyw"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "cJqESX9JU98"
+      "library": "libsceicu",
+      "nid": "2b6oGQtTAro"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "dn1b39zO2YE"
+      "library": "libsceicu",
+      "nid": "66W1bokWWgs"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "gdBO0jjfQsg"
+      "library": "libsceicu",
+      "nid": "8tyXUjnFMhM"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "hpJGOlZvCH8"
+      "library": "libsceicu",
+      "nid": "CmYvoXsJl74"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "knZUdk0bJAw"
+      "library": "libsceicu",
+      "nid": "LR4WnW6XmSU"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "mqU6TK17C5I"
+      "library": "libsceicu",
+      "nid": "N44swhpYpxY"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "omZKNhDRL9k"
+      "library": "libsceicu",
+      "nid": "Nc0Nph3Jf3k"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "p3mQSqkPv6U"
+      "library": "libsceicu",
+      "nid": "PO4LL8syJt8"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "uz267kisen8"
+      "library": "libsceicu",
+      "nid": "PdP8gvJUVmc"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "v6d331M5GOo"
+      "library": "libsceicu",
+      "nid": "PnloUTEURfE"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "wCM+d+kYC-w"
+      "library": "libsceicu",
+      "nid": "TS8RYihQiig"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "xe8itWXpOZM"
+      "library": "libsceicu",
+      "nid": "Tx6R8YwIfYk"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "yJ4a7GYY9kA"
+      "library": "libsceicu",
+      "nid": "Ua/smZ7UMc4"
     },
     {
-      "library": "libscemediaappsharedstorage",
-      "nid": "zgDNUrp0A+U"
+      "library": "libsceicu",
+      "nid": "X8ixsZZt9+o"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "YfKX4cP2eeg"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "a/8Y83ekCbk"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "aUoFGKoIQ2U"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "eCz0XJ5VkZs"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "g22we8nBd1k"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "gMa7eqwl9MU"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "gir92G84RBc"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "i3pmcf03l+A"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "jfwPxXk+aBA"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "mLfccGE/vAg"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "nzm0m8Kx3Nc"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "nzvjDyFhsDs"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "r+izLwcwKik"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "rg+o1mTMVKg"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "s2VNpH8li3Y"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "sgmxUSpMDRo"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "ue+zVa8nmto"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "vnIP+E41r+U"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "wufNhP2wWtM"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "wxij/q4CIt0"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "xDNtpM/RVvw"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "yLYMS5FosTY"
+    },
+    {
+      "library": "libsceicu",
+      "nid": "zwIdLqsg0b4"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "+5IOQncui3c"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "+WmZ2GmV684"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "+oP1i8v75G0"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "+wT25fZ19Qc"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "-nCVE3kBjjA"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "-syPONaWjqw"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "/+zVVku09+o"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0ISumvb2U5o"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0ITXuJOqrSk"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0JidN6q9yGo"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0VbNlkgx/yc"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0Yd9aSCCG9o"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0iOfFUL41W4"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0jk9oqKd2Gw"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0sOhArRS4iY"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0tki1czHVUo"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "0tyEypynqLY"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "1CMoGW4HRYs"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "1D/V5rZbrlE"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "1Ll/veWvsT8"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "1Q/my8bWJnQ"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "1T0k8tPF6ZI"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "1ZMchlkvNNQ"
+    },
+    {
+      "library": "libscelibcinternal",
+      "nid": "1bXC3wGIWYc"
     }
   ],
   "samples_changed": [
     {
-      "library": "libscehttp2",
-      "nid": "YrWX+DhPHQY"
+      "library": "libc",
+      "nid": "ImR2HUkayoM"
     },
     {
-      "library": "libscenpmanager",
-      "nid": "ZVZ++68nNI8"
+      "library": "libsceappcontent",
+      "nid": "Gl6w5i0JokY"
+    },
+    {
+      "library": "libscecescs",
+      "nid": "hQeUMTVgPHU"
+    },
+    {
+      "library": "libscehttp2",
+      "nid": "/rdXUi2XW90"
+    },
+    {
+      "library": "libscelibressl3",
+      "nid": "x8lbwLflfh0"
+    },
+    {
+      "library": "libscenpcppwebapi",
+      "nid": "PGbdeeOVRRU"
+    },
+    {
+      "library": "libscenpcppwebapi",
+      "nid": "g9FmpQw2M/U"
     }
   ],
   "samples_removed": [],
   "schema_version": 1,
-  "source_sha": "1c8c0efc8c41314402e6966da5bef6ea3d639d10"
+  "source_sha": "b8efa6292ae69dfdebbeffcc869b66ddbb8739fc"
 }

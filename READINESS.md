@@ -2,7 +2,7 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-11-03T23:26:05+00:00 · **AnyPS5 main:** [1c8c0efc8c41](https://github.com/boykopovar/AnyPS5/commit/1c8c0efc8c41314402e6966da5bef6ea3d639d10)
+**Last refresh:** 2026-11-04T06:26:11+00:00 · **AnyPS5 main:** [b8efa6292ae6](https://github.com/boykopovar/AnyPS5/commit/b8efa6292ae69dfdebbeffcc869b66ddbb8739fc)
 
 ## At a glance
 
@@ -46,20 +46,20 @@
 | Marked throwing/unimplemented | 12,401 | NotImplemented marker is visible in body |
 | Other nonthrowing source definitions | 4,958 | A source body exists; not necessarily correct, wired up or validated |
 | Qualified NIDs also in main source | 8,036 | Potential existing coverage |
-| Additional qualified NIDs seen in open-PR additions | 1,004 | Possible reservations, not yet merged |
-| Qualified NIDs not observed by scans | 1,709 | **Not proof of no overlap** |
+| Additional qualified NIDs seen in open-PR additions | 1,005 | Possible reservations, not yet merged |
+| Qualified NIDs not observed by scans | 1,708 | **Not proof of no overlap** |
 
 ### Open PR coverage
 
-`██████████████████████` **1,795 / 1,815 (98.9%)** current open PR heads indexed.
+`██████████████████████` **1,786 / 1,807 (98.8%)** current open PR heads indexed.
 
-**Partial:** 20 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
-Cache hits: 1,546 · newly scanned: 249 · failed checks: 20.
+**Partial:** 21 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
+Cache hits: 1,688 · newly scanned: 98 · failed checks: 21.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
 ## Automatically imported AnyPS5 source evidence
 
-**19,749** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **20** correspond to unnamed identities already in this firmware catalogue.
+**19,950** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **20** correspond to unnamed identities already in this firmware catalogue.
 
 The proposed name, NID and source location are searchable, but the name is **not independently verified against firmware**, nor are ABI or behaviour confirmed. Publication-filtered strings are not promoted. [NID-only review queue](reports/upstream-review-queue.jsonl).
 

@@ -271,7 +271,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshPadControllerUpdWrapper | 50 | 0 | 0 | 0 | 0 |
 | libScePlayReady | 50 | 50 | 0 | 0 | 0 |
 | libSceAudioIn | 49 | 48 | 0 | 0 | 0 |
-| libSceRemoteplay | 49 | 48 | 3 | 2 | 0 |
+| libSceRemoteplay | 49 | 48 | 3 | 2 | 1 |
 | libSceSpSysCallWrapper | 48 | 48 | 0 | 0 | 0 |
 | libSceVideoRecordingP | 48 | 43 | 0 | 0 | 0 |
 | libSceGameLiveStreaming | 47 | 47 | 0 | 0 | 0 |
