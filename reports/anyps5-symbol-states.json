@@ -4,7 +4,7 @@
   "explicit_export_alias_records": 9764,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 47259,
+  "observed_library_nid_records": 47268,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -13,7 +13,7 @@
     "libc": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 7,
-      "definition_nonthrowing_unvalidated": 1665,
+      "definition_nonthrowing_unvalidated": 1666,
       "definition_throwing": 17,
       "explicit_alias_no_visible_definition": 1
     },
@@ -129,8 +129,8 @@
       "definition_throwing": 3
     },
     "libsceappcontent": {
-      "definition_nonthrowing_unvalidated": 26,
-      "definition_throwing": 13,
+      "definition_nonthrowing_unvalidated": 27,
+      "definition_throwing": 12,
       "explicit_alias_no_visible_definition": 1
     },
     "libsceappdbshellcoreclient": {
@@ -568,7 +568,7 @@
     },
     "libscelibcinternal": {
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 89,
+      "definition_nonthrowing_unvalidated": 97,
       "definition_throwing": 1043,
       "explicit_alias_no_visible_definition": 900
     },
@@ -677,8 +677,8 @@
       "definition_throwing": 1
     },
     "libscenkwebkit": {
-      "definition_nonthrowing_unvalidated": 1326,
-      "definition_throwing": 9946,
+      "definition_nonthrowing_unvalidated": 1333,
+      "definition_throwing": 9939,
       "explicit_alias_no_visible_definition": 2636
     },
     "libscenkwebkitrequirements": {
@@ -698,8 +698,8 @@
       "definition_nonthrowing_unvalidated": 12
     },
     "libscenpcommon": {
-      "definition_nonthrowing_unvalidated": 298,
-      "definition_throwing": 140
+      "definition_nonthrowing_unvalidated": 307,
+      "definition_throwing": 131
     },
     "libscenpcppwebapi": {
       "definition_nonthrowing_unvalidated": 1082,
@@ -759,8 +759,8 @@
       "explicit_alias_no_visible_definition": 6
     },
     "libscenpsignaling": {
-      "definition_nonthrowing_unvalidated": 9,
-      "definition_throwing": 15
+      "definition_nonthrowing_unvalidated": 17,
+      "definition_throwing": 7
     },
     "libscenpsns": {
       "definition_throwing": 21
@@ -1322,12 +1322,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "b8efa6292ae69dfdebbeffcc869b66ddbb8739fc",
+  "source_sha": "b11c7bf84f5d2f636ff60166cc3371bd071e24d5",
   "states": {
     "assembly_definition_unvalidated": 8,
     "declaration_without_visible_definition": 127,
-    "definition_nonthrowing_unvalidated": 10574,
-    "definition_throwing": 26786,
+    "definition_nonthrowing_unvalidated": 10608,
+    "definition_throwing": 26761,
     "explicit_alias_no_visible_definition": 9764
   }
 }
