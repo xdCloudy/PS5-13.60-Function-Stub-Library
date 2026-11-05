@@ -9,20 +9,20 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 1143 |
-| source_symbol_already_observed | 8005 |
-| source_symbol_in_other_provider | 2238 |
+| priority_candidates | 792 |
+| source_symbol_already_observed | 8318 |
+| source_symbol_in_other_provider | 2276 |
 
 ## Highest-volume libraries
 
 | Library | Dual-source | 13.60-only | Total |
 |---|---:|---:|---:|
 | libSceNpCommon | 281 | 348 | 629 |
-| libSceJsc | 313 | 2 | 315 |
-| libSceNKWebKit | 0 | 120 | 120 |
+| libSceNKWebKit | 0 | 82 | 82 |
 | libSceIcu | 60 | 0 | 60 |
 | libSceMediaFrameworkInterface | 0 | 13 | 13 |
 | libSceAgc | 0 | 2 | 2 |
+| libSceJsc | 0 | 2 | 2 |
 | libSceNgs2 | 0 | 1 | 1 |
 | libSceNpEntitlementAccess | 0 | 1 | 1 |
 | libScePad | 0 | 1 | 1 |
@@ -92,21 +92,21 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceIcu | utext_openConstUnicodeString | yc1XEzBopCw | dual_3.20_and_13.60 | none |
 | libSceIcu | ubrk_isBoundary | ypOz3lP3VhE | dual_3.20_and_13.60 | none |
 | libSceIcu | uloc_toLanguageTag | zmMWRKwedmw | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC6JSCell12dumpToStreamEPKS0_RN3WTF11PrintStreamE | 13Vdz0yQpSw | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC16InternalFunction13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE | 18gO8FIVDOg | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZNK9Inspector18InjectedScriptHost16savedResultAliasEv | 1EYcTwBoE4w | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3WTF6String6appendEPKhj | 1IIKnMD2xqM | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3WTF6String23make16BitFrom8BitSourceEPKhm | 1dq4iQIG88U | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC23JSModuleNamespaceObject17defineOwnPropertyEPNS_8JSObjectEPNS_14JSGlobalObjectENS_12PropertyNameERKNS_18PropertyDescriptorEb | 24sBys581sg | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC14JSGlobalObject17defineOwnPropertyEPNS_8JSObjectEPS0_NS_12PropertyNameERKNS_18PropertyDescriptorEb | 2A508ZEMWzM | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZNK3WTF10StringImpl10startsWithEPKS0_ | 2K6zyWD2WxI | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZNK3WTF3URL11isLocalFileEv | 2awTIdIwODI | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN9Inspector14InjectedScriptC1EN10Deprecated12ScriptObjectEPNS_20InspectorEnvironmentE | 32lzv0QiLbo | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN10Deprecated11ScriptValueaSERKS0_ | 35ORvn0jTS8 | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC11SymbolTable14finishCreationERNS_2VME | 3EUK5l6RAVk | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN10Deprecated25ScriptCallArgumentHandler14appendArgumentEPKc | 3U2E2PkIKxM | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3WTF11Persistence5CoderISt5arrayIhLm20EEE6decodeERNS0_7DecoderE | 3U2pDdbhjag | dual_3.20_and_13.60 | none |
-| libSceJsc | _ZN3JSC15JSWeakObjectRef14finishCreationERNS_2VMEPNS_8JSObjectE | 3WxN4u0Qywg | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZThn16_N3sce2np9LocalFile5WriteEPNS0_6HandleEPKvmPm | +3ySpB1buMs | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np3ipc10IpmiClient4ctorEv | +EQNga+wsPc | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np9WorkQueue4InitEPKcimm | +dGO+GS2ZXQ | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np9HttpTrans11SendRequestEPNS0_6HandleEPKvm | +hKyaJJCE+0 | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np12WorkerThreadD2Ev | +qB+WcQlMio | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np3ipc10IpmiClient7DestroyEv | +xvhXA8Ci4E | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np9EventFlag5ClearEm | 03UlDLFsTfw | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np6ThreadC2Ev | 0f3ylOQJwqE | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np4PathD0Ev | 0fwoTW7gqfM | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np9LocalFile5WriteEPNS0_6HandleEPKvmPm | 0xL7AwgxphE | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np3ipc17ServiceIpmiClient19WaitRequestForAsyncEiij | 1ONFW86TETY | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np9WorkQueueD1Ev | 1QFKnDJxk3A | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZNK3sce2np4Cond6IsInitEv | 1YezZ6DJXgY | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np6Handle7DestroyEv | 1atFu71dFAU | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZN3sce2np10CancelLockD2Ev | 1iHBAKrdE90 | dual_3.20_and_13.60 | none |
 
 None of these are independently validated as guest ABI. Public SDK header names
 and 3.20 forwarding entries do not establish the correct guest ABI or behaviour.
