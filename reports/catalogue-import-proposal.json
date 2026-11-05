@@ -10,7 +10,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceAjmi/Export.cpp"
     },
     {
@@ -23,7 +23,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceAudioPropagation/InventoryExports.cpp"
     },
     {
@@ -36,7 +36,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceFsInternalForVsh/Export.cpp"
     },
     {
@@ -49,8 +49,21 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceFsInternalForVsh/Export.cpp"
+    },
+    {
+      "canonical_name_approved": false,
+      "firmware_13_60_export_confirmed_by_this_source": false,
+      "library": "libscehttpcache",
+      "nid": "dIQhFL4sKBo",
+      "observed_status": "unnamed_catalog_identity",
+      "proposed_name": "sceHttpCacheEnableCacheInfo",
+      "runtime_validated": false,
+      "signature_verified": false,
+      "source": "boykopovar/AnyPS5",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
+      "source_file": "core/libs/prx/libSceHttpCache/Export.cpp"
     },
     {
       "canonical_name_approved": false,
@@ -62,7 +75,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceMediaFrameworkInterface/Export.cpp"
     },
     {
@@ -75,7 +88,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceMediaFrameworkInterface/Export.cpp"
     },
     {
@@ -88,7 +101,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceMediaFrameworkInterface/Export.cpp"
     },
     {
@@ -101,7 +114,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceMediaFrameworkInterface/Export.cpp"
     },
     {
@@ -114,7 +127,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceMediaFrameworkInterface/Export.cpp"
     },
     {
@@ -127,7 +140,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceMediaFrameworkInterface/Export.cpp"
     },
     {
@@ -140,7 +153,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceNpManager/AdditionalExports.cpp"
     },
     {
@@ -153,7 +166,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceNpManager/AdditionalExports.cpp"
     },
     {
@@ -166,7 +179,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceNpManager/AdditionalExports.cpp"
     },
     {
@@ -179,7 +192,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceNpManager/AdditionalExports.cpp"
     },
     {
@@ -192,7 +205,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceNpManager/AdditionalExports.cpp"
     },
     {
@@ -205,7 +218,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceNpManager/AdditionalExports.cpp"
     },
     {
@@ -218,7 +231,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceResourceArbitrator/Export.cpp"
     },
     {
@@ -231,7 +244,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceVenc/Export.cpp"
     },
     {
@@ -244,7 +257,7 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceVideoOut/InventoryExports.cpp"
     },
     {
@@ -257,19 +270,19 @@
       "runtime_validated": false,
       "signature_verified": false,
       "source": "boykopovar/AnyPS5",
-      "source_commit": "1e24993fa3a7da25e8fc27152af654687ba64552",
+      "source_commit": "fc23faa40aa47a889960438712c46d663c9bcb2a",
       "source_file": "core/libs/prx/libSceVideoOut/InventoryExports.cpp"
     }
   ],
   "canonical_manifest_sha256": "0f503f23221f5862499c109afd1e70111c491f3bcae80d078c2008cf34cb68ad",
   "canonical_records_mutated": 0,
   "conflicts": [],
-  "evidence_observations": 20,
+  "evidence_observations": 21,
   "independent_approval_required": true,
   "note": "These records are name or historical-reference proposals only; no ABI, runtime, source licence or 13.60 confirmation is inferred.",
   "publication_status": "DRAFT_REVIEW_ONLY",
-  "reviewable_identity_count": 20,
+  "reviewable_identity_count": 21,
   "schema_version": 1,
   "source_revision_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
-  "source_revision_anyps5": "1e24993fa3a7da25e8fc27152af654687ba64552"
+  "source_revision_anyps5": "fc23faa40aa47a889960438712c46d663c9bcb2a"
 }
