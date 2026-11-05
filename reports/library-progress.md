@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 42 | 629 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 59 | 612 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |

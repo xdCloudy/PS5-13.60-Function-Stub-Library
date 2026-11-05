@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-11-05T17:27:06+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-11-05T23:40:45+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -69,7 +69,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 | 0 | 1,311 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 | 0 | 1,283 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 | 0 | 1,272 |
-| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 397 | 629 | 12 |
+| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 414 | 612 | 12 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 | 0 | 1,189 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 | 0 | 1,100 |
 | libmonosgen | 1,087 | 0 | 937 | 796 | 0 | 0 | 150 |
@@ -822,10 +822,10 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 17,756 | Source-backed or canonical classification |
-| anyps5 throwing marker | 12,674 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 5,082 | Source-backed or canonical classification |
-| open pr qualified partial | 632 | Source-backed or canonical classification |
+| anyps5 main definition matches | 17,773 | Source-backed or canonical classification |
+| anyps5 throwing marker | 12,598 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 5,175 | Source-backed or canonical classification |
+| open pr qualified partial | 615 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
 | build verified live | unknown | Not measured; never inferred from source bodies |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: 1e24993fa3a7da25e8fc27152af654687ba64552
-Added identities: 2,058; removed: 3,399; changed source classifications: 190.
+Previous SHA: fc23faa40aa47a889960438712c46d663c9bcb2a
+Added identities: 55; removed: 1; changed source classifications: 468.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,13 +903,13 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-11-05T17:27:06+00:00 |
-| pr scanned | 1,838 |
-| pr total | 1,859 |
+| last refresh utc | 2026-11-05T23:40:45+00:00 |
+| pr scanned | 1,874 |
+| pr total | 1,899 |
 | pr complete | 0 |
-| pr errors | 19 |
-| anyps5 symbol observations | 46,611 |
-| anyps5 declarations only | 127 |
+| pr errors | 18 |
+| anyps5 symbol observations | 46,665 |
+| anyps5 declarations only | 128 |
 | anyps5 explicit alias records | 8,307 |
 | anyps5 assembly definition records | 8 |
 | anyps5 export registration verified | unknown |
@@ -921,7 +921,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 20,361 |
+| anyps5 public source proposals | 20,397 |
 | anyps5 withheld names | 52 |
 | overlap publication safe | 0 |
 
@@ -929,7 +929,6 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Observed at (UTC) | Indexed | Strictly verified names | AnyPS5 main source matches | Open PR heads scanned |
 |---|---:|---:|---:|---:|
-| 2026-10-31T11:33:56+00:00 | 314,038 | 39,966 | 15,662 | unknown |
 | 2026-10-31T11:39:53+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T11:51:40+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T16:55:08+00:00 | 314,038 | 39,966 | 15,662 | 1,677 |
@@ -949,6 +948,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-11-04T23:42:15+00:00 | 314,038 | 39,966 | 17,361 | 1,860 |
 | 2026-11-05T06:50:12+00:00 | 314,038 | 39,966 | 17,674 | 1,876 |
 | 2026-11-05T17:27:06+00:00 | 314,038 | 39,966 | 17,756 | 1,838 |
+| 2026-11-05T23:40:45+00:00 | 314,038 | 39,966 | 17,773 | 1,874 |
 
 ### Coverage denominators
 
