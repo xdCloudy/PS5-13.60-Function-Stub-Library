@@ -17,7 +17,7 @@ All identities remain represented; source definition matches are **not** validat
 | ReactNativeModulesVsh | 6,713 | 0 | 0 | 0 | 0 |
 | SceVshShellUIReactNativeShellApp | 6,391 | 0 | 0 | 0 | 0 |
 | app | 5,612 | 0 | 0 | 0 | 0 |
-| libSceJsc | 5,446 | 4,115 | 2,951 | 0 | 313 |
+| libSceJsc | 5,446 | 4,115 | 2,951 | 313 | 0 |
 | SceVshShellUILoginMgr | 4,550 | 0 | 0 | 0 | 0 |
 | ReactivePropertyPlayStation | 4,457 | 0 | 0 | 0 | 0 |
 | NewtonsoftJsonPlayStation | 4,016 | 0 | 0 | 0 | 0 |
