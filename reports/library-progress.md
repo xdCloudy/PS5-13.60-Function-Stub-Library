@@ -60,7 +60,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIQuickImageEdit | 981 | 0 | 0 | 0 | 0 |
 | libmonosgen-2.0 | 963 | 963 | 0 | 0 | 0 |
 | MonoDataSqlite | 898 | 0 | 0 | 0 | 0 |
-| libSceIcu | 855 | 813 | 72 | 0 | 60 |
+| libSceIcu | 855 | 813 | 72 | 60 | 0 |
 | SceVshShellUIVisionRecognition | 822 | 0 | 0 | 0 | 0 |
 | ReactNativeComponentsVsh | 820 | 0 | 0 | 0 | 0 |
 | libdiscord | 802 | 0 | 0 | 0 | 0 |

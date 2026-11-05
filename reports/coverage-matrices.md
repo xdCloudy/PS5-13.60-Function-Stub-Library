@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-11-05T06:50:12+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-11-05T17:27:06+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -69,7 +69,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 | 0 | 1,311 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 | 0 | 1,283 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 | 0 | 1,272 |
-| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 380 | 629 | 12 |
+| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 397 | 629 | 12 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 | 0 | 1,189 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 | 0 | 1,100 |
 | libmonosgen | 1,087 | 0 | 937 | 796 | 0 | 0 | 150 |
@@ -80,7 +80,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShellUIQuickImageEdit | 981 | 0 | 0 | 0 | 0 | 0 | 981 |
 | libmonosgen-2.0 | 0 | 817 | 963 | 817 | 0 | 0 | 0 |
 | MonoDataSqlite | 898 | 0 | 0 | 0 | 0 | 0 | 898 |
-| libSceIcu | 298 | 556 | 813 | 692 | 0 | 60 | 42 |
+| libSceIcu | 298 | 556 | 813 | 692 | 60 | 0 | 42 |
 | SceVshShellUIVisionRecognition | 822 | 0 | 0 | 0 | 0 | 0 | 822 |
 | ReactNativeComponentsVsh | 820 | 0 | 0 | 0 | 0 | 0 | 820 |
 | libdiscord | 802 | 0 | 0 | 0 | 0 | 0 | 802 |
@@ -147,7 +147,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshNpWebapi | 246 | 0 | 0 | 0 | 0 | 0 | 246 |
 | libSceAgcVsh | 245 | 170 | 239 | 204 | 0 | 0 | 6 |
 | libSceFont | 240 | 113 | 240 | 201 | 201 | 0 | 0 |
-| libSceVideoOut | 226 | 136 | 199 | 166 | 159 | 0 | 38 |
+| libSceVideoOut | 226 | 136 | 199 | 166 | 161 | 0 | 38 |
 | libSceNet | 233 | 180 | 223 | 188 | 182 | 0 | 12 |
 | libSceMediaFrameworkInterface | 225 | 0 | 139 | 120 | 107 | 0 | 86 |
 | libSceGLSlimVSH | 217 | 170 | 208 | 175 | 23 | 0 | 9 |
@@ -217,7 +217,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshNpTmdb | 105 | 0 | 0 | 0 | 0 | 0 | 105 |
 | libSceAbstractYoutube | 76 | 66 | 76 | 66 | 34 | 0 | 27 |
 | libScePlayReady4 | 102 | 70 | 89 | 74 | 34 | 0 | 14 |
-| libSceNpUtility | 102 | 85 | 100 | 88 | 85 | 0 | 2 |
+| libSceNpUtility | 102 | 85 | 100 | 88 | 88 | 0 | 2 |
 | libSceBgft | 82 | 74 | 96 | 80 | 80 | 0 | 5 |
 | SceVshNpTrophy | 100 | 0 | 0 | 0 | 0 | 0 | 100 |
 | libSceAbstractLocal | 70 | 61 | 70 | 61 | 0 | 0 | 30 |
@@ -822,10 +822,10 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 17,674 | Source-backed or canonical classification |
-| anyps5 throwing marker | 12,675 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 4,999 | Source-backed or canonical classification |
-| open pr qualified partial | 692 | Source-backed or canonical classification |
+| anyps5 main definition matches | 17,756 | Source-backed or canonical classification |
+| anyps5 throwing marker | 12,674 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 5,082 | Source-backed or canonical classification |
+| open pr qualified partial | 632 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
 | build verified live | unknown | Not measured; never inferred from source bodies |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: a992b803767e7411181c5c75f8e34bdfdd7aa110
-Added identities: 405; removed: 0; changed source classifications: 8.
+Previous SHA: 1e24993fa3a7da25e8fc27152af654687ba64552
+Added identities: 2,058; removed: 3,399; changed source classifications: 190.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,14 +903,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-11-05T06:50:12+00:00 |
-| pr scanned | 1,876 |
-| pr total | 1,896 |
+| last refresh utc | 2026-11-05T17:27:06+00:00 |
+| pr scanned | 1,838 |
+| pr total | 1,859 |
 | pr complete | 0 |
-| pr errors | 20 |
-| anyps5 symbol observations | 47,952 |
+| pr errors | 19 |
+| anyps5 symbol observations | 46,611 |
 | anyps5 declarations only | 127 |
-| anyps5 explicit alias records | 9,923 |
+| anyps5 explicit alias records | 8,307 |
 | anyps5 assembly definition records | 8 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
@@ -921,15 +921,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 20,169 |
-| anyps5 withheld names | 51 |
+| anyps5 public source proposals | 20,361 |
+| anyps5 withheld names | 52 |
 | overlap publication safe | 0 |
 
 ### Actual progress trend
 
 | Observed at (UTC) | Indexed | Strictly verified names | AnyPS5 main source matches | Open PR heads scanned |
 |---|---:|---:|---:|---:|
-| 2026-10-31T11:31:06+00:00 | 314,038 | 39,966 | 15,662 | 1,576 |
 | 2026-10-31T11:33:56+00:00 | 314,038 | 39,966 | 15,662 | unknown |
 | 2026-10-31T11:39:53+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T11:51:40+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
@@ -949,6 +948,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-11-04T17:19:12+00:00 | 314,038 | 39,966 | 17,359 | 1,864 |
 | 2026-11-04T23:42:15+00:00 | 314,038 | 39,966 | 17,361 | 1,860 |
 | 2026-11-05T06:50:12+00:00 | 314,038 | 39,966 | 17,674 | 1,876 |
+| 2026-11-05T17:27:06+00:00 | 314,038 | 39,966 | 17,756 | 1,838 |
 
 ### Coverage denominators
 
