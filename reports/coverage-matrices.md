@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-11-05T23:40:45+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-11-06T06:50:42+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -823,8 +823,8 @@ All figures come from the canonical inventory and generated source observations.
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
 | anyps5 main definition matches | 17,773 | Source-backed or canonical classification |
-| anyps5 throwing marker | 12,598 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 5,175 | Source-backed or canonical classification |
+| anyps5 throwing marker | 12,323 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 5,450 | Source-backed or canonical classification |
 | open pr qualified partial | 615 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: fc23faa40aa47a889960438712c46d663c9bcb2a
-Added identities: 55; removed: 1; changed source classifications: 468.
+Previous SHA: 8ad0364e81bcfe1628216fd91c6f0353f2d295ca
+Added identities: 92; removed: 56; changed source classifications: 428.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,14 +903,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-11-05T23:40:45+00:00 |
-| pr scanned | 1,874 |
-| pr total | 1,899 |
+| last refresh utc | 2026-11-06T06:50:42+00:00 |
+| pr scanned | 1,864 |
+| pr total | 1,884 |
 | pr complete | 0 |
 | pr errors | 18 |
-| anyps5 symbol observations | 46,665 |
-| anyps5 declarations only | 128 |
-| anyps5 explicit alias records | 8,307 |
+| anyps5 symbol observations | 46,701 |
+| anyps5 declarations only | 133 |
+| anyps5 explicit alias records | 8,283 |
 | anyps5 assembly definition records | 8 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
@@ -921,15 +921,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 20,397 |
-| anyps5 withheld names | 52 |
+| anyps5 public source proposals | 20,451 |
+| anyps5 withheld names | 53 |
 | overlap publication safe | 0 |
 
 ### Actual progress trend
 
 | Observed at (UTC) | Indexed | Strictly verified names | AnyPS5 main source matches | Open PR heads scanned |
 |---|---:|---:|---:|---:|
-| 2026-10-31T11:39:53+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T11:51:40+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T16:55:08+00:00 | 314,038 | 39,966 | 15,662 | 1,677 |
 | 2026-10-31T17:16:26+00:00 | 314,038 | 39,966 | 15,662 | 1,687 |
@@ -949,6 +948,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-11-05T06:50:12+00:00 | 314,038 | 39,966 | 17,674 | 1,876 |
 | 2026-11-05T17:27:06+00:00 | 314,038 | 39,966 | 17,756 | 1,838 |
 | 2026-11-05T23:40:45+00:00 | 314,038 | 39,966 | 17,773 | 1,874 |
+| 2026-11-06T06:50:42+00:00 | 314,038 | 39,966 | 17,773 | 1,864 |
 
 ### Coverage denominators
 
