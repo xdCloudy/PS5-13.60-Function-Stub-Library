@@ -9,8 +9,8 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 707 |
-| source_symbol_already_observed | 8400 |
+| priority_candidates | 706 |
+| source_symbol_already_observed | 8401 |
 | source_symbol_in_other_provider | 2279 |
 
 ## Highest-volume libraries
@@ -24,7 +24,6 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceAgc | 0 | 2 | 2 |
 | libSceJsc | 0 | 2 | 2 |
 | libSceNgs2 | 0 | 1 | 1 |
-| libSceNpEntitlementAccess | 0 | 1 | 1 |
 
 ## Leading individual research targets
 
