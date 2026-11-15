@@ -9,8 +9,8 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 712 |
-| source_symbol_already_observed | 8397 |
+| priority_candidates | 700 |
+| source_symbol_already_observed | 8409 |
 | source_symbol_in_other_provider | 2277 |
 
 ## Highest-volume libraries
@@ -19,8 +19,7 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 |---|---:|---:|---:|
 | libSceNpCommon | 250 | 347 | 597 |
 | libSceNKWebKit | 2 | 82 | 84 |
-| libSceMediaFrameworkInterface | 0 | 13 | 13 |
-| libSceIcu | 11 | 0 | 11 |
+| libSceIcu | 12 | 0 | 12 |
 | libSceJsc | 2 | 2 | 4 |
 | libSceAgc | 0 | 2 | 2 |
 | libSceNgs2 | 0 | 1 | 1 |
@@ -40,6 +39,7 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceIcu | uscript_getScript | fiX2RRLQhak | dual_3.20_and_13.60 | none |
 | libSceIcu | unorm2_getNFCInstance | ikNH4c6kdMw | dual_3.20_and_13.60 | none |
 | libSceIcu | u_toupper | rpv+luk5Ye0 | dual_3.20_and_13.60 | none |
+| libSceIcu | uloc_setKeywordValue | sw98L1MbqpM | dual_3.20_and_13.60 | none |
 | libSceJsc | _ZNK3WTF17double_conversion23DoubleToStringConverter13ToExponentialEdiPNS0_13StringBuilderE | 9qxUiFlS1A4 | dual_3.20_and_13.60 | none |
 | libSceJsc | _ZN3WTF17double_conversion23DoubleToStringConverter19EcmaScriptConverterEv | vYLd9fXeOkc | dual_3.20_and_13.60 | none |
 | libSceNKWebKit | _ZNK3WTF17double_conversion23DoubleToStringConverter13ToExponentialEdiPNS0_13StringBuilderE | 9qxUiFlS1A4 | dual_3.20_and_13.60 | none |
@@ -103,7 +103,6 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceNpCommon | _ZN3sce2np10MemoryFile4ReadEPNS0_6HandleEPvmPm | EyhtbPFMWNA | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np3ipc17ServiceIpmiClient11findServiceEi | F2xYmg5DiR4 | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np8JsonBool7SetBoolEb | FdpYFbq5C3Q | dual_3.20_and_13.60 | none |
-| libSceNpCommon | _ZN3sce2np9JsonValueD2Ev | FfSNfBmn+K8 | dual_3.20_and_13.60 | none |
 
 None of these are independently validated as guest ABI. Public SDK header names
 and 3.20 forwarding entries do not establish the correct guest ABI or behaviour.
