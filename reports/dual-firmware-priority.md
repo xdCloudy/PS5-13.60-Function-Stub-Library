@@ -9,8 +9,8 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 700 |
-| source_symbol_already_observed | 8409 |
+| priority_candidates | 705 |
+| source_symbol_already_observed | 8404 |
 | source_symbol_in_other_provider | 2277 |
 
 ## Highest-volume libraries
@@ -19,7 +19,7 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 |---|---:|---:|---:|
 | libSceNpCommon | 250 | 347 | 597 |
 | libSceNKWebKit | 2 | 82 | 84 |
-| libSceIcu | 12 | 0 | 12 |
+| libSceIcu | 17 | 0 | 17 |
 | libSceJsc | 2 | 2 | 4 |
 | libSceAgc | 0 | 2 | 2 |
 | libSceNgs2 | 0 | 1 | 1 |
@@ -31,15 +31,20 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceIcu | unorm2_isNormalized | 7ETpt3V2fEU | dual_3.20_and_13.60 | none |
 | libSceIcu | unorm2_getRawDecomposition | B8jGs8D+GHY | dual_3.20_and_13.60 | none |
 | libSceIcu | unorm2_getNFDInstance | Drupl3SzOhM | dual_3.20_and_13.60 | none |
+| libSceIcu | uloc_addLikelySubtags | HQ6DCQrAXD4 | dual_3.20_and_13.60 | none |
 | libSceIcu | u_tolower | I7A4lT+s9h8 | dual_3.20_and_13.60 | none |
+| libSceIcu | uloc_countAvailable | J5lZTL2H6Aw | dual_3.20_and_13.60 | none |
 | libSceIcu | ublock_getCode | Oi8niAD8r1M | dual_3.20_and_13.60 | none |
 | libSceIcu | uscript_hasScript | PWK6yVIGNuY | dual_3.20_and_13.60 | none |
 | libSceIcu | unorm2_normalize | eMM8e4yA3AU | dual_3.20_and_13.60 | none |
 | libSceIcu | u_totitle | f4x1+G7t6eY | dual_3.20_and_13.60 | none |
 | libSceIcu | uscript_getScript | fiX2RRLQhak | dual_3.20_and_13.60 | none |
 | libSceIcu | unorm2_getNFCInstance | ikNH4c6kdMw | dual_3.20_and_13.60 | none |
+| libSceIcu | udata_setFileAccess | mCyTdtewGpk | dual_3.20_and_13.60 | none |
 | libSceIcu | u_toupper | rpv+luk5Ye0 | dual_3.20_and_13.60 | none |
 | libSceIcu | uloc_setKeywordValue | sw98L1MbqpM | dual_3.20_and_13.60 | none |
+| libSceIcu | udata_setCommonData | wHZwCpZVcGI | dual_3.20_and_13.60 | none |
+| libSceIcu | uloc_minimizeSubtags | yb9tILRzD1k | dual_3.20_and_13.60 | none |
 | libSceJsc | _ZNK3WTF17double_conversion23DoubleToStringConverter13ToExponentialEdiPNS0_13StringBuilderE | 9qxUiFlS1A4 | dual_3.20_and_13.60 | none |
 | libSceJsc | _ZN3WTF17double_conversion23DoubleToStringConverter19EcmaScriptConverterEv | vYLd9fXeOkc | dual_3.20_and_13.60 | none |
 | libSceNKWebKit | _ZNK3WTF17double_conversion23DoubleToStringConverter13ToExponentialEdiPNS0_13StringBuilderE | 9qxUiFlS1A4 | dual_3.20_and_13.60 | none |
@@ -98,11 +103,6 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceNpCommon | _ZNK3sce2np10JsonNumber5CloneEP16SceNpAllocatorEx | COxqqhvLSyM | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np9WorkQueue6IsInitEv | CznMfhTIvVY | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np10JsonObject5ClearEv | DiHxx2k5zfM | dual_3.20_and_13.60 | none |
-| libSceNpCommon | _ZNK3sce2np9JsonArray5CloneEP16SceNpAllocatorEx | EcboqmwkrMY | dual_3.20_and_13.60 | none |
-| libSceNpCommon | _ZN3sce2np9HttpTrans12RecvResponseEPNS0_6HandleEPvmPm | EhLaOnhdcXo | dual_3.20_and_13.60 | none |
-| libSceNpCommon | _ZN3sce2np10MemoryFile4ReadEPNS0_6HandleEPvmPm | EyhtbPFMWNA | dual_3.20_and_13.60 | none |
-| libSceNpCommon | _ZN3sce2np3ipc17ServiceIpmiClient11findServiceEi | F2xYmg5DiR4 | dual_3.20_and_13.60 | none |
-| libSceNpCommon | _ZN3sce2np8JsonBool7SetBoolEb | FdpYFbq5C3Q | dual_3.20_and_13.60 | none |
 
 None of these are independently validated as guest ABI. Public SDK header names
 and 3.20 forwarding entries do not establish the correct guest ABI or behaviour.
