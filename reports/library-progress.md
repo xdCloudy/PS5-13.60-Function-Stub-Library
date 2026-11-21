@@ -7,7 +7,7 @@ All identities remain represented; source definition matches are **not** validat
 | SystemReactiveLinq | 26,351 | 0 | 0 | 0 | 0 |
 | mscorlib | 23,710 | 375 | 0 | 0 | 0 |
 | SystemCore | 19,731 | 0 | 0 | 0 | 0 |
-| libSceNKWebKit | 18,939 | 12,110 | 8,614 | 7,211 | 0 |
+| libSceNKWebKit | 18,939 | 12,110 | 8,614 | 6,895 | 0 |
 | ScePlayStationPUI | 17,872 | 0 | 0 | 0 | 0 |
 | ReactNativePUI | 10,924 | 0 | 0 | 0 | 0 |
 | System | 10,621 | 0 | 0 | 0 | 0 |
@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 59 | 612 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 74 | 597 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |
@@ -60,7 +60,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIQuickImageEdit | 981 | 0 | 0 | 0 | 0 |
 | libmonosgen-2.0 | 963 | 963 | 0 | 0 | 0 |
 | MonoDataSqlite | 898 | 0 | 0 | 0 | 0 |
-| libSceIcu | 855 | 813 | 72 | 60 | 0 |
+| libSceIcu | 855 | 813 | 72 | 43 | 0 |
 | SceVshShellUIVisionRecognition | 822 | 0 | 0 | 0 | 0 |
 | ReactNativeComponentsVsh | 820 | 0 | 0 | 0 | 0 |
 | libdiscord | 802 | 0 | 0 | 0 | 0 |
@@ -129,11 +129,11 @@ All identities remain represented; source definition matches are **not** validat
 | libSceFont | 240 | 240 | 44 | 36 | 0 |
 | libSceVideoOut | 237 | 199 | 133 | 111 | 0 |
 | libSceNet | 235 | 223 | 0 | 0 | 0 |
-| libSceMediaFrameworkInterface | 225 | 139 | 139 | 107 | 0 |
+| libSceMediaFrameworkInterface | 225 | 139 | 139 | 120 | 0 |
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |
 | libSceJson2 | 215 | 215 | 0 | 0 | 0 |
 | libSceNKWebKitRequirements | 214 | 142 | 0 | 0 | 0 |
-| libScePad | 212 | 194 | 4 | 0 | 1 |
+| libScePad | 212 | 194 | 4 | 1 | 0 |
 | libmono-btls-shared | 212 | 205 | 0 | 0 | 0 |
 | SceVshIme | 211 | 0 | 0 | 0 | 0 |
 | SceVshNpWebapi2 | 208 | 0 | 0 | 0 | 0 |
@@ -255,7 +255,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceNpTrophy2 | 56 | 56 | 0 | 0 | 0 |
 | libScePlayReady2 | 56 | 56 | 1 | 1 | 0 |
 | SceVshRegistry | 54 | 0 | 0 | 0 | 0 |
-| libSceAjm | 54 | 46 | 3 | 3 | 0 |
+| libSceAjm | 54 | 46 | 3 | 0 | 0 |
 | libCFWML | 53 | 0 | 0 | 0 | 0 |
 | libSceWebTransport | 53 | 0 | 0 | 0 | 0 |
 | libfontconfig | 53 | 53 | 0 | 0 | 0 |
@@ -271,7 +271,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshPadControllerUpdWrapper | 50 | 0 | 0 | 0 | 0 |
 | libScePlayReady | 50 | 50 | 0 | 0 | 0 |
 | libSceAudioIn | 49 | 48 | 0 | 0 | 0 |
-| libSceRemoteplay | 49 | 48 | 3 | 2 | 1 |
+| libSceRemoteplay | 49 | 48 | 3 | 3 | 0 |
 | libSceSpSysCallWrapper | 48 | 48 | 0 | 0 | 0 |
 | libSceVideoRecordingP | 48 | 43 | 0 | 0 | 0 |
 | libSceGameLiveStreaming | 47 | 47 | 0 | 0 | 0 |
@@ -345,7 +345,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceVdecCore | 27 | 25 | 1 | 1 | 0 |
 | libSceVenc | 27 | 19 | 5 | 3 | 0 |
 | SceVshShareServerPostWrapper | 26 | 0 | 0 | 0 | 0 |
-| libSceNpEntitlementAccess | 26 | 26 | 1 | 0 | 1 |
+| libSceNpEntitlementAccess | 26 | 26 | 1 | 1 | 0 |
 | libSceNpParty | 26 | 26 | 0 | 0 | 0 |
 | SceVshShellUIUtilWrapper | 25 | 0 | 0 | 0 | 0 |
 | SceVshVoiceMsgVoiceMsgWrapper | 25 | 0 | 0 | 0 | 0 |
@@ -580,7 +580,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceMediaAppSharedStorageMa | 5 | 0 | 0 | 0 | 0 |
 | libSceNetCtlV6 | 5 | 5 | 0 | 0 | 0 |
 | libSceNpMatching2Compat | 5 | 5 | 0 | 0 | 0 |
-| libSceNpPartner001 | 5 | 5 | 1 | 0 | 0 |
+| libSceNpPartner001 | 5 | 5 | 1 | 1 | 0 |
 | libSceNpSignalingCompat | 5 | 5 | 0 | 0 | 0 |
 | libSceVrTrackerGpuTest | 5 | 0 | 0 | 0 | 0 |
 | libSceVrTrackerLiveCapture | 5 | 5 | 0 | 0 | 0 |

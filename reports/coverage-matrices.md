@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-11-06T06:50:42+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-11-21T11:05:57+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -27,7 +27,7 @@ All figures come from the canonical inventory and generated source observations.
 | SystemReactiveLinq | 26,351 | 0 | 0 | 0 | 0 | 0 | 26,351 |
 | mscorlib | 23,708 | 312 | 375 | 312 | 0 | 0 | 23,335 |
 | SystemCore | 19,731 | 0 | 0 | 0 | 0 | 0 | 19,731 |
-| libSceNKWebKit | 15,665 | 10,135 | 12,110 | 10,271 | 7,336 | 0 | 6,829 |
+| libSceNKWebKit | 15,665 | 10,135 | 12,110 | 10,271 | 8,810 | 0 | 6,829 |
 | ScePlayStationPUI | 17,872 | 0 | 0 | 0 | 0 | 0 | 17,872 |
 | ReactNativePUI | 10,924 | 0 | 0 | 0 | 0 | 0 | 10,924 |
 | System | 10,621 | 0 | 0 | 0 | 0 | 0 | 10,621 |
@@ -37,7 +37,7 @@ All figures come from the canonical inventory and generated source observations.
 | ReactNativeModulesVsh | 6,713 | 0 | 0 | 0 | 0 | 0 | 6,713 |
 | SceVshShellUIReactNativeShellApp | 6,391 | 0 | 0 | 0 | 0 | 0 | 6,391 |
 | app | 5,612 | 0 | 0 | 0 | 0 | 0 | 5,612 |
-| libSceJsc | 4,439 | 3,491 | 4,115 | 3,493 | 390 | 0 | 1,331 |
+| libSceJsc | 4,439 | 3,491 | 4,115 | 3,493 | 558 | 0 | 1,331 |
 | SceVshShellUILoginMgr | 4,550 | 0 | 0 | 0 | 0 | 0 | 4,550 |
 | ReactivePropertyPlayStation | 4,457 | 0 | 0 | 0 | 0 | 0 | 4,457 |
 | NewtonsoftJsonPlayStation | 4,016 | 0 | 0 | 0 | 0 | 0 | 4,016 |
@@ -63,13 +63,13 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshDiscordAccessor | 1,726 | 0 | 0 | 0 | 0 | 0 | 1,726 |
 | libicu | 0 | 1,460 | 1,698 | 1,460 | 0 | 0 | 0 |
 | websocketsharp | 1,560 | 0 | 0 | 0 | 0 | 0 | 1,560 |
-| libkernel | 1,511 | 0 | 1,357 | 1,147 | 267 | 0 | 154 |
+| libkernel | 1,511 | 0 | 1,357 | 1,147 | 276 | 0 | 154 |
 | SceVshUILib | 1,424 | 0 | 0 | 0 | 0 | 0 | 1,424 |
 | SystemXmlLinq | 1,327 | 0 | 0 | 0 | 0 | 0 | 1,327 |
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 | 0 | 1,311 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 | 0 | 1,283 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 | 0 | 1,272 |
-| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 414 | 612 | 12 |
+| libSceNpCommon | 1,199 | 652 | 1,187 | 1,026 | 429 | 597 | 12 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 | 0 | 1,189 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 | 0 | 1,100 |
 | libmonosgen | 1,087 | 0 | 937 | 796 | 0 | 0 | 150 |
@@ -80,7 +80,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShellUIQuickImageEdit | 981 | 0 | 0 | 0 | 0 | 0 | 981 |
 | libmonosgen-2.0 | 0 | 817 | 963 | 817 | 0 | 0 | 0 |
 | MonoDataSqlite | 898 | 0 | 0 | 0 | 0 | 0 | 898 |
-| libSceIcu | 298 | 556 | 813 | 692 | 60 | 0 | 42 |
+| libSceIcu | 298 | 556 | 813 | 692 | 48 | 0 | 42 |
 | SceVshShellUIVisionRecognition | 822 | 0 | 0 | 0 | 0 | 0 | 822 |
 | ReactNativeComponentsVsh | 820 | 0 | 0 | 0 | 0 | 0 | 820 |
 | libdiscord | 802 | 0 | 0 | 0 | 0 | 0 | 802 |
@@ -131,7 +131,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshShellUIStickerAccessor | 291 | 0 | 0 | 0 | 0 | 0 | 291 |
 | SceVshResourceArbitrator | 287 | 0 | 0 | 0 | 0 | 0 | 287 |
 | SceVshShellUIQuickVideoEdit | 276 | 0 | 0 | 0 | 0 | 0 | 276 |
-| libSceHmd2 | 276 | 4 | 161 | 132 | 67 | 0 | 115 |
+| libSceHmd2 | 276 | 4 | 161 | 132 | 132 | 0 | 115 |
 | libSceCes | 274 | 0 | 274 | 230 | 0 | 0 | 0 |
 | libSceCesCs | 0 | 230 | 273 | 230 | 230 | 0 | 0 |
 | ReactNativeComponentsVshPSNowPlayer | 271 | 0 | 0 | 0 | 0 | 0 | 271 |
@@ -143,17 +143,17 @@ All figures come from the canonical inventory and generated source observations.
 | libjava | 262 | 0 | 177 | 146 | 0 | 0 | 85 |
 | libSceShellCoreUtil | 260 | 0 | 237 | 193 | 0 | 0 | 23 |
 | SceVshDbPreparationWrapper | 249 | 0 | 0 | 0 | 0 | 0 | 249 |
-| libSceAgc | 248 | 170 | 243 | 208 | 200 | 0 | 5 |
+| libSceAgc | 248 | 170 | 243 | 208 | 202 | 0 | 5 |
 | SceVshNpWebapi | 246 | 0 | 0 | 0 | 0 | 0 | 246 |
 | libSceAgcVsh | 245 | 170 | 239 | 204 | 0 | 0 | 6 |
 | libSceFont | 240 | 113 | 240 | 201 | 201 | 0 | 0 |
-| libSceVideoOut | 226 | 136 | 199 | 166 | 161 | 0 | 38 |
+| libSceVideoOut | 226 | 136 | 199 | 166 | 166 | 0 | 38 |
 | libSceNet | 233 | 180 | 223 | 188 | 182 | 0 | 12 |
-| libSceMediaFrameworkInterface | 225 | 0 | 139 | 120 | 107 | 0 | 86 |
+| libSceMediaFrameworkInterface | 225 | 0 | 139 | 120 | 120 | 0 | 86 |
 | libSceGLSlimVSH | 217 | 170 | 208 | 175 | 23 | 0 | 9 |
 | libSceJson2 | 215 | 184 | 215 | 184 | 184 | 0 | 0 |
 | libSceNKWebKitRequirements | 177 | 109 | 142 | 114 | 0 | 0 | 72 |
-| libScePad | 212 | 87 | 194 | 173 | 164 | 1 | 18 |
+| libScePad | 212 | 87 | 194 | 173 | 165 | 0 | 18 |
 | libmono-btls-shared | 212 | 0 | 205 | 181 | 0 | 0 | 7 |
 | SceVshIme | 211 | 0 | 0 | 0 | 0 | 0 | 211 |
 | SceVshNpWebapi2 | 208 | 0 | 0 | 0 | 0 | 0 | 208 |
@@ -174,7 +174,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshNpAsm | 181 | 0 | 0 | 0 | 0 | 0 | 181 |
 | libSceAvSetting | 175 | 90 | 128 | 109 | 109 | 0 | 52 |
 | SceVshUpdateServiceWrapper | 178 | 0 | 0 | 0 | 0 | 0 | 178 |
-| libSceGnmDriver | 168 | 141 | 163 | 141 | 0 | 0 | 12 |
+| libSceGnmDriver | 168 | 141 | 163 | 141 | 37 | 0 | 12 |
 | SceVshAppDbWrapper | 173 | 0 | 0 | 0 | 0 | 0 | 173 |
 | libfreetype | 0 | 141 | 169 | 141 | 0 | 0 | 0 |
 | libprospero_wrapper | 169 | 0 | 64 | 53 | 0 | 0 | 105 |
@@ -191,12 +191,12 @@ All figures come from the canonical inventory and generated source observations.
 | libSceMbus | 111 | 102 | 131 | 112 | 112 | 0 | 12 |
 | libSceNpTus | 142 | 127 | 142 | 127 | 127 | 0 | 0 |
 | libSceAudioOut | 77 | 107 | 132 | 114 | 112 | 0 | 7 |
-| libReactNative.Modules.Vsh.WebAppLauncher | 138 | 41 | 135 | 113 | 38 | 0 | 3 |
+| libReactNative.Modules.Vsh.WebAppLauncher | 138 | 41 | 135 | 113 | 45 | 0 | 3 |
 | libSceAudioOut2 | 138 | 0 | 84 | 79 | 0 | 0 | 54 |
 | libSceComposite | 123 | 67 | 101 | 87 | 87 | 0 | 37 |
 | libSceFont.native | 0 | 113 | 136 | 113 | 0 | 0 | 0 |
 | libSceJxr | 136 | 2 | 136 | 111 | 0 | 0 | 0 |
-| libSceAgcDriver | 119 | 82 | 130 | 113 | 103 | 0 | 5 |
+| libSceAgcDriver | 119 | 82 | 130 | 113 | 113 | 0 | 5 |
 | libSceCustomMusicSysCallWrapper | 133 | 1 | 54 | 48 | 48 | 0 | 79 |
 | gaikai_player_lib | 132 | 0 | 16 | 15 | 0 | 0 | 116 |
 | SceVshOrbisBgft | 127 | 0 | 0 | 0 | 0 | 0 | 127 |
@@ -204,7 +204,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceSaveData | 123 | 82 | 105 | 89 | 0 | 0 | 18 |
 | SceVshNpUds | 122 | 0 | 0 | 0 | 0 | 0 | 122 |
 | SystemNetHttpWebRequest | 122 | 0 | 0 | 0 | 0 | 0 | 122 |
-| libReactNative.Modules.Vsh | 122 | 60 | 87 | 71 | 57 | 0 | 35 |
+| libReactNative.Modules.Vsh | 122 | 60 | 87 | 71 | 67 | 0 | 35 |
 | libSceAmpr | 118 | 76 | 118 | 99 | 99 | 0 | 0 |
 | libScePsm | 118 | 54 | 65 | 54 | 54 | 0 | 53 |
 | libSceHttp | 115 | 91 | 115 | 91 | 90 | 0 | 0 |
@@ -215,27 +215,27 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshLncUtilWrapper | 107 | 0 | 0 | 0 | 0 | 0 | 107 |
 | libhermes-0.11 | 107 | 0 | 0 | 0 | 0 | 0 | 107 |
 | SceVshNpTmdb | 105 | 0 | 0 | 0 | 0 | 0 | 105 |
-| libSceAbstractYoutube | 76 | 66 | 76 | 66 | 34 | 0 | 27 |
+| libSceAbstractYoutube | 76 | 66 | 76 | 66 | 66 | 0 | 27 |
 | libScePlayReady4 | 102 | 70 | 89 | 74 | 34 | 0 | 14 |
 | libSceNpUtility | 102 | 85 | 100 | 88 | 88 | 0 | 2 |
 | libSceBgft | 82 | 74 | 96 | 80 | 80 | 0 | 5 |
 | SceVshNpTrophy | 100 | 0 | 0 | 0 | 0 | 0 | 100 |
-| libSceAbstractLocal | 70 | 61 | 70 | 61 | 0 | 0 | 30 |
+| libSceAbstractLocal | 70 | 61 | 70 | 61 | 61 | 0 | 30 |
 | libSceNetCtl | 57 | 88 | 96 | 89 | 80 | 0 | 3 |
 | libSceIpmi | 92 | 79 | 94 | 79 | 79 | 0 | 3 |
 | libScePlayReady4L | 96 | 0 | 88 | 73 | 0 | 0 | 8 |
 | SceVshPsnUtil | 94 | 0 | 0 | 0 | 0 | 0 | 94 |
-| libSceNpWebApi | 94 | 50 | 56 | 50 | 44 | 0 | 38 |
+| libSceNpWebApi | 94 | 50 | 56 | 50 | 50 | 0 | 38 |
 | libSceLncUtil | 93 | 0 | 89 | 70 | 0 | 0 | 4 |
 | libSceNpUniversalDataSystem | 61 | 72 | 93 | 80 | 80 | 0 | 0 |
-| libcurl | 93 | 75 | 85 | 75 | 75 | 0 | 8 |
+| libcurl | 93 | 75 | 85 | 75 | 7 | 0 | 8 |
 | libpng16 | 0 | 76 | 93 | 76 | 0 | 0 | 0 |
 | SceVshSysUtilWrapper | 92 | 0 | 0 | 0 | 0 | 0 | 92 |
-| libSceAbstractTwitter | 68 | 60 | 68 | 60 | 0 | 0 | 24 |
-| libSceVrTracker2 | 92 | 4 | 51 | 42 | 9 | 0 | 41 |
+| libSceAbstractTwitter | 68 | 60 | 68 | 60 | 60 | 0 | 24 |
+| libSceVrTracker2 | 92 | 4 | 51 | 42 | 42 | 0 | 41 |
 | SceVshOrbisAbstractStorage | 91 | 0 | 0 | 0 | 0 | 0 | 91 |
 | libSceDataTransfer | 45 | 51 | 88 | 75 | 75 | 0 | 0 |
-| libSceJson | 88 | 74 | 88 | 74 | 0 | 0 | 0 |
+| libSceJson | 88 | 74 | 88 | 74 | 25 | 0 | 0 |
 | libSceVnaInternal | 88 | 0 | 84 | 71 | 71 | 0 | 4 |
 | libSceRegMgr | 86 | 56 | 66 | 59 | 59 | 0 | 21 |
 | libSceSysCore | 87 | 64 | 79 | 68 | 68 | 0 | 8 |
@@ -275,10 +275,10 @@ All figures come from the canonical inventory and generated source observations.
 | libSceNpTrophy2 | 56 | 39 | 56 | 45 | 45 | 0 | 0 |
 | libScePlayReady2 | 52 | 46 | 56 | 47 | 14 | 0 | 0 |
 | SceVshRegistry | 54 | 0 | 0 | 0 | 0 | 0 | 54 |
-| libSceAjm | 54 | 19 | 46 | 42 | 3 | 0 | 8 |
+| libSceAjm | 54 | 19 | 46 | 42 | 0 | 0 | 8 |
 | libCFWML | 53 | 0 | 0 | 0 | 0 | 0 | 53 |
 | libSceWebTransport | 53 | 0 | 0 | 0 | 0 | 0 | 53 |
-| libfontconfig | 53 | 41 | 53 | 41 | 41 | 0 | 0 |
+| libfontconfig | 53 | 41 | 53 | 41 | 32 | 0 | 0 |
 | ScePlayStationSpeechSystemTts | 52 | 0 | 0 | 0 | 0 | 0 | 52 |
 | SceVshWebBrowser | 52 | 0 | 0 | 0 | 0 | 0 | 52 |
 | SceVshShareLibWrapper | 51 | 0 | 0 | 0 | 0 | 0 | 51 |
@@ -290,8 +290,8 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshBackupRestoreUtil | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
 | SceVshPadControllerUpdWrapper | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
 | libScePlayReady | 50 | 43 | 50 | 43 | 43 | 0 | 0 |
-| libSceAudioIn | 43 | 34 | 48 | 38 | 33 | 0 | 1 |
-| libSceRemoteplay | 49 | 32 | 48 | 38 | 37 | 1 | 1 |
+| libSceAudioIn | 43 | 34 | 48 | 38 | 38 | 0 | 1 |
+| libSceRemoteplay | 49 | 32 | 48 | 38 | 38 | 0 | 1 |
 | libSceSpSysCallWrapper | 48 | 40 | 48 | 40 | 40 | 0 | 0 |
 | libSceVideoRecordingP | 48 | 0 | 43 | 39 | 18 | 0 | 5 |
 | libSceGameLiveStreaming | 45 | 42 | 47 | 42 | 42 | 0 | 0 |
@@ -318,7 +318,7 @@ All figures come from the canonical inventory and generated source observations.
 | libScePosixForWebKit | 38 | 29 | 38 | 31 | 13 | 0 | 0 |
 | libSceMusicFrameworkInterface | 37 | 17 | 36 | 28 | 28 | 0 | 1 |
 | libSceVoiceChat | 37 | 26 | 34 | 29 | 29 | 0 | 3 |
-| libharfbuzz | 0 | 33 | 37 | 33 | 32 | 0 | 0 |
+| libharfbuzz | 0 | 33 | 37 | 33 | 0 | 0 | 0 |
 | libkernel_psmkit | 37 | 0 | 37 | 26 | 0 | 0 | 0 |
 | SceVshUrlConfigResolver | 36 | 0 | 0 | 0 | 0 | 0 | 36 |
 | libCprm | 35 | 0 | 0 | 0 | 0 | 0 | 35 |
@@ -353,7 +353,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceAvPlayer.native | 0 | 23 | 29 | 23 | 1 | 0 | 0 |
 | libSceVoiceCommand | 29 | 0 | 23 | 18 | 18 | 0 | 6 |
 | SceVshNpSessionService | 28 | 0 | 0 | 0 | 0 | 0 | 28 |
-| libSceCommonDialog | 28 | 14 | 16 | 14 | 2 | 0 | 12 |
+| libSceCommonDialog | 28 | 14 | 16 | 14 | 14 | 0 | 12 |
 | libSceKeyboard | 22 | 21 | 24 | 23 | 23 | 0 | 4 |
 | libSceMbusDebug | 28 | 0 | 28 | 24 | 0 | 0 | 0 |
 | libSceVrTracker2_nosubmission | 28 | 0 | 6 | 5 | 0 | 0 | 22 |
@@ -365,7 +365,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceVdecCore | 27 | 15 | 25 | 18 | 16 | 0 | 2 |
 | libSceVenc | 27 | 13 | 19 | 16 | 16 | 0 | 8 |
 | SceVshShareServerPostWrapper | 26 | 0 | 0 | 0 | 0 | 0 | 26 |
-| libSceNpEntitlementAccess | 25 | 23 | 26 | 25 | 23 | 1 | 0 |
+| libSceNpEntitlementAccess | 25 | 23 | 26 | 25 | 24 | 0 | 0 |
 | libSceNpParty | 26 | 19 | 26 | 19 | 19 | 0 | 0 |
 | SceVshShellUIUtilWrapper | 25 | 0 | 0 | 0 | 0 | 0 | 25 |
 | SceVshVoiceMsgVoiceMsgWrapper | 25 | 0 | 0 | 0 | 0 | 0 | 25 |
@@ -600,7 +600,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceMediaAppSharedStorageMa | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | libSceNetCtlV6 | 5 | 0 | 5 | 5 | 0 | 0 | 0 |
 | libSceNpMatching2Compat | 5 | 0 | 5 | 3 | 0 | 0 | 0 |
-| libSceNpPartner001 | 4 | 1 | 5 | 4 | 2 | 0 | 0 |
+| libSceNpPartner001 | 4 | 1 | 5 | 4 | 3 | 0 | 0 |
 | libSceNpSignalingCompat | 5 | 0 | 5 | 5 | 0 | 0 | 0 |
 | libSceVrTrackerGpuTest | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | libSceVrTrackerLiveCapture | 5 | 0 | 5 | 5 | 0 | 0 | 0 |
@@ -645,7 +645,7 @@ All figures come from the canonical inventory and generated source observations.
 | ScePlayStationPUIPlatform | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
 | libSceDbgVideoOut | 3 | 0 | 1 | 1 | 0 | 0 | 2 |
 | libSceEsvmAppAudioSync | 3 | 0 | 3 | 1 | 0 | 0 | 0 |
-| libSceEsvmPlayReady | 3 | 0 | 3 | 3 | 0 | 0 | 0 |
+| libSceEsvmPlayReady | 3 | 0 | 3 | 3 | 1 | 0 | 0 |
 | libSceFreeTypeOptOl | 0 | 3 | 3 | 3 | 0 | 0 | 0 |
 | libSceHubAppUtil | 3 | 2 | 3 | 2 | 2 | 0 | 0 |
 | libSceLoginService | 3 | 1 | 3 | 1 | 1 | 0 | 0 |
@@ -743,7 +743,7 @@ All figures come from the canonical inventory and generated source observations.
 | libSceHmd2Reprojection_nosubmission | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
 | libSceHmd2Reprojection_vrremote_nosubmission | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
 | libSceImeConsecutiveClauseConversionExtensions | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
-| libSceImeDialogVoiceDictation | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| libSceImeDialogVoiceDictation | 1 | 0 | 1 | 1 | 1 | 0 | 0 |
 | libSceImeRemotePlayExtensions | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
 | libSceImeVoiceDictation | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
 | libSceJpegDec_jvm | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
@@ -822,10 +822,10 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 17,773 | Source-backed or canonical classification |
-| anyps5 throwing marker | 12,323 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 5,450 | Source-backed or canonical classification |
-| open pr qualified partial | 615 | Source-backed or canonical classification |
+| anyps5 main definition matches | 19,704 | Source-backed or canonical classification |
+| anyps5 throwing marker | 10,983 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 8,721 | Source-backed or canonical classification |
+| open pr qualified partial | 597 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
 | build verified live | unknown | Not measured; never inferred from source bodies |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: 8ad0364e81bcfe1628216fd91c6f0353f2d295ca
-Added identities: 92; removed: 56; changed source classifications: 428.
+Previous SHA: bbd85f7ebfd41433598b4573eaae53df19dc059a
+Added identities: 3,388; removed: 4,805; changed source classifications: 10,046.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -858,12 +858,11 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Library | Priority score | Qualified assessed | Unnamed | 3.20 name proposals |
 |---|---:|---:|---:|---:|
-| libSceJsc | 2,561 | 2,951 | 1,331 | 0 |
-| libSceNKWebKit | 1,278 | 8,614 | 6,829 | 0 |
-| libSceMediaFrameworkInterface | 13 | 139 | 86 | 0 |
-| libSceIcu | 12 | 72 | 42 | 0 |
+| libSceJsc | 2,393 | 2,951 | 1,331 | 0 |
+| libSceIcu | 24 | 72 | 42 | 0 |
 | libSceSaveData | 8 | 8 | 18 | 0 |
 | libSceFontGs | 5 | 8 | 4 | 0 |
+| libSceAjm | 3 | 3 | 8 | 0 |
 | libSceTEEClient | 1 | 1 | 4 | 0 |
 | I18N | 0 | 0 | 72 | 0 |
 | I18NCJK | 0 | 0 | 59 | 0 |
@@ -898,20 +897,21 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | ScePlayStationOrbisSpeech | 0 | 0 | 113 | 0 |
 | ScePlayStationPUI | 0 | 0 | 17,872 | 0 |
 | ScePlayStationPUIPlatform | 0 | 0 | 3 | 0 |
+| ScePlayStationSpeechSystemTts | 0 | 0 | 52 | 0 |
 
 ## F. Automation health
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-11-06T06:50:42+00:00 |
-| pr scanned | 1,864 |
-| pr total | 1,884 |
+| last refresh utc | 2026-11-21T11:05:57+00:00 |
+| pr scanned | 714 |
+| pr total | 2,175 |
 | pr complete | 0 |
-| pr errors | 18 |
-| anyps5 symbol observations | 46,701 |
-| anyps5 declarations only | 133 |
-| anyps5 explicit alias records | 8,283 |
-| anyps5 assembly definition records | 8 |
+| pr errors | 15 |
+| anyps5 symbol observations | 45,284 |
+| anyps5 declarations only | 138 |
+| anyps5 explicit alias records | 5,055 |
+| anyps5 assembly definition records | 407 |
 | anyps5 export registration verified | unknown |
 | source 320 files | 275 |
 | source 320 registrations | 33,298 |
@@ -921,15 +921,14 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | source 320 review items | 10,846 |
 | source 320 canonical auto changes | 0 |
 | source 320 statuses | {"already_indexed_and_named": 28312, "ownership_review_required": 4868, "withheld": 118} |
-| anyps5 public source proposals | 20,451 |
-| anyps5 withheld names | 53 |
+| anyps5 public source proposals | 19,908 |
+| anyps5 withheld names | 72 |
 | overlap publication safe | 0 |
 
 ### Actual progress trend
 
 | Observed at (UTC) | Indexed | Strictly verified names | AnyPS5 main source matches | Open PR heads scanned |
 |---|---:|---:|---:|---:|
-| 2026-10-31T11:51:40+00:00 | 314,038 | 39,966 | 15,662 | 1,575 |
 | 2026-10-31T16:55:08+00:00 | 314,038 | 39,966 | 15,662 | 1,677 |
 | 2026-10-31T17:16:26+00:00 | 314,038 | 39,966 | 15,662 | 1,687 |
 | 2026-10-31T21:37:41+00:00 | 314,038 | 39,966 | 15,661 | 1,668 |
@@ -949,6 +948,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-11-05T17:27:06+00:00 | 314,038 | 39,966 | 17,756 | 1,838 |
 | 2026-11-05T23:40:45+00:00 | 314,038 | 39,966 | 17,773 | 1,874 |
 | 2026-11-06T06:50:42+00:00 | 314,038 | 39,966 | 17,773 | 1,864 |
+| 2026-11-21T11:05:57+00:00 | 314,038 | 39,966 | 19,704 | 714 |
 
 ### Coverage denominators
 

@@ -1,18 +1,18 @@
 {
   "automation_health": {
-    "anyps5_assembly_definition_records": 8,
-    "anyps5_declarations_only": 133,
-    "anyps5_explicit_alias_records": 8283,
+    "anyps5_assembly_definition_records": 407,
+    "anyps5_declarations_only": 138,
+    "anyps5_explicit_alias_records": 5055,
     "anyps5_export_registration_verified": null,
-    "anyps5_public_source_proposals": 20451,
-    "anyps5_symbol_observations": 46701,
-    "anyps5_withheld_names": 53,
-    "last_refresh_utc": "2026-11-06T06:50:42+00:00",
+    "anyps5_public_source_proposals": 19908,
+    "anyps5_symbol_observations": 45284,
+    "anyps5_withheld_names": 72,
+    "last_refresh_utc": "2026-11-21T11:05:57+00:00",
     "overlap_publication_safe": false,
     "pr_complete": false,
-    "pr_errors": 18,
-    "pr_scanned": 1864,
-    "pr_total": 1884,
+    "pr_errors": 15,
+    "pr_scanned": 714,
+    "pr_total": 2175,
     "source_320_canonical_auto_changes": 0,
     "source_320_conflicts_quarantined": 10728,
     "source_320_files": 275,
@@ -127,7 +127,7 @@
     "strictly_verified_names": 39966,
     "unnamed_or_withheld": 266953
   },
-  "generated_at_utc": "2026-11-06T06:50:42+00:00",
+  "generated_at_utc": "2026-11-21T11:05:57+00:00",
   "libraries": [
     {
       "anyps5_assembly_unvalidated": 0,
@@ -209,13 +209,13 @@
       "withheld": 0
     },
     {
-      "anyps5_assembly_unvalidated": 0,
-      "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 2636,
-      "anyps5_main_definitions": 7336,
+      "anyps5_assembly_unvalidated": 398,
+      "anyps5_declarations_without_definitions": 1,
+      "anyps5_explicit_alias_without_visible_definition": 475,
+      "anyps5_main_definitions": 8810,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1716,
-      "anyps5_source_throwing": 9573,
+      "anyps5_source_nonthrowing_unvalidated": 3600,
+      "anyps5_source_throwing": 7404,
       "conflicted": 0,
       "firmware_13_60": 15665,
       "historical_only": 3274,
@@ -229,7 +229,7 @@
         "historical_only": 3274
       },
       "qualified_assessed": 8614,
-      "score_triage_only": 1278,
+      "score_triage_only": 0,
       "source_320_references": 10135,
       "strict_verified": 10271,
       "unresolved": 6829,
@@ -472,11 +472,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 221,
-      "anyps5_main_definitions": 390,
+      "anyps5_explicit_alias_without_visible_definition": 24,
+      "anyps5_main_definitions": 558,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 10,
-      "anyps5_source_throwing": 727,
+      "anyps5_source_nonthrowing_unvalidated": 152,
+      "anyps5_source_throwing": 609,
       "conflicted": 0,
       "firmware_13_60": 4439,
       "historical_only": 1007,
@@ -490,7 +490,7 @@
         "historical_only": 1007
       },
       "qualified_assessed": 2951,
-      "score_triage_only": 2561,
+      "score_triage_only": 2393,
       "source_320_references": 3491,
       "strict_verified": 3493,
       "unresolved": 1331,
@@ -679,13 +679,13 @@
       "withheld": 0
     },
     {
-      "anyps5_assembly_unvalidated": 0,
-      "anyps5_declarations_without_definitions": 1,
-      "anyps5_explicit_alias_without_visible_definition": 900,
+      "anyps5_assembly_unvalidated": 1,
+      "anyps5_declarations_without_definitions": 4,
+      "anyps5_explicit_alias_without_visible_definition": 503,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 110,
-      "anyps5_source_throwing": 1034,
+      "anyps5_source_nonthrowing_unvalidated": 732,
+      "anyps5_source_throwing": 449,
       "conflicted": 0,
       "firmware_13_60": 2688,
       "historical_only": 0,
@@ -1148,12 +1148,12 @@
     },
     {
       "anyps5_assembly_unvalidated": 4,
-      "anyps5_declarations_without_definitions": 4,
-      "anyps5_explicit_alias_without_visible_definition": 17,
-      "anyps5_main_definitions": 267,
+      "anyps5_declarations_without_definitions": 5,
+      "anyps5_explicit_alias_without_visible_definition": 1,
+      "anyps5_main_definitions": 276,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 727,
-      "anyps5_source_throwing": 41,
+      "anyps5_source_nonthrowing_unvalidated": 747,
+      "anyps5_source_throwing": 21,
       "conflicted": 0,
       "firmware_13_60": 1511,
       "historical_only": 0,
@@ -1306,10 +1306,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 414,
-      "anyps5_open_pr_matches_partial": 612,
-      "anyps5_source_nonthrowing_unvalidated": 363,
-      "anyps5_source_throwing": 117,
+      "anyps5_main_definitions": 429,
+      "anyps5_open_pr_matches_partial": 597,
+      "anyps5_source_nonthrowing_unvalidated": 397,
+      "anyps5_source_throwing": 101,
       "conflicted": 0,
       "firmware_13_60": 1199,
       "historical_only": 0,
@@ -1590,12 +1590,12 @@
     },
     {
       "anyps5_assembly_unvalidated": 0,
-      "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 656,
-      "anyps5_main_definitions": 60,
+      "anyps5_declarations_without_definitions": 5,
+      "anyps5_explicit_alias_without_visible_definition": 654,
+      "anyps5_main_definitions": 48,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 133,
-      "anyps5_source_throwing": 2637,
+      "anyps5_source_nonthrowing_unvalidated": 404,
+      "anyps5_source_throwing": 2419,
       "conflicted": 0,
       "firmware_13_60": 298,
       "historical_only": 557,
@@ -1609,7 +1609,7 @@
         "historical_only": 557
       },
       "qualified_assessed": 72,
-      "score_triage_only": 12,
+      "score_triage_only": 24,
       "source_320_references": 556,
       "strict_verified": 692,
       "unresolved": 42,
@@ -1774,11 +1774,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 114,
+      "anyps5_explicit_alias_without_visible_definition": 109,
       "anyps5_main_definitions": 486,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 40,
-      "anyps5_source_throwing": 655,
+      "anyps5_source_nonthrowing_unvalidated": 45,
+      "anyps5_source_throwing": 650,
       "conflicted": 0,
       "firmware_13_60": 651,
       "historical_only": 42,
@@ -1801,11 +1801,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 401,
+      "anyps5_explicit_alias_without_visible_definition": 386,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 83,
-      "anyps5_source_throwing": 222,
+      "anyps5_source_nonthrowing_unvalidated": 316,
+      "anyps5_source_throwing": 77,
       "conflicted": 0,
       "firmware_13_60": 665,
       "historical_only": 0,
@@ -1986,8 +1986,8 @@
       "anyps5_explicit_alias_without_visible_definition": 124,
       "anyps5_main_definitions": 367,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 78,
-      "anyps5_source_throwing": 473,
+      "anyps5_source_nonthrowing_unvalidated": 229,
+      "anyps5_source_throwing": 322,
       "conflicted": 0,
       "firmware_13_60": 535,
       "historical_only": 4,
@@ -2091,8 +2091,8 @@
       "anyps5_explicit_alias_without_visible_definition": 33,
       "anyps5_main_definitions": 421,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 146,
-      "anyps5_source_throwing": 471,
+      "anyps5_source_nonthrowing_unvalidated": 164,
+      "anyps5_source_throwing": 453,
       "conflicted": 0,
       "firmware_13_60": 116,
       "historical_only": 400,
@@ -2167,11 +2167,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 401,
+      "anyps5_explicit_alias_without_visible_definition": 386,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 83,
-      "anyps5_source_throwing": 222,
+      "anyps5_source_nonthrowing_unvalidated": 316,
+      "anyps5_source_throwing": 77,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 488,
@@ -2222,8 +2222,8 @@
       "anyps5_explicit_alias_without_visible_definition": 75,
       "anyps5_main_definitions": 223,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 2,
-      "anyps5_source_throwing": 337,
+      "anyps5_source_nonthrowing_unvalidated": 28,
+      "anyps5_source_throwing": 311,
       "conflicted": 0,
       "firmware_13_60": 431,
       "historical_only": 15,
@@ -2379,8 +2379,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 300,
-      "anyps5_source_throwing": 156,
+      "anyps5_source_nonthrowing_unvalidated": 422,
+      "anyps5_source_throwing": 126,
       "conflicted": 0,
       "firmware_13_60": 414,
       "historical_only": 0,
@@ -2405,8 +2405,8 @@
       "anyps5_explicit_alias_without_visible_definition": 60,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 72,
-      "anyps5_source_throwing": 340,
+      "anyps5_source_nonthrowing_unvalidated": 414,
+      "anyps5_source_throwing": 138,
       "conflicted": 0,
       "firmware_13_60": 412,
       "historical_only": 0,
@@ -2457,8 +2457,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 300,
-      "anyps5_source_throwing": 156,
+      "anyps5_source_nonthrowing_unvalidated": 422,
+      "anyps5_source_throwing": 126,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 399,
@@ -2610,12 +2610,12 @@
     },
     {
       "anyps5_assembly_unvalidated": 0,
-      "anyps5_declarations_without_definitions": 19,
+      "anyps5_declarations_without_definitions": 8,
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 115,
-      "anyps5_source_throwing": 6,
+      "anyps5_source_nonthrowing_unvalidated": 157,
+      "anyps5_source_throwing": 7,
       "conflicted": 0,
       "firmware_13_60": 344,
       "historical_only": 0,
@@ -2640,8 +2640,8 @@
       "anyps5_explicit_alias_without_visible_definition": 92,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 46,
-      "anyps5_source_throwing": 46,
+      "anyps5_source_nonthrowing_unvalidated": 67,
+      "anyps5_source_throwing": 26,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 344,
@@ -2663,11 +2663,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 88,
+      "anyps5_explicit_alias_without_visible_definition": 126,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 54,
-      "anyps5_source_throwing": 88,
+      "anyps5_source_nonthrowing_unvalidated": 159,
+      "anyps5_source_throwing": 40,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 341,
@@ -2923,11 +2923,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 194,
-      "anyps5_main_definitions": 67,
+      "anyps5_explicit_alias_without_visible_definition": 113,
+      "anyps5_main_definitions": 132,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 95,
-      "anyps5_source_throwing": 58,
+      "anyps5_source_nonthrowing_unvalidated": 178,
+      "anyps5_source_throwing": 56,
       "conflicted": 0,
       "firmware_13_60": 276,
       "historical_only": 0,
@@ -2978,8 +2978,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 230,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 281,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 288,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 273,
@@ -3079,7 +3079,7 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 251,
+      "anyps5_explicit_alias_without_visible_definition": 239,
       "anyps5_main_definitions": 13,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
@@ -3236,10 +3236,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 200,
+      "anyps5_main_definitions": 202,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 240,
-      "anyps5_source_throwing": 4,
+      "anyps5_source_nonthrowing_unvalidated": 247,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 248,
       "historical_only": 0,
@@ -3287,11 +3287,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 150,
+      "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 150,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 245,
       "historical_only": 0,
@@ -3316,8 +3316,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 201,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 152,
-      "anyps5_source_throwing": 88,
+      "anyps5_source_nonthrowing_unvalidated": 163,
+      "anyps5_source_throwing": 78,
       "conflicted": 0,
       "firmware_13_60": 240,
       "historical_only": 0,
@@ -3338,12 +3338,12 @@
     },
     {
       "anyps5_assembly_unvalidated": 0,
-      "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 57,
-      "anyps5_main_definitions": 161,
+      "anyps5_declarations_without_definitions": 6,
+      "anyps5_explicit_alias_without_visible_definition": 65,
+      "anyps5_main_definitions": 166,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 72,
-      "anyps5_source_throwing": 196,
+      "anyps5_source_nonthrowing_unvalidated": 82,
+      "anyps5_source_throwing": 208,
       "conflicted": 0,
       "firmware_13_60": 226,
       "historical_only": 11,
@@ -3369,8 +3369,8 @@
       "anyps5_explicit_alias_without_visible_definition": 8,
       "anyps5_main_definitions": 182,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 94,
-      "anyps5_source_throwing": 140,
+      "anyps5_source_nonthrowing_unvalidated": 109,
+      "anyps5_source_throwing": 125,
       "conflicted": 0,
       "firmware_13_60": 233,
       "historical_only": 2,
@@ -3394,10 +3394,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 46,
-      "anyps5_main_definitions": 107,
+      "anyps5_main_definitions": 120,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 177,
+      "anyps5_source_throwing": 191,
       "conflicted": 0,
       "firmware_13_60": 225,
       "historical_only": 0,
@@ -3410,7 +3410,7 @@
         "existing_firmware_system_library": 225
       },
       "qualified_assessed": 139,
-      "score_triage_only": 13,
+      "score_triage_only": 0,
       "source_320_references": 0,
       "strict_verified": 120,
       "unresolved": 86,
@@ -3422,8 +3422,8 @@
       "anyps5_explicit_alias_without_visible_definition": 7,
       "anyps5_main_definitions": 23,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 138,
-      "anyps5_source_throwing": 72,
+      "anyps5_source_nonthrowing_unvalidated": 140,
+      "anyps5_source_throwing": 70,
       "conflicted": 0,
       "firmware_13_60": 217,
       "historical_only": 0,
@@ -3471,11 +3471,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 43,
+      "anyps5_explicit_alias_without_visible_definition": 41,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 49,
-      "anyps5_source_throwing": 116,
+      "anyps5_source_nonthrowing_unvalidated": 186,
+      "anyps5_source_throwing": 41,
       "conflicted": 0,
       "firmware_13_60": 177,
       "historical_only": 37,
@@ -3498,11 +3498,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 14,
-      "anyps5_main_definitions": 164,
-      "anyps5_open_pr_matches_partial": 1,
-      "anyps5_source_nonthrowing_unvalidated": 52,
-      "anyps5_source_throwing": 162,
+      "anyps5_explicit_alias_without_visible_definition": 21,
+      "anyps5_main_definitions": 165,
+      "anyps5_open_pr_matches_partial": 0,
+      "anyps5_source_nonthrowing_unvalidated": 56,
+      "anyps5_source_throwing": 166,
       "conflicted": 0,
       "firmware_13_60": 212,
       "historical_only": 0,
@@ -3866,8 +3866,8 @@
       "anyps5_explicit_alias_without_visible_definition": 19,
       "anyps5_main_definitions": 145,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 32,
-      "anyps5_source_throwing": 155,
+      "anyps5_source_nonthrowing_unvalidated": 37,
+      "anyps5_source_throwing": 150,
       "conflicted": 0,
       "firmware_13_60": 178,
       "historical_only": 8,
@@ -3893,8 +3893,8 @@
       "anyps5_explicit_alias_without_visible_definition": 26,
       "anyps5_main_definitions": 112,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 3,
-      "anyps5_source_throwing": 155,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 154,
       "conflicted": 0,
       "firmware_13_60": 173,
       "historical_only": 11,
@@ -3920,8 +3920,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 156,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 46,
-      "anyps5_source_throwing": 137,
+      "anyps5_source_nonthrowing_unvalidated": 154,
+      "anyps5_source_throwing": 33,
       "conflicted": 0,
       "firmware_13_60": 183,
       "historical_only": 0,
@@ -3998,8 +3998,8 @@
       "anyps5_explicit_alias_without_visible_definition": 28,
       "anyps5_main_definitions": 109,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 12,
-      "anyps5_source_throwing": 145,
+      "anyps5_source_nonthrowing_unvalidated": 61,
+      "anyps5_source_throwing": 96,
       "conflicted": 0,
       "firmware_13_60": 175,
       "historical_only": 5,
@@ -4049,10 +4049,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 0,
+      "anyps5_main_definitions": 37,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 0,
+      "anyps5_source_nonthrowing_unvalidated": 56,
+      "anyps5_source_throwing": 28,
       "conflicted": 0,
       "firmware_13_60": 168,
       "historical_only": 7,
@@ -4101,11 +4101,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 24,
+      "anyps5_explicit_alias_without_visible_definition": 9,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 24,
+      "anyps5_source_nonthrowing_unvalidated": 21,
+      "anyps5_source_throwing": 5,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 169,
@@ -4156,8 +4156,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 141,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 106,
-      "anyps5_source_throwing": 62,
+      "anyps5_source_nonthrowing_unvalidated": 168,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 168,
@@ -4208,8 +4208,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 141,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 37,
-      "anyps5_source_throwing": 124,
+      "anyps5_source_nonthrowing_unvalidated": 128,
+      "anyps5_source_throwing": 33,
       "conflicted": 0,
       "firmware_13_60": 166,
       "historical_only": 0,
@@ -4234,8 +4234,8 @@
       "anyps5_explicit_alias_without_visible_definition": 20,
       "anyps5_main_definitions": 104,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 86,
-      "anyps5_source_throwing": 53,
+      "anyps5_source_nonthrowing_unvalidated": 139,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 163,
@@ -4313,8 +4313,8 @@
       "anyps5_explicit_alias_without_visible_definition": 21,
       "anyps5_main_definitions": 91,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 131,
+      "anyps5_source_nonthrowing_unvalidated": 19,
+      "anyps5_source_throwing": 112,
       "conflicted": 0,
       "firmware_13_60": 119,
       "historical_only": 36,
@@ -4418,8 +4418,8 @@
       "anyps5_explicit_alias_without_visible_definition": 4,
       "anyps5_main_definitions": 112,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 10,
-      "anyps5_source_throwing": 126,
+      "anyps5_source_nonthrowing_unvalidated": 11,
+      "anyps5_source_throwing": 125,
       "conflicted": 0,
       "firmware_13_60": 111,
       "historical_only": 32,
@@ -4445,8 +4445,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 127,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 136,
-      "anyps5_source_throwing": 6,
+      "anyps5_source_nonthrowing_unvalidated": 139,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 142,
       "historical_only": 0,
@@ -4468,11 +4468,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 35,
+      "anyps5_explicit_alias_without_visible_definition": 54,
       "anyps5_main_definitions": 112,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 69,
-      "anyps5_source_throwing": 124,
+      "anyps5_source_nonthrowing_unvalidated": 79,
+      "anyps5_source_throwing": 141,
       "conflicted": 0,
       "firmware_13_60": 77,
       "historical_only": 62,
@@ -4495,8 +4495,8 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 12,
-      "anyps5_main_definitions": 38,
+      "anyps5_explicit_alias_without_visible_definition": 1,
+      "anyps5_main_definitions": 45,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
       "anyps5_source_throwing": 57,
@@ -4550,8 +4550,8 @@
       "anyps5_explicit_alias_without_visible_definition": 28,
       "anyps5_main_definitions": 87,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 6,
-      "anyps5_source_throwing": 124,
+      "anyps5_source_nonthrowing_unvalidated": 13,
+      "anyps5_source_throwing": 117,
       "conflicted": 0,
       "firmware_13_60": 123,
       "historical_only": 15,
@@ -4603,8 +4603,8 @@
       "anyps5_explicit_alias_without_visible_definition": 88,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 40,
-      "anyps5_source_throwing": 97,
+      "anyps5_source_nonthrowing_unvalidated": 174,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 136,
       "historical_only": 0,
@@ -4626,11 +4626,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 16,
-      "anyps5_main_definitions": 103,
+      "anyps5_explicit_alias_without_visible_definition": 17,
+      "anyps5_main_definitions": 113,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 106,
-      "anyps5_source_throwing": 61,
+      "anyps5_source_nonthrowing_unvalidated": 110,
+      "anyps5_source_throwing": 70,
       "conflicted": 0,
       "firmware_13_60": 119,
       "historical_only": 16,
@@ -4734,8 +4734,8 @@
       "anyps5_explicit_alias_without_visible_definition": 3,
       "anyps5_main_definitions": 110,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 54,
-      "anyps5_source_throwing": 71,
+      "anyps5_source_nonthrowing_unvalidated": 87,
+      "anyps5_source_throwing": 38,
       "conflicted": 0,
       "firmware_13_60": 93,
       "historical_only": 34,
@@ -4758,11 +4758,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 82,
-      "anyps5_explicit_alias_without_visible_definition": 14,
+      "anyps5_explicit_alias_without_visible_definition": 18,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 14,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 18,
       "conflicted": 0,
       "firmware_13_60": 123,
       "historical_only": 0,
@@ -4836,8 +4836,8 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 18,
-      "anyps5_main_definitions": 57,
+      "anyps5_explicit_alias_without_visible_definition": 1,
+      "anyps5_main_definitions": 67,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
       "anyps5_source_throwing": 83,
@@ -4865,7 +4865,7 @@
       "anyps5_explicit_alias_without_visible_definition": 13,
       "anyps5_main_definitions": 99,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 134,
+      "anyps5_source_nonthrowing_unvalidated": 130,
       "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 118,
@@ -4891,8 +4891,8 @@
       "anyps5_explicit_alias_without_visible_definition": 53,
       "anyps5_main_definitions": 54,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 118,
+      "anyps5_source_nonthrowing_unvalidated": 10,
+      "anyps5_source_throwing": 108,
       "conflicted": 0,
       "firmware_13_60": 118,
       "historical_only": 0,
@@ -4917,8 +4917,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 90,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 94,
-      "anyps5_source_throwing": 29,
+      "anyps5_source_nonthrowing_unvalidated": 113,
+      "anyps5_source_throwing": 10,
       "conflicted": 0,
       "firmware_13_60": 115,
       "historical_only": 0,
@@ -4969,8 +4969,8 @@
       "anyps5_explicit_alias_without_visible_definition": 6,
       "anyps5_main_definitions": 88,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 22,
-      "anyps5_source_throwing": 88,
+      "anyps5_source_nonthrowing_unvalidated": 23,
+      "anyps5_source_throwing": 87,
       "conflicted": 0,
       "firmware_13_60": 110,
       "historical_only": 0,
@@ -5122,11 +5122,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 37,
-      "anyps5_main_definitions": 34,
+      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_main_definitions": 66,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 76,
+      "anyps5_source_nonthrowing_unvalidated": 16,
+      "anyps5_source_throwing": 60,
       "conflicted": 0,
       "firmware_13_60": 76,
       "historical_only": 27,
@@ -5179,8 +5179,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 88,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 38,
-      "anyps5_source_throwing": 64,
+      "anyps5_source_nonthrowing_unvalidated": 85,
+      "anyps5_source_throwing": 17,
       "conflicted": 0,
       "firmware_13_60": 102,
       "historical_only": 0,
@@ -5205,8 +5205,8 @@
       "anyps5_explicit_alias_without_visible_definition": 7,
       "anyps5_main_definitions": 80,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 103,
+      "anyps5_source_nonthrowing_unvalidated": 6,
+      "anyps5_source_throwing": 97,
       "conflicted": 0,
       "firmware_13_60": 82,
       "historical_only": 19,
@@ -5255,11 +5255,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 70,
-      "anyps5_main_definitions": 0,
+      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_main_definitions": 61,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 70,
+      "anyps5_source_nonthrowing_unvalidated": 8,
+      "anyps5_source_throwing": 62,
       "conflicted": 0,
       "firmware_13_60": 70,
       "historical_only": 30,
@@ -5285,8 +5285,8 @@
       "anyps5_explicit_alias_without_visible_definition": 17,
       "anyps5_main_definitions": 80,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 45,
-      "anyps5_source_throwing": 64,
+      "anyps5_source_nonthrowing_unvalidated": 46,
+      "anyps5_source_throwing": 63,
       "conflicted": 0,
       "firmware_13_60": 57,
       "historical_only": 42,
@@ -5312,8 +5312,8 @@
       "anyps5_explicit_alias_without_visible_definition": 3,
       "anyps5_main_definitions": 79,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 19,
-      "anyps5_source_throwing": 78,
+      "anyps5_source_nonthrowing_unvalidated": 30,
+      "anyps5_source_throwing": 67,
       "conflicted": 0,
       "firmware_13_60": 92,
       "historical_only": 5,
@@ -5389,10 +5389,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 38,
-      "anyps5_main_definitions": 44,
+      "anyps5_main_definitions": 50,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 34,
-      "anyps5_source_throwing": 54,
+      "anyps5_source_nonthrowing_unvalidated": 55,
+      "anyps5_source_throwing": 39,
       "conflicted": 0,
       "firmware_13_60": 94,
       "historical_only": 0,
@@ -5443,8 +5443,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 80,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 41,
-      "anyps5_source_throwing": 52,
+      "anyps5_source_nonthrowing_unvalidated": 73,
+      "anyps5_source_throwing": 20,
       "conflicted": 0,
       "firmware_13_60": 61,
       "historical_only": 32,
@@ -5468,10 +5468,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 75,
+      "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 85,
+      "anyps5_source_nonthrowing_unvalidated": 112,
+      "anyps5_source_throwing": 13,
       "conflicted": 0,
       "firmware_13_60": 93,
       "historical_only": 0,
@@ -5545,11 +5545,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 68,
-      "anyps5_main_definitions": 0,
+      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_main_definitions": 60,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 68,
+      "anyps5_source_nonthrowing_unvalidated": 28,
+      "anyps5_source_throwing": 40,
       "conflicted": 0,
       "firmware_13_60": 68,
       "historical_only": 24,
@@ -5572,10 +5572,10 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 102,
-      "anyps5_main_definitions": 9,
+      "anyps5_explicit_alias_without_visible_definition": 59,
+      "anyps5_main_definitions": 42,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 82,
+      "anyps5_source_nonthrowing_unvalidated": 86,
       "anyps5_source_throwing": 7,
       "conflicted": 0,
       "firmware_13_60": 92,
@@ -5627,8 +5627,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 75,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 90,
+      "anyps5_source_nonthrowing_unvalidated": 40,
+      "anyps5_source_throwing": 50,
       "conflicted": 0,
       "firmware_13_60": 45,
       "historical_only": 43,
@@ -5651,8 +5651,8 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 30,
-      "anyps5_main_definitions": 0,
+      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_main_definitions": 25,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
       "anyps5_source_throwing": 30,
@@ -5680,8 +5680,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 71,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 84,
+      "anyps5_source_nonthrowing_unvalidated": 73,
+      "anyps5_source_throwing": 11,
       "conflicted": 0,
       "firmware_13_60": 88,
       "historical_only": 0,
@@ -5706,8 +5706,8 @@
       "anyps5_explicit_alias_without_visible_definition": 8,
       "anyps5_main_definitions": 59,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 3,
-      "anyps5_source_throwing": 71,
+      "anyps5_source_nonthrowing_unvalidated": 21,
+      "anyps5_source_throwing": 53,
       "conflicted": 0,
       "firmware_13_60": 86,
       "historical_only": 1,
@@ -5811,8 +5811,8 @@
       "anyps5_explicit_alias_without_visible_definition": 14,
       "anyps5_main_definitions": 57,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 82,
+      "anyps5_source_nonthrowing_unvalidated": 81,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 81,
       "historical_only": 1,
@@ -5943,8 +5943,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 58,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 70,
+      "anyps5_source_nonthrowing_unvalidated": 46,
+      "anyps5_source_throwing": 24,
       "conflicted": 0,
       "firmware_13_60": 74,
       "historical_only": 0,
@@ -5996,8 +5996,8 @@
       "anyps5_explicit_alias_without_visible_definition": 6,
       "anyps5_main_definitions": 40,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 56,
+      "anyps5_source_nonthrowing_unvalidated": 51,
+      "anyps5_source_throwing": 5,
       "conflicted": 0,
       "firmware_13_60": 70,
       "historical_only": 3,
@@ -6046,11 +6046,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 5,
+      "anyps5_explicit_alias_without_visible_definition": 49,
       "anyps5_main_definitions": 21,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 10,
-      "anyps5_source_throwing": 18,
+      "anyps5_source_nonthrowing_unvalidated": 12,
+      "anyps5_source_throwing": 60,
       "conflicted": 0,
       "firmware_13_60": 72,
       "historical_only": 0,
@@ -6072,11 +6072,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 1,
+      "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 54,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 37,
-      "anyps5_source_throwing": 35,
+      "anyps5_source_nonthrowing_unvalidated": 47,
+      "anyps5_source_throwing": 25,
       "conflicted": 0,
       "firmware_13_60": 72,
       "historical_only": 0,
@@ -6283,8 +6283,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 2,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 2,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 66,
       "historical_only": 0,
@@ -6361,8 +6361,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 51,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 130,
-      "anyps5_source_throwing": 14,
+      "anyps5_source_nonthrowing_unvalidated": 141,
+      "anyps5_source_throwing": 8,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 65,
@@ -6387,8 +6387,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 53,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 78,
-      "anyps5_source_throwing": 18,
+      "anyps5_source_nonthrowing_unvalidated": 84,
+      "anyps5_source_throwing": 12,
       "conflicted": 0,
       "firmware_13_60": 64,
       "historical_only": 0,
@@ -6439,8 +6439,8 @@
       "anyps5_explicit_alias_without_visible_definition": 7,
       "anyps5_main_definitions": 46,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 20,
-      "anyps5_source_throwing": 43,
+      "anyps5_source_nonthrowing_unvalidated": 25,
+      "anyps5_source_throwing": 38,
       "conflicted": 0,
       "firmware_13_60": 63,
       "historical_only": 0,
@@ -6491,8 +6491,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 50,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 58,
+      "anyps5_source_nonthrowing_unvalidated": 21,
+      "anyps5_source_throwing": 37,
       "conflicted": 0,
       "firmware_13_60": 61,
       "historical_only": 1,
@@ -6518,8 +6518,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 44,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 16,
-      "anyps5_source_throwing": 48,
+      "anyps5_source_nonthrowing_unvalidated": 19,
+      "anyps5_source_throwing": 45,
       "conflicted": 0,
       "firmware_13_60": 61,
       "historical_only": 0,
@@ -6567,11 +6567,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 12,
+      "anyps5_explicit_alias_without_visible_definition": 16,
       "anyps5_main_definitions": 35,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 54,
+      "anyps5_source_throwing": 59,
       "conflicted": 0,
       "firmware_13_60": 59,
       "historical_only": 0,
@@ -6619,7 +6619,7 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 5,
+      "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 45,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 18,
@@ -6699,10 +6699,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 3,
+      "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 54,
       "historical_only": 0,
@@ -6715,7 +6715,7 @@
         "existing_firmware_system_library": 54
       },
       "qualified_assessed": 3,
-      "score_triage_only": 0,
+      "score_triage_only": 3,
       "source_320_references": 19,
       "strict_verified": 42,
       "unresolved": 8,
@@ -6777,10 +6777,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 41,
+      "anyps5_main_definitions": 32,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 53,
+      "anyps5_source_nonthrowing_unvalidated": 34,
+      "anyps5_source_throwing": 19,
       "conflicted": 0,
       "firmware_13_60": 53,
       "historical_only": 0,
@@ -6935,8 +6935,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 42,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 50,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 51,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 51,
@@ -7065,8 +7065,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 43,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 7,
-      "anyps5_source_throwing": 43,
+      "anyps5_source_nonthrowing_unvalidated": 29,
+      "anyps5_source_throwing": 21,
       "conflicted": 0,
       "firmware_13_60": 50,
       "historical_only": 0,
@@ -7088,11 +7088,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 6,
-      "anyps5_main_definitions": 33,
+      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_main_definitions": 38,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 14,
-      "anyps5_source_throwing": 34,
+      "anyps5_source_nonthrowing_unvalidated": 19,
+      "anyps5_source_throwing": 30,
       "conflicted": 0,
       "firmware_13_60": 43,
       "historical_only": 6,
@@ -7116,10 +7116,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 1,
-      "anyps5_main_definitions": 37,
-      "anyps5_open_pr_matches_partial": 1,
+      "anyps5_main_definitions": 38,
+      "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 3,
-      "anyps5_source_throwing": 46,
+      "anyps5_source_throwing": 47,
       "conflicted": 0,
       "firmware_13_60": 49,
       "historical_only": 0,
@@ -7170,8 +7170,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 18,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 9,
-      "anyps5_source_throwing": 17,
+      "anyps5_source_nonthrowing_unvalidated": 14,
+      "anyps5_source_throwing": 12,
       "conflicted": 0,
       "firmware_13_60": 48,
       "historical_only": 0,
@@ -7196,8 +7196,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 42,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 22,
-      "anyps5_source_throwing": 25,
+      "anyps5_source_nonthrowing_unvalidated": 25,
+      "anyps5_source_throwing": 22,
       "conflicted": 0,
       "firmware_13_60": 45,
       "historical_only": 2,
@@ -7223,8 +7223,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 38,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 51,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 52,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 47,
       "historical_only": 0,
@@ -7249,8 +7249,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 43,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 4,
-      "anyps5_source_throwing": 43,
+      "anyps5_source_nonthrowing_unvalidated": 47,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 47,
       "historical_only": 0,
@@ -7405,8 +7405,8 @@
       "anyps5_explicit_alias_without_visible_definition": 5,
       "anyps5_main_definitions": 30,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 37,
+      "anyps5_source_nonthrowing_unvalidated": 35,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 45,
       "historical_only": 0,
@@ -7431,8 +7431,8 @@
       "anyps5_explicit_alias_without_visible_definition": 32,
       "anyps5_main_definitions": 10,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 43,
+      "anyps5_source_nonthrowing_unvalidated": 2,
+      "anyps5_source_throwing": 41,
       "conflicted": 0,
       "firmware_13_60": 44,
       "historical_only": 0,
@@ -7480,11 +7480,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 20,
+      "anyps5_explicit_alias_without_visible_definition": 4,
       "anyps5_main_definitions": 1,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 2,
-      "anyps5_source_throwing": 22,
+      "anyps5_source_nonthrowing_unvalidated": 17,
+      "anyps5_source_throwing": 9,
       "conflicted": 0,
       "firmware_13_60": 22,
       "historical_only": 21,
@@ -7510,8 +7510,8 @@
       "anyps5_explicit_alias_without_visible_definition": 4,
       "anyps5_main_definitions": 38,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 34,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 35,
+      "anyps5_source_throwing": 10,
       "conflicted": 0,
       "firmware_13_60": 43,
       "historical_only": 0,
@@ -7562,8 +7562,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 35,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 34,
-      "anyps5_source_throwing": 8,
+      "anyps5_source_nonthrowing_unvalidated": 41,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 42,
       "historical_only": 0,
@@ -7614,8 +7614,8 @@
       "anyps5_explicit_alias_without_visible_definition": 7,
       "anyps5_main_definitions": 27,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 30,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 32,
+      "anyps5_source_throwing": 9,
       "conflicted": 0,
       "firmware_13_60": 41,
       "historical_only": 0,
@@ -7666,8 +7666,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 35,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 39,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 36,
       "conflicted": 0,
       "firmware_13_60": 39,
       "historical_only": 0,
@@ -7692,8 +7692,8 @@
       "anyps5_explicit_alias_without_visible_definition": 7,
       "anyps5_main_definitions": 35,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 36,
-      "anyps5_source_throwing": 16,
+      "anyps5_source_nonthrowing_unvalidated": 38,
+      "anyps5_source_throwing": 17,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 38,
@@ -7745,8 +7745,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 13,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 29,
-      "anyps5_source_throwing": 9,
+      "anyps5_source_nonthrowing_unvalidated": 38,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 38,
       "historical_only": 0,
@@ -7797,8 +7797,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 29,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 62,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 64,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 37,
       "historical_only": 0,
@@ -7821,10 +7821,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 32,
+      "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 35,
+      "anyps5_source_nonthrowing_unvalidated": 34,
+      "anyps5_source_throwing": 4,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 37,
@@ -7927,8 +7927,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 25,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 13,
-      "anyps5_source_throwing": 17,
+      "anyps5_source_nonthrowing_unvalidated": 20,
+      "anyps5_source_throwing": 10,
       "conflicted": 0,
       "firmware_13_60": 34,
       "historical_only": 1,
@@ -7954,8 +7954,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 28,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 35,
+      "anyps5_source_nonthrowing_unvalidated": 28,
+      "anyps5_source_throwing": 7,
       "conflicted": 0,
       "firmware_13_60": 30,
       "historical_only": 5,
@@ -7981,8 +7981,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 31,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 32,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 35,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 35,
       "historical_only": 0,
@@ -8007,8 +8007,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 31,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 35,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 36,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 35,
       "historical_only": 0,
@@ -8085,8 +8085,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 20,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 34,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 30,
       "conflicted": 0,
       "firmware_13_60": 34,
       "historical_only": 0,
@@ -8163,8 +8163,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 30,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 52,
-      "anyps5_source_throwing": 68,
+      "anyps5_source_nonthrowing_unvalidated": 59,
+      "anyps5_source_throwing": 61,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 34,
@@ -8189,8 +8189,8 @@
       "anyps5_explicit_alias_without_visible_definition": 9,
       "anyps5_main_definitions": 28,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 9,
-      "anyps5_source_throwing": 30,
+      "anyps5_source_nonthrowing_unvalidated": 10,
+      "anyps5_source_throwing": 29,
       "conflicted": 0,
       "firmware_13_60": 27,
       "historical_only": 7,
@@ -8294,8 +8294,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 4,
-      "anyps5_source_throwing": 29,
+      "anyps5_source_nonthrowing_unvalidated": 17,
+      "anyps5_source_throwing": 16,
       "conflicted": 0,
       "firmware_13_60": 33,
       "historical_only": 0,
@@ -8424,8 +8424,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 26,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 24,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 31,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 31,
       "historical_only": 0,
@@ -8603,11 +8603,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_explicit_alias_without_visible_definition": 15,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 12,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 13,
+      "anyps5_source_throwing": 17,
       "conflicted": 0,
       "firmware_13_60": 30,
       "historical_only": 0,
@@ -8658,8 +8658,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 1,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 2,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 29,
@@ -8733,11 +8733,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 26,
-      "anyps5_main_definitions": 2,
+      "anyps5_explicit_alias_without_visible_definition": 12,
+      "anyps5_main_definitions": 14,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 2,
-      "anyps5_source_throwing": 26,
+      "anyps5_source_nonthrowing_unvalidated": 5,
+      "anyps5_source_throwing": 23,
       "conflicted": 0,
       "firmware_13_60": 28,
       "historical_only": 0,
@@ -8762,8 +8762,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 23,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 8,
-      "anyps5_source_throwing": 20,
+      "anyps5_source_nonthrowing_unvalidated": 13,
+      "anyps5_source_throwing": 15,
       "conflicted": 0,
       "firmware_13_60": 22,
       "historical_only": 6,
@@ -8841,8 +8841,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 21,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 17,
-      "anyps5_source_throwing": 12,
+      "anyps5_source_nonthrowing_unvalidated": 21,
+      "anyps5_source_throwing": 8,
       "conflicted": 0,
       "firmware_13_60": 19,
       "historical_only": 8,
@@ -8868,8 +8868,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 24,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 26,
+      "anyps5_source_nonthrowing_unvalidated": 20,
+      "anyps5_source_throwing": 7,
       "conflicted": 0,
       "firmware_13_60": 27,
       "historical_only": 0,
@@ -8972,8 +8972,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 16,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 14,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 15,
+      "anyps5_source_throwing": 6,
       "conflicted": 0,
       "firmware_13_60": 27,
       "historical_only": 0,
@@ -8995,11 +8995,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 3,
+      "anyps5_explicit_alias_without_visible_definition": 7,
       "anyps5_main_definitions": 16,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 23,
+      "anyps5_source_nonthrowing_unvalidated": 19,
+      "anyps5_source_throwing": 8,
       "conflicted": 0,
       "firmware_13_60": 27,
       "historical_only": 0,
@@ -9048,9 +9048,9 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 23,
-      "anyps5_open_pr_matches_partial": 1,
-      "anyps5_source_nonthrowing_unvalidated": 25,
+      "anyps5_main_definitions": 24,
+      "anyps5_open_pr_matches_partial": 0,
+      "anyps5_source_nonthrowing_unvalidated": 26,
       "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 25,
@@ -9077,8 +9077,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 19,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 15,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 26,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 26,
       "historical_only": 0,
@@ -9207,8 +9207,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 19,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 11,
-      "anyps5_source_throwing": 18,
+      "anyps5_source_nonthrowing_unvalidated": 16,
+      "anyps5_source_throwing": 13,
       "conflicted": 0,
       "firmware_13_60": 25,
       "historical_only": 0,
@@ -9233,8 +9233,8 @@
       "anyps5_explicit_alias_without_visible_definition": 4,
       "anyps5_main_definitions": 17,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 5,
-      "anyps5_source_throwing": 20,
+      "anyps5_source_nonthrowing_unvalidated": 8,
+      "anyps5_source_throwing": 17,
       "conflicted": 0,
       "firmware_13_60": 25,
       "historical_only": 0,
@@ -9364,8 +9364,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 8,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 10,
+      "anyps5_source_throwing": 5,
       "conflicted": 0,
       "firmware_13_60": 24,
       "historical_only": 0,
@@ -9417,8 +9417,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 21,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 23,
+      "anyps5_source_nonthrowing_unvalidated": 24,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 24,
       "historical_only": 0,
@@ -9443,8 +9443,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 20,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 23,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 24,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 24,
       "historical_only": 0,
@@ -9495,8 +9495,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 20,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 17,
-      "anyps5_source_throwing": 8,
+      "anyps5_source_nonthrowing_unvalidated": 21,
+      "anyps5_source_throwing": 4,
       "conflicted": 0,
       "firmware_13_60": 24,
       "historical_only": 0,
@@ -9651,8 +9651,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 18,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 22,
+      "anyps5_source_nonthrowing_unvalidated": 18,
+      "anyps5_source_throwing": 4,
       "conflicted": 0,
       "firmware_13_60": 22,
       "historical_only": 0,
@@ -9677,8 +9677,8 @@
       "anyps5_explicit_alias_without_visible_definition": 22,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 22,
+      "anyps5_source_nonthrowing_unvalidated": 5,
+      "anyps5_source_throwing": 17,
       "conflicted": 0,
       "firmware_13_60": 22,
       "historical_only": 0,
@@ -9781,8 +9781,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 17,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 21,
+      "anyps5_source_nonthrowing_unvalidated": 19,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 21,
       "historical_only": 0,
@@ -9807,8 +9807,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 16,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 38,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 45,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 21,
       "historical_only": 0,
@@ -9833,8 +9833,8 @@
       "anyps5_explicit_alias_without_visible_definition": 4,
       "anyps5_main_definitions": 15,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 21,
+      "anyps5_source_nonthrowing_unvalidated": 16,
+      "anyps5_source_throwing": 5,
       "conflicted": 0,
       "firmware_13_60": 21,
       "historical_only": 0,
@@ -9859,8 +9859,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 16,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 10,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 19,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 21,
       "historical_only": 0,
@@ -9885,8 +9885,8 @@
       "anyps5_explicit_alias_without_visible_definition": 23,
       "anyps5_main_definitions": 19,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 11,
-      "anyps5_source_throwing": 36,
+      "anyps5_source_nonthrowing_unvalidated": 16,
+      "anyps5_source_throwing": 31,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 10,
@@ -9964,8 +9964,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 15,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 7,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 20,
@@ -10068,8 +10068,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 15,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 10,
-      "anyps5_source_throwing": 16,
+      "anyps5_source_nonthrowing_unvalidated": 16,
+      "anyps5_source_throwing": 10,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 8,
@@ -10121,8 +10121,8 @@
       "anyps5_explicit_alias_without_visible_definition": 5,
       "anyps5_main_definitions": 16,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 10,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 12,
+      "anyps5_source_throwing": 9,
       "conflicted": 0,
       "firmware_13_60": 19,
       "historical_only": 0,
@@ -10329,8 +10329,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 14,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 18,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 17,
       "conflicted": 0,
       "firmware_13_60": 18,
       "historical_only": 0,
@@ -10355,8 +10355,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 15,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 3,
-      "anyps5_source_throwing": 15,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 9,
       "conflicted": 0,
       "firmware_13_60": 18,
       "historical_only": 0,
@@ -10407,8 +10407,8 @@
       "anyps5_explicit_alias_without_visible_definition": 18,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 18,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 14,
       "conflicted": 0,
       "firmware_13_60": 18,
       "historical_only": 0,
@@ -10589,8 +10589,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 9,
-      "anyps5_source_throwing": 8,
+      "anyps5_source_nonthrowing_unvalidated": 17,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 17,
       "historical_only": 0,
@@ -10745,8 +10745,8 @@
       "anyps5_explicit_alias_without_visible_definition": 3,
       "anyps5_main_definitions": 9,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 14,
+      "anyps5_source_nonthrowing_unvalidated": 11,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 16,
       "historical_only": 0,
@@ -10823,8 +10823,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 12,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 8,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 10,
+      "anyps5_source_throwing": 5,
       "conflicted": 0,
       "firmware_13_60": 15,
       "historical_only": 0,
@@ -10927,8 +10927,8 @@
       "anyps5_explicit_alias_without_visible_definition": 28,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 38,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 34,
       "conflicted": 0,
       "firmware_13_60": 14,
       "historical_only": 0,
@@ -10979,8 +10979,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 5,
-      "anyps5_source_throwing": 17,
+      "anyps5_source_nonthrowing_unvalidated": 7,
+      "anyps5_source_throwing": 15,
       "conflicted": 0,
       "firmware_13_60": 13,
       "historical_only": 1,
@@ -11032,8 +11032,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 12,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 13,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 14,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 14,
       "historical_only": 0,
@@ -11110,8 +11110,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 14,
+      "anyps5_source_nonthrowing_unvalidated": 14,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 14,
       "historical_only": 0,
@@ -11162,8 +11162,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 10,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 7,
-      "anyps5_source_throwing": 6,
+      "anyps5_source_nonthrowing_unvalidated": 13,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 12,
       "historical_only": 2,
@@ -11189,8 +11189,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 13,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 8,
-      "anyps5_source_throwing": 6,
+      "anyps5_source_nonthrowing_unvalidated": 14,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 14,
       "historical_only": 0,
@@ -11342,11 +11342,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 10,
+      "anyps5_explicit_alias_without_visible_definition": 18,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 10,
+      "anyps5_source_throwing": 18,
       "conflicted": 0,
       "firmware_13_60": 13,
       "historical_only": 0,
@@ -11397,8 +11397,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 12,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 2,
@@ -11450,8 +11450,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 3,
-      "anyps5_source_throwing": 10,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 9,
       "conflicted": 0,
       "firmware_13_60": 13,
       "historical_only": 0,
@@ -11476,8 +11476,8 @@
       "anyps5_explicit_alias_without_visible_definition": 6,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 12,
+      "anyps5_source_nonthrowing_unvalidated": 2,
+      "anyps5_source_throwing": 11,
       "conflicted": 0,
       "firmware_13_60": 13,
       "historical_only": 0,
@@ -11681,11 +11681,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 4,
+      "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 2,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 6,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 12,
       "historical_only": 0,
@@ -11788,8 +11788,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 9,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 12,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 1,
@@ -11815,8 +11815,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 8,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 12,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 12,
       "historical_only": 0,
@@ -11919,8 +11919,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 8,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 10,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 0,
@@ -11942,11 +11942,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 19,
+      "anyps5_explicit_alias_without_visible_definition": 23,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 24,
+      "anyps5_source_nonthrowing_unvalidated": 5,
+      "anyps5_source_throwing": 23,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 4,
@@ -11969,11 +11969,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 5,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 4,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 4,
@@ -12077,8 +12077,8 @@
       "anyps5_explicit_alias_without_visible_definition": 6,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 8,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 0,
@@ -12103,8 +12103,8 @@
       "anyps5_explicit_alias_without_visible_definition": 6,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 10,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 0,
@@ -12129,8 +12129,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 10,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 8,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 0,
@@ -12155,8 +12155,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 8,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 11,
+      "anyps5_source_nonthrowing_unvalidated": 10,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 0,
@@ -12233,8 +12233,8 @@
       "anyps5_explicit_alias_without_visible_definition": 4,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 5,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 4,
       "conflicted": 0,
       "firmware_13_60": 11,
       "historical_only": 0,
@@ -12337,8 +12337,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 8,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 10,
+      "anyps5_source_nonthrowing_unvalidated": 8,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 10,
       "historical_only": 0,
@@ -12385,7 +12385,7 @@
     },
     {
       "anyps5_assembly_unvalidated": 0,
-      "anyps5_declarations_without_definitions": 0,
+      "anyps5_declarations_without_definitions": 1,
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
@@ -12649,8 +12649,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 7,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 9,
       "historical_only": 0,
@@ -12727,8 +12727,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 6,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 7,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 9,
       "historical_only": 0,
@@ -12779,8 +12779,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 8,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 9,
+      "anyps5_source_nonthrowing_unvalidated": 8,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 9,
@@ -12831,8 +12831,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 9,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 8,
       "conflicted": 0,
       "firmware_13_60": 9,
       "historical_only": 0,
@@ -12883,8 +12883,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 8,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 9,
+      "anyps5_source_nonthrowing_unvalidated": 8,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 9,
       "historical_only": 0,
@@ -13117,8 +13117,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 6,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 6,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 8,
       "historical_only": 0,
@@ -13167,11 +13167,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_explicit_alias_without_visible_definition": 3,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 5,
+      "anyps5_source_nonthrowing_unvalidated": 7,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 8,
       "historical_only": 0,
@@ -13196,8 +13196,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 6,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 6,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 8,
       "historical_only": 0,
@@ -13300,8 +13300,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 6,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 0,
@@ -13430,8 +13430,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 6,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 7,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 0,
@@ -13508,8 +13508,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 6,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 6,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 0,
@@ -13531,10 +13531,10 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 7,
+      "anyps5_explicit_alias_without_visible_definition": 6,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
+      "anyps5_source_nonthrowing_unvalidated": 4,
       "anyps5_source_throwing": 7,
       "conflicted": 0,
       "firmware_13_60": 7,
@@ -13768,8 +13768,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 7,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 0,
@@ -13794,8 +13794,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 6,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 0,
@@ -13895,11 +13895,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 7,
+      "anyps5_explicit_alias_without_visible_definition": 5,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 6,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 0,
@@ -13976,8 +13976,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 7,
+      "anyps5_source_nonthrowing_unvalidated": 7,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 7,
       "historical_only": 0,
@@ -14654,8 +14654,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 5,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 6,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 6,
       "historical_only": 0,
@@ -14784,8 +14784,8 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 6,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 5,
       "conflicted": 0,
       "firmware_13_60": 6,
       "historical_only": 0,
@@ -15045,8 +15045,8 @@
       "anyps5_explicit_alias_without_visible_definition": 3,
       "anyps5_main_definitions": 2,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 3,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 5,
       "historical_only": 0,
@@ -15172,11 +15172,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 1,
-      "anyps5_main_definitions": 2,
+      "anyps5_explicit_alias_without_visible_definition": 0,
+      "anyps5_main_definitions": 3,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 3,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 4,
       "historical_only": 1,
@@ -15644,8 +15644,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 3,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 4,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 4,
       "historical_only": 0,
@@ -15852,8 +15852,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 2,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 4,
       "historical_only": 0,
@@ -15956,8 +15956,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 2,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 4,
       "historical_only": 0,
@@ -15982,8 +15982,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 2,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 4,
       "historical_only": 0,
@@ -16060,8 +16060,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 4,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 3,
       "conflicted": 0,
       "firmware_13_60": 4,
       "historical_only": 0,
@@ -16344,10 +16344,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 0,
+      "anyps5_main_definitions": 1,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 0,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 3,
       "historical_only": 0,
@@ -16684,8 +16684,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 2,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 3,
       "historical_only": 0,
@@ -16866,8 +16866,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 3,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 3,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 3,
       "historical_only": 0,
@@ -17074,8 +17074,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 1,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 2,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 2,
       "historical_only": 0,
@@ -18634,8 +18634,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 1,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 1,
+      "anyps5_source_nonthrowing_unvalidated": 1,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 1,
       "historical_only": 0,
@@ -18892,10 +18892,10 @@
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
       "anyps5_explicit_alias_without_visible_definition": 0,
-      "anyps5_main_definitions": 0,
+      "anyps5_main_definitions": 1,
       "anyps5_open_pr_matches_partial": 0,
       "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 0,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 1,
       "historical_only": 0,
@@ -20781,12 +20781,12 @@
   },
   "readiness": {
     "abi_verified_live": null,
-    "anyps5_main_definition_matches": 17773,
-    "anyps5_nonthrowing_body": 5450,
-    "anyps5_throwing_marker": 12323,
+    "anyps5_main_definition_matches": 19704,
+    "anyps5_nonthrowing_body": 8721,
+    "anyps5_throwing_marker": 10983,
     "build_verified_live": null,
     "fully_implemented_live": null,
-    "open_pr_qualified_partial": 615,
+    "open_pr_qualified_partial": 597,
     "qualified_unique_nids": 10749,
     "runtime_validated_live": null,
     "snapshot_fully_validated_stubs": 0,
@@ -20794,888 +20794,984 @@
     "strict_qualified_unique_nids": 9158
   },
   "recent_changes": {
-    "added": 92,
+    "added": 3388,
     "baseline_only": false,
-    "changed_source_classifications": 428,
+    "changed_source_classifications": 10046,
     "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-    "previous_source_sha": "8ad0364e81bcfe1628216fd91c6f0353f2d295ca",
-    "removed": 56,
+    "previous_source_sha": "bbd85f7ebfd41433598b4573eaae53df19dc059a",
+    "removed": 4805,
     "samples_added": [
       {
-        "library": "libc",
-        "nid": "2ABnxmtfGYw"
+        "library": "libaacs",
+        "nid": "FHWdAzU/rRI"
       },
       {
         "library": "libc",
-        "nid": "axA9vO3CUcY"
+        "nid": "+4TrsNPJw38"
       },
       {
         "library": "libc",
-        "nid": "jcANCjEOCkM"
+        "nid": "+5bqiLsgmmk"
       },
       {
         "library": "libc",
-        "nid": "zrar+nuI6S0"
+        "nid": "+SzQ2H2l7Zs"
       },
       {
-        "library": "libscefreetype",
-        "nid": "+tdwsTacy18"
+        "library": "libc",
+        "nid": "+WPtesQ11oU"
       },
       {
-        "library": "libscefreetype",
-        "nid": "/WRkBsHZ/bQ"
+        "library": "libc",
+        "nid": "+Xuxf2V9Aug"
       },
       {
-        "library": "libscefreetype",
-        "nid": "0jYgnAwI+5E"
+        "library": "libc",
+        "nid": "+Zcu6tK7EXo"
       },
       {
-        "library": "libscefreetype",
-        "nid": "1GFOnxkCRMc"
+        "library": "libc",
+        "nid": "+cRPVIygfS4"
       },
       {
-        "library": "libscefreetype",
-        "nid": "7GHrrMXhBCM"
+        "library": "libc",
+        "nid": "+qO3NtGEMaY"
       },
       {
-        "library": "libscefreetype",
-        "nid": "AaJDNAxzRsY"
+        "library": "libc",
+        "nid": "/PVGGtWgubE"
       },
       {
-        "library": "libscefreetype",
-        "nid": "BRVwJGDB2Kc"
+        "library": "libc",
+        "nid": "0NaB2EkKDWM"
       },
       {
-        "library": "libscefreetype",
-        "nid": "COTh1Netv4A"
+        "library": "libc",
+        "nid": "0bEJV6KSC3A"
       },
       {
-        "library": "libscefreetype",
-        "nid": "IzAPHafMAu0"
+        "library": "libc",
+        "nid": "0l0NKyaneRU"
       },
       {
-        "library": "libscefreetype",
-        "nid": "S1W2bJ2/Wpg"
+        "library": "libc",
+        "nid": "0zgR+elq3lI"
       },
       {
-        "library": "libscefreetype",
-        "nid": "UKjQfLYO6eo"
+        "library": "libc",
+        "nid": "1PS3L2JqCaY"
       },
       {
-        "library": "libscefreetype",
-        "nid": "Y1CntP8bZ6w"
+        "library": "libc",
+        "nid": "1neYKi4XyOY"
       },
       {
-        "library": "libscefreetype",
-        "nid": "cfAdvLxVw0E"
+        "library": "libc",
+        "nid": "2SXYVUn8W2Y"
       },
       {
-        "library": "libscefreetype",
-        "nid": "x3YgWE8NrHQ"
+        "library": "libc",
+        "nid": "3BrHPD6S7zw"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "/WRkBsHZ/bQ"
+        "library": "libc",
+        "nid": "3QcsxroqF0k"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "0jYgnAwI+5E"
+        "library": "libc",
+        "nid": "3RiTxxk56sk"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "1GFOnxkCRMc"
+        "library": "libc",
+        "nid": "3Ui4d54rLX8"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "IzAPHafMAu0"
+        "library": "libc",
+        "nid": "3Z9LurTqF8c"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "Y1CntP8bZ6w"
+        "library": "libc",
+        "nid": "3bFyTwWBWfk"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "Y3nMLn5toio"
+        "library": "libc",
+        "nid": "3yP9e/qebbE"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "grXzd8acfdA"
+        "library": "libc",
+        "nid": "43c3ppzvVxs"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "m5vNfCMvzAw"
+        "library": "libc",
+        "nid": "4BLszsyN3zY"
       },
       {
-        "library": "libsceicu",
-        "nid": "29WLV1H3N4g"
+        "library": "libc",
+        "nid": "4NRVWVUc0/4"
       },
       {
-        "library": "libsceicu",
-        "nid": "4I4Sxm7TwZY"
+        "library": "libc",
+        "nid": "5GCFSA9XaGY"
       },
       {
-        "library": "libsceicu",
-        "nid": "BZ+QmDHNQ2g"
+        "library": "libc",
+        "nid": "5U6dfmky9Ac"
       },
       {
-        "library": "libsceicu",
-        "nid": "Bqh/wmzP+TI"
+        "library": "libc",
+        "nid": "5meOjisIWnM"
       },
       {
-        "library": "libsceicu",
-        "nid": "I4E2tPvdi8I"
+        "library": "libc",
+        "nid": "5svUooBjTM4"
       },
       {
-        "library": "libsceicu",
-        "nid": "IJljPbzV5HI"
+        "library": "libc",
+        "nid": "5tvRkt6bRhE"
       },
       {
-        "library": "libsceicu",
-        "nid": "IrvxXGmPtMQ"
+        "library": "libc",
+        "nid": "5xV867xuYdc"
       },
       {
-        "library": "libsceicu",
-        "nid": "JMzYpesJ3Mo"
+        "library": "libc",
+        "nid": "66/Bkt/BbJE"
       },
       {
-        "library": "libsceicu",
-        "nid": "LVCEzANeUl4"
+        "library": "libc",
+        "nid": "6RLMFQKn4Gs"
       },
       {
-        "library": "libsceicu",
-        "nid": "O18Sa+QHIBQ"
+        "library": "libc",
+        "nid": "6cNyw/ddFf8"
       },
       {
-        "library": "libsceicu",
-        "nid": "SkEcN8M+KDc"
+        "library": "libc",
+        "nid": "6mHzkwPbsIE"
       },
       {
-        "library": "libsceicu",
-        "nid": "Uc6sRvcgYqU"
+        "library": "libc",
+        "nid": "6yysLHH+LEU"
       },
       {
-        "library": "libsceicu",
-        "nid": "Y6Ta+VyF9GI"
+        "library": "libc",
+        "nid": "74USoTtOZo4"
       },
       {
-        "library": "libsceicu",
-        "nid": "ZZeWRLRj0b0"
+        "library": "libc",
+        "nid": "7Sjeyu8azCM"
       },
       {
-        "library": "libsceicu",
-        "nid": "aZil41Hai58"
+        "library": "libc",
+        "nid": "7UqfJK2Frdg"
       },
       {
-        "library": "libsceicu",
-        "nid": "gQm8Yqu2xyg"
+        "library": "libc",
+        "nid": "7VFQpW0yqH8"
       },
       {
-        "library": "libsceicu",
-        "nid": "lSCjLX4a7jk"
+        "library": "libc",
+        "nid": "7Xf52b2f/00"
       },
       {
-        "library": "libsceicu",
-        "nid": "m0/LELlY6SQ"
+        "library": "libc",
+        "nid": "8088DsKAOm4"
       },
       {
-        "library": "libsceicu",
-        "nid": "m3BnlmF1cx8"
+        "library": "libc",
+        "nid": "87J5VJeWeJ8"
       },
       {
-        "library": "libsceicu",
-        "nid": "mAjM9K5frIY"
+        "library": "libc",
+        "nid": "8G4wlaezpk4"
       },
       {
-        "library": "libsceicu",
-        "nid": "mP1JYAGPMt0"
+        "library": "libc",
+        "nid": "8OLsLecW8Qk"
       },
       {
-        "library": "libsceicu",
-        "nid": "qNNurrbP9nM"
+        "library": "libc",
+        "nid": "8R+8XoPjFpU"
       },
       {
-        "library": "libsceicu",
-        "nid": "rHiaWqNA8u0"
+        "library": "libc",
+        "nid": "8czWbo8QfzE"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "4IN6cg9g3EE"
+        "library": "libc",
+        "nid": "8fJO2lyLgRo"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "h7ZcITgn/gI"
+        "library": "libc",
+        "nid": "8qz7kvA6Ep0"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "kqBVXBV2JIk"
+        "library": "libc",
+        "nid": "9w7YYpjLDgQ"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "lqCKlMZY6r8"
+        "library": "libc",
+        "nid": "AN+Fj7G+ET0"
       },
       {
-        "library": "libscelibressl",
-        "nid": "7gHGrY1hMSA"
+        "library": "libc",
+        "nid": "ATYzvWX9E8s"
       },
       {
-        "library": "libscelibressl",
-        "nid": "HLdRrr+D1KM"
+        "library": "libc",
+        "nid": "AcrHykIO9G8"
       },
       {
-        "library": "libscelibressl",
-        "nid": "HTS4/KF/bQ8"
+        "library": "libc",
+        "nid": "ApmB51f9QoA"
       },
       {
-        "library": "libscelibressl",
-        "nid": "KlKrGjgLQfk"
+        "library": "libc",
+        "nid": "AwQ3LFR28ig"
       },
       {
-        "library": "libscelibressl",
-        "nid": "OlKe9MdjBJw"
+        "library": "libc",
+        "nid": "BAIlqdxvVE8"
       },
       {
-        "library": "libscelibressl",
-        "nid": "PHjMzpMNQt8"
+        "library": "libc",
+        "nid": "BmEVA39DBU0"
       },
       {
-        "library": "libscelibressl",
-        "nid": "SeOBm2S5QFE"
+        "library": "libc",
+        "nid": "Bo2wLlKijSk"
       },
       {
-        "library": "libscelibressl",
-        "nid": "VoF3uKPx47E"
+        "library": "libc",
+        "nid": "BvRS0cGTd6I"
       },
       {
-        "library": "libscelibressl",
-        "nid": "kKvnuRACDNY"
+        "library": "libc",
+        "nid": "BwttrfhfF/M"
       },
       {
-        "library": "libscelibressl",
-        "nid": "vOzL80rbG5E"
+        "library": "libc",
+        "nid": "C+0jY0lUHKE"
       },
       {
-        "library": "libscelibressl",
-        "nid": "wEg3zOYXZB4"
+        "library": "libc",
+        "nid": "C2Br+PojtjQ"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "+ypPCYmEah4"
+        "library": "libc",
+        "nid": "CQjTMQojtcI"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "0XfKWY7RFOY"
+        "library": "libc",
+        "nid": "CV4eO3YnZEs"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "2rY/ifqgA4A"
+        "library": "libc",
+        "nid": "CZfkPvsjA90"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "3t2gu4vDqyU"
+        "library": "libc",
+        "nid": "Cjsl+DFgoBs"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "5KnUzeleJDA"
+        "library": "libc",
+        "nid": "DDnr3lDwW8I"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "6gdou+10K3s"
+        "library": "libc",
+        "nid": "DMSp2U497Jo"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "B4GM8fg5NQc"
+        "library": "libc",
+        "nid": "DSZ2bw4wzis"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "GkOv5PHBcPA"
+        "library": "libc",
+        "nid": "E5NdzqEmWuY"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "O0BPYz1unG0"
+        "library": "libc",
+        "nid": "E6vxydtYV3k"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "TYPcks5sJjk"
+        "library": "libc",
+        "nid": "EQ/eQuaHOyU"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "UhcZ7y+KuO8"
+        "library": "libc",
+        "nid": "ETyiNCTMLDQ"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "Woo8W2EjLfk"
+        "library": "libc",
+        "nid": "EdlLVo/VNH4"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "ZAUdZsCZ8V8"
+        "library": "libc",
+        "nid": "EgswpdP8XtY"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "ZOGP84D5xGM"
+        "library": "libc",
+        "nid": "Ei46m/uiGjU"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "euSBfBIIvg4"
+        "library": "libc",
+        "nid": "EoELqJdtNOc"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "jkijaEZqS2k"
+        "library": "libc",
+        "nid": "Ew+wu0nRcUQ"
       }
     ],
     "samples_changed": [
       {
-        "library": "libkernel_sys",
-        "nid": "T4NEPAtKpuU"
+        "library": "libaacs",
+        "nid": "12CP5PHvlgs"
       },
       {
-        "library": "libkernel_sys",
-        "nid": "Y84gpD1ZZ5M"
+        "library": "libaacs",
+        "nid": "1aMnfYcnn1I"
       },
       {
-        "library": "libsceagc",
-        "nid": "FneFypEDRgY"
+        "library": "libaacs",
+        "nid": "54hkTYBIxqs"
       },
       {
-        "library": "libsceavsetting",
-        "nid": "x/U4mJWRcNI"
+        "library": "libaacs",
+        "nid": "753FlqNkJlM"
       },
       {
-        "library": "libscebemp2sys",
-        "nid": "64uKbNSAqz4"
+        "library": "libaacs",
+        "nid": "AVRC3P8reF0"
       },
       {
-        "library": "libscebemp2sys",
-        "nid": "Pf6uOx8mz2c"
+        "library": "libaacs",
+        "nid": "Iofb1lKwTNA"
       },
       {
-        "library": "libscebemp2sys",
-        "nid": "bvS9FzeZUy0"
+        "library": "libaacs",
+        "nid": "TK5prfVU4b0"
       },
       {
-        "library": "libscebemp2sys",
-        "nid": "kULCDAVIbaQ"
+        "library": "libaacs",
+        "nid": "ZCRVIAxld6o"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "Fl9441iKffk"
+        "library": "libaacs",
+        "nid": "ZUEIg4QZJ+k"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "Gav1Xt1Ce+c"
+        "library": "libaacs",
+        "nid": "j0quzCtmBr4"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "Ozk+Z6QnlTY"
+        "library": "libaacs",
+        "nid": "kYQis7lBy+U"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "QfPuSqhub7o"
+        "library": "libc",
+        "nid": "+/+yCPLKpAo"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "XjArPn0XP08"
+        "library": "libc",
+        "nid": "+Hs8EJCTPVU"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "lrQSsTRMMr4"
+        "library": "libc",
+        "nid": "+PP/y/VoLFk"
       },
       {
-        "library": "libscelibressl",
-        "nid": "5lxbadCtCro"
+        "library": "libc",
+        "nid": "4XrNNNBQFU0"
       },
       {
-        "library": "libscelibressl",
-        "nid": "9x50PGOgF/Y"
+        "library": "libc",
+        "nid": "6uMpUMAtDUI"
       },
       {
-        "library": "libscelibressl",
-        "nid": "BCoR5SxipAc"
+        "library": "libc",
+        "nid": "9zWQBdL8AMI"
       },
       {
-        "library": "libscelibressl",
-        "nid": "GAspmTCDydA"
+        "library": "libc",
+        "nid": "NUaWMjspkyQ"
       },
       {
-        "library": "libscelibressl",
-        "nid": "MsYtDUo1q3w"
+        "library": "libc",
+        "nid": "PsChheW5bqM"
       },
       {
-        "library": "libscelibressl",
-        "nid": "Rcf0AIWn1k0"
+        "library": "libc",
+        "nid": "QIvgFtAD6l4"
       },
       {
-        "library": "libscelibressl",
-        "nid": "TYCbXfso6h0"
+        "library": "libc",
+        "nid": "RvNtT3CuwG8"
       },
       {
-        "library": "libscelibressl",
-        "nid": "TkFWJMf1798"
+        "library": "libc",
+        "nid": "WJnBzvFrXKI"
       },
       {
-        "library": "libscelibressl",
-        "nid": "YuHRb1mcg2c"
+        "library": "libc",
+        "nid": "WYDpy7OYk3Q"
       },
       {
-        "library": "libscelibressl",
-        "nid": "cR1lsX9IaV0"
+        "library": "libc",
+        "nid": "XzpYpfsrHBA"
       },
       {
-        "library": "libscelibressl",
-        "nid": "eQCzbl0EAas"
+        "library": "libc",
+        "nid": "bgPj7X7IErs"
       },
       {
-        "library": "libscelibressl",
-        "nid": "enS8cXXpHx8"
+        "library": "libc",
+        "nid": "e9pBc40ZN5E"
       },
       {
-        "library": "libscelibressl",
-        "nid": "gjhdufoJDz4"
+        "library": "libc",
+        "nid": "fDigq6R0SnQ"
       },
       {
-        "library": "libscelibressl",
-        "nid": "kzQNxd34vs0"
+        "library": "libc",
+        "nid": "gPsz3+UgalY"
       },
       {
-        "library": "libscelibressl",
-        "nid": "lkk+itotqx4"
+        "library": "libc",
+        "nid": "hTdlp3r2ecI"
       },
       {
-        "library": "libscelibressl",
-        "nid": "p7gyBp/ehu0"
+        "library": "libc",
+        "nid": "jGRvxKeNUe8"
       },
       {
-        "library": "libscelibressl",
-        "nid": "sOTndn8Da80"
+        "library": "libc",
+        "nid": "jKpfnxpYavo"
       },
       {
-        "library": "libscelibressl",
-        "nid": "tAgGXFxohsY"
+        "library": "libc",
+        "nid": "lVIPXox8mxE"
       },
       {
-        "library": "libscelibressl",
-        "nid": "tjTb7/Ki1lE"
+        "library": "libc",
+        "nid": "oMnbUJaF8Kk"
       },
       {
-        "library": "libscelibressl",
-        "nid": "xnyAthldIp0"
+        "library": "libc",
+        "nid": "rXMJafG4zUM"
       },
       {
-        "library": "libscelibressl",
-        "nid": "zMfnlTErguo"
+        "library": "libc",
+        "nid": "sJ9wIiZz7Fs"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "+SqOgirwI6o"
+        "library": "libc",
+        "nid": "sVnl3R8BEqs"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "/MEistAH/io"
+        "library": "libc",
+        "nid": "tesyQxaao98"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "29WLV1H3N4g"
+        "library": "libc",
+        "nid": "ybam/leZ/7s"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "4Mnj8tiIHZ4"
+        "library": "libc",
+        "nid": "zRonaMq/+mg"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "CeX14kTCGq8"
+        "library": "libcairo",
+        "nid": "+PEo5Z7DOlY"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "FQt7XWLnLwU"
+        "library": "libcairo",
+        "nid": "/aqFIBn0h78"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "JAGmu8ttR74"
+        "library": "libcairo",
+        "nid": "/v5CZVGkN3k"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "LCKDNC2Zqro"
+        "library": "libcairo",
+        "nid": "1GGpdjyZslI"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "LgdZJCThPTQ"
+        "library": "libcairo",
+        "nid": "1K5ly63m6fo"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "OAUlbfFgENQ"
+        "library": "libcairo",
+        "nid": "36Wm5aIJUFY"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "SeMZoqlIA6A"
+        "library": "libcairo",
+        "nid": "3grQ1jCgta8"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "WlSWoA7hiOg"
+        "library": "libcairo",
+        "nid": "3pmBdB/bl8w"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "Y5SLUGYDlo8"
+        "library": "libcairo",
+        "nid": "3urTbaMTNyE"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "ZS9W7w1AK+M"
+        "library": "libcairo",
+        "nid": "4FH5hyIXo9k"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "a5wOtxSirPs"
+        "library": "libcairo",
+        "nid": "4dvdsqyLM8c"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "bNAjL2BsoKE"
+        "library": "libcairo",
+        "nid": "4e7O/m/JWVM"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "bfEqRfh89IY"
+        "library": "libcairo",
+        "nid": "4gDTaBZH8lo"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "dPS9y/DM5qY"
+        "library": "libcairo",
+        "nid": "54HrgUIQHOk"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "lR5Q6FroCVY"
+        "library": "libcairo",
+        "nid": "5OZ1YwHyHd8"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "mAjM9K5frIY"
+        "library": "libcairo",
+        "nid": "6DvK+OdIPW4"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "pV2SxoTbDhE"
+        "library": "libcairo",
+        "nid": "6Y3HHedGzlw"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "ptCdo3WXsqA"
+        "library": "libcairo",
+        "nid": "8zMm0QOWZAA"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "qpUYHJgrEh4"
+        "library": "libcairo",
+        "nid": "A++pFuyxZPg"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "s4aui0+5RXU"
+        "library": "libcairo",
+        "nid": "A/0StSi2AwA"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "uUKwzHzYGII"
+        "library": "libcairo",
+        "nid": "A3FLVZ4FHbY"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "wDsMd/3wd3Y"
+        "library": "libcairo",
+        "nid": "AoAG2JE8GIo"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "yxXUg88vtTQ"
+        "library": "libcairo",
+        "nid": "BZFvjfb9xDk"
       },
       {
-        "library": "libscemouse",
-        "nid": "2KVa2/HqIRs"
+        "library": "libcairo",
+        "nid": "By6b1vjSVok"
       },
       {
-        "library": "libscemouse",
-        "nid": "CvUnq1gsWMg"
+        "library": "libcairo",
+        "nid": "D1KYCZ80Sac"
       },
       {
-        "library": "libscemouse",
-        "nid": "GE+ZU2Y9pEs"
+        "library": "libcairo",
+        "nid": "D45IcsszyQI"
       },
       {
-        "library": "libscemouse",
-        "nid": "P+9UQOe1F2g"
+        "library": "libcairo",
+        "nid": "DOCnSv1cXx8"
       },
       {
-        "library": "libscemouse",
-        "nid": "T4BHUjH773k"
+        "library": "libcairo",
+        "nid": "E2E+DDLhCRg"
       },
       {
-        "library": "libscemouse",
-        "nid": "UBO+tFHvcyE"
+        "library": "libcairo",
+        "nid": "E5LkpnAY7po"
       },
       {
-        "library": "libscemouse",
-        "nid": "doRbAW89lZE"
+        "library": "libcairo",
+        "nid": "EItmXRLen7w"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "+8T1y8Y/lgQ"
+        "library": "libcairo",
+        "nid": "F2ZShEhLU8Y"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "+jG4wqqA8yg"
+        "library": "libcairo",
+        "nid": "FbWFbLUQOys"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "+jLvgfDA97c"
+        "library": "libcairo",
+        "nid": "FnhwGKKZOjU"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "+xdJWXA20fg"
+        "library": "libcairo",
+        "nid": "Gn3ZBaH2rK0"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "//3LQVV+qcE"
+        "library": "libcairo",
+        "nid": "H9bwCsWw7LA"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "/YGgZXLCrgM"
+        "library": "libcairo",
+        "nid": "HKjYBSCx3mY"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "/eTUfliWVzQ"
+        "library": "libcairo",
+        "nid": "HTB1uUwgSVQ"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "0dYM623+hwI"
+        "library": "libcairo",
+        "nid": "Hkp7M+pJILk"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "0lD2Oypwty8"
+        "library": "libcairo",
+        "nid": "I5wa74016LQ"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "12rsFW04hrk"
+        "library": "libcairo",
+        "nid": "IKnEk6g6ZV0"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "1dDqFMD4gVY"
+        "library": "libcairo",
+        "nid": "IdKE2DrNBck"
       }
     ],
     "samples_removed": [
       {
-        "library": "libscefreetypeot",
-        "nid": "MaucYuQ/aTc"
+        "library": "libaacs",
+        "nid": "1Bz+b0yrZ5k"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "OvPEtXOCFW8"
+        "library": "libaacs",
+        "nid": "7FdRAR2GEjo"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "Rjj1AjsY9j8"
+        "library": "libaacs",
+        "nid": "9aKY7vU7K1g"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "V0CO9r6kHtA"
+        "library": "libaacs",
+        "nid": "BW+Db3ApH58"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "WwuniYqh0Pk"
+        "library": "libaacs",
+        "nid": "FHWdAzU-rRI"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "XO/7BCadGFo"
+        "library": "libaacs",
+        "nid": "SZS3yWLRXCs"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "hEgEknS6vIU"
+        "library": "libaacs",
+        "nid": "Z5ALk8pML2A"
       },
       {
-        "library": "libscefreetypeot",
-        "nid": "qwtZV1cPqnA"
+        "library": "libaacs",
+        "nid": "blfXA8TN0FE"
       },
       {
-        "library": "libsceicu",
-        "nid": "+UEekLP7T+w"
+        "library": "libaacs",
+        "nid": "cPxUokt0QAY"
       },
       {
-        "library": "libsceicu",
-        "nid": "+kd2qcTMvHE"
+        "library": "libaacs",
+        "nid": "fiY93ocN4T0"
       },
       {
-        "library": "libsceicu",
-        "nid": "1SsridDRBYQ"
+        "library": "libaacs",
+        "nid": "lBKcY3H8DCU"
       },
       {
-        "library": "libsceicu",
-        "nid": "1hRMwxVZreI"
+        "library": "libaacs",
+        "nid": "nY4cim5uEVU"
       },
       {
-        "library": "libsceicu",
-        "nid": "2+rxZu1Sagg"
+        "library": "libaacs",
+        "nid": "qmKJqdF6l2g"
       },
       {
-        "library": "libsceicu",
-        "nid": "2nG5mwOWXBA"
+        "library": "libc",
+        "nid": "8TrtH1kCLfk"
       },
       {
-        "library": "libsceicu",
-        "nid": "3ufTQ0VbQHQ"
+        "library": "libc",
+        "nid": "H546uyQQGXQ"
       },
       {
-        "library": "libsceicu",
-        "nid": "5+-ZFSRQ0+k"
+        "library": "libc",
+        "nid": "iMxexsR1CCQ"
       },
       {
-        "library": "libsceicu",
-        "nid": "6+NsFXHpWXc"
+        "library": "libc",
+        "nid": "izYtqTP0zNU"
       },
       {
-        "library": "libsceicu",
-        "nid": "BsjbIVU27jQ"
+        "library": "libc",
+        "nid": "wJPqH3RqkY0"
       },
       {
-        "library": "libsceicu",
-        "nid": "FNfP9dKTd5Q"
+        "library": "libc",
+        "nid": "ySEdTV/37JA"
       },
       {
-        "library": "libsceicu",
-        "nid": "Giz1apAFuy0"
+        "library": "libcurl",
+        "nid": "+0geDEimyvE"
       },
       {
-        "library": "libsceicu",
-        "nid": "JTo7V/MyaCI"
+        "library": "libcurl",
+        "nid": "/FwfB5G9ztg"
       },
       {
-        "library": "libsceicu",
-        "nid": "OAFz3KoG-gA"
+        "library": "libcurl",
+        "nid": "/WWyz1uPfx0"
       },
       {
-        "library": "libsceicu",
-        "nid": "QXS0ryIddTw"
+        "library": "libcurl",
+        "nid": "0i8EaWOLjcY"
       },
       {
-        "library": "libsceicu",
-        "nid": "RIcNJWDYKhM"
+        "library": "libcurl",
+        "nid": "1N7ft+SiHD0"
       },
       {
-        "library": "libsceicu",
-        "nid": "SKlOurWcwAU"
+        "library": "libcurl",
+        "nid": "4zl/9Emcwhc"
       },
       {
-        "library": "libsceicu",
-        "nid": "TU6Yl8+mT3c"
+        "library": "libcurl",
+        "nid": "5b/D80m2TKc"
       },
       {
-        "library": "libsceicu",
-        "nid": "UmNS0P0-ovs"
+        "library": "libcurl",
+        "nid": "7KQckhaDi18"
       },
       {
-        "library": "libsceicu",
-        "nid": "WEknRhlZaTw"
+        "library": "libcurl",
+        "nid": "7ShPrvjazws"
       },
       {
-        "library": "libsceicu",
-        "nid": "Wm0y-9IRE8I"
+        "library": "libcurl",
+        "nid": "7h+e56B2oKs"
       },
       {
-        "library": "libsceicu",
-        "nid": "WwcyxgKH3dc"
+        "library": "libcurl",
+        "nid": "7ijxBuDNvHY"
       },
       {
-        "library": "libsceicu",
-        "nid": "X7gbPHVoNEw"
+        "library": "libcurl",
+        "nid": "9cpxUNV97mM"
       },
       {
-        "library": "libsceicu",
-        "nid": "Y3pb+rPc90M"
+        "library": "libcurl",
+        "nid": "A+rTLSeCJFQ"
       },
       {
-        "library": "libsceicu",
-        "nid": "ZxnyBy8reV4"
+        "library": "libcurl",
+        "nid": "BAz8Ji7lJls"
       },
       {
-        "library": "libsceicu",
-        "nid": "ac2V/fr4/2s"
+        "library": "libcurl",
+        "nid": "BhNAR5P2VEg"
       },
       {
-        "library": "libsceicu",
-        "nid": "bKnIKY8ii/A"
+        "library": "libcurl",
+        "nid": "Cc+Qhdd4ons"
       },
       {
-        "library": "libsceicu",
-        "nid": "dCU5lV2JXZc"
+        "library": "libcurl",
+        "nid": "Dfdbc8trvZg"
       },
       {
-        "library": "libsceicu",
-        "nid": "dp+WhMQ+8L4"
+        "library": "libcurl",
+        "nid": "DiBmbfiH8J4"
       },
       {
-        "library": "libsceicu",
-        "nid": "dxxRMajmF8Q"
+        "library": "libcurl",
+        "nid": "ENFUpkwnFM8"
       },
       {
-        "library": "libsceicu",
-        "nid": "dzbKmf3Ycog"
+        "library": "libcurl",
+        "nid": "GldGeV80/58"
       },
       {
-        "library": "libsceicu",
-        "nid": "hI8JVrcGWhc"
+        "library": "libcurl",
+        "nid": "H49qutQi9a0"
       },
       {
-        "library": "libsceicu",
-        "nid": "pgvyZZ+d1ck"
+        "library": "libcurl",
+        "nid": "HD+IPUl76Hs"
       },
       {
-        "library": "libsceicu",
-        "nid": "q3mX36AQeC4"
+        "library": "libcurl",
+        "nid": "HgFRO6Upsg4"
       },
       {
-        "library": "libsceicu",
-        "nid": "r6wJDG0V/co"
+        "library": "libcurl",
+        "nid": "I38s92i/Xjk"
       },
       {
-        "library": "libsceicu",
-        "nid": "vIXFjwnO/Ow"
+        "library": "libcurl",
+        "nid": "JBHZ4wLpnx0"
       },
       {
-        "library": "libsceicu",
-        "nid": "wezXBwKdjAY"
+        "library": "libcurl",
+        "nid": "KBTWh1VVa/8"
       },
       {
-        "library": "libsceicu",
-        "nid": "xAo5lvA+W3o"
+        "library": "libcurl",
+        "nid": "KK03u+6DkBU"
       },
       {
-        "library": "libsceicu",
-        "nid": "xlgA5n+IZ1M"
+        "library": "libcurl",
+        "nid": "KUolTh2gQ8k"
       },
       {
-        "library": "libsceicu",
-        "nid": "yVobQd4t+iA"
+        "library": "libcurl",
+        "nid": "KzSFgeUXy2E"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "BQY4hFh7zRU"
+        "library": "libcurl",
+        "nid": "Lr91kLn38uM"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "ILhCf9EK7BA"
+        "library": "libcurl",
+        "nid": "MhymOvp1NkU"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "MXbklCgMv0o"
+        "library": "libcurl",
+        "nid": "N5yPp5dHBQE"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "SwUp8DHjtHU"
+        "library": "libcurl",
+        "nid": "NGTkAHTkViY"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "5RBpaKVkWRQ"
+        "library": "libcurl",
+        "nid": "NUbq2aNGojo"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "PFxpQ6lkQP0"
+        "library": "libcurl",
+        "nid": "PoT9ByTU4ws"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "kADEz2eAE7c"
+        "library": "libcurl",
+        "nid": "Pyz55DYmOrI"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "psMmvmdPKds"
+        "library": "libcurl",
+        "nid": "QwbCXdumE84"
+      },
+      {
+        "library": "libcurl",
+        "nid": "Rwe8bHavOL0"
+      },
+      {
+        "library": "libcurl",
+        "nid": "SxPu8PZuHuU"
+      },
+      {
+        "library": "libcurl",
+        "nid": "SyLtMxQlS6M"
+      },
+      {
+        "library": "libcurl",
+        "nid": "TdLam7xSzmY"
+      },
+      {
+        "library": "libcurl",
+        "nid": "U2tir7V8tzw"
+      },
+      {
+        "library": "libcurl",
+        "nid": "W+jyDVS+594"
+      },
+      {
+        "library": "libcurl",
+        "nid": "WuFNFYQX3NA"
+      },
+      {
+        "library": "libcurl",
+        "nid": "XKdprgRLQy4"
+      },
+      {
+        "library": "libcurl",
+        "nid": "YSi2PMczWE8"
+      },
+      {
+        "library": "libcurl",
+        "nid": "YkyOTEcu7vA"
+      },
+      {
+        "library": "libcurl",
+        "nid": "ZhOwNq3lcpk"
+      },
+      {
+        "library": "libcurl",
+        "nid": "b3SWcncY+A0"
+      },
+      {
+        "library": "libcurl",
+        "nid": "ea8LaHOKFDA"
+      },
+      {
+        "library": "libcurl",
+        "nid": "govcxXDyzbw"
+      },
+      {
+        "library": "libcurl",
+        "nid": "hGv08dyfsNQ"
+      },
+      {
+        "library": "libcurl",
+        "nid": "hXXC4BDL1gY"
+      },
+      {
+        "library": "libcurl",
+        "nid": "hdaJCex67Tg"
+      },
+      {
+        "library": "libcurl",
+        "nid": "hpQlqUYshFI"
+      },
+      {
+        "library": "libcurl",
+        "nid": "kIbwtX5Mi6c"
+      },
+      {
+        "library": "libcurl",
+        "nid": "kX88h1qQ7co"
+      },
+      {
+        "library": "libcurl",
+        "nid": "ln25S0X/S08"
+      },
+      {
+        "library": "libcurl",
+        "nid": "lxail8CxrHk"
+      },
+      {
+        "library": "libcurl",
+        "nid": "mQBD4RanvTc"
+      },
+      {
+        "library": "libcurl",
+        "nid": "mUQG6ux03z4"
       }
     ],
     "schema_version": 1,
-    "source_sha": "bbd85f7ebfd41433598b4573eaae53df19dc059a"
+    "source_sha": "6f3ee8b1e71c727ab639cbacdf8b95974a35f65a"
   },
   "schema_version": 1,
   "source_revisions": {
-    "anyps5_main": "bbd85f7ebfd41433598b4573eaae53df19dc059a",
+    "anyps5_main": "6f3ee8b1e71c727ab639cbacdf8b95974a35f65a",
     "ps5_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad"
   },
   "trends": [
@@ -22025,6 +22121,16 @@
       "indexed": 314038,
       "observed_at_utc": "2026-11-06T06:50:42+00:00",
       "open_pr_scanned": 1864,
+      "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+      "qualified_unique_nids": 10749,
+      "strictly_verified_names": 39966
+    },
+    {
+      "anyps5_commit": "6f3ee8b1e71c727ab639cbacdf8b95974a35f65a",
+      "anyps5_main_matches": 19704,
+      "indexed": 314038,
+      "observed_at_utc": "2026-11-21T11:05:57+00:00",
+      "open_pr_scanned": 714,
       "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
       "qualified_unique_nids": 10749,
       "strictly_verified_names": 39966
