@@ -1,19 +1,19 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "6f3ee8b1e71c727ab639cbacdf8b95974a35f65a",
+    "anyps5_main_commit": "8763aeffdc37e203b7d82ee4df154e42bb2e5bde",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 1683,
-      "open_pr_cached": 181,
+      "open_pr_cache_expired_or_closed": 91,
+      "open_pr_cached": 623,
       "open_pr_coverage_complete": false,
-      "open_pr_errors": 15,
-      "open_pr_newly_scanned": 535,
-      "open_pr_scanned": 714,
+      "open_pr_errors": 10,
+      "open_pr_newly_scanned": 540,
+      "open_pr_scanned": 1155,
       "open_pr_snapshot_stable": false,
-      "open_pr_stale_heads_invalidated": 2,
+      "open_pr_stale_heads_invalidated": 8,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 2175,
-      "open_pr_unscanned": 1461
+      "open_pr_total": 2279,
+      "open_pr_unscanned": 1124
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-11-21T11:05:57+00:00",
+    "generated_at_utc": "2026-11-21T19:19:40+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -1210,7 +1210,7 @@
       "open_pr_added_matches": 0,
       "qualified_records": 0,
       "records": 214,
-      "upstream_main_catalogue_source_matches": 0,
+      "upstream_main_catalogue_source_matches": 9,
       "upstream_main_source_matches": 0,
       "verified_names": 142
     },
@@ -7183,20 +7183,20 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7856,
-    "anyps5_main_nonthrowing_source_records_live": 8721,
-    "anyps5_main_nonthrowing_unique_nids_live": 8714,
-    "anyps5_main_throwing_marker_records_live": 10983,
-    "anyps5_main_throwing_unique_nids_live": 10983,
-    "anyps5_main_tracked_source_records_live": 19704,
-    "anyps5_main_tracked_unique_nids_live": 19697,
+    "anyps5_main_nonthrowing_source_records_live": 8748,
+    "anyps5_main_nonthrowing_unique_nids_live": 8741,
+    "anyps5_main_throwing_marker_records_live": 10965,
+    "anyps5_main_throwing_unique_nids_live": 10965,
+    "anyps5_main_tracked_source_records_live": 19713,
+    "anyps5_main_tracked_unique_nids_live": 19706,
     "auto_imported_catalog_matching_proposals": 62,
-    "auto_imported_public_source_name_proposals": 19908,
-    "external_source_evidence_records": 42745,
+    "auto_imported_public_source_name_proposals": 19927,
+    "external_source_evidence_records": 42966,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
-    "main_nonthrowing_definition_record_matches": 3058,
-    "main_throwing_marker_record_matches": 5064,
-    "new_upstream_nid_candidates_for_review": 22251,
+    "main_nonthrowing_definition_record_matches": 3072,
+    "main_throwing_marker_record_matches": 5050,
+    "new_upstream_nid_candidates_for_review": 22327,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
@@ -7209,7 +7209,7 @@
     "source_names_withheld_by_safety_filter": 72,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 40282,
-    "verified_catalog_identity_main_source_matches": 19704
+    "upstream_source_definitions_seen": 40329,
+    "verified_catalog_identity_main_source_matches": 19713
   }
 }
