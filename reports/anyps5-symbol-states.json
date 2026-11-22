@@ -49,13 +49,13 @@
     "libkernel": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 5,
-      "definition_nonthrowing_unvalidated": 747,
-      "definition_throwing": 21,
+      "definition_nonthrowing_unvalidated": 751,
+      "definition_throwing": 28,
       "explicit_alias_no_visible_definition": 1
     },
     "libkernel_sys": {
-      "definition_nonthrowing_unvalidated": 220,
-      "definition_throwing": 593,
+      "definition_nonthrowing_unvalidated": 217,
+      "definition_throwing": 585,
       "explicit_alias_no_visible_definition": 160
     },
     "libkernel_web": {
@@ -141,7 +141,7 @@
       "explicit_alias_no_visible_definition": 13
     },
     "libsceappchecker": {
-      "definition_throwing": 3
+      "definition_nonthrowing_unvalidated": 3
     },
     "libsceappcontent": {
       "definition_nonthrowing_unvalidated": 30,
@@ -430,8 +430,8 @@
     },
     "libscefreetype": {
       "declaration_without_visible_definition": 8,
-      "definition_nonthrowing_unvalidated": 157,
-      "definition_throwing": 7
+      "definition_nonthrowing_unvalidated": 158,
+      "definition_throwing": 6
     },
     "libscefreetypeol": {
       "definition_nonthrowing_unvalidated": 67,
@@ -447,7 +447,7 @@
       "explicit_alias_no_visible_definition": 126
     },
     "libscefrontpaneldisplay": {
-      "definition_throwing": 3
+      "definition_nonthrowing_unvalidated": 3
     },
     "libscefsinternalforvsh": {
       "definition_nonthrowing_unvalidated": 28,
@@ -530,12 +530,12 @@
       "explicit_alias_no_visible_definition": 1
     },
     "libscehubapputil": {
-      "definition_throwing": 3
+      "definition_nonthrowing_unvalidated": 3
     },
     "libsceicu": {
       "declaration_without_visible_definition": 5,
-      "definition_nonthrowing_unvalidated": 414,
-      "definition_throwing": 2409,
+      "definition_nonthrowing_unvalidated": 417,
+      "definition_throwing": 2406,
       "explicit_alias_no_visible_definition": 654
     },
     "libsceidu": {
@@ -616,8 +616,8 @@
     "libscelibcinternal": {
       "assembly_definition_unvalidated": 1,
       "declaration_without_visible_definition": 4,
-      "definition_nonthrowing_unvalidated": 757,
-      "definition_throwing": 424,
+      "definition_nonthrowing_unvalidated": 759,
+      "definition_throwing": 422,
       "explicit_alias_no_visible_definition": 507
     },
     "libscelibressl": {
@@ -730,8 +730,8 @@
     "libscenkwebkit": {
       "assembly_definition_unvalidated": 398,
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 3641,
-      "definition_throwing": 7379,
+      "definition_nonthrowing_unvalidated": 3643,
+      "definition_throwing": 7377,
       "explicit_alias_no_visible_definition": 475
     },
     "libscenkwebkitrequirements": {
@@ -787,7 +787,7 @@
       "definition_nonthrowing_unvalidated": 4
     },
     "libscenppartnersubscription": {
-      "definition_throwing": 2
+      "definition_nonthrowing_unvalidated": 2
     },
     "libscenpparty": {
       "definition_nonthrowing_unvalidated": 26
@@ -1376,8 +1376,8 @@
       "definition_nonthrowing_unvalidated": 5
     },
     "libwebrtc": {
-      "definition_nonthrowing_unvalidated": 426,
-      "definition_throwing": 127,
+      "definition_nonthrowing_unvalidated": 427,
+      "definition_throwing": 126,
       "explicit_alias_no_visible_definition": 60
     },
     "libwvoec": {
@@ -1395,12 +1395,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "8763aeffdc37e203b7d82ee4df154e42bb2e5bde",
+  "source_sha": "f5f0f126a4b43e12c68280433bb57d91122f406e",
   "states": {
     "assembly_definition_unvalidated": 407,
     "declaration_without_visible_definition": 138,
-    "definition_nonthrowing_unvalidated": 19165,
-    "definition_throwing": 20547,
+    "definition_nonthrowing_unvalidated": 19186,
+    "definition_throwing": 20526,
     "explicit_alias_no_visible_definition": 5047
   }
 }
