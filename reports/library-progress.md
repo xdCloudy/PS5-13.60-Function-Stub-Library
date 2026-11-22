@@ -133,7 +133,7 @@ All identities remain represented; source definition matches are **not** validat
 | libSceGLSlimVSH | 217 | 208 | 0 | 0 | 0 |
 | libSceJson2 | 215 | 215 | 0 | 0 | 0 |
 | libSceNKWebKitRequirements | 214 | 142 | 0 | 0 | 0 |
-| libScePad | 212 | 194 | 4 | 1 | 0 |
+| libScePad | 212 | 194 | 4 | 1 | 3 |
 | libmono-btls-shared | 212 | 205 | 0 | 0 | 0 |
 | SceVshIme | 211 | 0 | 0 | 0 | 0 |
 | SceVshNpWebapi2 | 208 | 0 | 0 | 0 | 0 |

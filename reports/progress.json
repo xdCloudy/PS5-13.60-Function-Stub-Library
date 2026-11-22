@@ -1,19 +1,19 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "314bcdbc217113f837c01d76a62c03626a11036e",
+    "anyps5_main_commit": "7bf7d80bf9d60de7b1c23191e70cfb3526e5f68a",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 199,
-      "open_pr_cached": 956,
+      "open_pr_cache_expired_or_closed": 148,
+      "open_pr_cached": 1338,
       "open_pr_coverage_complete": false,
-      "open_pr_errors": 20,
-      "open_pr_newly_scanned": 530,
-      "open_pr_scanned": 1486,
+      "open_pr_errors": 36,
+      "open_pr_newly_scanned": 514,
+      "open_pr_scanned": 1852,
       "open_pr_snapshot_stable": true,
       "open_pr_stale_heads_invalidated": 0,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 2379,
-      "open_pr_unscanned": 893
+      "open_pr_total": 2484,
+      "open_pr_unscanned": 632
     },
     "catalog_manifest_counts": {
       "firmware-13.60": 302338,
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-11-22T11:29:50+00:00",
+    "generated_at_utc": "2026-11-22T19:44:41+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -1216,7 +1216,7 @@
     },
     {
       "library": "libScePad",
-      "open_pr_added_matches": 0,
+      "open_pr_added_matches": 3,
       "qualified_records": 4,
       "records": 212,
       "upstream_main_catalogue_source_matches": 165,
@@ -7183,33 +7183,33 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7863,
-    "anyps5_main_nonthrowing_source_records_live": 8821,
-    "anyps5_main_nonthrowing_unique_nids_live": 8814,
-    "anyps5_main_throwing_marker_records_live": 10901,
-    "anyps5_main_throwing_unique_nids_live": 10901,
+    "anyps5_main_nonthrowing_source_records_live": 8866,
+    "anyps5_main_nonthrowing_unique_nids_live": 8859,
+    "anyps5_main_throwing_marker_records_live": 10856,
+    "anyps5_main_throwing_unique_nids_live": 10856,
     "anyps5_main_tracked_source_records_live": 19722,
     "anyps5_main_tracked_unique_nids_live": 19715,
     "auto_imported_catalog_matching_proposals": 62,
-    "auto_imported_public_source_name_proposals": 19975,
-    "external_source_evidence_records": 43507,
+    "auto_imported_public_source_name_proposals": 20055,
+    "external_source_evidence_records": 44090,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
-    "main_nonthrowing_definition_record_matches": 3122,
-    "main_throwing_marker_record_matches": 5000,
-    "new_upstream_nid_candidates_for_review": 22799,
+    "main_nonthrowing_definition_record_matches": 3142,
+    "main_throwing_marker_record_matches": 4980,
+    "new_upstream_nid_candidates_for_review": 23353,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
     "qualified_unique_nids_matched_in_main_source": 8122,
-    "qualified_unique_nids_matched_in_open_pr_additions": 599,
-    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 2028,
+    "qualified_unique_nids_matched_in_open_pr_additions": 602,
+    "qualified_unique_nids_not_matched_in_main_or_pr_scans": 2025,
     "qualified_unique_nids_recomputed": 10749,
     "saved_qualified_unique_nids": 10750,
     "saved_vs_recomputed_delta": 1,
-    "source_names_withheld_by_safety_filter": 72,
+    "source_names_withheld_by_safety_filter": 74,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 40416,
+    "upstream_source_definitions_seen": 40509,
     "verified_catalog_identity_main_source_matches": 19722
   }
 }
