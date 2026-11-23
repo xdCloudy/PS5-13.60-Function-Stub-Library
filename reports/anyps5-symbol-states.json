@@ -4,7 +4,7 @@
   "explicit_export_alias_records": 5025,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 45464,
+  "observed_library_nid_records": 45485,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -49,13 +49,13 @@
     "libkernel": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 5,
-      "definition_nonthrowing_unvalidated": 756,
-      "definition_throwing": 23,
+      "definition_nonthrowing_unvalidated": 779,
+      "definition_throwing": 25,
       "explicit_alias_no_visible_definition": 1
     },
     "libkernel_sys": {
-      "definition_nonthrowing_unvalidated": 217,
-      "definition_throwing": 585,
+      "definition_nonthrowing_unvalidated": 194,
+      "definition_throwing": 583,
       "explicit_alias_no_visible_definition": 160
     },
     "libkernel_web": {
@@ -588,8 +588,8 @@
       "explicit_alias_no_visible_definition": 2
     },
     "libscejsc": {
-      "definition_nonthrowing_unvalidated": 166,
-      "definition_throwing": 603,
+      "definition_nonthrowing_unvalidated": 167,
+      "definition_throwing": 602,
       "explicit_alias_no_visible_definition": 24
     },
     "libscejson": {
@@ -625,7 +625,7 @@
       "definition_throwing": 126
     },
     "libscelibressl3": {
-      "definition_nonthrowing_unvalidated": 322,
+      "definition_nonthrowing_unvalidated": 329,
       "definition_throwing": 76,
       "explicit_alias_no_visible_definition": 383
     },
@@ -730,8 +730,8 @@
     "libscenkwebkit": {
       "assembly_definition_unvalidated": 398,
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 3908,
-      "definition_throwing": 7226,
+      "definition_nonthrowing_unvalidated": 3956,
+      "definition_throwing": 7192,
       "explicit_alias_no_visible_definition": 475
     },
     "libscenkwebkitrequirements": {
@@ -894,8 +894,8 @@
       "definition_throwing": 5
     },
     "libscepatchcheckerclient": {
-      "definition_nonthrowing_unvalidated": 9,
-      "definition_throwing": 3
+      "definition_nonthrowing_unvalidated": 11,
+      "definition_throwing": 1
     },
     "libsceperf": {
       "definition_throwing": 84
@@ -982,8 +982,8 @@
       "definition_throwing": 3
     },
     "libsceregmgr": {
-      "definition_nonthrowing_unvalidated": 21,
-      "definition_throwing": 53,
+      "definition_nonthrowing_unvalidated": 23,
+      "definition_throwing": 51,
       "explicit_alias_no_visible_definition": 8
     },
     "libsceremoteplay": {
@@ -1395,12 +1395,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "499aaea16bf4c68b93145b3f2671c9a9f258de30",
+  "source_sha": "8e1af3d9b089d0a7cb0c58a8291b11f368bb826b",
   "states": {
     "assembly_definition_unvalidated": 407,
     "declaration_without_visible_definition": 138,
-    "definition_nonthrowing_unvalidated": 19566,
-    "definition_throwing": 20328,
+    "definition_nonthrowing_unvalidated": 19626,
+    "definition_throwing": 20289,
     "explicit_alias_no_visible_definition": 5025
   }
 }

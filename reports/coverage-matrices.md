@@ -2,7 +2,7 @@
 
 All figures come from the canonical inventory and generated source observations. A known function is not necessarily a working function.
 
-**Last refresh:** 2026-11-23T01:47:19+00:00 (scheduled polling, not instantaneous).
+**Last refresh:** 2026-11-23T12:48:59+00:00 (scheduled polling, not instantaneous).
 
 ## A. Discovery
 
@@ -63,7 +63,7 @@ All figures come from the canonical inventory and generated source observations.
 | SceVshDiscordAccessor | 1,726 | 0 | 0 | 0 | 0 | 0 | 1,726 |
 | libicu | 0 | 1,460 | 1,698 | 1,460 | 0 | 0 | 0 |
 | websocketsharp | 1,560 | 0 | 0 | 0 | 0 | 0 | 1,560 |
-| libkernel | 1,511 | 0 | 1,357 | 1,147 | 285 | 0 | 154 |
+| libkernel | 1,511 | 0 | 1,357 | 1,147 | 306 | 0 | 154 |
 | SceVshUILib | 1,424 | 0 | 0 | 0 | 0 | 0 | 1,424 |
 | SystemXmlLinq | 1,327 | 0 | 0 | 0 | 0 | 0 | 1,327 |
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 | 0 | 1,311 |
@@ -822,9 +822,9 @@ All figures come from the canonical inventory and generated source observations.
 |---|---:|---|
 | qualified unique nids | 10,749 | Source-backed or canonical classification |
 | strict qualified unique nids | 9,158 | Source-backed or canonical classification |
-| anyps5 main definition matches | 19,725 | Source-backed or canonical classification |
-| anyps5 throwing marker | 10,836 | Source-backed or canonical classification |
-| anyps5 nonthrowing body | 8,889 | Source-backed or canonical classification |
+| anyps5 main definition matches | 19,746 | Source-backed or canonical classification |
+| anyps5 throwing marker | 10,807 | Source-backed or canonical classification |
+| anyps5 nonthrowing body | 8,939 | Source-backed or canonical classification |
 | open pr qualified partial | 599 | Source-backed or canonical classification |
 | snapshot locally prepared stubs | 963 | Saved snapshot, not live |
 | snapshot fully validated stubs | 0 | Saved snapshot, not live |
@@ -835,8 +835,8 @@ All figures come from the canonical inventory and generated source observations.
 
 ### AnyPS5 changes since the previous revision
 
-Previous SHA: 7bf7d80bf9d60de7b1c23191e70cfb3526e5f68a
-Added identities: 58; removed: 37; changed source classifications: 85.
+Previous SHA: 499aaea16bf4c68b93145b3f2671c9a9f258de30
+Added identities: 46; removed: 25; changed source classifications: 70.
 These values do not verify implementation changes or runtime behaviour.
 
 ## D. Ownership classifications
@@ -903,12 +903,12 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Signal | Value |
 |---|---|
-| last refresh utc | 2026-11-23T01:47:19+00:00 |
-| pr scanned | 2,214 |
-| pr total | 2,469 |
+| last refresh utc | 2026-11-23T12:48:59+00:00 |
+| pr scanned | 2,496 |
+| pr total | 2,554 |
 | pr complete | 0 |
-| pr errors | 54 |
-| anyps5 symbol observations | 45,464 |
+| pr errors | 55 |
+| anyps5 symbol observations | 45,485 |
 | anyps5 declarations only | 138 |
 | anyps5 explicit alias records | 5,025 |
 | anyps5 assembly definition records | 407 |
@@ -929,7 +929,6 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 
 | Observed at (UTC) | Indexed | Strictly verified names | AnyPS5 main source matches | Open PR heads scanned |
 |---|---:|---:|---:|---:|
-| 2026-11-01T19:43:23+00:00 | 314,038 | 39,966 | 16,664 | 1,826 |
 | 2026-11-02T00:47:47+00:00 | 314,038 | 39,966 | 16,670 | unknown |
 | 2026-11-02T11:13:20+00:00 | 314,038 | 39,966 | 16,897 | 1,788 |
 | 2026-11-02T21:46:29+00:00 | 314,038 | 39,966 | 17,219 | unknown |
@@ -949,6 +948,7 @@ Heuristic: remaining assessed qualified records in known system/placeholder scop
 | 2026-11-22T11:29:50+00:00 | 314,038 | 39,966 | 19,722 | 1,486 |
 | 2026-11-22T19:44:41+00:00 | 314,038 | 39,966 | 19,722 | 1,852 |
 | 2026-11-23T01:47:19+00:00 | 314,038 | 39,966 | 19,725 | 2,214 |
+| 2026-11-23T12:48:59+00:00 | 314,038 | 39,966 | 19,746 | 2,496 |
 
 ### Coverage denominators
 
