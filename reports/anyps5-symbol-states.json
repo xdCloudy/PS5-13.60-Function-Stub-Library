@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 407,
   "build_verified": null,
-  "explicit_export_alias_records": 5047,
+  "explicit_export_alias_records": 5025,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 45443,
+  "observed_library_nid_records": 45464,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -187,12 +187,12 @@
     "libsceaudioout": {
       "definition_nonthrowing_unvalidated": 79,
       "definition_throwing": 141,
-      "explicit_alias_no_visible_definition": 54
+      "explicit_alias_no_visible_definition": 45
     },
     "libsceaudiopropagation": {
       "definition_nonthrowing_unvalidated": 32,
       "definition_throwing": 9,
-      "explicit_alias_no_visible_definition": 7
+      "explicit_alias_no_visible_definition": 4
     },
     "libsceaudiosystem": {
       "definition_nonthrowing_unvalidated": 4,
@@ -442,9 +442,9 @@
       "definition_nonthrowing_unvalidated": 3
     },
     "libscefreetypeot": {
-      "definition_nonthrowing_unvalidated": 160,
+      "definition_nonthrowing_unvalidated": 167,
       "definition_throwing": 39,
-      "explicit_alias_no_visible_definition": 126
+      "explicit_alias_no_visible_definition": 133
     },
     "libscefrontpaneldisplay": {
       "definition_nonthrowing_unvalidated": 3
@@ -616,8 +616,8 @@
     "libscelibcinternal": {
       "assembly_definition_unvalidated": 1,
       "declaration_without_visible_definition": 4,
-      "definition_nonthrowing_unvalidated": 787,
-      "definition_throwing": 408,
+      "definition_nonthrowing_unvalidated": 796,
+      "definition_throwing": 399,
       "explicit_alias_no_visible_definition": 507
     },
     "libscelibressl": {
@@ -626,7 +626,7 @@
     },
     "libscelibressl3": {
       "definition_nonthrowing_unvalidated": 322,
-      "definition_throwing": 75,
+      "definition_throwing": 76,
       "explicit_alias_no_visible_definition": 383
     },
     "libscelogindialog": {
@@ -703,7 +703,7 @@
     "libscenetctl": {
       "definition_nonthrowing_unvalidated": 46,
       "definition_throwing": 63,
-      "explicit_alias_no_visible_definition": 17
+      "explicit_alias_no_visible_definition": 8
     },
     "libscenetctlap": {
       "definition_nonthrowing_unvalidated": 11
@@ -730,8 +730,8 @@
     "libscenkwebkit": {
       "assembly_definition_unvalidated": 398,
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 3847,
-      "definition_throwing": 7252,
+      "definition_nonthrowing_unvalidated": 3908,
+      "definition_throwing": 7226,
       "explicit_alias_no_visible_definition": 475
     },
     "libscenkwebkitrequirements": {
@@ -887,7 +887,7 @@
     "libscepad": {
       "definition_nonthrowing_unvalidated": 56,
       "definition_throwing": 166,
-      "explicit_alias_no_visible_definition": 21
+      "explicit_alias_no_visible_definition": 16
     },
     "libscepadtracker": {
       "definition_nonthrowing_unvalidated": 1,
@@ -1022,7 +1022,7 @@
       "declaration_without_visible_definition": 82,
       "definition_nonthrowing_unvalidated": 1,
       "definition_throwing": 18,
-      "explicit_alias_no_visible_definition": 18
+      "explicit_alias_no_visible_definition": 15
     },
     "libscesavedata.native": {
       "definition_nonthrowing_unvalidated": 59,
@@ -1395,12 +1395,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "7bf7d80bf9d60de7b1c23191e70cfb3526e5f68a",
+  "source_sha": "499aaea16bf4c68b93145b3f2671c9a9f258de30",
   "states": {
     "assembly_definition_unvalidated": 407,
     "declaration_without_visible_definition": 138,
-    "definition_nonthrowing_unvalidated": 19489,
-    "definition_throwing": 20362,
-    "explicit_alias_no_visible_definition": 5047
+    "definition_nonthrowing_unvalidated": 19566,
+    "definition_throwing": 20328,
+    "explicit_alias_no_visible_definition": 5025
   }
 }
