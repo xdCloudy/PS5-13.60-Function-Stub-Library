@@ -49,7 +49,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIBGLayer | 1,311 | 0 | 0 | 0 | 0 |
 | SystemNetHttp | 1,283 | 0 | 0 | 0 | 0 |
 | SceVshUserServiceWrapper | 1,272 | 0 | 0 | 0 | 0 |
-| libSceNpCommon | 1,199 | 1,187 | 782 | 74 | 597 |
+| libSceNpCommon | 1,199 | 1,187 | 782 | 74 | 0 |
 | SceVshShellUIVoiceAndAgent | 1,189 | 0 | 0 | 0 | 0 |
 | SystemWebServices | 1,100 | 0 | 0 | 0 | 0 |
 | libmonosgen | 1,087 | 937 | 0 | 0 | 0 |
@@ -60,7 +60,7 @@ All identities remain represented; source definition matches are **not** validat
 | SceVshShellUIQuickImageEdit | 981 | 0 | 0 | 0 | 0 |
 | libmonosgen-2.0 | 963 | 963 | 0 | 0 | 0 |
 | MonoDataSqlite | 898 | 0 | 0 | 0 | 0 |
-| libSceIcu | 855 | 813 | 72 | 43 | 2 |
+| libSceIcu | 855 | 813 | 72 | 43 | 0 |
 | SceVshShellUIVisionRecognition | 822 | 0 | 0 | 0 | 0 |
 | ReactNativeComponentsVsh | 820 | 0 | 0 | 0 | 0 |
 | libdiscord | 802 | 0 | 0 | 0 | 0 |
