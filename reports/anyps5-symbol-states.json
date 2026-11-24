@@ -4,7 +4,7 @@
   "explicit_export_alias_records": 5025,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 45485,
+  "observed_library_nid_records": 45497,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -13,7 +13,7 @@
     "libc": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 6,
-      "definition_nonthrowing_unvalidated": 1981,
+      "definition_nonthrowing_unvalidated": 1987,
       "definition_throwing": 7,
       "explicit_alias_no_visible_definition": 8
     },
@@ -131,8 +131,8 @@
       "explicit_alias_no_visible_definition": 7
     },
     "libsceajmi": {
-      "definition_nonthrowing_unvalidated": 17,
-      "definition_throwing": 9,
+      "definition_nonthrowing_unvalidated": 22,
+      "definition_throwing": 4,
       "explicit_alias_no_visible_definition": 4
     },
     "libsceampr": {
@@ -534,8 +534,8 @@
     },
     "libsceicu": {
       "declaration_without_visible_definition": 5,
-      "definition_nonthrowing_unvalidated": 427,
-      "definition_throwing": 2396,
+      "definition_nonthrowing_unvalidated": 430,
+      "definition_throwing": 2393,
       "explicit_alias_no_visible_definition": 654
     },
     "libsceidu": {
@@ -730,8 +730,8 @@
     "libscenkwebkit": {
       "assembly_definition_unvalidated": 398,
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 3956,
-      "definition_throwing": 7192,
+      "definition_nonthrowing_unvalidated": 4002,
+      "definition_throwing": 7152,
       "explicit_alias_no_visible_definition": 475
     },
     "libscenkwebkitrequirements": {
@@ -1395,12 +1395,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "8e1af3d9b089d0a7cb0c58a8291b11f368bb826b",
+  "source_sha": "9111e0f78a21e812950590d9966cb156f21ae5bf",
   "states": {
     "assembly_definition_unvalidated": 407,
     "declaration_without_visible_definition": 138,
-    "definition_nonthrowing_unvalidated": 19626,
-    "definition_throwing": 20289,
+    "definition_nonthrowing_unvalidated": 19686,
+    "definition_throwing": 20241,
     "explicit_alias_no_visible_definition": 5025
   }
 }
