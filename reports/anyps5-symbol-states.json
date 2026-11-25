@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 407,
   "build_verified": null,
-  "explicit_export_alias_records": 5037,
+  "explicit_export_alias_records": 5035,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 45678,
+  "observed_library_nid_records": 45688,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -49,18 +49,18 @@
     "libkernel": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 5,
-      "definition_nonthrowing_unvalidated": 781,
-      "definition_throwing": 26,
+      "definition_nonthrowing_unvalidated": 782,
+      "definition_throwing": 25,
       "explicit_alias_no_visible_definition": 1
     },
     "libkernel_sys": {
-      "definition_nonthrowing_unvalidated": 195,
-      "definition_throwing": 582,
+      "definition_nonthrowing_unvalidated": 196,
+      "definition_throwing": 581,
       "explicit_alias_no_visible_definition": 160
     },
     "libkernel_web": {
-      "definition_nonthrowing_unvalidated": 8,
-      "definition_throwing": 35
+      "definition_nonthrowing_unvalidated": 9,
+      "definition_throwing": 34
     },
     "libmdbg_syscore": {
       "definition_nonthrowing_unvalidated": 2,
@@ -172,8 +172,8 @@
       "definition_nonthrowing_unvalidated": 6
     },
     "libsceaudiodec.native": {
-      "definition_nonthrowing_unvalidated": 9,
-      "definition_throwing": 7
+      "definition_nonthrowing_unvalidated": 11,
+      "definition_throwing": 5
     },
     "libsceaudiodeccpu": {
       "definition_nonthrowing_unvalidated": 8
@@ -590,8 +590,8 @@
       "explicit_alias_no_visible_definition": 2
     },
     "libscejsc": {
-      "definition_nonthrowing_unvalidated": 175,
-      "definition_throwing": 596,
+      "definition_nonthrowing_unvalidated": 178,
+      "definition_throwing": 593,
       "explicit_alias_no_visible_definition": 24
     },
     "libscejson": {
@@ -618,17 +618,17 @@
     "libscelibcinternal": {
       "assembly_definition_unvalidated": 1,
       "declaration_without_visible_definition": 4,
-      "definition_nonthrowing_unvalidated": 809,
-      "definition_throwing": 386,
-      "explicit_alias_no_visible_definition": 504
+      "definition_nonthrowing_unvalidated": 814,
+      "definition_throwing": 381,
+      "explicit_alias_no_visible_definition": 502
     },
     "libscelibressl": {
       "definition_nonthrowing_unvalidated": 423,
       "definition_throwing": 125
     },
     "libscelibressl3": {
-      "definition_nonthrowing_unvalidated": 340,
-      "definition_throwing": 75,
+      "definition_nonthrowing_unvalidated": 341,
+      "definition_throwing": 74,
       "explicit_alias_no_visible_definition": 373
     },
     "libscelogindialog": {
@@ -732,8 +732,8 @@
     "libscenkwebkit": {
       "assembly_definition_unvalidated": 398,
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 4212,
-      "definition_throwing": 6953,
+      "definition_nonthrowing_unvalidated": 4216,
+      "definition_throwing": 6949,
       "explicit_alias_no_visible_definition": 475
     },
     "libscenkwebkitrequirements": {
@@ -758,7 +758,7 @@
       "definition_throwing": 89
     },
     "libscenpcppwebapi": {
-      "definition_nonthrowing_unvalidated": 1868,
+      "definition_nonthrowing_unvalidated": 1880,
       "definition_throwing": 1
     },
     "libscenpentitlementaccess": {
@@ -976,8 +976,7 @@
       "definition_nonthrowing_unvalidated": 1
     },
     "libscerazorcpu": {
-      "definition_nonthrowing_unvalidated": 41,
-      "definition_throwing": 1
+      "definition_nonthrowing_unvalidated": 42
     },
     "libscerazorcpu_debug": {
       "definition_throwing": 3
@@ -1399,12 +1398,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "44eccbf1b05d1a833d3f3bd29cbc31998b33206b",
+  "source_sha": "5fb72d46f6922619524b46caa1932177a181d175",
   "states": {
     "assembly_definition_unvalidated": 407,
     "declaration_without_visible_definition": 138,
-    "definition_nonthrowing_unvalidated": 20159,
-    "definition_throwing": 19937,
-    "explicit_alias_no_visible_definition": 5037
+    "definition_nonthrowing_unvalidated": 20190,
+    "definition_throwing": 19918,
+    "explicit_alias_no_visible_definition": 5035
   }
 }

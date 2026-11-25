@@ -2,7 +2,7 @@
 
 **What is this?** An auditable export-name catalogue and AnyPS5 stub research tracker. An export record is **not** a working function, and the inventory is much larger than the eligible system-library stub backlog.
 
-**Last refresh:** 2026-11-25T08:39:45+00:00 · **AnyPS5 main:** [44eccbf1b05d](https://github.com/boykopovar/AnyPS5/commit/44eccbf1b05d1a833d3f3bd29cbc31998b33206b)
+**Last refresh:** 2026-11-25T19:19:53+00:00 · **AnyPS5 main:** [5fb72d46f692](https://github.com/boykopovar/AnyPS5/commit/5fb72d46f6922619524b46caa1932177a181d175)
 
 ## At a glance
 
@@ -33,8 +33,8 @@
 | Statically prepared (saved) | 963 | Historical offline gates |
 | Fully validated (saved) | 0 | Historical build/runtime validation only |
 | **Present in AnyPS5 main source (live)** | **19,746** | Matched and rehashed library/NID/name in current upstream main; separate from qualified backlog |
-| With NotImplemented marker (live) | 10,548 | Source-level placeholder, not working behaviour |
-| With nonthrowing C ABI body (live) | 9,198 | No matching NotImplemented marker; **not** necessarily a tested implementation |
+| With NotImplemented marker (live) | 10,542 | Source-level placeholder, not working behaviour |
+| With nonthrowing C ABI body (live) | 9,204 | No matching NotImplemented marker; **not** necessarily a tested implementation |
 
 **Qualification correction:** the saved report listed 10,750, while the filtered count is 10,749 (difference +1 from saved). Separately, 7,119 named records need strict name/NID/status evidence review. These must not be silently promoted. The old `published to AnyPS5 = 0` is an **archived snapshot** and must not be treated as the current upstream count.
 
@@ -43,23 +43,23 @@
 | Evidence | Count | Meaning |
 |---|---:|---|
 | **Catalogued names present on merged AnyPS5 main** | **19,746 records / 19,739 unique NIDs** | **Live source evidence**, not the saved 0-counter |
-| Marked throwing/unimplemented | 10,548 | NotImplemented marker is visible in body |
-| Other nonthrowing source definitions | 9,198 | A source body exists; not necessarily correct, wired up or validated |
+| Marked throwing/unimplemented | 10,542 | NotImplemented marker is visible in body |
+| Other nonthrowing source definitions | 9,204 | A source body exists; not necessarily correct, wired up or validated |
 | Qualified NIDs also in main source | 8,125 | Potential existing coverage |
 | Additional qualified NIDs seen in open-PR additions | 599 | Possible reservations, not yet merged |
 | Qualified NIDs not observed by scans | 2,025 | **Not proof of no overlap** |
 
 ### Open PR coverage
 
-`█████████████████████░` **2,512 / 2,650 (94.8%)** current open PR heads indexed.
+`██████████████████████` **2,637 / 2,691 (98.0%)** current open PR heads indexed.
 
-**Partial:** 138 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
-Cache hits: 2,000 · newly scanned: 512 · failed checks: 38.
+**Partial:** 54 PR heads remain. Scheduled runs accumulate SHA-keyed observations.
+Cache hits: 2,270 · newly scanned: 367 · failed checks: 54.
 **Before submitting a stub PR, still run a final exact overlap review against current main and all open PRs.**
 
 ## Automatically imported AnyPS5 source evidence
 
-**20,276** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **72** correspond to unnamed identities already in this firmware catalogue.
+**20,288** public source-name proposals are available in the [review queue](reports/upstream-source-candidates.jsonl); **72** correspond to unnamed identities already in this firmware catalogue.
 
 The proposed name, NID and source location are searchable, but the name is **not independently verified against firmware**, nor are ABI or behaviour confirmed. Publication-filtered strings are not promoted. [NID-only review queue](reports/upstream-review-queue.jsonl).
 
