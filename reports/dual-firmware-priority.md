@@ -9,15 +9,15 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | Status | Count |
 |---|---:|
 | historical_or_unqualified | 9452 |
-| priority_candidates | 705 |
-| source_symbol_already_observed | 8404 |
+| priority_candidates | 690 |
+| source_symbol_already_observed | 8419 |
 | source_symbol_in_other_provider | 2277 |
 
 ## Highest-volume libraries
 
 | Library | Dual-source | 13.60-only | Total |
 |---|---:|---:|---:|
-| libSceNpCommon | 250 | 347 | 597 |
+| libSceNpCommon | 238 | 344 | 582 |
 | libSceNKWebKit | 2 | 82 | 84 |
 | libSceIcu | 17 | 0 | 17 |
 | libSceJsc | 2 | 2 | 4 |
@@ -96,13 +96,13 @@ Exact guest ABI is needed to claim returning behaviour, not to propose an explic
 | libSceNpCommon | _ZNK3sce2np8JsonBool7GetBoolEv | Bd7bMuLrAqE | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np7CalloutC2EPNS0_14CalloutContextE | Bpay3NjseSU | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np4Path5ClearEv | BqFx1VLEMPk | dual_3.20_and_13.60 | none |
-| libSceNpCommon | _sceNpAllocatorFree | BztTl7QeYqE | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np14CalloutContext7DestroyEv | C282U0P6Nwg | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZNK3sce2np3ipc17ServiceIpmiClient6IsInitEv | C8SMKrvRkl8 | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np10JsonParser5ParseEPKcm | CDzSgHA6hWg | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZNK3sce2np10JsonNumber5CloneEP16SceNpAllocatorEx | COxqqhvLSyM | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np9WorkQueue6IsInitEv | CznMfhTIvVY | dual_3.20_and_13.60 | none |
 | libSceNpCommon | _ZN3sce2np10JsonObject5ClearEv | DiHxx2k5zfM | dual_3.20_and_13.60 | none |
+| libSceNpCommon | _ZNK3sce2np9JsonArray5CloneEP16SceNpAllocatorEx | EcboqmwkrMY | dual_3.20_and_13.60 | none |
 
 None of these are independently validated as guest ABI. Public SDK header names
 and 3.20 forwarding entries do not establish the correct guest ABI or behaviour.
