@@ -2,17 +2,17 @@
   "automation_health": {
     "anyps5_assembly_definition_records": 407,
     "anyps5_declarations_only": 138,
-    "anyps5_explicit_alias_records": 5035,
+    "anyps5_explicit_alias_records": 5043,
     "anyps5_export_registration_verified": null,
-    "anyps5_public_source_proposals": 20288,
-    "anyps5_symbol_observations": 45688,
+    "anyps5_public_source_proposals": 20328,
+    "anyps5_symbol_observations": 45736,
     "anyps5_withheld_names": 74,
-    "last_refresh_utc": "2026-11-25T19:19:53+00:00",
+    "last_refresh_utc": "2026-11-26T03:36:48+00:00",
     "overlap_publication_safe": false,
     "pr_complete": false,
-    "pr_errors": 54,
-    "pr_scanned": 2637,
-    "pr_total": 2691,
+    "pr_errors": 53,
+    "pr_scanned": 2608,
+    "pr_total": 2662,
     "source_320_canonical_auto_changes": 0,
     "source_320_conflicts_quarantined": 10728,
     "source_320_files": 275,
@@ -127,7 +127,7 @@
     "strictly_verified_names": 39966,
     "unnamed_or_withheld": 266953
   },
-  "generated_at_utc": "2026-11-25T19:19:53+00:00",
+  "generated_at_utc": "2026-11-26T03:36:48+00:00",
   "libraries": [
     {
       "anyps5_assembly_unvalidated": 0,
@@ -214,8 +214,8 @@
       "anyps5_explicit_alias_without_visible_definition": 475,
       "anyps5_main_definitions": 8810,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 4216,
-      "anyps5_source_throwing": 6949,
+      "anyps5_source_nonthrowing_unvalidated": 4220,
+      "anyps5_source_throwing": 6945,
       "conflicted": 0,
       "firmware_13_60": 15665,
       "historical_only": 3274,
@@ -475,8 +475,8 @@
       "anyps5_explicit_alias_without_visible_definition": 24,
       "anyps5_main_definitions": 558,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 178,
-      "anyps5_source_throwing": 593,
+      "anyps5_source_nonthrowing_unvalidated": 179,
+      "anyps5_source_throwing": 592,
       "conflicted": 0,
       "firmware_13_60": 4439,
       "historical_only": 1007,
@@ -684,8 +684,8 @@
       "anyps5_explicit_alias_without_visible_definition": 502,
       "anyps5_main_definitions": 11,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 814,
-      "anyps5_source_throwing": 381,
+      "anyps5_source_nonthrowing_unvalidated": 815,
+      "anyps5_source_throwing": 380,
       "conflicted": 0,
       "firmware_13_60": 2688,
       "historical_only": 0,
@@ -1152,7 +1152,7 @@
       "anyps5_explicit_alias_without_visible_definition": 1,
       "anyps5_main_definitions": 306,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 782,
+      "anyps5_source_nonthrowing_unvalidated": 785,
       "anyps5_source_throwing": 25,
       "conflicted": 0,
       "firmware_13_60": 1511,
@@ -1594,7 +1594,7 @@
       "anyps5_explicit_alias_without_visible_definition": 654,
       "anyps5_main_definitions": 48,
       "anyps5_open_pr_matches_partial": 2,
-      "anyps5_source_nonthrowing_unvalidated": 471,
+      "anyps5_source_nonthrowing_unvalidated": 473,
       "anyps5_source_throwing": 2362,
       "conflicted": 0,
       "firmware_13_60": 298,
@@ -1804,8 +1804,8 @@
       "anyps5_explicit_alias_without_visible_definition": 373,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 341,
-      "anyps5_source_throwing": 74,
+      "anyps5_source_nonthrowing_unvalidated": 342,
+      "anyps5_source_throwing": 73,
       "conflicted": 0,
       "firmware_13_60": 665,
       "historical_only": 0,
@@ -2170,8 +2170,8 @@
       "anyps5_explicit_alias_without_visible_definition": 373,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 341,
-      "anyps5_source_throwing": 74,
+      "anyps5_source_nonthrowing_unvalidated": 342,
+      "anyps5_source_throwing": 73,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 488,
@@ -2663,10 +2663,10 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 133,
+      "anyps5_explicit_alias_without_visible_definition": 137,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 168,
+      "anyps5_source_nonthrowing_unvalidated": 172,
       "anyps5_source_throwing": 40,
       "conflicted": 0,
       "firmware_13_60": 0,
@@ -4051,7 +4051,7 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 37,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 59,
+      "anyps5_source_nonthrowing_unvalidated": 69,
       "anyps5_source_throwing": 25,
       "conflicted": 0,
       "firmware_13_60": 168,
@@ -7745,8 +7745,8 @@
       "anyps5_explicit_alias_without_visible_definition": 2,
       "anyps5_main_definitions": 13,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 44,
-      "anyps5_source_throwing": 3,
+      "anyps5_source_nonthrowing_unvalidated": 46,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 38,
       "historical_only": 0,
@@ -10121,8 +10121,8 @@
       "anyps5_explicit_alias_without_visible_definition": 5,
       "anyps5_main_definitions": 16,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 12,
-      "anyps5_source_throwing": 9,
+      "anyps5_source_nonthrowing_unvalidated": 13,
+      "anyps5_source_throwing": 8,
       "conflicted": 0,
       "firmware_13_60": 19,
       "historical_only": 0,
@@ -14628,8 +14628,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 4,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 1,
-      "anyps5_source_throwing": 5,
+      "anyps5_source_nonthrowing_unvalidated": 4,
+      "anyps5_source_throwing": 2,
       "conflicted": 0,
       "firmware_13_60": 6,
       "historical_only": 0,
@@ -20782,8 +20782,8 @@
   "readiness": {
     "abi_verified_live": null,
     "anyps5_main_definition_matches": 19746,
-    "anyps5_nonthrowing_body": 9204,
-    "anyps5_throwing_marker": 10542,
+    "anyps5_nonthrowing_body": 9213,
+    "anyps5_throwing_marker": 10533,
     "build_verified_live": null,
     "fully_implemented_live": null,
     "open_pr_qualified_partial": 599,
@@ -20794,200 +20794,307 @@
     "strict_qualified_unique_nids": 9158
   },
   "recent_changes": {
-    "added": 14,
+    "added": 48,
     "baseline_only": false,
-    "changed_source_classifications": 26,
+    "changed_source_classifications": 23,
     "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-    "previous_source_sha": "44eccbf1b05d1a833d3f3bd29cbc31998b33206b",
-    "removed": 4,
+    "previous_source_sha": "5fb72d46f6922619524b46caa1932177a181d175",
+    "removed": 0,
     "samples_added": [
       {
-        "library": "libscelibcinternal",
-        "nid": "Eps5FYTvm5Q"
+        "library": "libc",
+        "nid": "/Hb4XyxIEXI"
       },
       {
-        "library": "libscelibcinternal",
-        "nid": "nwUn0j2uacQ"
+        "library": "libc",
+        "nid": "4pI4wmwg8F4"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "19X1yRp+26g"
+        "library": "libc",
+        "nid": "8eCM8CX1XV0"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "4TiSms4BRNo"
+        "library": "libc",
+        "nid": "Cb1hI+w9nyU"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "4ywAI+aDezU"
+        "library": "libc",
+        "nid": "Ci9EK4yneq8"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "5SdJJgbOHZc"
+        "library": "libc",
+        "nid": "CqG7/EH3VYA"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "B2omeKs6CsM"
+        "library": "libc",
+        "nid": "Ei//3tawVWY"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "EtfRt5hez60"
+        "library": "libc",
+        "nid": "KT92TSjd6eM"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "HIkwgAuwsAo"
+        "library": "libc",
+        "nid": "La5rUutsjhU"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "JhKjP9Krde0"
+        "library": "libc",
+        "nid": "Lf6h5krl2fA"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "KN3KH+ZEPzM"
+        "library": "libc",
+        "nid": "NCR5j3seVyA"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "UNCSO3DTP2g"
+        "library": "libc",
+        "nid": "O1uj39DMIHI"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "czReUjajRN4"
+        "library": "libc",
+        "nid": "Plpx8NXyLLg"
       },
       {
-        "library": "libscenpcppwebapi",
-        "nid": "jg6YZkhydOQ"
+        "library": "libc",
+        "nid": "Qn/ax4UQuWk"
+      },
+      {
+        "library": "libc",
+        "nid": "RKBzTA347Ug"
+      },
+      {
+        "library": "libc",
+        "nid": "UIaIJ6M3AdQ"
+      },
+      {
+        "library": "libc",
+        "nid": "WK24j1F3rCU"
+      },
+      {
+        "library": "libc",
+        "nid": "fVks7RPdSpg"
+      },
+      {
+        "library": "libc",
+        "nid": "oKSmkCNcTMY"
+      },
+      {
+        "library": "libc",
+        "nid": "pyswCqmkRCo"
+      },
+      {
+        "library": "libc",
+        "nid": "tADLXBJ5KNk"
+      },
+      {
+        "library": "libc",
+        "nid": "xFva4yxsVW8"
+      },
+      {
+        "library": "libc",
+        "nid": "xz2TSHmq+Qg"
+      },
+      {
+        "library": "libc",
+        "nid": "z8j2A3YRs2A"
+      },
+      {
+        "library": "libkernel",
+        "nid": "3oH+LnK2HMo"
+      },
+      {
+        "library": "libkernel",
+        "nid": "UnOp+8oKBVU"
+      },
+      {
+        "library": "libkernel",
+        "nid": "mIYLBolXrPY"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "21vkVuOP2lk"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "9Lm2mfsSmws"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "9RCIJ6uSZY4"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "HQ924N5QWKs"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "RoVPXTK5OhU"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "mGMeRKWGTL4"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "oo2JnkhT3yM"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "tl72PmqhXww"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "/F27Lw5gB+Y"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "20jXqtqMyq8"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "HKPrkauD8qE"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "JWcUeDXZl/U"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "SE5IMC/zNTY"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "dJCukNou6fA"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "eeoc6YGVzqw"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "f8ap6nLFB3U"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "qUmV7vUQjM0"
+      },
+      {
+        "library": "libscegnmdriver",
+        "nid": "shMiiSdKBAM"
+      },
+      {
+        "library": "libsceicu",
+        "nid": "A8H0F/wnlNU"
+      },
+      {
+        "library": "libsceicu",
+        "nid": "afuHvD+b2bw"
+      },
+      {
+        "library": "libsceposixforwebkit",
+        "nid": "2/kRIUHgdY4"
       }
     ],
     "samples_changed": [
       {
-        "library": "libkernel",
-        "nid": "/W4xI5aVI8w"
-      },
-      {
         "library": "libkernel_sys",
-        "nid": "yZCARzErzco"
+        "nid": "hdwRYTbPkpg"
       },
       {
         "library": "libkernel_web",
-        "nid": "g1hIp5draNw"
-      },
-      {
-        "library": "libsceaudiodec.native",
-        "nid": "VZroxfK/OjE"
-      },
-      {
-        "library": "libsceaudiodec.native",
-        "nid": "pJf1t3SkkWw"
+        "nid": "sgADvU1YYJw"
       },
       {
         "library": "libscejsc",
-        "nid": "/4jsoWj40/g"
-      },
-      {
-        "library": "libscejsc",
-        "nid": "/4sVkp5/H/M"
-      },
-      {
-        "library": "libscejsc",
-        "nid": "/7g/5LVkStM"
+        "nid": "0KClQgT2ckA"
       },
       {
         "library": "libscelibcinternal",
-        "nid": "F6NFBU0lIzI"
-      },
-      {
-        "library": "libscelibcinternal",
-        "nid": "IOWa+ovsKE8"
-      },
-      {
-        "library": "libscelibcinternal",
-        "nid": "mvfeB2IJ5Ng"
+        "nid": "XyXjt9zenfY"
       },
       {
         "library": "libscelibressl3",
-        "nid": "1CKJcdi0HWI"
+        "nid": "29WLV1H3N4g"
       },
       {
         "library": "libscelibressl3",
-        "nid": "DRCKvCpzpzE"
+        "nid": "4JOAHqqEOHk"
       },
       {
         "library": "libscelibressl3",
-        "nid": "FRB8nkmzyEI"
+        "nid": "IKIym7ijpao"
       },
       {
         "library": "libscelibressl3",
-        "nid": "KiheYtap6LM"
+        "nid": "IrvxXGmPtMQ"
       },
       {
         "library": "libscelibressl3",
-        "nid": "SwmJ7Ut4PZM"
+        "nid": "Uh8NNw/BUZw"
       },
       {
         "library": "libscelibressl3",
-        "nid": "X2hjyeSrT7M"
+        "nid": "WlSWoA7hiOg"
       },
       {
         "library": "libscelibressl3",
-        "nid": "bpEIqU3qs0Q"
+        "nid": "vVZh40ecbE4"
       },
       {
         "library": "libscelibressl3",
-        "nid": "bpuwzWiTNfs"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "pUr4xxsLwCY"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "pxAoRrq7XSk"
+        "nid": "xpHr5k6K/PM"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "3GC9QQlTKoU"
+        "nid": "6Z7V+FlXSE8"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "GraLckR1SPU"
+        "nid": "F6hnPpozF2M"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "WtwJKh+NPQU"
+        "nid": "MBwkZncofuk"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "h2cIHUQsu9w"
+        "nid": "O9k0o6Iqejs"
       },
       {
-        "library": "libscerazorcpu",
-        "nid": "ElNyedXaa4o"
+        "library": "libscepadtracker",
+        "nid": "Ci0PqEOATeQ"
+      },
+      {
+        "library": "libscepadtracker",
+        "nid": "FN4UuY2CUz0"
+      },
+      {
+        "library": "libscepadtracker",
+        "nid": "G1/RyPlIrIY"
+      },
+      {
+        "library": "libscepfs",
+        "nid": "LJTtb7xKzkY"
+      },
+      {
+        "library": "libscepfs",
+        "nid": "P6Yiba6u7cc"
+      },
+      {
+        "library": "libsceposixforwebkit",
+        "nid": "doewKyDAsB4"
+      },
+      {
+        "library": "libscesysmodule",
+        "nid": "vpTHmA6Knvg"
       }
     ],
-    "samples_removed": [
-      {
-        "library": "libscelibcinternal",
-        "nid": "EUNstCJotMc"
-      },
-      {
-        "library": "libscelibcinternal",
-        "nid": "FX+eS2YsEtY"
-      },
-      {
-        "library": "libscelibcinternal",
-        "nid": "Lo+j00uI25c"
-      },
-      {
-        "library": "libscelibcinternal",
-        "nid": "i4J5FvRPG-w"
-      }
-    ],
+    "samples_removed": [],
     "schema_version": 1,
-    "source_sha": "5fb72d46f6922619524b46caa1932177a181d175"
+    "source_sha": "716366d58bb43215dca04ee3112cbb9783a85b40"
   },
   "schema_version": 1,
   "source_revisions": {
-    "anyps5_main": "5fb72d46f6922619524b46caa1932177a181d175",
+    "anyps5_main": "716366d58bb43215dca04ee3112cbb9783a85b40",
     "ps5_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad"
   },
   "trends": [
@@ -21457,6 +21564,16 @@
       "indexed": 314038,
       "observed_at_utc": "2026-11-25T19:19:53+00:00",
       "open_pr_scanned": 2637,
+      "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+      "qualified_unique_nids": 10749,
+      "strictly_verified_names": 39966
+    },
+    {
+      "anyps5_commit": "716366d58bb43215dca04ee3112cbb9783a85b40",
+      "anyps5_main_matches": 19746,
+      "indexed": 314038,
+      "observed_at_utc": "2026-11-26T03:36:48+00:00",
+      "open_pr_scanned": 2608,
       "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
       "qualified_unique_nids": 10749,
       "strictly_verified_names": 39966
