@@ -2,17 +2,17 @@
   "automation_health": {
     "anyps5_assembly_definition_records": 411,
     "anyps5_declarations_only": 138,
-    "anyps5_explicit_alias_records": 5047,
+    "anyps5_explicit_alias_records": 5048,
     "anyps5_export_registration_verified": null,
-    "anyps5_public_source_proposals": 20404,
-    "anyps5_symbol_observations": 45832,
+    "anyps5_public_source_proposals": 20441,
+    "anyps5_symbol_observations": 45870,
     "anyps5_withheld_names": 74,
-    "last_refresh_utc": "2026-11-27T01:47:08+00:00",
+    "last_refresh_utc": "2026-11-27T12:25:38+00:00",
     "overlap_publication_safe": false,
     "pr_complete": false,
-    "pr_errors": 47,
-    "pr_scanned": 2391,
-    "pr_total": 2438,
+    "pr_errors": 46,
+    "pr_scanned": 2211,
+    "pr_total": 2257,
     "source_320_canonical_auto_changes": 0,
     "source_320_conflicts_quarantined": 10728,
     "source_320_files": 275,
@@ -127,7 +127,7 @@
     "strictly_verified_names": 39966,
     "unnamed_or_withheld": 266953
   },
-  "generated_at_utc": "2026-11-27T01:47:08+00:00",
+  "generated_at_utc": "2026-11-27T12:25:38+00:00",
   "libraries": [
     {
       "anyps5_assembly_unvalidated": 0,
@@ -213,9 +213,9 @@
       "anyps5_declarations_without_definitions": 1,
       "anyps5_explicit_alias_without_visible_definition": 475,
       "anyps5_main_definitions": 8807,
-      "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 4278,
-      "anyps5_source_throwing": 6899,
+      "anyps5_open_pr_matches_partial": 1,
+      "anyps5_source_nonthrowing_unvalidated": 4290,
+      "anyps5_source_throwing": 6891,
       "conflicted": 0,
       "firmware_13_60": 15665,
       "historical_only": 3274,
@@ -475,8 +475,8 @@
       "anyps5_explicit_alias_without_visible_definition": 24,
       "anyps5_main_definitions": 558,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 181,
-      "anyps5_source_throwing": 590,
+      "anyps5_source_nonthrowing_unvalidated": 182,
+      "anyps5_source_throwing": 589,
       "conflicted": 0,
       "firmware_13_60": 4439,
       "historical_only": 1007,
@@ -1594,8 +1594,8 @@
       "anyps5_explicit_alias_without_visible_definition": 654,
       "anyps5_main_definitions": 48,
       "anyps5_open_pr_matches_partial": 2,
-      "anyps5_source_nonthrowing_unvalidated": 517,
-      "anyps5_source_throwing": 2318,
+      "anyps5_source_nonthrowing_unvalidated": 521,
+      "anyps5_source_throwing": 2314,
       "conflicted": 0,
       "firmware_13_60": 298,
       "historical_only": 557,
@@ -2379,8 +2379,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 425,
-      "anyps5_source_throwing": 123,
+      "anyps5_source_nonthrowing_unvalidated": 435,
+      "anyps5_source_throwing": 122,
       "conflicted": 0,
       "firmware_13_60": 414,
       "historical_only": 0,
@@ -2457,8 +2457,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 5,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 425,
-      "anyps5_source_throwing": 123,
+      "anyps5_source_nonthrowing_unvalidated": 435,
+      "anyps5_source_throwing": 122,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 399,
@@ -2663,11 +2663,11 @@
     {
       "anyps5_assembly_unvalidated": 0,
       "anyps5_declarations_without_definitions": 0,
-      "anyps5_explicit_alias_without_visible_definition": 139,
+      "anyps5_explicit_alias_without_visible_definition": 140,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 172,
-      "anyps5_source_throwing": 42,
+      "anyps5_source_nonthrowing_unvalidated": 174,
+      "anyps5_source_throwing": 41,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 341,
@@ -3369,8 +3369,8 @@
       "anyps5_explicit_alias_without_visible_definition": 8,
       "anyps5_main_definitions": 182,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 109,
-      "anyps5_source_throwing": 125,
+      "anyps5_source_nonthrowing_unvalidated": 110,
+      "anyps5_source_throwing": 124,
       "conflicted": 0,
       "firmware_13_60": 233,
       "historical_only": 2,
@@ -4104,8 +4104,8 @@
       "anyps5_explicit_alias_without_visible_definition": 9,
       "anyps5_main_definitions": 0,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 21,
-      "anyps5_source_throwing": 5,
+      "anyps5_source_nonthrowing_unvalidated": 22,
+      "anyps5_source_throwing": 4,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 169,
@@ -5391,8 +5391,8 @@
       "anyps5_explicit_alias_without_visible_definition": 38,
       "anyps5_main_definitions": 50,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 56,
-      "anyps5_source_throwing": 38,
+      "anyps5_source_nonthrowing_unvalidated": 57,
+      "anyps5_source_throwing": 37,
       "conflicted": 0,
       "firmware_13_60": 94,
       "historical_only": 0,
@@ -7692,8 +7692,8 @@
       "anyps5_explicit_alias_without_visible_definition": 7,
       "anyps5_main_definitions": 35,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 38,
-      "anyps5_source_throwing": 17,
+      "anyps5_source_nonthrowing_unvalidated": 42,
+      "anyps5_source_throwing": 13,
       "conflicted": 0,
       "firmware_13_60": 0,
       "historical_only": 38,
@@ -11658,8 +11658,8 @@
       "anyps5_explicit_alias_without_visible_definition": 5,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 0,
-      "anyps5_source_throwing": 12,
+      "anyps5_source_nonthrowing_unvalidated": 11,
+      "anyps5_source_throwing": 1,
       "conflicted": 0,
       "firmware_13_60": 12,
       "historical_only": 0,
@@ -12805,8 +12805,8 @@
       "anyps5_explicit_alias_without_visible_definition": 0,
       "anyps5_main_definitions": 7,
       "anyps5_open_pr_matches_partial": 0,
-      "anyps5_source_nonthrowing_unvalidated": 7,
-      "anyps5_source_throwing": 2,
+      "anyps5_source_nonthrowing_unvalidated": 9,
+      "anyps5_source_throwing": 0,
       "conflicted": 0,
       "firmware_13_60": 9,
       "historical_only": 0,
@@ -20782,11 +20782,11 @@
   "readiness": {
     "abi_verified_live": null,
     "anyps5_main_definition_matches": 19758,
-    "anyps5_nonthrowing_body": 9300,
-    "anyps5_throwing_marker": 10458,
+    "anyps5_nonthrowing_body": 9321,
+    "anyps5_throwing_marker": 10437,
     "build_verified_live": null,
     "fully_implemented_live": null,
-    "open_pr_qualified_partial": 584,
+    "open_pr_qualified_partial": 585,
     "qualified_unique_nids": 10749,
     "runtime_validated_live": null,
     "snapshot_fully_validated_stubs": 0,
@@ -20794,299 +20794,379 @@
     "strict_qualified_unique_nids": 9158
   },
   "recent_changes": {
-    "added": 14,
+    "added": 38,
     "baseline_only": false,
-    "changed_source_classifications": 55,
+    "changed_source_classifications": 51,
     "note": "These are source-level identity or status changes only; function bodies, runtime behaviour and ABI correctness are not compared.",
-    "previous_source_sha": "ac449d9a87d9d43df1263e541e784278ac6717ef",
+    "previous_source_sha": "583b6fc6bfd7a070c51da115a961f198e2d04eaa",
     "removed": 0,
     "samples_added": [
       {
         "library": "libc",
-        "nid": "0YlFhib0rK8"
+        "nid": "1nl9sJLUKRQ"
       },
       {
         "library": "libc",
-        "nid": "ECDsUxAmhwY"
+        "nid": "22KHBHUh/io"
       },
       {
         "library": "libc",
-        "nid": "L9quTQZ8qII"
+        "nid": "3JmlHxbzswc"
       },
       {
         "library": "libc",
-        "nid": "T1MCP2P4R3o"
+        "nid": "8PkavGmzU4Y"
       },
       {
         "library": "libc",
-        "nid": "WhcZ+QrfdOI"
+        "nid": "8Rz0HF5/y9o"
       },
       {
         "library": "libc",
-        "nid": "XVgL9XE0Xek"
+        "nid": "NARsd0v/7oY"
       },
       {
         "library": "libc",
-        "nid": "Y+3rR9Zs1V0"
+        "nid": "Q/8teaKc+c8"
       },
       {
         "library": "libc",
-        "nid": "c9Mb8rdEMRA"
+        "nid": "Qnkm0LYehn0"
       },
       {
         "library": "libc",
-        "nid": "hLEeomVWOW8"
+        "nid": "RUS597p3PGE"
       },
       {
         "library": "libc",
-        "nid": "lwGRf1Ml250"
+        "nid": "Ufi5BVK4IfU"
       },
       {
         "library": "libc",
-        "nid": "nE2pV1BjNOc"
+        "nid": "Un8MK6pdNho"
       },
       {
         "library": "libc",
-        "nid": "xTUvjI8DDkw"
+        "nid": "YK3hkEeAC1A"
       },
       {
-        "library": "libscejpegparser",
-        "nid": "YhVxE4m5Fqk"
+        "library": "libc",
+        "nid": "b5y5btRfT6M"
       },
       {
-        "library": "libscejpegparser",
-        "nid": "cT6Gbjt5xYE"
+        "library": "libc",
+        "nid": "fXw+Jm9Ay4M"
+      },
+      {
+        "library": "libc",
+        "nid": "kRLcdd0hzxs"
+      },
+      {
+        "library": "libc",
+        "nid": "kl2Kw4uy96Q"
+      },
+      {
+        "library": "libc",
+        "nid": "ngAz1dlLPlo"
+      },
+      {
+        "library": "libc",
+        "nid": "oZPUX+RgHIE"
+      },
+      {
+        "library": "libc",
+        "nid": "tc4QjXMlcE4"
+      },
+      {
+        "library": "libc",
+        "nid": "tsLRNKCyr28"
+      },
+      {
+        "library": "libc",
+        "nid": "wkEZlmdZyXM"
+      },
+      {
+        "library": "libc",
+        "nid": "yqh6yi4YeFs"
+      },
+      {
+        "library": "libc",
+        "nid": "yskHVlsWvHQ"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "dPcZ76eZb64"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "q/ic4eahWw0"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "/y3Hxb+rvao"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "GKgquEmJOsU"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "U8PnMSdavtI"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "VGNM9TwKvnc"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "VKT+wJ0Pj0U"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "i8ztyC21IZs"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "jlA0ub8yGvw"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "oj7P5NRKd30"
+      },
+      {
+        "library": "libscelibressl",
+        "nid": "t4GNBDWzPy0"
+      },
+      {
+        "library": "libscenkwebkit",
+        "nid": "3Yue3ZIogv0"
+      },
+      {
+        "library": "libscenkwebkit",
+        "nid": "5xbPV65JU2I"
+      },
+      {
+        "library": "libscenkwebkit",
+        "nid": "RBTRO+cfiVY"
+      },
+      {
+        "library": "libscenkwebkit",
+        "nid": "eqJ8a+PGS9Q"
       }
     ],
     "samples_changed": [
       {
-        "library": "libkernel",
-        "nid": "Wl2o5hOVZdw"
+        "library": "libfreetype",
+        "nid": "3fjhdYl4HqM"
       },
       {
-        "library": "libscecontentsearch",
-        "nid": "FRT4EYtZU1Y"
+        "library": "libsceajm.native",
+        "nid": "YDFR0dDVGAg"
       },
       {
-        "library": "libscecontentsearch",
-        "nid": "bjAlYWwRTJA"
+        "library": "libsceajm.native",
+        "nid": "d4SQL+QQLTY"
       },
       {
-        "library": "libscecontentsearch",
-        "nid": "vlOqhFPOLDs"
+        "library": "libsceajm.native",
+        "nid": "nXpC4dnxlI0"
       },
       {
-        "library": "libscehmd2",
-        "nid": "SVEG+1D7qHA"
+        "library": "libsceajm.native",
+        "nid": "rgLjmfdXocI"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "7n4PI+iTKws"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "AN0DG2VtJSw"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "EIQfFck8v34"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "EP5ByjgbB2Y"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "EQWWghng4OI"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "GM4Bar6WXzw"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "MHiyFYksF5Y"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "Os9s+YM2BlQ"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "QumgCI4CNvQ"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "Rg3Je3XJrbw"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "TNwR02XaltA"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "UTIj2o+UE9w"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "bgXJD9PYROo"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "cQS6442Pa5k"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "lVmot9k0dp0"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "lijO7PHkAV8"
+      },
+      {
+        "library": "libsceflexcontent",
+        "nid": "x5pcx0igPJo"
+      },
+      {
+        "library": "libscefreetypeot",
+        "nid": "v6Y7W6b8rD4"
       },
       {
         "library": "libsceicu",
-        "nid": "Ha2d2PJeRck"
+        "nid": "7Ni5eRuS86U"
       },
       {
         "library": "libsceicu",
-        "nid": "MagxkouiDPg"
+        "nid": "NWcpKsxcfzg"
       },
       {
         "library": "libsceicu",
-        "nid": "pMLs993oHk0"
+        "nid": "SxI+EDL7ilQ"
       },
       {
         "library": "libsceicu",
-        "nid": "sN+Gkvc978E"
+        "nid": "hu9ntiBUBRE"
       },
       {
         "library": "libsceicu",
-        "nid": "y3qITLJcnUA"
+        "nid": "kB8HLSs3v1A"
       },
       {
         "library": "libscejsc",
-        "nid": "85S6tE7Yj9Q"
-      },
-      {
-        "library": "libscejsc",
-        "nid": "pF6MaJY4tLM"
-      },
-      {
-        "library": "libscejson2",
-        "nid": "9PqrCLfKZZI"
+        "nid": "UeihRnD6hks"
       },
       {
         "library": "libscelibressl",
-        "nid": "GLPRY9ilKu8"
+        "nid": "9dTcx/eONyU"
       },
       {
         "library": "libscelibressl",
-        "nid": "mmoHAAWYbZI"
+        "nid": "Br5OvYCqgsM"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "1ryrjfs/7+w"
+        "library": "libscelibressl",
+        "nid": "iCdsbBN7qqI"
       },
       {
-        "library": "libscelibressl3",
-        "nid": "3sV9ityMP2k"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "4oFlV7MHOPY"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "85KJaKnQnO4"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "Q07JwP9SMek"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "QC8THHPY2CQ"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "RXJ/IlehUv4"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "XBDBPt6CqB0"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "eWILrCKbC+w"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "oWko27glXwg"
-      },
-      {
-        "library": "libscelibressl3",
-        "nid": "xKZJwCWMqow"
+        "library": "libscenet",
+        "nid": "E3oH1qsdqCA"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "13YTEVlQaOM"
+        "nid": "+IoqHgIw0PM"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "1Pc2TYyPh1w"
+        "nid": "29WLV1H3N4g"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "3Af3+T3MOdY"
+        "nid": "4JOAHqqEOHk"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "4yTdU9Hg/Rw"
+        "nid": "FYhW0cFVkfU"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "AK1Vjnd7Yuk"
+        "nid": "IKIym7ijpao"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "CRR5HsrCpXA"
+        "nid": "IrvxXGmPtMQ"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "E3r6Cg7w4XM"
+        "nid": "T2RMTQRTuYY"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "Fg7DTuZhN2U"
+        "nid": "TWnxOQaUhBI"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "Fux56rPNtvs"
+        "nid": "Uh8NNw/BUZw"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "Is/YM6hO4hw"
+        "nid": "WlSWoA7hiOg"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "KhR7n5Pphnw"
+        "nid": "YeDBQJ9XxA8"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "Lv+HgpCH0l4"
+        "nid": "eQyyR4yPFKQ"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "Mkr+ZvMqMPE"
+        "nid": "ha//9DAYPKE"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "Nvwr7UfPzfE"
+        "nid": "v24X+XNEZ10"
       },
       {
         "library": "libscenkwebkit",
-        "nid": "U7o+A03Tkr4"
+        "nid": "vVZh40ecbE4"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "WUZJGMyxexs"
+        "library": "libscenpfriendlistdialog",
+        "nid": "Z4JJhXCnIvY"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "WXTeu29FRBQ"
+        "library": "libscenpfriendlistdialog",
+        "nid": "zUM/RG5Hmyc"
       },
       {
-        "library": "libscenkwebkit",
-        "nid": "Zdtwqk/44gU"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "a5ee7veMD9k"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "efuMHaAx5/M"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "fGDYHA+uG4g"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "ng+jNZCCEJ0"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "pllJ6xDOUj8"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "qzt6F50Wxic"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "rneEgXU3tg4"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "u0hSyMPmgr4"
-      },
-      {
-        "library": "libscenkwebkit",
-        "nid": "wzm2XBeo/QA"
-      },
-      {
-        "library": "libscevideorecording.native",
-        "nid": "F8pia9FXpPs"
-      },
-      {
-        "library": "libscevideorecordingp",
-        "nid": "pVxEtvHOtXc"
+        "library": "libscenpwebapi",
+        "nid": "gRiilVCvfAI"
       }
     ],
     "samples_removed": [],
     "schema_version": 1,
-    "source_sha": "583b6fc6bfd7a070c51da115a961f198e2d04eaa"
+    "source_sha": "d767832b324e025cad10211bfd16f660303f6c68"
   },
   "schema_version": 1,
   "source_revisions": {
-    "anyps5_main": "583b6fc6bfd7a070c51da115a961f198e2d04eaa",
+    "anyps5_main": "d767832b324e025cad10211bfd16f660303f6c68",
     "ps5_320": "b2a77c09cd71c01f34c790cfbe98c751a13262ad"
   },
   "trends": [
@@ -21586,6 +21666,16 @@
       "indexed": 314038,
       "observed_at_utc": "2026-11-27T01:47:08+00:00",
       "open_pr_scanned": 2391,
+      "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+      "qualified_unique_nids": 10749,
+      "strictly_verified_names": 39966
+    },
+    {
+      "anyps5_commit": "d767832b324e025cad10211bfd16f660303f6c68",
+      "anyps5_main_matches": 19758,
+      "indexed": 314038,
+      "observed_at_utc": "2026-11-27T12:25:38+00:00",
+      "open_pr_scanned": 2211,
       "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
       "qualified_unique_nids": 10749,
       "strictly_verified_names": 39966

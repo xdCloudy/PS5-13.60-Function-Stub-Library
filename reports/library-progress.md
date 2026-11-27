@@ -7,7 +7,7 @@ All identities remain represented; source definition matches are **not** validat
 | SystemReactiveLinq | 26,351 | 0 | 0 | 0 | 0 |
 | mscorlib | 23,710 | 375 | 0 | 0 | 0 |
 | SystemCore | 19,731 | 0 | 0 | 0 | 0 |
-| libSceNKWebKit | 18,939 | 12,110 | 8,614 | 6,895 | 0 |
+| libSceNKWebKit | 18,939 | 12,110 | 8,614 | 6,895 | 1 |
 | ScePlayStationPUI | 17,872 | 0 | 0 | 0 | 0 |
 | ReactNativePUI | 10,924 | 0 | 0 | 0 | 0 |
 | System | 10,621 | 0 | 0 | 0 | 0 |
