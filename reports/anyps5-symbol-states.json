@@ -1,10 +1,10 @@
 {
   "assembly_definition_records": 411,
   "build_verified": null,
-  "explicit_export_alias_records": 5048,
+  "explicit_export_alias_records": 5049,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 45870,
+  "observed_library_nid_records": 45879,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -49,7 +49,7 @@
     "libkernel": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 5,
-      "definition_nonthrowing_unvalidated": 786,
+      "definition_nonthrowing_unvalidated": 789,
       "definition_throwing": 24,
       "explicit_alias_no_visible_definition": 1
     },
@@ -110,12 +110,12 @@
       "definition_throwing": 301
     },
     "libsceagc": {
-      "definition_nonthrowing_unvalidated": 247,
+      "definition_nonthrowing_unvalidated": 248,
       "definition_throwing": 3
     },
     "libsceagcdriver": {
-      "definition_nonthrowing_unvalidated": 110,
-      "definition_throwing": 70,
+      "definition_nonthrowing_unvalidated": 120,
+      "definition_throwing": 60,
       "explicit_alias_no_visible_definition": 17
     },
     "libsceagcvsh": {
@@ -172,8 +172,8 @@
       "definition_nonthrowing_unvalidated": 6
     },
     "libsceaudiodec.native": {
-      "definition_nonthrowing_unvalidated": 11,
-      "definition_throwing": 5
+      "definition_nonthrowing_unvalidated": 12,
+      "definition_throwing": 4
     },
     "libsceaudiodeccpu": {
       "definition_nonthrowing_unvalidated": 8
@@ -253,8 +253,8 @@
       "definition_throwing": 9
     },
     "libscecamera": {
-      "definition_nonthrowing_unvalidated": 103,
-      "definition_throwing": 22,
+      "definition_nonthrowing_unvalidated": 111,
+      "definition_throwing": 14,
       "explicit_alias_no_visible_definition": 3
     },
     "libscecdlgadidclient": {
@@ -443,9 +443,9 @@
       "definition_nonthrowing_unvalidated": 3
     },
     "libscefreetypeot": {
-      "definition_nonthrowing_unvalidated": 174,
-      "definition_throwing": 41,
-      "explicit_alias_no_visible_definition": 140
+      "definition_nonthrowing_unvalidated": 179,
+      "definition_throwing": 38,
+      "explicit_alias_no_visible_definition": 141
     },
     "libscefrontpaneldisplay": {
       "definition_nonthrowing_unvalidated": 3
@@ -480,8 +480,8 @@
       "explicit_alias_no_visible_definition": 7
     },
     "libscegnmdriver": {
-      "definition_nonthrowing_unvalidated": 69,
-      "definition_throwing": 25
+      "definition_nonthrowing_unvalidated": 70,
+      "definition_throwing": 24
     },
     "libscegnmdrivercompat1": {
       "definition_nonthrowing_unvalidated": 1,
@@ -590,16 +590,16 @@
       "explicit_alias_no_visible_definition": 3
     },
     "libscejsc": {
-      "definition_nonthrowing_unvalidated": 182,
-      "definition_throwing": 589,
+      "definition_nonthrowing_unvalidated": 184,
+      "definition_throwing": 587,
       "explicit_alias_no_visible_definition": 24
     },
     "libscejson": {
       "definition_throwing": 30
     },
     "libscejson2": {
-      "definition_nonthrowing_unvalidated": 215,
-      "definition_throwing": 8
+      "definition_nonthrowing_unvalidated": 211,
+      "definition_throwing": 12
     },
     "libscejxr": {
       "definition_nonthrowing_unvalidated": 176,
@@ -611,8 +611,8 @@
       "explicit_alias_no_visible_definition": 7
     },
     "libscekeyboard": {
-      "definition_nonthrowing_unvalidated": 13,
-      "definition_throwing": 15,
+      "definition_nonthrowing_unvalidated": 17,
+      "definition_throwing": 11,
       "explicit_alias_no_visible_definition": 1
     },
     "libscelibcinternal": {
@@ -627,8 +627,8 @@
       "definition_throwing": 122
     },
     "libscelibressl3": {
-      "definition_nonthrowing_unvalidated": 347,
-      "definition_throwing": 70,
+      "definition_nonthrowing_unvalidated": 349,
+      "definition_throwing": 69,
       "explicit_alias_no_visible_definition": 373
     },
     "libscelogindialog": {
@@ -732,8 +732,8 @@
     "libscenkwebkit": {
       "assembly_definition_unvalidated": 402,
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 4290,
-      "definition_throwing": 6891,
+      "definition_nonthrowing_unvalidated": 4316,
+      "definition_throwing": 6866,
       "explicit_alias_no_visible_definition": 475
     },
     "libscenkwebkitrequirements": {
@@ -781,8 +781,8 @@
       "explicit_alias_no_visible_definition": 124
     },
     "libscenpmatching2": {
-      "definition_nonthrowing_unvalidated": 30,
-      "definition_throwing": 39
+      "definition_nonthrowing_unvalidated": 31,
+      "definition_throwing": 38
     },
     "libscenppartner001": {
       "definition_nonthrowing_unvalidated": 4
@@ -868,8 +868,7 @@
       "explicit_alias_no_visible_definition": 4
     },
     "libsceopusceltdec": {
-      "definition_nonthrowing_unvalidated": 10,
-      "definition_throwing": 1
+      "definition_nonthrowing_unvalidated": 11
     },
     "libsceopusceltenc": {
       "definition_nonthrowing_unvalidated": 12,
@@ -1041,8 +1040,8 @@
       "explicit_alias_no_visible_definition": 1
     },
     "libsceshare": {
-      "definition_nonthrowing_unvalidated": 17,
-      "definition_throwing": 6,
+      "definition_nonthrowing_unvalidated": 21,
+      "definition_throwing": 2,
       "explicit_alias_no_visible_definition": 2
     },
     "libscesharefactoryutil": {
@@ -1396,12 +1395,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "d767832b324e025cad10211bfd16f660303f6c68",
+  "source_sha": "a2d8d409dba36d4cc0d531d49b828f808bc93a16",
   "states": {
     "assembly_definition_unvalidated": 411,
     "declaration_without_visible_definition": 138,
-    "definition_nonthrowing_unvalidated": 20556,
-    "definition_throwing": 19717,
-    "explicit_alias_no_visible_definition": 5048
+    "definition_nonthrowing_unvalidated": 20621,
+    "definition_throwing": 19660,
+    "explicit_alias_no_visible_definition": 5049
   }
 }
