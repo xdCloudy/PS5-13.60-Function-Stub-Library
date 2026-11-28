@@ -518,5 +518,15 @@
     "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
     "qualified_unique_nids": 10749,
     "strictly_verified_names": 39966
+  },
+  {
+    "anyps5_commit": "0bd27b85c0c575a60f66aabb212292c235a8b7d3",
+    "anyps5_main_matches": 19758,
+    "indexed": 314038,
+    "observed_at_utc": "2026-11-28T07:52:49+00:00",
+    "open_pr_scanned": 2038,
+    "ps5_320_commit": "b2a77c09cd71c01f34c790cfbe98c751a13262ad",
+    "qualified_unique_nids": 10749,
+    "strictly_verified_names": 39966
   }
 ]
