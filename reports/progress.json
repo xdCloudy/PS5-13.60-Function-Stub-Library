@@ -1,18 +1,18 @@
 {
   "generated_from": {
-    "anyps5_main_commit": "0bd27b85c0c575a60f66aabb212292c235a8b7d3",
+    "anyps5_main_commit": "ae0df0e03e09fa51428de24226042f46d738521d",
     "anyps5_open_prs": {
       "method": "Current PR heads cached by SHA with post-scan re-enumeration; missing/truncated patches, missing additions counts and GitHub's 3000-file cap fail closed. APS5_VABI and literal APS5_EXPORT identities are provisional reservations, not exhaustive symbol absence.",
-      "open_pr_cache_expired_or_closed": 186,
-      "open_pr_cached": 1872,
+      "open_pr_cache_expired_or_closed": 179,
+      "open_pr_cached": 1859,
       "open_pr_coverage_complete": false,
       "open_pr_errors": 44,
-      "open_pr_newly_scanned": 166,
-      "open_pr_scanned": 2038,
+      "open_pr_newly_scanned": 215,
+      "open_pr_scanned": 2074,
       "open_pr_snapshot_stable": true,
       "open_pr_stale_heads_invalidated": 0,
       "open_pr_symbol_coverage_complete": false,
-      "open_pr_total": 2082,
+      "open_pr_total": 2118,
       "open_pr_unscanned": 44
     },
     "catalog_manifest_counts": {
@@ -23,7 +23,7 @@
       "unresolved_or_withheld_names": 266953,
       "withheld_names": 2
     },
-    "generated_at_utc": "2026-11-28T07:52:49+00:00",
+    "generated_at_utc": "2026-11-28T17:35:43+00:00",
     "upstream_sync": "source-scanned"
   },
   "inventory": {
@@ -7183,20 +7183,20 @@
   "schema_version": 1,
   "stubs": {
     "anyps5_main_existing_catalogue_records_covered": 7882,
-    "anyps5_main_nonthrowing_source_records_live": 9373,
-    "anyps5_main_nonthrowing_unique_nids_live": 9366,
-    "anyps5_main_throwing_marker_records_live": 10385,
-    "anyps5_main_throwing_unique_nids_live": 10385,
+    "anyps5_main_nonthrowing_source_records_live": 9386,
+    "anyps5_main_nonthrowing_unique_nids_live": 9379,
+    "anyps5_main_throwing_marker_records_live": 10372,
+    "anyps5_main_throwing_unique_nids_live": 10372,
     "anyps5_main_tracked_source_records_live": 19758,
     "anyps5_main_tracked_unique_nids_live": 19751,
     "auto_imported_catalog_matching_proposals": 72,
-    "auto_imported_public_source_name_proposals": 20483,
-    "external_source_evidence_records": 44457,
+    "auto_imported_public_source_name_proposals": 20487,
+    "external_source_evidence_records": 44487,
     "fully_validated_saved_snapshot": 0,
     "locally_generated_saved_snapshot": 963,
-    "main_nonthrowing_definition_record_matches": 3392,
-    "main_throwing_marker_record_matches": 4748,
-    "new_upstream_nid_candidates_for_review": 23723,
+    "main_nonthrowing_definition_record_matches": 3404,
+    "main_throwing_marker_record_matches": 4736,
+    "new_upstream_nid_candidates_for_review": 23748,
     "published_upstream_saved_snapshot": 0,
     "qualified_library_nid_records_recomputed": 13395,
     "qualified_records_outside_strict_rehash_gate": 1966,
@@ -7209,7 +7209,7 @@
     "source_names_withheld_by_safety_filter": 74,
     "statically_prepared_saved_snapshot": 963,
     "strictly_rehashed_qualified_unique_nids": 9158,
-    "upstream_source_definitions_seen": 41172,
+    "upstream_source_definitions_seen": 41176,
     "verified_catalog_identity_main_source_matches": 19758
   }
 }

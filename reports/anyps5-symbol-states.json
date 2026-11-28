@@ -4,7 +4,7 @@
   "explicit_export_alias_records": 5050,
   "export_registration_verified": null,
   "note": "Definitions, declarations and build-file presence are distinct observations. No link-time export-registration, ABI or runtime verification is claimed.",
-  "observed_library_nid_records": 45914,
+  "observed_library_nid_records": 45918,
   "per_library": {
     "libaacs": {
       "definition_throwing": 264,
@@ -13,7 +13,7 @@
     "libc": {
       "assembly_definition_unvalidated": 4,
       "declaration_without_visible_definition": 6,
-      "definition_nonthrowing_unvalidated": 2096,
+      "definition_nonthrowing_unvalidated": 2097,
       "definition_throwing": 8,
       "explicit_alias_no_visible_definition": 12
     },
@@ -732,8 +732,8 @@
     "libscenkwebkit": {
       "assembly_definition_unvalidated": 402,
       "declaration_without_visible_definition": 1,
-      "definition_nonthrowing_unvalidated": 4336,
-      "definition_throwing": 6847,
+      "definition_nonthrowing_unvalidated": 4355,
+      "definition_throwing": 6831,
       "explicit_alias_no_visible_definition": 475
     },
     "libscenkwebkitrequirements": {
@@ -1395,12 +1395,12 @@
   },
   "runtime_validated": null,
   "scanner_version": 4,
-  "source_sha": "0bd27b85c0c575a60f66aabb212292c235a8b7d3",
+  "source_sha": "ae0df0e03e09fa51428de24226042f46d738521d",
   "states": {
     "assembly_definition_unvalidated": 411,
     "declaration_without_visible_definition": 138,
-    "definition_nonthrowing_unvalidated": 20699,
-    "definition_throwing": 19616,
+    "definition_nonthrowing_unvalidated": 20719,
+    "definition_throwing": 19600,
     "explicit_alias_no_visible_definition": 5050
   }
 }
